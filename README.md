@@ -102,6 +102,28 @@ This is a public reference wiki. If you find errors or want to suggest additions
 
 The private game code (`jleechanorg/worldarchitect.ai`) is the source of truth for behavior. This wiki summarizes and explains — it does not duplicate code paths.
 
+## Quick summaries
+
+Three short reads if you want the gist before diving in.
+
+### How to play — your first 30 minutes, step by step
+
+You sign up at [worldarchitect.ai](https://worldarchitect.ai), open the Campaign Wizard, pick a setting (built-in or custom 1-3 sentence description), and choose how to build your character — AI-generated (recommended for first-timers), hand-rolled, or a preset. The system narrates an opening scene, you declare your first action, and the loop runs turn by turn: GM narrates → you act → system rolls dice if needed → GM narrates outcome. Add a god-mode directive when the narration drifts from what you want; use `THINK:` prompts to plan ahead of acting.
+
+See [how-to-play-worldai](queries/how-to-play-worldai.md).
+
+### How to design a campaign — pick a setting, write a god-mode header, plan an arc
+
+Pick a **setting** (built-in like Naruto, GoT, BG3, isekai, or a custom 1-3 sentence description — specific beats vague), then a **power-level** (bounded for drama, escalating for long campaigns, sandbox for OP protagonists), then a **tone** (one primary — stoic, dramatic, comedic, grimdark, hopeful — plus an optional secondary). Write the **God Mode header** (`Character: ... | Setting: ...`), choose a character-creation mode, plan an opening scene (avoid the tavern, the dream, and excessive exposition), add 1-3 god-mode directives early, and pick an arc shape — hero's journey, power escalation, political, mystery, or character study.
+
+See [CampaignDesign](concepts/CampaignDesign.md).
+
+### How to prompt god mode — write directives that actually change the prose
+
+A directive is a single-sentence rule stored in `custom_campaign_state.god_mode_directives`. The system uses it as a lens for every scene generated after the directive is added. Three things make a directive land: state the character concept in concrete terms ("stoic, minimalist, humble" not "interesting"), list taboos ("avoids grandstanding"), and anchor the worldview ("views power as a heavy burden"). Nine categories work — tone, voice, POV, pacing, themes, taboos, power-level, companion rules, world rules. Use the formula `X is/does Y. Avoid Z. Always W.` Start with 1-3 directives, add more as the campaign matures. Anti-patterns: trying to control plot beats, vague directives ("be epic"), contradictory tones, and adding 15 directives in scene 1.
+
+See [GodModePrompting](concepts/GodModePrompting.md).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
