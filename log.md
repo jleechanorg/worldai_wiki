@@ -4,6 +4,17 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-06-20] update | External user stories (US-026–US-100)
+- Added `queries/ExternalUserStories.md` — 75 external-facing stories mirroring internal PR
+  [#7709](https://github.com/jleechanorg/worldarchitect.ai/pull/7709) sections 13–20.
+- Audience rewrite: no internal code paths, no file:line refs; player and external-developer language only.
+- Cross-linked from `queries/PlayerUserStories.md`, `index.md`, and `README.md`.
+
+## [2026-06-20] create | CLAUDE.md and AGENTS.md
+- Added `CLAUDE.md` — Claude-Code-specific guidance (scope, voice, build/lint, PR workflow).
+- Added `AGENTS.md` — repo-wide agent contract (schema, editing protocol, source ingestion, non-negotiables).
+- Updated frontmatter `updated` on existing pages; added cross-links in `index.md`.
+
 ## [2026-06-19] create | worldai_wiki initialized
 - Domain: WorldArchitect.AI player-facing wiki
 - Repo: `jleechanorg/worldai_wiki` (public)

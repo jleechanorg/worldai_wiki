@@ -14,6 +14,7 @@ This wiki is the player manual. It assumes you've signed up at [worldarchitect.a
 - **How to design a campaign** — pick a setting, write a god-mode header, plan an arc.
 - **How to prompt god mode** — write directives that actually change the prose.
 - **75 player user stories** — every feature in "as a player, I want…" form.
+- **75 external user stories (US-026–US-100)** — accounts, live UI, settings, MCP/API, agents, persistence, dice audit, export. See [ExternalUserStories](queries/ExternalUserStories.md).
 - **System reference** — combat, dice, faction minigame, level-up, spells, character creation.
 - **Case studies** — a handful of published campaigns illustrating what works.
 
@@ -32,6 +33,7 @@ The case studies are illustrative, not normative. The system supports any settin
 | Plan a campaign before launching | [How to design a campaign](concepts/CampaignDesign.md) |
 | Shape how the narration sounds | [How to prompt god mode](concepts/GodModePrompting.md) |
 | See every feature in one list | [75 player user stories](queries/PlayerUserStories.md) |
+| Integrate with the game over API or MCP | [External user stories (US-026–US-100)](queries/ExternalUserStories.md) |
 
 ### Core systems (concepts/)
 
