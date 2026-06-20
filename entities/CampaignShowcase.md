@@ -1,7 +1,7 @@
 ---
 title: CampaignShowcase
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 type: entity
 tags: [wa-campaign]
 sources: []
@@ -9,54 +9,80 @@ sources: []
 
 # Campaign Showcase
 
-A gallery of example campaigns with one-paragraph summaries of what each demonstrates. Use these as inspiration for your own.
+A gallery of published campaigns with one-paragraph summaries of what each demonstrates. Use these as **inspiration** — the system supports any setting (built-in or custom), any tone, and any power level. Pick the patterns you want; ignore the rest.
 
-## Itachi Gaiden (Naruto, ANBU era)
+## How to read this page
 
-A 432-scene Naruto campaign that escalates from "ANBU rookie" to "Emperor of the Multiverse." Demonstrates escalation curves, directive writing, and player-driven world-altering prompts. Masterclass in long-campaign pacing.
+Every campaign here is a real, completed run by a real player. The pages linked from this index are case studies — they show what one player did, not what you have to do. The patterns inside (god-mode directives, arc shapes, prompt strategies) are reusable across any campaign.
 
-See [[entities/ItachiGaiden]] for the full case study.
+If you don't see a setting or tone here that matches your idea, that doesn't mean the system can't do it. It just means no published campaign has been documented yet. The wiki documents what players have actually run.
 
-## Aristocrat Reborn (isekai, fantasy kingdom)
+## Published campaigns
 
-A 50-scene isekai campaign about Sylphina, the seventh daughter of a Margrave, reincarnated from a magic-obsessed past life. Demonstrates character-study narration, internal-monologue style, and the "obsessive specialist" archetype. Long God Mode header (~3,100 words) was used effectively.
+### Itachi Gaiden (Naruto, ANBU era)
 
-See [[entities/AristocratReborn]] for the full case study.
+A 432-scene Naruto campaign that escalates from "ANBU rookie" to multiverse-spanning transcendence. Demonstrates escalation curves across hundreds of scenes, stoic-tone directive writing, and player-driven world-altering prompts. Long-form case study in pacing.
 
-## Nocturne BG3 V3 (Baldur's Gate 3, faction-mode)
+See [[entities/ItachiGaiden]] for the full breakdown.
 
-A 600+ scene BG3 faction-mode campaign. Demonstrates the faction minigame end-to-end: intel gathering, faction combat, power rankings, resource management, multi-faction diplomacy. Use as a reference for faction-mode play.
+### Aristocrat Reborn (isekai, fantasy kingdom)
 
-See [[entities/NocturneBg3]] for the full case study.
+A 50-scene isekai campaign about Sylphina, the seventh daughter of a Margrave, reincarnated from a magic-obsessed past life. Demonstrates character-study-heavy narration, internal-monologue style, the "obsessive specialist" archetype, and the use of long God Mode headers (~3,100 words) to establish internal psychology.
 
-## Frieren Campaign (slow-burn fantasy)
+See [[entities/AristocratReborn]] for the full breakdown.
 
-A campaign inspired by Frieren: Beyond Journey's End — slow pacing, atmospheric prose, time-skips across decades. Demonstrates how a campaign can stretch a small premise (a single elf mage's long life) into a sweeping narrative. The pacing is the opposite of Itachi V2: each scene is small and quiet.
+### Nocturne BG3 V3 (Baldur's Gate 3, faction-mode)
 
-## Luke Campaign (Star Wars-flavored)
+A 600+ scene BG3 faction-mode campaign. Demonstrates the faction minigame end-to-end: intel gathering, faction combat, power rankings, resource management, multi-faction diplomacy. A reference for faction-mode play.
 
-A campaign inspired by Luke Skywalker's hero journey — reluctant farm boy to Jedi Knight. Demonstrates the classic hero arc structure: ordinary world → call to adventure → trials → transformation. Useful template if you want a structured hero's journey.
+See [[entities/NocturneBg3]] for the full breakdown.
 
-## Sariel Campaign (angel-themed)
+### Frieren-style Campaign (slow-burn fantasy)
+
+A campaign inspired by Frieren: Beyond Journey's End — slow pacing, atmospheric prose, time-skips across decades. Demonstrates how a campaign can stretch a small premise (a single elf mage's long life) into a sweeping narrative. Pacing is the opposite of action-driven: each scene is small and quiet.
+
+See [[entities/FrierenCampaign]] for the archetype notes.
+
+### Luke-style Campaign (hero's journey, sci-fi/fantasy)
+
+A campaign inspired by Luke Skywalker's hero journey — reluctant farm boy to chosen one to legend. Demonstrates the classic hero arc structure: ordinary world → call to adventure → trials → transformation. Useful template if you want a structured hero's journey.
+
+See [[entities/LukeCampaign]] for the archetype notes.
+
+### Sariel Campaign (angel-themed, non-human PC)
 
 A campaign featuring Sariel as the PC — angel-themed, high-celestial setting. Demonstrates how a non-human PC origin (angel, demon, dragon) plays in the system. The PC's nature shapes available actions and NPC reactions.
 
-## Sariel Cross-Campaign
+See [[entities/SarielCampaign]] for the archetype notes.
+
+### Sariel Cross-Campaign (same character, different setting)
 
 A second campaign featuring the same Sariel character in a different setting. Demonstrates how the system can carry a character across campaigns: same name, same personality, different world. Useful if you want to play the same character in multiple settings.
 
-## How to use this gallery
+See [[entities/SarielCrossCampaign]] for the archetype notes.
 
-Pick a campaign that matches the arc you want:
+## How to pick a campaign to learn from
+
+Pick the campaign that matches the arc you want:
 
 | You want… | Look at… |
 |-----------|----------|
-| Long escalation, power progression | [[entities/ItachiGaiden]] |
-| Character study, internal monologue | [[entities/AristocratReborn]] |
-| Faction management | [[entities/NocturneBg3]] |
-| Slow burn, atmospheric | Frieren-style campaigns |
-| Hero's journey | Luke-style campaigns |
-| Non-human PC | Sariel-style campaigns |
-| Cross-campaign character | Sariel Cross-style campaigns |
+| Long escalation, power progression across hundreds of scenes | [[entities/ItachiGaiden]] |
+| Character study, internal monologue, fast escalation | [[entities/AristocratReborn]] |
+| Faction management, multi-faction diplomacy | [[entities/NocturneBg3]] |
+| Slow burn, atmospheric, time-skips | [[entities/FrierenCampaign]] |
+| Hero's journey, classic structure | [[entities/LukeCampaign]] |
+| Non-human PC origin (angel, demon, dragon) | [[entities/SarielCampaign]] |
+| Carry a character across multiple campaigns | [[entities/SarielCrossCampaign]] |
 
-See [[concepts/CampaignDesign]] for the full design guide.
+## How to design your own campaign (not based on any of these)
+
+The campaigns above are illustrations, not templates. To design a campaign that's *yours*:
+
+1. **Start with the setting**, not the character. See [[concepts/CampaignDesign]] Step 1.
+2. **Pick a tone** that matches the setting. See [[concepts/GodModePrompting]] for archetype directives.
+3. **Write a God Mode header** that's specific enough to give the system something to work with.
+4. **Add 1-3 directives** that pin the tone. See [[concepts/GodModePrompting]].
+5. **Plan the first 10 scenes**, not the full arc. The arc will emerge from play.
+
+See [[concepts/CampaignDesign]] for the full design guide and [[queries/how-to-play-worldai]] for first-session workflow.

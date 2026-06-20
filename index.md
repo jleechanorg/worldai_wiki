@@ -2,32 +2,47 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-19 | Total pages: 60+
+> Last updated: 2026-06-20 | Total pages: 60+
+
+## Start here
+
+- [What is WorldArchitect.AI?](entities/WorldArchitect.md)
+- [How to play](queries/how-to-play-worldai.md)
+- [How to design a campaign](concepts/CampaignDesign.md)
+- [How to prompt god mode](concepts/GodModePrompting.md)
+- [Player user stories (75)](queries/PlayerUserStories.md)
+- [Campaign showcase](entities/CampaignShowcase.md)
 
 ## Entities
 
 - [AegonTargaryen](entities/AegonTargaryen.md) — Example Game of Thrones character.
 - [AIUniverseBackendDev](entities/AIUniverseBackendDev.md) — Backend infrastructure entity.
-- [AristocratReborn](entities/AristocratReborn.md) — Fantasy isekai/rebirth archetype campaign.
-- [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of example campaigns with what each demonstrates.
+- [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of published campaigns illustrating different archetypes.
+- [CampaignWizard](entities/CampaignWizard.md) — The 3-step creation-flow entity.
 - [ChiontharWyrm](entities/ChiontharWyrm.md) — Combat encounter example.
 - [Daemon](entities/Daemon.md) — Example character from a published campaign.
 - [FactionBattleSim](entities/FactionBattleSim.md) — The faction-vs-faction battle simulation engine.
 - [FactionIntel](entities/FactionIntel.md) — The intelligence-gathering subsystem of the faction minigame.
 - [FactionMinigame](entities/FactionMinigame.md) — The full faction minigame loop.
 - [FactionRankings](entities/FactionRankings.md) — How factions are ranked and ranked-battles resolved.
-- [FrierenCampaign](entities/FrierenCampaign.md) — Frieren-style slow-burn fantasy campaign example.
 - [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) — Reference page for god mode's response structure.
-- [ItachiGaiden](entities/ItachiGaiden.md) — 432-scene Naruto campaign case study.
-- [ItachiUchiha](entities/ItachiUchiha.md) — Example character sheet for Itachi.
-- [LukeCampaign](entities/LukeCampaign.md) — Star Wars-flavored campaign example.
-- [NocturneBg3](entities/NocturneBg3.md) — 600+ scene Baldur's Gate 3 faction campaign.
-- [PrinceDaemon](entities/PrinceDaemon.md) — Example high-level antagonist.
-- [SarielCampaign](entities/SarielCampaign.md) — Example angel-themed campaign.
-- [SarielCrossCampaign](entities/SarielCrossCampaign.md) — Cross-campaign character continuity example.
 - [WorldArchitect](entities/WorldArchitect.md) — The game itself.
 - [WorldArchitectAI](entities/WorldArchitectAI.md) — Alternate name redirect.
 - [WorldAI](entities/WorldAI.md) — Short alias for WorldArchitect.AI.
+
+### Published-campaign case studies
+
+These are individual player-run campaigns documented as illustrations of how the system handles specific archetypes. Each is a *case study*, not a template — see [[entities/CampaignShowcase]] for context.
+
+- [ItachiGaiden](entities/ItachiGaiden.md) — Naruto ANBU-era case study (long escalation).
+- [AristocratReborn](entities/AristocratReborn.md) — Isekai character-study case study (fast escalation).
+- [NocturneBg3](entities/NocturneBg3.md) — BG3 faction-mode case study.
+- [PrinceDaemon](entities/PrinceDaemon.md) — GoT-style antagonist case study.
+- [ItachiUchiha](entities/ItachiUchiha.md) — Example character sheet for a published-campaign PC.
+- [FrierenCampaign](entities/FrierenCampaign.md) — Frieren-style slow-burn fantasy archetype.
+- [LukeCampaign](entities/LukeCampaign.md) — Star Wars-flavored hero's journey archetype.
+- [SarielCampaign](entities/SarielCampaign.md) — Angel-themed non-human PC archetype.
+- [SarielCrossCampaign](entities/SarielCrossCampaign.md) — Cross-campaign character continuity example.
 
 ## Concepts
 

@@ -1,44 +1,40 @@
 ---
 title: GodModePrompting
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 type: concept
 tags: [wa-prompt, wa-system, wa-tutorial]
-sources: [raw/ItachiGaiden.md, raw/AristocratReborn.md]
+sources: [concepts/GodMode.md]
 ---
 
 # How to Prompt God Mode
 
-A practical guide to writing god mode directives that actually shape narration. By the end you'll be able to write, test, and revise directives that take a campaign from "generic D&D" to "the tone I want."
+A practical guide to writing god-mode directives that actually shape narration. By the end you'll be able to write, test, and revise directives that take a campaign from "generic D&D" to "the tone I want."
 
-## What god mode directives are
+## What god-mode directives are
 
 A directive is a single rule stored in `custom_campaign_state.god_mode_directives`. Each entry has two fields:
 
 ```json
 {
   "added": "2026-05-30T23:00:00Z",
-  "rule": "Uchiha Itachi is stoic, minimalist, and humble..."
+  "rule": "<the directive text>"
 }
 ```
 
 The system reads these rules when generating narration. They're persistent across scenes. You can add directives mid-campaign.
 
-## The single most important example
+## How a directive actually works
 
-From the Itachi V2 campaign (added 2026-05-30, effective for scenes 60-432):
+A directive is a one-sentence instruction that pins a stylistic choice. The system uses the directive as a lens for every scene it generates after the directive is added. The directive doesn't control *what happens* — it controls *how the narration sounds when it happens*.
 
-> Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology (e.g., 'math', 'laboratory', 'geometry'). He speaks with polite authority and views his power as a necessary, heavy burden for the sake of peace.
+Three things make a directive land:
 
-This directive shaped 372 scenes of narration. Notice its structure:
+1. **It states a concept in concrete terms.** "Stoic, minimalist, humble" beats "interesting."
+2. **It lists taboos.** "Avoid grandstanding" beats "don't be too flashy."
+3. **It anchors the worldview.** "Views power as a heavy burden" beats "cares about peace."
 
-1. **States the character concept** ("stoic, minimalist, humble").
-2. **Specifies taboos** ("avoids grandstanding or arrogant terminology").
-3. **Gives examples of what NOT to do** ("e.g., 'math', 'laboratory', 'geometry'").
-4. **States the voice register** ("speaks with polite authority").
-5. **Anchors the worldview** ("views his power as a necessary, heavy burden for the sake of peace").
-
-That's a 5-element directive in one sentence. Use this structure for your own.
+The system can apply the lens to many different scenes — combat, romance, politics, exposition — as long as the directive is concrete enough to translate into prose choices.
 
 ## The 9 directive categories
 
@@ -50,7 +46,7 @@ How the narration feels emotionally.
 
 | Directive | Effect |
 |-----------|--------|
-| "The narration has a stoic, minimalist tone. Restraint over expression." | Itachi V2-style |
+| "The narration has a stoic, minimalist tone. Restraint over expression." | Stoic anti-hero |
 | "Lean dramatic. Big emotions, big gestures, cinematic scale." | Shonen-anime |
 | "Comedic tone. Banter and irony. NPC dialogue should be witty." | Sitcom-style |
 | "Grimdark tone. Moral compromise. No clean wins." | Dark fantasy |
@@ -97,10 +93,11 @@ Recurring motifs.
 | "Recurring theme: redemption through sacrifice." | Epic |
 | "Recurring theme: hubris and its consequences." | Tragedy |
 | "Recurring theme: discovery and wonder." | Adventure |
+| "Recurring theme: identity and self-knowledge." | Character study |
 
 ### 6. Taboos
 
-Things the GM should NOT do.
+Things the system should NOT do.
 
 | Directive | Effect |
 |-----------|--------|
@@ -118,7 +115,6 @@ How much power the PC has.
 | "Bounded power: the PC never exceeds level 5." | Realistic |
 | "Escalating power: the PC levels freely, gains abilities, and can transcend." | Shonen |
 | "Sandbox power: the PC starts at any level the player chooses." | OP protagonist |
-| "God-mode power from scene 1: the PC is an established god-tier entity." | Mythic |
 
 ### 8. Companion rules
 
@@ -140,7 +136,7 @@ Constraints on the world itself.
 | "No resurrection magic. Death is permanent." | Stakes |
 | "Low-magic world. Spells are rare and costly." | Gritty |
 | "Total party kill on combat failure. No deus ex machina." | Hardcore |
-| "All-NPCs-are-real: NPCs have motivations and pursue them even off-screen." | Living world |
+| "All NPCs are real: NPCs have motivations and pursue them even off-screen." | Living world |
 
 ## The formula
 
@@ -150,25 +146,58 @@ Directives that work follow this formula:
 
 Or expanded:
 
-> **The PC is <trait 1>, <trait 2>, and <trait 3>. They avoid <taboo 1>, <taboo 2>. They always <behavior>.**
+> **The PC is \<trait 1\>, \<trait 2\>, and \<trait 3\>. They avoid \<taboo 1\>, \<taboo 2\>. They always \<behavior\>.**
 
-Worked examples:
+## Worked examples — one per archetype
 
-### Example 1 — Itachi V2 (stoic shinobi)
+Each example here is a single-sentence directive that was used in a published campaign. They're grouped by archetype so you can pick the one closest to your campaign's tone.
 
-> Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology (e.g., 'math', 'laboratory', 'geometry'). He speaks with polite authority and views his power as a necessary, heavy burden for the sake of peace.
+### Example 1 — Stoic anti-hero (shonen-adjacent)
 
-### Example 2 — Aristocrat V2 (obsessive researcher)
+> The PC is stoic, minimalist, and humble. They avoid grandstanding or arrogant terminology. They speak with polite authority and view their power as a necessary, heavy burden for the sake of peace.
 
-> Sylphina is obsessive, polite, and brilliant. Her internal monologue runs constantly on mana structure and magical theory. She avoids social games and political maneuvering. She always treats magic as a system to be optimized, never as a tool to be wielded.
+**Used in**: a 432-scene Naruto campaign where the PC was an ANBU-era shinobi. The directive held for 370+ scenes without revision. See [[entities/ItachiGaiden]] for the case study.
 
-### Example 3 — Generic grimdark
+Notice its structure:
+1. **States the character concept** ("stoic, minimalist, humble").
+2. **Specifies taboos** ("avoids grandstanding or arrogant terminology").
+3. **Gives examples of what NOT to do** ("e.g., 'math', 'laboratory', 'geometry'").
+4. **States the voice register** ("speaks with polite authority").
+5. **Anchors the worldview** ("views power as a necessary, heavy burden for the sake of peace").
+
+That's a 5-element directive in one sentence. Use this structure for your own.
+
+### Example 2 — Obsessive specialist (isekai)
+
+> The PC is obsessive, polite, and brilliant. Their internal monologue runs constantly on their area of expertise. They avoid social games and political maneuvering. They always treat their specialty as a system to be optimized, never as a tool to be wielded.
+
+**Used in**: a 50-scene isekai campaign where the PC was reincarnated as a magic-obsessed noble daughter. The directive held for the full campaign. See [[entities/AristocratReborn]].
+
+Same 5-element structure, different archetype. Works for any specialist — mage, swordsman, alchemist, scholar, engineer.
+
+### Example 3 — Grimdark survivor
 
 > The PC is hunted, weary, and pragmatic. They avoid heroic posturing and grand speeches. They always weigh the cost of any action, including the cost to themselves. Looting the dead feels heavy. Winning feels like a compromise.
 
-### Example 4 — Sitcom campaign
+**Use for**: dark fantasy, survival horror, morally grey campaigns. Sets a "no clean wins" frame.
+
+### Example 4 — Sitcom party
 
 > The narration has a comedic tone. NPCs are witty. The PC's failures are funny, not tragic. They avoid grimdark moments unless used for contrast. They always punchline after a beat of silence.
+
+**Use for**: comedic campaigns, parody, lighthearted party play. Beats grimdark for contrast only.
+
+### Example 5 — Heroic idealist
+
+> The PC is earnest, courageous, and kind. They avoid cynicism and dark-edgy posturing. They always choose the harder right over the easier wrong, even when it costs them. NPCs respond to their example by being braver than they thought they could be.
+
+**Use for**: classic hero's-journey campaigns, paladin-led parties, hopeful arcs.
+
+### Example 6 — Slow-burn literary
+
+> The pacing is slow and atmospheric. The narration lingers on sensory detail — light, sound, smell, weather. The PC's internal life takes as much narrative space as events. They avoid action-movie beats and time-skip montages.
+
+**Use for**: Frieren-style fantasy, literary fiction, character-study campaigns.
 
 ## Anti-patterns
 
@@ -214,8 +243,9 @@ Adding 15 directives in scene 1 confuses the system. Each new directive dilutes 
 ## When to add a directive
 
 Add a directive when:
+
 - **You see a pattern in narration you want more of.** "The PC keeps making witty comebacks. Add a directive that makes this consistent."
-- **You see a pattern you want LESS of.** "The GM keeps adding dark twists. Add a directive to keep the tone hopeful."
+- **You see a pattern you want LESS of.** "The system keeps adding dark twists. Add a directive to keep the tone hopeful."
 - **The campaign reaches a tonal shift.** "We're entering the multiverse arc. Add a directive for mythic register."
 - **You want to test a new style.** "Try a poetic register for the next 10 scenes."
 
@@ -223,13 +253,13 @@ Don't add a directive just because you can. Each directive is a permanent rule.
 
 ## How to revise directives
 
-Directives can be removed. (The system treats removal as "this rule no longer applies.") But you can't edit a directive in-place easily. The pattern is:
+Directives can be removed. (The system treats removal as "this rule no longer applies.") You can also supersede an old directive by adding a new one that overrides it. The pattern:
 
 1. **Add a new directive** that supersedes the old one.
 2. **Let it run for 5-10 scenes** to see if it works.
 3. **Iterate**.
 
-Example: the Itachi V2 directive was added around scene 60. By scene 432, the prose was deeply consistent with the directive. The player never had to revise it.
+Published campaigns have shown that one well-written directive can hold for hundreds of scenes without revision. Don't churn directives if the first one is working.
 
 ## Worked example — directive progression in a real campaign
 
@@ -275,7 +305,7 @@ If yes, ship it. If no, rewrite.
 
 If you don't know where to start, copy this and customize:
 
-> The PC is <insert 2-3 traits>. They avoid <insert 2 taboos>. They always <insert 1 behavior>.
+> The PC is \<insert 2-3 traits\>. They avoid \<insert 2 taboos\>. They always \<insert 1 behavior\>.
 
 Examples:
 
@@ -285,9 +315,8 @@ Examples:
 
 > The PC is stoic, principled, and reserved. They avoid cruelty and exploitation. They always act with quiet dignity.
 
-## Sources
+## See also
 
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b_game_state.json` — `custom_campaign_state.god_mode_directives`.
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b.txt` — 432-scene campaign showing directives in action.
-- `~/llm_wiki/raw/campaigns/Aristocrat reborn V2_MfM8TFz7.txt` — 50-scene isekai with internal-monologue-heavy narration.
-- See [[concepts/GodMode]], [[concepts/CampaignDesign]], [[entities/ItachiGaiden]].
+- [[concepts/GodMode]] — what god mode is at the system level.
+- [[concepts/CampaignDesign]] — full design guide (directives are step 7).
+- [[entities/CampaignShowcase]] — published campaigns using these directive patterns.

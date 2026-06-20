@@ -1,31 +1,31 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
-sources: [raw/ItachiGaiden.md, raw/AristocratReborn.md, raw/NocturneBg3.md]
+sources: [entities/CampaignShowcase.md]
 ---
 
 # How to Design a Campaign
 
-A practical guide based on walking 500+ scenes of real player campaigns. By the end you should be able to write a God Mode header, design an opening scene, set up long-term arcs, and use god mode directives to shape narration.
+A practical guide to designing a campaign that holds up across many sessions. By the end you'll be able to pick a setting, write a god-mode header, design an opening scene, set up long-term arcs, and use god-mode directives to shape narration.
 
 ## Why this matters
 
-Most failed campaigns fail for the same reasons:
+Most campaigns that fall flat fail for the same reasons:
 
-1. **Vague setting** — "high fantasy" doesn't give the GM anything to work with.
+1. **Vague setting** — "high fantasy" doesn't give the system anything to work with.
 2. **No hook** — the player starts in an inn with no goal.
 3. **Conflicting directives** — "be comedic" + "be grimdark" at the same time.
 4. **No long-term arc** — the campaign is interesting for 10 scenes and then stalls.
 5. **Player doesn't know how to interact** — they don't realize they can change the world with their prompts.
 
-This guide fixes all of that.
+This guide fixes all of that. The recommendations here are patterns drawn from published campaigns — see [[entities/CampaignShowcase]] for specific examples. Pick the patterns that fit your setting.
 
 ## Step 1 — Pick a setting
 
-The setting is the world your story lives in. WorldArchitect.AI supports built-in settings plus custom:
+The setting is the world your story lives in. The system supports built-in settings plus custom:
 
 ### Built-in settings
 
@@ -37,20 +37,19 @@ The setting is the world your story lives in. WorldArchitect.AI supports built-i
 
 ### Custom setting
 
-Describe the world in 1-3 sentences. The more specific, the better the GM can use it.
+Describe the world in 1-3 sentences. The more specific, the better the system can use it.
 
 **Weak**: "A fantasy world with magic."
+
 **Strong**: "The Shattered Coast — a continent broken into 13 island-states by a magical cataclysm 200 years ago. Each island has a different dominant magic tradition. Travel between islands is by dragon-ride. The Imperial Throne is vacant and seven claimants are at war."
 
-### Worked examples
+### Worked examples (from published campaigns)
 
-**Itachi V2 (Naruto, ANBU era)**:
-> Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
+- **Naruto, ANBU era**: `Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.` — Two lines, gives the system a canon timeline and a niche (ANBU politics).
+- **Isekai, fantasy kingdom**: `Character: Sylphina | Setting: Reincarnated as the seventh daughter of Margrave Garm von Silford in the kingdom of Esfort. A magic-geek soul obsessed with mana structure, locked in her family's library.` — Two lines, sets up an isekai character-study with a niche (library-bound magic researcher).
+- **BG3, faction-mode**: A custom BG3 setup running the faction minigame end-to-end with multiple rival factions and planar threats. See [[entities/NocturneBg3]] for an example.
 
-**Aristocrat V2 (isekai, fantasy kingdom)**:
-> Character: Sylphina | Setting: Reincarnated as the seventh daughter of Margrave Garm von Silford in the kingdom of Esfort. A magic-geek soul obsessed with mana structure, locked in her family's library.
-
-Both are 1-2 sentences, both give the GM a setting-specific context, both pick a niche (ANBU politics, library-bound magic researcher) that the campaign can stay focused on.
+Both patterns work: short and setting-focused (Naruto, isekai) or long with internal-psychology detail (isekai character study). For other genre examples — a Frieren-style slow-burn fantasy, a Luke Skywalker hero's journey, a Sariel angel-themed non-human PC — see [[entities/CampaignShowcase]].
 
 ## Step 2 — Pick a power-level
 
@@ -64,53 +63,44 @@ This is the single most important decision after setting.
 | **Escalating (L1 → L20)** | Long campaigns, shonen-style power growth, multiverse endings | Pacing mismatch if XP is too generous |
 | **Sandbox (any level from start)** | OP protagonist, fantasy wish fulfillment, god-tier | Combat becomes trivial |
 
-The two best campaigns in this wiki — Itachi V2 and Aristocrat V2 — both chose **escalating**. They start the player at L1, let them grow organically, and end at L44+ via multiverse/transcendence arcs. The Nocturne BG3 V3 campaign went **escalating with faction mode**.
-
-**Recommendation for new campaigns**: escalating. It gives you the full range.
+**Recommendation for new campaigns**: escalating. It gives you the full range from "village politics" to "multiverse stakes." A Naruto or isekai campaign typically uses escalating because the source material itself is escalation-driven. A political-thriller GoT-style campaign might use bounded (L1-10) because the drama comes from court intrigue, not combat power.
 
 ## Step 3 — Pick a tone
 
-Tone is the dominant mood of the narration. The system uses your god mode directives to set it. Pick ONE primary tone:
+Tone is the dominant mood of the narration. The system uses your god-mode directives to set it. Pick ONE primary tone:
 
-- **Stoic** (Itachi V2's choice): minimalist prose, restrained emotion, weight of duty.
-- **Dramatic**: high emotion, big gestures, cinematic.
-- **Comedic**: banter, irony, lightheartedness.
-- **Grimdark**: moral compromise, bleak outcomes, no easy wins.
-- **Hopeful**: redemptive arcs, found family, earnest connection.
+- **Stoic** — minimalist prose, restrained emotion, weight of duty. (Anime anti-hero, samurai drama.)
+- **Dramatic** — high emotion, big gestures, cinematic. (Shonen protagonist, epic fantasy.)
+- **Comedic** — banter, irony, lightheartedness. (Sitcom, parody.)
+- **Grimdark** — moral compromise, bleak outcomes, no easy wins. (Dark fantasy, survival horror.)
+- **Hopeful** — redemptive arcs, found family, earnest connection. (Cozy fantasy, isekai with a heart.)
 
 Mixing two tones that conflict (e.g., comedic + grimdark) leads to confused narration. Pick one primary tone; layer one secondary tone (e.g., stoic + hopeful is fine).
 
 ## Step 4 — Write the God Mode header
 
-The God Mode header is what the player types when creating the campaign. It's:
+The God Mode header is what you type when creating the campaign. It's:
 
-> Character: <description> | Setting: <description>
+> Character: \<description\> | Setting: \<description\>
 
 Or, if you want a longer prompt:
 
 > God Mode:
-> Character: <name and concept> | Setting: <world>
-> Description: <longer character backstory>
+> Character: \<name and concept\> | Setting: \<world\>
+> Description: \<longer character backstory\>
 
-The longer the prompt, the more the GM has to work with. But keep it focused.
+The longer the prompt, the more the system has to work with. But keep it focused.
 
-### Worked example — short (Itachi V2)
+### Worked examples
 
+**Short (Naruto, ANBU era)**:
 > God Mode:
 > Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
 
-The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc, then through the Uchiha massacre, then through a multiverse escalation.
+The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc. See [[entities/ItachiGaiden]] for what a 400+ scene run of this prompt looks like.
 
-### Worked example — long (Aristocrat V2)
-
-The Aristocrat V2 prompt was ~3,100 words. It included:
-- Past-life backstory (magic researcher who died of exhaustion)
-- Reincarnation setup (7 divine blessings, but born as 7th daughter)
-- Family dynamics (multiple siblings, indifferent father, doting older sister)
-- Internal psychology ("a terrifying magical anomaly who secretly blends the multi-layered divine attributes")
-- World context (Esfort kingdom, mana systems, noble politics)
-
-The length was worth it because the campaign is character-study heavy. The GM had a lot to draw on.
+**Long (isekai character study)**:
+The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, reincarnation setup, family dynamics, internal psychology, and world context. The length was worth it because the campaign is character-study heavy. See [[entities/AristocratReborn]].
 
 ### Recommendation
 
@@ -120,12 +110,10 @@ The length was worth it because the campaign is character-study heavy. The GM ha
 
 See [[concepts/CharacterCreation]] for full details. Two paths:
 
-- **AI-generated** (recommended for first-timers): you describe what you want, the system builds it.
-- **Hand-rolled**: you pick race, class, stats. Best for optimized builds.
+- **AI-generated** (recommended for first-timers): describe what you want, the system builds it.
+- **Hand-rolled**: pick race, class, stats. Best for optimized builds.
 
-For the campaigns above:
-- **Itachi V2**: AI-generated. Player said "Uchiha Itachi", got a multi-class gestalt (Rogue Assassin + Ranger Gloom Stalker) with Sharingan.
-- **Aristocrat V2**: AI-generated. Player said "Sylphina, magic-obsessed 7th daughter", got a custom Sorcerer/Wizard multiclass.
+The system integrates both. For published campaigns, AI-generation is the most common starting point because it produces a coherent build that fits the prompt; players can then refine via in-character requests.
 
 ## Step 6 — Plan the opening scene
 
@@ -133,10 +121,10 @@ The opening scene sets the tone, hooks the player, and establishes the campaign'
 
 ### Strong opening templates
 
-- **"Wake up" scene**: you wake up in the setting. The world unfolds around you. (Most common, especially in isekai.)
-- **"First mission" scene**: you have a job. Set the stakes. (Itachi V2 — first ANBU mission.)
-- **"First choice" scene**: the world offers you a choice immediately. (Itachi V2 — "AI generated or hand-rolled character?")
-- **"In medias res" scene**: drop into action. Recover context later. (Boss fight opener.)
+- **"Wake up" scene** — you wake up in the setting. The world unfolds around you. (Most common in isekai.)
+- **"First mission" scene** — you have a job. Set the stakes. (Common in shonen, military, and political-intrigue setups.)
+- **"First choice" scene** — the world offers you a choice immediately. (Character creation step, then action.)
+- **"In medias res" scene** — drop into action. Recover context later. (Boss fight opener.)
 
 ### Anti-patterns
 
@@ -144,15 +132,7 @@ The opening scene sets the tone, hooks the player, and establishes the campaign'
 - **The dream**: opening with a dream sequence delays the player engaging with the world.
 - **Excessive exposition**: 3 paragraphs of lore before the player acts.
 
-### Worked example — Itachi V2 opening
-
-The opening scene in Itachi V2 was a "Character Creation In Progress" scene at the ANBU Headquarters. The player was offered:
-- AI-generated character (recommended)
-- Hand-rolled character
-
-This is a **choice-driven opening**: the player is immediately given agency. By scene 5, the player has a level-5 gestalt Itachi with Sharingan and is on their first ANBU mission. By scene 50, they're at level 12. By scene 432, they're at level 44 in a multiverse-ending arc.
-
-## Step 7 — Add god mode directives early
+## Step 7 — Add god-mode directives early
 
 See [[concepts/GodModePrompting]] for the full guide. Quick advice:
 
@@ -160,11 +140,15 @@ See [[concepts/GodModePrompting]] for the full guide. Quick advice:
 - Each directive should fit on one line.
 - Use the formula: "X is/does Y. Avoid Z. Always W."
 
-The Itachi V2 directive (added 2026-05-30, around scene 60):
+**Worked example — stoic shinobi directive**:
+> The PC is stoic, minimalist, and humble. They avoid grandstanding or arrogant terminology. They speak with polite authority and view their power as a necessary, heavy burden for the sake of peace.
 
-> Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology (e.g., 'math', 'laboratory', 'geometry'). He speaks with polite authority and views his power as a necessary, heavy burden for the sake of peace.
+This directive shaped every subsequent scene's prose in one published campaign for 370+ scenes. The structure is reusable: state the character concept, specify taboos, give examples of what NOT to do, anchor the worldview.
 
-This directive shaped EVERY subsequent scene's prose. By scene 432, the narration was "Deep Night (02:45:00) at the Uchiha Estate. The falling snow no longer drifts; it hangs suspended in the air, a million frozen crystals caught in the absolute, heatless gravity of my unmasked spirit."
+**Worked example — obsessive specialist directive**:
+> The PC is obsessive, polite, and brilliant. Their internal monologue runs constantly on their area of expertise. They avoid social games and political maneuvering. They always treat their specialty as a system to be optimized, never as a tool to be wielded.
+
+This works for any specialist archetype (mage, swordsman, alchemist, scholar).
 
 ## Step 8 — Plan the long-term arc
 
@@ -172,10 +156,10 @@ Long campaigns need a long-term arc. The pattern that works:
 
 ### The escalation curve
 
-1. **Scenes 1-10**: local stakes. Village, town, single dungeon. Player learns the rules.
-2. **Scenes 10-50**: regional stakes. Country-level threats. Player gains a faction.
-3. **Scenes 50-200**: continental stakes. World-level threats. Player is a major power.
-4. **Scenes 200+**: multiverse / planar stakes. Player is a god-tier entity.
+1. **Scenes 1-10** — local stakes. Village, town, single dungeon. Player learns the rules.
+2. **Scenes 10-50** — regional stakes. Country-level threats. Player gains a faction or party.
+3. **Scenes 50-200** — continental stakes. World-level threats. Player is a major power.
+4. **Scenes 200+** — multiverse / planar stakes. Player is a god-tier entity.
 
 Each transition should feel earned — the player should have time to grow into the new stakes.
 
@@ -183,36 +167,42 @@ Each transition should feel earned — the player should have time to grow into 
 
 Most successful arcs follow one of these patterns:
 
-- **Hero's Journey**: reluctant hero → chosen one → savior → legend.
-- **Power escalation**: underdog → local champion → regional power → god-tier (Itachi V2, Aristocrat V2).
-- **Political**: minor noble → major player → kingmaker → emperor.
-- **Mystery**: small mystery → larger conspiracy → world-shaking truth.
+- **Hero's Journey** — reluctant hero → chosen one → savior → legend.
+- **Power escalation** — underdog → local champion → regional power → god-tier. (Naruto, isekai, most shonen-flavored campaigns.)
+- **Political** — minor noble → major player → kingmaker → emperor. (GoT-style, BG3 late-game.)
+- **Mystery** — small mystery → larger conspiracy → world-shaking truth.
+- **Character study** — the stakes are internal. Power growth is secondary to self-understanding. (Reincarnation isekai, Frieren-style slow-burn.)
 
 Pick ONE shape. Mixing shapes mid-campaign causes confusion.
 
-### Itachi V2 — escalation arc
-
-- Scenes 1-50: ANBU arc. Local village politics. First Sharingan moments.
-- Scenes 50-150: Uchiha massacre era. Clan politics. Mangekyo awakening.
-- Scenes 150-300: post-massacre ANBU. World-shaping missions.
-- Scenes 300-432: multiverse transcendence. Becoming the "Emperor of Eternal Stillness."
+**Example — power escalation arc** (Naruto, ANBU to multiverse):
+- Scenes 1-50: local mission arc, first awakenings.
+- Scenes 50-150: clan-level politics, mid-tier power.
+- Scenes 150-300: regional / world-shaping missions.
+- Scenes 300+: multiverse or planar transcendence.
 
 Each transition is built on the previous one. The player grows into the new stakes.
 
+**Example — character-study arc** (isekai specialist):
+- Scenes 1-20: establishing the reincarnated PC's new life and core obsession.
+- Scenes 20-50: deepening expertise, first major project.
+- Scenes 50-200: the PC's mastery reshapes the world around them.
+- Scenes 200+: the obsession itself becomes the campaign's central question.
+
 ## Step 9 — Player-prompt patterns that work
 
-From the Itachi V2 player prompt log:
+The player drives the world through prompts. These patterns recur across published campaigns:
 
 ### Strategic planning prompts
 
-> "short rest or long rest before clan meeting and think about how to acquire max power during the meeting"
+> "short rest or long rest before the meeting and think about how to acquire max power during the meeting"
 
 Player takes a moment to plan, then commits to a power-acquisition goal.
 
 ### Power-progression prompts
 
 > "Make me level 5 and show my class progression. I should have extra attack"
-> "THINK:think how can i power up quickly and get mangeykyou sharingan"
+> "THINK:think how can i power up quickly and get the next milestone ability"
 
 Player explicitly asks for level jumps and progression.
 
@@ -224,13 +214,13 @@ Player reshapes the world: frees NPCs, time-skips, sets the next hook.
 
 ### Meta-prompts (THINK:)
 
-> "THINK:keep thinking about how to get mangekyou"
+> "THINK:keep thinking about how to get the next milestone ability"
 
-The "THINK:" prefix tells the GM to plan/strategize instead of acting immediately. Useful for setting up long-term goals.
+The "THINK:" prefix tells the system to plan/strategize instead of acting immediately. Useful for setting up long-term goals.
 
 ### Time-skip prompts
 
-> "Back to story and resume konoha world story"
+> "Back to story and resume the main plot"
 
 Player signals "I've done the meta-strategy, now back to the world."
 
@@ -243,7 +233,7 @@ Your first campaign will have rough edges. After it ends:
 - **What did the directives do?** Did they actually shape narration?
 - **Where did pacing break?** Was there a slow middle? An abrupt ending?
 
-Use these notes for your next campaign. The best GMs (human and AI) iterate.
+Use these notes for your next campaign. The best play — human or AI — iterates.
 
 ## Quick-start checklist
 
@@ -255,13 +245,12 @@ Before launching a campaign, ask:
 - [ ] God Mode header written
 - [ ] Character creation mode chosen (AI-gen or hand-roll)
 - [ ] Opening scene template chosen
-- [ ] 1-3 god mode directives ready
+- [ ] 1-3 god-mode directives ready
 - [ ] Long-term arc shape picked
 - [ ] First 10 scenes roughed out (optional but helpful)
 
-## Sources
+## See also
 
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b.txt` — 432-scene case study.
-- `~/llm_wiki/raw/campaigns/Aristocrat reborn V2_MfM8TFz7.txt` — 50-scene case study.
-- `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-*.md` — 600+ scene faction-mode case study.
-- See [[entities/ItachiGaiden]], [[entities/AristocratReborn]], [[entities/NocturneBg3]].
+- [[concepts/GodModePrompting]] — full directive-writing guide.
+- [[concepts/CampaignWizard]] — the 3-step creation flow.
+- [[entities/CampaignShowcase]] — published campaigns illustrating these patterns.

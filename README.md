@@ -1,38 +1,100 @@
 # WorldArchitect.AI Wiki
 
-> **The player-facing guide to WorldArchitect.AI** — how to play, how to design campaigns, how to write god-mode directives that shape narration.
+> The player-facing guide to [WorldArchitect.AI](https://worldarchitect.ai) — a structured D&D 5e game with server-side dice, persistent world state, faction play, and player-authored god-mode directives that shape narration.
 
-This is the public companion wiki to the [WorldArchitect.AI](https://worldarchitect.ai) game. The game itself lives in a private codebase; this wiki explains what the game does and how to get the most out of it.
+## Executive summary
 
-## What's in this wiki
+WorldArchitect.AI is a tabletop-style RPG that runs in your browser. The system runs the rules (initiative, dice, HP, spells, faction combat); an AI narrates the world around your choices. You steer the story two ways: **in-character actions** (what your character does) and **god-mode directives** (persistent rules you set that shape how the narration sounds). Campaigns can last a few scenes or several hundred, escalate from a single village to multiverse-spanning stakes, and support solo play, party play, or running a faction.
 
-| Section | What you'll find |
-|---------|------------------|
-| [Concepts](concepts/) | How each major system works: combat, dice, god mode, factions, level-up, character creation, living world |
-| [Entities](entities/) | The game itself, individual campaigns (case studies), characters |
-| [Comparisons](comparisons/) | WorldArchitect.AI vs other tools (AI Dungeon, etc.) |
-| [Queries](queries/) | Frequently asked questions answered in depth |
+This wiki is the player manual. It assumes you've signed up at [worldarchitect.ai](https://worldarchitect.ai) and want to know what to do next.
 
-## Quick start
+**What you'll find here:**
 
-New to the game? Read these in order:
+- **How to play** — your first 30 minutes, step by step.
+- **How to design a campaign** — pick a setting, write a god-mode header, plan an arc.
+- **How to prompt god mode** — write directives that actually change the prose.
+- **75 player user stories** — every feature in "as a player, I want…" form.
+- **System reference** — combat, dice, faction minigame, level-up, spells, character creation.
+- **Case studies** — a handful of published campaigns illustrating what works.
 
-1. **[What is WorldArchitect.AI?](entities/WorldArchitect.md)** — the 5-minute pitch.
-2. **[How to play](queries/how-to-play-worldai.md)** — your first 30 minutes.
-3. **[How to design a campaign](concepts/CampaignDesign.md)** — choosing a setting, opening scene, hooks.
-4. **[How to prompt god mode](concepts/GodModePrompting.md)** — make the narration sound the way you want.
-5. **[Player user stories](queries/PlayerUserStories.md)** — 75 concrete "as a player, I want..." stories organized by system.
+The case studies are illustrative, not normative. The system supports any setting (built-in or custom), any tone (stoic to comedic), and any power level (bounded L1-5 to sandbox god-tier). The wiki's recommendations are patterns — pick the ones that fit your campaign.
 
-## Tag index
+---
 
-Browse by topic:
+## Table of contents
 
-- Combat: see [Combat](concepts/Combat.md)
-- Dice: see [Dice](concepts/Dice.md)
-- Faction minigame: see [FactionSystem](concepts/FactionSystem.md)
-- Level-up: see [LevelUp](concepts/LevelUp.md)
-- Character creation: see [CharacterCreation](concepts/CharacterCreation.md)
-- God mode: see [GodMode](concepts/GodMode.md)
+### Start here
+
+| If you want to… | Read |
+|---|---|
+| Understand what the game is | [What is WorldArchitect.AI?](entities/WorldArchitect.md) |
+| Play your first session | [How to play — first 30 minutes](queries/how-to-play-worldai.md) |
+| Plan a campaign before launching | [How to design a campaign](concepts/CampaignDesign.md) |
+| Shape how the narration sounds | [How to prompt god mode](concepts/GodModePrompting.md) |
+| See every feature in one list | [75 player user stories](queries/PlayerUserStories.md) |
+
+### Core systems (concepts/)
+
+| System | What it covers |
+|---|---|
+| [Combat](concepts/Combat.md) | Initiative, turn order, action economy, AoE, conditions |
+| [Dice](concepts/Dice.md) + [DiceAuthenticity](concepts/DiceAuthenticity.md) + [DiceNotation](concepts/DiceNotation.md) + [DiceRollMechanics](concepts/DiceRollMechanics.md) | Server-side rolls, `1d20+5` notation, anti-fabrication |
+| [Spellcasting](concepts/Spellcasting.md) | Spell slots, preparation, concentration |
+| [Healing](concepts/Healing.md) + [RestAndDeath](concepts/RestAndDeath.md) | HP recovery, short/long rest, death saves |
+| [LootAndRewards](concepts/LootAndRewards.md) | Treasure, XP, items |
+| [LevelUp](concepts/LevelUp.md) + [LevelUpProgression](concepts/LevelUpProgression.md) + [ASI](concepts/ASI.md) + [Subclass](concepts/Subclass.md) | Level-up modal, long-term progression, ability-score-improvement choices |
+| [CharacterCreation](concepts/CharacterCreation.md) + [CharacterArchetype](concepts/CharacterArchetype.md) + [CharacterMode](concepts/CharacterMode.md) + [AbilityScores](concepts/AbilityScores.md) + [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) | Building a character: AI-gen vs hand-roll, classes, ability scores, advantage/disadvantage |
+| [CompanionArc](concepts/CompanionArc.md) + [CompanionPersonality](concepts/CompanionPersonality.md) + [NPCRelationships](concepts/NPCRelationships.md) | Companions and NPC reputation |
+| [FactionSystem](concepts/FactionSystem.md) + [FactionPlay](concepts/FactionPlay.md) + [FactionManagement](concepts/FactionManagement.md) + [FactionPower](concepts/FactionPower.md) + [FactionCampaigns](concepts/FactionCampaigns.md) | The faction minigame end-to-end |
+| [LivingWorld](concepts/LivingWorld.md) | World state evolves between player actions |
+| [GodMode](concepts/GodMode.md) + [GodModePrompting](concepts/GodModePrompting.md) | Player-supplied style rules that shape narration |
+| [CampaignDesign](concepts/CampaignDesign.md) + [CampaignWizard](concepts/CampaignWizard.md) | Designing a campaign, the 3-step creation flow |
+| [DnD5eRules](concepts/DnD5eRules.md) | The D&D 5th Edition rule spine |
+| [Initiative](concepts/Initiative.md) + [CombatVictoryProtocol](concepts/CombatVictoryProtocol.md) + [SmartSkillChecks](concepts/SmartSkillChecks.md) | Combat resolution |
+
+### Reference (entities/)
+
+| Page | What it is |
+|---|---|
+| [WorldArchitect](entities/WorldArchitect.md) | The game itself — 5-minute pitch |
+| [WorldAI](entities/WorldAI.md) / [WorldArchitectAI](entities/WorldArchitectAI.md) | Alias redirects |
+| [CampaignShowcase](entities/CampaignShowcase.md) | Gallery of example campaigns (case studies) |
+| [ItachiGaiden](entities/ItachiGaiden.md), [AristocratReborn](entities/AristocratReborn.md), [NocturneBg3](entities/NocturneBg3.md), [PrinceDaemon](entities/PrinceDaemon.md), [Daemon](entities/Daemon.md), [AegonTargaryen](entities/AegonTargaryen.md), [ItachiUchiha](entities/ItachiUchiha.md) | Individual published-campaign case studies |
+| [FrierenCampaign](entities/FrierenCampaign.md), [LukeCampaign](entities/LukeCampaign.md), [SarielCampaign](entities/SarielCampaign.md), [SarielCrossCampaign](entities/SarielCrossCampaign.md) | Additional archetype examples |
+| [ChiontharWyrm](entities/ChiontharWyrm.md) | Combat encounter example |
+| [FactionMinigame](entities/FactionMinigame.md) + [FactionBattleSim](entities/FactionBattleSim.md) + [FactionIntel](entities/FactionIntel.md) + [FactionRankings](entities/FactionRankings.md) | Faction minigame subsystems |
+| [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) | God mode's response shape |
+| [CampaignWizard](entities/CampaignWizard.md) | The creation-flow entity |
+
+### Comparisons
+
+- [vs AI Dungeon](comparisons/WorldArchitect-vs-AIDungeon.md) — structured D&D 5e GM vs freeform LLM storytelling
+- [vs RPG Bots](comparisons/WorldArchitect-vs-RPG-Bots.md) — vs Discord RPG bots
+
+### FAQ
+
+- [Dice FAQ](queries/DiceFAQ.md) — common dice questions
+- [GodMode FAQ](queries/GodModeFAQ.md) — common god-mode questions
+- [Faction FAQ](queries/FactionFAQ.md) — common faction questions
+
+### Meta
+
+- [SCHEMA.md](SCHEMA.md) — wiki conventions, frontmatter, tag taxonomy
+- [log.md](log.md) — change history
+- [index.md](index.md) — full page catalog
+
+---
+
+## Recommended reading order
+
+If this is your first time, read these four pages in order and skip the rest:
+
+1. **[What is WorldArchitect.AI?](entities/WorldArchitect.md)** — what the game does and doesn't do.
+2. **[How to play](queries/how-to-play-worldai.md)** — sign up, run the wizard, take your first action.
+3. **[How to design a campaign](concepts/CampaignDesign.md)** — pick a setting, write a god-mode header, plan your arc.
+4. **[How to prompt god mode](concepts/GodModePrompting.md)** — write directives that change how the narration sounds.
+
+Once you've played one session, read [Player User Stories](queries/PlayerUserStories.md) to see what's possible, then browse [Campaign Showcase](entities/CampaignShowcase.md) for inspiration.
 
 ## Contributing
 
