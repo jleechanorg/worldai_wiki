@@ -4,11 +4,7 @@ created: 2026-06-19
 updated: 2026-06-20
 type: query
 tags: [wa-tutorial, wa-faq]
-sources:
-  - ~/worldarchitect.ai/README.md
-  - ~/worldarchitect.ai/docs/user-stories-general.md
-  - ~/worldarchitect.ai/world_reference/campaign_module_dragon_knight.md
-  - ~/worldarchitect.ai/mvp_site/data/dragon_knight_canonical_description.txt
+sources: []
 screenshots:
   - queries/images/how-to-play-worldai/step1-dashboard-desktop.png
   - queries/images/how-to-play-worldai/step2-wizard-setting-desktop.png
@@ -24,7 +20,7 @@ screenshots:
 
 Your first 30 minutes with the game, step by step.
 
-All screenshots below are **real captures** taken from a live [worldarchitect.ai](https://worldarchitect.ai) instance running the canonical **Dragon Knight** campaign (`world_reference/campaign_module_dragon_knight.md`). Desktop shots are 1280×800; mobile shots are 390×844 (iPhone 12/13/14/15 standard).
+All screenshots below are **real captures** taken from a live [worldarchitect.ai](https://worldarchitect.ai) instance running the canonical **Dragon Knight** built-in campaign. Desktop shots are 1280×800; mobile shots are 390×844 (iPhone 12/13/14/15 standard).
 
 ## Before you start
 
@@ -55,7 +51,11 @@ From the dashboard, click "Start New Campaign". You'll see the [CampaignWizard](
 
 ## Step 3 — Pick a setting
 
-Either pick a built-in (**Dragon Knight**, Naruto, Game of Thrones, BG3, etc.) or describe your own. The example screenshots use the **Dragon Knight** built-in — `world_reference/campaign_module_dragon_knight.md` — because it's the canonical campaign and bypasses the LLM on first scene (fast-path SHA-256 match in `mvp_site/campaign_template_dragon_knight.py`).
+Either pick a built-in (**Dragon Knight**, Naruto, Game of Thrones, BG3, etc.) or describe your own. The example screenshots use the **Dragon Knight** built-in because it's the canonical campaign and produces the best-tuned opening scene for first-timers.
+
+After you make your pick and click **Next**, the wizard moves to **Step 2 — Launch**, where you confirm and click "Enter the World" to start the campaign.
+
+![Campaign Wizard — Step 2, Launch. Dragon Knight selected, title "Dragon Knight", character "Ser Arion". "Enter the World" button at the bottom](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
 
 **Recommendation for first-timers**: pick the **Dragon Knight Campaign** card. It's pre-selected by default. The system has full lore, a pre-built Ser Arion character (Lvl 1 Paladin, STR 16 / CON 14 / CHA 16), and the opening scene is well-tuned.
 
@@ -65,7 +65,7 @@ If you go custom, write 1-3 sentences describing your world in the **Setting/wor
 
 After you pick a built-in (Dragon Knight), the system pre-fills a character — Ser Arion for Dragon Knight. You'll see three character-creation paths the GM can take:
 
-1. **AI-generated (recommended for Dragon Knight)** — the system uses the canonical build from `mvp_site/data/dragon_knight_canonical_description.txt`.
+1. **AI-generated (recommended for Dragon Knight)** — the system uses the canonical Ser Arion build (Lvl 1 Paladin, STR 16 / CON 14 / CHA 16).
 2. **Hand-rolled** — click *Edit Character* and pick race, class, stats yourself.
 3. **Use a preset** — pick from the pre-built Ser Arion sheet (the default for Dragon Knight).
 
@@ -92,7 +92,7 @@ It establishes:
 
 ![Opening Scene #2 — Ser Arion riding The King's Ribbon with Ser Elian Thorne (idealist, left) and Ser Vespera Nyx (pragmatist, right). Three choice buttons (Scout the Camp / Address the Company / Ride Straight to the Gate) plus Custom Action](images/how-to-play-worldai/step6-opening-scene-desktop.png)
 
-**Same scene on mobile** (the choice stack vertically):
+**Same scene on mobile** (the choices stack vertically):
 
 ![Opening Scene mobile — choice buttons stack vertically, narration scrolled](images/how-to-play-worldai/step6-opening-scene-mobile.png)
 
@@ -128,7 +128,7 @@ The Dragon Knight campaign runs ~100 turns before the dragons (Aurum, Umbrax) st
 Add a god mode directive to refine. See [GodModePrompting](../concepts/GodModePrompting.md).
 
 ### "I died"
-Most campaigns have resurrection. Dragon Knight has the **Dragon Rescue** rule (lines 180-330 of `mvp_site/frontend_v1/js/campaign-wizard.js`) — if Ser Arion drops below 25% HP in the first 100 turns, a dragon intervenes to save them. If not, the campaign ends — start a new one with the lessons learned.
+Most campaigns have resurrection. Dragon Knight has the **Dragon Rescue** rule — if Ser Arion drops below 25% HP in the first 100 turns, a dragon intervenes to save them. If not, the campaign ends — start a new one with the lessons learned.
 
 ### "The campaign is too slow / too fast"
 Slow: ask the GM to skip ahead ("I time-skip a week").
@@ -155,17 +155,18 @@ That's the game. High variance is part of D&D. Plan around it: have backup optio
 
 ## Sources
 
-- `~/worldarchitect.ai/README.md` — quick-start.
-- `~/worldarchitect.ai/docs/user-stories-general.md` — full system coverage.
-- `~/worldarchitect.ai/world_reference/campaign_module_dragon_knight.md` — the canonical Dragon Knight world module (used for the screenshots above).
-- `~/worldarchitect.ai/mvp_site/data/dragon_knight_canonical_description.txt` — the canonical character build (Ser Arion, Lvl 1 Paladin).
+- [worldarchitect.ai README](https://github.com/jleechanorg/worldarchitect.ai/blob/main/README.md) — quick-start.
+- [worldarchitect.ai user stories](https://github.com/jleechanorg/worldarchitect.ai/blob/main/docs/user-stories-general.md) — full system coverage.
+- [Dragon Knight world module](https://github.com/jleechanorg/worldarchitect.ai/blob/main/world_reference/campaign_module_dragon_knight.md) — the canonical built-in campaign used in the screenshots above.
 
 ## Screenshot provenance
 
-All screenshots in this page were captured **2026-06-20** from a live local Flask server on `127.0.0.1:18081` (`jleechanorg/worldarchitect.ai` @ `91cbae0677`) with `TESTING_AUTH_BYPASS=true` and `?test_mode=true&test_user_id=demo`. The campaign ID for the Dragon Knight session shown is **`sXVHWBu34TP0qhPWLeBY`**.
+All screenshots in this page were captured **2026-06-20** from a live local development server running the latest `main` branch of [jleechanorg/worldarchitect.ai](https://github.com/jleechanorg/worldarchitect.ai), signed in via the development test-mode flow that bypasses real Google/Apple auth.
+
+The campaign ID for the Dragon Knight session shown is **`sXVHWBu34TP0qhPWLeBY`**.
 
 Captures were taken with **Playwright headless Chromium** at the following viewports:
 - Desktop: 1280×800
-- Mobile: 390×844 (iPhone 12/13/14 standard, `device_scale_factor=2`, `is_mobile=true`, `has_touch=true`)
+- Mobile: 390×844 (iPhone 12/13/14 standard)
 
 The session is real — the GM narration in the screenshots is generated by the live LLM, not a static fixture. The "Checking the rulebook..." overlay visible in `step7-first-action-desktop.png` is the production loading state during a real LLM call.
