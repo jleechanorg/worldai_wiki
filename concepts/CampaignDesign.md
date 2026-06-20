@@ -23,6 +23,48 @@ Most campaigns that fall flat fail for the same reasons:
 
 This guide fixes all of that. The recommendations here are patterns drawn from published campaigns — see [CampaignShowcase](../entities/CampaignShowcase.md) for specific examples. Pick the patterns that fit your setting.
 
+## Step 0 — Draft your campaign in a free chat LLM first
+
+The fastest way to blow through your WorldAI budget is to iterate your God Mode header against live campaign runs. Every "let me try the prompt one more time" is a paid scene you didn't need. The five failure modes above all show up on prompt #2, not scene #200 — so catch them in a free chat first, then bring the polished prompt to WorldAI.
+
+**The rule:** do not start a paid WorldAI campaign until you can paste your god-mode header into a chat LLM and have it produce a coherent 3-paragraph preview of scene one without flinching. If the preview is vague, your campaign will be vague.
+
+### Where to draft for free
+
+Pick whichever you already have an account on — the goal is iteration speed, not which LLM is best:
+
+- **God Mode chat** (inside WorldArchitect.AI) — the in-game God Mode is itself a chat LLM interface you can talk to like ChatGPT before you commit to a campaign. Use it to brainstorm settings, test directive wording, and stress-test opening scenes. No campaign-budget consumption while you're just chatting.
+- **ChatGPT** — paste a prompt, get a paragraph back, iterate.
+- **Gemini** — same idea, free tier.
+- **Claude** — same idea, free tier at claude.ai.
+
+Talk to whichever one you pick **just like an LLM chat**. Examples of what to type:
+
+> "I'm designing a Naruto-era Itachi campaign. Help me write a god-mode header. I want stoic tone, escalating power level, opening scene is the night of the Uchiha massacre. The character should be a member of ANBU."
+
+> "Here's my draft god-mode header: `<paste>`. What's vague about it? What would you ask me to clarify before you'd be willing to write scene 1 from it?"
+
+> "Here's my setting: `<paste>`. Suggest 3 alternative opening scenes that don't start in an inn."
+
+### The v4 Campaign Bible template
+
+If you want a structured starting point instead of freestyling, paste the **v4 Campaign Bible template** into ChatGPT / Gemini / Claude and iterate against it:
+
+> **[v4 Campaign Bible template →](https://docs.google.com/document/d/1kWl5zkpxMFO7tQb7C9NRuyhmgRKYmBIdHoNuWF9Q1fI/edit?tab=t.oayq6yj5q57b)**
+
+The template gives the LLM explicit instructions on tone, character architecture, faction structure, item frameworks, and progression tiers — so you get consistent, deep output instead of generic fantasy. Fill in the bracketed fields (`[Insert Tone]`, `[Insert Brief Concept]`) and the LLM will produce a full Campaign Bible you can mine for your god-mode header, directives, and opening scene.
+
+### What to bring back to WorldAI
+
+When your draft prompt passes the "paste-and-preview-scene-one" test, take it to WorldAI:
+
+- A **1-3 sentence god-mode header** (Step 4) you've already stress-tested for vagueness.
+- **1-3 directives** (Step 7) you've drafted and refined against the "do NOT include this" checklist.
+- An **opening scene** (Step 6) you've sanity-checked against the inn/dream/exposition anti-patterns.
+- A **tone** (Step 3) you've confirmed doesn't conflict with itself.
+
+Then — and only then — start the paid campaign.
+
 ## Step 1 — Pick a setting
 
 The setting is the world your story lives in. The system supports built-in settings plus custom:
