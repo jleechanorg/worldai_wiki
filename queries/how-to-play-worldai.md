@@ -26,7 +26,7 @@ You'll need:
 
 ## Step 2 — Open the Campaign Wizard
 
-From the dashboard, click "New Campaign". You'll see the [[concepts/CampaignWizard]] — three steps.
+From the dashboard, click "New Campaign". You'll see the [CampaignWizard](../concepts/CampaignWizard.md) — three steps.
 
 ## Step 3 — Pick a setting
 
@@ -34,7 +34,7 @@ Either pick a built-in (Naruto, Game of Thrones, BG3, etc.) or describe your own
 
 **Recommendation for first-timers**: pick a built-in setting. The system has lore for it, companions are pre-built, and you can focus on your character.
 
-If you go custom, write 1-3 sentences. See [[concepts/CampaignDesign]] Step 1.
+If you go custom, write 1-3 sentences. See [CampaignDesign](../concepts/CampaignDesign.md) Step 1.
 
 ## Step 4 — Create your character
 
@@ -91,7 +91,7 @@ Play continues turn by turn:
 
 ### "The narration doesn't match my character"
 
-Add a god mode directive to refine. See [[concepts/GodModePrompting]].
+Add a god mode directive to refine. See [GodModePrompting](../concepts/GodModePrompting.md).
 
 ### "I died"
 
@@ -113,15 +113,15 @@ That's the game. High variance is part of D&D. Plan around it: have backup optio
 ## After your first session
 
 - **Review**: what worked? what didn't?
-- **Save**: campaign state is auto-saved, but you can also export ([[queries/PlayerUserStories#US-072|download]]).
+- **Save**: campaign state is auto-saved, but you can also export ([PlayerUserStories](PlayerUserStories.md#US-072|download)).
 - **Iterate**: apply lessons to your next campaign.
 
 ## Next steps
 
-- Read [[concepts/GodModePrompting]] to learn how to shape narration.
-- Read [[concepts/CampaignDesign]] to plan your next campaign.
-- Read [[entities/CampaignShowcase]] for inspiration.
-- Read [[queries/PlayerUserStories]] for the full list of what the game can do.
+- Read [GodModePrompting](../concepts/GodModePrompting.md) to learn how to shape narration.
+- Read [CampaignDesign](../concepts/CampaignDesign.md) to plan your next campaign.
+- Read [CampaignShowcase](../entities/CampaignShowcase.md) for inspiration.
+- Read [PlayerUserStories](PlayerUserStories.md) for the full list of what the game can do.
 
 ## Sources
 

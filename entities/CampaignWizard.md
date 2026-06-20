@@ -9,7 +9,7 @@ sources: []
 
 # Campaign Wizard
 
-The 3-step UI flow for creating a new campaign. See [[concepts/CampaignWizard]] for the player-facing guide.
+The 3-step UI flow for creating a new campaign. See [CampaignWizard](../concepts/CampaignWizard.md) for the player-facing guide.
 
 ## The 3 steps
 

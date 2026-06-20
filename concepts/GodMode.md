@@ -27,7 +27,7 @@ Without god mode directives, the GM defaults to "balanced D&D 5e narrative" — 
 
 ## How to write good directives
 
-See [[concepts/GodModePrompting]] for the full guide. Quick formula:
+See [GodModePrompting](GodModePrompting.md) for the full guide. Quick formula:
 
 > X is/does Y. Avoid Z. Always W.
 
@@ -65,7 +65,7 @@ You can view and edit these from the campaign's settings panel during play.
 8. **Companion rules**: relationship dynamics, romance allowed, party banter level
 9. **World rules**: no resurrection, low magic, all-TPK-on-combat-failure, etc.
 
-See [[concepts/GodModePrompting]] for full examples of each.
+See [GodModePrompting](GodModePrompting.md) for full examples of each.
 
 ## Player tips
 

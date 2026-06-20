@@ -9,6 +9,6 @@ sources: []
 
 # WorldArchitectAI
 
-Alternate name for [[entities/WorldArchitect]]. The full canonical name is **WorldArchitect.AI**. This page exists so links using either spelling resolve.
+Alternate name for [WorldArchitect](WorldArchitect.md). The full canonical name is **WorldArchitect.AI**. This page exists so links using either spelling resolve.
 
-See [[entities/WorldArchitect]] for the full entry.
+See [WorldArchitect](WorldArchitect.md) for the full entry.

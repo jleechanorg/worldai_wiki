@@ -45,7 +45,7 @@ There's no way to "cheat" because there's no opportunity to cheat. The platform 
 - **Player wants to fudge a roll** ("Just say I rolled a 15"): the GM is the platform; it won't lie.
 - **Debug / replay mode**: campaign owners can view the roll log to audit outcomes.
 
-See [[concepts/Dice]], [[concepts/DiceRollMechanics]], [[queries/DiceFAQ]].
+See [Dice](Dice.md), [DiceRollMechanics](DiceRollMechanics.md), [DiceFAQ](../queries/DiceFAQ.md).
 
 ## Sources
 

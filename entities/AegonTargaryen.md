@@ -29,4 +29,4 @@ Appears in Game of Thrones-themed campaigns as:
 - **Alliances with Targaryens are complicated**: family drama is real.
 - **Dragons change the power dynamic**: be aware of his firepower.
 
-See [[concepts/NPCRelationships]], [[concepts/CompanionPersonality]].
+See [NPCRelationships](../concepts/NPCRelationships.md), [CompanionPersonality](../concepts/CompanionPersonality.md).

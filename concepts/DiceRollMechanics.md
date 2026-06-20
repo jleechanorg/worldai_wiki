@@ -40,4 +40,4 @@ What actually happens when a die is rolled.
 ## Sources
 
 - `~/worldarchitect.ai/docs/user-stories-general.md` (private) — US-002 through US-004.
-- See [[concepts/Dice]].
+- See [Dice](Dice.md).

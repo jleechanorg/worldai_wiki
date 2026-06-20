@@ -55,4 +55,4 @@ The grammar for describing a dice roll. WorldArchitect.AI supports standard D&D 
 - **Negative modifiers** can drop the result below 1 but never below the die's minimum. `1d20-5` is in `[0, 15]`.
 - **Critical hits** (nat 20 on attack roll) double the damage dice, not the modifier.
 
-See [[concepts/Dice]] for the broader dice system.
+See [Dice](Dice.md) for the broader dice system.

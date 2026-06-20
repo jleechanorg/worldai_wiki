@@ -19,45 +19,45 @@ This page links to player-facing concepts in this wiki:
 
 ### Character
 
-- [[concepts/AbilityScores]] — STR/DEX/CON/INT/WIS/CHA
-- [[concepts/ASI]] — Ability Score Improvements
-- [[concepts/Subclass]] — class specializations
-- [[concepts/CharacterCreation]] — building a character
-- [[concepts/CharacterArchetype]] — tank / striker / controller / support
+- [AbilityScores](AbilityScores.md) — STR/DEX/CON/INT/WIS/CHA
+- [ASI](ASI.md) — Ability Score Improvements
+- [Subclass](Subclass.md) — class specializations
+- [CharacterCreation](CharacterCreation.md) — building a character
+- [CharacterArchetype](CharacterArchetype.md) — tank / striker / controller / support
 
 ### Combat
 
-- [[concepts/Combat]] — combat system
-- [[concepts/Initiative]] — turn order
-- [[concepts/AdvantageDisadvantage]] — roll modifiers
-- [[concepts/CombatVictoryProtocol]] — how combats end
-- [[concepts/RestAndDeath]] — recovery & dying
+- [Combat](Combat.md) — combat system
+- [Initiative](Initiative.md) — turn order
+- [AdvantageDisadvantage](AdvantageDisadvantage.md) — roll modifiers
+- [CombatVictoryProtocol](CombatVictoryProtocol.md) — how combats end
+- [RestAndDeath](RestAndDeath.md) — recovery & dying
 
 ### Magic
 
-- [[concepts/Spellcasting]] — slots, prep, casting
+- [Spellcasting](Spellcasting.md) — slots, prep, casting
 
 ### Skills & checks
 
-- [[concepts/SmartSkillChecks]] — automatic skill selection
-- [[concepts/Dice]] — dice rolling
-- [[concepts/DiceNotation]] — dice grammar
+- [SmartSkillChecks](SmartSkillChecks.md) — automatic skill selection
+- [Dice](Dice.md) — dice rolling
+- [DiceNotation](DiceNotation.md) — dice grammar
 
 ### Equipment & loot
 
-- [[concepts/LootAndRewards]] — XP, gold, items
-- (Inventory & equipment: see [[queries/PlayerUserStories#US-045|US-045]])
+- [LootAndRewards](LootAndRewards.md) — XP, gold, items
+- (Inventory & equipment: see [PlayerUserStories](../queries/PlayerUserStories.md#US-045|US-045))
 
 ### Faction minigame (5e-derived, custom)
 
-- [[concepts/FactionSystem]] — full system
-- [[concepts/FactionPower]] — power calculation
-- [[concepts/FactionPlay]] — faction turn flow
+- [FactionSystem](FactionSystem.md) — full system
+- [FactionPower](FactionPower.md) — power calculation
+- [FactionPlay](FactionPlay.md) — faction turn flow
 
 ### World
 
-- [[concepts/LivingWorld]] — world advances between actions
-- [[concepts/NPCRelationships]] — NPCs have agendas
+- [LivingWorld](LivingWorld.md) — world advances between actions
+- [NPCRelationships](NPCRelationships.md) — NPCs have agendas
 
 ## What's not from 5e
 
@@ -71,4 +71,4 @@ Custom settings (Naruto, Game of Thrones, BG3, isekai) adapt the 5e spine to the
 - **Use this wiki as a quick-reference**: each concept page links to relevant SRD topics.
 - **Custom settings adapt 5e**: Naruto's "Sharingan" is a class feature; Game of Thrones' "house allegiances" are background features.
 
-See [[queries/PlayerUserStories]] for the full coverage.
+See [PlayerUserStories](../queries/PlayerUserStories.md) for the full coverage.

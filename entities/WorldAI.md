@@ -9,6 +9,6 @@ sources: []
 
 # WorldAI
 
-**WorldAI** is Jeffrey Lee-Chan's short alias for [[entities/WorldArchitect]] (the same game at [worldarchitect.ai](https://worldarchitect.ai)). Used informally in Slack messages and project names.
+**WorldAI** is Jeffrey Lee-Chan's short alias for [WorldArchitect](WorldArchitect.md) (the same game at [worldarchitect.ai](https://worldarchitect.ai)). Used informally in Slack messages and project names.
 
-If a doc or commit message says "WorldAI", it means WorldArchitect.AI. See [[entities/WorldArchitect]] for the full entry.
+If a doc or commit message says "WorldAI", it means WorldArchitect.AI. See [WorldArchitect](WorldArchitect.md) for the full entry.

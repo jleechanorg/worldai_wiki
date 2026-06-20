@@ -58,6 +58,6 @@ Like ability checks but resisted against a DC set by an effect. Each class is pr
 
 ## Advantage & disadvantage
 
-Roll twice, take the higher (advantage) or lower (disadvantage). See [[concepts/AdvantageDisadvantage]].
+Roll twice, take the higher (advantage) or lower (disadvantage). See [AdvantageDisadvantage](AdvantageDisadvantage.md).
 
-See [[concepts/Combat]], [[concepts/ASI]].
+See [Combat](Combat.md), [ASI](ASI.md).

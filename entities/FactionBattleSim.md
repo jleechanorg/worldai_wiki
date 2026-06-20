@@ -20,7 +20,7 @@ The system that resolves faction-vs-faction combat. When you declare an attack o
 
 ## What's NOT the battle sim
 
-- **Personal combat**: your character fighting an enemy in initiative order is NOT the faction battle sim. That's regular combat ([[concepts/Combat]]).
+- **Personal combat**: your character fighting an enemy in initiative order is NOT the faction battle sim. That's regular combat ([Combat](../concepts/Combat.md)).
 - **Diplomacy**: negotiating with another faction is a separate action.
 - **Single duels**: 1v1 fights use the regular combat system.
 
@@ -30,4 +30,4 @@ The system that resolves faction-vs-faction combat. When you declare an attack o
 - **Recruit named NPCs**: each named member contributes more power than generic troops.
 - **Diversify resources**: a faction with all melee is vulnerable to mages.
 
-See [[concepts/FactionSystem]], [[concepts/FactionPower]], [[concepts/FactionPlay]].
+See [FactionSystem](../concepts/FactionSystem.md), [FactionPower](../concepts/FactionPower.md), [FactionPlay](../concepts/FactionPlay.md).

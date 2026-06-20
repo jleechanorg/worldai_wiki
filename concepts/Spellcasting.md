@@ -43,4 +43,4 @@ Level 0 spells. Unlimited casts. Examples: Fire Bolt, Eldritch Blast, Sacred Fla
 - **Concentration is fragile**: avoid stacking concentration spells. If you're concentrating on Bless, don't cast another concentration spell.
 - **Upcasting is strong**: a 3rd-level Fireball (8d6) is much better than a 1st-level Magic Missile (3d4+3).
 
-See [[concepts/CharacterCreation]], [[concepts/LevelUp]].
+See [CharacterCreation](CharacterCreation.md), [LevelUp](LevelUp.md).

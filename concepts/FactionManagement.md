@@ -39,4 +39,4 @@ Track relationships with other factions:
 
 Diplomacy takes influence and time. Alliances are powerful but fragile.
 
-See [[concepts/FactionSystem]], [[concepts/FactionPlay]].
+See [FactionSystem](FactionSystem.md), [FactionPlay](FactionPlay.md).

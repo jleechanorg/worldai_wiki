@@ -86,5 +86,5 @@ This is a tradeoff: faster power progression feels rewarding but can compress na
 ## Sources
 
 - `~/llm_wiki/raw/campaigns/Aristocrat reborn V2_MfM8TFz7.txt` (280 KB, 50 scenes).
-- See [[concepts/CampaignDesign]] for prompt-length guidance.
-- See [[entities/ItachiGaiden]] for the escalation-curve contrast.
+- See [CampaignDesign](../concepts/CampaignDesign.md) for prompt-length guidance.
+- See [ItachiGaiden](ItachiGaiden.md) for the escalation-curve contrast.

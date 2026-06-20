@@ -21,11 +21,11 @@ WorldArchitect.AI includes a complete faction minigame: lead a faction, gather i
 
 ## Core subsystems
 
-- **Intel** ([[entities/FactionIntel]]): information-gathering. Higher intel = better combat odds against that faction.
-- **Combat** ([[entities/FactionBattleSim]]): faction-vs-faction battle resolution. Doesn't replace personal combat; runs alongside it.
-- **Power** ([[concepts/FactionPower]]): calculated from members, resources, territory, equipment.
-- **Rankings** ([[entities/FactionRankings]]): how your faction is ranked against others. Climb by winning battles and growing power.
-- **State util** ([[entities/FactionMinigame]]): the orchestration layer that ties everything together.
+- **Intel** ([FactionIntel](../entities/FactionIntel.md)): information-gathering. Higher intel = better combat odds against that faction.
+- **Combat** ([FactionBattleSim](../entities/FactionBattleSim.md)): faction-vs-faction battle resolution. Doesn't replace personal combat; runs alongside it.
+- **Power** ([FactionPower](FactionPower.md)): calculated from members, resources, territory, equipment.
+- **Rankings** ([FactionRankings](../entities/FactionRankings.md)): how your faction is ranked against others. Climb by winning battles and growing power.
+- **State util** ([FactionMinigame](../entities/FactionMinigame.md)): the orchestration layer that ties everything together.
 
 ## How a faction turn works
 
@@ -52,7 +52,7 @@ The 600+ scene Nocturne BG3 V3 campaign is a faction-mode showcase. The player l
 - Territory expansion into the Underdark
 - Power escalation to mid-game power levels
 
-See [[entities/NocturneBg3]] for the case study.
+See [NocturneBg3](../entities/NocturneBg3.md) for the case study.
 
 ## Player tips
 
@@ -61,7 +61,7 @@ See [[entities/NocturneBg3]] for the case study.
 - **Recruit named NPCs**: a party with named characters (each with stats) fights better than a horde of generic soldiers.
 - **Watch the rankings**: rankings determine who attacks you. Climb too fast and rivals notice.
 
-See [[concepts/FactionPlay]], [[concepts/FactionPower]], [[concepts/FactionManagement]].
+See [FactionPlay](FactionPlay.md), [FactionPower](FactionPower.md), [FactionManagement](FactionManagement.md).
 
 ## Sources
 

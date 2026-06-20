@@ -46,4 +46,4 @@ Common sources:
 - **Build for advantage**: features that grant advantage (e.g., Reckless Attack, Sneak Attack setup, Faerie Fire) are powerful because they double your chance of success on the highest-variance die.
 - **Avoid disadvantage**: a -5 to hit is roughly equivalent to one source of disadvantage. Avoid conditions that impose it.
 
-See [[concepts/AbilityScores]], [[concepts/DiceNotation]].
+See [AbilityScores](AbilityScores.md), [DiceNotation](DiceNotation.md).

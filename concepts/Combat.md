@@ -27,7 +27,7 @@ The active actor is highlighted in the UI and in narration. The current turn num
 
 Conditions are 5e-standard: Blinded, Charmed, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious. Each grants mechanical advantages/disadvantages and limits actions.
 
-See [[concepts/Dice]] for how attack rolls and damage rolls work.
+See [Dice](Dice.md) for how attack rolls and damage rolls work.
 
 ## Reactions
 
@@ -35,7 +35,7 @@ Some class features and spells trigger as reactions. The system prompts when a r
 
 ## Rest & recovery
 
-See [[concepts/RestAndDeath]]. Short rest = spend hit dice to recover HP. Long rest = recover all HP, half spent hit dice, restore most ability uses.
+See [RestAndDeath](RestAndDeath.md). Short rest = spend hit dice to recover HP. Long rest = recover all HP, half spent hit dice, restore most ability uses.
 
 ## Death & dying
 
@@ -47,7 +47,7 @@ At 0 HP, a creature is unconscious and starts making death saving throws (`1d20`
 - **Position matters**: ranged attackers should be on high ground. Melee should flank. AoE spells work better when enemies are clustered.
 - **Conditions win fights**: Stunned, Restrained, Prone, and Frightened swing combats harder than raw damage.
 
-See [[concepts/Initiative]], [[concepts/Dice]], [[concepts/RestAndDeath]], [[concepts/AbilityScores]].
+See [Initiative](Initiative.md), [Dice](Dice.md), [RestAndDeath](RestAndDeath.md), [AbilityScores](AbilityScores.md).
 
 ## Sources
 

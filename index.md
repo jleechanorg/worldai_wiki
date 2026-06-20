@@ -32,7 +32,7 @@
 
 ### Published-campaign case studies
 
-These are individual player-run campaigns documented as illustrations of how the system handles specific archetypes. Each is a *case study*, not a template — see [[entities/CampaignShowcase]] for context.
+These are individual player-run campaigns documented as illustrations of how the system handles specific archetypes. Each is a *case study*, not a template — see [CampaignShowcase](entities/CampaignShowcase.md) for context.
 
 - [ItachiGaiden](entities/ItachiGaiden.md) — Naruto ANBU-era case study (long escalation).
 - [AristocratReborn](entities/AristocratReborn.md) — Isekai character-study case study (fast escalation).
@@ -98,4 +98,4 @@ These are individual player-run campaigns documented as illustrations of how the
 
 - [SCHEMA](SCHEMA.md) — Wiki conventions, frontmatter rules, tag taxonomy.
 - [log](log.md) — Chronological action log.
-- [README](../README.md) — Top-level guide.
+- [README](README.md) — Top-level guide.

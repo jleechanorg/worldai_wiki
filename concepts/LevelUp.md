@@ -60,4 +60,4 @@ The modal locks narration until you've completed it. This prevents the GM from n
 - **Don't delay**: leveling gives you power. Don't bench XP.
 - **Read your new features**: when you level, take a moment to understand your new abilities.
 
-See [[concepts/ASI]], [[concepts/Subclass]], [[concepts/LevelUpProgression]] for long-term patterns.
+See [ASI](ASI.md), [Subclass](Subclass.md), [LevelUpProgression](LevelUpProgression.md) for long-term patterns.

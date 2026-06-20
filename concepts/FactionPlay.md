@@ -33,7 +33,7 @@ A faction turn is a discrete planning + resolution cycle. The system prompts you
 
 ## Combat resolution
 
-When two factions fight, the system runs a [[entities/FactionBattleSim]]:
+When two factions fight, the system runs a [FactionBattleSim](../entities/FactionBattleSim.md):
 1. Power comparison (with intel modifier).
 2. Roll for initiative, casualties, outcome.
 3. Apply consequences: member losses, territory changes, reputation shifts.
@@ -44,4 +44,4 @@ When two factions fight, the system runs a [[entities/FactionBattleSim]]:
 - **Balance offense and defense**: an undefended faction is a target.
 - **Build relationships**: NPC factions can be allies or rivals. Diplomacy matters.
 
-See [[concepts/FactionSystem]], [[concepts/FactionPower]], [[entities/NocturneBg3]] for the case study.
+See [FactionSystem](FactionSystem.md), [FactionPower](FactionPower.md), [NocturneBg3](../entities/NocturneBg3.md) for the case study.

@@ -25,11 +25,11 @@ Common dice questions answered.
 
 ## Q: What does "1d20+5" mean?
 
-**A**: Roll 1 twenty-sided die, add 5. The +5 is typically your attack bonus or skill modifier. See [[concepts/DiceNotation]].
+**A**: Roll 1 twenty-sided die, add 5. The +5 is typically your attack bonus or skill modifier. See [DiceNotation](../concepts/DiceNotation.md).
 
 ## Q: What's advantage?
 
-**A**: Roll 2d20, take the higher. Common when you have a tactical advantage (flanking, target prone, etc.). See [[concepts/AdvantageDisadvantage]].
+**A**: Roll 2d20, take the higher. Common when you have a tactical advantage (flanking, target prone, etc.). See [AdvantageDisadvantage](../concepts/AdvantageDisadvantage.md).
 
 ## Q: What's disadvantage?
 
@@ -60,7 +60,7 @@ Common dice questions answered.
 
 ## Q: Can I use a higher-level slot to upcast a spell?
 
-**A**: Yes, if the spell has an upcast effect. For example, Fireball at 4th level does +1d6 per slot level above 3rd. See [[concepts/Spellcasting]].
+**A**: Yes, if the spell has an upcast effect. For example, Fireball at 4th level does +1d6 per slot level above 3rd. See [Spellcasting](../concepts/Spellcasting.md).
 
 ## Q: Why is my character so squishy?
 
@@ -71,10 +71,10 @@ Common dice questions answered.
 
 ## Q: What is a death save?
 
-**A**: When you drop to 0 HP, you roll a death save each turn: 10+ = success, 9 or below = failure. Three successes stabilize you. Three failures kill you. See [[concepts/RestAndDeath]].
+**A**: When you drop to 0 HP, you roll a death save each turn: 10+ = success, 9 or below = failure. Three successes stabilize you. Three failures kill you. See [RestAndDeath](../concepts/RestAndDeath.md).
 
 ## Q: Can I bring back a dead character?
 
 **A**: Depends on the campaign. Standard D&D has resurrection magic (Revivify, Raise Dead). Some campaigns disable resurrection (no-rez worlds).
 
-See [[concepts/DiceAuthenticity]] for more.
+See [DiceAuthenticity](../concepts/DiceAuthenticity.md) for more.

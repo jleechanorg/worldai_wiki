@@ -24,7 +24,7 @@ Standard D&D 5e notation is supported:
 | `1d20+5 adv` | Roll 1d20+5 with advantage (roll twice, take higher) |
 | `1d20+5 dis` | Roll 1d20+5 with disadvantage (roll twice, take lower) |
 
-See [[concepts/DiceNotation]] for the full grammar.
+See [DiceNotation](DiceNotation.md) for the full grammar.
 
 ## How it works
 
@@ -59,7 +59,7 @@ The LLM does NOT generate dice results. The platform rolls the dice using its ow
 - **Modifiers scale**: at high levels, your +15 modifier matters more than the d20. A level 20 fighter rarely misses.
 - **Use advantage**: every point of advantage roughly equals +5 in expected value.
 
-See [[concepts/DiceAuthenticity]], [[concepts/DiceNotation]], [[concepts/DiceRollMechanics]], [[concepts/AbilityScores]].
+See [DiceAuthenticity](DiceAuthenticity.md), [DiceNotation](DiceNotation.md), [DiceRollMechanics](DiceRollMechanics.md), [AbilityScores](AbilityScores.md).
 
 ## Sources
 

@@ -36,7 +36,7 @@ The Nocturne BG3 V3 campaign follows this pattern:
 3. **Power gain**: defeated faction's resources add to your power.
 4. **Ranking climb**: higher ranking attracts more rivals.
 
-This is the same loop the [Faction System documentation](FactionSystem.md) describes, played out over 600 scenes.
+This is the same loop the [Faction System documentation](../concepts/FactionSystem.md) describes, played out over 600 scenes.
 
 ### 3. Diplomacy matters
 
@@ -61,7 +61,7 @@ The arc mirrors a typical BG3 run: local → regional → planar.
 
 ## Source notes
 
-The 600+ per-scene entries live in `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-XXX.md` (numbered 001 through 600+). Each entry is a single scene dump. For the player-facing wiki, we synthesize them rather than copy them — see [[concepts/FactionPlay]] and [[concepts/FactionSystem]] for the gameplay loop.
+The 600+ per-scene entries live in `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-XXX.md` (numbered 001 through 600+). Each entry is a single scene dump. For the player-facing wiki, we synthesize them rather than copy them — see [FactionPlay](../concepts/FactionPlay.md) and [FactionSystem](../concepts/FactionSystem.md) for the gameplay loop.
 
 ## Key takeaways for your own campaign
 
@@ -74,4 +74,4 @@ The 600+ per-scene entries live in `~/llm_wiki/wiki/sources/faction-nocturne-bg3
 ## Sources
 
 - `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-*.md` (600+ files).
-- See [[concepts/FactionSystem]], [[concepts/FactionPlay]], [[concepts/FactionPower]].
+- See [FactionSystem](../concepts/FactionSystem.md), [FactionPlay](../concepts/FactionPlay.md), [FactionPower](../concepts/FactionPower.md).

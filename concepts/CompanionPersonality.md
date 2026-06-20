@@ -39,4 +39,4 @@ Companions have story arcs:
 - Approval: companions approve or disapprove of player choices. High approval unlocks bonus scenes.
 - Romance: some companions have romance arcs (player choice to pursue or not).
 
-See [[concepts/CompanionArc]], [[concepts/NPCRelationships]].
+See [CompanionArc](CompanionArc.md), [NPCRelationships](NPCRelationships.md).

@@ -11,7 +11,7 @@ sources: []
 
 A specific NPC archetype from the House of the Dragon / Game of Thrones setting. A charming, dangerous prince with his own agenda.
 
-See [[entities/Daemon]] for the personality archetype. Prince Daemon is a canonical example.
+See [Daemon](Daemon.md) for the personality archetype. Prince Daemon is a canonical example.
 
 ## In campaigns
 
@@ -26,4 +26,4 @@ Daemon appears in Game of Thrones-themed campaigns as:
 - **Match his energy**: he respects boldness.
 - **Don't trust fully**: he has his own goals.
 
-See [[concepts/NPCRelationships]], [[concepts/CompanionPersonality]].
+See [NPCRelationships](../concepts/NPCRelationships.md), [CompanionPersonality](../concepts/CompanionPersonality.md).

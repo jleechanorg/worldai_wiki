@@ -43,4 +43,4 @@ Beyond the raw roll, the system considers:
 - **Use Help**: an ally's Help action gives you advantage on their check.
 - **Cantrips add up**: Guidance is +1d4 per use, free.
 
-See [[concepts/AbilityScores]], [[concepts/DiceNotation]].
+See [AbilityScores](AbilityScores.md), [DiceNotation](DiceNotation.md).

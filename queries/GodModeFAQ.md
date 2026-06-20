@@ -17,7 +17,7 @@ Common questions about god mode and directives.
 1. **God Mode header** (set at campaign creation): character + setting.
 2. **god_mode_directives** (added during play): ongoing style rules.
 
-See [[concepts/GodMode]].
+See [GodMode](../concepts/GodMode.md).
 
 ## Q: How do I add a directive?
 
@@ -57,11 +57,11 @@ See [[concepts/GodMode]].
 
 > Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology (e.g., 'math', 'laboratory', 'geometry'). He speaks with polite authority and views his power as a necessary, heavy burden for the sake of peace.
 
-See [[entities/ItachiGaiden]] for the full case study.
+See [ItachiGaiden](../entities/ItachiGaiden.md) for the full case study.
 
 ## Q: How do I write my first directive?
 
-**A**: Use the formula: "X is/does Y. Avoid Z. Always W." See [[concepts/GodModePrompting]] for the full guide.
+**A**: Use the formula: "X is/does Y. Avoid Z. Always W." See [GodModePrompting](../concepts/GodModePrompting.md) for the full guide.
 
 ## Q: Can I share directives between campaigns?
 
@@ -83,4 +83,4 @@ See [[entities/ItachiGaiden]] for the full case study.
 
 **A**: Per-campaign. Each campaign has its own `custom_campaign_state.god_mode_directives` list.
 
-See [[concepts/GodMode]], [[concepts/GodModePrompting]] for full details.
+See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePrompting.md) for full details.

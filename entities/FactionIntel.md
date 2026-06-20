@@ -29,4 +29,4 @@ The information-gathering subsystem of the faction minigame. Higher intel = bett
 - **Decoy intel**: send fake scouts to mislead the rival.
 - **Counter-intel**: defend against enemy scouts (costs resources).
 
-See [[concepts/FactionSystem]], [[concepts/FactionPower]].
+See [FactionSystem](../concepts/FactionSystem.md), [FactionPower](../concepts/FactionPower.md).

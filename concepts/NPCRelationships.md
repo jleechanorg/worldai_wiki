@@ -46,7 +46,7 @@ NPCs have relationships with each other:
 - Faction membership
 - Mentorship
 
-These relationships drive NPC behavior when the player isn't directly involved (see [[concepts/LivingWorld]]).
+These relationships drive NPC behavior when the player isn't directly involved (see [LivingWorld](LivingWorld.md)).
 
 ## Personality (MBTI / alignment)
 
@@ -61,4 +61,4 @@ Some NPCs are tagged with MBTI types and D&D alignments (e.g., "INTJ, Lawful Neu
 - **Watch who NPCs trust**: an NPC who trusts you will share intel about their rivals.
 - **Beware of betrayal**: high trust can be exploited by evil NPCs.
 
-See [[concepts/CompanionPersonality]], [[concepts/LivingWorld]], [[concepts/TrustReputation]].
+See [CompanionPersonality](CompanionPersonality.md), [LivingWorld](LivingWorld.md), [TrustReputation](TrustReputation.md).

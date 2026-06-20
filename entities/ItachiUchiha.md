@@ -9,7 +9,7 @@ sources: []
 
 # Itachi Uchiha
 
-Example character archetype from the Naruto setting. The Itachi V2 campaign ([[entities/ItachiGaiden]]) is built around this character.
+Example character archetype from the Naruto setting. The Itachi V2 campaign ([ItachiGaiden](ItachiGaiden.md)) is built around this character.
 
 ## Character concept
 
@@ -28,6 +28,6 @@ The system translates Itachi into 5e-mechanical terms:
 
 - **Gestalt builds are powerful**: combining two classes gives you broad abilities.
 - **Sharingan analog**: in 5e terms, advantage on attack rolls + read opponent's action.
-- **The "weight of duty" trope**: works well with stoic prose directives ([[entities/ItachiGaiden]] directive example).
+- **The "weight of duty" trope**: works well with stoic prose directives ([ItachiGaiden](ItachiGaiden.md) directive example).
 
-See [[entities/ItachiGaiden]] for the full case study.
+See [ItachiGaiden](ItachiGaiden.md) for the full case study.

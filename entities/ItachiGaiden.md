@@ -124,5 +124,5 @@ This is a "campaign continues" ending. The state is preserved; the next session 
 
 - `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b.txt` (1.27 MB, 432 scenes).
 - `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b_game_state.json` (152.8 KB game state).
-- See [[concepts/GodModePrompting]] for directive-writing lessons.
-- See [[concepts/CampaignDesign]] for design lessons.
+- See [GodModePrompting](../concepts/GodModePrompting.md) for directive-writing lessons.
+- See [CampaignDesign](../concepts/CampaignDesign.md) for design lessons.

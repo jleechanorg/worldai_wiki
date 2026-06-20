@@ -48,4 +48,4 @@ When generating narration, the system reads `custom_campaign_state.god_mode_dire
 
 The directive successfully shaped the second version.
 
-See [[concepts/GodMode]], [[concepts/GodModePrompting]], [[entities/ItachiGaiden]].
+See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePrompting.md), [ItachiGaiden](ItachiGaiden.md).

@@ -33,4 +33,4 @@ When the player interacts with such an NPC, the dialog agent uses the tags as a 
 - **Antagonists with MBTI tags** are predictable but not simple.
 - **Build relationships**: even antagonists can become allies if their goals align with yours.
 
-See [[concepts/NPCRelationships]], [[concepts/CompanionPersonality]].
+See [NPCRelationships](../concepts/NPCRelationships.md), [CompanionPersonality](../concepts/CompanionPersonality.md).

@@ -1,0 +1,65 @@
+name: Wiki link lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly HTTP check (Mondays 09:00 UTC) — catches external link rot
+    - cron: "0 9 * * 1"
+
+jobs:
+  lint:
+    name: Lint (local link integrity)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+
+      - name: Run pytest (wikilink + markdown link regression tests)
+        run: python -m pytest tests/ -v -m "not slow"
+
+      - name: Run wikilink linter (fails if any [[wikilink]] or .md link is broken)
+        run: python scripts/lint_wikilinks.py
+
+  http-links:
+    name: HTTP link check (external + GitHub blob URLs)
+    # Only run on push to main and weekly schedule — PRs skip this to avoid
+    # rate-limiting and to keep PR checks fast.
+    if: github.event_name == 'push' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+
+      - name: Check internal GitHub blob URLs
+        run: |
+          python scripts/check_http_links.py --github-only --workers 4
+
+      - name: Check external HTTP(S) links
+        # Continue even if external links fail (external sites go down)
+        # but still report the count.
+        run: |
+          python scripts/check_http_links.py --external-only --workers 8 || true
+
+      - name: Run slow integration tests (HTTP)
+        run: python -m pytest tests/ -v -m slow

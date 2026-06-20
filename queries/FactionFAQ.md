@@ -13,11 +13,11 @@ Common questions about the faction minigame.
 
 ## Q: What is faction mode?
 
-**A**: An opt-in game mode where you lead a faction. You manage resources, gather intel, fight rivals, climb rankings. See [[concepts/FactionSystem]].
+**A**: An opt-in game mode where you lead a faction. You manage resources, gather intel, fight rivals, climb rankings. See [FactionSystem](../concepts/FactionSystem.md).
 
 ## Q: When should I enable faction mode?
 
-**A**: At campaign creation. Toggle it on in the [[concepts/CampaignWizard]] step 1.
+**A**: At campaign creation. Toggle it on in the [CampaignWizard](../concepts/CampaignWizard.md) step 1.
 
 ## Q: Can I disable it later?
 
@@ -31,11 +31,11 @@ Common questions about the faction minigame.
 - Defeating rival factions (their resources become yours).
 - Buying better equipment.
 
-See [[concepts/FactionPower]].
+See [FactionPower](../concepts/FactionPower.md).
 
 ## Q: How does intel work?
 
-**A**: Send scouts to gather intel on a rival. Intel gives you combat bonuses when you attack that rival. Without intel, you fight blind. See [[entities/FactionIntel]].
+**A**: Send scouts to gather intel on a rival. Intel gives you combat bonuses when you attack that rival. Without intel, you fight blind. See [FactionIntel](../entities/FactionIntel.md).
 
 ## Q: How do rankings work?
 
@@ -47,7 +47,7 @@ See [[concepts/FactionPower]].
 
 ## Q: What if I ignore my faction for a while?
 
-**A**: After 3 turns, the system raises a reminder. After 5 turns, a warning. After 10 turns, your faction starts to suffer (members leave, rivals attack). See [[queries/PlayerUserStories#US-057|US-057]].
+**A**: After 3 turns, the system raises a reminder. After 5 turns, a warning. After 10 turns, your faction starts to suffer (members leave, rivals attack). See [PlayerUserStories](PlayerUserStories.md#US-057|US-057).
 
 ## Q: Can I lead multiple factions?
 
@@ -55,11 +55,11 @@ See [[concepts/FactionPower]].
 
 ## Q: How is faction combat different from personal combat?
 
-**A**: Faction combat is automated by the [[entities/FactionBattleSim]]. You declare strategy; the simulator resolves. Personal combat is turn-by-turn with initiative.
+**A**: Faction combat is automated by the [FactionBattleSim](../entities/FactionBattleSim.md). You declare strategy; the simulator resolves. Personal combat is turn-by-turn with initiative.
 
 ## Q: What resources do I need to manage?
 
-**A**: Gold, influence, materials, members, territory. See [[concepts/FactionManagement]].
+**A**: Gold, influence, materials, members, territory. See [FactionManagement](../concepts/FactionManagement.md).
 
 ## Q: Can my faction be destroyed?
 
@@ -73,4 +73,4 @@ See [[concepts/FactionPower]].
 
 **A**: From the Nocturne BG3 V3 case study: intel → combat → power is the core loop. Diversify resources, recruit named NPCs, and watch your ranking.
 
-See [[entities/NocturneBg3]] for the full case study.
+See [NocturneBg3](../entities/NocturneBg3.md) for the full case study.

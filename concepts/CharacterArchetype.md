@@ -55,4 +55,4 @@ Many builds are hybrids:
 - Ranger: striker + controller
 - Warlock: striker + controller
 
-See [[concepts/CharacterCreation]] for which archetype fits your playstyle.
+See [CharacterCreation](CharacterCreation.md) for which archetype fits your playstyle.

@@ -15,7 +15,7 @@ The game world continues to evolve between player actions. NPCs pursue agendas, 
 
 When you take a long rest or a long time passes in-fiction, the world state advances:
 - **NPCs make decisions**: based on their agendas, even when the player isn't watching.
-- **Factions act**: see [[concepts/FactionPlay]].
+- **Factions act**: see [FactionPlay](FactionPlay.md).
 - **Events fire**: scheduled plot events, random encounters, seasonal changes.
 - **Time passes**: days turn into weeks; weeks into months.
 
@@ -33,7 +33,7 @@ This makes choices feel weighty and time feel real.
 
 The LivingWorldEngine runs background simulations:
 1. **NPC agendas**: each NPC has goals. Periodically, they take steps toward their goals.
-2. **Faction turns**: see [[concepts/FactionPlay]].
+2. **Faction turns**: see [FactionPlay](FactionPlay.md).
 3. **Time events**: scheduled events tied to in-world dates.
 4. **Random encounters**: low-probability events that fire when conditions are met.
 
@@ -45,4 +45,4 @@ When you return from a long rest, the system surfaces what changed.
 - **Use informants**: hire NPCs to keep you informed about world events.
 - **Engage with NPC agendas**: NPCs who like you will tell you when they're planning something; NPCs who hate you will scheme against you in silence.
 
-See [[concepts/FactionSystem]], [[concepts/NPCRelationships]], [[concepts/CampaignDesign]].
+See [FactionSystem](FactionSystem.md), [NPCRelationships](NPCRelationships.md), [CampaignDesign](CampaignDesign.md).

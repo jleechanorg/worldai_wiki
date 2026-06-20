@@ -31,4 +31,4 @@ Recovering HP during and after combat.
 - **Don't out-heal damage**: in a tough fight, healing is a band-aid. Kill the enemy faster.
 - **Long-rest between dungeons**: don't enter a new dungeon at half HP.
 
-See [[concepts/Combat]], [[concepts/RestAndDeath]].
+See [Combat](Combat.md), [RestAndDeath](RestAndDeath.md).

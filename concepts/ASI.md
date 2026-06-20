@@ -43,4 +43,4 @@ When you gain ASI, you can take a feat instead of an ability score increase.
 - **Then feats**: feats that interact with your build are stronger than +1 to a dump stat.
 - **Resilient saves**: common wisdom is to grab WIS saves by level 8-12 (avoid mind control).
 
-See [[concepts/LevelUp]], [[concepts/AbilityScores]], [[concepts/Subclass]].
+See [LevelUp](LevelUp.md), [AbilityScores](AbilityScores.md), [Subclass](Subclass.md).

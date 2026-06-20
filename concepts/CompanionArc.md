@@ -39,4 +39,4 @@ Some companions can be romanced:
 - **Check approval**: if a companion's approval drops too low, they may leave.
 - **Read the companion's bio**: their personality tells you what they value.
 
-See [[concepts/CompanionPersonality]], [[concepts/NPCRelationships]].
+See [CompanionPersonality](CompanionPersonality.md), [NPCRelationships](NPCRelationships.md).

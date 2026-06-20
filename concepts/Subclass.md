@@ -42,4 +42,4 @@ Subclasses grant:
 - **Then mechanics**: which subclass has features you'll actually use?
 - **Build for the campaign length**: if the campaign is short (1-10), pick a subclass that comes online early.
 
-See [[concepts/CharacterCreation]], [[concepts/LevelUp]], [[concepts/ASI]].
+See [CharacterCreation](CharacterCreation.md), [LevelUp](LevelUp.md), [ASI](ASI.md).

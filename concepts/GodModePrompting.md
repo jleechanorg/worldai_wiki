@@ -156,7 +156,7 @@ Each example here is a single-sentence directive that was used in a published ca
 
 > The PC is stoic, minimalist, and humble. They avoid grandstanding or arrogant terminology. They speak with polite authority and view their power as a necessary, heavy burden for the sake of peace.
 
-**Used in**: a 432-scene Naruto campaign where the PC was an ANBU-era shinobi. The directive held for 370+ scenes without revision. See [[entities/ItachiGaiden]] for the case study.
+**Used in**: a 432-scene Naruto campaign where the PC was an ANBU-era shinobi. The directive held for 370+ scenes without revision. See [ItachiGaiden](../entities/ItachiGaiden.md) for the case study.
 
 Notice its structure:
 1. **States the character concept** ("stoic, minimalist, humble").
@@ -171,7 +171,7 @@ That's a 5-element directive in one sentence. Use this structure for your own.
 
 > The PC is obsessive, polite, and brilliant. Their internal monologue runs constantly on their area of expertise. They avoid social games and political maneuvering. They always treat their specialty as a system to be optimized, never as a tool to be wielded.
 
-**Used in**: a 50-scene isekai campaign where the PC was reincarnated as a magic-obsessed noble daughter. The directive held for the full campaign. See [[entities/AristocratReborn]].
+**Used in**: a 50-scene isekai campaign where the PC was reincarnated as a magic-obsessed noble daughter. The directive held for the full campaign. See [AristocratReborn](../entities/AristocratReborn.md).
 
 Same 5-element structure, different archetype. Works for any specialist — mage, swordsman, alchemist, scholar, engineer.
 
@@ -317,6 +317,6 @@ Examples:
 
 ## See also
 
-- [[concepts/GodMode]] — what god mode is at the system level.
-- [[concepts/CampaignDesign]] — full design guide (directives are step 7).
-- [[entities/CampaignShowcase]] — published campaigns using these directive patterns.
+- [GodMode](GodMode.md) — what god mode is at the system level.
+- [CampaignDesign](CampaignDesign.md) — full design guide (directives are step 7).
+- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns using these directive patterns.

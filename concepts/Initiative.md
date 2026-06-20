@@ -32,4 +32,4 @@ The combatant with the highest initiative goes first. After their turn ends, the
 - **Bonus action on turn 1**: feats like Alert add +5 to initiative; the Alert feat is one of the strongest for a reason.
 - **Don't pre-position**: pre-combat movement is wasted if the enemy surprises you.
 
-See [[concepts/Combat]].
+See [Combat](Combat.md).

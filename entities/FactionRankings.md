@@ -13,7 +13,7 @@ How factions are ranked against each other. Higher rank = more visibility = more
 
 ## How ranking works
 
-Each faction has a numerical power score ([[concepts/FactionPower]]) and a rank derived from it. The top faction is rank 1.
+Each faction has a numerical power score ([FactionPower](../concepts/FactionPower.md)) and a rank derived from it. The top faction is rank 1.
 
 ## Why rank matters
 
@@ -35,4 +35,4 @@ Each faction has a numerical power score ([[concepts/FactionPower]]) and a rank 
 - **Defend your rank**: top-ranked factions attract rivals.
 - **Build before climbing**: don't attack a higher-ranked faction until you're ready.
 
-See [[concepts/FactionSystem]], [[concepts/FactionPower]].
+See [FactionSystem](../concepts/FactionSystem.md), [FactionPower](../concepts/FactionPower.md).

@@ -20,7 +20,7 @@ This is the **player-facing** companion to the private `jleechanorg/worldarchite
 
 - **File names:** lowercase, hyphens, no spaces. Examples: `combat.md`, `god-mode-prompting.md`, `itachi-gaiden.md`.
 - **Every wiki page** starts with YAML frontmatter (see below).
-- **Every wiki page** has at least 2 outbound `[[wikilinks]]`.
+- **Every wiki page** has at least 2 outbound links to other wiki pages. Use github.com-compatible markdown links (e.g. `[Display Text](path/Page.md)`), not Obsidian-style wikilinks (`[[Page]]`), so the wiki is clickable on github.com blob view. Run `python scripts/lint_wikilinks.py` to verify.
 - **Every wiki page** ends with a `## Sources` section listing raw files referenced.
 - When updating a page, bump the `updated` date.
 - New pages must be added to `index.md` under the correct section.
@@ -96,7 +96,7 @@ One page per notable entity (the game, a campaign, a character archetype, a syst
 Include:
 - Overview / what it is
 - Key facts
-- Relationships to other entities via `[[wikilinks]]`
+- Relationships to other entities via markdown links (Obsidian-only `[[Page]]` syntax won't render on github.com)
 - Source references
 
 ## Concept Pages
@@ -105,7 +105,7 @@ One page per concept. Include:
 - Definition / explanation
 - How it works in play
 - Why a player cares
-- Related concepts via `[[wikilinks]]`
+- Related concepts via markdown links
 
 ## Comparison Pages
 

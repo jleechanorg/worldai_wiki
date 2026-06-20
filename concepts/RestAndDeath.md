@@ -59,4 +59,4 @@ Magical resurrection (Revivify, Raise Dead, Resurrection, True Resurrection, etc
 - **Healing potions in combat**: drinking a potion uses your action. Don't waste turns.
 - **Death saves are dangerous**: any healing brings you back. Even 1 HP.
 
-See [[concepts/Combat]], [[concepts/Healing]].
+See [Combat](Combat.md), [Healing](Healing.md).

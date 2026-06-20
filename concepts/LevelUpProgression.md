@@ -11,7 +11,7 @@ sources: [concepts/LevelUp.md]
 
 Long-term level progression patterns. Use these as reference for planning how fast your campaign levels, what tier of play each milestone unlocks, and how to pace XP grants.
 
-See [[concepts/LevelUp]] for the level-up modal mechanics. See [[concepts/ASI]] and [[concepts/Subclass]] for the choices that happen at level-up.
+See [LevelUp](LevelUp.md) for the level-up modal mechanics. See [ASI](ASI.md) and [Subclass](Subclass.md) for the choices that happen at level-up.
 
 ## Three pacing archetypes
 
@@ -27,7 +27,7 @@ The standard 5e XP curve. Players level once every ~10 scenes on average, with s
 
 **Best for**: realistic drama, combat matters at every level, time to grow into each tier of play.
 
-**Example**: a Naruto ANBU-era campaign that escalates from village rookie to multiverse-spanning stakes over hundreds of scenes. See [[entities/ItachiGaiden]].
+**Example**: a Naruto ANBU-era campaign that escalates from village rookie to multiverse-spanning stakes over hundreds of scenes. See [ItachiGaiden](../entities/ItachiGaiden.md).
 
 ### Fast escalation (isekai, reincarnation, mythic)
 
@@ -39,7 +39,7 @@ The campaign starts the PC with a head start (Level 10 Divine Blessings, ancient
 
 **Best for**: mythic / god-tier arcs, power fantasy, compressed timelines.
 
-**Example**: an isekai character-study campaign where the PC starts as a level-10 magic researcher and ends at 44 inside 50 scenes. See [[entities/AristocratReborn]].
+**Example**: an isekai character-study campaign where the PC starts as a level-10 magic researcher and ends at 44 inside 50 scenes. See [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Steady moderate (default D&D, BG3, GoT)
 
@@ -51,7 +51,7 @@ The most common published pattern. The campaign doesn't try to hit tier 4 (level
 
 **Best for**: traditional D&D, BG3 act 1-3, GoT-style political campaigns, mystery campaigns. Default if you don't have a reason to deviate.
 
-**Example**: a BG3 faction campaign that runs ~600 scenes but stays in tier 2-3 because the focus is on faction management, not personal power escalation. See [[entities/NocturneBg3]].
+**Example**: a BG3 faction campaign that runs ~600 scenes but stays in tier 2-3 because the focus is on faction management, not personal power escalation. See [NocturneBg3](../entities/NocturneBg3.md).
 
 ## Beyond level 20
 
@@ -67,7 +67,7 @@ If you're writing a power-escalation arc, plan a "soft cap" — the level at whi
 
 ## Level-up modal
 
-At each level-up, a modal appears. The player must complete it before play continues. See [[concepts/LevelUp]] for the modal details.
+At each level-up, a modal appears. The player must complete it before play continues. See [LevelUp](LevelUp.md) for the modal details.
 
 For fast-escalation campaigns, the modal can feel repetitive. Tip: if your campaign is fast-escalation, plan your character choices ahead of time so each modal is quick.
 
@@ -80,7 +80,7 @@ For fast-escalation campaigns, the modal can feel repetitive. Tip: if your campa
 
 ## See also
 
-- [[concepts/LevelUp]] — the level-up modal.
-- [[concepts/ASI]] — Ability Score Improvement vs feats.
-- [[concepts/Subclass]] — subclass choice at level-up.
-- [[entities/CampaignShowcase]] — published campaigns showing each pacing archetype in action.
+- [LevelUp](LevelUp.md) — the level-up modal.
+- [ASI](ASI.md) — Ability Score Improvement vs feats.
+- [Subclass](Subclass.md) — subclass choice at level-up.
+- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns showing each pacing archetype in action.

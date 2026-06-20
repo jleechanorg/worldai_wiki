@@ -73,4 +73,4 @@ In custom settings (Naruto, Game of Thrones, BG3, etc.), the character creation 
 - **Don't over-optimize**: a character with strong personality plays better than a min-maxed one.
 - **Write a backstory**: 2-3 sentences about who they are and what they want. The GM uses this.
 
-See [[concepts/Subclass]], [[concepts/LevelUp]], [[concepts/CampaignWizard]].
+See [Subclass](Subclass.md), [LevelUp](LevelUp.md), [CampaignWizard](CampaignWizard.md).

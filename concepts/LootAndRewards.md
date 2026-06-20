@@ -18,7 +18,7 @@ Awarded for:
 - Completing quests
 - Reaching milestones (story beats, exploration, social)
 
-XP accumulates. When you cross a threshold, you level up ([[concepts/LevelUp]]).
+XP accumulates. When you cross a threshold, you level up ([LevelUp](LevelUp.md)).
 
 ## Gold
 
@@ -29,7 +29,7 @@ Awarded for:
 - Selling loot
 
 Gold is used for:
-- Buying equipment ([[concepts/Equipment]])
+- Buying equipment ([Equipment](Equipment.md))
 - Hiring services (NPCs, transport)
 - Maintaining lifestyle (downtime activities)
 
@@ -51,4 +51,4 @@ Items have attunement limits (typically 3 attuned items at once).
 - **Identify before using**: cursed items are a thing. Use the Identify spell.
 - **Attune strategically**: don't waste attunement slots on situational items.
 
-See [[concepts/LevelUp]], [[concepts/Equipment]].
+See [LevelUp](LevelUp.md), [Equipment](Equipment.md).

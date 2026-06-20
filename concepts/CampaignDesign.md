@@ -21,7 +21,7 @@ Most campaigns that fall flat fail for the same reasons:
 4. **No long-term arc** — the campaign is interesting for 10 scenes and then stalls.
 5. **Player doesn't know how to interact** — they don't realize they can change the world with their prompts.
 
-This guide fixes all of that. The recommendations here are patterns drawn from published campaigns — see [[entities/CampaignShowcase]] for specific examples. Pick the patterns that fit your setting.
+This guide fixes all of that. The recommendations here are patterns drawn from published campaigns — see [CampaignShowcase](../entities/CampaignShowcase.md) for specific examples. Pick the patterns that fit your setting.
 
 ## Step 1 — Pick a setting
 
@@ -47,9 +47,9 @@ Describe the world in 1-3 sentences. The more specific, the better the system ca
 
 - **Naruto, ANBU era**: `Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.` — Two lines, gives the system a canon timeline and a niche (ANBU politics).
 - **Isekai, fantasy kingdom**: `Character: Sylphina | Setting: Reincarnated as the seventh daughter of Margrave Garm von Silford in the kingdom of Esfort. A magic-geek soul obsessed with mana structure, locked in her family's library.` — Two lines, sets up an isekai character-study with a niche (library-bound magic researcher).
-- **BG3, faction-mode**: A custom BG3 setup running the faction minigame end-to-end with multiple rival factions and planar threats. See [[entities/NocturneBg3]] for an example.
+- **BG3, faction-mode**: A custom BG3 setup running the faction minigame end-to-end with multiple rival factions and planar threats. See [NocturneBg3](../entities/NocturneBg3.md) for an example.
 
-Both patterns work: short and setting-focused (Naruto, isekai) or long with internal-psychology detail (isekai character study). For other genre examples — a Frieren-style slow-burn fantasy, a Luke Skywalker hero's journey, a Sariel angel-themed non-human PC — see [[entities/CampaignShowcase]].
+Both patterns work: short and setting-focused (Naruto, isekai) or long with internal-psychology detail (isekai character study). For other genre examples — a Frieren-style slow-burn fantasy, a Luke Skywalker hero's journey, a Sariel angel-themed non-human PC — see [CampaignShowcase](../entities/CampaignShowcase.md).
 
 ## Step 2 — Pick a power-level
 
@@ -97,10 +97,10 @@ The longer the prompt, the more the system has to work with. But keep it focused
 > God Mode:
 > Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
 
-The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc. See [[entities/ItachiGaiden]] for what a 400+ scene run of this prompt looks like.
+The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc. See [ItachiGaiden](../entities/ItachiGaiden.md) for what a 400+ scene run of this prompt looks like.
 
 **Long (isekai character study)**:
-The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, reincarnation setup, family dynamics, internal psychology, and world context. The length was worth it because the campaign is character-study heavy. See [[entities/AristocratReborn]].
+The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, reincarnation setup, family dynamics, internal psychology, and world context. The length was worth it because the campaign is character-study heavy. See [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Recommendation
 
@@ -108,7 +108,7 @@ The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, rein
 
 ## Step 5 — Choose character creation mode
 
-See [[concepts/CharacterCreation]] for full details. Two paths:
+See [CharacterCreation](CharacterCreation.md) for full details. Two paths:
 
 - **AI-generated** (recommended for first-timers): describe what you want, the system builds it.
 - **Hand-rolled**: pick race, class, stats. Best for optimized builds.
@@ -134,7 +134,7 @@ The opening scene sets the tone, hooks the player, and establishes the campaign'
 
 ## Step 7 — Add god-mode directives early
 
-See [[concepts/GodModePrompting]] for the full guide. Quick advice:
+See [GodModePrompting](GodModePrompting.md) for the full guide. Quick advice:
 
 - Add 1-3 directives in the first 10 scenes.
 - Each directive should fit on one line.
@@ -251,6 +251,6 @@ Before launching a campaign, ask:
 
 ## See also
 
-- [[concepts/GodModePrompting]] — full directive-writing guide.
-- [[concepts/CampaignWizard]] — the 3-step creation flow.
-- [[entities/CampaignShowcase]] — published campaigns illustrating these patterns.
+- [GodModePrompting](GodModePrompting.md) — full directive-writing guide.
+- [CampaignWizard](CampaignWizard.md) — the 3-step creation flow.
+- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns illustrating these patterns.

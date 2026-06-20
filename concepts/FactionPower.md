@@ -43,4 +43,4 @@ The exact formula is internal, but the in-game UI shows your faction's current p
 - **Invest in intel**: intelligence multiplies your effective power.
 - **Don't overextend**: more territory = more places to defend. Consolidate before expanding.
 
-See [[concepts/FactionSystem]], [[concepts/FactionPlay]], [[entities/FactionRankings]].
+See [FactionSystem](FactionSystem.md), [FactionPlay](FactionPlay.md), [FactionRankings](../entities/FactionRankings.md).

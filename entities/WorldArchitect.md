@@ -15,7 +15,7 @@ WorldArchitect.AI is an AI-powered digital Game Master for tabletop role-playing
 - **D&D 5e rules enforcement**: ability scores, skill checks, saving throws, advantage/disadvantage, combat initiative, spell slots, hit dice, rests, death saves — all enforced with structural anti-cheat (no "I rolled a 20" fabrication; dice are rolled by the platform).
 - **Living world simulation**: NPCs pursue agendas between your actions. Time advances. Seasons change. Factions scheme.
 - **Faction minigame**: a complete side-system for running a faction — intel gathering, combat against rival factions, power rankings, resource management.
-- **God Mode**: player-supplied style rules that shape how the GM narrates (tone, voice, POV, themes, taboos). See [[concepts/GodMode]].
+- **God Mode**: player-supplied style rules that shape how the GM narrates (tone, voice, POV, themes, taboos). See [GodMode](../concepts/GodMode.md).
 - **Multi-provider LLM support**: pick from Gemini, OpenAI, Anthropic, MiniMax, and others at campaign creation time.
 - **Persistent state**: every campaign's state is saved to the cloud. Pick up where you left off.
 
@@ -30,13 +30,13 @@ WorldArchitect.AI is an AI-powered digital Game Master for tabletop role-playing
 
 | System | Wiki page |
 |--------|-----------|
-| Combat | [[concepts/Combat]] |
-| Dice rolling | [[concepts/Dice]] |
-| Level up | [[concepts/LevelUp]] |
-| Character creation | [[concepts/CharacterCreation]] |
-| Faction minigame | [[concepts/FactionSystem]] |
-| God Mode | [[concepts/GodMode]] |
-| Living world | [[concepts/LivingWorld]] |
+| Combat | [Combat](../concepts/Combat.md) |
+| Dice rolling | [Dice](../concepts/Dice.md) |
+| Level up | [LevelUp](../concepts/LevelUp.md) |
+| Character creation | [CharacterCreation](../concepts/CharacterCreation.md) |
+| Faction minigame | [FactionSystem](../concepts/FactionSystem.md) |
+| God Mode | [GodMode](../concepts/GodMode.md) |
+| Living world | [LivingWorld](../concepts/LivingWorld.md) |
 
 ## Sources
 

@@ -25,8 +25,8 @@ The setting determines:
 ## Step 2 — Character
 
 Build your character:
-- **AI-generated**: see [[concepts/CharacterCreation]] Path 1.
-- **Hand-rolled**: see [[concepts/CharacterCreation]] Path 2.
+- **AI-generated**: see [CharacterCreation](CharacterCreation.md) Path 1.
+- **Hand-rolled**: see [CharacterCreation](CharacterCreation.md) Path 2.
 
 The character determines:
 - Starting stats, class, subclass
@@ -52,4 +52,4 @@ The campaign starts in Scene 1. The GM narrates the opening based on your settin
 - **AI-generate on your first run**: let the system show you what it can do.
 - **Add a companion**: solo campaigns can be lonely. Companions add depth.
 
-See [[concepts/CharacterCreation]], [[concepts/CampaignDesign]].
+See [CharacterCreation](CharacterCreation.md), [CampaignDesign](CampaignDesign.md).
