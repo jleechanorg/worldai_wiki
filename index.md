@@ -11,6 +11,7 @@
 - [How to design a campaign](concepts/CampaignDesign.md)
 - [How to prompt god mode](concepts/GodModePrompting.md)
 - [Player user stories (75)](queries/PlayerUserStories.md)
+- [External user stories (75, EXT-026–EXT-100)](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 
 ## Entities
@@ -90,6 +91,7 @@ These are individual player-run campaigns documented as illustrations of how the
 
 - [HowToPlay](queries/how-to-play-worldai.md) — Your first 30 minutes with the game.
 - [PlayerUserStories](queries/PlayerUserStories.md) — 75 user stories organized by system.
+- [ExternalUserStories](queries/ExternalUserStories.md) — 75 external-facing stories (EXT-026–EXT-100): accounts, live UI, settings, MCP/API, agents, persistence, dice audit, export.
 - [DiceFAQ](queries/DiceFAQ.md) — Common dice questions.
 - [GodModeFAQ](queries/GodModeFAQ.md) — Common god mode questions.
 - [FactionFAQ](queries/FactionFAQ.md) — Common faction questions.

@@ -1,7 +1,7 @@
 ---
 title: PlayerUserStories
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 type: query
 tags: [wa-system, wa-tutorial]
 sources: [raw/worldarchitect.ai-docs-user-stories-general.md]
@@ -12,6 +12,11 @@ sources: [raw/worldarchitect.ai-docs-user-stories-general.md]
 75 user stories organized by game system. Each story follows the **As a [role] / I want [feature] / So that [outcome]** pattern.
 
 These stories are general — they describe how any player would experience the game, not any specific campaign.
+
+For the **operational system around the gameplay contract** (account, live UI,
+settings, MCP & API, agent routing, persistence, dice audit, dev tools),
+see the companion page [ExternalUserStories](ExternalUserStories.md) — those 75
+stories cover EXT-026 through EXT-100 in player- and integrator-facing language.
 
 ## System comparison matrix
 
