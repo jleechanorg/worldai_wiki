@@ -4,6 +4,26 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-06-21] update | External user stories — review fixes
+- Re-prefixed story IDs from US-NNN to EXT-NNN throughout
+  `queries/ExternalUserStories.md` to avoid collision with US-001..US-075 in
+  [PlayerUserStories](PlayerUserStories.md). Added an EXT↔US mapping table at
+  the top of the page.
+- Removed the `[Settings](#)` placeholder link in EXT-027.
+- Removed internal CSS class names from EXT-033 (replaced with behavioural
+  descriptions).
+- Fixed cross-link text in US-068: progression reasoner now points to
+  [US-015 Level-Up Modal Lock & Atomicity](PlayerUserStories.md#us-015-level-up-modal-lock-atomicity)
+  and Campaign Wizard onboarding now points to
+  [Campaign Wizard](../entities/CampaignWizard.md).
+- Removed `mvp_site/` mentions from ExternalUserStories body and
+  CLAUDE.md/AGENTS.md (kept the term only where it documents the negative
+  "we do not expose" rule).
+- Refactored CLAUDE.md from a 166-line duplicate of AGENTS.md to an 83-line
+  thin pointer that defers to AGENTS.md on shared sections (per Greptile
+  P2 on PR #4: avoid content duplication that drifts on first update).
+- Bumped `updated` in ExternalUserStories frontmatter to 2026-06-21.
+
 ## [2026-06-20] update | External user stories (US-026–US-100)
 - Added `queries/ExternalUserStories.md` — 75 external-facing stories mirroring internal PR
   [#7709](https://github.com/jleechanorg/worldarchitect.ai/pull/7709) sections 13–20.

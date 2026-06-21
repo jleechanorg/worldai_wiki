@@ -1,7 +1,7 @@
 ---
 title: ExternalUserStories
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-21
 type: query
 tags: [wa-system, wa-tutorial]
 sources:
@@ -12,10 +12,22 @@ sources:
 
 This page is the **public-facing companion** to the internal developer spec
 [`raw/worldarchitect.ai-docs-user-stories-general.md`](../raw/worldarchitect.ai-docs-user-stories-general.md).
-It rewrites stories US-026 through US-100 — the 75 stories covering accounts,
+It rewrites stories **EXT-026 through EXT-100** — the 75 stories covering accounts,
 live UI, settings & providers, the MCP / OpenAI API, agent routing, persistence,
 dice audit, and dev tools — for an audience of **players and external developers**
-who never need to read `mvp_site/` source code.
+who never need to read the private backend source code.
+
+> **Why the EXT- prefix?** This page mirrors the internal spec's US-026..US-100
+> numbering but uses `EXT-NNN` to avoid colliding with the gameplay-story IDs
+> US-001..US-075 already used by [PlayerUserStories](PlayerUserStories.md).
+> Whenever you see `EXT-NNN` on this page, it maps 1:1 to `US-NNN` in the
+> internal spec — the number is the same, the prefix is just for cross-page
+> clarity.
+>
+> | Wiki page | ID range | Audience |
+> |-----------|----------|----------|
+> | [PlayerUserStories](PlayerUserStories.md) | US-001 – US-075 | Player (gameplay) |
+> | ExternalUserStories (this page) | EXT-026 – EXT-100 (= US-026 – US-100) | Player + External developer (operational) |
 
 If you are a player who just wants to know what the game can do for you, start
 with the first 75 stories in [PlayerUserStories](PlayerUserStories.md) and come
@@ -36,18 +48,18 @@ you need.
 
 ---
 
-## System matrix (US-026 – US-100)
+## System matrix (EXT-026 – EXT-100)
 
 | ID range | System | Audience | Count |
 |----------|--------|----------|-------|
-| US-026 – US-030 | Account & Sign-In | Player | 5 |
-| US-031 – US-044 | Live UI & Streaming | Player | 14 |
-| US-045 – US-050 | Settings & Providers | Player / Power user | 6 |
-| US-051 – US-067 | API & MCP Integration | Developer / Agent | 17 |
-| US-068 – US-079 | Agent Routing | Player (behaviour) / Developer (mechanism) | 12 |
-| US-080 – US-090 | Persistence & World State | Player | 11 |
-| US-091 – US-096 | Dice Audit & Provably-Fair | Player (integrity claims) / Developer (audit log) | 6 |
-| US-097 – US-100 | Diagnostics, Telemetry, Export | Developer / Power user | 4 |
+| EXT-026 – EXT-030 | Account & Sign-In | Player | 5 |
+| EXT-031 – EXT-044 | Live UI & Streaming | Player | 14 |
+| EXT-045 – EXT-050 | Settings & Providers | Player / Power user | 6 |
+| EXT-051 – EXT-067 | API & MCP Integration | Developer / Agent | 17 |
+| EXT-068 – EXT-079 | Agent Routing | Player (behaviour) / Developer (mechanism) | 12 |
+| EXT-080 – EXT-090 | Persistence & World State | Player | 11 |
+| EXT-091 – EXT-096 | Dice Audit & Provably-Fair | Player (integrity claims) / Developer (audit log) | 6 |
+| EXT-097 – EXT-100 | Diagnostics, Telemetry, Export | Developer / Power user | 4 |
 
 **Total: 75 external-facing stories**, mirroring the internal `docs/user-stories-general.md` matrix.
 
@@ -58,7 +70,7 @@ you need.
 These stories cover sign-in, settings persistence, API-key handling, and the
 rate-limit / turn-budget envelope that protects the service.
 
-### US-026: Sign In With Google or Apple
+### EXT-026: Sign In With Google or Apple
 
 **As a** player,
 **I want** to sign in with Google or Apple single sign-on,
@@ -72,7 +84,7 @@ control.
 
 See [HowToPlay](how-to-play-worldai.md) (Step 1 — Sign up).
 
-### US-027: Settings That Follow You Across Devices
+### EXT-027: Settings That Follow You Across Devices
 
 **As a** signed-in player,
 **I want** my settings (provider, model, theme, persona) to persist across
@@ -84,10 +96,7 @@ sessions and devices,
 - Settings are loaded once per session and only the fields you change are
   updated.
 
-See [Settings](#) *(placeholder — link to your settings page once it has its
-own wiki page)*.
-
-### US-028: Reveal / Hide Your API Key in the UI
+### EXT-028: Reveal / Hide Your API Key in the UI
 
 **As a** player who brought their own API key,
 **I want** to reveal or hide the saved key with a click-to-reveal eye icon,
@@ -98,7 +107,7 @@ over my shoulder.
 - Reveal state is local-only — it resets when you reload the page.
 - Reveal events are snapshotted on the server for security observability.
 
-### US-029: Trusted-Player Rate-Limit Exemption
+### EXT-029: Trusted-Player Rate-Limit Exemption
 
 **As a** trusted playtester,
 **I want** long test sessions to be exempt from the public rate limit,
@@ -108,7 +117,7 @@ over my shoulder.
   client.
 - This is an internal/QA convenience; it does not appear in normal play.
 
-### US-030: Per-User Turn Budget
+### EXT-030: Per-User Turn Budget
 
 **As a** player,
 **I want** my turns per session to be capped fairly,
@@ -116,7 +125,7 @@ over my shoulder.
 
 - The default cap is generous; elevated caps exist for trusted accounts.
 - When you hit the cap you'll see a clear modal showing when your next turn
-  is allowed (see US-034).
+  is allowed (see EXT-034).
 - Budgets are tracked per user across all of their campaigns.
 
 ---
@@ -127,7 +136,7 @@ These stories cover the in-browser experience: how the AI's response streams
 in, how dice appear inline, what the loading state looks like, and the
 client-side polish that makes long campaigns feel responsive.
 
-### US-031: Live Token Streaming
+### EXT-031: Live Token Streaming
 
 **As a** player,
 **I want** the AI's response to stream into the story as tokens arrive,
@@ -139,7 +148,7 @@ blank screen.
 - The page auto-scrolls as new text arrives, but respects your scroll
   position (no fighting you if you've scrolled back up to re-read).
 
-### US-032: Live Dice Roll Inline
+### EXT-032: Live Dice Roll Inline
 
 **As a** player,
 **I want** dice rolls to appear inline next to the narrative when a check
@@ -151,7 +160,7 @@ resolves,
 - Inline rolls reconcile against the audit log on completion — see
   [DiceAuthenticity](../concepts/DiceAuthenticity.md).
 
-### US-033: Inline Tool-Result Display
+### EXT-033: Inline Tool-Result Display
 
 **As a** player,
 **I want** background tool invocations (faction moves, reward calculations,
@@ -159,11 +168,13 @@ world events) to show up inline as compact cards,
 **So that** I understand what just happened in the simulation underneath the
 narration.
 
-- Faction moves render as `.faction-tool-result` cards.
-- Generic tool calls render as `.tool-result-inline` cards.
-- Warnings and statuses show as muted rows above or below the narrative.
+- Faction moves appear as compact inline cards.
+- Generic tool calls (rewards, world events, etc.) appear as compact inline
+  cards.
+- Status updates and warnings appear as muted rows above or below the
+  narrative.
 
-### US-034: Rate-Limit Modal With Reset Time
+### EXT-034: Rate-Limit Modal With Reset Time
 
 **As a** player,
 **I want** a modal that tells me exactly when my next turn is allowed,
@@ -173,7 +184,7 @@ narration.
   429 response.
 - It is dismissable without losing your place in the story.
 
-### US-035: Loading-Message Rotation
+### EXT-035: Loading-Message Rotation
 
 **As a** player waiting on a long LLM call,
 **I want** context-aware loading messages ("Rolling dice…", "Updating the
@@ -183,7 +194,7 @@ world…"),
 - Messages rotate on a timer while the request is in flight.
 - The current context (combat, dialog, world tick) drives the message pool.
 
-### US-036: Reduced-Motion Support
+### EXT-036: Reduced-Motion Support
 
 **As a** player who has enabled `prefers-reduced-motion` in my OS,
 **I want** the UI to skip smooth scrolling and elaborate transitions,
@@ -193,7 +204,7 @@ world…"),
 - Non-essential animation keyframes are skipped.
 - The setting is read once at boot, not rechecked mid-flow.
 
-### US-037: Theme Switcher (Default / Fantasy)
+### EXT-037: Theme Switcher (Default / Fantasy)
 
 **As a** player,
 **I want** to switch between the Default and Fantasy themes,
@@ -203,7 +214,7 @@ world…"),
 - Preference persists in browser storage; cross-device sync is via your
   account settings.
 
-### US-038: Campaign Wizard Onboarding
+### EXT-038: Campaign Wizard Onboarding
 
 **As a** first-time player,
 **I want** a guided wizard that walks me through setting, character, and
@@ -216,7 +227,7 @@ opening scene,
 
 See [CampaignWizard](../concepts/CampaignWizard.md).
 
-### US-039: Enhanced Campaign Search & Filter
+### EXT-039: Enhanced Campaign Search & Filter
 
 **As a** player with many campaigns,
 **I want** debounced search plus a filter row,
@@ -226,7 +237,7 @@ See [CampaignWizard](../concepts/CampaignWizard.md).
 - Filters include status, last-played, and character class.
 - Empty result states show a helpful message, not a blank list.
 
-### US-040: Test Connection From the Settings Page
+### EXT-040: Test Connection From the Settings Page
 
 **As a** player using a custom gateway,
 **I want** a "Test connection" button on the settings page,
@@ -235,7 +246,7 @@ See [CampaignWizard](../concepts/CampaignWizard.md).
 - The button sends a probe request and updates a status badge inline.
 - Failures show as a non-blocking error message.
 
-### US-041: Personal Access Token (PAT) Provisioning
+### EXT-041: Personal Access Token (PAT) Provisioning
 
 **As a** power user,
 **I want** to generate a personal access token for CLI / MCP access,
@@ -247,7 +258,7 @@ See [CampaignWizard](../concepts/CampaignWizard.md).
 
 See [§ 16 — MCP, API & Integrations](#16-mcp-api--integrations).
 
-### US-042: Inline Editor & Component Enhancer (Dev)
+### EXT-042: Inline Editor & Component Enhancer (Dev)
 
 **As a** developer or QA tester,
 **I want** an inline editor and component-enhancer hook in the page,
@@ -256,7 +267,7 @@ See [§ 16 — MCP, API & Integrations](#16-mcp-api--integrations).
 - Only enabled in non-production builds by default.
 - Lets you hot-swap component templates and edit text on selected nodes.
 
-### US-043: Streaming Warning For a Stalled Stream
+### EXT-043: Streaming Warning For a Stalled Stream
 
 **As a** player,
 **I want** a visible warning if the AI stream stalls,
@@ -266,7 +277,7 @@ See [§ 16 — MCP, API & Integrations](#16-mcp-api--integrations).
 - After a threshold, a warning row appears inline.
 - The warning disappears the moment the stream resumes.
 
-### US-044: Client-Side Diagnostic Bootstrap (Dev)
+### EXT-044: Client-Side Diagnostic Bootstrap (Dev)
 
 **As a** QA engineer,
 **I want** the client to capture page-load diagnostics,
@@ -283,7 +294,7 @@ See [§ 16 — MCP, API & Integrations](#16-mcp-api--integrations).
 These stories cover the model selection surface: which LLM runs your campaign,
 how your key is validated, and how errors surface when something is wrong.
 
-### US-045: Provider Selection (Gemini / OpenAI / OpenClaw)
+### EXT-045: Provider Selection (Gemini / OpenAI / OpenClaw)
 
 **As a** player,
 **I want** to choose which LLM provider runs my campaign,
@@ -294,7 +305,7 @@ my own OpenClaw gateway.
 - Switching providers takes effect immediately on your next turn.
 - Provider changes are snapshotted for observability.
 
-### US-046: BYOK Key Validation
+### EXT-046: BYOK Key Validation
 
 **As a** player bringing my own key,
 **I want** my provider key to be validated on save,
@@ -304,7 +315,7 @@ my own OpenClaw gateway.
 - A successful save returns the masked key length for confirmation.
 - A bad key does not poison subsequent turns — each turn re-validates.
 
-### US-047: Model List Discovery
+### EXT-047: Model List Discovery
 
 **As a** player,
 **I want** to see the list of available models for my chosen provider,
@@ -312,9 +323,9 @@ my own OpenClaw gateway.
 
 - The settings page lists each model with a label and capability hints.
 - External SDKs that auto-discover models use the same list via
-  `GET /v1/models` — see US-061.
+  `GET /v1/models` — see EXT-061.
 
-### US-048: Dragon Knight Campaign Description on Demand
+### EXT-048: Dragon Knight Campaign Description on Demand
 
 **As a** player picking a built-in campaign,
 **I want** the Dragon Knight template description fetched on demand,
@@ -325,7 +336,7 @@ my own OpenClaw gateway.
 
 See [CampaignWizard](../concepts/CampaignWizard.md).
 
-### US-049: Reveal Saved API Key With Server Confirmation
+### EXT-049: Reveal Saved API Key With Server Confirmation
 
 **As a** player,
 **I want** clicking the eye icon to fetch the key from the server,
@@ -334,7 +345,7 @@ See [CampaignWizard](../concepts/CampaignWizard.md).
 - The reveal route is auth-gated and rate-limited.
 - Reveal events are logged server-side as sensitive operations.
 
-### US-050: Provider Error Surfacing
+### EXT-050: Provider Error Surfacing
 
 **As a** player,
 **I want** LLM provider errors to surface as a readable message,
@@ -352,7 +363,7 @@ This is the section external developers care about most. The game exposes a
 JSON-RPC 2.0 MCP endpoint and an OpenAI-compatible chat surface so external
 agents, CLI tools, and OpenAI SDKs can drive the game without scraping the UI.
 
-### US-051: JSON-RPC 2.0 MCP Endpoint
+### EXT-051: JSON-RPC 2.0 MCP Endpoint
 
 **As an** external agent or CLI,
 **I want** a single JSON-RPC 2.0 endpoint that exposes game tools,
@@ -364,7 +375,7 @@ agents, CLI tools, and OpenAI SDKs can drive the game without scraping the UI.
 
 See the per-tool stories below.
 
-### US-052: `create_campaign` MCP Tool
+### EXT-052: `create_campaign` MCP Tool
 
 **As an** agent,
 **I want** to create a new campaign via MCP,
@@ -374,7 +385,7 @@ See the per-tool stories below.
 - Returns `{campaign_id, state_summary}`.
 - Side effect: a new campaign document in your account.
 
-### US-053: `get_campaign_state` MCP Tool
+### EXT-053: `get_campaign_state` MCP Tool
 
 **As an** agent,
 **I want** to read a campaign's current state,
@@ -384,7 +395,7 @@ See the per-tool stories below.
 - Sensitive fields (API keys) are stripped.
 - A 404 is returned if the campaign does not belong to the caller.
 
-### US-054: `process_action` MCP Tool
+### EXT-054: `process_action` MCP Tool
 
 **As an** agent,
 **I want** to submit a player action and get the resulting state diff,
@@ -392,9 +403,9 @@ See the per-tool stories below.
 
 - Accepts `{input_text, mode}`.
 - Returns the same shape as the in-app interaction endpoint.
-- Rate limiting applies per your per-turn budget (US-030).
+- Rate limiting applies per your per-turn budget (EXT-030).
 
-### US-055: `update_campaign` MCP Tool
+### EXT-055: `update_campaign` MCP Tool
 
 **As an** agent,
 **I want** to patch a campaign's metadata (title, character name, etc.),
@@ -403,7 +414,7 @@ See the per-tool stories below.
 - Accepts partial fields; server validates against the campaign schema.
 - Audit log records the patch with caller identity.
 
-### US-056: `export_campaign` MCP Tool
+### EXT-056: `export_campaign` MCP Tool
 
 **As an** agent,
 **I want** to export a campaign as a structured bundle,
@@ -413,7 +424,7 @@ See the per-tool stories below.
   world events.
 - Format matches the in-app download endpoint.
 
-### US-057: `get_campaigns_list` MCP Tool
+### EXT-057: `get_campaigns_list` MCP Tool
 
 **As an** agent,
 **I want** a paginated list of my campaigns,
@@ -423,7 +434,7 @@ See the per-tool stories below.
 - Capped at 50 per page.
 - Ordered by `last_played_at desc`.
 
-### US-058: `get_user_settings` / `update_user_settings` MCP Tools
+### EXT-058: `get_user_settings` / `update_user_settings` MCP Tools
 
 **As an** agent,
 **I want** to read and update my own settings,
@@ -431,9 +442,9 @@ See the per-tool stories below.
 
 - Both tools enforce per-user isolation.
 - Updates are partial and validated.
-- API keys are masked in `get_user_settings`; use US-049 to reveal.
+- API keys are masked in `get_user_settings`; use EXT-049 to reveal.
 
-### US-059: `roll_dice` MCP Tool
+### EXT-059: `roll_dice` MCP Tool
 
 **As an** agent,
 **I want** to roll dice directly via MCP,
@@ -441,11 +452,11 @@ See the per-tool stories below.
 LLM loop.
 
 - `roll_dice(notation)` returns a structured result.
-- The roll is recorded in the audit log (US-095) and is private to you.
+- The roll is recorded in the audit log (EXT-095) and is private to you.
 
 See [DiceNotation](../concepts/DiceNotation.md).
 
-### US-060: OpenAI-Compatible Chat Completions
+### EXT-060: OpenAI-Compatible Chat Completions
 
 **As a** developer,
 **I want** to call the API using the OpenAI client SDK,
@@ -455,7 +466,7 @@ See [DiceNotation](../concepts/DiceNotation.md).
 - Response shape matches the OpenAI ChatCompletion schema.
 - Streaming is supported via SSE on the same route.
 
-### US-061: OpenAI-Compatible Model List
+### EXT-061: OpenAI-Compatible Model List
 
 **As a** developer,
 **I want** `GET /v1/models` to return the model catalog,
@@ -465,7 +476,7 @@ See [DiceNotation](../concepts/DiceNotation.md).
 - Model IDs are stable across deploys.
 - The route is auth-gated.
 
-### US-062: Campaign CRUD REST API
+### EXT-062: Campaign CRUD REST API
 
 **As a** player or agent,
 **I want** REST endpoints to list, get, create, patch, and duplicate
@@ -478,7 +489,7 @@ campaigns,
 - `PATCH /api/campaigns/{id}` — partial update.
 - `POST /api/campaigns/{id}/duplicate` — clone with a new id.
 
-### US-063: Read-Only State Endpoints
+### EXT-063: Read-Only State Endpoints
 
 **As a** player or agent,
 **I want** dedicated endpoints for equipment, stats, and spells,
@@ -489,7 +500,7 @@ blob.
 - `GET /api/campaigns/{id}/stats` — ability scores, HP, AC, saves.
 - `GET /api/campaigns/{id}/spells` — known and prepared spells with slots.
 
-### US-064: Story Endpoint With Scene Filtering
+### EXT-064: Story Endpoint With Scene Filtering
 
 **As a** player,
 **I want** the story endpoint to return entries scoped to a scene or turn
@@ -500,7 +511,7 @@ range,
 - Scene number is derived from the turn counter.
 - World events are filtered to the matching scene.
 
-### US-065: Server Time Endpoint
+### EXT-065: Server Time Endpoint
 
 **As a** client,
 **I want** `GET /api/time` to return the server's wall-clock,
@@ -509,7 +520,7 @@ range,
 - Response is `{now: <ISO-8601>, tz: <iana>}`.
 - The endpoint is cheap (no DB read) and unauthenticated.
 
-### US-066: Health & Liveness Endpoints
+### EXT-066: Health & Liveness Endpoints
 
 **As an** operator,
 **I want** `GET /health` to report liveness,
@@ -519,7 +530,7 @@ range,
 - Optional checks report Firestore and provider reachability.
 - 503 is returned if a critical dependency is down.
 
-### US-067: Async Route Wrapper (Internal)
+### EXT-067: Async Route Wrapper (Internal)
 
 **As a** developer,
 **I want** Flask routes to be able to run async coroutines,
@@ -536,7 +547,7 @@ These stories describe how the game picks the right kind of reasoning for
 your action and how modal flows (level-up, character creation, campaign
 upgrade) are kept atomic.
 
-### US-068: Agent Selection Per Domain
+### EXT-068: Agent Selection Per Domain
 
 **As a** player,
 **I want** the right specialised reasoning to handle my action based on
@@ -545,13 +556,13 @@ what I am doing,
 
 - Combat routes to the combat reasoner.
 - NPC conversations route to the dialog reasoner (with a heavy variant for
-  long scenes — US-072).
-- Level-up flows route to the progression reasoner (US-005).
-- Faction management routes to the faction reasoner (US-074).
+  long scenes — EXT-072).
+- Level-up flows route to the progression reasoner ([US-015 Level-Up Modal Lock & Atomicity](PlayerUserStories.md#us-015-level-up-modal-lock-atomicity)).
+- Faction management routes to the faction reasoner (EXT-074).
 - Character creation and campaign-upgrade flows route to their own
-  reasoners (US-038, US-075).
+  reasoners ([Campaign Wizard](../entities/CampaignWizard.md), EXT-075).
 
-### US-069: Conclude-Domain Detection
+### EXT-069: Conclude-Domain Detection
 
 **As a** player,
 **I want** the system to recognize when I want to "end the session" or
@@ -559,9 +570,9 @@ what I am doing,
 **So that** it shifts into the conclude domain automatically.
 
 - Phrases like "let's stop here" or "wrap up" trigger the conclude domain.
-- Conclude is only entered when no modal lock is active (US-078).
+- Conclude is only entered when no modal lock is active (EXT-078).
 
-### US-070: Spicy Mode Toggle
+### EXT-070: Spicy Mode Toggle
 
 **As a** player,
 **I want** an explicit spicy mode toggle in settings,
@@ -571,7 +582,7 @@ what I am doing,
 - When on, the dialog reasoner for spicy scenes is selected.
 - Default is off.
 
-### US-071: Prompt-Order Validation (Internal)
+### EXT-071: Prompt-Order Validation (Internal)
 
 **As a** developer,
 **I want** an agent's prompt order to be validated at boot,
@@ -580,7 +591,7 @@ what I am doing,
 > Developer-internal; player-visible effect is "the game refuses to start if
 > a prompt file is missing or out of order, rather than failing mid-scene."
 
-### US-072: Heavy Dialog Mode
+### EXT-072: Heavy Dialog Mode
 
 **As a** player in an extended NPC conversation,
 **I want** the dialog reasoner to use a richer-memory variant after a while,
@@ -589,7 +600,7 @@ what I am doing,
 - The transition is invisible to the player.
 - The threshold is on dialog depth, not on turn count.
 
-### US-073: Deferred Rewards Resolution
+### EXT-073: Deferred Rewards Resolution
 
 **As a** player,
 **I want** rewards that need follow-up (e.g. a level-up choice) to be
@@ -600,7 +611,7 @@ deferred, not lost,
 - You can resolve them from the panel at any time, even after several
   scenes have passed.
 
-### US-074: Faction Turn Cycle
+### EXT-074: Faction Turn Cycle
 
 **As a** player,
 **I want** factions to take their own turns behind the scenes,
@@ -610,7 +621,7 @@ deferred, not lost,
 - Outcomes are added to the world events log and visible in your campaign.
 - See [FactionSystem](../concepts/FactionSystem.md).
 
-### US-075: Campaign Upgrade Migration
+### EXT-075: Campaign Upgrade Migration
 
 **As a** player with an older campaign,
 **I want** the system to migrate my campaign to the latest schema
@@ -621,7 +632,7 @@ automatically,
 - A modal explains what changed and offers to continue.
 - The migration is logged and reversible in tests.
 
-### US-076: Planning Block Generation
+### EXT-076: Planning Block Generation
 
 **As a** player,
 **I want** the reasoner to propose a multi-choice plan before risky actions,
@@ -630,12 +641,12 @@ automatically,
 - The plan appears as a clickable choice list inline.
 - Your selection commits the action.
 
-### US-077: System-Instruction Caching For Level-Up (Internal)
+### EXT-077: System-Instruction Caching For Level-Up (Internal)
 
 > Developer-internal. Player-visible effect: long level-up flows stay fast
 > because the system-instruction text is cached per character build.
 
-### US-078: Modal Lock Enforcement
+### EXT-078: Modal Lock Enforcement
 
 **As a** player,
 **I want** general navigation to be locked while a modal (level-up,
@@ -645,7 +656,7 @@ character creation, campaign upgrade) is active,
 - Off-modal actions are rejected until the modal commits or cancels.
 - The UI shows a banner explaining the lock.
 
-### US-079: State-Changes Release Active Modal
+### EXT-079: State-Changes Release Active Modal
 
 **As a** player,
 **I want** state changes that imply the modal is finished to release the
@@ -662,7 +673,7 @@ lock automatically,
 These stories describe what is remembered, how long-running campaigns stay
 coherent, and how the world state evolves between your actions.
 
-### US-080: Per-User Data Isolation
+### EXT-080: Per-User Data Isolation
 
 **As a** player,
 **I want** my campaign state stored under my account,
@@ -672,7 +683,7 @@ coherent, and how the world state evolves between your actions.
 - Queries are scoped to the authenticated user.
 - No cross-user reads or writes are possible from the client.
 
-### US-081: Duplicate a Campaign
+### EXT-081: Duplicate a Campaign
 
 **As a** player,
 **I want** to duplicate an existing campaign,
@@ -683,12 +694,12 @@ coherent, and how the world state evolves between your actions.
 
 See [HowToPlay](how-to-play-worldai.md).
 
-### US-082: Within-User Campaign Copy (Internal)
+### EXT-082: Within-User Campaign Copy (Internal)
 
 > Developer-internal helper used by tests and migrations. The player-facing
 > behaviour is "duplicates work reliably."
 
-### US-083: World Time Tracking (Y/M/D/H/M/S)
+### EXT-083: World Time Tracking (Y/M/D/H/M/S)
 
 **As a** player,
 **I want** the in-world time to advance during rests, travel, and time-skips,
@@ -697,12 +708,12 @@ See [HowToPlay](how-to-play-worldai.md).
 - World time is tracked at year/month/day/hour/minute/second resolution.
 - The game rejects time moves that go backwards.
 
-### US-084: Progressive World Time Merge (Internal)
+### EXT-084: Progressive World Time Merge (Internal)
 
 > Developer-internal safety: partial time updates from the model only update
 > known fields, so an imprecise answer cannot corrupt the calendar.
 
-### US-085: Living World Turn Counter
+### EXT-085: Living World Turn Counter
 
 **As a** player,
 **I want** the world to track its own turn counter separately from my
@@ -714,7 +725,7 @@ turn counter,
 
 See [LivingWorld](../concepts/LivingWorld.md).
 
-### US-086: World Event Annotation With Turn / Scene
+### EXT-086: World Event Annotation With Turn / Scene
 
 **As a** player,
 **I want** world events to be tagged with turn and scene,
@@ -722,7 +733,7 @@ See [LivingWorld](../concepts/LivingWorld.md).
 
 - Events are filterable by scene, turn range, or event type.
 
-### US-087: Story Entry Canonicalization For Level-Up
+### EXT-087: Story Entry Canonicalization For Level-Up
 
 **As a** player,
 **I want** the level-up narrative to land in the story log as a clean,
@@ -732,7 +743,7 @@ atomic entry,
 - The canonical entry replaces any draft entries the model may have started.
 - The entry links to the level-up choice that was made.
 
-### US-088: Faction Minigame Dual-Mode (Real-Time + Catch-Up)
+### EXT-088: Faction Minigame Dual-Mode (Real-Time + Catch-Up)
 
 **As a** player,
 **I want** the world to run faction turns both in real-time and as offline
@@ -745,7 +756,7 @@ catch-up,
 
 See [FactionSystem](../concepts/FactionSystem.md), [FactionPlay](../concepts/FactionPlay.md).
 
-### US-089: World Events Cascade Cleanup
+### EXT-089: World Events Cascade Cleanup
 
 **As a** player,
 **I want** old world events to be pruned automatically,
@@ -755,7 +766,7 @@ See [FactionSystem](../concepts/FactionSystem.md), [FactionPlay](../concepts/Fac
 - A configurable recent window is kept; older events are dropped with a
   log entry.
 
-### US-090: Stale Choice Pruning
+### EXT-090: Stale Choice Pruning
 
 **As a** player,
 **I want** stale planning choices and reward corrections to be filtered out
@@ -773,7 +784,7 @@ These stories document the integrity claims behind the dice system. As a
 player you mostly experience them as "the dice are honest"; as a developer
 you can read the audit trail.
 
-### US-091: Code-Execution Fabrication Detection
+### EXT-091: Code-Execution Fabrication Detection
 
 **As a** player,
 **I want** dice that come from a code-execution tool to be audited,
@@ -785,7 +796,7 @@ you can read the audit trail.
 
 See [DiceAuthenticity](../concepts/DiceAuthenticity.md).
 
-### US-092: Roll Tool With Structured Notation
+### EXT-092: Roll Tool With Structured Notation
 
 **As a** player,
 **I want** the dice reasoner to use a structured `roll_dice` tool that
@@ -799,7 +810,7 @@ accepts `NdM±K` notation,
 
 See [DiceNotation](../concepts/DiceNotation.md), [DiceRollMechanics](../concepts/DiceRollMechanics.md).
 
-### US-093: Attack Roll Resolution
+### EXT-093: Attack Roll Resolution
 
 **As a** player attacking,
 **I want** the system to compute attack roll, crit, and damage in one
@@ -812,7 +823,7 @@ steps.
 
 See [DiceRollMechanics](../concepts/DiceRollMechanics.md).
 
-### US-094: Skill Check & Saving Throw
+### EXT-094: Skill Check & Saving Throw
 
 **As a** player,
 **I want** a single helper for skill checks and saving throws,
@@ -822,7 +833,7 @@ See [DiceRollMechanics](../concepts/DiceRollMechanics.md).
   point.
 - The audit log records both equally.
 
-### US-095: Provably-Fair Audit Trail
+### EXT-095: Provably-Fair Audit Trail
 
 **As a** player who suspects cheating,
 **I want** every roll to leave a server-side audit trail,
@@ -834,7 +845,7 @@ See [DiceRollMechanics](../concepts/DiceRollMechanics.md).
 
 See [DiceAuthenticity](../concepts/DiceAuthenticity.md).
 
-### US-096: Dice Anti-Fabrication Telemetry (Internal)
+### EXT-096: Dice Anti-Fabrication Telemetry (Internal)
 
 > Operator-facing telemetry. Player-visible effect: dice integrity issues are
 > investigated and fixed; you don't see the logs directly.
@@ -846,22 +857,22 @@ See [DiceAuthenticity](../concepts/DiceAuthenticity.md).
 These stories cover the developer-facing surface plus the player-facing
 "download your story" feature.
 
-### US-097: Server Time & Client Diagnostic Endpoints
+### EXT-097: Server Time & Client Diagnostic Endpoints
 
 **As a** developer,
 **I want** server-time and client-diagnostic endpoints exposed,
 **So that** I can debug drift and slow renders.
 
-- `GET /api/time` returns the wall-clock (also see US-065).
+- `GET /api/time` returns the wall-clock (also see EXT-065).
 - `POST /api/client_diag` accepts buffered client events.
 - Both endpoints are cheap and rate-limited.
 
-### US-098: BigQuery Telemetry Shipping (Internal)
+### EXT-098: BigQuery Telemetry Shipping (Internal)
 
 > Operator-internal telemetry pipeline. Player-visible effect: aggregate
 > integrity metrics are tracked and acted on.
 
-### US-099: Context-Token Budgeting (Internal)
+### EXT-099: Context-Token Budgeting (Internal)
 
 **As a** player with a long-running campaign,
 **I want** the LLM context to stay within budget,
@@ -871,7 +882,7 @@ These stories cover the developer-facing surface plus the player-facing
 - Compaction kicks in automatically when utilization exceeds a threshold.
 - You may not notice the compaction; the game just keeps going.
 
-### US-100: Document & Story Export
+### EXT-100: Document & Story Export
 
 **As a** player,
 **I want** to export my campaign story as PDF, DOCX, or TXT,
@@ -901,8 +912,10 @@ exact priority assignments per story.)
 - The **player-facing core** is in [PlayerUserStories](PlayerUserStories.md)
   (75 stories, US-001 – US-075).
 - The **internal developer spec** is mirrored in
-  [`raw/worldarchitect.ai-docs-user-stories-general.md`](../raw/worldarchitect.ai-docs-user-stories-general.md)
-  with file:line references into the private `mvp_site/` tree.
+  [`raw/worldarchitect.ai-docs-user-stories-general.md`](../raw/worldarchitect.ai-docs-user-stories-general.md).
+  The mirror is read-only reference material; the internal spec's own
+  `file:line` references live there but are not republished in the wiki
+  pages.
 - **Concept deep-dives**: see [Concepts](../concepts/) for combat, dice,
   faction play, level-up, god mode, etc.
 - **How-to guides**: see [HowToPlay](how-to-play-worldai.md) and

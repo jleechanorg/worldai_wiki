@@ -25,8 +25,8 @@ update.
 ## Non-negotiables
 
 - **No internal code paths.** Do not expose file:line references into
-  `mvp_site/`, internal class names, or implementation details that would
-  change with the next refactor.
+  private backend code, internal class names, or implementation details that
+  would change with the next refactor.
 - **No fabricated facts.** If the existing page, the `raw/` mirror, or the
   live product does not back a claim, do not write it.
 - **No credentials in examples.** Use placeholders (`<your-api-key>`,
