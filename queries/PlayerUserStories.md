@@ -16,7 +16,7 @@ These stories are general — they describe how any player would experience the 
 For the **operational system around the gameplay contract** (account, live UI,
 settings, MCP & API, agent routing, persistence, dice audit, dev tools),
 see the companion page [ExternalUserStories](ExternalUserStories.md) — those 75
-stories cover US-026 through US-100 in player- and integrator-facing language.
+stories cover EXT-026 through EXT-100 in player- and integrator-facing language.
 
 ## System comparison matrix
 

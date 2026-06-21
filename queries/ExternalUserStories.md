@@ -532,12 +532,9 @@ range,
 
 ### EXT-067: Async Route Wrapper (Internal)
 
-**As a** developer,
-**I want** Flask routes to be able to run async coroutines,
-**So that** I/O-bound work does not block the worker.
-
-> This story is documented for completeness; it is a developer-internal
-> affordance. Players do not see it.
+> Developer-internal affordance: developer-defined route handlers can run
+> async coroutines so I/O-bound work does not block the worker. Players do
+> not see this directly.
 
 ---
 
@@ -874,13 +871,10 @@ These stories cover the developer-facing surface plus the player-facing
 
 ### EXT-099: Context-Token Budgeting (Internal)
 
-**As a** player with a long-running campaign,
-**I want** the LLM context to stay within budget,
-**So that** very long campaigns do not stall or fail.
-
-- Context is split into per-component slices (story, system prompt, etc.).
-- Compaction kicks in automatically when utilization exceeds a threshold.
-- You may not notice the compaction; the game just keeps going.
+> Developer-internal: the LLM context is split into per-component slices
+> (story, system prompt, etc.) and compacted automatically when
+> utilization exceeds a threshold. Player-visible effect: very long
+> campaigns keep running without stalling or failing.
 
 ### EXT-100: Document & Story Export
 
