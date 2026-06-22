@@ -31,6 +31,13 @@ import sys
 from pathlib import Path
 
 WIKI_DIRS = ["concepts", "entities", "comparisons", "queries"]
+# raw/ files are intentionally excluded from the *broken-wikilink* check
+# (the source-mirror is supposed to be a verbatim copy of an internal spec,
+# and may reference pages that don't exist in the wiki). But raw/ files ARE
+# rendered on github.com and therefore must not display as literal
+# `[[brackets]]` text — that breaks navigation for any reader who clicks
+# through to a raw/ file from a wiki page. See _check_render_safety().
+RENDER_SAFETY_DIRS = ["raw"]
 # raw/ is intentionally excluded — sources are immutable per the wiki skill.
 TOP_LEVEL_PAGES = ["README.md", "SCHEMA.md", "index.md"]
 WIKILINK_RE = re.compile(r"\[\[([^\]\n]+?)\]\]")
@@ -61,6 +68,44 @@ def _all_md_files(root: Path) -> list[Path]:
         if p.exists():
             files.append(p)
     return files
+
+
+def _render_safety_files(root: Path) -> list[Path]:
+    """Files that get the render-safety scan but not the broken-wikilink scan.
+
+    raw/ files are mirrored internal specs that may legitimately reference
+    pages that don't exist in the wiki. But they ARE rendered on github.com
+    — a raw/ page that contains `[[queries/PlayerUserStories]]` will
+    display as literal `[[brackets]]` text to a reader clicking through
+    from a wiki page. The render-safety check flags any raw `[[wikilink]]`
+    in these files, independent of whether the target resolves.
+    """
+    files: list[Path] = []
+    for d in RENDER_SAFETY_DIRS:
+        dpath = root / d
+        if dpath.exists():
+            files.extend(sorted(dpath.rglob("*.md")))
+    return files
+
+
+def _check_render_safety(text: str, source: Path, root: Path) -> list[str]:
+    """Flag any raw [[wikilink]] in a file that gets rendered on github.com.
+
+    Mirrors the wikilink-detection logic from `_convert_wikilinks` but only
+    reports problems (no rewrite). Used for files like raw/ mirror pages
+    that should never have raw wikilinks in shipped content, regardless of
+    whether the wikilink target resolves.
+    """
+    problems: list[str] = []
+    scan_text = _strip_code_blocks(text)
+    for m in WIKILINK_RE.finditer(scan_text):
+        problems.append(
+            f"{source.relative_to(root)}: raw [[wikilink]] in github-rendered "
+            f"surface — wikilinks render as literal `[[brackets]]` on github.com. "
+            f"Replace with `[Display Text](path/Page.md)` markdown link. "
+            f"Offending wikilink: [[{m.group(1)}]]"
+        )
+    return problems
 
 
 def _split_wikilink(inner: str) -> tuple[str, str | None, str | None]:
@@ -197,8 +242,10 @@ def _check_md_links(text: str, source: Path, root: Path) -> list[str]:
 
 def lint(root: Path, fix: bool = False) -> int:
     files = _all_md_files(root)
+    safety_files = _render_safety_files(root)
     all_warnings: list[str] = []
     all_md_problems: list[str] = []
+    all_render_safety_problems: list[str] = []
     total_wikilinks = 0
     total_converted = 0
 
@@ -228,6 +275,15 @@ def lint(root: Path, fix: bool = False) -> int:
         # Also check markdown links for breakage (independent of --fix)
         all_md_problems.extend(_check_md_links(text, path, root))
 
+    # Render-safety pass over raw/ files (and any future RENDER_SAFETY_DIRS).
+    # These files don't get the broken-wikilink check (they may legitimately
+    # reference pages that don't exist in the wiki) but they DO get the
+    # github-render check — a raw [[wikilink]] in raw/ is just as broken as
+    # one in concepts/ from a reader's perspective.
+    for path in safety_files:
+        text = path.read_text()
+        all_render_safety_problems.extend(_check_render_safety(text, path, root))
+
     # Report
     if fix:
         print(f"--fix applied: {total_converted} wikilinks converted "
@@ -243,7 +299,16 @@ def lint(root: Path, fix: bool = False) -> int:
         for p in all_md_problems:
             print(f"  {p}", file=sys.stderr)
 
-    if all_warnings or all_md_problems:
+    if all_render_safety_problems:
+        print(
+            f"\n{len(all_render_safety_problems)} render-safety issues "
+            f"(raw [[wikilinks]] in github-rendered files):",
+            file=sys.stderr,
+        )
+        for p in all_render_safety_problems:
+            print(f"  {p}", file=sys.stderr)
+
+    if all_warnings or all_md_problems or all_render_safety_problems:
         return 1
     return 0
 

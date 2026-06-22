@@ -21,6 +21,12 @@ This is the **player-facing** companion to the private `jleechanorg/worldarchite
 - **File names:** lowercase, hyphens, no spaces. Examples: `combat.md`, `god-mode-prompting.md`, `itachi-gaiden.md`.
 - **Every wiki page** starts with YAML frontmatter (see below).
 - **Every wiki page** has at least 2 outbound links to other wiki pages. Use github.com-compatible markdown links (e.g. `[Display Text](path/Page.md)`), not Obsidian-style wikilinks (`[[Page]]`), so the wiki is clickable on github.com blob view. Run `python scripts/lint_wikilinks.py` to verify.
+- **No raw `[[wikilinks]]` in `raw/` mirror files** either — `raw/` is also
+  rendered on github.com, and `[[brackets]]` literal text breaks navigation
+  for any reader who clicks through from a wiki page to a raw/ source
+  mirror. The lint script enforces this as a render-safety check (separate
+  from the broken-wikilink check that excludes `raw/`). Always use
+  `[Display Text](../path/Page.md)` markdown links in `raw/` files.
 - **Every wiki page** ends with a `## Sources` section listing raw files referenced.
 - When updating a page, bump the `updated` date.
 - New pages must be added to `index.md` under the correct section.
