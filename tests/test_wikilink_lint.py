@@ -284,6 +284,95 @@ def test_lint_fix_preserves_section_anchors(tmp_path: Path):
     assert "[Anchored](Anchored.md#how it works)" in new_text
 
 
+def test_no_raw_wikilinks_in_raw_directory():
+    """raw/ mirror files are also rendered on github.com and therefore must
+    not contain raw [[wikilinks]]. The conversion-only linter
+    (scripts/lint_wikilinks.py) intentionally excludes raw/ because the
+    source-mirror is supposed to be a verbatim copy of an internal spec —
+    but the wiki is a public, github.com-rendered surface, and raw/
+    wikilinks render as literal `[[brackets]]` text.
+
+    This test pins the contract: any future raw/ file added to the wiki
+    must be written with github.com-compatible markdown links, not
+    Obsidian-style [[wikilinks]].
+
+    Bug-ref: 2026-06-22 — Jeffrey reported the player-facing systems table
+    rendered as `[[concepts/Combat]]` on github.com. Root cause: a raw/
+    mirror file contained `[[queries/PlayerUserStories]]` literal syntax
+    that the linter (which excludes raw/) silently allowed through.
+    """
+    raw_dir = REPO_ROOT / "raw"
+    if not raw_dir.exists():
+        pytest.skip("no raw/ directory in this wiki")
+
+    bad: list[tuple[Path, str]] = []
+    for path in sorted(raw_dir.rglob("*.md")):
+        text = path.read_text()
+        # Mask code fences and inline code — wikilinks there are syntax examples.
+        scan = re.sub(r"```.*?```", lambda m: " " * len(m.group(0)), text, flags=re.DOTALL)
+        scan = re.sub(r"`[^`\n]*`", lambda m: " " * len(m.group(0)), scan)
+        for m in WIKILINK_RE.finditer(scan):
+            rel = path.relative_to(REPO_ROOT)
+            bad.append((rel, m.group(1)))
+
+    assert not bad, (
+        "raw/ mirror files must not contain raw [[wikilinks]] — they render as\n"
+        "literal `[[brackets]]` on github.com, breaking navigation. Convert to\n"
+        "github.com-compatible markdown links like\n"
+        "`[Display Text](queries/Page.md)`. Offending files:\n"
+        + "\n".join(f"  {p}: [[{inner}]]" for p, inner in bad)
+    )
+
+
+def test_lint_script_catches_raw_directory_wikilinks(tmp_path: Path):
+    """The wikilink linter must also flag raw/ files for github-render safety.
+
+    The original linter design (and the existing test_no_unconverted_wikilinks_in_shipped_wiki
+    test) intentionally exclude raw/ because the source-mirror is supposed
+    to be a verbatim copy of an internal spec. That exemption is correct
+    for the *broken-wikilink* check (raw/ files can legitimately reference
+    pages that don't exist in the wiki), but it is WRONG for the
+    github-render check (raw/ files are still rendered on github.com and
+    therefore must not display as literal `[[brackets]]` text).
+
+    This test pins the contract: the linter must run its render-safety
+    scan over raw/ files, even if it keeps the broken-wikilink scan
+    limited to the wiki content directories.
+    """
+    fake_root = tmp_path / "wiki"
+    (fake_root / "raw").mkdir(parents=True)
+    (fake_root / "concepts").mkdir()
+    (fake_root / "concepts" / "Combat.md").write_text(
+        "---\ntitle: Combat\ncreated: 2026-06-19\nupdated: 2026-06-19\n"
+        "type: concept\ntags: [wa-mechanic]\n---\n\nCombat page.\n"
+    )
+    (fake_root / "raw" / "source-mirror.md").write_text(
+        "---\ntitle: Source\ncreated: 2026-06-19\nupdated: 2026-06-19\n"
+        "type: source\ntags: [wa-system]\n---\n\n"
+        "See [[concepts/Combat]] for the system.\n"
+    )
+
+    r = subprocess.run(
+        [sys.executable, str(LINT_SCRIPT), "--root", str(fake_root)],
+        capture_output=True, text=True,
+    )
+    # Must flag the raw/ wikilink as a render-safety issue (even though the
+    # broken-wikilink scan legitimately skips raw/).
+    assert r.returncode != 0, (
+        f"linter must flag raw/ wikilinks as a github-render issue:\n"
+        f"stdout: {r.stdout}\nstderr: {r.stderr}"
+    )
+    combined = (r.stdout + r.stderr).lower()
+    assert "raw" in combined, (
+        f"linter must mention raw/ when flagging the violation:\n"
+        f"stdout: {r.stdout}\nstderr: {r.stderr}"
+    )
+    assert "concepts/combat" in combined, (
+        f"linter must mention the offending target path:\n"
+        f"stdout: {r.stdout}\nstderr: {r.stderr}"
+    )
+
+
 def test_lint_skips_wikilinks_inside_code(tmp_path: Path):
     """Wikilinks inside ```fences``` or `inline code` are syntax examples,
     not real links — they must not be converted or flagged."""

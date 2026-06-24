@@ -37,6 +37,12 @@ update.
   correct section. Edited pages must keep their existing outbound links.
 - **No ad-hoc tags or types.** Use the closed taxonomy in `SCHEMA.md`. Add to
   the taxonomy first, then use it.
+- **No raw `[[wikilinks]]` in any github-rendered file** — including
+  `raw/` mirror pages. github.com does not render Obsidian-style
+  `[[wikilinks]]`; they show as literal `[[brackets]]` text and break
+  navigation. The lint script enforces this for the wiki content
+  directories AND the `raw/` mirror (as a render-safety check). Always
+  use `[Display Text](path/Page.md)` markdown links, even in `raw/`.
 
 ## Schema contract
 
@@ -147,6 +153,7 @@ The wiki has no build step. CI runs:
 ```bash
 python -m pytest tests/ -v -m "not slow"     # fast: wikilink + markdown regressions
 python scripts/lint_wikilinks.py              # no broken [[wikilinks]] / .md links
+                                              # AND no raw [[wikilinks]] in raw/ (render-safety)
 python scripts/check_http_links.py            # slow: external HTTP link check
 ```
 

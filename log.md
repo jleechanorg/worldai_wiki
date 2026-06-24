@@ -58,3 +58,10 @@
 - Walked Itachi V2 (432 scenes, 1.27 MB) and Aristocrat V2 (50 scenes, 280 KB) campaign dumps
 - Extracted directive patterns, level progression, player-prompt patterns
 - Output: concepts/CampaignDesign.md (3000+ words), concepts/GodModePrompting.md (2500+ words), entities/ItachiGaiden.md (campaign case study)
+
+## [2026-06-22] update | raw/ mirror wikilink render-safety
+- Replaced 2 raw `[[queries/PlayerUserStories]]` wikilinks in `raw/worldarchitect.ai-docs-user-stories-general.md` with github.com-compatible markdown links (`[queries/PlayerUserStories](../queries/PlayerUserStories.md)`). Raw Obsidian-style wikilinks render as literal `[[brackets]]` text on github.com and break navigation for any reader clicking through from a wiki page to a raw/ source mirror.
+- Extended `scripts/lint_wikilinks.py` with a render-safety scan over `RENDER_SAFETY_DIRS` (currently `raw/`) — flags any raw `[[wikilink]]` in those files, independent of whether the target resolves. The broken-wikilink scan still excludes `raw/` (raw/ files may legitimately reference pages that don't exist in the wiki).
+- Added 2 tests: `test_no_raw_wikilinks_in_raw_directory` pins the contract that the shipped wiki has zero raw wikilinks in `raw/`; `test_lint_script_catches_raw_directory_wikilinks` pins the contract that the linter's render-safety scan covers `raw/`.
+- Updated `AGENTS.md` and `SCHEMA.md` to make the `raw/`-also-rendered-on-github.com rule explicit.
+- Bug-ref: 2026-06-22 — Jeffrey reported the player-facing systems table on `entities/WorldArchitect.md` rendered `[[concepts/Combat]]` literal text. Root cause was a raw/ mirror file in the same surface area, not the entity page itself.
