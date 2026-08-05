@@ -46,7 +46,7 @@ If anything looks wrong, see [Troubleshooting](#troubleshooting).
 
 **Copy everything below this line:**
 
-```
+```text
 BEGIN_COPY_PASTE_BIBLE — copy everything between BEGIN and END
 ═══════════════════════════════════════════════════════════════════════════
 
@@ -58,7 +58,7 @@ You are a bastard of Prince Daemon Targaryen, by a Targaryen lady whose name the
 
 What you have is the one thing the highborn fear: a dragon who chose you.
 
-This morning, on a black volcanic beach the maesters will not write about, a medium-sized she-dragon screamed your name. You walked into the smoke. You came out mounted. The greens will call it usurpation. The blacks will call it providence. The smallfolk will call it terrifying.
+This morning, on a black volcanic beach the maesters will not write about, a young adult she-dragon screamed your name. You walked into the smoke. You came out mounted. The greens will call it usurpation. The blacks will call it providence. The smallfolk will call it terrifying.
 
 Hook: You are not saving the realm. You are claiming your place in it — on dragonback, in fire, before anyone can stop you.
 
@@ -77,7 +77,7 @@ Voice: Low and unhurried. Speaks Old Valyrian when angry; the highborn freeze be
 Habit: Tilts head 5° when listening — like a dragon deciding if prey is worth the breath.
 Smell: Woodsmoke and salt. You refuse perfumes that hide where you came from.
 
-Core Compulsion Mechanic (Blood of the Dragon): Once per session, when you visibly prove royal blood in front of a hostile witness, gain a bonus action on the next turn. Overuse (3+ times per session): roll a DC 12 Wisdom save or take 1 level of Exhaustion.
+Core Compulsion Mechanic (Blood of the Dragon): Each time you visibly prove royal blood in front of a hostile witness, gain a bonus action on the next turn. Overuse (3+ times per session): roll a DC 12 Wisdom save or take 1 level of Exhaustion. (The 1st–2nd activation is safe — risk only kicks in if you lean on royal-blood displays more than twice in a single session.)
 
 Three inner-monologue seeds:
 1. "They call me 'bastard' as if the word still has teeth. Let them. The dragon doesn't care what they call me. The dragon only knows my name."
@@ -122,8 +122,8 @@ Lady Rhaenys Targaryen, née Velaryon ("The Queen Who Never Was"): Your mother's
 Four older siblings:
 1. Rhaenyra Targaryen ("The Queen") — half-sister (Daemon's daughter by his first wife). The claimant to the throne. Useful.
 2. Aegon II Targaryen ("The Usurper") — half-brother. Greens' king. Will kill you if he sees you.
-3. Baela Targaryen ("The Drake's Daughter") — half-cousin (Daemon's daughter by Laena Velaryon). Both dragonriders. Rival / possible ally.
-4. Jacaerys Targaryen ("The Heir") — Rhaenyra's eldest. Possible future king. Pawn he doesn't know he's playing.
+3. Baela Targaryen ("The Drake's Daughter") — half-sister (Daemon's daughter by Laena Velaryon). Both dragonriders. Rival / possible ally.
+4. Jacaerys Targaryen ("The Heir") — Rhaenyra's eldest son; your nephew by blood. Possible future king. Pawn he doesn't know he's playing.
 
 ## 6. Factions
 
@@ -187,7 +187,7 @@ Stage 4 — Old Valyria (the Doom): Sulfur, ash, ghosts. Off-limits to men.
 - The Sorcerers' District — pre-Doom artifacts.
 - Hazard: The Doom never ended. It just slowed down. Don't go there.
 
-Custom Mechanic 1 — Blood of the Dragon Compulsion (see Section 2): bonus action on royal-blood proof; 3+ uses per session = DC 12 Wis save or Exhaustion.
+Custom Mechanic 1 — Blood of the Dragon Compulsion (see Section 2): each royal-blood proof grants a bonus action; 3+ uses per session = DC 12 Wis save or Exhaustion.
 
 Custom Mechanic 2 — Dragon Rider's Hoard: your dragon collects objects of significance to you. After each major story beat, a small item appears at the dragon's nest. NPCs who receive a dragon-gift are 50% more likely to honor contracts signed in that moment.
 
@@ -223,7 +223,7 @@ The campaign begins on your answer.
 
 ═══════════════════════════════════════════════════════════════════════════
 END_COPY_PASTE_BIBLE — stop copying here
-```
+```text
 
 **Stop copying here.** Paste that into the "Campaign description prompt" field, click **Next**, then **Enter the World**.
 
@@ -259,7 +259,7 @@ If you want bigger changes — a new era, a different parent, a new magic system
 >
 > Apply only the changes I asked for. Preserve every other section verbatim. Return the full edited campaign bible, ready to paste into the WorldArchitect.AI "Campaign description prompt" field.
 
-The 9-section structure is robust to most player-shaped edits. The wizard accepts the full bible (~7,500 words) without truncation.
+The 9-section structure is robust to most player-shaped edits. The wizard accepts the full bible (~13,350 characters / ~2,200 words) without truncation.
 
 ### Full setup walkthrough (every form field, every checkbox)
 

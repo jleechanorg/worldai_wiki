@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-20 | Total pages: 60+
+> Last updated: 2026-08-05 | Total pages: 60+
 
 ## Start here
 

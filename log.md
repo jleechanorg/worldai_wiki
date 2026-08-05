@@ -66,14 +66,10 @@
 - Updated `AGENTS.md` and `SCHEMA.md` to make the `raw/`-also-rendered-on-github.com rule explicit.
 - Bug-ref: 2026-06-22 — Jeffrey reported the player-facing systems table on `entities/WorldArchitect.md` rendered `[[concepts/Combat]]` literal text. Root cause was a raw/ mirror file in the same surface area, not the entity page itself.
 
-## [2026-08-04] create | House of the Dragon custom-campaign template
+## [2026-08-04] create | House of the Dragon custom-campaign template (paste-ready 9-section bible + setup walkthrough verified live against worldarchitect.ai Custom Campaign wizard)
 
-Added `queries/house-of-the-dragon-campaign.md` and a top-level "Start here" entry in `index.md`. Page includes a paste-ready 9-section campaign bible (gender-ambiguous bastard of Daemon Targaryen, Dance of the Dragons era) and a setup walkthrough verified live against worldarchitect.ai (Custom Campaign wizard, 2 steps; `Campaign description prompt` is collapsed by default and accepts the full ~13K-character bible; `Use Default Fantasy World` is unchecked by default and stays unchecked; `Mechanics (Jeff's Mechanical Precision)` is unchecked by default and must be checked for custom 5e mechanics). Includes an LLM-edit meta-prompt for player customization before pasting. Screenshot of the live Step 2 review screen saved at `queries/images/house-of-the-dragon/step2-launch-desktop.png`. Sibling pages: `worldarchitect.ai` in-tree `wiki/campaigns/HouseOfTheDragon.md` (developer doc, NOT the player-facing surface) and `~/llm_wiki/wiki/sources/2026-08-04-house-of-the-dragon-campaign-template.md` (background sources for LLM-assisted editing).
+## [2026-08-05] update | HotD wiki — Character-field customization note per Slack ts=1785909171.805539
 
-## [2026-08-05] update | House of the Dragon — clarify that "Character you want to play" is the player-customization field
+## [2026-08-05] update | HotD wiki — restructure into Quick Setup + More Details per Slack ts=1785909171.805539
 
-Per user feedback (Slack C0AUXSVFSA2 ts=1785909171.805539), rewrote the Notes column for the "Character you want to play" row in Step 4 of `queries/house-of-the-dragon-campaign.md` so it explicitly tells players they can pick gender, age, dragon name, parent, look, etc. — not just paste the default 16yo text. Bumped frontmatter `updated: 2026-08-05`. Synced the same row in the in-tree developer doc (`/Users/jleechan/projects/worldarchitect.ai/wiki/campaigns/HouseOfTheDragon.md`).
-
-## [2026-08-05] update | House of the Dragon — restructure into "Quick Setup" + "More Details"
-
-Per user feedback (Slack C0AUXSVFSA2 ts=1785909171.805539), reorganized `queries/house-of-the-dragon-campaign.md` into two clearly-marked top-level sections: **(1) Quick Setup** — three-step launch (sign in, paste bible, launch) — and **(2) More Details** — character customization, LLM-edit meta-prompt, full annotated walkthrough, mechanics deep-dive, troubleshooting. The full 9-section bible now lives inside the Quick Setup section as a fenced `BEGIN_COPY_PASTE_BIBLE … END_COPY_PASTE_BIBLE` block. Bumped frontmatter `updated: 2026-08-05`. Mirrored the same restructure in the in-tree developer doc. Added a "Customize the character" subsection that explicitly walks through gender/age/dragon name/parent swap/look swap/starting-relationship variants.
+## [2026-08-05] update | HotD wiki — address 7 CodeRabbit review comments (index date, fenced code MD040, dragon-size consistency, Blood-of-the-Dragon reachability, Baela/Jacaerys relationships, bible-size unit, log-line format)
