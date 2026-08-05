@@ -1,7 +1,7 @@
 ---
 title: HouseOfTheDragonCampaign
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 type: query
 tags: [wa-campaign, wa-tutorial, wa-character]
 sources: []
@@ -56,7 +56,7 @@ On the dashboard, click the **Start New Campaign** button (top-left, under the "
 | Field | What to type | Notes |
 |---|---|---|
 | **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; this is just your dashboard label. |
-| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` | If you leave this blank, the AI auto-generates a random character — **do not leave blank** for this template, or you'll lose the dragon-claim opening. |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` | **This is the field you customize to make the character yours.** You can paste the exact default text above, or describe the character however you like — pick an explicit gender (he / she / they), pick an age, name the dragon, swap the parent, change the look. Whatever you write here is what the AI Dungeon Master plays. If you leave the field blank, the AI auto-generates a random character and you lose the dragon-claim opening — **don't leave it blank** for this template. |
 | **Setting/world for your adventure** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` | Sets the campaign's setting anchor. |
 | **Campaign description prompt** *(collapsed by default — click ▶ Expand)* | **Paste the entire bible below.** | The textarea accepts the full ~13,000-character bible without truncation. |
 | **Narrative (Jeff's Narrative Flair)** | Checked by default. Leave checked. | Recommended for tone. |
