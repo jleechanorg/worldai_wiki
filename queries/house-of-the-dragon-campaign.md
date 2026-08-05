@@ -33,10 +33,10 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 | Field | Paste this |
 |---|---|
 | **Campaign Title** | `House of the Dragon — The Bastard's Claim` |
-| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` *(or write your own — see [Customize the character](#customize-the-character) below)* |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` *(or write your own — see [Customize the character](#customize-the-character) below)* |
 | **Setting/world** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` |
 | **Campaign description prompt** *(click ▶ Expand)* | **The entire bible below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
-| **Mechanics (Jeff's Mechanical Precision)** | **CHECK THIS** (it's unchecked by default — the custom 5e rules need it) |
+| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | **UNCHECK THIS** (it's checked by default — the template is ASOIAF/HotD, not the built-in setting) |
 
 4. **Click Next → "Enter the World".** Your campaign starts on the volcanic beach with the dragon's claiming scream.
 
@@ -275,14 +275,14 @@ This is the detailed reference for what every field on the wizard does. The Quic
 
 | Field | What to type | Notes |
 |---|---|---|
-| **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; this is your dashboard label. |
-| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` | **This is the field you customize to make the character yours.** See [Customize the character](#customize-the-character). Don't leave blank. |
+| **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; this is just your dashboard label. |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` | **This is the field you customize to make the character yours.** See [Customize the character](#customize-the-character). Don't leave blank. |
 | **Setting/world for your adventure** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` | Sets the campaign's setting anchor. |
-| **Campaign description prompt** *(collapsed by default — click ▶ Expand)* | **Paste the entire bible above.** | The textarea accepts the full ~13,000-character bible without truncation (verified live). |
-| **Narrative (Jeff's Narrative Flair)** | Checked by default. Leave checked. | Recommended for tone. |
-| **Mechanics (Jeff's Mechanical Precision)** | **UNCHECKED by default — CHECK THIS.** | This template uses custom 5e mechanics (Blood of the Dragon compulsion, DragonsBond ability), so the AI Dungeon Master needs the mechanical-precision prompt enabled. |
-| **Generate starting Companions** | Unchecked by default. Optional. | The bible already lists 3 companions (Ser Ulwyck, Alys, Maester Lyman); leave unchecked for a tighter cast. |
-| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | Already UNCHECKED by default. Leave unchecked — that's what we want for the ASOIAF/HotD setting. | No action needed. |
+| **Campaign description prompt** *(collapsed by default — click ▶ Expand)* | **Paste the entire bible above.** | The textarea accepts the full ~13,500-character bible without truncation (verified live). |
+| **Narrative (Jeff's Narrative Flair)** | **Already CHECKED** by default. Leave checked. | Recommended for tone. |
+| **Mechanics (Jeff's Mechanical Precision)** | **Already CHECKED** by default. Leave checked. | This template uses custom 5e mechanics (Blood of the Dragon compulsion, DragonsBond ability), so the AI Dungeon Master needs the mechanical-precision prompt enabled — and the wizard ships it on by default. No action needed. |
+| **Generate starting Companions** | **Already CHECKED** by default. **OPTIONAL: uncheck this** if you want a tighter cast (the bible already lists 3 companions — Ser Ulwyck, Alys, Maester Lyman). | The bible's 3 starting companions are written into the description, so leaving this on just adds AI-generated extras alongside them. |
+| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | **CHECKED by default — UNCHECK THIS.** | This template is ASOIAF/HotD, not the built-in Celestial Wars setting. Unchecking it tells the AI to use the Westeros setting from your description field instead. |
 
 **Step 5 — Click Next, review Step 2, launch.** Step 2 is the "🚀 Ready to Launch!" review screen. It shows the campaign summary and lets you click any field to edit it inline (click outside to save, press Escape to cancel):
 
