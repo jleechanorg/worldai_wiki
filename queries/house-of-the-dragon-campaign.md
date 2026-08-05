@@ -11,6 +11,8 @@ sources: []
 
 A ready-to-play **House of the Dragon** solo campaign for [WorldArchitect.AI](https://worldarchitect.ai). You play a **gender-ambiguous bastard Targaryen** — child of Prince Daemon Targaryen and a dead Targaryen lady — who has just claimed a dragon on the eve of the Dance of the Dragons civil war.
 
+> **You can pick your own gender, class, background, dragon name, parent swap (other Targaryen father/mother), look, starting relationship, and pretty much anything else.** The template's default is a 16-year-old dragonrider, but if you want to be a woman knight sworn to Rhaenyra, a male maester-in-training, a bastard of Aegon II instead of Daemon, a 30-year-old veteran, a non-Targaryen outsider, etc. — just write what you want in the **Character you want to play** field on Step 1 of the wizard. The AI Dungeon Master plays whatever you describe. See [Customize the character](#customize-the-character) below for full swap examples.
+
 This page is split into two parts:
 
 1. **[Quick Setup](#1-quick-setup)** — three minutes. Sign in, paste, play.
