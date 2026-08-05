@@ -75,3 +75,5 @@
 ## [2026-08-05] update | HotD wiki — address 7 CodeRabbit review comments (index date, fenced code MD040, dragon-size consistency, Blood-of-the-Dragon reachability, Baela/Jacaerys relationships, bible-size unit, log-line format)
 
 ## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified live against `mvp_site/frontend_v1/js/campaign-wizard.js` + local `TESTING_AUTH_BYPASS=true` Playwright run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
+
+## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section

@@ -33,10 +33,22 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 | Field | Paste this |
 |---|---|
 | **Campaign Title** | `House of the Dragon — The Bastard's Claim` |
-| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` *(or write your own — see [Customize the character](#customize-the-character) below)* |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` *(or write your own — see examples below)* |
 | **Setting/world** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` |
 | **Campaign description prompt** *(click ▶ Expand)* | **The entire bible below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
 | **Use Default Fantasy World (Celestial Wars/Assiah setting)** | **UNCHECK THIS** (it's checked by default — the template is ASOIAF/HotD, not the built-in setting) |
+
+**:pencil2: Make the character yours (optional but recommended).** The default Character text above is one valid setup, but the AI Dungeon Master plays *whatever* you write in this field. Pick whatever you want — the bible (further down) is a flexible skeleton that adapts. Examples:
+
+- **Pick a gender** — `A 16-year-old she-dragon rider, gender-explicit bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` or `…they, the elder bastard of…`
+- **Pick an age** — `A 22-year-old dragonrider, just returned from exile, bastard of Prince Daemon Targaryen`
+- **Pick a class** — the bible defines a Dragonrider Aristocrat; you can override to `a bastard maester who secretly bonded a dragon`, `a dragonseed smallfolk with no noble blood`, or `a hedge knight sworn to House Velaryon who impressed a dragon in battle`
+- **Name the dragon** — add `riding the dragon Vyraxes` to the character line, or `who named their dragon Saeris`
+- **Swap the parent** — `bastard of Prince Aemond (the one-eyed rider of Vhagar) and a Lysene pleasure-worker`, or `bastard of Lord Corlys Velaryon and a Targaryen handmaid`
+- **Different look** — `pale silver-blonde with a missing eye and burn scars across the left arm`, `copper-skinned and lean, dressed in House Velaryon sea-leather`
+- **Different starting relationship** — `secretly a Green spy pretending to be Black`, `in love with Baela Targaryen`, `hiding the dragon from the entire court`
+
+If you write your own Character text, the bible below still applies — the dragon-bond, Blood-of-the-Dragon compulsion, family tree, factions, and starting scene all adapt to whichever protagonist you describe. If you leave the field blank, the AI auto-generates a random character and you lose the dragon-claim opening.
 
 4. **Click Next → "Enter the World".** Your campaign starts on the volcanic beach with the dragon's claiming scream.
 
