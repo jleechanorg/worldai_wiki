@@ -11,101 +11,40 @@ sources: []
 
 A ready-to-play **House of the Dragon** solo campaign for [WorldArchitect.AI](https://worldarchitect.ai). You play a **gender-ambiguous bastard Targaryen** — child of Prince Daemon Targaryen and a dead Targaryen lady — who has just claimed a dragon on the eve of the Dance of the Dragons civil war.
 
-This page gives you the **paste-ready campaign bible** and the **step-by-step setup walkthrough** (verified live against the [worldarchitect.ai](https://worldarchitect.ai) "Custom Campaign" wizard, August 2026).
+This page is split into two parts:
 
-## What you're playing
+1. **[Quick Setup](#1-quick-setup)** — three minutes. Sign in, paste, play.
+2. **[More Details](#2-more-details)** — character customization, LLM editing, mechanics deep-dive, troubleshooting, screenshots.
 
-- **Character**: A 16-year-old dragonrider, officially a bastard, looks unmistakably royal.
-- **Setting**: The Dance of the Dragons (~129-131 AC). Rhaenyra's Blacks vs. Aegon II's Greens. Dragonstone, King's Landing, the Riverlands.
-- **Hook**: This morning, on a black volcanic beach, a dragon screamed your name. You walked into the smoke. You came out mounted. The realm will not ignore you.
-- **Tone**: Grimdark political intrigue. Power fantasy on dragonback.
-- **Mechanics**: Custom class (Dragonrider Aristocrat, Lvl 6+), a signature **DragonsBond** dragon-summon ability, and a per-session **Blood of the Dragon** compulsion mechanic.
-- **Class**: See [CharacterCreation](../concepts/CharacterCreation.md) for how custom classes are wired into the system. The bible below describes the class in plain terms; the AI DM translates it into your character sheet at launch.
-
-For background on campaign-design principles (setting, tone, arc shape, god-mode header writing), see [CampaignDesign](../concepts/CampaignDesign.md).
-
-## How to use this page
-
-1. Read the **Setup Instructions** below — five steps, two of them optional.
-2. Copy the **Campaign Bible** (between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`) into your clipboard.
-3. Paste it into WorldArchitect.AI's "Campaign description prompt" field.
-4. Click through. Start playing.
-
-If you want to **edit the bible** (change the protagonist's gender, swap Daemon for another parent, pick a different dragon name, shift the era), paste the bible into any AI chat and use the **Edit with an LLM** workflow at the bottom of this page.
-
-## Setup Instructions (Verified Against the Live Website, Aug 2026)
-
-These steps match the live [worldarchitect.ai](https://worldarchitect.ai) campaign-creation wizard. Each step has been walked end-to-end against the live site (Step 2 "Ready to Launch!" review screenshot below).
-
-### Step 1 — Sign in
-
-1. Go to **[worldarchitect.ai](https://worldarchitect.ai)**.
-2. Sign in with Google (top right).
-3. The dashboard loads with your existing campaigns.
-
-### Step 2 — Open the New Campaign wizard
-
-On the dashboard, click the **Start New Campaign** button (top-left, under the "My Campaigns" heading). The wizard opens with a two-step indicator: **1 Choose Type → 2 Launch**.
-
-### Step 3 — Pick "Custom Campaign"
-
-"Custom Campaign" is selected by default. Leave it selected (the alternative "Dragon Knight Campaign" is the built-in starter).
-
-### Step 4 — Fill the Step 1 form
-
-| Field | What to type | Notes |
-|---|---|---|
-| **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; this is just your dashboard label. |
-| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` | **This is the field you customize to make the character yours.** You can paste the exact default text above, or describe the character however you like — pick an explicit gender (he / she / they), pick an age, name the dragon, swap the parent, change the look. Whatever you write here is what the AI Dungeon Master plays. If you leave the field blank, the AI auto-generates a random character and you lose the dragon-claim opening — **don't leave it blank** for this template. |
-| **Setting/world for your adventure** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` | Sets the campaign's setting anchor. |
-| **Campaign description prompt** *(collapsed by default — click ▶ Expand)* | **Paste the entire bible below.** | The textarea accepts the full ~13,000-character bible without truncation. |
-| **Narrative (Jeff's Narrative Flair)** | Checked by default. Leave checked. | Recommended for tone. |
-| **Mechanics (Jeff's Mechanical Precision)** | **UNCHECKED by default — CHECK THIS.** | This template uses custom 5e mechanics (Blood of the Dragon compulsion, DragonsBond ability), so the AI Dungeon Master needs the mechanical-precision prompt enabled. |
-| **Generate starting Companions** | Unchecked by default. Optional. | The bible already lists 3 companions (Ser Ulwyck, Alys, Maester Lyman); leave unchecked for a tighter cast. |
-| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | Already UNCHECKED by default. Leave unchecked — that's what we want for the ASOIAF/HotD setting. | No action needed. |
-
-### Step 5 — Click Next, review Step 2, launch
-
-Step 2 is the "🚀 Ready to Launch!" review screen. It shows the campaign summary and lets you click any field to edit it inline (click outside to save, press Escape to cancel):
-
-- **Title**, **Character**, **Description** (your pasted bible — truncated in display but full text stored), **AI Personalities**, **Options**
-
-You can also upload an optional character avatar (JPEG/PNG/GIF/WebP, max 5MB, recommended 512×512px or larger). If everything looks right, click **Enter the World**. The campaign begins with the bible's **Starting Scene** (Section 9 of the bible).
-
-![Step 2 — Ready to Launch! review screen on worldarchitect.ai, showing the campaign summary with the HotD bible pasted into the description field](images/house-of-the-dragon/step2-launch-desktop.png)
-
-### Quick visual of the wizard
-
-```
-1 Choose Type
-2 Launch
-─────────────────────────────────
-🎮 Choose Your Campaign
-
-○ ✨ Custom Campaign        ← already selected
-○ 🐲 Dragon Knight Campaign
-
-Campaign Title (Pick anything!)  [House of the Dragon — The Bastard's Claim]
-Character you want to play      [A 16-year-old dragonrider, ...]
-Setting/world for your adventure [The Dance of the Dragons, 129-131 AC. ...]
-📄 Campaign description prompt   [▶ Expand]  ← click this
-   ┌─────────────────────────────────────┐
-   │  (paste the entire bible here)      │
-   │                                     │
-   └─────────────────────────────────────┘
-☑ Narrative (Jeff's Narrative Flair)        ← already checked
-☐ Mechanics (Jeff's Mechanical Precision)  ← CHECK THIS
-☐ Generate starting Companions               ← optional
-☐ Use Default Fantasy World (Celestial Wars/Assiah)  ← already unchecked, leave it
-
-                                              [ Next ]
-```
+If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup**. If you want to customize the character, understand the mechanics, or troubleshoot, scroll to **More Details**.
 
 ---
 
-## Campaign Bible
+## 1. Quick Setup
 
-**Copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE` into the WorldArchitect.AI "Campaign description prompt" field.**
+**What you're playing** — a 16-year-old dragonrider, officially a bastard, who just claimed a dragon on a black volcanic beach. Grimdark political intrigue. Power fantasy on dragonback. [Dance of the Dragons](https://awoiaf.westeros.org/index.php/Years_after_the_Conquest#Year_129_AC), ~129-131 AC.
+
+**Three minutes to launch:**
+
+1. **Sign in** at [worldarchitect.ai](https://worldarchitect.ai) with Google.
+2. **Click "Start New Campaign"** on the dashboard. Pick **Custom Campaign** (the default).
+3. **Fill the form:**
+
+| Field | Paste this |
+|---|---|
+| **Campaign Title** | `House of the Dragon — The Bastard's Claim` |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` *(or write your own — see [Customize the character](#customize-the-character) below)* |
+| **Setting/world** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` |
+| **Campaign description prompt** *(click ▶ Expand)* | **The entire bible below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
+| **Mechanics (Jeff's Mechanical Precision)** | **CHECK THIS** (it's unchecked by default — the custom 5e rules need it) |
+
+4. **Click Next → "Enter the World".** Your campaign starts on the volcanic beach with the dragon's claiming scream.
+
+If anything looks wrong, see [Troubleshooting](#troubleshooting).
+
+### Copy-Paste Bible
+
+**Copy everything below this line:**
 
 ```
 BEGIN_COPY_PASTE_BIBLE — copy everything between BEGIN and END
@@ -286,11 +225,28 @@ The campaign begins on your answer.
 END_COPY_PASTE_BIBLE — stop copying here
 ```
 
+**Stop copying here.** Paste that into the "Campaign description prompt" field, click **Next**, then **Enter the World**.
+
 ---
 
-## Editing the Bible with an LLM (Before You Paste)
+## 2. More Details
 
-If you want to customize the template — change the dragon's name, swap Daemon for a different parent, set the protagonist as explicitly male or female, start in a different era — paste the bible into your favorite AI chat and use this prompt:
+### Customize the character
+
+The "Character you want to play" field is yours. The default text is `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` — but you can change anything:
+
+- **Explicit gender** — `A 16-year-old she-dragon rider, bastard of…` or `…they, the elder bastard of…`. The bible treats gender as a player-shaped variable, so set it however you want.
+- **Different age** — older/younger, married, widowed, etc. The bible's "16-year-old" is just the default.
+- **Name the dragon** — add `riding the dragon Vyraxes` to the character line, or `who named their dragon Saeris`.
+- **Different parent** — swap Daemon for Prince Aemond (your mother's older cousin, the one-eyed rider of Vhagar), or for a non-Targaryen (a Velaryon bastard, a Blackwood lord's get), or write a fully original parent.
+- **Different look** — copper skin vs. pale, silver-blonde vs. platinum, a scar from a prior dragon-claim attempt, a missing hand, etc.
+- **Different starting relationship** — already sworn to Rhaenyra, secretly a Green spy, hiding your dragon from everyone, in love with one of the half-siblings, etc.
+
+The AI Dungeon Master plays whatever you describe. If you leave the field blank, the AI auto-generates a random character and you lose the dragon-claim opening — **don't leave it blank** for this template.
+
+### Editing the bible with an LLM (before you paste)
+
+If you want bigger changes — a new era, a different parent, a new magic system, a new arc — paste the bible into your favorite AI chat and use this prompt:
 
 > You are an expert narrative designer and Game Master. I have pasted the "House of the Dragon — The Bastard's Claim" custom-campaign template for WorldArchitect.AI. I want to edit it as follows:
 >
@@ -305,31 +261,95 @@ If you want to customize the template — change the dragon's name, swap Daemon 
 
 The 9-section structure is robust to most player-shaped edits. The wizard accepts the full bible (~7,500 words) without truncation.
 
-For more on designing campaigns and prompt-crafting, see [CampaignDesign](../concepts/CampaignDesign.md) and [GodModePrompting](../concepts/GodModePrompting.md).
+### Full setup walkthrough (every form field, every checkbox)
 
-## What to Expect on Your First Session
+This is the detailed reference for what every field on the wizard does. The Quick Setup above covers the minimum; this is the annotated version.
+
+**Step 1 — Sign in.** Go to [worldarchitect.ai](https://worldarchitect.ai). Click **Continue with Google** (or **Sign in with Google**) in the center of the page. The dashboard loads with your existing campaigns.
+
+**Step 2 — Open the New Campaign wizard.** On the dashboard, click **Start New Campaign** (top-left, under "My Campaigns"). The wizard opens with a two-step indicator: **1 Choose Type → 2 Launch**.
+
+**Step 3 — Pick "Custom Campaign".** Already selected by default. Leave it. The alternative is "Dragon Knight Campaign", a built-in starter adventure.
+
+**Step 4 — Fill the Step 1 form.** Same table as Quick Setup, but with notes:
+
+| Field | What to type | Notes |
+|---|---|---|
+| **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; this is your dashboard label. |
+| **Character you want to play** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a medium-sized she-dragon` | **This is the field you customize to make the character yours.** See [Customize the character](#customize-the-character). Don't leave blank. |
+| **Setting/world for your adventure** | `The Dance of the Dragons, 129-131 AC. Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` | Sets the campaign's setting anchor. |
+| **Campaign description prompt** *(collapsed by default — click ▶ Expand)* | **Paste the entire bible above.** | The textarea accepts the full ~13,000-character bible without truncation (verified live). |
+| **Narrative (Jeff's Narrative Flair)** | Checked by default. Leave checked. | Recommended for tone. |
+| **Mechanics (Jeff's Mechanical Precision)** | **UNCHECKED by default — CHECK THIS.** | This template uses custom 5e mechanics (Blood of the Dragon compulsion, DragonsBond ability), so the AI Dungeon Master needs the mechanical-precision prompt enabled. |
+| **Generate starting Companions** | Unchecked by default. Optional. | The bible already lists 3 companions (Ser Ulwyck, Alys, Maester Lyman); leave unchecked for a tighter cast. |
+| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | Already UNCHECKED by default. Leave unchecked — that's what we want for the ASOIAF/HotD setting. | No action needed. |
+
+**Step 5 — Click Next, review Step 2, launch.** Step 2 is the "🚀 Ready to Launch!" review screen. It shows the campaign summary and lets you click any field to edit it inline (click outside to save, press Escape to cancel):
+
+- **Title**, **Character**, **Description** (your pasted bible — truncated in display but full text stored), **AI Personalities**, **Options**
+- Optional character avatar upload (JPEG/PNG/GIF/WebP, max 5MB, recommended 512×512px or larger square)
+
+If everything looks right, click **Enter the World**. The campaign begins with the bible's **Starting Scene** (Section 9 of the bible).
+
+![Step 2 — Ready to Launch! review screen on worldarchitect.ai, showing the campaign summary with the HotD bible pasted into the description field](images/house-of-the-dragon/step2-launch-desktop.png)
+
+### What to expect on your first session
 
 - The AI Dungeon Master will narrate the **claiming scene** — your dragon screaming on the volcanic beach, the dragonkeepers fleeing, Rhaenyra's tower window opening.
 - You'll be offered the **A/B/C decision** from Section 9. Pick any of the three; the AI will follow.
 - Combat starts when you decide to engage. The dragon combat system follows 5e rules (attack rolls, breath weapons, Dex saves). The **DragonsBond** ability gives you a bonded dragon ally with its own turn.
-- **The campaign bible is your context**, not a script. If you want to do something the bible doesn't anticipate, just type it. The AI will roll with it.
+- **The campaign bible is your context, not a script.** If you want to do something the bible doesn't anticipate, just type it. The AI will roll with it.
 
-## Troubleshooting
+### Class & mechanics deep-dive
+
+**Dragonrider Aristocrat, Level 6 base.** Custom gestalt class:
+- Hit points: as Fighter (half standard progression)
+- Sneak Attack: as Rogue (1d6 → 3d6 at L6)
+- Proficiencies: Medium Armor, Shield
+- Primary stat: Charisma 16+ (Persuasion, Intimidation, dragon-bond roll)
+- Secondary stat: Dexterity 14+ (AC, initiative)
+- Saves: Dexterity, Charisma
+- Skills: Persuasion, Insight, Intimidation, History, Survival, Animal Handling
+
+**DragonsBond (signature ability, once per long rest):**
+- Free action: summon your dragon as a bonded NPC ally
+- Dragon stat block: Adult Dragon, CR 13, ~195 HP at L6
+- Bonus action: see through the dragon's eyes
+- Telepathic voice: 10 miles per character level
+- Mounted combat: advantage on Dex (Acrobatics) to stay mounted
+- Sneak Attack trigger: while mounted, your dragon's attacks count as yours for triggering Sneak Attack if your dragon is within 5 ft of your target
+
+**Blood of the Dragon (compulsion mechanic, once per session):**
+- Trigger: visibly prove royal blood in front of a hostile witness
+- Effect: gain a bonus action on the next turn
+- Limit: overuse (3+ times per session) requires DC 12 Wisdom save or take 1 level of Exhaustion
+
+**Dragon Rider's Hoard:** your dragon collects objects of significance to you. After each major story beat, a small item appears at the dragon's nest. NPCs who receive a dragon-gift are 50% more likely to honor contracts signed in that moment.
+
+See the in-tree developer doc ([`/Users/jleechan/projects/worldarchitect.ai/wiki/campaigns/HouseOfTheDragon.md`](https://github.com/jleechanorg/worldarchitect.ai/blob/main/wiki/campaigns/HouseOfTheDragon.md)) for the full source material.
+
+### Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| "Campaign description prompt" looks empty after pasting | Click the **▶ Expand** toggle above the textbox. The field is collapsed by default. |
-| The AI uses World of Assiah lore instead of ASOIAF | Make sure **Use Default Fantasy World** is unchecked (it is by default). |
+| "Campaign description prompt" looks empty after pasting | Click the **Expand** toggle above the textbox. The field is collapsed by default. |
+| The AI uses World of Assiah lore instead of ASOIAF | Make sure **Use Default Fantasy World** is unchecked in Step 1. |
 | The AI doesn't recognize your dragon | Confirm your dragon's name is in the description field. The AI treats the pasted bible as campaign lore. |
-| You wanted a different gender expression | Use the **Editing the Bible** workflow above to set explicit pronouns. The default is intentionally ambiguous. |
+| You wanted a different gender expression | Use the [Customize the character](#customize-the-character) workflow to set explicit pronouns before pasting. The default is intentionally ambiguous. |
 | The AI doesn't start at the dragon-claim scene | Open with: `I am on a black volcanic beach. My dragon is screaming. Tell me what I see.` — the bible will kick in. |
-| Combat is too generic / ignoring Blood of the Dragon / ignoring DragonsBond | Make sure you **checked** the *Mechanics* (Jeff's Mechanical Precision) checkbox in Step 4 — it is unchecked by default. |
+| Field labels in this guide don't match the live site | The live site updates labels occasionally. Field labels shown are correct as of Aug 2026. If the live site has changed, screenshot the wizard and check the [project wiki](https://github.com/jleechanorg/worldarchitect.ai) for the latest. |
 
-## See also
+### Related
 
-- [CampaignDesign](../concepts/CampaignDesign.md) — pick a setting, tone, arc shape, god-mode header.
-- [GodModePrompting](../concepts/GodModePrompting.md) — write directives that actually shape narration.
-- [CharacterCreation](../concepts/CharacterCreation.md) — how AI-generated vs hand-rolled characters work.
-- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns illustrating different archetypes.
-- [Daemon](../entities/Daemon.md) — the antagonist archetype your father maps to.
-- [AegonTargaryen](../entities/AegonTargaryen.md) — half-brother antagonist archetype.
+- [How to play — first 30 minutes](../queries/how-to-play-worldai.md) — sign up, run the wizard, take your first action
+- [CampaignDesign](../concepts/CampaignDesign.md) — setting, tone, arc shape, god-mode header writing
+- [CharacterCreation](../concepts/CharacterCreation.md) — how custom classes are wired into the system
+- [CampaignWizard](../concepts/CampaignWizard.md) — the wizard internals (Custom vs. Dragon Knight, prompt-pack flags)
+- [Combat](../concepts/Combat.md) — the combat system overview
+
+### Provenance
+
+- User-requested wiki page: Slack C0AUXSVFSA2 thread ts=1785909171.805539, 2026-08-04
+- Live-site verification: WorldArchitect.AI "Custom Campaign" wizard — Step 1 form fields, Step 2 review, and 15,000-character description-input acceptance probe (Aug 2026)
+- Source material: synthesized from the existing [LLM wiki Visenya campaign line](https://github.com/jleechanorg/worldarchitect.ai) sources — `visenya-v7-daemons-bastard` (bastard framing), `campaign-template-prompt-v3` (9-section structure), `visenya-v8-gazetteer-mechanics` (gazetteer style), `visenya-v9-apex-stalker` (L6 class lever)
+- Restructured into Quick Setup + More Details per user feedback (2026-08-05)

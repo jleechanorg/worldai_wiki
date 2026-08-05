@@ -73,3 +73,7 @@ Added `queries/house-of-the-dragon-campaign.md` and a top-level "Start here" ent
 ## [2026-08-05] update | House of the Dragon — clarify that "Character you want to play" is the player-customization field
 
 Per user feedback (Slack C0AUXSVFSA2 ts=1785909171.805539), rewrote the Notes column for the "Character you want to play" row in Step 4 of `queries/house-of-the-dragon-campaign.md` so it explicitly tells players they can pick gender, age, dragon name, parent, look, etc. — not just paste the default 16yo text. Bumped frontmatter `updated: 2026-08-05`. Synced the same row in the in-tree developer doc (`/Users/jleechan/projects/worldarchitect.ai/wiki/campaigns/HouseOfTheDragon.md`).
+
+## [2026-08-05] update | House of the Dragon — restructure into "Quick Setup" + "More Details"
+
+Per user feedback (Slack C0AUXSVFSA2 ts=1785909171.805539), reorganized `queries/house-of-the-dragon-campaign.md` into two clearly-marked top-level sections: **(1) Quick Setup** — three-step launch (sign in, paste bible, launch) — and **(2) More Details** — character customization, LLM-edit meta-prompt, full annotated walkthrough, mechanics deep-dive, troubleshooting. The full 9-section bible now lives inside the Quick Setup section as a fenced `BEGIN_COPY_PASTE_BIBLE … END_COPY_PASTE_BIBLE` block. Bumped frontmatter `updated: 2026-08-05`. Mirrored the same restructure in the in-tree developer doc. Added a "Customize the character" subsection that explicitly walks through gender/age/dragon name/parent swap/look swap/starting-relationship variants.
