@@ -13,6 +13,7 @@
 - [Player user stories (75)](queries/PlayerUserStories.md)
 - [External user stories (75, EXT-026–EXT-100)](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
+- [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — gender-ambiguous bastard Targaryen of Daemon claims a dragon on the eve of the Dance. Includes a paste-ready 9-section campaign bible and a setup walkthrough verified against the live worldarchitect.ai wizard.
 
 ## Entities
 
