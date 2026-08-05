@@ -50,7 +50,7 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 
 If you write your own Character text, the bible below still applies — the dragon-bond, Blood-of-the-Dragon compulsion, family tree, factions, and starting scene all adapt to whichever protagonist you describe. If you leave the field blank, the AI auto-generates a random character and you lose the dragon-claim opening.
 
-4. **Click Next → "Enter the World".** Your campaign starts on the volcanic beach with the dragon's claiming scream.
+4. **Click Next → "Enter the World".** The AI Dungeon Master will narrate the **claiming scene** from Section 9 of the bible: black volcanic sand, your dragon screaming, the dragonkeepers fleeing, a window opening in the Sea Tower. You'll then be offered an **A/B/C first decision** (fly to the Sea Tower / touch the dragon's snout first / speak High Valyrian) — pick any of the three and the story begins. Type freely after that; the bible is your context, not a script.
 
 If anything looks wrong, see [Troubleshooting](#troubleshooting).
 
