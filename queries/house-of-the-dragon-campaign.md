@@ -24,7 +24,7 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 
 ## 1. Quick Setup
 
-**What you're playing** — a 16-year-old dragonrider, officially a bastard, who just claimed a dragon on a black volcanic beach. Grimdark political intrigue. Power fantasy on dragonback. [Dance of the Dragons](https://awoiaf.westeros.org/index.php/Years_after_the_Conquest#Year_129_AC), ~129-131 AC.
+**What you're playing** — a 16-year-old dragonrider, officially a bastard, who just claimed a dragon on a black volcanic beach. Grimdark political intrigue. Power fantasy on dragonback. [Dance of the Dragons](https://en.wikipedia.org/wiki/Dance_of_the_Dragons), ~129-131 AC.
 
 **Three minutes to launch:**
 
