@@ -58,11 +58,10 @@ If anything looks wrong, see [Troubleshooting](#troubleshooting).
 
 ### Copy-Paste Bible
 
-**Copy everything below this line:**
+**Copy the entire code block below** — from the `BEGIN_COPY_PASTE_BIBLE` line to the `END_COPY_PASTE_BIBLE` line. Click anywhere in the block and use your editor's "select inside fenced block" shortcut, or select from `BEGIN_COPY_PASTE_BIBLE` to `END_COPY_PASTE_BIBLE` (the two markers are included on purpose — they bracket the bible and don't break the wizard).
 
 ```text
-BEGIN_COPY_PASTE_BIBLE — copy everything between BEGIN and END
-═══════════════════════════════════════════════════════════════════════════
+BEGIN_COPY_PASTE_BIBLE
 
 # Campaign Bible: House of the Dragon — The Bastard's Claim
 
@@ -235,11 +234,10 @@ C) Speak to it in High Valyrian — your mother's voice. The dragon will know. E
 
 The campaign begins on your answer.
 
-═══════════════════════════════════════════════════════════════════════════
-END_COPY_PASTE_BIBLE — stop copying here
-```text
+END_COPY_PASTE_BIBLE
+```
 
-**Stop copying here.** Paste that into the "Campaign description prompt" field, click **Next**, then **Enter the World**.
+**Stop copying here.** Paste that block into the **Campaign description prompt** field, click **Next**, then **Enter the World**.
 
 ---
 
