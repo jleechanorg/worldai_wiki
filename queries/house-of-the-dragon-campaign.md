@@ -58,11 +58,9 @@ If anything looks wrong, see [Troubleshooting](#troubleshooting).
 
 ### Copy-Paste Bible
 
-**Copy the entire code block below** — from the `BEGIN_COPY_PASTE_BIBLE` line to the `END_COPY_PASTE_BIBLE` line. Click anywhere in the block and use your editor's "select inside fenced block" shortcut, or select from `BEGIN_COPY_PASTE_BIBLE` to `END_COPY_PASTE_BIBLE` (the two markers are included on purpose — they bracket the bible and don't break the wizard).
+Copy the entire block below into the **Campaign description prompt** field, then click **Next** → **Enter the World**.
 
 ```text
-BEGIN_COPY_PASTE_BIBLE
-
 # Campaign Bible: House of the Dragon — The Bastard's Claim
 
 ## 1. Campaign Intro
@@ -233,11 +231,7 @@ B) Touch the dragon's snout first, mount second — establish the bond silently,
 C) Speak to it in High Valyrian — your mother's voice. The dragon will know. Everyone watching will know you are not a typical bastard.
 
 The campaign begins on your answer.
-
-END_COPY_PASTE_BIBLE
 ```
-
-**Stop copying here.** Paste that block into the **Campaign description prompt** field, click **Next**, then **Enter the World**.
 
 ---
 
