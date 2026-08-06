@@ -65,3 +65,15 @@
 - Added 2 tests: `test_no_raw_wikilinks_in_raw_directory` pins the contract that the shipped wiki has zero raw wikilinks in `raw/`; `test_lint_script_catches_raw_directory_wikilinks` pins the contract that the linter's render-safety scan covers `raw/`.
 - Updated `AGENTS.md` and `SCHEMA.md` to make the `raw/`-also-rendered-on-github.com rule explicit.
 - Bug-ref: 2026-06-22 — Jeffrey reported the player-facing systems table on `entities/WorldArchitect.md` rendered `[[concepts/Combat]]` literal text. Root cause was a raw/ mirror file in the same surface area, not the entity page itself.
+
+## [2026-08-04] create | House of the Dragon custom-campaign template (paste-ready 9-section bible + setup walkthrough verified live against worldarchitect.ai Custom Campaign wizard)
+
+## [2026-08-05] update | HotD wiki — Character-field customization note per Slack ts=1785909171.805539
+
+## [2026-08-05] update | HotD wiki — restructure into Quick Setup + More Details per Slack ts=1785909171.805539
+
+## [2026-08-05] update | HotD wiki — address 7 CodeRabbit review comments (index date, fenced code MD040, dragon-size consistency, Blood-of-the-Dragon reachability, Baela/Jacaerys relationships, bible-size unit, log-line format)
+
+## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified live against `mvp_site/frontend_v1/js/campaign-wizard.js` + local `TESTING_AUTH_BYPASS=true` Playwright run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
+
+## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section
