@@ -332,7 +332,7 @@ If everything looks right, click **Enter the World**. The campaign begins with t
 
 **Dragon Rider's Hoard:** your dragon collects objects of significance to you. After each major story beat, a small item appears at the dragon's nest. NPCs who receive a dragon-gift are 50% more likely to honor contracts signed in that moment.
 
-See the in-tree developer doc ([`/Users/jleechan/projects/worldarchitect.ai/wiki/campaigns/HouseOfTheDragon.md`](https://github.com/jleechanorg/worldarchitect.ai/blob/main/wiki/campaigns/HouseOfTheDragon.md)) for the full source material.
+See the project wiki's other pages ([How to play — first 30 minutes](../queries/how-to-play-worldai.md), [Combat](../concepts/Combat.md), [CharacterCreation](../concepts/CharacterCreation.md)) for the wider campaign-building framework this template fits into.
 
 ### Troubleshooting
 
@@ -343,7 +343,7 @@ See the in-tree developer doc ([`/Users/jleechan/projects/worldarchitect.ai/wiki
 | The AI doesn't recognize your dragon | Confirm your dragon's name is in the description field. The AI treats the pasted bible as campaign lore. |
 | You wanted a different gender expression | Use the [Customize the character](#customize-the-character) workflow to set explicit pronouns before pasting. The default is intentionally ambiguous. |
 | The AI doesn't start at the dragon-claim scene | Open with: `I am on a black volcanic beach. My dragon is screaming. Tell me what I see.` — the bible will kick in. |
-| Field labels in this guide don't match the live site | The live site updates labels occasionally. Field labels shown are correct as of Aug 2026. If the live site has changed, screenshot the wizard and check the [project wiki](https://github.com/jleechanorg/worldarchitect.ai) for the latest. |
+| Field labels in this guide don't match the live site | The live site updates labels occasionally. Field labels shown are correct as of Aug 2026. If the live site has changed, screenshot the wizard and check the [other queries in this wiki](https://github.com/jleechanorg/worldai_wiki/tree/main/queries) for the latest. |
 
 ### Related
 
