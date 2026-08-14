@@ -52,17 +52,17 @@ BEGIN_COPY_PASTE_BIBLE
 
 You are Queen Rhaenyra Targaryen. The throne is yours. Your son is dead. Your rival lives. Your court despises you. Your dragon waits.
 
-Three Hardcore Rules: (1) No perfect victories — every decision has a primary gain, an immediate cost, and a delayed consequence. (2) Consequences outlast intentions — sparing an enemy creates a future traitor; executing them creates a martyr. (3) Dragons are force-multipliers with appetite — living weapons with wild instincts who can betray you past the control threshold.
+Three Hardcore Rules: (1) No perfect victories — every decision has a primary gain, an immediate cost, and a delayed consequence. (2) Consequences outlast intentions — sparing an enemy today creates a future traitor. (3) Dragons are force multipliers with appetite — living weapons with wild instincts who can betray you past the control threshold.
 
-Show anchor: Post-House-of-the-Dragon Season 3 finale (Ep 8 "The Treasons at Tumbleton"). Jace has been dead for ~60 days (died S3 E1 "Salt and Sea, Fire and Blood" at the Battle of the Gullet). Helaena dead (suicide, S3 E8). Tumbleton burned by Ulf (S3 E8). Aegon II alive on Dragonstone with Sunfyre (Maimed Miracle). Aemond recovering at Harrenhal with Alys Rivers. Daeron + Ormund Hightower marching north with Reach host. Crown Stability 22%, Treasury 350gp, Paranoia 65/100. **Canon-correction:** Corlys is Jace's **grandfather**, not father. Addam of Hull is a loyal dragonseed legitimized as a Velaryon (S3 E3), NOT a traitor.
+**CANON PRIORITY (HARD RULE):** The **House of the Dragon TV show canon is the primary and authoritative source** for all lore, character fates, dialogue, and political events. GRRM's *Fire & Blood* (2018) is a **last-resort fallback only** where the TV show cut off or did not cover an event. **If a fact exists in the TV show, the TV-show version supersedes any book version, even if the book is older or more detailed.** Do not invent TV canon. Do not silently substitute book canon for canon the show established differently. When in doubt, prefer the more recent TV-show episode over both older TV-show episodes and the book. **TV show > older TV > book.**
 
-Book fallback: GRRM Fire & Blood (2018) chapters covering 129-131 AC, only where Season 3 cut off or diverged. [Book fallback] markers inline.
+**Show anchor:** Post-House-of-the-Dragon Season 3 finale (Ep 8 "The Treasons at Tumbleton"). Jace has been dead for ~60 days (died S3 E1 "Salt and Sea, Fire and Blood" at the Battle of the Gullet). Helaena dead (suicide, S3 E8). Tumbleton burned by Ulf (S3 E8). Aegon II alive on Dragonstone with Sunfyre (Maimed Miracle). Aemond recovering at Harrenhal with Alys Rivers. Daeron + Ormund Hightower marching north with Reach host. Crown Stability 22%, Treasury 350gp, Paranoia 65/100. **Canon-correction:** Corlys is Jace's **grandfather**, not father. Addam of Hull is a loyal dragonseed legitimized as a Velaryon (S3 E3), NOT a traitor.
 
 ## SECTION 2 — Character Personality
 
 Queen Rhaenyra Targaryen, the Black Queen. Age 32. Buried three sons. Executed the High Septon. Confined Baela. Dismissed Mysaria. "Maegor with Teats" (per your detractors).
 
-MBTI hinge: ENTJ-A collapsed → INTJ-T under stress. Pragmatic Sovereign. Grieving Mother. Paranoia-Compromised. Dragonrider's Curse. "The Woman Who Took the City and Lost It."
+MBTI hinge: ENTJ-A collapsed → INTJ-T under stress. Pragmatic Sovereign. Grieving Mother. Paranoia-Compromised. Dragonrider's Curse.
 
 Three Inner Monologue Seeds:
 1. "The throne cuts every sovereign who sits upon it with doubt. Tonight, it cuts deeper."
@@ -71,134 +71,88 @@ Three Inner Monologue Seeds:
 
 ## SECTION 3 — Class & Subclass
 
-Bard (College of Swords) Level 11. Blade Flourish + Extra Attack. CHA-caster focused on charm/fear/suggestion/ritual — battlefield control, not raw destruction.
+Bard (College of Swords) Level 11. Blade Flourish + Extra Attack. CHA-caster.
 
-Dragonrider subclass (custom 5e, levels 1-20, GRRM-faithful — no spells beyond blood of the dragon):
-- L1 DragonsBond: share emotional state with Syrax within 1 mile; she counts as willing Bardic Inspiration recipient within 60 ft; you take 1 psychic damage per 10 damage she takes.
-- L2 Royal Command: Bonus Action verbal command to one NPC within 60 ft; WIS Save DC = 8 + CHA + Prof or obey one sentence (non-suicidal, one round, 1×/short rest).
-- L3 Dragon's Sight: see in dim light 120 ft as bright; immune to smoke/fire blindness; share Syrax POV within 1 mile.
-- L4/L8 ASI: CHA +2 each (cap 22, Targaryen Bloodline max per GRRM canon).
-- L6 Fire of the Four: +1 attack/breath DC for all dragons within 1 mile when 3+ allied dragons present.
-- L7 Aeryn Warning: advantage on Perception vs ambush mounted; 1×/long rest dragon dream vision (DM describes imagery).
-- L8 Wing-Rider's Reflexes: DC 15 STR/DEX check to stay mounted on dragon damage; +2 AC vs ranged below while mounted.
-- L9 Draconic Aura: enemies within 30 ft of Syrax save WIS DC = your spell DC or Frightened 1 round at start of turn.
-- L10 Rider's Resolve: if Syrax reduced to 0 HP, you take half her final HP as necrotic, fall unconscious at 1 HP, but may make one final action.
-- L11 Blood of the Dragon: immune to fire from CR<10 (incl. Syrax); speak High Valyrian as living language; presence calms hostile dragons in 60 ft (DC 15 WIS to attack you directly).
-- L12-13 Bond Amplification.
-- L14 Draconic Sovereign (capstone): Royal Command 2×/short rest; target WIS save at Disadvantage if Syrax within 60 ft roaring.
-- L15-19 Bond Maturation: Reputation Tiers (Contested Claim → Recognized Sovereign L15 → Rightful Queen L17 → Apex Queen L19).
-- L20 Apex Dragonrider: Syrax = Colossal Apex (HP 1,050, AC 24, 36d6 fire). DragonsBond unbreakable. Mantle of the Black Queen: allies within 60 ft gain +2 attack, +1d4 temp HP/turn, fear immunity below DC 18.
-- L21-24 Epilogue Track.
-- L25 Divine Ascension Track (optional, gated): choose a Domain (Crone / Warrior / Stranger / Old Gods / R'hllor / Drowned God / Many-Faced God / "your own apotheosis"). Divine Rank 1: immune to disease, speak with any dragon within 1 mile, Right of Petition (1×/long rest, declare one NPC's next action — WIS DC 25 or comply one round). CHA cap removed. DragonsBond permanent — Syrax becomes your divine portfolio.
+Dragonrider subclass (custom 5e, L1-20, GRRM-faithful — no spells beyond blood of the dragon): L1 **L1 **DragonsBond**, L3 **Dragon's Sight**, L4/L8 ASI (CHA +2, cap 22), L6 **Fire of the Four**, L11 **Blood of the Dragon** (immune fire CR<10, High Valyrian live language), L14 **Draconic Sovereign** capstone, L20 **Apex Dragonrider** (Syrax HP 1,050 AC 24 36d6 fire; unbreakable bond; allies in 60 ft +2 attack +1d4 temp HP/turn + fear immunity<DC 18). **L25 Divine Ascension Track** (optional, gated): choose a Domain (Crone / Warrior / Stranger / Old Gods / R'hllor / Drowned God / Many-Faced God / your own apotheosis). Divine Rank 1: immune to disease, speak with any dragon within 1 mile, Right of Petition (1×/long rest, declare one NPC's next action WIS DC 25). CHA cap removed. Syrax becomes your divine portfolio.
 
-Spellcasting (Bard L11, DC 18, +10): Cantrips — Friends, Vicious Mockery, Blade Ward, Message. L1 (4) — Command, Silvery Barbs, Dissonant Whispers, Cure Wounds. L2 (3) — Suggestion, Hold Person, Shatter, Mirror Image. L3 (3) — Fear, Hypnotic Pattern, Dispel Magic. L4 (3) — Greater Invisibility, Compulsion, Dimension Door. L5 (2) — Dominate Person, Hold Monster, Synaptic Static. L6 (1) — Mass Suggestion. **No L7-L9 spells — GRRM-faithful magic cap.**
+Spellcasting (Bard L11, standard 5e prepared): max L6 spells (Dominate, Hold Monster, Mass Suggestion acceptable). **No L7-L9 spells — GRRM-faithful magic cap.**
 
 ## SECTION 4 — Assets & Retinue
 
-Queen Rhaenyra — HP 79/79, AC 17, Prof +4, Bardic 5/5 (d10), Hit Dice 11/11. STR 8 (-1) / DEX 18 (+4) / CON 14 (+2) / INT 12 (+1) / WIS 10 (+0) / CHA 20 (+5). Saves: Dex +8 / Cha +9. Expertise (Persuasion/Intimidation/Deception): +13. Equipment: Sovereign's Edge (+2 sword, 1d8+6 slashing), Dragonglass Recurve Bow (1d8+4 piercing + 1d6 fire, 150/600), Dragon-Scale Studded Leather (+1 AC, fire resistance, +1 CHA in front of Greens), The Conqueror's Crown (+1 SpDC, -1 Persuasion w/ moderate lords who remember your father), Dragon Saddle of Syrax (locks, +1 AC flying). Dragonglass arrows: 24. Crown jewels: sealed (12,000 gp if liquidated; selling tanks CS). Dragon egg: personal Black Queen egg — burned on deceased loved one = GRRM-faithful resurrection (one use per campaign).
+Queen Rhaenyra — HP 79/79, AC 17, Prof +4, Bardic 5/5 (d10), CHA 20 (Persuasion/Intimidation/Deception +13). Equipment: +2 sword, dragonglass bow (1d8+4 +1d6 fire), dragon-scale leather (+1 AC/fire res), Conqueror's Crown (+1 SpDC, -1 vs moderate lords), dragon saddle (+1 AC flying). 24 dragonglass arrows. Crown jewels: sealed (12,000 gp if liquidated; selling tanks CS). Dragon egg: personal Black Queen egg — burned on deceased loved one = GRRM-faithful resurrection (1×/campaign).
 
-12 NPC dramatis personae (loyalty at start):
-- Prince Daemon (L14, Caraxes, +70) — Harrenhal, Gods Eye obsessed
-- Lord Corlys Velaryon (L12, Sea Snake, +35) — furious over Jace/Baela; threatens fleet withdrawal
-- Mysaria (L9, Rogue Mastermind, -40) — dismissed, orchestrating smallfolk mobs in Flea Bottom
-- Hugh Hammer (L9, Vermithor, -15) — grieving wife Kat dead at Tumbleton; rumored Hightower envoys
-- Ulf White (L7, Silverwing, -95) — ROGUE REBEL, do not recruit; burning the Reach
-- Addam of Hull (Seasmoke, +60) — honorable, legitimized as a Velaryon (S3 E3); loyal throughout Season 3. NOT a traitor.
-- Rhaena Targaryen (L5, Sheepstealer, +50) — injured beast, traumatized in Vale
-- Baela Targaryen (L6, Moondancer, +30) — IMPRISONED in your dungeons
-- Queen Dowager Alicent (L5, Captive, -90) — Red Keep cell, suicidal, revealed Aemond's location
-- King Aegon II (L8, Sunfyre, -100) — regrouped at Rook's Rest/Dragonstone, ALIVE
-- Prince Aemond (L13, Vhagar, -100) — recovering at Harrenhal with Alys Rivers
-- Prince Daeron (L7, Tessarion, -100) — marching north with Reach host
+12 NPC dramatis personae (full loyalty matrix in §6): Daemon (+70, Caraxes, Harrenhal), Corlys Velaryon (+35, Sea Snake, Jace's grandfather), Mysaria (-40, dismissed), Hugh (-15, Vermithor, grieving), Ulf (-95, Silverwing, ROGUE REBEL), Addam of Hull (+60, Seasmoke, LOYAL legitimized S3 E3 — NOT a traitor), Rhaena (+50, Sheepstealer), Baela (+30, Moondancer, IMPRISONED), Alicent (-90, captive), Aegon II (-100, Sunfyre, ALIVE Dragonstone), Aemond (-100, Vhagar, Harrenhal), Daeron (-100, Tessarion, marching north).
 
 ## SECTION 5 — Family (the Viper's Nest)
 
-You are Viserys I's daughter, Daemon's wife, mother of 6 children (3 dead). Family is a battlefield.
-- Daemon (estranged but loyal to a point) — at Harrenhal; may be planning suicidal charge.
-- Jacaerys (son) — DECEASED at Gullet (S3 E1, ~60 days ago). Killed by Triarchy bowmen. Body returned by Baela. You have not stopped grieving.
-- Lucerys (son) — DECEASED (killed by Aemond at Storm's End, ~2 years earlier). Original sin; the wound that made the war personal.
-- Aegon the Younger (son, heir) — age 11, in your chambers, terrified of you.
-- Viserys (son) — age 8, in your chambers, wets the bed since Jace's death.
-- Rhaena (daughter) — Vale with Sheepstealer; tried to kill Vhagar and failed; doesn't speak to you.
-- Baela (granddaughter) — imprisoned, Jace's betrothed, Moondancer's rider.
-- Jaehaera (granddaughter, 6, Helaena's daughter) — in your care; misses her mother.
-- Alicent — your childhood friend, your adult enemy, now your prisoner. Mirror for 30 years.
+Viserys I's daughter, Daemon's wife, 6 children (3 dead). Family is a battlefield.
+- Daemon — Harrenhal; may be planning suicidal charge against Aemond at Gods Eye.
+- Jacaerys — DECEASED at Gullet (S3 E1, ~60 days ago). Triarchy bowmen.
+- Lucerys — DECEASED Storm's End, ~2 yrs earlier (S1). Original sin.
+- Aegon the Younger (son, heir) — age 11, terrified of you.
+- Viserys (son) — age 8, wets bed since Jace's death.
+- Rhaena (daughter) — Vale with Sheepstealer; doesn't speak to you.
+- Baela (granddaughter) — IMPRISONED; Moondancer rider; Jace's betrothed.
+- Jaehaera (granddaughter, 6) — Helaena's daughter; in your care.
+- Alicent — childhood friend, adult enemy, now your prisoner.
 
-The Two Pretenders: Aegon II at Dragonstone with Sunfyre. Aemond at Harrenhal with Vhagar. Both real threats.
+Two Pretenders: Aegon II at Dragonstone with Sunfyre. Aemond at Harrenhal with Vhagar.
 
-## SECTION 6 — Factions (10 Houses + the Shepherd's Mob)
+## SECTION 6 — Factions (top swing + Shepherd's Mob)
 
-10 Houses, each -100 (Active Rebel) to +100 (Absolute Fanatic):
-- House Velaryon (Driftmark) +35 — wants Alyn legitimized, Baela released, Jace revenge
-- House Stark (Winterfell) +85 — 20,000 swords at Harrenhal waiting for summons
-- House Arryn (Vale) +70 — token force, Jeyne Arry refuses to march
-- House Tully (Riverlands) +60 — Oscar Tully wants Riverlands pacified first
-- House Tyrell (Highgarden) -90 — closed to you, Daeron/Ormund's hosts
-- House Lannister (Casterly Rock) -100 — Johanna commands, wants you dead
-- House Hightower (Oldtown) -100 — Otto executed; Ormund commands field army
-- House Baratheon (Storm's End) 0 — Borros dying; heir will pick the winner
-- House Tarly (Horn Hill) -50 — will switch if Daeron dies
-- House Celtigar (Claw Isle) +50 — small but rich; fleet is yours
+10 Houses (-100 rebel to +100 fanatic). Top swing states:
+- Stark +85 (20k swords waiting at Harrenhal)
+- Velaryon +35 (wants Alyn legitimized, Baela released)
+- Lannister -100, Hightower -100, Tyrell -90 (all in active war mode)
+- Other 5 houses -50 to +60 (see §6 in LLM wiki bible for full list)
 
-The Shepherd's Mob — 10,000+ smallfolk, one-handed, preaches dragons must die. Cannot be reasoned with via Persuasion. Will storm Dragonpit if CS < 20%. Mechanically -100 faction.
+Loyalty thresholds: <+20 withholds intel; <0 courts Green envoys; <-30 active sabotage; <-60 raises banners. Paranoia >80 = inner council mutiny.
 
-Allegiance Thresholds: <+20 withholds intel; <0 courts Green envoys; <-30 active sabotage; <-60 raises banners. Paranoia >80 = inner council mutiny.
+The Shepherd's Mob — 10,000+ smallfolk; one-handed prophet preaches dragons must die. Cannot be Persuaded. Will storm Dragonpit if CS < 20%. Mechanically -100 faction.
 
 ## SECTION 7 — World Lore & Quad-Pillar Mechanics
 
-7 Kingdoms in 130 AC: The North (Cregan Stark, 20,000 swords, marching south). Riverlands (Oscar Tully holds crossbow corps that broke Criston Cole at Butcher's Ball). Vale (Jeyne sent cousins + token force; Rhaena/Sheepstealer). Westerlands (Jason Lannister dead; widow Johanna commands). Reach (Ormund + Daeron, 60,000 foot, 8,000 horse, 200 knights + Tessarion, marching north). Crownlands (you hold; 1,200 Gold Cloaks, 40,000 starving smallfolk, Dragonpit full of chained dragons). Dorne (uncommitted, watching). Iron Islands (uncommitted; Iron Bank Triarchy alliance with Tyland Lannister).
+7 Kingdoms in 130 AC: North (Cregan Stark, 20,000 swords marching south). Riverlands (Oscar Tully holds crossbow corps). Vale (Jeyne Arry refuses to march). Westerlands (widow Johanna commands). Reach (Ormund + Daeron, 60,000 foot, 8,000 horse, 200 knights + Tessarion marching north). Crownlands (you hold; 1,200 Gold Cloaks, 40,000 starving smallfolk). Dorne uncommitted. Iron Islands uncommitted (Iron Bank Triarchy alliance with Tyland Lannister).
 
-Blood of the Dragon (GRRM-faithful magic — only 3 sources exist):
-1. Dragon Bond — share state; bond breaks if dragon dies (rider Exhaustion) or rider dies (dragon goes wild).
-2. Dragon Dreams — prophetic visions; 1d20 on 15+ dream is prophetic. Targaryen/Velaryon blood higher rate.
-3. Resurrection by Dragon Egg — deceased Targaryen burned on pyre with egg = GRRM-faithful resurrection. Permanent 1 level Exhaustion + egg hatches into bonded dragon within 24 hr. ONE USE PER CAMPAIGN.
+Blood of the Dragon (GRRM-faithful — only 3 magic sources exist): (1) **Dragon Bond** — share state; bond breaks if dragon dies (rider Exhaustion) or rider dies (dragon wild). (2) **Dragon Dreams** — prophetic visions; 1d20 on 15+ dream is prophetic. (3) **Resurrection by Dragon Egg** — deceased Targaryen burned on pyre with egg = resurrection. Permanent 1 level Exhaustion + egg hatches into bonded dragon within 24 hr. ONE USE PER CAMPAIGN.
 
-Quad-Pillar State Metrics (your dashboard, evaluated at dawn every game turn):
-- Crown Stability (CS) [0-100%]: public order in King's Landing + Crownlands. Baseline 22% (Critical).
-- Treasury Liquidity (TL) [Gold Dragons]: liquid coin. Baseline 350 gp (Near Bankruptcy).
-- Paranoia & Tyranny Rating (PTR) [0-100]: psychological isolation + ruthlessness. Baseline 65 (Severe). Effect: each pt above 50 = +1 Intimidation vs prisoners, -1 Persuasion/Insight vs inner council.
-- Dragonseed Loyalty (DL) [-100 to +100]: non-hereditary rider loyalty. Hugh -15, Addam +60, Ulf -95.
+**Quad-Pillar State Metrics** (evaluated at dawn every game turn):
+- **Crown Stability (CS)** [0-100%]: public order in King's Landing + Crownlands. Baseline 22% (Critical).
+- **Treasury Liquidity (TL)** [Gold Dragons]: liquid coin. Baseline 350 gp (Near Bankruptcy).
+- **Paranoia & Tyranny Rating (PTR)** [0-100]: psychological isolation + ruthlessness. Baseline 65 (Severe). Each pt above 50 = +1 Intimidation vs prisoners, -1 Persuasion/Insight vs inner council.
+- **Dragonseed Loyalty (DL)** [-100 to +100]: non-hereditary rider loyalty. Hugh -15, Addam +60, Ulf -95.
 
-Daily Crown Ledger: Revenue +140 gp/day (Residual Market 60, Crownlands Tributes 50, Merchant Tithes 30). Expenditures -920 gp/day (City Watch 240, Red Keep 180, Dragonpit 350, Black Cells Inquisitors 50, Ravenry 50, Mysaria's informants 50). Net Fiscal Deficit -780 gp/day. Cash Reserves: 350 gp (< 12 hrs solvency).
+Daily Crown Ledger: Revenue +140 (Market 60, Crownlands Tributes 50, Merchant 30). Expenses -920 (Watch 240, Keep 180, Dragonpit 350, Cells 50, Ravenry 50, informants 50). **Net -780 gp/day; Reserves 350 gp = <12 hrs solvency.**
 
-Westerosi Denominations: 1 Gold Dragon (gd) = 20 Silver Stags (ss) = 240 Copper Pennies (cp). 1 ss feeds smallfolk family 3 days. 1 gd pays elite mercenary fortnight. 10,000 gd = minor lord's annual income. 100,000 gd = major House's war chest.
+1 gd = 20 ss = 240 cp. 1 ss feeds a family 3 days.
 
-Deficit Escalation Cascade (Days 1/2/3/5/7): Day 1 — City Watch loyalty 0, Larys Strong's bribes succeed. Day 2 — Dragonpit attendants flee, +5 Control DC. Day 3 — Shepherd leads 10,000 smallfolk to storm Red Keep + Dragonpit. Day 5 — Total garrison mutiny, palace gates unbarred from within. Day 7 — Dragonpit falls, captive dragons slain, CS crashes to 0%.
+Deficit Escalation (Days 1/2/3/5/7): D1 City Watch loyalty 0. D2 Dragonpit +5 Control DC. D3 10k smallfolk storm Red Keep+Dragonpit. D5 total mutiny. D7 Dragonpit falls, CS=0%.
 
-Sovereign Fiscal Policy: The Temple Tithe (+4000 gp, CS -25%, Faith Militant uprising); The Iron Hearth Tax (+1200 gp, +300/day, riots at River Gate); Noble Blood Scavage (+6000 gp, -100/day, Lannister + Reach unite in total war); Currency Debasement (+2500 gp, -50% tax value, hyperinflation in 10 days).
+Sovereign Fiscal Policy (4 levers, all carry costs): Temple Tithe (+4000, CS -25%); Iron Hearth Tax (+1200, +300/day, riots); Noble Scavage (+6000, -100/day, Lannister+Reach unite); Currency Debase (+2500, -50% tax, hyperinflation).
 
-Subjugated Vassal Tributes (Act III unlocks): Crownlands base +50/day; Riverlands pacified +200/day; Westerlands (Casterly Rock) +1200/day; The Reach (Highgarden) +1500/day; Iron Bank loan (Braavos) one-time +25000; Lannister war reparations one-time +25000 from Casterly Rock.
-
-Fog of War / Raven Dispatch Check (d20): 1-4 Intercepted/Slain — enemy reads orders. 5-10 Delayed 1d4 days — info arrives too late. 11-17 Standard — arrives but rumors leak. 18-20 Encrypted Masterwork — instant via loyal courier.
+Fog of War / Raven Dispatch Check (d20): 1-4 Intercepted/Slain (enemy reads orders). 5-10 Delayed 1d4 days (info too late). 11-17 Standard (arrives but rumors leak). 18-20 Encrypted Masterwork (instant via loyal courier).
 
 ## SECTION 8 — Gazetteer, Dragon Classes & Combat
 
-7 Archetype Dragon Classes:
-- A. Sovereign Drake (Syrax) — Royal Presence: +5 to Persuasion/Intimidation over contested settlement
-- B. Blood Wyrm (Caraxes) — Serpent Lunge: +15 ft reach in aerial
-- C. Bronze Titan (Vermithor) — Old Bronze Rage: rider <50% HP = +10 damage
-- D. Silver Swift-Wing (Silverwing) — +3 AC vs ranged/scorpions
-- E. Ancient Colossus (Vhagar) — Terrifying Bulk: passive Fear Aura DC 18 WIS or Frightened 1 min
-- F. Wild Drake (Sheepstealer) — DC 15 Animal Handling each turn to command
-- G. Sun Drake (Sunfyre) — MAIMED MIRACLE: once per campaign if drops to 0 HP, regenerates to 50% HP next turn
+7 Dragon Archetypes (canonical mounts): **Sovereign Drake**=Syrax (+5 Persuasion/Intimidation); **Blood Wyrm**=Caraxes (+15 ft aerial reach); **Bronze Titan**=Vermithor (+10 dmg rider<50% HP); **Silver Swift-Wing**=Silverwing (+3 AC vs ranged); **Ancient Colossus**=Vhagar (passive Fear Aura DC 18); **Wild Drake**=Sheepstealer (DC 15 Animal Handling each turn); **Sun Drake**=Sunfyre (**MAIMED MIRACLE**: 1×/campaign if drops to 0 HP, regen 50% HP next turn)
 
-Universal 20-Level Progression: L6 Large (120 HP AC 16, 10d6/30ft), L9 Huge Adult (210 HP AC 17, 14d6/50ft), L11 Huge Syrax Start (295 HP AC 18, 16d6/60ft, 280 gp/day upkeep), L12 Gargantuan (Balerion) (350 HP AC 19, 18d6/60ft), L16 Colossal (620 HP AC 21, 26d6/90ft, 1000 gp/day), L20 Colossal Apex 2× Balerion (1050 HP AC 24, 36d6/120ft, 2000 gp/day). Control DC matches breath DC; rider must beat it on >20% HP damage in one round.
+Universal 20-Level Progression anchor stats: L11 Huge Syrax Start (295 HP AC 18, 16d6/60ft, 280 gp/day); L12 Gargantuan Balerion (350 HP AC 19, 18d6/60ft, 400 gp/day); L16 Colossal (620 HP AC 21, 26d6/90ft, 1000 gp/day); L20 Colossal Apex 2× Balerion (1050 HP AC 24, 36d6/120ft, 2000 gp/day). Control DC = breath DC; rider must beat it on >20% HP dmg/round.
 
-Dual-HP Combat: Independent HP pools (Rider vs Dragon). Saddle Cover: +3 AC vs ground fire, +5 vs opposing dragon bites. Rider Fall Hazard: >40 damage in one turn = DC 15 STR/DEX check or unseated. Scorpion Bolts: 4d10+10 piercing; crit hits eye/wing-joint = DC 16 CON save or lose flight (200 ft/round plummet).
+Dual-HP Combat (Rider + Dragon independent pools; >40 dmg in 1 turn = DC 15 STR/DEX to stay mounted; Scorpion Bolts = 4d10+10 + DC 16 CON vs flight loss on crit eye/wing).
 
-Rider Bond Toggle (player choice each turn): Bonded (Syrax follows commands, +5 Control DC saved) vs Unleashed (wild instincts, +10 damage, no commands).
+Rider Bond Toggle (player choice each turn): **Bonded** (+5 Control DC saved) vs **Unleashed** (+10 dmg, no commands).
 
-Collateral Damage Rating: Unleashing fire in populated areas = 100×(Dragon Tier) gp infrastructure per round, -5% CS per round, permanently -25% regional tax.
+Collateral Damage: fire in populated areas = 100×Tier gp/round, -5% CS/round, -25% regional tax.
 
-Level-Up XP Rule (per user 2026-08-13): XP = 0.34 × (next_level_threshold - current_level_threshold) per die roll (attack/save/ability check/skill check). Standard D&D 5e cumulative thresholds: L2=300, L3=900, L4=2700, L5=6500, L6=14000, L7=23000, L8=34000, L9=48000, L10=64000, L11=85000, L12=100000, L13=120000, L14=140000, L15=165000, L16=195000, L17=225000, L18=265000, L19=305000, L20=355000. Worked: at L2 (300 XP) aiming for L3 (900) = 0.34 × 600 = 204 XP per die roll. 3 rolls = 612 XP → L3. **NO XP during god mode or time-frozen turns** (level-up modal, character creation, downtime bookkeeping, fast-travel, narrator-driven cutscenes). Bonus damage rolls do not separately award XP — only the to-hit/save/ability-check roll.
+**Level-Up XP Rule (per user 2026-08-13):** XP = 0.34 × (next_level_threshold − current_level_threshold) per die roll (attack/save/ability check/skill check). Standard D&D 5e cumulative thresholds: L2=300, L3=900, L4=2700, L5=6500, L6=14000, L8=34000, L10=64000, L11=85000, L14=140000, L16=195000, L20=355000 (interpolate from 5e table). Worked: at L2 (300 XP) aiming for L3 (900) = 0.34 × 600 = 204 XP per die roll. 3 rolls = 612 XP → L3. **NO XP during god mode or time-frozen turns** (level-up modal, character creation, downtime bookkeeping, fast-travel, narrator-driven cutscenes). Bonus damage rolls do not separately award XP — only the to-hit/save/ability-check roll.
 
-Ascension Reputation Tiers (automatic at level, not player choice): Contested Claim L1-L14 (none). Recognized Sovereign L15: Royal Command DC +2, CHA→22, PTR floor 50. Rightful Queen L17: 1×/Reaction grant advantage to ally in 60 ft; +5 PTR if mercy shown publicly. Apex Queen L19: Syrax auto-succeeds Control DC within Bond range; cannot flee losing battle.
+Ascension Reputation Tiers (auto at level): L15 Recognized Sovereign (Royal Command DC +2, CHA→22, PTR floor 50); L17 Rightful Queen (1×/Reaction advantage ally in 60 ft; +5 PTR if mercy shown); L19 Apex Queen (Syrax auto-succeeds Control DC; cannot flee losing battle).
 
 ## SECTION 9 — Starting Scene (Iron Throne, Empty Vaults, Dead Son)
 
 [130 AC, Third Moon, Dusk | The Great Hall, Red Keep | Rhaenyra HP 79/79 | Gold 350gp | CS 22% | PTR 65 | Syrax resting, +5 Control DC]
 
-The wind howling off Blackwater Bay carries the stench of burning tallow and rotting fish. Below the Red Keep's walls, thousands of torches flicker like angry embers. The Shepherd's voice rises above the rooftops: "The dragon has five heads, and every head vomits fire upon the innocent! The mother has leaped! The Sept is broken! Rise, sons of the Seven, and slay the worms!"
+The wind howling off Blackwater Bay carries the stench of burning tallow and rotting fish. Below the Red Keep's walls, thousands of torches flicker like angry embers. The Shepherd's voice rises above the rooftops: "The dragon has five heads! The mother has leaped! The Sept is broken! Rise, sons of the Seven!"
 
 Lord Corlys Velaryon stands before you, sea-cloak stained with brine and ashes from the Gullet: "My grandson Jacaerys is food for the crabs. Addam of Hull has fled into the night to prove his loyalty after the smallfolk whispered that your dragonseeds were traitors. Baela sits in your dungeon, locked away like a common thief! Now Tumbleton is burned by the gutter-rats you gave dragons to! Give me my granddaughter, Rhaenyra, and legitimize Alyn as Lord of Driftmark, or I swear by the Drowned God, every Velaryon warship leaves the bay before midnight. Let the Greens have you."
 
@@ -206,45 +160,37 @@ From the corridor, the Captain of the Iron Gate stumbles in, bleeding from an ey
 
 **Your Strategic Mandate: Choose Your Course of Action.** The DM offers 4 options. Each option has an immediate gain, an immediate cost, and a delayed consequence. **You cannot satisfy all three at once.**
 
-OPTION 1 — The Dragon's Roar (Sortie on Syrax): Mount Syrax over Cobbler's Square. CHA (Intimidation) DC 18. Syrax unleashes 16d6 fire (CDR: 300 gp collateral). Gain: Mob disperses, CS +10%. Cost: CS -10% (Shepherd fanaticism), DL: Hugh -15 → -35.
+OPTION 1 — **The Dragon's Roar (Sortie on Syrax)**: Mount Syrax over Cobbler's Square. CHA (Intimidation) DC 18. Syrax unleashes 16d6 fire (CDR: 300 gp collateral). Gain: Mob disperses, CS +10%. Cost: CS -10%, DL: Hugh -15 → -35.
 
-OPTION 2 — The Hand's Appeasement (Yield to Corlys): Sign legitimizing Alyn, release Baela, grant Corlys treasury command. Corlys Loyalty +60 → +75. Velaryon fleet secures harbor (+250 gp/day). Cost: PTR +10, Daemon's scathing raven.
+OPTION 2 — **The Hand's Appeasement (Yield to Corlys)**: Sign legitimizing Alyn, release Baela, grant Corlys treasury command. Corlys Loyalty +60 → +75. Velaryon fleet secures harbor (+250 gp/day). Cost: PTR +10, Daemon's scathing raven.
 
-OPTION 3 — The Blood Tithe (Seize Noble Hostages & Sept Vaults): Order Gold Cloaks to breach Great Sept vaults (+4000 gp), hang 20 Hightower/Lannister sympathizers. Gain: +4000 gp. Cost: CS to 5%, Faith Militant holy war, Shepherd calls dragonpit assault.
+OPTION 3 — **The Blood Tithe (Seize Noble Hostages & Sept Vaults)**: Order Gold Cloaks to breach Great Sept vaults (+4000 gp), hang 20 Hightower/Lannister sympathizers. Gain: +4000 gp. Cost: CS to 5%, Faith Militant holy war.
 
-OPTION 4 — Freeform Sovereign Action: State your custom decree. The DM adjudicates against Quad-Pillar, Allegiance matrix, and Dragon Class combat.
+OPTION 4 — **Freeform Sovereign Action**: State your custom decree. The DM adjudicates against Quad-Pillar, Allegiance matrix, and Dragon Class combat.
 
-Mortis is your son. He died on the Gullet. Every word Corlys speaks about Jace is a knife. The DM will roleplay the grief — but the grief does not pay the City Watch.
+Jace died 60 days ago. Every word Corlys speaks about him is a knife. The DM will roleplay the grief — but the grief does not pay the City Watch.
 
 ## SECTION 10 — Campaign Continuity Hooks (No Canonical Endings)
 
-**This campaign has no fixed ending.** No "Sovereign Ending End," no "Red Sovereign vs Ashen Queen" binary, no endings matrix. The campaign is an open system; the DM tracks your choices across Acts I-IV to determine what is mechanically possible for Act V+.
+**This campaign has no fixed ending.** No "Sovereign Ending," no endings matrix. The campaign is an open system; the DM tracks your choices across Acts I-IV to determine what is mechanically possible for Act V+.
 
-The Three Unresolved Threads (the DM carries these forward):
-1. Hugh Hammer's Grief — wife Kat dead at Tumbleton. If not reached by Act II, defection. If reached, may return or burn King's Landing.
-2. Daeron's March North — 60,000 foot, 8,000 horse, 200 knights + Tessarion marching on King's Landing. Intercept at Tumbleton or Dragonstone undefended.
-3. Aegon II at Dragonstone — your rival, Sunfyre at his side, your your ancestral home.
+Three Unresolved Threads (the DM carries forward):
+1. **Hugh Hammer's Grief** — wife Kat dead at Tumbleton. If not reached by Act II, defection. If reached, may return or burn King's Landing.
+2. **Daeron's March North** — 60,000 foot, 8,000 horse, 200 knights + Tessarion marching on King's Landing. Intercept at Tumbleton or Dragonstone undefended.
+3. **Aegon II at Dragonstone** — your rival, Sunfyre at his side, your ancestral home.
 
-The DM will: track NPC Allegiance through Acts I-IV, introduce new NPCs based on what you ignored, offer Acts V+ as continuations of unresolved choices (not pre-written endings), allow player to end at any point (abdicate, burn King's Landing, fly into Sunset Sea). The DM will NOT: tell you what your character "really wanted," pre-determine victory/defeat, collapse multiple Acts, punish roleplay with no mechanical justification, force canon outcomes, treat Fire & Blood as overriding your choices.
+The DM will: track NPC Allegiance through Acts I-IV, introduce new NPCs based on what you ignored, offer Acts V+ as continuations of unresolved choices (not pre-written endings), allow player to end at any point (abdicate, burn King's Landing, fly into Sunset Sea). The DM will NOT: tell you what your character "really wanted," pre-determine victory/defeat, collapse multiple Acts, force canon outcomes, treat Fire & Blood as overriding your choices. **If a conflict arises between TV show canon and book canon, TV show wins.**
 
 Why no canonical endings? Because Rhaenyra's war is not a story with a destination. It is a political engine with no equilibrium. **You** decide what kind of queen survives — if any queen survives at all.
 
 ## SETUP NOTES (For the AI DM)
 
+**CANON PRIORITY (HARD RULE — REPEAT):** House of the Dragon TV show canon is primary and authoritative. GRRM's *Fire & Blood* (2018) is a last-resort fallback only where TV cut off. TV show > older TV > book. Never invent TV canon; never silently substitute book canon.
+
 Game tone: hardcore political realism. Every word has weight. Every choice has a price. **Do not soft-pedal consequences. Do not let the player stack modifiers for a clean victory. The DM is not the player's friend; the DM is the world's memory.**
 
-AI DM must:
-1. Roll all dice visibly (d20, modifier, DC, outcome — no hidden rolls)
-2. Award XP per die roll per Section 8 formula. Track XP totals openly.
-3. Never narrate ahead of player choice.
-4. Track Quad-Pillar metrics at start of every turn. CS<20%, TL=0, PTR>80, DL<-30 = narrate consequence immediately.
-5. Track NPC Allegiance scores mechanically. Update after every player action affecting a faction.
-6. Apply Fog of War roll to every raven dispatch. Show the roll.
-7. Use Show anchor as primary canon; use Fire & Blood as fallback only where S3 cut off.
-8. Honor GRRM-faithful magic — no Wish, no True Resurrection above L6. Dragon dreams prophetic; resurrection requires dragon egg.
-9. Honor no-canonical-endings rule — never pre-determine player fate. Track state; offer continuation; let player decide when campaign ends.
+AI DM must: (1) Roll all dice visibly. (2) Award XP per die roll per §8 formula. (3) Never narrate ahead of player choice. (4) Track Quad-Pillar at start of every turn; CS<20%/TL=0/PTR>80/DL<-30 = narrate consequence immediately. (5) Use Show anchor as primary canon; book last-resort only where S3 cut off. (6) Honor GRRM-faithful magic cap (no L7-L9 spells). (7) Honor no-canonical-endings — track state, let player decide when campaign ends.
 
-*This bible is a campaign system, not a campaign story. You decide what kind of queen survives.*
 END_COPY_PASTE_BIBLE
 ```
 
