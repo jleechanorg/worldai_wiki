@@ -9,13 +9,13 @@ sources: [raw/hotd-ashen-crown-source-link.md]
 
 # House of the Dragon — The Ashen Crown (Rhaenyra)
 
-A hardcore political-realicard campaign for [WorldArchitect.AI](https://worldarchitect.ai). **You play Queen Rhaenyra Targaryen** in the immediate aftermath of the [House of the Dragon](https://en.wikipedia.org/wiki/House_of_the_Dragon_(TV_series)) Season 3 finale (post-Tumbleton, post-Helaena-suicide, post-Gullet). Jace is dead. Aegon lives. The treasury is empty. The smallfolk are at the gates. **Quad-Pillar mechanics** track your reign in real-time. **No canonical endings** — what kind of queen survives is your choice.
+A hardcore political-realicard campaign for [WorldArchitect.AI](https://worldarchitect.ai). **You play Queen Rhaenyra Targaryen** in the immediate aftermath of the [House of the Dragon](https://en.wikipedia.org/wiki/House_of_the_Dragon_(TV_series)) Season 3 finale (post-Tumbleton, post-Helaena-suicide, post-Gullet). Jace has been dead for ~60 days (died S3 E1 at the Battle of the Gullet). Aegon lives. The treasury is empty. The smallfolk are at the gates. **Quad-Pillar mechanics** track your reign in real-time. **No canonical endings** — what kind of queen survives is your choice.
 
 This is a companion to [House of the Dragon — The Bastard's Claim](house-of-the-dragon-campaign.md) (a gender-ambiguous Daemon-bastard on the eve of the Dance). The Ashen Crown starts *years later*, at the war's worst moment, playing Rhaenyra canon.
 
 > **Hardcore mode.** Every choice has a primary gain, an immediate cost, and a delayed consequence. The AI Dungeon Master will not let you "win" a scene by stacking modifiers; the cost is paid somewhere, even if not in the same turn. There are no perfect victories.
 
-**Show anchor:** Anchored to the *House of the Dragon* TV canon (post-Season-3 finale). **Book fallback:** Where TV cut off or diverged from GRRM's [*Fire & Blood*](https://en.wikipedia.org/wiki/Fire_%26_Blood) (2018), the bible notes `[Book fallback]` for the AI DM to consider.
+**Show anchor:** Anchored to the *House of the Dragon* TV canon (post-Season-3 finale). **Book fallback:** Where TV cut off or diverged from GRRM's [*Fire & Blood*](https://en.wikipedia.org/wiki/Fire_%26_Blood) (2018), the bible notes `[Book fallback]` for the AI DM to consider. **Canon-correction:** Corlys Velaryon is Jace's **grandfather** (Jace was Rhaenyra + Laenor Velaryon's son); Corlys cannot claim Jace as "my son." Addam of Hull is a **loyal dragonseed** legitimized as a Velaryon in S3 E3, NOT a traitor.
 
 ---
 
@@ -32,7 +32,7 @@ This is a companion to [House of the Dragon — The Bastard's Claim](house-of-th
 | Field | Paste this |
 |---|---|
 | **Campaign Title** | `House of the Dragon — The Ashen Crown (Rhaenyra)` |
-| **Character you want to play** | `Queen Rhaenyra Targaryen, 32, the Black Queen — Bard Level 11 with the Dragonrider subclass, riding Syrax (her gold she-dragon). The contested queen of the Seven Kingdoms in the immediate aftermath of House of the Dragon Season 3's Tumbleton finale. Her son Jace is dead. Her rival Aegon lives. Her court fears her. Her dragon waits. What kind of queen survives?` |
+| **Character you want to play** | `Queen Rhaenyra Targaryen, 32, the Black Queen — Bard Level 11 with the Dragonrider subclass, riding Syrax (her gold she-dragon). The contested queen of the Seven Kingdoms in the immediate aftermath of House of the Dragon Season 3's Tumbleton finale. Her son Jace has been dead for ~60 days (died at the Gullet, S3 E1). Her rival Aegon lives. Her court fears her. Her dragon waits. What kind of queen survives?` |
 | **Setting/world** | `Westeros, 130 AC, immediately after House of the Dragon Season 3 finale (Helaena's suicide, Tumbleton burned, Aegon alive on Dragonstone, Jace dead at the Gullet). Book (Fire & Blood, 2018) fallback only where Season 3 cut off.` |
 | **Campaign description prompt** *(click ▶ Expand)* | **The slimmed bible below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
 | **Use Default Fantasy World (Celestial Wars/Assiah setting)** | Leave UNCHECKED (default — no action needed, verified 2026-08-05) |
@@ -54,7 +54,7 @@ You are Queen Rhaenyra Targaryen. The throne is yours. Your son is dead. Your ri
 
 Three Hardcore Rules: (1) No perfect victories — every decision has a primary gain, an immediate cost, and a delayed consequence. (2) Consequences outlast intentions — sparing an enemy creates a future traitor; executing them creates a martyr. (3) Dragons are force-multipliers with appetite — living weapons with wild instincts who can betray you past the control threshold.
 
-Show anchor: Post-House-of-the-Dragon Season 3 finale (Ep 8 "The Treasons at Tumbleton"). Jace dead at the Gullet. Helaena dead (suicide). Tumbleton burned by Ulf. Aegon II alive on Dragonstone with Sunfyre (Maimed Miracle). Aemond recovering at Harrenhal with Alys Rivers. Daeron + Ormund Hightower marching north with Reach host. Crown Stability 22%, Treasury 350gp, Paranoia 65/100.
+Show anchor: Post-House-of-the-Dragon Season 3 finale (Ep 8 "The Treasons at Tumbleton"). Jace has been dead for ~60 days (died S3 E1 "Salt and Sea, Fire and Blood" at the Battle of the Gullet). Helaena dead (suicide, S3 E8). Tumbleton burned by Ulf (S3 E8). Aegon II alive on Dragonstone with Sunfyre (Maimed Miracle). Aemond recovering at Harrenhal with Alys Rivers. Daeron + Ormund Hightower marching north with Reach host. Crown Stability 22%, Treasury 350gp, Paranoia 65/100. **Canon-correction:** Corlys is Jace's **grandfather**, not father. Addam of Hull is a loyal dragonseed legitimized as a Velaryon (S3 E3), NOT a traitor.
 
 Book fallback: GRRM Fire & Blood (2018) chapters covering 129-131 AC, only where Season 3 cut off or diverged. [Book fallback] markers inline.
 
@@ -103,7 +103,7 @@ Queen Rhaenyra — HP 79/79, AC 17, Prof +4, Bardic 5/5 (d10), Hit Dice 11/11. S
 - Mysaria (L9, Rogue Mastermind, -40) — dismissed, orchestrating smallfolk mobs in Flea Bottom
 - Hugh Hammer (L9, Vermithor, -15) — grieving wife Kat dead at Tumbleton; rumored Hightower envoys
 - Ulf White (L7, Silverwing, -95) — ROGUE REBEL, do not recruit; burning the Reach
-- Addam of Hull (L8, Seasmoke, +60) — honorable, fled to prove loyalty
+- Addam of Hull (Seasmoke, +60) — honorable, legitimized as a Velaryon (S3 E3); loyal throughout Season 3. NOT a traitor.
 - Rhaena Targaryen (L5, Sheepstealer, +50) — injured beast, traumatized in Vale
 - Baela Targaryen (L6, Moondancer, +30) — IMPRISONED in your dungeons
 - Queen Dowager Alicent (L5, Captive, -90) — Red Keep cell, suicidal, revealed Aemond's location
@@ -115,8 +115,8 @@ Queen Rhaenyra — HP 79/79, AC 17, Prof +4, Bardic 5/5 (d10), Hit Dice 11/11. S
 
 You are Viserys I's daughter, Daemon's wife, mother of 6 children (3 dead). Family is a battlefield.
 - Daemon (estranged but loyal to a point) — at Harrenhal; may be planning suicidal charge.
-- Jacaerys (son) — DECEASED at Gullet (Triarchy bowmen). You wept 3 days.
-- Lucerys (son) — DECEASED (killed by Aemond at Storm's End).
+- Jacaerys (son) — DECEASED at Gullet (S3 E1, ~60 days ago). Killed by Triarchy bowmen. Body returned by Baela. You have not stopped grieving.
+- Lucerys (son) — DECEASED (killed by Aemond at Storm's End, ~2 years earlier). Original sin; the wound that made the war personal.
 - Aegon the Younger (son, heir) — age 11, in your chambers, terrified of you.
 - Viserys (son) — age 8, in your chambers, wets the bed since Jace's death.
 - Rhaena (daughter) — Vale with Sheepstealer; tried to kill Vhagar and failed; doesn't speak to you.
@@ -200,7 +200,7 @@ Ascension Reputation Tiers (automatic at level, not player choice): Contested Cl
 
 The wind howling off Blackwater Bay carries the stench of burning tallow and rotting fish. Below the Red Keep's walls, thousands of torches flicker like angry embers. The Shepherd's voice rises above the rooftops: "The dragon has five heads, and every head vomits fire upon the innocent! The mother has leaped! The Sept is broken! Rise, sons of the Seven, and slay the worms!"
 
-Lord Corlys Velaryon stands before you, sea-cloak stained with brine and ashes from the Gullet: "My son Jacaerys is food for the crabs. Addam of Hull is branded a traitor by your paranoia and has fled into the night. Baela sits in your dungeon, locked away like a common thief! Now Tumbleton is burned by the gutter-rats you gave dragons to! Give me my granddaughter, Rhaenyra, and legitimize Alyn as Lord of Driftmark, or I swear by the Drowned God, every Velaryon warship leaves the bay before midnight. Let the Greens have you."
+Lord Corlys Velaryon stands before you, sea-cloak stained with brine and ashes from the Gullet: "My grandson Jacaerys is food for the crabs. Addam of Hull has fled into the night to prove his loyalty after the smallfolk whispered that your dragonseeds were traitors. Baela sits in your dungeon, locked away like a common thief! Now Tumbleton is burned by the gutter-rats you gave dragons to! Give me my granddaughter, Rhaenyra, and legitimize Alyn as Lord of Driftmark, or I swear by the Drowned God, every Velaryon warship leaves the bay before midnight. Let the Greens have you."
 
 From the corridor, the Captain of the Iron Gate stumbles in, bleeding from an eye socket: "My Queen! The Septons have locked the Great Sept! The mob is smashing the bakeries in the Fishmarket. They demand the heads of your council for Queen Helaena's murder!"
 
