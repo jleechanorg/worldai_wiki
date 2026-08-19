@@ -10,6 +10,8 @@ tags: [wa-campaign, wa-tutorial, wa-character]
 
 A hardcore political-realicard campaign for [WorldArchitect.AI](https://worldarchitect.ai). You play **Queen Rhaenyra Targaryen** at the immediate aftermath of the *House of the Dragon* Season 3 finale (S3 E8 "The Treasons at Tumbleton," aired August 9, 2026). Jace has been dead for ~7 weeks. Helaena jumped from the Red Keep to her death. Ulf has burned Tumbleton. The treasury is empty. The smallfolk are at the gates. **Quad-Pillar mechanics** track your reign in real-time. **No canonical endings** — what kind of queen survives is your choice.
 
+> **You are Rhaenyra at L6** (Bard College of Swords / Dragonrider subclass). You have NOT yet earned L11 Blood of the Dragon (fire immunity), L14 Draconic Sovereign, L20 Apex Dragonrider, or L25 Divine Ascension. Hardcore — survive long enough to unlock them.
+>
 > You can pick your own gender, class, subclass, dragon name, parent swap, look, starting relationship, and pretty much anything else. If you want to be a woman knight sworn to Rhaenyra, a male maester-in-training, a bastard of Aegon II instead of Daemon, a 30-year-old veteran instead of 32-year-old queen, etc., the AI DM will adapt the bible to your choices at the start of the campaign.
 
 This page is split into two parts:
@@ -24,7 +26,7 @@ If you want to customize the character, understand the mechanics, or troubleshoo
 
 ## 1. Quick Setup
 
-**What you're playing** — A hardcore political-realicard RPG where you rule Westeros as Queen Rhaenyra Targaryen after the Dance of the Dragons finale. Bard L11 / Dragonrider subclass (custom 5e). Syrax is your dragon. Quad-Pillar mechanics (Crown Stability, Treasury, Paranoia, Dragonseed Loyalty) track every decision. 4-option carousel mechanic (Dragon's Roar / Hand's Appeasement / Blood Tithe / Freeform). Hardcore rules: no perfect victories, consequences outlast intentions, dragons have appetite.
+**What you're playing** — A hardcore political-realicard RPG where you rule Westeros as Queen Rhaenyra Targaryen after the Dance of the Dragons finale. Bard L6 / Dragonrider subclass (custom 5e). Syrax is your dragon. Quad-Pillar mechanics (Crown Stability, Treasury, Paranoia, Dragonseed Loyalty) track every decision. 4-option carousel mechanic (Dragon's Roar / Hand's Appeasement / Blood Tithe / Freeform). Hardcore rules: no perfect victories, consequences outlast intentions, dragons have appetite.
 
 **Three minutes to launch** —
 
@@ -75,21 +77,18 @@ Queen Rhaenyra Targaryen, the Black Queen, age 32. **Lost two sons** — Lucerys
 
 ## SECTION 3 — Class & Subclass
 
-**Bard (College of Swords) L11** — Blade Flourish + Extra Attack. CHA-caster. Spell Save DC 18, Attack +10. **No L7-L9 spells** (GRRM-faithful magic cap). Max L6 (Mass Suggestion, Hold Monster acceptable).
+**Bard (College of Swords) L6** — Blade Flourish only (no Extra Attack until L6+, but rider+dragon split makes Extra Attack unnecessary). CHA-caster. Spell Save DC 15, Attack +7. **No L7-L9 spells** (GRRM-faithful magic cap). Max L6 (Mass Suggestion, Hold Monster acceptable).
 
-**Dragonrider subclass (custom 5e, GRRM-faithful — no spells beyond blood of the dragon):**
+**Dragonrider subclass (custom 5e, GRRM-faithful — no spells beyond blood of the dragon) — L6 features only:**
 - **L1 DragonsBond** — sense Syrax's emotion within 1 mile; take 1 psychic damage per 10 damage she takes
 - **L2 Royal Command** — verbal command as Bonus Action, target WIS Save or obey (1×/short rest)
 - **L3 Dragon's Sight** — see smoke/fire, share Syrax's POV within 1 mile
 - **L6 Fire of the Four** — 3+ allied dragons within 1 mile → +1 attack/DC all
-- **L11 Blood of the Dragon** — immune fire <CR10, High Valyrian live language, calm hostile dragons <60ft
-- **L14 Draconic Sovereign** — Royal Command 2×/short rest, Disadvantage on Save if Syrax roaring
-- **L20 Apex Dragonrider** — Syrax = Colossal Apex (HP 1,050, AC 24, 36d6 fire / 120ft); allies in 60ft +2 attack +1d4 temp HP/turn + fear immunity <DC 18
-- **L25 Divine Ascension Track** (gated): one Domain (Crone/Warrior/Stranger/Old Gods/R'hllor/Drowned God/Many-Faced God/your apotheosis). Divine Rank 1: immune disease, speak with any dragon within 1 mile, Right of Petition (1×/long rest, WIS DC 25 to resist). CHA cap removed. Syrax becomes your divine portfolio.
+- **Locked for L7+** (not yet earned): L11 Blood of the Dragon (immune fire), L14 Draconic Sovereign, L20 Apex Dragonrider (Colossal Syrax), L25 Divine Ascension. Rhaenyra at L6 has no fire immunity, no Royal Command refresh, no Divine Rank. Hardcore — the player must survive long enough to earn them.
 
-**Rhaenyra's sheet:** HP 79/79, AC 17, Prof +4, Bardic 5/5 (d10), CHA 20 (Persuasion/Intimidation/Deception +13). Equipment: +2 sword, dragonglass bow, dragon-scale leather (+1 AC/fire res), Conqueror's Crown, dragon saddle. 24 dragonglass arrows. Crown jewels sealed (12,000 gp if liquidated; selling tanks CS). Dragon egg: personal Black Queen egg — burned on deceased loved one = GRRM-faithful resurrection (1×/campaign).
+**Rhaenyra's sheet (L6):** HP 52/52, AC 17, Prof +3, Bardic 5/5 (d8), CHA 20 (Persuasion/Intimidation/Deception +11). Equipment: +2 sword, dragonglass bow, dragon-scale leather (+1 AC/fire res), Conqueror's Crown, dragon saddle. 24 dragonglass arrows. Crown jewels sealed (12,000 gp if liquidated; selling tanks CS). Dragon egg: personal Black Queen egg — burned on deceased loved one = GRRM-faithful resurrection (1×/campaign).
 
-**Syrax (Huge Level 11 Sovereign Dragon):** HP 295/295, AC 18, Breath 16d6 fire / 60ft cone, +5 Persuasion/Intimidation while mounted. Costs 280 gp/day to stable.
+**Syrax (Huge Level 6 Sovereign Dragon):** HP 165/165, AC 18, Breath 12d6 fire / 60ft cone, +5 Persuasion/Intimidation while mounted. Costs 280 gp/day to stable. (Dragon scales with rider; if Rhaenyra reaches L11, Syrax advances to L11 Huge.)
 
 ## SECTION 4 — Top 5 NPCs
 
@@ -134,7 +133,7 @@ Loyalty thresholds: <+20 withholds intel; <0 courts Green envoys; <−30 active 
 
 **7 Dragon Archetypes:** Sovereign Drake=Syrax; Blood Wyrm=Caraxes; Bronze Titan=Vermithor; Silver Swift-Wing=Silverwing; Ancient Colossus=Vhagar (passive Fear Aura DC 18); Wild Drake=Sheepstealer (DC 15 Animal Handling/turn); Sun Drake=Sunfyre (TV show: **status ambiguous — found dead S3 E4, reanimated S3 E7**; do not narrate Sunfyre as a normal mount).
 
-**Universal 20-Level Progression:** L11 Huge Syrax Start (295 HP AC 18, 16d6/60ft); L12 Gargantuan Balerion (350 HP AC 19, 18d6/60ft); L16 Colossal (620 HP AC 21, 26d6/90ft); L20 Colossal Apex 2×Balerion (1,050 HP AC 24, 36d6/120ft). **Control DC = breath DC; rider must beat it on >20% HP damage/round.**
+**Universal 20-Level Progression:** L6 Huge Syrax Start (165 HP AC 18, 12d6/60ft); L11 Huge Syrax (295 HP AC 18, 16d6/60ft); L12 Gargantuan Balerion (350 HP AC 19, 18d6/60ft); L16 Colossal (620 HP AC 21, 26d6/90ft); L20 Colossal Apex 2×Balerion (1,050 HP AC 24, 36d6/120ft). **Control DC = breath DC; rider must beat it on >20% HP damage/round.**
 
 **Dual-HP Combat:** Rider + Dragon independent pools. >40 dmg in 1 turn = DC 15 STR/DEX to stay mounted. Scorpion Bolts = 4d10+10 + DC 16 CON vs flight loss on crit eye/wing. **Rider Bond Toggle (player choice/turn):** Bonded (+5 Control DC saved) vs Unleashed (+10 dmg, no commands). **Collateral Damage:** fire in populated areas = 100×Tier gp/round, −5% CS/round, −25% regional tax.
 
@@ -192,7 +191,7 @@ Jace died seven weeks ago. Every word Corlys speaks about him is a knife. The gr
 
 ### Customize the character
 
-The bible ships Rhaenyra Targaryen, age 32, Bard L11 / Dragonrider subclass. To customize:
+The bible ships Rhaenyra Targaryen, age 32, **Bard L6** / Dragonrider subclass. To customize:
 
 Swap freely: gender, age, class (Paladin / Sorcerer / Fighter work), subclass (Dragonrider required for Syrax bond), dragon name (stats are generic), parent (bastard-of-Aegon-II shifts starting state), look, starting reputation ("Beloved Queen" / "Rightful Heir" / "Conqueror" instead of "Maegor-with-Teats").
 
@@ -214,19 +213,22 @@ Swap freely: gender, age, class (Paladin / Sorcerer / Fighter work), subclass (D
 
 The AI DM will narrate the Iron Throne scene from Section 8 of the bible: Queen Rhaenyra sits on the Iron Throne at dusk, the treasury is empty (280 gp, <9hr solvency), the wind off Blackwater Bay carries the smell of burning fish, and Lord Corlys Velaryon stands before you demanding Baela's release, Alyn's legitimization, and treasury command. The Captain of the Iron Gate stumbles in bleeding. The DM then presents **4 options** (Dragon's Roar / Hand's Appeasement / Blood Tithe / Freeform). Each option has an immediate gain, an immediate cost, and a delayed consequence. There is no "wait and see" — the Deficit Cascade begins at next dawn. Type your choice or write your own decree.
 
+**At L6, you have:** Blade Flourish, Royal Command (1×/short rest), Dragon's Sight, Fire of the Four (+1 attack/DC with 3+ allied dragons), Bardic 5/5 (d8), Spell Save DC 15. Syrax is Huge L6 (165 HP, AC 18, 12d6 fire breath). **You do NOT have:** Extra Attack, fire immunity, AoE fear aura, Colossal Apex size. Hardcore — every fight you take, you can actually lose.
+
 ### Class & mechanics deep-dive
 
-- **Bard (College of Swords) L11** — Blade Flourish + Extra Attack. CHA-caster. Spell Save DC 18, Attack +10. No L7-L9 spells (GRRM-faithful magic cap). Max L6 (Mass Suggestion, Hold Monster acceptable).
-- **Dragonrider subclass (custom 5e)** — L1 DragonsBond, L2 Royal Command, L3 Dragon's Sight, L6 Fire of the Four, L11 Blood of the Dragon, L14 Draconic Sovereign, L20 Apex Dragonrider (Colossal Apex Syrax), L25 Divine Ascension Track (optional).
+- **Bard (College of Swords) L6** — Blade Flourish. CHA-caster. Spell Save DC 15, Attack +7. No L7-L9 spells (GRRM-faithful magic cap). Max L6 (Mass Suggestion, Hold Monster acceptable).
+- **Dragonrider subclass (custom 5e, L6 features only)** — L1 DragonsBond, L2 Royal Command, L3 Dragon's Sight, L6 Fire of the Four. L11+ features (Blood of the Dragon, Draconic Sovereign, Apex Dragonrider, Divine Ascension) are LOCKED — must level up to unlock.
 - **Quad-Pillar mechanics:** Crown Stability (CS) 18%, Treasury Liquidity (TL) 280 gp, Paranoia & Tyranny Rating (PTR) 75, Dragonseed Loyalty (DL) Ulf −95 / Hugh −15 / Addam +60.
 - **Deficit Cascade:** D1 Watch loyalty 0; D2 Dragonpit +5 Control DC; D3 smallfolk storm (200+ dead if Syrax unleashed); D5 mutiny; D7 Dragonpit falls.
 - **4-option carousel:** Dragon's Roar (fire), Hand's Appeasement (yield), Blood Tithe (vaults), Freeform (custom).
-- **XP Rule:** XP = 0.34 × (next_level_threshold − current_level_threshold) per die roll.
+- **XP Rule:** XP = 0.34 × (next_level_threshold − current_level_threshold) per die roll. L6→L7 distance 8,500 (5e threshold).
 
 ### Troubleshooting
 
-- **Wizard stuck on "Loading…"** — bible is 16,650 chars (over the 16k wizard cap). Either trim Section 1 (S3 Episode Anchor) or split into two pastes.
+- **Wizard stuck on "Loading…"** — bible is 16,488 chars (over the 16k wizard cap). Either trim Section 1 (S3 Episode Anchor) or split into two pastes.
 - **AI DM narrates Aegon at Dragonstone / "Addam fled into the night" / uses book canon** — v3 carries explicit CANON PRIORITY and "do not invent" blocks. If the DM drifts, paste the bible again or re-check the Mechanics checkbox.
+- **AI DM grants you L11 Blood of the Dragon (fire immunity) or L20 Apex Syrax** — you started at L6. Those features are LOCKED until you level up. Re-check the bible's Section 3.
 - **AI DM is too easy** — v3 is HARDCORE. CS 18%, Treasury 280 gp, PTR 75, Day 1 cascade. Option 1 can kill 200+ smallfolk. There is no grace period.
 
 ### Related
