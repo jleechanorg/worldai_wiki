@@ -1,5 +1,43 @@
-BEGIN_COPY_PASTE_BIBLE
-# House of the Dragon — The Ashen Crown (Rhaenyra) [v4 TV-CANON + HARD]
+---
+title: "House of the Dragon — The Ashen Crown (Rhaenyra)"
+created: 2026-08-13
+updated: 2026-08-18
+type: query
+tags: [wa-campaign, wa-tutorial, wa-character]
+---
+
+# House of the Dragon — The Ashen Crown (Rhaenyra)
+
+A hardcore political-realicard campaign for [WorldArchitect.AI](https://worldarchitect.ai). You play **Queen Rhaenyra Targaryen** at the immediate aftermath of the *House of the Dragon* Season 3 finale (S3 E8 "The Treasons at Tumbleton," aired August 9, 2026). Jace has been dead for ~7 weeks. Helaena jumped from the Red Keep to her death. Ulf has burned Tumbleton. The treasury is empty. The smallfolk are at the gates. **Quad-Pillar mechanics** track your reign in real-time. **No canonical endings** — what kind of queen survives is your choice.
+
+> You can pick your own gender, class, subclass, dragon name, parent swap, look, starting relationship, and pretty much anything else. If you want to be a woman knight sworn to Rhaenyra, a male maester-in-training, a bastard of Aegon II instead of Daemon, a 30-year-old veteran instead of 32-year-old queen, etc., the AI DM will adapt the bible to your choices at the start of the campaign.
+
+This page is split into two parts:
+
+1. **[Quick Setup](#1-quick-setup)** — three minutes. Sign in, paste, play.
+2. **[More Details](#2-more-details)** — character customization, LLM editing, mechanics deep-dive, troubleshooting.
+
+If you want the paste-ready bible and step-by-step launch, jump to Quick Setup.
+If you want to customize the character, understand the mechanics, or troubleshoot, scroll to More Details.
+
+---
+
+## 1. Quick Setup
+
+**What you're playing** — A hardcore political-realicard RPG where you rule Westeros as Queen Rhaenyra Targaryen after the Dance of the Dragons finale. Bard L11 / Dragonrider subclass (custom 5e). Syrax is your dragon. Quad-Pillar mechanics (Crown Stability, Treasury, Paranoia, Dragonseed Loyalty) track every decision. 4-option carousel mechanic (Dragon's Roar / Hand's Appeasement / Blood Tithe / Freeform). Hardcore rules: no perfect victories, consequences outlast intentions, dragons have appetite.
+
+**Three minutes to launch** —
+
+1. Sign in at [worldArchitect.AI](https://worldarchitect.ai) with Google.
+2. Click **Start New Campaign** → **Custom Campaign** (default).
+3. Fill in **Campaign Title** (e.g. "The Ashen Crown"), **Character** (Rhaenyra Targaryen), **Setting** (Westeros, 130 AC). Then in the **Campaign description prompt** field, click the ▶ **Expand** toggle and paste the entire block below.
+4. **CHECK** the box for **Mechanics (Jeff's Mechanical Precision)** — required for Quad-Pillar / XP / Dragon Class. (It's checked by default — verify before proceeding.)
+5. Click **Next** → **Enter the World.** The AI DM will narrate the Iron Throne scene from the bible's Section 8.
+
+Copy the entire block below into the **Campaign description prompt** field, then click **Next** → **Enter the World**.
+
+```text
+# House of the Dragon — The Ashen Crown (Rhaenyra) [v3 TV-CANON + HARD]
 
 ## SECTION 1 — Campaign Intro
 
@@ -20,7 +58,7 @@ You are Queen Rhaenyra Targaryen. The throne is yours. Your son is dead. Your ri
 - **E7 "The Dragon in Winter" (Aug 2, 2026):** Aemond wounded by Rhaena+Sheepstealer; **Sunfyre reappears (zombie/resurrected) — kills soldiers searching for Tyland/Aegon**.
 - **E8 "The Treasons at Tumbleton" (Aug 9, 2026):** Rhaenyra detains Baela, dismisses Mysaria, has Helaena force-fed; **Rhaenyra orders Alyn to kill the High Septon**; Ormund lines ramparts with children; **Ulf burns Tumbleton, kills Ormund + Roderick**; **Helaena jumped from window to death**; Daemon retreats per Corlys's counsel.
 
-**Show anchor (HARDCORE v4 starting state):** Post-S3 E8 finale (~Aug 9, 2026). **Jace dead ~7 weeks** (S3 E1, Gullet). **Helaena dead by suicide S3 E8** (jumped from Red Keep window during forced feeding). **Tumbleton burned by Ulf S3 E8.** **Aegon II alive at Rook's Rest** with Larys Strong + Tyland Lannister. **Sunfyre:** found dead E4, reappears E7 (TV show does not explain). **Aemond:** last seen wounded S3 E7 (poisoned by Alicent E6, wounded by Sheepstealer E7); E8 implies alive but separated from Vhagar. **Daemon alive, retreating from Tumbleton per Corlys's counsel.** **Daeron alive** but Reach army scattered (Ormund dead). **Quad-Pillar baseline:** Crown Stability **18%** (Critical), Treasury **280 gp** (<9hr solvency), Paranoia **75/100** (Severe Maegor-with-Teats), Dragonseed Loyalty Ulf −95 / Hugh −15 / Addam +60. **Canon-correction:** Corlys is Jace's **grandfather**, not father. Addam is **loyal** (knighted by Daemon S3 E3, NOT a traitor).
+**Show anchor (HARDCORE v3 starting state):** Post-S3 E8 finale (~Aug 9, 2026). **Jace dead ~7 weeks** (S3 E1, Gullet). **Helaena dead by suicide S3 E8** (jumped from Red Keep window during forced feeding). **Tumbleton burned by Ulf S3 E8.** **Aegon II alive at Rook's Rest** with Larys Strong + Tyland Lannister. **Sunfyre:** found dead E4, reappears E7 (TV show does not explain). **Aemond:** last seen wounded S3 E7 (poisoned by Alicent E6, wounded by Sheepstealer E7); E8 implies alive but separated from Vhagar. **Daemon alive, retreating from Tumbleton per Corlys's counsel.** **Daeron alive** but Reach army scattered (Ormund dead). **Quad-Pillar baseline:** Crown Stability **18%** (Critical), Treasury **280 gp** (<9hr solvency), Paranoia **75/100** (Severe Maegor-with-Teats), Dragonseed Loyalty Ulf −95 / Hugh −15 / Addam +60. **Canon-correction:** Corlys is Jace's **grandfather**, not father. Addam is **loyal** (knighted by Daemon S3 E3, NOT a traitor).
 
 **Things the TV show has NOT established (do not invent):** (a) Addam's exact location after S3 E3 — loyal dragonseed but whereabouts unspecified. (b) Aemond's fate after S3 E7 — last seen wounded, presumed alive. (c) The Shepherd character — TV show does not introduce a named "Shepherd"; smallfolk unrest is shown collectively.
 
@@ -74,7 +112,7 @@ Loyalty thresholds: <+20 withholds intel; <0 courts Green envoys; <−30 active 
 
 **Smallfolk unrest** — 10,000+ starving smallfolk; Helaena's death (S3 E8) inflamed them. Cannot be Persuaded. Will storm Dragonpit if CS < 20%. Mechanically −100 faction. **(TV show does not introduce a named "Shepherd" character; smallfolk unrest is shown collectively.)**
 
-## SECTION 6 — Quad-Pillar Mechanics (HARDCORE v4)
+## SECTION 6 — Quad-Pillar Mechanics (HARDCORE v3)
 
 **Four state metrics, evaluated at dawn every turn:**
 - **Crown Stability (CS)** [0-100%]: public order. Baseline **18%** (Critical).
@@ -143,6 +181,64 @@ Jace died seven weeks ago. Every word Corlys speaks about him is a knife. The gr
 
 **AI DM must:** (1) Roll all dice visibly. (2) Award XP per die roll per §7 formula. (3) Never narrate ahead of player choice. (4) Track Quad-Pillar at start of every turn; CS<20% / TL=0 / PTR>80 / DL<−30 = narrate consequence immediately. (5) Use Show anchor as primary canon; book last-resort only where S3 cut off. (6) Honor GRRM-faithful magic cap (no L7-L9 spells). (7) Honor no-canonical-endings. (8) **Do not invent Addam's "fled into the night" subplot** — TV show does not establish this. (9) **Do not narrate Sunfyre as a normal mount** — TV show status is ambiguous.
 
-**v4 HARDNESS:** CS 18% / Treasury 280 gp / PTR 75. Deficit cascade triggers Day 1. Corlys ultimatum is non-skippable. The first option CAN kill 200+ smallfolk. **No grace period, no warm-up act.**
+**v3 HARDNESS:** CS 18% / Treasury 280 gp / PTR 75. Deficit cascade triggers Day 1. Corlys ultimatum is non-skippable. The first option CAN kill 200+ smallfolk. **No grace period, no warm-up act.**
 
-END_COPY_PASTE_BIBLE
+
+```
+
+---
+
+## 2. More Details
+
+### Customize the character
+
+The bible ships Rhaenyra Targaryen, age 32, Bard L11 / Dragonrider subclass. To customize:
+
+Swap freely: gender, age, class (Paladin / Sorcerer / Fighter work), subclass (Dragonrider required for Syrax bond), dragon name (stats are generic), parent (bastard-of-Aegon-II shifts starting state), look, starting reputation ("Beloved Queen" / "Rightful Heir" / "Conqueror" instead of "Maegor-with-Teats").
+
+### Editing the bible with an LLM (before you paste)
+
+> You are an expert narrative designer and Game Master. I have pasted the "House of the Dragon — The Ashen Crown (Rhaenyra)" custom-campaign template for WorldArchitect.AI. I want to edit it as follows:
+>
+> **[describe your changes here, e.g.,]** change the dragon's name from "Syrax" to "Vyraxes"; make the protagonist explicitly male, 40, a former maester-in-training; replace the starting scene with a Harrenhal cold-open.
+>
+> Apply only the changes I asked for. Preserve every other section verbatim. Return the full edited campaign bible, ready to paste into the WorldArchitect.AI "Campaign description prompt" field.
+
+### Full setup walkthrough (every form field, every checkbox)
+
+**Form fields:** Title "The Ashen Crown"; Character "Queen Rhaenyra Targaryen, age 32"; Setting "Westeros, 130 AC, post-S3 E8"; Campaign description prompt = the bible block above.
+
+**Checkboxes:** Narrative (leave checked) · Mechanics (verify checked — required) · Generate starting Companions (optional: uncheck for tighter cast) · Use Default Fantasy World (UNCHECK — this is ASOIAF, not Assiah).
+
+### What to expect on your first session
+
+The AI DM will narrate the Iron Throne scene from Section 8 of the bible: Queen Rhaenyra sits on the Iron Throne at dusk, the treasury is empty (280 gp, <9hr solvency), the wind off Blackwater Bay carries the smell of burning fish, and Lord Corlys Velaryon stands before you demanding Baela's release, Alyn's legitimization, and treasury command. The Captain of the Iron Gate stumbles in bleeding. The DM then presents **4 options** (Dragon's Roar / Hand's Appeasement / Blood Tithe / Freeform). Each option has an immediate gain, an immediate cost, and a delayed consequence. There is no "wait and see" — the Deficit Cascade begins at next dawn. Type your choice or write your own decree.
+
+### Class & mechanics deep-dive
+
+- **Bard (College of Swords) L11** — Blade Flourish + Extra Attack. CHA-caster. Spell Save DC 18, Attack +10. No L7-L9 spells (GRRM-faithful magic cap). Max L6 (Mass Suggestion, Hold Monster acceptable).
+- **Dragonrider subclass (custom 5e)** — L1 DragonsBond, L2 Royal Command, L3 Dragon's Sight, L6 Fire of the Four, L11 Blood of the Dragon, L14 Draconic Sovereign, L20 Apex Dragonrider (Colossal Apex Syrax), L25 Divine Ascension Track (optional).
+- **Quad-Pillar mechanics:** Crown Stability (CS) 18%, Treasury Liquidity (TL) 280 gp, Paranoia & Tyranny Rating (PTR) 75, Dragonseed Loyalty (DL) Ulf −95 / Hugh −15 / Addam +60.
+- **Deficit Cascade:** D1 Watch loyalty 0; D2 Dragonpit +5 Control DC; D3 smallfolk storm (200+ dead if Syrax unleashed); D5 mutiny; D7 Dragonpit falls.
+- **4-option carousel:** Dragon's Roar (fire), Hand's Appeasement (yield), Blood Tithe (vaults), Freeform (custom).
+- **XP Rule:** XP = 0.34 × (next_level_threshold − current_level_threshold) per die roll.
+
+### Troubleshooting
+
+- **Wizard stuck on "Loading…"** — bible is 16,650 chars (over the 16k wizard cap). Either trim Section 1 (S3 Episode Anchor) or split into two pastes.
+- **AI DM narrates Aegon at Dragonstone / "Addam fled into the night" / uses book canon** — v3 carries explicit CANON PRIORITY and "do not invent" blocks. If the DM drifts, paste the bible again or re-check the Mechanics checkbox.
+- **AI DM is too easy** — v3 is HARDCORE. CS 18%, Treasury 280 gp, PTR 75, Day 1 cascade. Option 1 can kill 200+ smallfolk. There is no grace period.
+
+### Related
+
+- [How to play — first 30 minutes](../queries/how-to-play-worldai.md)
+- [CampaignDesign](../concepts/CampaignDesign.md)
+- [CharacterCreation](../concepts/CharacterCreation.md)
+- [CampaignWizard](../concepts/CampaignWizard.md)
+- [Combat](../concepts/Combat.md)
+
+## Sources
+
+- [House of the Dragon season 3 (Wikipedia)](https://en.wikipedia.org/wiki/House_of_the_Dragon_season_3) — **TV-canon source** for the bible's S3 Episode Anchor (verified 2026-08-18, all 8 episode titles + dates + plots)
+- [House of the Dragon (TV series, Wikipedia)](https://en.wikipedia.org/wiki/House_of_the_Dragon_(TV_series)) — show anchor
+- [Fire & Blood (Wikipedia)](https://en.wikipedia.org/wiki/Fire_%26_Blood) — book fallback ONLY where TV cut off
