@@ -151,7 +151,7 @@ The Captain of the Iron Gate stumbles in, bleeding from an eye socket: *"My Quee
 
 **Your Strategic Mandate: Choose Your Course of Action.** The DM offers 4 options. **Each option has an immediate gain, an immediate cost, and a delayed consequence. You cannot satisfy all three at once.** **There is no "wait and see" option — the Deficit Cascade begins at next dawn.**
 
-**OPTION 1 — The Dragon's Roar (Sortie on Syrax):** Mount Syrax over Cobbler's Square. CHA (Intimidation) DC 18. Syrax unleashes 16d6 fire. **Gain:** Mob disperses, CS +10%. **Cost:** 200+ smallfolk dead, CS −30%, DL Hugh −15 → −35, Faith Militant holy war declared at dawn.
+**OPTION 1 — The Dragon's Roar (Sortie on Syrax):** Mount Syrax over Cobbler's Square. CHA (Intimidation) DC 18. Syrax unleashes **12d6 fire** (L6 Huge Syrax breath; L11+ would be 16d6). **Gain:** Mob disperses, CS +10%. **Cost:** 200+ smallfolk dead, CS −30%, DL Hugh −15 → −35, Faith Militant holy war declared at dawn.
 
 **OPTION 2 — The Hand's Appeasement (Yield to Corlys):** Sign legitimizing Alyn, release Baela, grant Corlys treasury command. **Gain:** Corlys Loyalty +60→+75, Velaryon fleet secures harbor (+250 gp/day). **Cost:** PTR +10, Daemon's scathing raven, your other lords read this as weakness.
 
