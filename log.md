@@ -77,3 +77,18 @@
 ## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified live against `mvp_site/frontend_v1/js/campaign-wizard.js` + local `TESTING_AUTH_BYPASS=true` Playwright run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
 
 ## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section
+
+## [2026-08-13] create | House of the Dragon — The Ashen Crown (Rhaenyra) — hardcore political-realism campaign bible (per user request 2026-08-13)
+
+- New query: `queries/house-of-the-dragon-ashen-crown-rhaenyra.md` — slimmed paste-bible for the WorldArchitect.AI Custom Campaign wizard (≤16K chars), with the Quick Setup walkthrough, character-customization hooks, LLM-edit meta-prompt, and troubleshooting.
+- New raw mirror: `raw/hotd-ashen-crown-source-link.md` — pointer page to the long-form source at https://github.com/jleechanorg/llm-wiki/blob/main/wiki/sources/house-of-the-dragon-ashen-crown.md (50,786 bytes / ~8,500 words).
+- Updated `index.md` Start-here list with one-line summary.
+- Show anchor: House of the Dragon Season 3 finale (post-Tumbleton, Helaena-dead, Jace-dead-at-Gullet, Aegon-alive-on-Dragonstone). Book (Fire & Blood 2018) fallback only where Season 3 cut off or diverged.
+- Class: Bard (College of Swords) Level 11 + custom Dragonrider subclass Levels 1-20. Divine Ascension track at L25 (optional, gated).
+- GRRM-faithful magic only — blood of the dragon, dragon dreams, dragon-egg pyre resurrection. No 5e spells above L6.
+- Quad-Pillar mechanics: Crown Stability (CS) / Treasury Liquidity (TL) / Paranoia & Tyranny Rating (PTR) / Dragonseed Loyalty (DL) with quantified baselines (22% / 350gp / 65 / -15..+60).
+- 7-archetype dragon class system (Sovereign / Blood Wyrm / Bronze Titan / Silver Swift-Wing / Ancient Colossus / Wild Drake / Sun Drake [Maimed Miracle]).
+- 12 NPC dramatis personae + 10-house Allegiance matrix + Shepherd's Mob non-house faction.
+- Level-up XP rule (per user 2026-08-13): `0.34 × (next_level_threshold - current_level_threshold)` per die roll using standard D&D 5e cumulative thresholds (L2=300..L20=355000). NO XP during god mode or time-frozen turns.
+- Companion to the existing Bastard's Claim template (`queries/house-of-the-dragon-campaign.md`) — different character (Rhaenyra canon vs Daemon bastard), different starting state (post-Tumbleton vs eve of Dance).
+- Source provenance: Gemini 3.6 Flash share `share.gemini.google/jVxwLgRd0jCK` (canonical long-id `e449d2a6c718?skid=c2d0d9e2-95fc-49cc-8349-c981ee022bd0`) captured 2026-08-13 via `~/.hermes/skills/read-gemini-share-link/SKILL.md`. Authored by hermes-agent (MiniMax-M3).

@@ -14,6 +14,7 @@
 - [External user stories (75, EXT-026–EXT-100)](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 - [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — gender-ambiguous bastard Targaryen of Daemon claims a dragon on the eve of the Dance. Includes a paste-ready 9-section campaign bible and a setup walkthrough verified against the live worldarchitect.ai wizard.
+- [House of the Dragon — The Ashen Crown (Rhaenyra)](queries/house-of-the-dragon-ashen-crown-rhaenyra.md) — hardcore political-realism campaign playing Queen Rhaenyra canon in the immediate aftermath of the Season 3 finale. Quad-Pillar mechanics (CS/TL/PTR/DL), 7-archetype dragon class system, 20-level dragon progression, Bard+Dragonrider subclass L11-L25 (optional Divine Ascension), GRRM-faithful magic, no canonical endings. Companion to the Bastard's Claim bible above.
 
 ## Entities
 
