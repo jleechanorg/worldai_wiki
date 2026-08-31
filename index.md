@@ -20,7 +20,7 @@
 - [AegonTargaryen](entities/AegonTargaryen.md) — Example Game of Thrones character.
 - [AIUniverseBackendDev](entities/AIUniverseBackendDev.md) — Backend infrastructure entity.
 - [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of published campaigns illustrating different archetypes.
-- [CampaignWizard](entities/CampaignWizard.md) — The 3-step creation-flow entity.
+- [CampaignWizard](entities/CampaignWizard.md) — The 2-step creation-flow entity.
 - [ChiontharWyrm](entities/ChiontharWyrm.md) — Combat encounter example.
 - [Daemon](entities/Daemon.md) — Example character from a published campaign.
 - [FactionBattleSim](entities/FactionBattleSim.md) — The faction-vs-faction battle simulation engine.
@@ -52,7 +52,7 @@ These are individual player-run campaigns documented as illustrations of how the
 - [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) — Roll twice, take higher/lower.
 - [ASI](concepts/ASI.md) — Ability Score Improvement vs feats at level-up.
 - [CampaignDesign](concepts/CampaignDesign.md) — How to design a campaign (3000+ word guide).
-- [CampaignWizard](concepts/CampaignWizard.md) — The 3-step campaign creation flow.
+- [CampaignWizard](concepts/CampaignWizard.md) — The 2-step campaign creation flow.
 - [CharacterArchetype](concepts/CharacterArchetype.md) — Fighter / Wizard / Rogue / etc.
 - [CharacterCreation](concepts/CharacterCreation.md) — AI-generated vs hand-rolled character creation.
 - [CharacterMode](concepts/CharacterMode.md) — How the game handles character-centric narration.
