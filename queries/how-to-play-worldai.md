@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -59,7 +59,7 @@ After you make your pick and click **Next**, the wizard moves to **Step 2 — La
 
 **Recommendation for first-timers**: pick the **Dragon Knight Campaign** card. It's pre-selected by default. The system has full lore, a pre-built Ser Arion character (Lvl 1 Paladin, STR 16 / CON 14 / CHA 16), and the opening scene is well-tuned.
 
-If you go custom, write 1-3 sentences describing your world in the **Setting/world** field. See [CampaignDesign](../concepts/CampaignDesign.md) Step 1.
+If you go custom, write 1-3 sentences describing your world in the **Setting/world** field, or expand Section 7 (**Campaign description prompt**) to paste extensive custom world bibles and lore documents (supports 70KB+ text without truncation). See [CampaignDesign](../concepts/CampaignDesign.md) Step 1 and Step 4.
 
 ## Step 4 — Create your character
 
@@ -143,7 +143,7 @@ That's the game. High variance is part of D&D. Plan around it: have backup optio
 ## After your first session
 
 - **Review**: what worked? what didn't?
-- **Save**: campaign state is auto-saved, but you can also export ([PlayerUserStories](PlayerUserStories.md#US-072|download)).
+- **Save**: campaign state is auto-saved, but you can also export ([PlayerUserStories](PlayerUserStories.md#us-072-download--share-campaign-story)).
 - **Iterate**: apply lessons to your next campaign.
 
 ## Next steps
@@ -156,7 +156,7 @@ That's the game. High variance is part of D&D. Plan around it: have backup optio
 ## Sources
 
 - [worldarchitect.ai README](https://github.com/jleechanorg/worldarchitect.ai/blob/main/README.md) — quick-start.
-- [worldarchitect.ai user stories](https://github.com/jleechanorg/worldarchitect.ai/blob/main/docs/user-stories-general.md) — full system coverage.
+- [worldarchitect.ai user stories](https://github.com/jleechanorg/worldarchitect.ai/blob/main/docs/user-stories-ui/INDEX.md) — full system coverage.
 - [Dragon Knight world module](https://github.com/jleechanorg/worldarchitect.ai/blob/main/world_reference/campaign_module_dragon_knight.md) — the canonical built-in campaign used in the screenshots above.
 
 ## Screenshot provenance

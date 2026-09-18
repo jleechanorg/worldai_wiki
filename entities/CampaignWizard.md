@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-system]
 sources: []
@@ -9,16 +9,15 @@ sources: []
 
 # Campaign Wizard
 
-The 3-step UI flow for creating a new campaign. See [CampaignWizard](../concepts/CampaignWizard.md) for the player-facing guide.
+The 2-step UI flow for creating a new campaign. See [CampaignWizard](../concepts/CampaignWizard.md) for the comprehensive player-facing guide.
 
-## The 3 steps
+## The 2 steps
 
-1. **Setting**: choose built-in or describe custom.
-2. **Character**: AI-generated, hand-rolled, or preset.
-3. **Companion**: optional starting companion.
-
-Each step takes 30 seconds to a few minutes depending on choices.
+1. **Choose Type & Customize**: Select built-in preset or custom campaign, specify Universe, Era, Character, Setting, What-If direction, and optional long-form Campaign description prompt (supporting 70KB+ custom bibles).
+2. **Ready to Launch**: Upload an optional character avatar image, review the campaign summary card with inline edit buttons, and launch into the game.
 
 ## What happens after
 
-The campaign starts in Scene 1. The GM narrates the opening, and the player takes their first action.
+The campaign initializes into Scene 1. The GM presents your character sheet (stats, abilities, and inventory) for in-narrative review and confirmation before the first action.
+
+See [CampaignWizard](../concepts/CampaignWizard.md), [CampaignDesign](../concepts/CampaignDesign.md), and [How to Play](../queries/how-to-play-worldai.md).

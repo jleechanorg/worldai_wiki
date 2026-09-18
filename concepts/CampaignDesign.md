@@ -1,10 +1,10 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
-sources: [entities/CampaignShowcase.md]
+sources: [../entities/CampaignShowcase.md]
 ---
 
 # How to Design a Campaign
@@ -33,7 +33,6 @@ The fastest way to blow through your WorldAI budget is to iterate your God Mode 
 
 Pick whichever you already have an account on — the goal is iteration speed, not which LLM is best:
 
-- **God Mode chat** (inside WorldArchitect.AI) — the in-game God Mode is itself a chat LLM interface you can talk to like ChatGPT before you commit to a campaign. Use it to brainstorm settings, test directive wording, and stress-test opening scenes. No campaign-budget consumption while you're just chatting.
 - **ChatGPT** — paste a prompt, get a paragraph back, iterate.
 - **Gemini** — same idea, free tier.
 - **Claude** — same idea, free tier at claude.ai.
@@ -119,34 +118,42 @@ Tone is the dominant mood of the narration. The system uses your god-mode direct
 
 Mixing two tones that conflict (e.g., comedic + grimdark) leads to confused narration. Pick one primary tone; layer one secondary tone (e.g., stoic + hopeful is fine).
 
-## Step 4 — Write the God Mode header
+## Step 4 — Define your campaign premise & description prompt
 
-The God Mode header is what you type when creating the campaign. It's:
+In the [CampaignWizard](CampaignWizard.md), you define your campaign premise through structured form inputs and the expandable **Campaign description prompt**.
 
-> Character: \<description\> | Setting: \<description\>
+### Structured wizard fields
 
-Or, if you want a longer prompt:
+- **Universe / IP**: Select preset tags (e.g., *Game of Thrones*, *Star Wars*, *Cyberpunk*, *Dune*) or specify a custom setting.
+- **Timeline / Era**: Specify the historical anchor (e.g., *Robert's Rebellion*, *The Clone Wars*).
+- **Character Name**: Your protagonist (or leave blank for an AI-generated hero).
+- **Setting / World**: 1–3 sentences describing the core physical and political environment.
+- **Plot / What-If Direction**: Your campaign's primary divergence or hook.
 
-> God Mode:
-> Character: \<name and concept\> | Setting: \<world\>
-> Description: \<longer character backstory\>
+### The Campaign description prompt (Long-form world bible)
 
-The longer the prompt, the more the system has to work with. But keep it focused.
+Section 7 of the wizard provides an expandable multiline textarea (**Campaign description prompt**). This field is engineered to handle massive text payloads (tested up to 70KB+ without client-side truncation or backend clipping).
+
+Use this field to paste:
+1. **Full World Bibles**: Comprehensive faction rosters, pantheons, magic systems, and world histories.
+2. **Detailed Backstory**: Past-life reincarnations, lineage, mental state, and item inventories.
+3. **Narrative Directives**: Stylistic rules, taboos, and tone constraints for the GM narrator.
 
 ### Worked examples
 
-**Short (Naruto, ANBU era)**:
-> God Mode:
-> Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
+**Short prompt (1–3 sentences in structured fields)**:
+> **Character**: Uchiha Itachi
+> **Setting**: Naruto universe. Young Itachi newly inducted into the ANBU Black Ops during the clan tension arc.
+> **Plot / What-If**: Focus on ANBU black-ops espionage and clan loyalty dilemmas.
 
-The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc. See [ItachiGaiden](../entities/ItachiGaiden.md) for what a 400+ scene run of this prompt looks like.
+The system uses this to construct a level-1 Itachi with Sharingan and immediately launches the ANBU arc. See [ItachiGaiden](../entities/ItachiGaiden.md) for a 400+ scene case study.
 
-**Long (isekai character study)**:
-The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, reincarnation setup, family dynamics, internal psychology, and world context. The length was worth it because the campaign is character-study heavy. See [AristocratReborn](../entities/AristocratReborn.md).
+**Long-form prompt (pasted into Section 7 Description Prompt)**:
+> The Aristocrat V2 campaign utilized a ~3,100 word world bible in the description prompt. It detailed past-life memories, reincarnation mechanics, family genealogies, arcane mathematics, and internal psychological complexes. The deep context paid off over 50+ scenes of rich character study. See [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Recommendation
 
-**Start short (1-3 sentences)** for your first campaign. **Go long** if you're doing a character-study or reincarnation campaign where internal monologue is a major feature.
+**Start short** (structured fields only) for your first campaign to experience how the AI naturally improvises. **Go long** (paste a comprehensive bible in Section 7) when porting an existing tabletop campaign, adapting a specific novel/anime canon, or designing an intricate political or reincarnation story.
 
 ## Step 5 — Choose character creation mode
 
@@ -294,5 +301,5 @@ Before launching a campaign, ask:
 ## See also
 
 - [GodModePrompting](GodModePrompting.md) — full directive-writing guide.
-- [CampaignWizard](CampaignWizard.md) — the 3-step creation flow.
+- [CampaignWizard](CampaignWizard.md) — the 2-step creation flow.
 - [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns illustrating these patterns.

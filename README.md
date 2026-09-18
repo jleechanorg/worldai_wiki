@@ -2,6 +2,66 @@
 
 > The player-facing guide to [WorldArchitect.AI](https://worldarchitect.ai) — a structured D&D 5e game with server-side dice, persistent world state, faction play, and player-authored god-mode directives that shape narration.
 
+## Quick start: What to do
+
+WorldArchitect.AI runs tabletop-style D&D 5e RPGs in your browser with server-side dice, persistent state, and AI narration.
+
+```
+Dashboard  ──>  Step 1: Choose Type & Prompt  ──>  Step 2: Launch  ──>  Turn Loop (Character / Think / God)
+```
+
+1. **Open your dashboard**: Sign in at [worldarchitect.ai](https://worldarchitect.ai) to access your campaigns or start a new one.
+2. **Configure in the 2-step Wizard**:
+   - **Step 1 (Choose Type & Customize)**: Select your universe (Game of Thrones, Star Wars, Cyberpunk, Witcher, Dune, or custom), era, protagonist, setting, and plot "what-if" direction.
+   - **Custom Campaign Description Prompt**: Expand section 7 (**Campaign description prompt**) to paste your own complete campaign bible, world lore, faction rules, or custom premise. The system handles large prompts (tested up to 70KB+ without client or server truncation), letting you bring extensive custom worlds directly into the browser.
+   - **Step 2 (Ready to Launch)**: Upload an optional character portrait, review the editable summary card, and click **Enter the World**.
+3. **Play turn by turn**:
+   - The GM introduces the opening scene and confirms your character sheet.
+   - Choose from 4 AI-suggested actions (with pros/cons) or write your own action.
+   - Use the composer mode selector:
+     - `Character`: Standard in-character roleplay actions and dialogue.
+     - `Think/Plan`: Strategic reflection or OOC planning with the GM before committing.
+     - `God`: Set persistent narrative style rules and tone directives (`GOD MODE: ...`).
+
+---
+
+### Visual walkthrough
+
+#### 1. My Campaigns Dashboard
+Manage active worlds, view level and turn progress, and jump directly into active sessions.
+
+![My Campaigns Dashboard](assets/fresh_screenshots/01_dashboard_home.png)
+
+#### 2. Campaign Wizard — Step 1 & Custom Description Prompt
+Configure your campaign universe and character. Expand Section 7 (**Campaign description prompt**) to paste long custom world bibles and premises.
+
+![Campaign Wizard Step 1 with Expanded Campaign Description Prompt](assets/fresh_screenshots/02_wizard_step1_description_prompt.png)
+
+#### 3. Campaign Wizard — Step 2 Ready to Launch
+Drop in an avatar portrait, review or inline-edit your setup, and launch into the game.
+
+![Campaign Wizard Step 2 Launch Screen](assets/fresh_screenshots/03_wizard_step2_launch.png)
+
+#### 4. Active Gameplay & Action Composer
+Read narrative logs, inspect roll results and stats, expand AI suggested actions, or write custom actions with Character, Think/Plan, or God mode.
+
+![Live Gameplay Turn and Action Composer](assets/fresh_screenshots/04_gameplay_turn_composer.png)
+
+---
+
+### Quick summaries
+
+#### How to play — first 30 minutes
+Sign up at [worldarchitect.ai](https://worldarchitect.ai), open the Campaign Wizard, pick a preset (like Dragon Knight) or build your custom world, and click Launch. In Scene 1, confirm your build with the GM. The play loop runs: GM narrates → you act → server rolls dice if needed → GM narrates outcome. Adjust narration anytime using god-mode directives or plan moves with `THINK:` mode. See [how-to-play-worldai](queries/how-to-play-worldai.md).
+
+#### How to design a campaign
+Pick a **setting** (preset or custom), **power level** (bounded L1-5, escalating L1-20, or sandbox), and **tone** (stoic, dramatic, comedic, grimdark, or hopeful). Fill out the structured wizard fields and paste any deep world lore into the expanded **Campaign description prompt**. Plan an active opening scene and define 1-3 god-mode directives early. See [CampaignDesign](concepts/CampaignDesign.md).
+
+#### How to prompt god mode
+Directives are persistent rules stored in campaign state that act as a stylistic lens for all future narration. Effective directives state concrete traits, list specific taboos, and anchor character worldview (e.g., `X is/does Y. Avoid Z. Always W.`). Use `GOD MODE: <directive>` in the composer during play, or drop rules using `GOD MODE: drop <rule>`. See [GodModePrompting](concepts/GodModePrompting.md).
+
+---
+
 ## Executive summary
 
 WorldArchitect.AI is a tabletop-style RPG that runs in your browser. The system runs the rules (initiative, dice, HP, spells, faction combat); an AI narrates the world around your choices. You steer the story two ways: **in-character actions** (what your character does) and **god-mode directives** (persistent rules you set that shape how the narration sounds). Campaigns can last a few scenes or several hundred, escalate from a single village to multiverse-spanning stakes, and support solo play, party play, or running a faction.
@@ -50,7 +110,7 @@ The case studies are illustrative, not normative. The system supports any settin
 | [FactionSystem](concepts/FactionSystem.md) + [FactionPlay](concepts/FactionPlay.md) + [FactionManagement](concepts/FactionManagement.md) + [FactionPower](concepts/FactionPower.md) + [FactionCampaigns](concepts/FactionCampaigns.md) | The faction minigame end-to-end |
 | [LivingWorld](concepts/LivingWorld.md) | World state evolves between player actions |
 | [GodMode](concepts/GodMode.md) + [GodModePrompting](concepts/GodModePrompting.md) | Player-supplied style rules that shape narration |
-| [CampaignDesign](concepts/CampaignDesign.md) + [CampaignWizard](concepts/CampaignWizard.md) | Designing a campaign, the 3-step creation flow |
+| [CampaignDesign](concepts/CampaignDesign.md) + [CampaignWizard](concepts/CampaignWizard.md) | Designing a campaign, the 2-step creation flow |
 | [DnD5eRules](concepts/DnD5eRules.md) | The D&D 5th Edition rule spine |
 | [Initiative](concepts/Initiative.md) + [CombatVictoryProtocol](concepts/CombatVictoryProtocol.md) + [SmartSkillChecks](concepts/SmartSkillChecks.md) | Combat resolution |
 
@@ -103,28 +163,6 @@ Once you've played one session, read [Player User Stories](queries/PlayerUserSto
 This is a public reference wiki. If you find errors or want to suggest additions, open an issue on this repo.
 
 The private game code (`jleechanorg/worldarchitect.ai`) is the source of truth for behavior. This wiki summarizes and explains — it does not duplicate code paths.
-
-## Quick summaries
-
-Three short reads if you want the gist before diving in.
-
-### How to play — your first 30 minutes, step by step
-
-You sign up at [worldarchitect.ai](https://worldarchitect.ai), open the Campaign Wizard, pick a setting (built-in or custom 1-3 sentence description), and choose how to build your character — AI-generated (recommended for first-timers), hand-rolled, or a preset. The system narrates an opening scene, you declare your first action, and the loop runs turn by turn: GM narrates → you act → system rolls dice if needed → GM narrates outcome. Add a god-mode directive when the narration drifts from what you want; use `THINK:` prompts to plan ahead of acting.
-
-See [how-to-play-worldai](queries/how-to-play-worldai.md).
-
-### How to design a campaign — pick a setting, write a god-mode header, plan an arc
-
-Pick a **setting** (built-in like Naruto, GoT, BG3, isekai, or a custom 1-3 sentence description — specific beats vague), then a **power-level** (bounded for drama, escalating for long campaigns, sandbox for OP protagonists), then a **tone** (one primary — stoic, dramatic, comedic, grimdark, hopeful — plus an optional secondary). Write the **God Mode header** (`Character: ... | Setting: ...`), choose a character-creation mode, plan an opening scene (avoid the tavern, the dream, and excessive exposition), add 1-3 god-mode directives early, and pick an arc shape — hero's journey, power escalation, political, mystery, or character study.
-
-See [CampaignDesign](concepts/CampaignDesign.md).
-
-### How to prompt god mode — write directives that actually change the prose
-
-A directive is a single-sentence rule stored in `custom_campaign_state.god_mode_directives`. The system uses it as a lens for every scene generated after the directive is added. Three things make a directive land: state the character concept in concrete terms ("stoic, minimalist, humble" not "interesting"), list taboos ("avoids grandstanding"), and anchor the worldview ("views power as a heavy burden"). Nine categories work — tone, voice, POV, pacing, themes, taboos, power-level, companion rules, world rules. Use the formula `X is/does Y. Avoid Z. Always W.` Start with 1-3 directives, add more as the campaign matures. Anti-patterns: trying to control plot beats, vague directives ("be epic"), contradictory tones, and adding 15 directives in scene 1.
-
-See [GodModePrompting](concepts/GodModePrompting.md).
 
 ## License
 

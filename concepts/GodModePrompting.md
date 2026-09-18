@@ -1,10 +1,10 @@
 ---
 title: GodModePrompting
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: concept
 tags: [wa-prompt, wa-system, wa-tutorial]
-sources: [concepts/GodMode.md]
+sources: [GodMode.md]
 ---
 
 # How to Prompt God Mode
@@ -13,16 +13,17 @@ A practical guide to writing god-mode directives that actually shape narration. 
 
 ## What god-mode directives are
 
-A directive is a single rule stored in `custom_campaign_state.god_mode_directives`. Each entry has two fields:
+A directive is a persistent rule stored in `custom_campaign_state.god_mode_directives`. Each entry has an ID, creation timestamp, and the directive rule:
 
 ```json
 {
+  "id": "directive_a1b2c3d4",
   "added": "2026-05-30T23:00:00Z",
   "rule": "<the directive text>"
 }
 ```
 
-The system reads these rules when generating narration. They're persistent across scenes. You can add directives mid-campaign.
+The system reads these rules when generating narration for every scene. You can add directives at campaign creation (via the Campaign Wizard) or at any point during active gameplay by selecting the **God** radio button in the composer or typing `GOD MODE: <directive>`.
 
 ## How a directive actually works
 
@@ -251,15 +252,22 @@ Add a directive when:
 
 Don't add a directive just because you can. Each directive is a permanent rule.
 
-## How to revise directives
+## How to revise and drop directives
 
-Directives can be removed. (The system treats removal as "this rule no longer applies.") You can also supersede an old directive by adding a new one that overrides it. The pattern:
+Directives persist until explicitly modified or removed. You have two options when updating your rules:
 
-1. **Add a new directive** that supersedes the old one.
-2. **Let it run for 5-10 scenes** to see if it works.
-3. **Iterate**.
+1. **Supersede**: Add a new directive that overrides previous style expectations, and let it run for 5–10 scenes to take effect.
+2. **Drop an existing directive**: Type `GOD MODE: drop <rule text>` in the composer. The system searches your active directives and purges the matching rule from `custom_campaign_state.god_mode_directives`.
 
-Published campaigns have shown that one well-written directive can hold for hundreds of scenes without revision. Don't churn directives if the first one is working.
+### Server-side directive validation
+
+The server applies automated validation to ensure directives guide narration rather than breaking game state:
+- **Accepted**: Durable tone, perspective, thematic taboos, NPC behavioral guidelines, and environmental rules.
+- **Rejected**:
+  - Mechanical stat overwrites (e.g. `my level is 10`, `HP is 999`, `gold is 50000`). Character progression is governed by the rules engine and XP milestones.
+  - One-time narrative outcomes (e.g. `you just killed the dragon`). Actions belong in character input, not persistent directives.
+
+When a directive is rejected, the system alerts you in the narrative feedback so you can rephrase it as a stylistic rule.
 
 ## Worked example — directive progression in a real campaign
 
