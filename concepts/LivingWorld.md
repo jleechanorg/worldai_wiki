@@ -1,7 +1,7 @@
 ---
 title: LivingWorld
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
@@ -9,40 +9,71 @@ sources: []
 
 # Living World
 
-The game world continues to evolve between player actions. NPCs pursue agendas, factions scheme, time advances, seasons change.
+The world moves on its own schedule, not only when you are watching. Every few turns the game advances everything happening off-screen — what NPCs did, what factions gained or lost, which deadlines came due — and folds the results into your campaign's saved state.
 
-## What "living" means
+## When the world advances
 
-When you take a long rest or a long time passes in-fiction, the world state advances:
-- **NPCs make decisions**: based on their agendas, even when the player isn't watching.
-- **Factions act**: see [FactionPlay](FactionPlay.md).
-- **Events fire**: scheduled plot events, random encounters, seasonal changes.
-- **Time passes**: days turn into weeks; weeks into months.
+On a schedule, not when you rest. An advance becomes due on whichever comes first:
+
+- **24 hours of in-game time** since the last advance, or
+- **3 player turns** since the last advance.
+
+The in-game clock is the trigger you can rely on: anything that burns a day — travel, downtime, a long rest — brings the next advance forward. The turn count is a backstop for scenes that take many turns without much time passing, and a run of three quick turns inside one conversation will not always produce a visible development. Resting is not itself the trigger and carries no special risk.
+
+**[God Mode](GodMode.md) and [Think/Plan Mode](ThinkMode.md) turns are skipped entirely.** They do not advance the clock, do not generate world events, and do not use up the cadence. Use them as much as you like without burning world time.
+
+## What an advance produces
+
+A single advance can move any of these:
+
+- **Background events** — what off-screen NPCs and factions actually did.
+- **Rumors** — one or two pieces of gossip NPCs may repeat. Some are true, some half true, some flatly wrong, and the rumor itself never tells you which.
+- **Deadlines** — countdowns scheduled for a specific future turn come due, get pushed back, or get cancelled.
+- **Faction shifts** — objectives, resources, and standing change. See [FactionSystem](FactionSystem.md).
+- **One scene event** (optional) — something that reaches you directly: a messenger, a road encounter, a companion pulling you aside, a quest offer.
+
+You are never handed a report of what changed. Hidden developments stay hidden until the story surfaces them — an NPC mentions it, a price has moved, a rumor reaches you.
 
 ## Why it matters
 
-Without a living world, the game would freeze between player actions. The party goes to sleep, and nothing happens until they wake up. With a living world, the world keeps moving:
-- The villain completes a ritual while you rest.
-- The rival faction attacks your holdings.
-- An NPC you insulted plots revenge.
-- A festival happens in town.
+Between advances the world is not frozen, so the state you come back to is not the state you left. An ally makes progress on something you asked for. A caravan arrives. A repair finishes. A rival quietly gains ground.
 
-This makes choices feel weighty and time feel real.
+The game is deliberately tuned *against* a pile-up of disasters. Most advances produce no major development at all — a single day is normally expected to contain none — and every background event is tagged positive, neutral, mixed, or antagonist, with positive and neutral as the default. "Time passed" is explicitly not a reason to invent a crisis.
 
-## How it works
+Hostile developments are rationed by the game itself: at most **one antagonist-flagged event per 14 days of in-game time** survives into your save. Extras are discarded before the turn is written.
 
-The LivingWorldEngine runs background simulations:
-1. **NPC agendas**: each NPC has goals. Periodically, they take steps toward their goals.
-2. **Faction turns**: see [FactionPlay](FactionPlay.md).
-3. **Time events**: scheduled events tied to in-world dates.
-4. **Random encounters**: low-probability events that fire when conditions are met.
+## Winning streaks invite trouble
 
-When you return from a long rest, the system surfaces what changed.
+The game counts your consecutive risky wins. Once that streak reaches **2**, each advance rolls to throw a complication at you, and the odds climb as the streak grows:
+
+| Streak | Chance of a complication | Typical scale |
+|---|---|---|
+| 0-1 | none — cannot fire | — |
+| 2 | 40% | Local: a spy burned, a minor delay |
+| 3 | 50% | Regional: a network partly exposed, real resource loss |
+| 4 | 60% | Regional |
+| 5 | 70% | Significant: a major ally captured, an enemy gains ground |
+| 6+ | 75% (the cap) | Significant |
+
+Your streak resets to zero the moment a complication lands. Complications show up as a messenger with bad news, supplies you were counting on going missing, a rival who got there first, or a former ally who has changed sides.
+
+## Sanctuary after a victory
+
+When the game recognises that you finished a mission or story arc — a named enemy defeated, the threat cleared, and you taking a post-victory action like looting or resting — it grants **sanctuary**: a window in which the world will not throw a life-ending event at you.
+
+| What you finished | Sanctuary lasts |
+|---|---|
+| A side quest or cleared dungeon | 8 turns (about 4-5 in-game days) |
+| A quest chain finale or chapter end | 15 turns (about 10 in-game days) |
+| A campaign climax or a defeated big bad | 30 turns (about 3 in-game weeks) |
+
+Sanctuary can end early if you go looking for a fight.
 
 ## Player tips
 
-- **Don't rest too long**: every day you rest, the world advances. Long rests in hostile territory are risky.
-- **Use informants**: hire NPCs to keep you informed about world events.
-- **Engage with NPC agendas**: NPCs who like you will tell you when they're planning something; NPCs who hate you will scheme against you in silence.
+- **Time is the clock, not rest.** There is no extra penalty for sleeping somewhere dangerous — but anything that eats a day brings the next advance closer.
+- **Chase rumors.** Rumors are the main way the game tells you an off-screen event exists. Each one is marked true, partly true, or false behind the scenes, so confirm before you act.
+- **Expect the counter-punch.** When a metric you are pushing — territory, faction power, a conversion campaign — crosses 25%, 50%, 75%, or 100%, the next advance must produce a named rival's counter-move, and your metric is blocked from hitting the next milestone that same turn.
+- **Don't count on a quiet streak lasting.** A long run of clean wins is exactly when the complication odds are highest.
 
-See [FactionSystem](FactionSystem.md), [NPCRelationships](NPCRelationships.md), [CampaignDesign](CampaignDesign.md).
+See [FactionSystem](FactionSystem.md), [NPCRelationships](NPCRelationships.md), [CompanionArc](CompanionArc.md), [CampaignDesign](CampaignDesign.md).

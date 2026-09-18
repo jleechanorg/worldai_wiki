@@ -20,98 +20,110 @@ screenshots:
 
 Your first 30 minutes with the game, step by step.
 
-All screenshots below are **real captures** taken from a live [worldarchitect.ai](https://worldarchitect.ai) instance running the canonical **Dragon Knight** built-in campaign. Desktop shots are 1280×800; mobile shots are 390×844 (iPhone 12/13/14/15 standard).
+**The short version:** sign in with Google, click **Play a campaign**, pick the **Dragon Knight Campaign** card, click Next, click **Enter the World**, accept the character the GM offers, and start typing what you do. Everything below is that path in detail.
+
+All screenshots are real captures from a Dragon Knight playthrough. A few come from an earlier build, so a couple of button labels have since changed; the captions say so. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
-You'll need:
-- A web browser
-- An account at [worldarchitect.ai](https://worldarchitect.ai)
-- An idea for a setting (or willingness to use a built-in)
+You'll need a web browser and a Google account. That's it — playing is free, and you don't need an idea for a setting if you take Dragon Knight.
 
-## Step 1 — Sign up
+## Step 1 — Sign in
 
 1. Go to [worldarchitect.ai](https://worldarchitect.ai).
-2. Click "Sign in" (Google or Apple SSO).
-3. Confirm your account.
+2. Click **Continue with Google** — Google sign-in is the only option.
 
-After sign-in you'll land on your **My Campaigns** dashboard. From here, every session begins — this is the home base where you launch new campaigns, search your history, and pick up where you left off.
+You'll land on your **My Campaigns** dashboard. Every session starts here: launch new campaigns, search your history, pick up where you left off.
 
-![My Campaigns dashboard — empty state, Start New Campaign button highlighted](images/how-to-play-worldai/step1-dashboard-desktop.png)
+![My Campaigns dashboard — empty state, with the new-campaign button in the top-right. This capture is from an earlier build where that button read "Start New Campaign"](images/how-to-play-worldai/step1-dashboard-desktop.png)
 
 ## Step 2 — Open the Campaign Wizard
 
-From the dashboard, click "Start New Campaign". You'll see the [CampaignWizard](../concepts/CampaignWizard.md) — two steps. Step 1 is **Choose Type** (the setting/character pair). Step 2 is **Launch**.
+From the dashboard, click the 📜 **Play a campaign** button in the top-right. That opens the [CampaignWizard](../concepts/CampaignWizard.md): two screens, **Choose Type** then **Launch**.
 
-![Campaign Wizard — Step 1, Choose Type. Dragon Knight Campaign pre-selected (yellow border). Default title "Dragon Knight", character "Ser Arion"](images/how-to-play-worldai/step2-wizard-setting-desktop.png)
+## Step 3 — Pick a campaign
 
-**Same flow on mobile** (390×844, iPhone):
+Screen one offers two cards:
 
-![Campaign Wizard mobile — Step 1, Dragon Knight pre-selected](images/how-to-play-worldai/step2-wizard-setting-mobile.png)
+- **Play a campaign** — the custom path. You describe your own world: the Universe field takes anything you type (Naruto, Baldur's Gate 3, your own setting) and offers eight one-click suggestions, none of which come with pre-written lore.
+- **Dragon Knight Campaign** — the one ready-made module. Full lore, a pre-built hero (Ser Arion, level 1 Paladin), two companions, and a tuned opening scene.
 
-## Step 3 — Pick a setting
+> **A naming trap:** the dashboard button you just clicked and the first card here are both called **Play a campaign**. They are not the same thing — the button opens the wizard, the card chooses the custom path.
 
-Either pick a built-in (**Dragon Knight**, Naruto, Game of Thrones, BG3, etc.) or describe your own. The example screenshots use the **Dragon Knight** built-in because it's the canonical campaign and produces the best-tuned opening scene for first-timers.
+**Recommendation for first-timers**: click the 🐲 **Dragon Knight Campaign** card. It is the second of the two, and the custom card is selected by default, so you do have to click Dragon Knight to switch. Picking it fills in and locks the setting and character for you.
 
-After you make your pick and click **Next**, the wizard moves to **Step 2 — Launch**, where you confirm and click "Enter the World" to start the campaign.
+![Campaign Wizard — Step 1, Choose Your Campaign, captured after clicking the Dragon Knight Campaign card (yellow border), with title "Dragon Knight" and character "Ser Arion" filled in. In this earlier build Dragon Knight was the first card and the custom card read "Custom Campaign"](images/how-to-play-worldai/step2-wizard-setting-desktop.png)
 
-![Campaign Wizard — Step 2, Launch. Dragon Knight selected, title "Dragon Knight", character "Ser Arion". "Enter the World" button at the bottom](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
+**Same screen on mobile** (390×844, iPhone):
 
-**Recommendation for first-timers**: pick the **Dragon Knight Campaign** card. It's pre-selected by default. The system has full lore, a pre-built Ser Arion character (Lvl 1 Paladin, STR 16 / CON 14 / CHA 16), and the opening scene is well-tuned.
+![Campaign Wizard mobile — Step 1, after clicking the Dragon Knight card](images/how-to-play-worldai/step2-wizard-setting-mobile.png)
 
-If you go custom, write 1-3 sentences describing your world in the **Setting/world** field, or expand Section 7 (**Campaign description prompt**) to paste extensive custom world bibles and lore documents (supports 70KB+ text without truncation). See [CampaignDesign](../concepts/CampaignDesign.md) Step 1 and Step 4.
+Click **Next** and the wizard moves to screen two, **Ready to Launch!** Check the summary, then click **Enter the World** — it sits right under the heading, and again at the bottom next to **Previous**.
+
+![Campaign Wizard — Step 2, Ready to Launch, scrolled down to the optional Character Avatar uploader and the Campaign Summary card. Padlocks mark the rows Dragon Knight fills in for you](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
+
+Going custom instead? Write 1-3 sentences in the **Setting / world for your adventure** field, or open the **Campaign description prompt** (the last field, behind an **Expand** button) and paste a whole world bible — length is almost never your constraint. See [CampaignDesign](../concepts/CampaignDesign.md).
 
 ## Step 4 — Create your character
 
-After you pick a built-in (Dragon Knight), the system pre-fills a character — Ser Arion for Dragon Knight. You'll see three character-creation paths the GM can take:
+On Dragon Knight your character is already built: **Ser Arion**, Lvl 1 Paladin, STR 16 / CON 14 / CHA 16, 12 HP. The GM shows you the sheet and offers three choices:
 
-1. **AI-generated (recommended for Dragon Knight)** — the system uses the canonical Ser Arion build (Lvl 1 Paladin, STR 16 / CON 14 / CHA 16).
-2. **Hand-rolled** — click *Edit Character* and pick race, class, stats yourself.
-3. **Use a preset** — pick from the pre-built Ser Arion sheet (the default for Dragon Knight).
+1. **Finish Character Creation and Start Game** — accept the build and begin the mission.
+2. **Edit Character** — change stats, skills, or equipment before you start.
+3. **Custom Class** — design a unique class for Arion instead of the standard Paladin.
 
-**Recommendation for first-timers**: accept the pre-filled character. The campaign is tuned for it. The GM will narrate a "review screen" — just click **Finish Character Creation and Start Game**.
+As on every turn, you can also ignore all three and type your own action instead.
 
-![Character Creation Review — GM presenting Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. Choice buttons: Accept / Edit / Custom Class / Custom Action / Finalize](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
+On a custom campaign with no character, the GM instead offers three ways to build one: **AI Generated**, **Standard D&D** (step-by-step), or **Custom Class**.
 
-## Step 5 — Add a companion (optional)
+**Recommendation for first-timers**: accept the pre-filled character. The campaign is tuned for it — click **Finish Character Creation and Start Game**.
 
-The Dragon Knight module launches with **Ser Elian Thorne** (the idealist) and **Ser Vespera Nyx** (the pragmatist) — two Imperial knights riding with you on the pacification mission. They are not optional; they're written into the opening scene. Other settings (Game of Thrones) let you pick from a roster.
+![Character Creation Review — the GM presents Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. The three choices are Finish Character Creation and Start Game, Edit Character, and Custom Class, followed by the usual Custom Action row and a final "start the adventure" confirmation](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
 
-**Recommendation for first-timers**: yes, take the companions. Solo campaigns can feel lonely, and the moral contrast between Elian and Vespera is the engine of the Dragon Knight opening.
+## Step 5 — Read the opening scene
 
-## Step 6 — Read the opening scene
-
-The GM will narrate the opening. For Dragon Knight, that's **Scene #2: The King's Ribbon, Winter-Mourn Province** — a road on horseback through a frozen province, with the cold hard cadence of imperial stone under hoofbeats.
+The GM narrates the opening. For Dragon Knight that's **The King's Ribbon, Winter-Mourn Province** — a road on horseback through a frozen province.
 
 It establishes:
 - **Where you are** — The King's Ribbon, Winter-Mourn Province, 95 AG, Frost-Fall 12, 09:00.
-- **What's happening** — You and two knight-companions ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (a former hero now branded a traitor) shelters refugees against the Empress's pacification order.
+- **Who's with you** — **Ser Elian Thorne** (the idealist) and **Ser Vespera Nyx** (the pragmatist), two Imperial knights. You don't choose them; they're written into the scene. The moral contrast between them drives the whole opening, so talk to both.
+- **What's happening** — You ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (a former hero now branded a traitor) shelters refugees against the Empress's pacification order.
 - **What you can do** — Scout, address your companions, ride straight to the gate, or type a custom action.
 
 **Take your time. Re-read it.** The first choice sets the tone of the entire campaign.
 
-![Opening Scene #2 — Ser Arion riding The King's Ribbon with Ser Elian Thorne (idealist, left) and Ser Vespera Nyx (pragmatist, right). Three choice buttons (Scout the Camp / Address the Company / Ride Straight to the Gate) plus Custom Action](images/how-to-play-worldai/step6-opening-scene-desktop.png)
+![The opening scene — Ser Arion riding The King's Ribbon with Ser Elian Thorne (idealist, left) and Ser Vespera Nyx (pragmatist, right). Three choice buttons (Scout the Camp / Address the Company / Ride Straight to the Gate) plus Custom Action](images/how-to-play-worldai/step6-opening-scene-desktop.png)
 
 **Same scene on mobile** (the choices stack vertically):
 
 ![Opening Scene mobile — choice buttons stack vertically, narration scrolled](images/how-to-play-worldai/step6-opening-scene-mobile.png)
 
-## Step 7 — Take your first action
+## Step 6 — Take your first action
 
-Type your first action in the input box at the bottom. Examples:
+Click one of the offered choices, or type your own in the message box at the bottom. Examples:
 
 - "I look around the room."
 - "I draw my sword."
 - "I introduce myself to the person across the table."
 - "I cast Detect Magic."
 
-The GM will narrate the result. The system may auto-roll dice. Read the narration and the dice results together.
+The GM narrates the result and rolls any dice the action calls for. Read the narration and the dice results together.
 
-For Dragon Knight, the **first recommended action** is one of the three offered choices — or **type a custom action** to take the narrative in an unexpected direction.
+### The three buttons under the message box
+
+They decide how your words are read, and you'll use all three:
+
+| Button | What your text means | Does time pass? |
+|---|---|---|
+| **Character** (default) | What your character does and says | Yes — the story advances |
+| **Think/Plan** | You talking strategy with the GM | No |
+| **God** | You editing the campaign as its administrator | No |
+
+Leave it on **Character** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
 
 ![First action typed — "I look around the room." in the input box, GM now processing ("Checking the rulebook..." overlay). The session header shows Lvl 1 Paladin, HP 12/12, Lay on Hands 5/5, Divine Sense 4/4](images/how-to-play-worldai/step7-first-action-desktop.png)
 
-## Step 8 — Iterate
+## Step 7 — Keep going
 
 Play continues turn by turn:
 1. GM narrates the current scene.
@@ -120,53 +132,48 @@ Play continues turn by turn:
 4. GM narrates the outcome.
 5. Repeat.
 
-The Dragon Knight campaign runs ~100 turns before the dragons (Aurum, Umbrax) start directly intervening. Most first sessions reach turn 30-50.
+In Dragon Knight the dragons (Aurum, Umbrax) are most active **early** — they act as a safety net for the first 100 turns, and if you never meet them they come looking for you somewhere around turns 51-75. Most first sessions reach turn 30-50.
 
 ## What can go wrong (and how to fix it)
 
 ### "The narration doesn't match my character"
-Add a god mode directive to refine. See [GodModePrompting](../concepts/GodModePrompting.md).
+Switch to the **God** button and write a standing rule, e.g. `GOD MODE: the narration has a stoic, minimalist tone`. The GM follows it from then on. See [GodModePrompting](../concepts/GodModePrompting.md).
+
+### "The GM got something wrong, and I want it undone"
+There is no undo button, but God Mode is the fix: it can correct a stat, remove an item you never had, or replace the text of a scene that went wrong. `GOD MODE: set my HP to 12` or `GOD MODE: I never picked up the ring`. See [GodMode](../concepts/GodMode.md).
 
 ### "I died"
-Most campaigns have resurrection. Dragon Knight has the **Dragon Rescue** rule — if Ser Arion drops below 25% HP in the first 100 turns, a dragon intervenes to save them. If not, the campaign ends — start a new one with the lessons learned.
+In Dragon Knight, during the first 100 turns: at 25% HP or below a dragon whispers an offer of rescue (you can accept, refuse, or ignore it), and at 0 HP one intervenes anyway and you wake up alive somewhere else. Which dragon shows up depends on how ruthlessly you have been playing. Past turn 100 that net is gone. In other campaigns, what happens after death is up to the GM and your setting.
 
 ### "The campaign is too slow / too fast"
 Slow: ask the GM to skip ahead ("I time-skip a week").
 Fast: ask for more detail ("Describe what the room looks like").
 
 ### "I'm stuck on what to do"
-Ask the GM directly: "What should I do next?" or "What are my options?" Most agents will suggest 2-3 options.
+Ask the GM directly: "What should I do next?" or "What are my options?" You'll usually get 2-3 suggestions back.
 
 ### "The dice hate me"
 That's the game. High variance is part of D&D. Plan around it: have backup options, build for advantage, bring healing.
 
+### "It says I've hit my turn limit"
+Playing is free, but each account gets 100 turns a day and 50 in any 5-hour window. Wait for the window to roll over, or use the **Add your key — higher limits** button in the campaign header to supply your own model API key, which raises both caps — 5,000 turns a day and 1,000 in any 5-hour window.
+
 ## After your first session
 
-- **Review**: what worked? what didn't?
-- **Save**: campaign state is auto-saved, but you can also export ([PlayerUserStories](PlayerUserStories.md#us-072-download--share-campaign-story)).
-- **Iterate**: apply lessons to your next campaign.
+Your campaign saves itself — just close the tab and click its card next time. (You can also export it: [PlayerUserStories](PlayerUserStories.md#us-072-download--share-campaign-story).)
 
-## Next steps
+Then, in this order:
 
-- Read [GodModePrompting](../concepts/GodModePrompting.md) to learn how to shape narration.
-- Read [CampaignDesign](../concepts/CampaignDesign.md) to plan your next campaign.
-- Read [CampaignShowcase](../entities/CampaignShowcase.md) for inspiration.
-- Read [PlayerUserStories](PlayerUserStories.md) for the full list of what the game can do.
-
-## Sources
-
-- [worldarchitect.ai README](https://github.com/jleechanorg/worldarchitect.ai/blob/main/README.md) — quick-start.
-- [worldarchitect.ai user stories](https://github.com/jleechanorg/worldarchitect.ai/blob/main/docs/user-stories-ui/INDEX.md) — full system coverage.
-- [Dragon Knight world module](https://github.com/jleechanorg/worldarchitect.ai/blob/main/world_reference/campaign_module_dragon_knight.md) — the canonical built-in campaign used in the screenshots above.
+1. [GodModePrompting](../concepts/GodModePrompting.md) — shape how the GM writes. This is the one that changes your second session the most.
+2. [CampaignDesign](../concepts/CampaignDesign.md) — when you're ready to build your own world instead of playing Dragon Knight.
+3. [CampaignShowcase](../entities/CampaignShowcase.md) — what other players built.
+4. [PlayerUserStories](PlayerUserStories.md) — the full list of what the game can do.
 
 ## Screenshot provenance
 
-All screenshots in this page were captured **2026-06-20** from a live local development server running the latest `main` branch of [jleechanorg/worldarchitect.ai](https://github.com/jleechanorg/worldarchitect.ai), signed in via the development test-mode flow that bypasses real Google/Apple auth.
+All screenshots on this page were captured **2026-06-20** from a real playthrough of the Dragon Knight campaign, at these window sizes:
 
-The campaign ID for the Dragon Knight session shown is **`sXVHWBu34TP0qhPWLeBY`**.
-
-Captures were taken with **Playwright headless Chromium** at the following viewports:
 - Desktop: 1280×800
-- Mobile: 390×844 (iPhone 12/13/14 standard)
+- Mobile: 390×844 (iPhone 12/13/14 size)
 
-The session is real — the GM narration in the screenshots is generated by the live LLM, not a static fixture. The "Checking the rulebook..." overlay visible in `step7-first-action-desktop.png` is the production loading state during a real LLM call.
+The session is real. Every line of narration in the pictures was written by the AI Game Master during play — nothing is mocked up, and the "Checking the rulebook..." overlay in the last screenshot is the genuine waiting state while the GM thinks.

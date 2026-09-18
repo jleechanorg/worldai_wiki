@@ -9,15 +9,10 @@ sources: []
 
 # Campaign Wizard
 
-The 2-step UI flow for creating a new campaign. See [CampaignWizard](../concepts/CampaignWizard.md) for the comprehensive player-facing guide.
+The 2-step flow for creating a new campaign: **Choose Your Campaign**, then **Ready to Launch**.
 
-## The 2 steps
+Pick **Play a campaign** to build your own world — Universe, Era, Character, Setting, What-If direction, Title, and an optional long-form Campaign description prompt — the last section on Step 1, collapsed behind an **Expand** button — big enough for a whole world bible. Pick **Dragon Knight Campaign** and it becomes a fixed module: Universe, Era, and What-If disappear, and Character, Setting, and the description are filled in and locked.
 
-1. **Choose Type & Customize**: Select built-in preset or custom campaign, specify Universe, Era, Character, Setting, What-If direction, and optional long-form Campaign description prompt (supporting 70KB+ custom bibles).
-2. **Ready to Launch**: Upload an optional character avatar image, review the campaign summary card with inline edit buttons, and launch into the game.
+Step 2 takes an optional avatar, shows a summary card you can edit in place, and launches you into Scene 1, where the GM presents your character sheet for review before your first action.
 
-## What happens after
-
-The campaign initializes into Scene 1. The GM presents your character sheet (stats, abilities, and inventory) for in-narrative review and confirmation before the first action.
-
-See [CampaignWizard](../concepts/CampaignWizard.md), [CampaignDesign](../concepts/CampaignDesign.md), and [How to Play](../queries/how-to-play-worldai.md).
+Full walkthrough: [CampaignWizard](../concepts/CampaignWizard.md). See also [CampaignDesign](../concepts/CampaignDesign.md) and [How to Play](../queries/how-to-play-worldai.md).

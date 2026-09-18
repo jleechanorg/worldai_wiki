@@ -1,7 +1,7 @@
 ---
 title: AegonTargaryen
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-character, wa-persona]
 sources: []
@@ -9,24 +9,23 @@ sources: []
 
 # Aegon Targaryen
 
-A canonical character from the Game of Thrones setting. A Targaryen prince with claims to the Iron Throne.
+Aegon II Targaryen — "the Usurper" to the Blacks, the crowned king to the Greens — is the opposing claimant in the Dance of the Dragons. He is a major NPC in the ready-made [House of the Dragon campaign](../queries/house-of-the-dragon-campaign.md), where he is your half-brother and will kill you on sight.
 
-## Personality
+He is not built into the game. Like every named character from an existing story, he exists in your campaign because you put him in the premise you write.
 
-- Confident, sometimes reckless
-- Values family (in his own way)
-- Has dragon-related abilities
+## What he holds
 
-## In campaigns
+- **King's Landing**, including the Red Keep, where entering means dying, and the Dragonpit, where your dragon cannot land.
+- **Sunfyre**, his dragon — one of four on the Green side, alongside Vhagar, the largest dragon alive.
+- **The Hightower alliance**: the Faith Militant, a High Septon who answers to them, and a City Watch under orders to execute any known bastard of Daemon.
 
-Appears in Game of Thrones-themed campaigns as:
-- A potential ally or rival depending on faction alignment.
-- A claimant to power.
-- A wild card with dragon fire.
+## Playing against him
 
-## Player tips
+- **He is a faction, not a duel.** Reaching Aegon means going through a capital's worth of soldiers and fanatics. Plan at that scale, or run the fight as a faction war — see [FactionSystem](../concepts/FactionSystem.md).
+- **Count dragons before soldiers.** Air superiority decides who sets the terms of an engagement, and the Greens have Vhagar.
+- **Family is leverage in both directions.** Blood gets you an audience and a reason to be executed in the same breath. What an NPC does with a shared bloodline depends on how they feel about you — see [NPCRelationships](../concepts/NPCRelationships.md).
 
-- **Alliances with Targaryens are complicated**: family drama is real.
-- **Dragons change the power dynamic**: be aware of his firepower.
+## Sources
 
-See [NPCRelationships](../concepts/NPCRelationships.md), [CompanionPersonality](../concepts/CompanionPersonality.md).
+- [House of the Dragon campaign template](../queries/house-of-the-dragon-campaign.md) — the published campaign where Aegon II appears.
+- See also [Daemon](Daemon.md), the Blacks' side of the same war.

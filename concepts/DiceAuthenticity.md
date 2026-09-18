@@ -1,7 +1,7 @@
 ---
 title: DiceAuthenticity
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -9,44 +9,46 @@ sources: []
 
 # Dice Authenticity
 
-WorldArchitect.AI enforces anti-fabrication on dice rolls. This is one of the game's defining features.
+Nobody in this game decides what a die landed on — not you, and not the AI running the game. Every roll comes out of real random-number code, and the server does the arithmetic and calls success or failure itself.
 
-## The problem
+## Why it works this way
 
-In freeform LLM play (e.g., AI Dungeon, raw ChatGPT), the player can just *say* they rolled a 20. The LLM has no way to verify. This breaks the game — critical hits become common, failures never happen, and the rules stop mattering.
+If either side could simply announce a result, the rules would stop meaning anything: crits whenever you wanted them, failures never. So neither side gets to announce one. When you fail a save, you take the damage. When the goblin crits you, you are at 0 HP. Nothing softens it afterwards.
 
-## The solution
+## What the game guarantees
 
-The platform owns dice rolling:
+1. **You describe the action; the game produces the roll.** You type "I attack the orc." There is no Attack button and no Roll button — the roll comes back with the narration.
+2. **The difficulty is fixed before the dice.** The GM has to state the target number and explain it before any die is generated, and turns where that order breaks down get flagged. It cannot see the roll, dislike the outcome, and move the goalposts.
+3. **The roll has to use the seed the server committed to.** Before the turn, the server generates a secret seed and records its fingerprint. Afterwards it checks that the roll used that exact seed.
+4. **Every face has to be possible.** A d6 cannot come back as a 9.
+5. **The server recomputes the arithmetic.** It takes the raw faces, applies keep-highest or keep-lowest, applies the modifier, and decides success or failure. Where the GM's numbers disagree, the server's answer is what gets stored and shown.
+6. **Natural 1 and natural 20 are absolute.** A raw 1 on the kept d20 always fails and a raw 20 always succeeds, whatever your modifier and whatever the DC.
+7. **Each roll is stored with its turn** — the notation, every raw face, the modifier, the kept face, the total, the target number, and what the roll was for. Rolls are ordered by the turn they belong to rather than stamped with their own clock time.
 
-1. **The system, not the player, rolls.** When you click "Attack", the platform rolls `1d20+modifier` server-side.
-2. **The result is shown verbatim** alongside the narration.
-3. **The LLM doesn't see the roll until after it's been rolled.** It can't "remember" a fake roll.
-4. **Each roll is logged** in the campaign state with timestamp, roll, modifier, and result.
-5. **You can't declare a result.** Typing "I rolled a 20" in chat does nothing mechanically.
+When something does not line up, the turn gets flagged rather than quietly accepted. You cannot hand the game a result you made up, and neither can the GM.
 
-## Why it matters
+## What you can see
 
-Dice authenticity is what makes the game *playable* as a tabletop RPG instead of a collaborative fiction engine. When you fail a save, you actually take the damage. When the goblin crits you, you're actually at 0 HP. The stakes are real.
+Every turn shows its own rolls in the dice area above the narration, so scrolling back through the story shows every roll in order.
 
-## Player experience
+There is no roll-history screen, no replay view, and no export.
 
-- You declare an action ("I swing my sword at the orc").
-- The system tells you to roll (or auto-rolls).
-- You see the result.
-- The GM narrates the outcome *based on the actual roll*.
-- The state updates (HP, conditions, etc.).
+Turning on **Settings → Debug Mode** shows you more, not less: alongside the GM's notes and its reasoning about state changes, each turn lists its rolls in full, including ones normally kept behind the screen — a guard's Perception check against your Stealth, for instance.
 
-There's no way to "cheat" because there's no opportunity to cheat. The platform rolls, the platform records, the platform enforces.
+What nothing in the app shows yet is the fairness record itself. The seed, its fingerprint, and the verification result are stored with every turn, but there is no screen that displays them.
 
-## Edge cases
+## Common questions
 
-- **Player asks to roll manually** ("Can I roll my own d20?"): not supported in standard play. The platform rolls.
-- **Player wants to fudge a roll** ("Just say I rolled a 15"): the GM is the platform; it won't lie.
-- **Debug / replay mode**: campaign owners can view the roll log to audit outcomes.
+- **"Can I roll my own d20?"** Not in standard play. The game produces the roll.
+- **"Can you just say I rolled a 15?"** The GM is the game; it will not fudge a number for you.
+- **"Where did my numbers go?"** Probably the **Hide dice rolls** display setting — see [Dice](Dice.md).
 
-See [Dice](Dice.md), [DiceRollMechanics](DiceRollMechanics.md), [DiceFAQ](../queries/DiceFAQ.md).
+## What you actually do
+
+You type what your character does. The rolls, the target numbers, and the outcome come back together with the narration. [Dice](Dice.md) has the full turn sequence.
+
+See [Dice](Dice.md), [DiceNotation](DiceNotation.md), [DiceFAQ](../queries/DiceFAQ.md).
 
 ## Sources
 
-- `~/worldarchitect.ai/docs/user-stories-general.md` (private) — US-002 Dice Anti-Fabrication.
+- D&D 5e Basic Rules (free SRD).

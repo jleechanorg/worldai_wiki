@@ -1,8 +1,104 @@
 # Wiki Log
 
-> Chronological record of all wiki actions. Append-only.
+> Record of edits to this wiki, newest first. Entries are never rewritten, so
+> older ones describe the game and the site as they were on that date — read
+> the pages themselves for what is true now.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
+
+## [2026-09-18] update | Cross-page contradiction and voice pass after the rewrite sweep
+- Faction routing: `CharacterMode` claimed the faction specialist engages at 20+
+  soldiers. That threshold is automatic mass combat; the faction minigame is
+  opt-in in play. Aligned to `FactionSystem`.
+- Wizard options: `PlayerUserStories` (US-065, US-067) and `CharacterCreation`
+  described creation checkboxes — narrative flair, mechanical precision,
+  generate companions, default fantasy world — that the wizard does not show.
+  Aligned to `CampaignWizard` and `house-of-the-dragon-campaign`.
+- Level-up modal: `ExternalUserStories` and `DeveloperAPI` read as though
+  levelling blocks play. Levelling never interrupts; only an open review does.
+  Aligned to `LevelUp`.
+- Dice verification: `ExternalUserStories` claimed a player can replay and check
+  a roll. The fairness record is kept but not displayed. Aligned to
+  `DiceAuthenticity`, and the duplicated guarantee list folded into a pointer.
+- God Mode replies: "two to four follow-up buttons" replaced with the three
+  observed options plus Custom Action, in `GodMode` and `GOD_MODE_RESPONSE`.
+- Item rarity: `LootAndRewards` presented rarity bands as tracked; they are
+  narration vocabulary. Aligned to `PlayerUserStories` US-047.
+- Character creation methods: `CampaignDesign` listed two paths ("hand-rolled");
+  aligned to the three the GM actually offers, with no stat rolling.
+- Frozen-world wording: `ThinkMode` said the clock ticks a fraction of a second;
+  aligned to `LivingWorld`, `GodMode` and `CharacterMode`.
+- Voice: removed changelog and private-source `## Sources` blocks from
+  `PlayerUserStories`, `ExternalUserStories`, `DeveloperAPI` and
+  `WorldArchitect`; replaced the "Retired story IDs" bookkeeping table with a
+  player-facing "Rules the game doesn't track" section; dropped leaked
+  export-field names from `GodMode` and internal phrasing from `LivingWorld`
+  and `LevelUpProgression`.
+
+## [2026-09-18] lint | Link and catalog integrity pass after the rewrite sweep
+- `scripts/lint_wikilinks.py`, `scripts/check_http_links.py` and
+  `tests/test_wikilink_lint.py` now glob every top-level `*.md` instead of an
+  allowlist of three. `log.md`, `AGENTS.md` and `CLAUDE.md` were never scanned,
+  so broken relative links in them passed the lint silently.
+- `test_player_facing_systems_table_uses_markdown_links` pinned the heading
+  "Player-facing systems at a glance", which the sweep renamed to "Where to go
+  next". It now matches either name; the contract it guards — a clickable
+  markdown-link table, no raw `[[wikilinks]]` — is unchanged.
+- `entities/WorldAI.md` claimed `concepts/CampaignDesign.md` and
+  `queries/how-to-play-worldai.md` use "WorldAI" as shorthand; neither does any
+  more. Rewritten to point at where the short name actually survives.
+- `queries/PlayerUserStories.md` linked its companion page as
+  "ExternalUserStories" twice; that page is titled Player Features Reference.
+- `concepts/CampaignDesign.md` sends readers to `entities/CampaignShowcase.md`
+  for a Frieren-style example that the sweep dropped. Restored it to the
+  showcase's "Runs with no case study" list.
+- Cross-linked six pages that only `index.md` and `README.md` reached:
+  both comparisons and `concepts/DnD5eRules.md` from `entities/WorldArchitect.md`,
+  `concepts/CharacterArchetype.md` from `concepts/CharacterCreation.md`,
+  `entities/CampaignWizard.md` from `concepts/CampaignWizard.md`,
+  `entities/WorldAI.md` from `entities/WorldArchitect.md`, and
+  `concepts/DiceRollMechanics.md` from `concepts/Dice.md`.
+- Verified: 59 content pages, 63 `index.md` catalog rows (59 content + 4 meta)
+  matching the "Total pages: 63" header, every page also reachable from
+  `README.md`, 639 relative links and anchors resolving, zero raw
+  `[[wikilinks]]`, zero orphans, zero advertised placeholder stubs.
+
+## [2026-09-18] create | concepts/ThinkMode.md
+- New page for Think/Plan mode, which the wiki had never documented: how to enter
+  it, the Intelligence-or-Wisdom check that decides how good the plan is, the
+  difficulty table, the four success and three failure quality tiers, and how it
+  differs from God Mode.
+- Registered in `index.md` and `README.md`, and linked from `concepts/GodMode.md`
+  and `queries/GodModeFAQ.md`.
+
+## [2026-09-18] update | God Mode pages rewritten from the pause-menu premise
+- `concepts/GodMode.md`: God Mode is the game's pause menu — administrative edits
+  to stats, gear, NPCs, locations, missions, scene text and campaign memories —
+  with persistent narration directives as one feature rather than the definition.
+  Corrected the "can't" list (no dice, no combat resolution, no story advancement,
+  no clock rewind), recorded that the one-line pipe-delimited campaign header is
+  no longer accepted, and that directives cannot be added from the wizard.
+- `concepts/GodModePrompting.md`: trimmed to the directive-writing tutorial.
+  Directive removal is plain language matched against the rule's full text; the
+  `GOD MODE: drop <rule>` syntax recorded in the 2026-09-18 wizard entry below is
+  not a real command and has been removed from this page.
+- `entities/GOD_MODE_RESPONSE.md`: now covers the God Mode reply itself — the
+  confirmation line, the immediate state change, the follow-up buttons — plus the
+  single precedence rule, newest wins.
+- `queries/GodModeFAQ.md`: shortened, and added the separate God Mode turn
+  allowance, the per-turn edit cap, and the case-insensitivity answer.
+- Directive rejection is silent on all four pages: nothing is stored and nothing
+  warns you, so check your active list when a rule never seems to take effect.
+
+## [2026-09-18] update | Accuracy and readability sweep
+- Wiki-wide pass re-checking player-facing claims against the live game and rewriting pages for clarity.
+- `comparisons/WorldArchitect-vs-AIDungeon.md`: corrected the model-choice, pricing and dice rows, removed internal field names, dropped an unverifiable count of narration specialists, and dated every AI Dungeon claim against their own site.
+- `comparisons/WorldArchitect-vs-RPG-Bots.md`: replaced the nine-week-old "content pending" stub with a written comparison against Discord table-tool bots and grind bots.
+- Dice wording on both comparison pages was softened to match `concepts/DiceAuthenticity.md`: the game commits to a seed and verifies the roll against it, but nothing in the app shows that record yet, so neither page now claims you can re-run a roll yourself.
+- `queries/house-of-the-dragon-campaign.md`: rewrote the setup walkthrough against the wizard's current seven numbered fields, removed the four option checkboxes (they no longer exist), corrected the Step 2 summary rows and the Blood of the Dragon limit.
+- `SCHEMA.md`: corrected the file-naming, frontmatter, `## Sources` and type-taxonomy rules to match what pages actually do; dropped the `raw/` rules (that directory no longer exists) and added Voice and Page Shapes sections.
+- This file: fixed one broken link, de-linked two dead private-repo URLs, and removed internal code paths from older entries. Three older entries quote links exactly as they were written inside another file; those quotations are now shown as code rather than rewritten to resolve from here.
+- Note for anyone reading further down: the 2026-08-05 entries describe wizard checkboxes and a "Character you want to play" field that the site no longer has.
 
 ## [2026-09-18] update | Align Campaign Wizard to 2-step flow, document long campaign description prompt, add fresh screenshots, and apply /ds audit
 - Added "Quick start: What to do" at the top of `README.md` with fresh screenshots and clear 2-step setup guidance.
@@ -16,15 +112,15 @@
 ## [2026-06-21] update | External user stories — review fixes
 - Re-prefixed story IDs from US-NNN to EXT-NNN throughout
   `queries/ExternalUserStories.md` to avoid collision with US-001..US-075 in
-  [PlayerUserStories](PlayerUserStories.md). Added an EXT↔US mapping table at
+  [PlayerUserStories](queries/PlayerUserStories.md). Added an EXT↔US mapping table at
   the top of the page.
 - Removed the `[Settings](#)` placeholder link in EXT-027.
 - Removed internal CSS class names from EXT-033 (replaced with behavioural
   descriptions).
 - Fixed cross-link text in US-068: progression reasoner now points to
-  [US-015 Level-Up Modal Lock & Atomicity](PlayerUserStories.md#us-015-level-up-modal-lock-atomicity)
+  `[US-015 Level-Up Modal Lock & Atomicity](PlayerUserStories.md#us-015-level-up-modal-lock-atomicity)`
   and Campaign Wizard onboarding now points to
-  [Campaign Wizard](../entities/CampaignWizard.md).
+  `[Campaign Wizard](../entities/CampaignWizard.md)`.
 - Removed `mvp_site/` mentions from ExternalUserStories body and
   CLAUDE.md/AGENTS.md (kept the term only where it documents the negative
   "we do not expose" rule).
@@ -34,8 +130,8 @@
 - Bumped `updated` in ExternalUserStories frontmatter to 2026-06-21.
 
 ## [2026-06-20] update | External user stories (US-026–US-100)
-- Added `queries/ExternalUserStories.md` — 75 external-facing stories mirroring internal PR
-  [#7709](https://github.com/jleechanorg/worldarchitect.ai/pull/7709) sections 13–20.
+- Added `queries/ExternalUserStories.md` — 75 external-facing stories mirroring sections 13–20
+  of an internal change in the game's private code repo (no public link exists).
 - Audience rewrite: no internal code paths, no file:line refs; player and external-developer language only.
 - Cross-linked from `queries/PlayerUserStories.md`, `index.md`, and `README.md`.
 
@@ -51,17 +147,17 @@
 - Skeleton pages for core concepts
 - Initial content batch: ~50 entity/concept pages copied & rewritten from `~/llm_wiki`
 - Campaign synthesis: CampaignDesign, GodModePrompting, CampaignShowcase, ItachiGaiden
-- Player user stories: 75 stories ingested from `jleechanorg/worldarchitect.ai/docs/user-stories-general.md` and expanded
+- Player user stories: 75 stories ingested from the game's internal user-story document and expanded
 
-## [2026-06-19] ingest | Player user stories from worldarchitect.ai/docs/user-stories-general.md
-- 25 baseline stories copied + 50 new stories synthesized from mvp_site/ surface area
+## [2026-06-19] ingest | Player user stories from the game's internal user-story document
+- 25 baseline stories copied + 50 new stories synthesized from the game's own surface area
 - See `queries/PlayerUserStories.md`
-- Source: https://github.com/jleechanorg/worldarchitect.ai/blob/main/docs/user-stories-general.md (private repo, public-read summary)
+- Source: the game's internal user-story document (private repo — no public link exists; this wiki carries the public-read summary)
 
 ## [2026-06-19] ingest | Game-relevant content from ~/llm_wiki
 - 40+ entity/concept pages copied and rewritten for player audience
 - Source paths: `~/llm_wiki/wiki/entities/{WorldAI,WorldArchitect,DnD5eSRD,...}.md`, `~/llm_wiki/wiki/concepts/{Combat,GodMode,Faction*,Dice*,...}.md`
-- Player-facing rewrite: removed mvp_site/ code paths, kept behavioral descriptions
+- Player-facing rewrite: removed internal code paths, kept behavioral descriptions
 
 ## [2026-06-19] synthesize | Campaign + god-mode guide
 - Walked Itachi V2 (432 scenes, 1.27 MB) and Aristocrat V2 (50 scenes, 280 KB) campaign dumps
@@ -83,6 +179,6 @@
 
 ## [2026-08-05] update | HotD wiki — address 7 CodeRabbit review comments (index date, fenced code MD040, dragon-size consistency, Blood-of-the-Dragon reachability, Baela/Jacaerys relationships, bible-size unit, log-line format)
 
-## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified live against `mvp_site/frontend_v1/js/campaign-wizard.js` + local `TESTING_AUTH_BYPASS=true` Playwright run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
+## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified against the live wizard in a local browser run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
 
 ## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section

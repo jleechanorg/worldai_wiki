@@ -27,8 +27,8 @@ update.
 - **No internal code paths.** Do not expose file:line references into
   private backend code, internal class names, or implementation details that
   would change with the next refactor.
-- **No fabricated facts.** If the existing page, the `raw/` mirror, or the
-  live product does not back a claim, do not write it.
+- **No fabricated facts.** If the existing page, the internal source you
+  ingested, or the live product does not back a claim, do not write it.
 - **No credentials in examples.** Use placeholders (`<your-api-key>`,
   `<your-uid>`, `<your-campaign-id>`). The CI scans for this; do not bypass
   it.
@@ -37,12 +37,11 @@ update.
   correct section. Edited pages must keep their existing outbound links.
 - **No ad-hoc tags or types.** Use the closed taxonomy in `SCHEMA.md`. Add to
   the taxonomy first, then use it.
-- **No raw `[[wikilinks]]` in any github-rendered file** — including
-  `raw/` mirror pages. github.com does not render Obsidian-style
-  `[[wikilinks]]`; they show as literal `[[brackets]]` text and break
-  navigation. The lint script enforces this for the wiki content
-  directories AND the `raw/` mirror (as a render-safety check). Always
-  use `[Display Text](path/Page.md)` markdown links, even in `raw/`.
+- **No raw `[[wikilinks]]` in any github-rendered file.** github.com does not
+  render Obsidian-style `[[wikilinks]]`; they show as literal `[[brackets]]`
+  text and break navigation. The lint script enforces this across the wiki
+  content directories. Always use `[Display Text](path/Page.md)` markdown
+  links.
 
 ## Schema contract
 
@@ -57,7 +56,7 @@ update.
   updated: YYYY-MM-DD
   type: entity | concept | comparison | query | summary | source | schema
   tags: [from-taxonomy]
-  sources: [raw/<path>]
+  sources: [path/ToAnotherPage.md]
   ---
   ```
 - **Markdown links only.** No Obsidian-style `[[wikilinks]]`.
@@ -108,13 +107,15 @@ When you modify any file:
 
 ## Source ingestion protocol
 
-When you ingest a new raw source (e.g. an updated internal spec):
+When you ingest a new source (e.g. an updated internal spec):
 
-1. **Save the raw file** under `raw/` with a clear filename.
-2. **Reference it** from the relevant wiki page's frontmatter `sources:`
-   array.
-3. **Summarize, do not duplicate.** Wiki pages describe what the raw file
-   says in player-facing language; they do not copy-paste code or internal
+1. **Do not mirror the source into this repo.** The wiki is public; internal
+   specs stay where they live. Read the source, then write from it.
+2. **Name it** in the page's `## Sources` section, in terms a reader outside
+   the team can understand — "the team's internal user-story set (private)",
+   not a path.
+3. **Summarize, do not duplicate.** Wiki pages describe what the source says
+   in player-facing language; they do not copy-paste code or internal
    identifiers.
 4. **Flag contradictions** in frontmatter `contradictions: [page-name]` and
    call them out in the lint report.
@@ -153,7 +154,7 @@ The wiki has no build step. CI runs:
 ```bash
 python -m pytest tests/ -v -m "not slow"     # fast: wikilink + markdown regressions
 python scripts/lint_wikilinks.py              # no broken [[wikilinks]] / .md links
-                                              # AND no raw [[wikilinks]] in raw/ (render-safety)
+                                              # AND no raw [[wikilinks]] in github-rendered files
 python scripts/check_http_links.py            # slow: external HTTP link check
 ```
 
@@ -199,7 +200,6 @@ skips PRs.
 ├── entities/                  # entity pages (campaigns, characters, systems)
 ├── queries/                   # question-answering pages (FAQs, how-tos, user stories)
 ├── comparisons/               # side-by-side comparisons
-├── raw/                       # mirrored internal source files
 ├── scripts/                   # lint + link-check scripts
 ├── tests/                     # pytest wikilink + markdown regressions
 └── .github/workflows/         # CI workflows (lint, HTTP check)
@@ -212,4 +212,3 @@ skips PRs.
 - [`README.md`](README.md) — public-facing overview.
 - [`index.md`](index.md) — page catalog.
 - [`log.md`](log.md) — chronological change log.
-- [`raw/`](raw/) — mirrored internal source files.

@@ -1,654 +1,369 @@
 ---
 title: PlayerUserStories
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: query
 tags: [wa-system, wa-tutorial]
-sources: [raw/worldarchitect.ai-docs-user-stories-general.md]
 ---
 
 # Player User Stories
 
-75 user stories organized by game system. Each story follows the **As a [role] / I want [feature] / So that [outcome]** pattern.
+What the game does, system by system: combat, levelling, companions, spells, gear, the living world, God Mode, and saving your story. Written for any campaign, not a specific one.
 
-These stories are general — they describe how any player would experience the game, not any specific campaign.
+For the app around the game — signing in, the dashboard, settings, API keys, sharing — see [Player Features Reference](ExternalUserStories.md).
 
-For the **operational system around the gameplay contract** (account, live UI,
-settings, MCP & API, agent routing, persistence, dice audit, dev tools),
-see the companion page [ExternalUserStories](ExternalUserStories.md) — those 75
-stories cover EXT-026 through EXT-100 in player- and integrator-facing language.
+**How to read this page.** Each system opens with a table you can scan in one screen. Under it, the few behaviours that are particular to WorldArchitect.AI — rather than 5e as you already know it — get the full **As a / I want / So that** treatment. Where the game does less than a tabletop player would expect, the row says so *in italics*, and [Rules the game doesn't track](#rules-the-game-doesnt-track) at the bottom collects the ones it leaves out entirely.
 
-## System comparison matrix
-
-| ID range | System | Count |
-|----------|--------|-------|
-| US-001 to US-014 | Combat & Turn Dynamics | 14 |
-| US-015 to US-024 | Character Progression & Level-Up | 10 |
-| US-025 to US-034 | Social, Companions & Reputation | 10 |
-| US-035 to US-044 | Spells & Custom Systems | 10 |
-| US-045 to US-054 | Inventory, Loot & Equipment | 10 |
-| US-055 to US-064 | Living World & Faction Strategy | 10 |
-| US-065 to US-069 | God Mode & Campaign Customization | 5 |
-| US-070 to US-075 | Persistence, Export & Continuity | 6 |
-
-**Total: 75 stories.**
+| System | Stories |
+|--------|---------|
+| [1. Combat](#1-combat) | US-001 – US-014a |
+| [2. Levelling up](#2-levelling-up) | US-015 – US-024 |
+| [3. Companions, NPCs and reputation](#3-companions-npcs-and-reputation) | US-025 – US-034 |
+| [4. Spells](#4-spells) | US-035 – US-044 |
+| [5. Gear and loot](#5-gear-and-loot) | US-045 – US-054 |
+| [6. The living world and factions](#6-the-living-world-and-factions) | US-055 – US-064 |
+| [7. Shaping the campaign and God Mode](#7-shaping-the-campaign-and-god-mode) | US-065a – US-069a |
+| [8. Saving, export and coming back](#8-saving-export-and-coming-back) | US-070 – US-075 |
 
 ---
 
-## 1. Combat & Turn Dynamics
+## 1. Combat
 
-### US-001: Strict Turn Enforcement & Initiative Order
+Fights run on 5e maths — attack rolls, damage, conditions, death saves — with the dice rolled by the server rather than written by the AI. Turn order is something the GM keeps, not a lock the software enforces.
 
-**As a** player engaged in tactical combat,
-**I want** the system to enforce strict initiative order and process turns sequentially,
-**So that** neither players nor NPCs can take consecutive turns out of order, and the game remains rules-compliant.
+| ID | What you get |
+|----|--------------|
+| US-001 | The GM tracks initiative and takes each combatant in turn. *An instruction the GM follows, not a server-enforced lock.* |
+| US-002 | Every roll comes from the server's random number generator. |
+| US-003 | The fight pauses to offer you a reaction — Shield, Counterspell, Absorb Elements, a parry — when one is triggered. |
+| US-004 | Movement, action, bonus action and reaction are tracked, so you cannot slip two spells above cantrip level into one turn. *Long multi-message turns and strict one-action turns are both in play; the GM's reading can vary.* |
+| US-005 | Damage lands on hit points, and everyone's HP is visible, so you can judge when to press or retreat. |
+| US-006 | Conditions bite: being frightened, prone or poisoned changes your rolls, not just the narration. See [AdvantageDisadvantage](../concepts/AdvantageDisadvantage.md). |
+| US-007 | A natural 20 doubles your damage dice; a natural 1 misses outright. |
+| US-008 | An area spell is rolled against every target it catches, and you see what each one took. See [Combat](../concepts/Combat.md), [Dice](../concepts/Dice.md). |
+| US-009 | Where you stand feeds into the difficulty the GM sets. *There is no battle grid and no automatic flanking advantage in personal combat — armies get a Flanking Order ability in the faction game (US-059).* |
+| US-010 | One concentration spell at a time, and a CON save whenever you take damage while it is up, so your strongest ongoing spell is something an enemy can break. See [Spellcasting](../concepts/Spellcasting.md). |
+| US-011 | At 0 HP you roll death saves each turn — three successes stabilise you, three failures kill you. See [RestAndDeath](../concepts/RestAndDeath.md). |
+| US-012 | Short rest (1 hour, spend Hit Dice) and long rest (8 hours, full recovery) restore HP, slots and class features. See [RestAndDeath](../concepts/RestAndDeath.md). |
+| US-013 | Winning a fight pays: loot and gold are awarded without you asking. See [LootAndRewards](../concepts/LootAndRewards.md). |
+| US-014 | Jump someone and you get a surprise round before initiative. See [Initiative](../concepts/Initiative.md). |
+| US-014a | Every turn ends with a short list of suggested next moves, each one a button — and a Custom Action button for doing something nobody suggested. |
 
-See [Combat](../concepts/Combat.md).
+### US-002: Dice Rolls Are Real, Not Made Up
 
-### US-002: Dice Anti-Fabrication & Server-Side Execution
-
-**As a** player rolling for an attack, check, or saving throw,
-**I want** all dice outcomes to be generated by the server's secure RNG rather than fabricated by the LLM,
-**So that** the mechanical integrity of the game is preserved.
+**As a** player rolling an attack, a check, or a saving throw,
+**I want** the result to come from the server's random number generator instead of being written by the AI,
+**So that** a bad roll is genuinely bad luck and a good one is genuinely earned.
 
 See [Dice](../concepts/Dice.md), [DiceAuthenticity](../concepts/DiceAuthenticity.md).
 
-### US-003: Dynamic Reaction Windows
+### US-003: The Fight Stops to Let You React
 
-**As a** player under attack or witnessing an eligible trigger,
-**I want** the combat engine to pause and present a reaction window for Shield, Counterspell, Absorb Elements, Parry,
-**So that** I can actively mitigate danger.
-
-See [Combat](../concepts/Combat.md).
-
-### US-004: Action Economy Tracking
-
-**As a** player taking my turn in combat,
-**I want** my action economy (Movement, Action, Bonus Action, Reaction) to be tracked dynamically,
-**So that** I cannot cast multiple leveled spells per turn.
+**As a** player who is about to be hit, or who sees an enemy start casting,
+**I want** the fight to pause and offer me the reaction I actually have — Shield, Counterspell, Absorb Elements, a parry,
+**So that** I can spend a reaction on the moment it matters instead of hearing about it afterwards.
 
 See [Combat](../concepts/Combat.md).
 
-### US-005: Combat Damage & HP Tracking
+### US-014a: Suggested Next Moves, Never Forced
 
-**As a** player in combat,
-**I want** damage to be applied to HP and HP to be visible to all parties,
-**So that** I can make tactical decisions based on enemy and ally health.
+**As a** player deciding what to do next,
+**I want** the moves I could plausibly make offered as buttons under the turn I just read,
+**So that** I can take an obvious option in one tap without losing the ability to type something nobody suggested.
 
-See [Combat](../concepts/Combat.md), [Healing](../concepts/Healing.md).
-
-### US-006: Conditions & Status Effects
-
-**As a** player under a status condition,
-**I want** the system to apply mechanical effects (advantage, disadvantage, restrictions),
-**So that** conditions have real weight.
-
-See [AdvantageDisadvantage](../concepts/AdvantageDisadvantage.md).
-
-### US-007: Critical Hits & Fumbles
-
-**As a** player rolling a natural 20 or 1,
-**I want** the system to recognize critical hit (double damage dice) or fumble (auto-miss),
-**So that** high-variance rolls matter.
-
-See [Dice](../concepts/Dice.md).
-
-### US-008: Multi-Target Combat (AoE)
-
-**As a** player casting Fireball,
-**I want** the system to roll damage for each affected target,
-**So that** AoE spells feel powerful.
-
-### US-009: Flanking & Positioning
-
-**As a** player positioning for advantage,
-**I want** the system to grant advantage when I flank an enemy with an ally,
-**So that** tactical positioning is rewarded.
-
-See [AdvantageDisadvantage](../concepts/AdvantageDisadvantage.md).
-
-### US-010: Concentration Tracking
-
-**As a** caster maintaining a concentration spell,
-**I want** the system to track concentration and prompt CON saves on damage,
-**So that** my concentration spell can be broken.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-011: Death & Dying State
-
-**As a** player who drops to 0 HP,
-**I want** to roll death saving throws each turn (3 successes stabilize, 3 failures kill),
-**So that** I have a chance to survive a near-fatal blow.
-
-See [RestAndDeath](../concepts/RestAndDeath.md).
-
-### US-012: Short & Long Rest Recovery
-
-**As a** player between encounters,
-**I want** to declare a Short Rest (1 hour, spend Hit Dice) or Long Rest (8 hours, full recovery),
-**So that** my character regains HP, spell slots, and class features.
-
-See [RestAndDeath](../concepts/RestAndDeath.md).
-
-### US-013: Combat End & Loot Distribution
-
-**As a** player who defeats enemies,
-**I want** loot drops and gold to be awarded automatically,
-**So that** combat victories translate into tangible wealth.
-
-See [LootAndRewards](../concepts/LootAndRewards.md).
-
-### US-014: Surprise & Initiative Variants
-
-**As a** player who initiates combat unexpectedly,
-**I want** a surprise round before initiative is rolled,
-**So that** ambush tactics are rewarded.
-
-See [Initiative](../concepts/Initiative.md).
+They appear on every story turn, not only at dramatic moments. In ordinary play you get four of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get three, without the pros and cons. Character creation and level-up offer their own shorter menus instead. A final **Custom Action** button always sits at the end of the list, and the free-text box never stops accepting anything you type.
 
 ---
 
-## 2. Character Progression & Level-Up
+## 2. Levelling up
 
-### US-015: Level-Up Modal Lock & Atomicity
+The big difference from tabletop: nothing stops to make you fill in a form. When you cross an XP threshold the whole level lands on the same turn, and you can revise the game's choices afterwards.
 
-**As a** player leveling up my character,
-**I want** a secure atomic level-up modal that locks user interaction until all mechanical choices (HP, spells, features, ASI/Feats) are completed,
-**So that** my character state never becomes corrupted.
+| ID | What you get |
+|----|--------------|
+| US-015 | The new level applies itself the moment you earn it, with an optional review window afterwards. |
+| US-016 | Your level-up is checked against 5e — hit points, ASI, spells known, subclass timing — before it sticks. See [LevelUp](../concepts/LevelUp.md). |
+| US-017 | HP gain is your class hit die plus your CON modifier. See [LevelUp](../concepts/LevelUp.md). |
+| US-018 | Subclass or archetype is offered at your class's own trigger level — Cleric 1, Wizard 2, Fighter 3. See [Subclass](../concepts/Subclass.md). |
+| US-019 | At 4, 8, 12, 16 and 19 you take an ASI (+2, or +1/+1) or a feat. See [ASI](../concepts/ASI.md). |
+| US-020 | Casters learn new spells and reshuffle what is prepared. See [Spellcasting](../concepts/Spellcasting.md). |
+| US-021 | Class features unlock on schedule — Second Wind, Action Surge, Extra Attack and the rest. See [LevelUpProgression](../concepts/LevelUpProgression.md). |
+| US-022 | Level 20 is where ordinary levelling stops. A campaign running divine progression carries on past it, onto a tier ladder with its own costs. See [LevelUpProgression](../concepts/LevelUpProgression.md). |
+| US-023 | A multiclass concept like "Wizard/Cleric" is accepted. *Partial: the game uses your first class for hit dice and spell lists, and does not enforce the 5e ability-score prerequisites.* |
+| US-024 | Hit points, slots, features and ability scores show up on your sheet immediately, not next session. See [LevelUp](../concepts/LevelUp.md). |
 
-See [LevelUp](../concepts/LevelUp.md).
+### US-015: The Level Applies Itself, Then You Can Adjust It
 
-### US-016: Mechanical Invariant Verification
+**As a** player who crosses an XP threshold,
+**I want** the full new level — hit points, features, spells, proficiencies — applied on that same turn, with a review window afterwards where I can change what the game chose for me,
+**So that** play never stops to make me fill in a form, and my sheet is never left half-levelled.
 
-**As a** leveling player,
-**I want** the progression engine to validate my level-up choices against strict 5e rules (HP, ASI, spell count, subclass),
-**So that** my level-up is legitimate.
+While a review is open the game keeps you on it: an unrelated action gets folded back into the pending step rather than resolved.
 
-See [LevelUp](../concepts/LevelUp.md).
+See [LevelUp](../concepts/LevelUp.md), [LevelUpProgression](../concepts/LevelUpProgression.md).
 
-### US-017: HP Roll on Level-Up
+### US-022: Divine Ascension, Past Level 20
 
-**As a** leveling player,
-**I want** to roll my class hit die + CON modifier for HP gain,
-**So that** HP scales with my class.
+**As a** player whose character has outgrown the level 20 class tables,
+**I want** an ascension ceremony that moves me onto a divine tier ladder — Demi-God and the tiers above it, with its own power scale, visibility rules and Chosen/Avatar mechanics,
+**So that** the campaign keeps growing after the normal tables run out.
 
-See [LevelUp](../concepts/LevelUp.md).
+Level 20 is a real stop, not a doorway: reaching it does not trigger anything on its own, and ordinary XP stops there. The ceremony comes later, and only in a campaign with divine progression running — once your story has built up enough divine weight that the world already treats you as a god. Even then it is offered, not imposed; you can turn it down and stay mortal.
 
-### US-018: Subclass & Archetype Selection
+This replaces ordinary levelling rather than extending it, and the game does not use 5e Epic Boons.
 
-**As a** leveling player who has reached the correct class level,
-**I want** the modal to offer a subclass / archetype selection with the right level trigger (Cleric 1, Fighter 3, Wizard 2),
-**So that** my character specializes correctly.
-
-See [Subclass](../concepts/Subclass.md).
-
-### US-019: ASI vs Feat Selection
-
-**As a** leveling player at levels 4, 8, 12, 16, or 19,
-**I want** to choose between an ASI (+2 or +1/+1) or a Feat,
-**So that** my build reflects my desired concept.
-
-See [ASI](../concepts/ASI.md).
-
-### US-020: Spell Selection on Level-Up
-
-**As a** caster leveling up,
-**I want** to learn new spells or swap prepared spells,
-**So that** my spell list grows with my level.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-021: Class Feature Unlock
-
-**As a** leveling player,
-**I want** new class features to unlock at the appropriate levels (Second Wind at 2, Action Surge at 2, Extra Attack at 5, etc.),
-**So that** I gain powers as I level.
-
-See [LevelUp](../concepts/LevelUp.md).
-
-### US-022: Epic Boons (Level 20+)
-
-**As a** level-20+ player,
-**I want** to take Epic Boons (ASI to 30, Boon of Fate, etc.),
-**So that** I can continue progressing past the level cap.
-
-### US-023: Multiclass Prerequisites
-
-**As a** player who wants to multiclass,
-**I want** the system to enforce prerequisites (13 in primary stats),
-**So that** multiclassing follows the rules.
-
-### US-024: Level-Up Reflection in State
-
-**As a** leveling player,
-**I want** HP, spell slots, features, and ASI to reflect immediately in character state,
-**So that** my character is up-to-date.
-
-See [LevelUp](../concepts/LevelUp.md).
+See [LevelUpProgression](../concepts/LevelUpProgression.md) for the ceremony itself, the tier table and what each further level costs.
 
 ---
 
-## 3. Social, Companions & Reputation
+## 3. Companions, NPCs and reputation
 
-### US-025: Trust & Reputation Hierarchy
+Who you are to someone is tracked per person, not as one global score, and the people around you have opinions, memories and relationships with each other.
 
-**As a** player interacting with NPCs and factions,
-**I want** my social standing governed by a structured trust hierarchy where individual relationship overrides take precedence over general faction or public reputation,
-**So that** my friendships and actions shape dialog realistically.
+| ID | What you get |
+|----|--------------|
+| US-025 | Your standing is per-person first, faction second, public last. |
+| US-026 | Companions have distinct personalities that drive how they talk, fight and react. |
+| US-027 | Companions approve or disapprove of what you do, measured against their own values. See [CompanionArc](../concepts/CompanionArc.md). |
+| US-028 | Public reputation follows your deeds and fades over time, so the world forgets a small offence and remembers a legendary one. See [NPCRelationships](../concepts/NPCRelationships.md). |
+| US-029 | You can recruit new companions and dismiss current ones. See [CompanionArc](../concepts/CompanionArc.md). |
+| US-030 | A dead companion stays dead unless you go and do something about it. See [CompanionArc](../concepts/CompanionArc.md). |
+| US-031 | Romance arcs are opt-in and develop over time rather than firing on a trigger. See [CompanionArc](../concepts/CompanionArc.md). |
+| US-032 | NPCs remember what you promised them and come back about it. See [NPCRelationships](../concepts/NPCRelationships.md). |
+| US-033 | NPCs have friends, rivals and family, so helping one can cost you another and gossip travels between them. See [NPCRelationships](../concepts/NPCRelationships.md). |
+| US-034 | As a faction leader you can negotiate alliances and declare rivalries. See [FactionSystem](../concepts/FactionSystem.md). |
+
+### US-025: Who You Are to *This* Person Comes First
+
+**As a** player dealing with NPCs and factions,
+**I want** an individual's own history with me to outrank their faction's view of me, and both to outrank my public reputation,
+**So that** an old friend still greets me warmly in a city that has turned against me.
 
 See [NPCRelationships](../concepts/NPCRelationships.md).
 
-### US-026: Companion Personality (MBTI)
+### US-026: Companions Have a Personality, Not a Mood Bar
 
-**As a** player traveling with companions,
-**I want** companions to have distinct MBTI personalities that influence reactions, combat behaviors, and dialogue,
-**So that** my party feels alive.
+**As a** player travelling with companions,
+**I want** each of them to hold a distinct personality type that shapes their dialogue, their choices in a fight, and how they take my orders,
+**So that** a companion may argue with a plan, refuse an order, or leave outright.
 
-See [CompanionPersonality](../concepts/CompanionPersonality.md).
-
-### US-027: Companion Approval & Disapproval
-
-**As a** player making choices,
-**I want** companions to approve or disapprove based on their values,
-**So that** my choices have social consequences.
-
-See [CompanionArc](../concepts/CompanionArc.md).
-
-### US-028: Reputation Decay & Public Standing
-
-**As a** player who builds or damages a public reputation,
-**I want** my deeds reflected in public reputation with time-based decay,
-**So that** the world forgets minor offenses but remembers legendary deeds.
-
-### US-029: Companion Recruitment & Dismissal
-
-**As a** player traveling with companions,
-**I want** to recruit new companions, dismiss current ones,
-**So that** my party composition reflects my story decisions.
-
-See [CompanionArc](../concepts/CompanionArc.md).
-
-### US-030: Companion Death
-
-**As a** player whose companion dies,
-**I want** the death to be permanent without a quest or ritual,
-**So that** companions feel precious.
-
-See [CompanionArc](../concepts/CompanionArc.md).
-
-### US-031: Companion Romance
-
-**As a** player building a relationship with a companion,
-**I want** opt-in romance arcs that develop over time,
-**So that** romance is possible without being forced.
-
-See [CompanionArc](../concepts/CompanionArc.md).
-
-### US-032: NPC Memory of Promises
-
-**As a** player who makes promises to NPCs,
-**I want** NPCs to remember and follow up on broken promises,
-**So that** NPCs feel real.
-
-See [NPCRelationships](../concepts/NPCRelationships.md).
-
-### US-033: NPC-to-NPC Relationships
-
-**As a** player observing the world,
-**I want** NPCs to have relationships with each other (friends, rivals, family),
-**So that** the world has social texture.
-
-See [NPCRelationships](../concepts/NPCRelationships.md).
-
-### US-034: Faction Diplomacy
-
-**As a** player leading a faction,
-**I want** to negotiate alliances and rivalries with other factions,
-**So that** diplomacy matters.
-
-See [FactionSystem](../concepts/FactionSystem.md).
+See [CompanionPersonality](../concepts/CompanionPersonality.md), [CompanionArc](../concepts/CompanionArc.md).
 
 ---
 
-## 4. Spells & Custom Systems
+## 4. Spells
 
-### US-035: Spell Preparation & Resource Management
+Mostly 5e by the book. The two places it differs are custom class support and the fact that spell attack rolls and saves go through the same server dice as everything else.
 
-**As a** spellcaster player,
-**I want** to manage known vs prepared spells and track expendable spell slots,
-**So that** my resource planning matches tactical limits.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-036: Spell Slot Recovery
-
-**As a** caster,
-**I want** spell slots to recover on long rest (or short rest for Warlock),
-**So that** I can cast again tomorrow.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-037: Ritual Casting
-
-**As a** caster with ritual casting,
-**I want** to cast designated ritual spells without using a slot (10 extra minutes),
-**So that** utility spells are accessible.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-038: Concentration & Multiple Spells
-
-**As a** caster,
-**I want** to be limited to one concentration spell at a time,
-**So that** concentration rules are enforced.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-039: Spell Attack Rolls
-
-**As a** caster casting a spell attack,
-**I want** to roll `1d20 + spell attack bonus` against target AC,
-**So that** spell attacks work like weapon attacks.
-
-See [Dice](../concepts/Dice.md).
-
-### US-040: Saving Throw vs Spell DC
-
-**As a** caster casting a save-or-suck spell,
-**I want** the target to roll a save against my DC,
-**So that** my spells have mechanical effect.
-
-See [Dice](../concepts/Dice.md).
-
-### US-041: Upcasting Spells
-
-**As a** caster,
-**I want** to use higher-level slots for lower-level spells (Fireball at 4th level for +1d6 per slot level),
-**So that** I can scale my spells.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-042: Cantrips at Will
-
-**As a** caster,
-**I want** cantrips to be unlimited and scale with character level (Fire Bolt: 1d10 → 2d10 → 3d10 → 4d10),
-**So that** I always have a baseline attack.
-
-See [Spellcasting](../concepts/Spellcasting.md).
-
-### US-043: Custom Class Mechanics
-
-**As a** player using a custom class,
-**I want** the system to support non-standard classes (gestalt, custom spell lists),
-**So that** my build is supported.
-
-See [ItachiGaiden](../entities/ItachiGaiden.md) (gestalt example).
-
-### US-044: Subclass-Specific Spells
-
-**As a** subclassed caster,
-**I want** subclass-specific spells (Domain spells, Patron spells) to always be prepared,
-**So that** my subclass identity is reinforced.
-
-See [Subclass](../concepts/Subclass.md).
+| ID | What you get |
+|----|--------------|
+| US-035 | Known versus prepared spells are tracked, and slots are spent as you cast. See [Spellcasting](../concepts/Spellcasting.md). |
+| US-036 | Slots come back on a long rest — on a short rest if you are a Warlock. |
+| US-037 | Ritual spells can be cast without a slot for ten extra minutes. |
+| US-039 | A spell attack rolls 1d20 plus your spell attack bonus against AC. See [Dice](../concepts/Dice.md). |
+| US-040 | A spell that allows a save makes the target roll against your spell save DC. See [Dice](../concepts/Dice.md). |
+| US-041 | Upcasting works — Fireball in a 4th-level slot adds a d6 per slot level. See [Spellcasting](../concepts/Spellcasting.md). |
+| US-042 | Cantrips are unlimited and scale with your level (Fire Bolt 1d10 → 2d10 → 3d10 → 4d10). |
+| US-043 | Non-standard builds are supported — gestalt classes, custom spell lists. See [ItachiGaiden](../entities/ItachiGaiden.md) for a gestalt example. |
+| US-044 | Domain and patron spells are always prepared and never count against your limit. See [Subclass](../concepts/Subclass.md). |
 
 ---
 
-## 5. Inventory, Loot & Equipment
+## 5. Gear and loot
 
-### US-045: Equipment Slot Enforcement & Deduplication
+Equipment lives in named slots with a backpack behind it. What the game does *not* do is catalogue items: there is no rarity tier, no identified flag, no curse flag, and no carried-weight rule.
+
+| ID | What you get |
+|----|--------------|
+| US-045 | A fixed set of named gear slots plus a backpack, with duplicates merged and attunement tracked. |
+| US-046 | An attunement limit that matches your campaign's magic level — 3 items by default, 5–6 in a high-magic campaign, and no limit at all in a power-fantasy one. See [LootAndRewards](../concepts/LootAndRewards.md). |
+| US-047 | Magic items are described and revealed through play, not looked up on a table. |
+| US-051 | You can sell what you do not want and buy from merchants. See [LootAndRewards](../concepts/LootAndRewards.md). |
+| US-054 | Loot and gold are sized to what you just beat, so a hard fight pays better than an easy one. *The GM judges the reward; it does not roll the published treasure tables by challenge rating.* See [LootAndRewards](../concepts/LootAndRewards.md). |
+
+### US-045: Named Slots, Not a Pile
 
 **As a** player managing my gear,
-**I want** my inventory to enforce 14 standard slots, handle item dedup, track attunement limits,
-**So that** I cannot exploit gear configurations.
+**I want** my equipment held in named slots — head, armour, cloak, hands, feet, neck, two rings, belt, shield, main hand, off hand, instrument — with a backpack for everything else, duplicate items merged, and attunement counted,
+**So that** I can see what I am wearing at a glance and cannot accidentally equip the same sword twice.
 
-### US-046: Attunement Limits
+See [Equipment](../concepts/Equipment.md), [LootAndRewards](../concepts/LootAndRewards.md).
 
-**As a** player with magic items,
-**I want** to be limited to 3 attuned items at once,
-**So that** attunement rules are enforced.
+### US-047: Magic Items Are Described, Not Catalogued
 
-See [LootAndRewards](../concepts/LootAndRewards.md).
+**As a** player who finds a magic item,
+**I want** the GM to tell me what it appears to be and reveal the rest through use or investigation,
+**So that** discovery stays part of play.
 
-### US-047: Item Identification
-
-**As a** player finding a magic item,
-**I want** to identify it (via spell, ability, or trial-and-error),
-**So that** I know what it does.
-
-See [LootAndRewards](../concepts/LootAndRewards.md).
-
-### US-048: Cursed Items
-
-**As a** player equipping an unidentified item,
-**I want** cursed items to reveal their nature on equip (with drawbacks),
-**So that** magic items have risk.
-
-### US-049: Magic Item Rarity
-
-**As a** player finding loot,
-**I want** items to be tagged by rarity (Common, Uncommon, Rare, Very Rare, Legendary, Artifact),
-**So that** I can assess value.
-
-See [LootAndRewards](../concepts/LootAndRewards.md).
-
-### US-050: Item Crafting
-
-**As a** player with crafting feats,
-**I want** to craft items from raw materials,
-**So that** I can make my own gear.
-
-### US-051: Item Selling & Buying
-
-**As a** player with gold,
-**I want** to sell unwanted loot and buy gear from merchants,
-**So that** I can manage inventory.
-
-See [LootAndRewards](../concepts/LootAndRewards.md).
-
-### US-052: Equipment Action Economy
-
-**As a** player changing equipment in combat,
-**I want** Don/Doff times to follow the rules (action for most, free for weapon swap),
-**So that** equipment changes have appropriate cost.
-
-### US-053: Backpack Capacity
-
-**As a** player carrying loot,
-**I want** the system to track carried weight (STR-based),
-**So that** encumbrance rules are enforced.
-
-### US-054: Treasure Tables for Loot
-
-**As a** player defeating enemies,
-**I want** loot to roll on standard D&D 5e treasure tables by CR,
-**So that** loot is calibrated to challenge.
-
-See [LootAndRewards](../concepts/LootAndRewards.md).
+Items are not stored with a rarity tier, an identified/unidentified flag, or a curse flag. What an item is comes from its description and the GM's memory of it, which is also why a nasty surprise can be hiding in something you picked up three sessions ago.
 
 ---
 
-## 6. Living World & Faction Strategy
+## 6. The living world and factions
 
-### US-055: Living World Events & Cascade Cleanups
+The world advances on its own clock, and once your ambitions outgrow a party you can switch into a strategic layer and run a faction.
 
-**As a** player exploring the sandbox world,
-**I want** a "Living World" engine to simulate world progression every 3 turns or 24 game hours,
-**So that** the universe feels dynamic.
+| ID | What you get |
+|----|--------------|
+| US-055 | The world advances every 24 hours of game time, whether or not you were there. |
+| US-056 | NPCs pursue their own agendas between your turns. See [NPCRelationships](../concepts/NPCRelationships.md). |
+| US-057 | You can switch between Adventure mode and Faction mode. |
+| US-058 | Scouts can be sent to gather intel on rivals before you commit. See [FactionIntel](../entities/FactionIntel.md), [FactionPower](../concepts/FactionPower.md). |
+| US-059 | Faction battles are resolved by a battle simulator rather than narrated away. |
+| US-060 | You can see where your faction ranks against the others. See [FactionPower](../concepts/FactionPower.md). |
+| US-061 | Gold, influence, materials and members are yours to manage. See [FactionManagement](../concepts/FactionManagement.md). |
+| US-062 | Territory can be taken, held and lost, and it feeds your economy. See [FactionManagement](../concepts/FactionManagement.md). |
+| US-063 | You get warned before a deadline or a scheduled event runs out of time. See [LivingWorld](../concepts/LivingWorld.md). |
+| US-064 | Defeated enemies and finished quests stop cluttering the world. See [LivingWorld](../concepts/LivingWorld.md). |
+
+### US-055: The World Moves While You're Away
+
+**As a** player exploring a sandbox,
+**I want** the world to advance every 24 hours of game time — rivals acting, prices moving, plots maturing,
+**So that** a week spent resting in town costs me something, and coming back to a place means finding it changed.
 
 See [LivingWorld](../concepts/LivingWorld.md).
 
-### US-056: NPC Agendas
+### US-057: Two Modes, One Campaign
 
-**As a** player observing NPCs,
-**I want** NPCs to have agendas and pursue them between player actions,
-**So that** the world moves when I'm not looking.
+**As a** player whose ambitions have outgrown a party,
+**I want** to switch between Adventure mode, where time passes scene by scene, and Faction mode, where it passes in strategic turns,
+**So that** I can run a realm without giving up the character who built it.
 
-See [NPCRelationships](../concepts/NPCRelationships.md).
+See [FactionSystem](../concepts/FactionSystem.md), [FactionManagement](../concepts/FactionManagement.md).
 
-### US-057: Faction Minigame Dual-Mode
-
-**As a** player who reaches the strategic phase,
-**I want** to switch between Adventure mode (personal time) and Faction mode (strategic turns),
-**So that** I can manage my realm.
-
-See [FactionSystem](../concepts/FactionSystem.md), [FactionPlay](../concepts/FactionPlay.md).
-
-### US-058: Faction Intel Operations
-
-**As a** faction leader,
-**I want** to send scouts to gather intel on rivals,
-**So that** I attack with information advantage.
-
-See [FactionIntel](../entities/FactionIntel.md), [FactionPower](../concepts/FactionPower.md).
-
-### US-059: Faction Combat Resolution
+### US-059: Battles Are Simulated, Not Narrated Away
 
 **As a** faction leader attacking a rival,
-**I want** combat to be resolved using a battle simulator,
-**So that** outcomes are deterministic and fair.
+**I want** the battle resolved by a simulator that counts troops, elites and fortifications,
+**So that** a war I planned badly is lost on the numbers rather than on the GM's mood.
 
 See [FactionBattleSim](../entities/FactionBattleSim.md).
 
-### US-060: Faction Power Rankings
-
-**As a** faction leader,
-**I want** to see my ranking vs other factions,
-**So that** I know how I compare.
-
-See [FactionRankings](../entities/FactionRankings.md), [FactionPower](../concepts/FactionPower.md).
-
-### US-061: Faction Resource Management
-
-**As a** faction leader,
-**I want** to manage gold, influence, materials, members,
-**So that** my faction is sustainable.
-
-See [FactionManagement](../concepts/FactionManagement.md).
-
-### US-062: Faction Territory Control
-
-**As a** faction leader,
-**I want** to control and defend territory,
-**So that** my faction has economic base.
-
-See [FactionManagement](../concepts/FactionManagement.md).
-
-### US-063: Living World Time Pressure Warnings
-
-**As a** player in a time-sensitive situation,
-**I want** warnings about upcoming deadlines or events,
-**So that** I can prioritize.
-
-See [LivingWorld](../concepts/LivingWorld.md).
-
-### US-064: Cascade Cleanup of Stale State
-
-**As a** long-running campaign player,
-**I want** defeated NPCs and resolved quests to be cleaned up,
-**So that** the world doesn't become bloated.
-
-See [LivingWorld](../concepts/LivingWorld.md).
-
 ---
 
-## 7. God Mode & Campaign Customization
+## 7. Shaping the campaign and God Mode
 
-### US-065: Structured Campaign Customization
+You set the premise when you create the campaign and steer everything else in play. The mode selector above the action box is how you get from playing your character to editing the world.
+
+| ID | What you get |
+|----|--------------|
+| US-065a | Three modes above the action box: Character, Think/Plan, and God. |
+| US-065 | Describe your campaign in plain English when you create it. |
+| US-066 | Standing directives that the GM has to keep following. |
+| US-067 | Say in your description whether you want a starting party, and the game builds one or leaves you alone. |
+| US-068 | Your own history, geography and factions replace the defaults — set them in the description box, then keep steering with directives. See [CampaignWizard](../concepts/CampaignWizard.md). |
+| US-069 | Hide the raw dice numbers and read a short outcome phrase instead — your own preference, and a campaign can start with it on. See [Dice](../concepts/Dice.md). |
+| US-069a | A mature-content switch in the game header. |
+
+### US-065a: Choose How You're Speaking — Character, Think/Plan, or God
+
+**As a** player typing into the action box,
+**I want** three modes on the selector above it — Character (what you type is what your character does), Think/Plan (pause the story for a breakdown of your options with pros and cons, with no time passing), and God (edit the world directly — stats, items, location — with the story paused),
+**So that** I can act, plan, or fix something without any of the three bleeding into the others.
+
+This selector is how you reach God Mode; the stories below describe what God Mode does once you are in it.
+
+See [GodMode](../concepts/GodMode.md).
+
+### US-065: Shaping a Campaign When You Create It
 
 **As a** campaign creator,
-**I want** to customize campaign rules, starting companions, lore overrides, GM guidelines using a structured JSON format,
-**So that** my settings are deterministic.
+**I want** to describe the campaign I want in plain English in a long free-text box,
+**So that** the GM starts from my premise instead of a generic one.
 
-See [CampaignWizard](../concepts/CampaignWizard.md), [GodMode](../concepts/GodMode.md).
+The wizard's numbered fields and that description box are the whole of what you hand the GM at creation — there is nothing else to configure.
 
-### US-066: God Mode Directives
+The description box is the last section of the creation form and it may be folded shut when you arrive — look for the **Expand** button beside the label. It is optional and it takes as much text as you care to write, so it is worth opening.
 
-**As a** player shaping narration,
-**I want** to add persistent style rules (god_mode_directives) that the GM must follow,
-**So that** the campaign sounds the way I want.
+Everything else — house rules, lore, how the GM behaves — is steered in play through directives (US-066), not through a settings form.
+
+See [CampaignWizard](../concepts/CampaignWizard.md), [CampaignDesign](../concepts/CampaignDesign.md).
+
+### US-066: Directives the GM Keeps Following
+
+**As a** player who wants the campaign to sound a particular way,
+**I want** to write standing directives — tone, pacing, what is off the table, how NPCs speak,
+**So that** the instruction holds for the rest of the campaign instead of fading after a turn or two.
 
 See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePrompting.md).
 
-### US-067: Companion Generation Rules
+### US-067: Starting Companions On or Off
 
 **As a** campaign creator,
-**I want** to specify companion generation rules (allowed classes, starting level, MBTI),
-**So that** companions match my setting.
+**I want** one switch that decides whether the game builds a complementary starting party for me,
+**So that** I can begin alone or with a crew.
+
+The game picks who they are from your campaign description. To constrain them — classes, levels, temperament — say so in the description box or steer it later with a directive (US-066).
 
 See [CompanionPersonality](../concepts/CompanionPersonality.md).
 
-### US-068: Lore Overrides
+### US-069a: Mature Content Toggle
 
-**As a** campaign creator,
-**I want** to override world lore (history, geography, factions) with custom content,
-**So that** my world is unique.
+**As a** player who wants adult scenes written rather than faded to black,
+**I want** a Spicy switch in the game header that moves the campaign onto an uncensored model for as long as it is on,
+**So that** the tone of intimate and violent scenes is my choice, per campaign, and reversible.
 
-See [CampaignWizard](../concepts/CampaignWizard.md).
-
-### US-069: Campaign Schema Verification
-
-**As a** campaign creator modifying settings,
-**I want** schema verification on save,
-**So that** I don't break active playthroughs.
-
-See [CampaignWizard](../concepts/CampaignWizard.md).
+It is slower while it is on, and turning it off restores the model you were using before.
 
 ---
 
-## 8. Persistence, Export & Continuity
+## 8. Saving, export and coming back
 
-### US-070: Campaign Memory Across Sessions
+Your campaign is saved as you play. What it cannot do is hold every sentence of a hundred-hour story in front of the AI at once — so it keeps the facts and lets the scenes go.
+
+| ID | What you get |
+|----|--------------|
+| US-070 | Come back weeks later and the campaign reopens on the same scene, still holding the facts that matter. |
+| US-071 | Each finished turn is written to your campaign as it completes. *A turn that is still being written when you disconnect is the exception — see US-074.* |
+| US-072 | Export the whole story as text, DOCX or PDF. |
+| US-073 | One durable fact is recorded per narrated turn, and those facts outlive the scenes they came from. |
+| US-074 | Reload and pick up where you left off, including the action you had half-typed. |
+| US-075 | Your campaign follows you between desktop and mobile. |
+
+### US-070: Coming Back Weeks Later
 
 **As a** player who returns after days or weeks away,
-**I want** my campaign to remember every event, NPC, and promise,
-**So that** the story continues coherently.
+**I want** my campaign to reopen on the same scene and still hold the facts that matter — who I am, who owes me what, what I promised,
+**So that** the story continues instead of restarting.
 
-### US-071: Story Entry Persistence
-
-**As a** player,
-**I want** every story entry to persist immediately,
-**So that** no progress is lost on disconnect.
+The game does not keep every sentence of a long campaign in front of the AI. Old scenes are compacted away, and the per-turn record of durable facts carries them forward (US-073).
 
 ### US-072: Download & Share Campaign Story
 
-**As a** player who wants to preserve my adventure,
-**I want** to export the campaign story as text, DOCX, or PDF,
-**So that** I can read, print, or share the narrative outside the app.
+**As a** player who wants to keep my adventure,
+**I want** to export the campaign as text, DOCX or PDF,
+**So that** I can read, print or share it outside the app.
 
-See [ItachiGaiden](../entities/ItachiGaiden.md) for an example download.
+See [ItachiGaiden](../entities/ItachiGaiden.md) for an example of an exported campaign.
 
-### US-073: Core Memory Compaction
+### US-073: Core Memories Survive Compaction
 
-**As a** long-running campaign player (hundreds of entries),
-**I want** older entries to be summarized so the most important events stay in context,
-**So that** the game remains performant.
+**As a** player hundreds of entries into one campaign,
+**I want** the game to record one durable fact per narrated turn, so that when old middle scenes drop out of the AI's working context those facts still steer the story,
+**So that** the campaign stays coherent without carrying every scene forever.
 
-### US-074: State Hydration on Reconnect
+Old scenes are dropped, not summarised. That per-turn record is what survives — which is why the game remembers *that* you swore an oath long after it has forgotten the wording of the scene where you swore it.
 
-**As a** player reloading mid-conversation,
-**I want** the latest scene context and prior dialog to be restored,
-**So that** I can pick up where I left off.
+### US-074: Reload and Pick Up Where You Left Off
 
-### US-075: Multi-Device Sync
+**As a** player reloading between turns,
+**I want** the campaign to reopen on the latest scene with the story so far intact and my half-typed action restored,
+**So that** a refresh costs me nothing.
 
-**As a** player switching between desktop and mobile,
-**I want** my campaign state to sync across devices,
-**So that** I can play anywhere.
+Reloading *during* a turn is different: the page comes back showing a thinking bar that will never finish. Press Cancel to free the input — that turn's result is lost and has to be sent again.
 
 ---
 
-## Coverage by priority
+## Rules the game doesn't track
 
-| Priority | Count | Stories |
-|----------|-------|---------|
-| P0 Critical | 7 | US-001, 002, 015, 016, 035, 045, 070 |
-| P1 High | 47 | US-003 through US-014, 017-034, 036-044, 046-064, 066-069, 071-075 |
-| P2 Medium | 21 | Most remaining |
+Worth knowing before you plan around them:
 
-## Sources
+- **No crafting system** — no materials, recipes or crafting feats. Describe the work and the GM narrates the result.
+- **No carried weight.** The backpack has no capacity limit.
+- **No armour don/doff timing.** Swapping gear mid-fight costs whatever the GM judges it should.
+- **No rarity tiers, identified flags or curse flags** on items. What an item is comes from its description — see [US-047](#us-047-magic-items-are-described-not-catalogued).
 
-- Original: `~/worldarchitect.ai/docs/user-stories-general.md` (private).
-- See [worldarchitect.ai-docs-user-stories-general.md](../raw/worldarchitect.ai-docs-user-stories-general.md) for the source reference.
-- Expanded from 25 to 75 stories based on mvp_site/ surface area (12 agent classes, 9 MCP tools, 40 HTTP routes, 16 frontend modules, 10 faction modules, 37 prompts, multiple subsystems).
+## Where to read more
+
+- [Player Features Reference](ExternalUserStories.md) — the app around the game: accounts, settings, saving, export.

@@ -1,7 +1,7 @@
 ---
 title: "GodModeResponse"
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-system, wa-prompt]
 sources: []
@@ -9,43 +9,44 @@ sources: []
 
 # God Mode Response
 
-Reference page for how god mode directives are read and applied by the AI Game Master.
+What a God Mode turn sends back, and how the GM decides which of your directives to follow when two of them disagree. For what God Mode is and how to use it, see [GodMode](../concepts/GodMode.md); for writing directives, see [GodModePrompting](../concepts/GodModePrompting.md).
 
-## The contract
+## What a God Mode turn looks like on screen
 
-When generating narration, the system reads `custom_campaign_state.god_mode_directives` and incorporates them into the prompt context. The directives are persistent across scenes.
+A God Mode turn does not produce story text. It produces three things:
 
-## How directives are prioritized
+1. **A confirmation line** stating plainly what changed — "Set HP to 50. Done." It appears in its own block rather than in the story narration. If the GM returns nothing at all, you see the placeholder `[God Mode turn — no narrative]`.
+2. **The state change itself**, applied to your character sheet or the world immediately.
+3. **Three follow-up buttons**, always including **Return to story**, which switches you back to Character mode, plus the usual **Custom Action** button at the end. God Mode turns carry no **Show pros and cons** toggles.
 
-1. **Most recent first**: directives added later override earlier ones if they conflict.
-2. **Specific beats general**: a directive about "scene tone" beats a directive about "narration style" when the system has to choose.
-3. **Long-form beats short-form**: a detailed directive wins over a one-liner.
+If a God Mode turn hands you story prose, something went wrong — the world is supposed to stay frozen.
 
-## What the system CAN do
+## How directives are prioritised
 
-- Apply tone, voice, POV, pacing directives consistently.
-- Avoid taboos (words, phrases, plot directions).
-- Emphasize themes.
-- Maintain character voice.
+There is exactly one rule: **newest wins**. Your active directives are handed to the GM sorted newest-first, with an explicit instruction that the most recent rule takes precedence when two conflict. Length and specificity carry no weight of their own — a one-line rule added today overrides a detailed one added last week.
 
-## What the system CAN'T do
+This is why superseding works. Add the corrected rule and it outranks the old one immediately, even before you drop the original.
 
-- Override the rules engine (dice, HP, conditions).
-- Prevent plot events the system has decided to fire.
-- Modify NPC behavior beyond the campaign's persona tags.
-- Guarantee directives will be respected in every single sentence.
+## What directives can and can't guarantee
+
+Directives reliably shape tone, voice, POV, pacing, themes, taboos and character register across scenes. They cannot override the rules engine — dice, HP and conditions are the server's — and they cannot promise every single sentence will honour them. A directive is a lens, not a lock.
 
 ## Example: directive-driven narration
 
-**Directive**:
+Illustrative, not from a transcript. Given this directive:
+
 > Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology.
 
-**Without directive** (default):
+Default narration reads like this:
+
 > I feel the immense power coursing through my veins. The calculations of geometry and mathematics have yielded the ultimate technique.
 
-**With directive**:
+With the directive in force, the same beat reads like this:
+
 > The gravity of the moment is heavy. I steady my breath and act with quiet resolve.
 
-The directive successfully shaped the second version.
+## See also
 
-See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePrompting.md), [ItachiGaiden](ItachiGaiden.md).
+- [GodMode](../concepts/GodMode.md) — the pause menu and everything it can change.
+- [GodModePrompting](../concepts/GodModePrompting.md) — writing and revising directives.
+- [ItachiGaiden](ItachiGaiden.md) — the campaign the example above is modelled on.

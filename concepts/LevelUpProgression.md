@@ -1,7 +1,7 @@
 ---
 title: LevelUpProgression
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: [concepts/LevelUp.md]
@@ -9,78 +9,189 @@ sources: [concepts/LevelUp.md]
 
 # Level Up Progression
 
-Long-term level progression patterns. Use these as reference for planning how fast your campaign levels, what tier of play each milestone unlocks, and how to pace XP grants.
+How fast campaigns actually level, and what happens once you pass level 20.
 
-See [LevelUp](LevelUp.md) for the level-up modal mechanics. See [ASI](ASI.md) and [Subclass](Subclass.md) for the choices that happen at level-up.
+There is no pacing dial to set. Every campaign runs the same XP rules, and the AI
+is told to treat leveling as a rare, earned milestone. If you want a different
+pace, the two levers are both GOD MODE commands: define your own XP thresholds
+(which then govern the rest of the campaign), or grant XP outright, e.g.
+`GOD MODE: give me 5000 XP`.
 
-## Three pacing archetypes
+## How fast you actually level
 
-Published campaigns cluster into three pacing archetypes. None is "correct" — pick the one that fits your setting and arc.
+Routine turns award nothing. A competent win moves you a few percent of the way
+to your next level; a hard-won victory closer to a tenth; only resolving a
+multi-session storyline moves you a large fraction of the way. Expect a level to
+take many sessions of play, not a handful of scenes.
 
-### Slow escalation (Naruto, hero's journey, political)
+Because awards are a fraction of each level's XP band, that cadence stays roughly
+constant — leveling does not speed up as you climb.
 
-- **Final level after ~400 scenes**: 44
-- **Scenes per level**: ~10
-- **XP grants**: distributed across combat, quest completion, milestone achievements
+## What published campaigns actually did
 
-The standard 5e XP curve. Players level once every ~10 scenes on average, with some clusters (early levels happen fast) and some plateaus (mid-campaign pacing).
+These are outcomes from real campaigns, not modes you can pick. Several predate
+the current XP pacing rules, so their scene counts run faster than a campaign
+started today would.
 
-**Best for**: realistic drama, combat matters at every level, time to grow into each tier of play.
+### Slow escalation — Naruto, hero's journey, political
 
-**Example**: a Naruto ANBU-era campaign that escalates from village rookie to multiverse-spanning stakes over hundreds of scenes. See [ItachiGaiden](../entities/ItachiGaiden.md).
+Reached level 44 over roughly 400 scenes, about one level per 10 scenes, with XP
+spread across combat, quests and story milestones. Early levels came fast, the
+middle plateaued.
 
-### Fast escalation (isekai, reincarnation, mythic)
+Suits realistic drama where combat matters at every level and you want time to
+grow into each new band of power. Example: a Naruto ANBU-era campaign that
+escalates from village rookie to multiverse-spanning stakes. See
+[ItachiGaiden](../entities/ItachiGaiden.md).
 
-- **Final level after ~50 scenes**: 44
-- **Scenes per level**: ~1.1
-- **XP grants**: front-loaded by reincarnation blessing, divine boon, or inherited power
+### Fast escalation — isekai, reincarnation, mythic
 
-The campaign starts the PC with a head start (Level 10 Divine Blessings, ancient artifact, inherited throne) and then runs the escalation curve on top.
+Reached level 44 in roughly 50 scenes. The character did not earn all of that:
+the campaign started them well above level 1 with a reincarnation blessing, a
+divine boon or an inherited power, then escalated from there.
 
-**Best for**: mythic / god-tier arcs, power fantasy, compressed timelines.
+Suits mythic arcs, power fantasy and compressed timelines. Example: an isekai
+character study whose protagonist opens as a level-10 magic researcher. See
+[AristocratReborn](../entities/AristocratReborn.md).
 
-**Example**: an isekai character-study campaign where the PC starts as a level-10 magic researcher and ends at 44 inside 50 scenes. See [AristocratReborn](../entities/AristocratReborn.md).
+### Steady moderate — default D&D, BG3, Game of Thrones
 
-### Steady moderate (default D&D, BG3, GoT)
+The most common shape by far. These campaigns climb to somewhere between 12 and
+20 and then stop, because the story stops needing more. How long that takes
+varies enormously: some got there in 80-120 scenes, while a BG3 faction campaign
+ran roughly 600 scenes and still sat in the middle levels the whole time, because
+its drama was about running factions rather than personal power. See
+[NocturneBg3](../entities/NocturneBg3.md).
 
-- **Final level after ~80-120 scenes**: 12-20
-- **Scenes per level**: ~5-7
-- **XP grants**: standard milestone or XP-by-encounter
+Scene counts are a poor guide here. What decides the pace is how often the
+campaign hands you a genuine milestone, not how many turns you take.
 
-The most common published pattern. The campaign doesn't try to hit tier 4 (levels 17+) within the natural arc. Caps naturally around the level the campaign's arc can sustain.
+## Soft caps
 
-**Best for**: traditional D&D, BG3 act 1-3, GoT-style political campaigns, mystery campaigns. Default if you don't have a reason to deviate.
+Most campaigns stop climbing at the level their story can carry. It is worth
+deciding, early, the level at which your campaign stops being about personal
+growth and starts being about something else — politics, planar threats,
+identity. The campaigns above chose very different ceilings, and none of them
+had to justify it.
 
-**Example**: a BG3 faction campaign that runs ~600 scenes but stays in tier 2-3 because the focus is on faction management, not personal power escalation. See [NocturneBg3](../entities/NocturneBg3.md).
+You do not have to climb to the top. The system supports it; not every story
+needs it.
 
-## Beyond level 20
+## Past level 20
 
-Published campaigns have reached level 44 and the system supports up to level 50+ via:
+**Level 20 is a real stop.** The ordinary XP ladder ends there, and the AI is
+forbidden from inventing a level 21 for you. Until your campaign has an active
+post-20 curve, XP awards at level 20 are simply zero.
 
-- **Epic levels (21+)** — custom progression tables.
-- **Mythic levels (30+)** — divine / planar power.
-- **Transcendent levels (40+)** — reality-shaping.
+The game ships one such curve: the divine tier. It switches on when your
+character ascends, and ascension is a story event rather than an XP threshold.
+The option to ascend appears when the world has started treating you as a god —
+a narrative milestone, or enough accumulated divine potential — and it also
+appears automatically to any character already at level 25 or above. Since
+ordinary XP stops at 20, the story route is the usual one; GOD MODE is the other,
+since it can grant XP or define its own thresholds outright.
 
-Most published campaigns stop at the level the arc naturally sustains. You don't *have* to go to 44. The system supports it; not every campaign needs it.
+Accept, and the divine rules take over your progression from that point on.
 
-If you're writing a power-escalation arc, plan a "soft cap" — the level at which the campaign stops being about personal growth and starts being about something else (politics, planar threats, identity). The most common soft caps in published campaigns are 12 (end of tier 3), 20 (end of tier 4), and 30 (end of tier 4 + mythic).
+### The ascension ceremony
 
-## Level-up modal
+Divine play does not start quietly. When you qualify, a **Begin Divine Ascension**
+option appears among your choices. Take it and the game stops the ordinary story
+for a set-piece:
 
-At each level-up, a modal appears. The player must complete it before play continues. See [LevelUp](LevelUp.md) for the modal details.
+1. **Recognition.** The narration tells you the mortal limits are fraying, and
+   offers you the choice to stay mortal instead. Ascending is opt-in.
+2. **Presentation.** You decide how the world sees you: keep a mortal mask,
+   accept open worship and build temples, withdraw as a hermit who works hidden
+   miracles, claim quiet worship without a portfolio, run a secret cult of
+   yourself, or simply live as someone who has outgrown mortality without
+   claiming a seat among the gods.
+3. **Domain.** The game reads back your own campaign — the abilities you leaned
+   on, your class themes, your relationships — and offers a handful of divine
+   domains drawn from it, plus a slot to write your own.
 
-For fast-escalation campaigns, the modal can feel repetitive. Tip: if your campaign is fast-escalation, plan your character choices ahead of time so each modal is quick.
+Your mortal character sheet is preserved. A divine sheet is built alongside it.
 
-## Player tips
+### Costs and tiers above 20
 
-- **Plan your ASI levels**: 4th, 8th, 12th, 16th, 19th. Decide feats vs +2 ASI ahead of time.
-- **Plan your subclass choice**: at 1st, 2nd, or 3rd depending on class.
-- **Don't skip the modal**: it pauses narration, but completing it unlocks the next tier.
-- **Use THINK: prompts for meta-strategy**: useful for power-progression planning.
+Past level 20 every further level costs a flat **50,000 XP** — level 21 at
+405,000 total, level 25 at 605,000, level 30 at 855,000, and so on with no cap.
+There is no separate epic XP table.
+
+| Tier | Levels | What it means |
+|------|--------|---------------|
+| Demi-God | 20-25 | First ascension. A local power, still recognisably a person |
+| Ascendant | 26-40 | Minor God (26-30), Lesser God (31-35), Intermediate God (36-40). Worshippers in the thousands, then the hundreds of thousands; command over a region or a mythic system |
+| Divine Apex | 41-50 | Greater God (41-45), Transcendent (46-50). Planetary reach, then multi-universal |
+| Greater Deity | 51+ | Open-ended |
+
+### What changes when you play a god
+
+Your mortal numbers convert into divine ones: divine HP, attack bonus and save
+DCs scale by tier, and grow further with your worshipper count and your standing.
+Armour class is the exception — it stays your mortal AC plus a small flat rank
+bonus that steps up every five levels, bounded top and bottom, and followers do
+not move it. Level 26 is the anchor point where the god math properly begins.
+
+Your per-day resource is a **divine power budget** that refills each dawn — 50-100
+points as a Demi-God, thousands as a Transcendent. Rather than picking from a menu
+of powers, you describe what your god does — smite a heretic, raise a temple,
+banish a rival's avatar, hold court — and the game prices it against that budget:
+trivial acts are free, a major act costs tens of points, a legendary one hundreds.
+Dice come out only where the math leaves the outcome genuinely open.
+
+Mortal-scale opposition stops being a contest. Ordinary checks simply succeed;
+combat math only matters against other divine beings.
+
+Two things you can spend heavily on:
+
+- **A Chosen** — a mortal agent you infuse with part of your divine HP. Costs a
+  large one-time chunk of your budget plus a slice of your HP pool, which stays
+  lent out while the bond holds. Your eyes and hands where a god should not be
+  seen. You can try to pull the HP back early — a contested roll, easier if they
+  are loyal to you. If your Chosen dies, the bond snaps and that HP is gone for
+  good.
+- **An Avatar** — a body you build from your own spark, carrying your mind and
+  your stats. Costs more than a Chosen and more HP. This is how you act directly.
+  You get the HP back automatically when you dismiss one; if an Avatar is
+  destroyed instead, that HP is lost with it.
+
+You get more of both as you climb, on separate schedules. Chosen: one at level
+26, two at 31, rising to five by level 46. Avatars: one at level 26, two at 36,
+three at 46.
+
+### Being noticed
+
+The other gods are watching, and this is the real pressure of divine play. Each
+of them tracks you on its own hidden suspicion meter. A public miracle nudges
+every god who can see it a little further along; killing a god jumps every other
+god's meter by half its length at once, which is usually enough to move a room
+full of indifferent powers into suspicion or open investigation of you.
+
+You are never shown a suspicion number. You get a **vibe cue** instead — the air
+feels *still*, then *heavy*, then *charged*, then *screaming*. When a faction's
+suspicion tops out, its avatar arrives in person. Watch the cue and decide
+whether the next miracle is worth it.
+
+### The Sovereign tier — closed for now
+
+Above the gods, the game defines a **multiversal** tier: you become one of a
+thousand ranked Sovereigns competing across an infinite landscape of universes.
+You carry a **Logic** — a metaphysical law you impose on reality — and territory
+measured in universes that doubles as your health. Conflict is a **Logic Siege**,
+an attempt to rewrite someone else's reality into your own. Your allies become
+sub-deities with portfolios; your faction becomes a Hegemony. You arrive ranked
+around 800th out of 1,000, already flagged as a threat, and the first siege lands
+almost immediately.
+
+**You cannot reach this tier today.** No new campaign can ascend into it, though
+a campaign that entered it earlier still loads and plays. It is described here
+because it may reopen.
 
 ## See also
 
-- [LevelUp](LevelUp.md) — the level-up modal.
-- [ASI](ASI.md) — Ability Score Improvement vs feats.
-- [Subclass](Subclass.md) — subclass choice at level-up.
-- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns showing each pacing archetype in action.
+- [LevelUp](LevelUp.md) — what happens on a level-up and how to change it.
+- [ASI](ASI.md) — ability score increases vs feats.
+- [Subclass](Subclass.md) — choosing a subclass.
+- [GodMode](GodMode.md) — the commands that override XP pacing.
+- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns.
