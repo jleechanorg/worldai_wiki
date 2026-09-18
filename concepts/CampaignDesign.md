@@ -134,6 +134,9 @@ In the [CampaignWizard](CampaignWizard.md), you define your campaign premise thr
 
 Section 7 of the wizard provides an expandable multiline textarea (**Campaign description prompt**). This field is engineered to handle massive text payloads (tested up to 70KB+ without client-side truncation or backend clipping).
 
+- **Estimated capacity**: ~11,500 to 14,000 words (median ~12,500 words, ~17,500 LLM tokens, or 25+ single-spaced pages).
+- **Practical comparison**: Published campaign bibles like [AristocratReborn](../entities/AristocratReborn.md) (~3,100 words) and [House of the Dragon](../queries/house-of-the-dragon-campaign.md) (~2,500 words) require under 20KB. A 70KB prompt provides 4–5 times that capacity in a single paste.
+
 Use this field to paste:
 1. **Full World Bibles**: Comprehensive faction rosters, pantheons, magic systems, and world histories.
 2. **Detailed Backstory**: Past-life reincarnations, lineage, mental state, and item inventories.

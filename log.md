@@ -8,7 +8,7 @@
 - Added "Quick start: What to do" at the top of `README.md` with fresh screenshots and clear 2-step setup guidance.
 - Added fresh 1440x900 screenshots to `assets/fresh_screenshots/` covering Dashboard, Wizard Step 1 with expanded Description Prompt, Wizard Step 2 Launch, and Active Gameplay with composer.
 - Updated `concepts/CampaignWizard.md` and `entities/CampaignWizard.md` to document the 2-step wizard flow (Choose Type & Customize -> Ready to Launch!) and Scene 1 Character Review.
-- Documented Section 7 Campaign description prompt in `concepts/CampaignWizard.md` and `concepts/CampaignDesign.md`, explaining capacity for 70KB+ custom world bibles, premises, and rules without truncation.
+- Documented Section 7 Campaign description prompt in `concepts/CampaignWizard.md` and `concepts/CampaignDesign.md`, explaining capacity for 70KB+ custom world bibles, premises, and rules without truncation (~11,500–14,000 words, ~17,500 tokens, 25+ pages, 4–5x larger than existing published bibles).
 - Removed fabricated "God Mode chat" claims in `concepts/CampaignDesign.md`.
 - Updated `concepts/GodModePrompting.md` with directive `id` format (`directive_<hex>`), server-side directive validation (`_should_reject_god_mode_directive`), and `GOD MODE: drop <rule>` removal syntax.
 - Fixed broken anchor and documentation links in `queries/how-to-play-worldai.md` and updated step counts in `index.md`.

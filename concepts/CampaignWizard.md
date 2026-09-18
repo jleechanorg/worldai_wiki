@@ -42,14 +42,17 @@ Select the starting foundation:
 
 Section 7 features the **Campaign description prompt** accordion (`#wizard-toggle-description`). When expanded, it reveals a full-width multiline textarea designed for pasting large custom campaign bibles, premise descriptions, and system instructions.
 
-- **Capacity**: Tested up to 70KB+ of prompt text without client-side truncation or backend payload clipping.
+- **Capacity & Estimated Word Count**:
+  - **Text size**: Tested up to 70KB+ of prompt text without client-side truncation or backend payload clipping.
+  - **Estimated word count**: ~11,500 to 14,000 words (median ~12,500 words, ~17,500 LLM tokens, or 25–28 single-spaced document pages / 45–55 paperback pages).
+  - **Comparative scale**: Accommodates 4 to 5 times the volume of published campaign bibles like *Aristocrat Reborn* (~3,100 words) or *House of the Dragon* (~2,500 words) in a single paste.
 - **What to paste here**:
   - Full setting bibles (geography, factions, pantheons, magic systems).
   - Character backstory, lineage, equipment notes, and psychological profile.
   - Custom rules, narrative tone constraints, and god-mode style instructions.
 - **Short vs. Long**:
   - *Short prompts (1–3 sentences)*: Give the AI high creative freedom to flesh out details.
-  - *Long bibles (5,000–50,000 characters)*: Enforce strict canon compliance, complex political states, or custom RPG system conventions.
+  - *Long bibles (5,000–14,000 words / 30,000–70,000+ characters)*: Enforce strict canon compliance, complex political states, or custom RPG system conventions.
 
 Click **Next** to proceed to Step 2.
 

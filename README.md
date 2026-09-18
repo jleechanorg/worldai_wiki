@@ -13,7 +13,7 @@ Dashboard  ──>  Step 1: Choose Type & Prompt  ──>  Step 2: Launch  ─�
 1. **Open your dashboard**: Sign in at [worldarchitect.ai](https://worldarchitect.ai) to access your campaigns or start a new one.
 2. **Configure in the 2-step Wizard**:
    - **Step 1 (Choose Type & Customize)**: Select your universe (Game of Thrones, Star Wars, Cyberpunk, Witcher, Dune, or custom), era, protagonist, setting, and plot "what-if" direction.
-   - **Custom Campaign Description Prompt**: Expand section 7 (**Campaign description prompt**) to paste your own complete campaign bible, world lore, faction rules, or custom premise. The system handles large prompts (tested up to 70KB+ without client or server truncation), letting you bring extensive custom worlds directly into the browser.
+   - **Custom Campaign Description Prompt**: Expand section 7 (**Campaign description prompt**) to paste your own complete campaign bible, world lore, faction rules, or custom premise. The system handles large prompts (tested up to 70KB+ / ~11,500–14,000 words without client or server truncation), letting you bring extensive custom worlds directly into the browser.
    - **Step 2 (Ready to Launch)**: Upload an optional character portrait, review the editable summary card, and click **Enter the World**.
 3. **Play turn by turn**:
    - The GM introduces the opening scene and confirms your character sheet.
