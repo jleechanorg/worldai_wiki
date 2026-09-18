@@ -1,8 +1,9 @@
 # Wiki Log
 
-> Record of edits to this wiki, newest first. Entries are never rewritten, so
-> older ones describe the game and the site as they were on that date — read
-> the pages themselves for what is true now.
+> Record of edits to this wiki, newest first. Entries describe the game and
+> the site as they were on that date — read the pages themselves for what is
+> true now. Entries are not rewritten to change what happened, only to redact
+> leaked private-repo links, paths, or identifiers.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
