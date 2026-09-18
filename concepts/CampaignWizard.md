@@ -76,6 +76,7 @@ The **Enter the World** button sits at the top of Step 2, right under the headin
 Check your configuration before launching:
 - Shows your Title, Character, Setting, and the first 50 characters of your Campaign description prompt. (Universe isn't repeated here.)
 - Each row has a pencil button (**Edit title**, **Edit character**, **Edit setting**, **Edit description**) so you can fix a typo without going back to Step 1.
+- Editing is inline: click the field, click outside it to save, or press **Escape** to cancel.
 
 ---
 
