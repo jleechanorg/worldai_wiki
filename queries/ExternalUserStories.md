@@ -187,8 +187,10 @@ current state.
 **The game picks the specialist, you don't.** Combat, conversation, faction
 management, level-up, God Mode, and character creation each get their own
 handling, chosen from what you just did — there is no setting for it. You can
-see which one ran: a small debug line under each turn names it, for example
-"🤖 Agent: PlanningAgent". A conversation the game judges to be a substantial
+see which one ran, but only with **Settings → Debug Mode** switched on: it adds
+a small panel under each turn naming the handler, for example
+"🤖 Agent: PlanningAgent". With Debug Mode off — the default — nothing about the
+routing is shown. A conversation the game judges to be a substantial
 scene gets more room than the usual length limit allows, and that call is made
 fresh each turn rather than after a fixed number of exchanges.
 
