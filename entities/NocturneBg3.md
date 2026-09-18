@@ -1,10 +1,10 @@
 ---
 title: NocturneBg3
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-campaign, wa-faction]
-sources: [raw/faction-nocturne-bg3-v3-entry-001.md, raw/faction-nocturne-bg3-v3-entry-100.md, raw/faction-nocturne-bg3-v3-entry-500.md]
+sources: []
 scene_count: 600
 ---
 
@@ -44,7 +44,7 @@ The campaign includes interactions with multiple factions:
 - **Goblins**: early antagonist; the player can ally, fight, or ignore.
 - **Tieflings**: refugees in the druid grove; ally-able.
 - **Druids**: grove defenders; can be allied or fought.
-- **Duergar**: deep gnomes in the Underdark; hostile by default.
+- **Duergar**: grey dwarves of the Underdark, working the Adamantine Forge under a drow overseer; hostile by default.
 - **Mind flayers**: the absolute enemy; late-game threat.
 
 The player chooses when to fight and when to negotiate. Faction mode rewards strategic diplomacy.
@@ -59,10 +59,6 @@ By scene 600+, the player faction was a major regional power. The progression we
 
 The arc mirrors a typical BG3 run: local → regional → planar.
 
-## Source notes
-
-The 600+ per-scene entries live in `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-XXX.md` (numbered 001 through 600+). Each entry is a single scene dump. For the player-facing wiki, we synthesize them rather than copy them — see [FactionPlay](../concepts/FactionPlay.md) and [FactionSystem](../concepts/FactionSystem.md) for the gameplay loop.
-
 ## Key takeaways for your own campaign
 
 1. **Faction mode is a real game mode**, not a side feature. 600+ scenes prove it.
@@ -73,5 +69,5 @@ The 600+ per-scene entries live in `~/llm_wiki/wiki/sources/faction-nocturne-bg3
 
 ## Sources
 
-- `~/llm_wiki/wiki/sources/faction-nocturne-bg3-v3-entry-*.md` (600+ files).
-- See [FactionSystem](../concepts/FactionSystem.md), [FactionPlay](../concepts/FactionPlay.md), [FactionPower](../concepts/FactionPower.md).
+- The Nocturne BG3 V3 transcript, one file per scene across 600+ scenes. Campaign exports are private and are not published; this page synthesises them rather than reproducing them.
+- See [FactionSystem](../concepts/FactionSystem.md) and [FactionPower](../concepts/FactionPower.md) for the mechanics behind the loop described above.

@@ -1,81 +1,44 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
-sources: [entities/CampaignShowcase.md]
+sources: [../entities/CampaignShowcase.md]
 ---
 
 # How to Design a Campaign
 
-A practical guide to designing a campaign that holds up across many sessions. By the end you'll be able to pick a setting, write a god-mode header, design an opening scene, set up long-term arcs, and use god-mode directives to shape narration.
+This page is for building your **own** world in the wizard's custom path. If you're about to play for the first time, you don't need it — take the ready-made Dragon Knight campaign in [how-to-play](../queries/how-to-play-worldai.md) and come back when you want your own setting.
 
-## Why this matters
+The two things you write here:
 
-Most campaigns that fall flat fail for the same reasons:
+- **The God Mode header** — what you type into the Campaign Wizard's title, universe, character, setting and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
+- **Directives** — standing rules you add later, *during* play, that change how the GM narrates. Step 7, and the full guide is [GodModePrompting](GodModePrompting.md).
+
+## Why campaigns fall flat
+
+Almost always one of five reasons:
 
 1. **Vague setting** — "high fantasy" doesn't give the system anything to work with.
-2. **No hook** — the player starts in an inn with no goal.
-3. **Conflicting directives** — "be comedic" + "be grimdark" at the same time.
-4. **No long-term arc** — the campaign is interesting for 10 scenes and then stalls.
-5. **Player doesn't know how to interact** — they don't realize they can change the world with their prompts.
+2. **No hook** — you start in an inn with no goal.
+3. **Contradictory directives** — "be comedic" and "be grimdark" at once.
+4. **No long-term arc** — interesting for 10 scenes, then it stalls.
+5. **Not realising you can change the world** — the player never uses God Mode or a bold prompt.
 
-This guide fixes all of that. The recommendations here are patterns drawn from published campaigns — see [CampaignShowcase](../entities/CampaignShowcase.md) for specific examples. Pick the patterns that fit your setting.
-
-## Step 0 — Draft your campaign in a free chat LLM first
-
-The fastest way to blow through your WorldAI budget is to iterate your God Mode header against live campaign runs. Every "let me try the prompt one more time" is a paid scene you didn't need. The five failure modes above all show up on prompt #2, not scene #200 — so catch them in a free chat first, then bring the polished prompt to WorldAI.
-
-**The rule:** do not start a paid WorldAI campaign until you can paste your god-mode header into a chat LLM and have it produce a coherent 3-paragraph preview of scene one without flinching. If the preview is vague, your campaign will be vague.
-
-### Where to draft for free
-
-Pick whichever you already have an account on — the goal is iteration speed, not which LLM is best:
-
-- **God Mode chat** (inside WorldArchitect.AI) — the in-game God Mode is itself a chat LLM interface you can talk to like ChatGPT before you commit to a campaign. Use it to brainstorm settings, test directive wording, and stress-test opening scenes. No campaign-budget consumption while you're just chatting.
-- **ChatGPT** — paste a prompt, get a paragraph back, iterate.
-- **Gemini** — same idea, free tier.
-- **Claude** — same idea, free tier at claude.ai.
-
-Talk to whichever one you pick **just like an LLM chat**. Examples of what to type:
-
-> "I'm designing a Naruto-era Itachi campaign. Help me write a god-mode header. I want stoic tone, escalating power level, opening scene is the night of the Uchiha massacre. The character should be a member of ANBU."
-
-> "Here's my draft god-mode header: `<paste>`. What's vague about it? What would you ask me to clarify before you'd be willing to write scene 1 from it?"
-
-> "Here's my setting: `<paste>`. Suggest 3 alternative opening scenes that don't start in an inn."
-
-### The v4 Campaign Bible template
-
-If you want a structured starting point instead of freestyling, paste the **v4 Campaign Bible template** into ChatGPT / Gemini / Claude and iterate against it:
-
-> **[v4 Campaign Bible template →](https://docs.google.com/document/d/1kWl5zkpxMFO7tQb7C9NRuyhmgRKYmBIdHoNuWF9Q1fI/edit?tab=t.oayq6yj5q57b)**
-
-The template gives the LLM explicit instructions on tone, character architecture, faction structure, item frameworks, and progression tiers — so you get consistent, deep output instead of generic fantasy. Fill in the bracketed fields (`[Insert Tone]`, `[Insert Brief Concept]`) and the LLM will produce a full Campaign Bible you can mine for your god-mode header, directives, and opening scene.
-
-### What to bring back to WorldAI
-
-When your draft prompt passes the "paste-and-preview-scene-one" test, take it to WorldAI:
-
-- A **1-3 sentence god-mode header** (Step 4) you've already stress-tested for vagueness.
-- **1-3 directives** (Step 7) you've drafted and refined against the "do NOT include this" checklist.
-- An **opening scene** (Step 6) you've sanity-checked against the inn/dream/exposition anti-patterns.
-- A **tone** (Step 3) you've confirmed doesn't conflict with itself.
-
-Then — and only then — start the paid campaign.
+The recommendations below are patterns from published campaigns, not rules — see [CampaignShowcase](../entities/CampaignShowcase.md). Take the ones that fit.
 
 ## Step 1 — Pick a setting
 
-The setting is the world your story lives in. The system supports built-in settings plus custom:
+The setting is the world your story lives in. You have one ready-made module and everything else you can describe.
 
-### Built-in settings
+### The one built-in module
 
-- **Naruto** — shinobi politics, kekkei genkai, ANBU operations, clan wars
-- **Game of Thrones** — noble houses, court intrigue, dragons, the Long Night
-- **Baldur's Gate 3 (BG3)** — Forgotten Realms, mind flayers, the Absolute, faction play
-- **D&D 5e fantasy** — default high fantasy
-- **Isekai / Reincarnation** — modern person dies and wakes up in a fantasy world
+- **Dragon Knight** — Ser Arion, the Celestial Imperium, and the two dragons. Fully written, which also means character, setting, and premise are locked; see [CampaignWizard](CampaignWizard.md) for exactly which fields it greys out.
+
+### Universe quick-picks (custom path)
+
+On the **Play a campaign** path, the Universe field offers eight one-click suggestions — Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune — and accepts anything else you type: Naruto, Baldur's Gate 3, plain D&D 5e fantasy, isekai, your own world. None of these are pre-written; they are hints to the GM about the world you want.
 
 ### Custom setting
 
@@ -119,43 +82,52 @@ Tone is the dominant mood of the narration. The system uses your god-mode direct
 
 Mixing two tones that conflict (e.g., comedic + grimdark) leads to confused narration. Pick one primary tone; layer one secondary tone (e.g., stoic + hopeful is fine).
 
-## Step 4 — Write the God Mode header
+## Step 4 — Write the header: wizard fields and description prompt
 
-The God Mode header is what you type when creating the campaign. It's:
+These fields *are* the God Mode header. You fill them in the [CampaignWizard](CampaignWizard.md) — five structured boxes plus one expandable **Campaign description prompt** for anything longer.
 
-> Character: \<description\> | Setting: \<description\>
+### Structured wizard fields
 
-Or, if you want a longer prompt:
+- **Favorite Universe / TV Show / IP**: pick one of the eight suggestions or type your own.
+- **Timeline / Era**: the historical anchor (e.g., *Robert's Rebellion*, *The Clone Wars*).
+- **Favourite Character / Chosen Protagonist**: your protagonist, or blank for an AI-generated hero.
+- **Setting / world for your adventure**: 1–3 sentences on the physical and political environment.
+- **Plot / What-If Direction**: your campaign's main divergence or hook.
 
-> God Mode:
-> Character: \<name and concept\> | Setting: \<world\>
-> Description: \<longer character backstory\>
+### The Campaign description prompt (long-form world bible)
 
-The longer the prompt, the more the system has to work with. But keep it focused.
+The last section on the custom path, collapsed behind an **Expand** button, is a big text box that takes as much as you want to give it — comfortably more than published bibles like [AristocratReborn](../entities/AristocratReborn.md) (~3,100 words) or [House of the Dragon](../queries/house-of-the-dragon-campaign.md), so length is almost never your constraint. See [CampaignWizard](CampaignWizard.md) for the tested ceiling.
+
+Use it to paste:
+1. **Full world bibles**: faction rosters, pantheons, magic systems, world history.
+2. **Detailed backstory**: past lives, lineage, mental state, inventory.
+3. **Narrative directives**: style rules, taboos, and tone constraints for the GM.
 
 ### Worked examples
 
-**Short (Naruto, ANBU era)**:
-> God Mode:
-> Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
+**Short prompt (1–3 sentences in structured fields)**:
+> **Character**: Uchiha Itachi
+> **Setting**: Naruto universe. Young Itachi newly inducted into the ANBU Black Ops during the clan tension arc.
+> **Plot / What-If**: Focus on ANBU black-ops espionage and clan loyalty dilemmas.
 
-The system used this to build a level-1 Itachi with Sharingan, then ran him through the ANBU arc. See [ItachiGaiden](../entities/ItachiGaiden.md) for what a 400+ scene run of this prompt looks like.
+The system uses this to construct a level-1 Itachi with Sharingan and immediately launches the ANBU arc. See [ItachiGaiden](../entities/ItachiGaiden.md) for a 400+ scene case study.
 
-**Long (isekai character study)**:
-The Aristocrat V2 prompt was ~3,100 words. It included past-life backstory, reincarnation setup, family dynamics, internal psychology, and world context. The length was worth it because the campaign is character-study heavy. See [AristocratReborn](../entities/AristocratReborn.md).
+**Long-form prompt (pasted into the Campaign description prompt)**:
+> The Aristocrat V2 campaign used a ~3,100 word world bible: past-life memories, reincarnation mechanics, family genealogies, arcane mathematics, and internal psychological complexes. That depth paid off over 50+ scenes of character study. See [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Recommendation
 
-**Start short (1-3 sentences)** for your first campaign. **Go long** if you're doing a character-study or reincarnation campaign where internal monologue is a major feature.
+**Start short** — structured fields only — for your first campaign, and watch how the GM improvises. **Go long** when you're porting an existing tabletop campaign, adapting a specific novel or anime canon, or building an intricate political or reincarnation story.
 
 ## Step 5 — Choose character creation mode
 
-See [CharacterCreation](CharacterCreation.md) for full details. Two paths:
+The GM offers three ways to build your character once the campaign opens — see [CharacterCreation](CharacterCreation.md) for the full walkthrough:
 
-- **AI-generated** (recommended for first-timers): describe what you want, the system builds it.
-- **Hand-rolled**: pick race, class, stats. Best for optimized builds.
+- **AI Generated** (recommended for first-timers): describe who they are, the GM builds the sheet.
+- **Standard D&D**: step through race, class, background and stats yourself. Best for a build you have already worked out. Starting scores come from Point Buy or the Standard Array — nothing is rolled.
+- **Custom Class**: describe a class 5e doesn't have and the GM builds it to your description.
 
-The system integrates both. For published campaigns, AI-generation is the most common starting point because it produces a coherent build that fits the prompt; players can then refine via in-character requests.
+AI Generated is the most common starting point for the published campaigns because it produces a coherent build that fits the prompt; you can then refine it on the review screen or by asking in play.
 
 ## Step 6 — Plan the opening scene
 
@@ -163,10 +135,10 @@ The opening scene sets the tone, hooks the player, and establishes the campaign'
 
 ### Strong opening templates
 
-- **"Wake up" scene** — you wake up in the setting. The world unfolds around you. (Most common in isekai.)
+- **"Wake up" scene** — you wake up in the setting. The world unfolds around you. (Most common in isekai — stories where someone from our world wakes up in a fantasy one.)
 - **"First mission" scene** — you have a job. Set the stakes. (Common in shonen, military, and political-intrigue setups.)
 - **"First choice" scene** — the world offers you a choice immediately. (Character creation step, then action.)
-- **"In medias res" scene** — drop into action. Recover context later. (Boss fight opener.)
+- **"Straight into it" scene** — the fight or chase is already underway; you learn who you are as you go. (Boss-fight opener.)
 
 ### Anti-patterns
 
@@ -223,8 +195,6 @@ Pick ONE shape. Mixing shapes mid-campaign causes confusion.
 - Scenes 150-300: regional / world-shaping missions.
 - Scenes 300+: multiverse or planar transcendence.
 
-Each transition is built on the previous one. The player grows into the new stakes.
-
 **Example — character-study arc** (isekai specialist):
 - Scenes 1-20: establishing the reincarnated PC's new life and core obsession.
 - Scenes 20-50: deepening expertise, first major project.
@@ -254,28 +224,33 @@ Player explicitly asks for level jumps and progression.
 
 Player reshapes the world: frees NPCs, time-skips, sets the next hook.
 
-### Meta-prompts (THINK:)
+### Planning prompts (the Think/Plan button)
 
 > "THINK:keep thinking about how to get the next milestone ability"
 
-The "THINK:" prefix tells the system to plan/strategize instead of acting immediately. Useful for setting up long-term goals.
+Starting a message with `THINK:` does the same thing as clicking the **Think/Plan** button under the message box: the GM strategises with you instead of acting, and no time passes. Useful for setting up long-term goals. See [ThinkMode](ThinkMode.md).
 
-### Time-skip prompts
+### Getting back to the story
 
 > "Back to story and resume the main plot"
 
-Player signals "I've done the meta-strategy, now back to the world."
+Signals "I'm done planning, now back to the world."
 
 ## Step 10 — Iterate
 
-Your first campaign will have rough edges. After it ends:
+Your first campaign will have rough edges. When it ends, note what landed, what flopped, whether the directives visibly changed the prose, and where the pacing sagged. Carry that into the next one.
 
-- **What worked?** Note 3-5 things that landed.
-- **What didn't?** Note 3-5 things that flopped.
-- **What did the directives do?** Did they actually shape narration?
-- **Where did pacing break?** Was there a slow middle? An abrupt ending?
+## Optional: draft your header in a free chat LLM first
 
-Use these notes for your next campaign. The best play — human or AI — iterates.
+Playing is free, but every turn counts against your allowance — **100 turns a day, 50 in any 5-hour window** (your own API key raises it to 5,000 and 1,000). Re-rolling a vague header against live play burns turns you didn't need to spend, and all five failure modes above show up on prompt #2, not scene #200.
+
+So paste your draft header into ChatGPT, Gemini or Claude — whichever you already have — and ask it to write scene one. If the preview is vague, your campaign will be vague. Useful things to ask:
+
+> "Here's my draft campaign header: `<paste>`. What's vague about it? What would you need clarified before writing scene 1?"
+
+> "Here's my setting: `<paste>`. Suggest 3 opening scenes that don't start in an inn."
+
+For a structured starting point, paste the community **[Campaign Bible template](https://docs.google.com/document/d/1kWl5zkpxMFO7tQb7C9NRuyhmgRKYmBIdHoNuWF9Q1fI/edit?tab=t.oayq6yj5q57b)** (hosted on Google Docs, outside this wiki) and fill in its bracketed fields. It prompts for tone, characters, factions, items and progression tiers, so you get something specific rather than generic fantasy.
 
 ## Quick-start checklist
 
@@ -294,5 +269,5 @@ Before launching a campaign, ask:
 ## See also
 
 - [GodModePrompting](GodModePrompting.md) — full directive-writing guide.
-- [CampaignWizard](CampaignWizard.md) — the 3-step creation flow.
+- [CampaignWizard](CampaignWizard.md) — the 2-step creation flow.
 - [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns illustrating these patterns.

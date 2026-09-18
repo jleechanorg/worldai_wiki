@@ -1,7 +1,7 @@
 ---
 title: ItachiUchiha
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-character]
 sources: []
@@ -9,25 +9,25 @@ sources: []
 
 # Itachi Uchiha
 
-Example character archetype from the Naruto setting. The Itachi V2 campaign ([ItachiGaiden](ItachiGaiden.md)) is built around this character.
+The character archetype behind the Itachi V2 campaign ([ItachiGaiden](ItachiGaiden.md)): an Uchiha prodigy in his ANBU years, before the massacre. Stoic, dutiful, carrying more than he says.
 
-## Character concept
+## How the game turned the concept into a character sheet
 
-- **Clan**: Uchiha (Sharingan user)
-- **Era**: ANBU, before the Uchiha massacre
-- **Archetype**: prodigy, stoic, weight-of-duty
+The player asked for an Uchiha in the ANBU era with a Sharingan, then kept refining the build during play. What the sheet ended up holding:
 
-## Mechanical translation
+- **Class**: early in the run the player asked for a gestalt Rogue Assassin and Ranger Gloom Stalker, and the game built it. By the end the sheet read *Shinobi (Triple Gestalt: Assassin / Gloomstalker / Bladesinger)* — the build grew a third strand during play.
+- **Sharingan**: started at one tomoe, advanced to three, then to Mangekyo, as story events earned it.
+- **Gear**: ANBU kit — kunai, shuriken, tactical equipment.
 
-The system translates Itachi into 5e-mechanical terms:
-- **Multi-class**: gestalt Rogue Assassin + Ranger Gloom Stalker
-- **Starting Sharingan**: 1-tomoe, advances to 3-tomoe, then Mangekyo
-- **ANBU equipment**: kunai, shuriken, tactical gear
+The point is not the specific build. It is that a character described in the language of one setting gets translated into 5e mechanics you can actually play, and that the translation keeps changing as the campaign does.
 
 ## Player tips
 
-- **Gestalt builds are powerful**: combining two classes gives you broad abilities.
-- **Sharingan analog**: in 5e terms, advantage on attack rolls + read opponent's action.
-- **The "weight of duty" trope**: works well with stoic prose directives ([ItachiGaiden](ItachiGaiden.md) directive example).
+- **Ask for the build you want.** Gestalt multi-class concepts are fair game if the character concept supports them; say so during character creation. See [CharacterCreation](../concepts/CharacterCreation.md).
+- **Signature powers get a mechanical analog.** A Sharingan became advantage on attack rolls plus reading an opponent's next move — not a new rule, an existing one applied to your fiction.
+- **A one-sentence tone directive goes a long way.** The "weight of duty" voice held for 432 scenes off a single directive — see [ItachiGaiden](ItachiGaiden.md) for the exact wording.
 
-See [ItachiGaiden](ItachiGaiden.md) for the full case study.
+## Sources
+
+- The Itachi V2 campaign transcript and saved game state (432 scenes). Campaign exports are private and are not published.
+- Full case study: [ItachiGaiden](ItachiGaiden.md).

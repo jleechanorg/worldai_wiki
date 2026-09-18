@@ -1,8 +1,7 @@
 # Wiki Index
 
-> Content catalog. Every wiki page listed under its type with a one-line summary.
-> Read this first to find relevant pages for any query.
-> Last updated: 2026-08-05 | Total pages: 60+
+> Every page in the wiki, listed by type with a one-line summary. Start here when you're looking for something.
+> Last updated: 2026-09-18 | Total pages: 63
 
 ## Start here
 
@@ -10,95 +9,90 @@
 - [How to play](queries/how-to-play-worldai.md)
 - [How to design a campaign](concepts/CampaignDesign.md)
 - [How to prompt god mode](concepts/GodModePrompting.md)
-- [Player user stories (75)](queries/PlayerUserStories.md)
-- [External user stories (75, EXT-026–EXT-100)](queries/ExternalUserStories.md)
+- [Player user stories](queries/PlayerUserStories.md)
+- [Player features reference](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
-- [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — gender-ambiguous bastard Targaryen of Daemon claims a dragon on the eve of the Dance. Includes a paste-ready 9-section campaign bible and a setup walkthrough verified against the live worldarchitect.ai wizard.
+- [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — a bastard of Daemon Targaryen claims a dragon on the eve of the Dance. Includes a paste-ready campaign bible and a setup walkthrough.
 
 ## Entities
 
 - [AegonTargaryen](entities/AegonTargaryen.md) — Example Game of Thrones character.
-- [AIUniverseBackendDev](entities/AIUniverseBackendDev.md) — Backend infrastructure entity.
-- [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of published campaigns illustrating different archetypes.
-- [CampaignWizard](entities/CampaignWizard.md) — The 3-step creation-flow entity.
-- [ChiontharWyrm](entities/ChiontharWyrm.md) — Combat encounter example.
-- [Daemon](entities/Daemon.md) — Example character from a published campaign.
-- [FactionBattleSim](entities/FactionBattleSim.md) — The faction-vs-faction battle simulation engine.
-- [FactionIntel](entities/FactionIntel.md) — The intelligence-gathering subsystem of the faction minigame.
-- [FactionMinigame](entities/FactionMinigame.md) — The full faction minigame loop.
-- [FactionRankings](entities/FactionRankings.md) — How factions are ranked and ranked-battles resolved.
-- [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) — Reference page for god mode's response structure.
+- [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of published campaigns, each showing a different archetype.
+- [CampaignWizard](entities/CampaignWizard.md) — One-screen summary of the creation flow; the full walkthrough is [concepts/CampaignWizard](concepts/CampaignWizard.md).
+- [Daemon](entities/Daemon.md) — A character sketch: the charming, dangerous antagonist.
+- [FactionBattleSim](entities/FactionBattleSim.md) — How faction-vs-faction battles are resolved.
+- [FactionIntel](entities/FactionIntel.md) — Spying, informants, and what you learn about rivals.
+- [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) — What a God-mode turn sends back.
 - [WorldArchitect](entities/WorldArchitect.md) — The game itself.
-- [WorldArchitectAI](entities/WorldArchitectAI.md) — Alternate name redirect.
 - [WorldAI](entities/WorldAI.md) — Short alias for WorldArchitect.AI.
 
 ### Published-campaign case studies
 
-These are individual player-run campaigns documented as illustrations of how the system handles specific archetypes. Each is a *case study*, not a template — see [CampaignShowcase](entities/CampaignShowcase.md) for context.
+Real player-run campaigns, written up to show how the system handles a particular kind of story. Read them as examples to borrow from, not templates to copy — see [CampaignShowcase](entities/CampaignShowcase.md) for context.
 
-- [ItachiGaiden](entities/ItachiGaiden.md) — Naruto ANBU-era case study (long escalation).
-- [AristocratReborn](entities/AristocratReborn.md) — Isekai character-study case study (fast escalation).
-- [NocturneBg3](entities/NocturneBg3.md) — BG3 faction-mode case study.
-- [PrinceDaemon](entities/PrinceDaemon.md) — GoT-style antagonist case study.
-- [ItachiUchiha](entities/ItachiUchiha.md) — Example character sheet for a published-campaign PC.
-- [FrierenCampaign](entities/FrierenCampaign.md) — Frieren-style slow-burn fantasy archetype.
-- [LukeCampaign](entities/LukeCampaign.md) — Star Wars-flavored hero's journey archetype.
-- [SarielCampaign](entities/SarielCampaign.md) — Angel-themed non-human PC archetype.
-- [SarielCrossCampaign](entities/SarielCrossCampaign.md) — Cross-campaign character continuity example.
+- [ItachiGaiden](entities/ItachiGaiden.md) — Naruto ANBU era, a long slow escalation.
+- [AristocratReborn](entities/AristocratReborn.md) — Isekai character study, told through internal monologue.
+- [NocturneBg3](entities/NocturneBg3.md) — Baldur's Gate 3 setting, played in faction mode.
+- [ItachiUchiha](entities/ItachiUchiha.md) — A finished character sheet from a published campaign.
 
 ## Concepts
 
 - [AbilityScores](concepts/AbilityScores.md) — STR/DEX/CON/INT/WIS/CHA, ability checks, saving throws.
-- [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) — Roll twice, take higher/lower.
-- [ASI](concepts/ASI.md) — Ability Score Improvement vs feats at level-up.
-- [CampaignDesign](concepts/CampaignDesign.md) — How to design a campaign (3000+ word guide).
-- [CampaignWizard](concepts/CampaignWizard.md) — The 3-step campaign creation flow.
-- [CharacterArchetype](concepts/CharacterArchetype.md) — Fighter / Wizard / Rogue / etc.
-- [CharacterCreation](concepts/CharacterCreation.md) — AI-generated vs hand-rolled character creation.
-- [CharacterMode](concepts/CharacterMode.md) — How the game handles character-centric narration.
-- [Combat](concepts/Combat.md) — The combat system overview.
-- [CombatVictoryProtocol](concepts/CombatVictoryProtocol.md) — How combats resolve.
-- [CompanionArc](concepts/CompanionArc.md) — Companion relationship arcs.
-- [CompanionPersonality](concepts/CompanionPersonality.md) — MBTI / alignment for companions.
-- [Dice](concepts/Dice.md) — Dice rolling, notation, integrity.
-- [DiceAuthenticity](concepts/DiceAuthenticity.md) — Anti-fabrication enforcement.
-- [DiceNotation](concepts/DiceNotation.md) — `1d20+5`, `2d6+3`, `4d6kh3` etc.
-- [DiceRollMechanics](concepts/DiceRollMechanics.md) — How rolls work end-to-end.
+- [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) — Roll twice, take the higher or the lower.
+- [ASI](concepts/ASI.md) — Ability Score Improvement vs a feat at level-up.
+- [CampaignDesign](concepts/CampaignDesign.md) — The long guide to planning a campaign before you launch it.
+- [CampaignWizard](concepts/CampaignWizard.md) — The 2-step campaign creation flow.
+- [CharacterArchetype](concepts/CharacterArchetype.md) — Tank / striker / controller / support: tabletop shorthand for what a class does in a fight. The game never asks you to pick one.
+- [CharacterCreation](concepts/CharacterCreation.md) — Letting the GM build your character, or building it yourself.
+- [CharacterMode](concepts/CharacterMode.md) — The default composer button, and the modes the game switches to on its own.
+- [Combat](concepts/Combat.md) — How a fight runs, start to finish.
+- [CombatVictoryProtocol](concepts/CombatVictoryProtocol.md) — How a fight ends and what you get for it.
+- [CompanionArc](concepts/CompanionArc.md) — How companion relationships develop over a campaign.
+- [CompanionPersonality](concepts/CompanionPersonality.md) — What makes each companion act the way they do.
+- [Dice](concepts/Dice.md) — Who rolls, when, and why you can trust the numbers.
+- [DiceAuthenticity](concepts/DiceAuthenticity.md) — How the game stops the GM inventing roll results.
+- [DiceNotation](concepts/DiceNotation.md) — Reading `1d20+5`, `2d6+3`, `2d20kh1` and the rest.
+- [DiceRollMechanics](concepts/DiceRollMechanics.md) — What happens between your action and the number on screen.
 - [DnD5eRules](concepts/DnD5eRules.md) — The D&D 5th Edition rule spine.
-- [FactionCampaigns](concepts/FactionCampaigns.md) — Faction-mode campaigns overview.
-- [FactionManagement](concepts/FactionManagement.md) — Managing a faction as a player.
-- [FactionPlay](concepts/FactionPlay.md) — How faction mode plays out scene-by-scene.
-- [FactionPower](concepts/FactionPower.md) — Power calculation, ranks, escalation.
-- [FactionSystem](concepts/FactionSystem.md) — The full faction minigame.
-- [GodMode](concepts/GodMode.md) — Player-supplied style rules that shape narration.
-- [GodModePrompting](concepts/GodModePrompting.md) — How to write god mode directives (2500+ word guide).
+- [Equipment](concepts/Equipment.md) — Slots, starting gear, and how item stats change your numbers.
+- [FactionManagement](concepts/FactionManagement.md) — Running a faction: resources, units, orders.
+- [FactionPower](concepts/FactionPower.md) — How faction power is measured and how it escalates.
+- [FactionSystem](concepts/FactionSystem.md) — The faction minigame as a whole.
+- [GodMode](concepts/GodMode.md) — The pause menu: edit the world, fix mistakes, set standing rules.
+- [GodModePrompting](concepts/GodModePrompting.md) — Writing god-mode rules that actually change the prose.
+- [Healing](concepts/Healing.md) — Hit dice, healing spells, potions, and when healing is worth an action.
 - [Initiative](concepts/Initiative.md) — Turn order in combat.
-- [LevelUp](concepts/LevelUp.md) — Level-up mechanics and modal choice.
-- [LevelUpProgression](concepts/LevelUpProgression.md) — Long-term progression patterns from real campaigns.
-- [LivingWorld](concepts/LivingWorld.md) — The world evolves between player actions.
-- [LootAndRewards](concepts/LootAndRewards.md) — Treasure, XP, items.
-- [NPCRelationships](concepts/NPCRelationships.md) — Reputation, trust, faction standing.
+- [LevelUp](concepts/LevelUp.md) — What happens when you level, and what you choose.
+- [LevelUpProgression](concepts/LevelUpProgression.md) — How characters grow over a long campaign.
+- [LivingWorld](concepts/LivingWorld.md) — The world keeps moving between your actions.
+- [LootAndRewards](concepts/LootAndRewards.md) — Treasure, XP, and items.
+- [NPCRelationships](concepts/NPCRelationships.md) — Reputation, trust, and where you stand with factions.
 - [RestAndDeath](concepts/RestAndDeath.md) — Short rest, long rest, death saves.
-- [SmartSkillChecks](concepts/SmartSkillChecks.md) — Intelligent skill check adjudication.
-- [Spellcasting](concepts/Spellcasting.md) — Spell slots, prep, casting.
-- [Subclass](concepts/Subclass.md) — Subclass choice at level-up.
+- [SmartSkillChecks](concepts/SmartSkillChecks.md) — How the GM decides which check your action calls for.
+- [Spellcasting](concepts/Spellcasting.md) — Spell slots, preparation, concentration.
+- [SpicyMode](concepts/SpicyMode.md) — The 🌶️ switch in the game header, and what turning it on changes.
+- [Subclass](concepts/Subclass.md) — Choosing a subclass at level-up.
+- [ThinkMode](concepts/ThinkMode.md) — Pausing the story to weigh your options before you act.
 
 ## Comparisons
 
 - [WorldArchitect-vs-AIDungeon](comparisons/WorldArchitect-vs-AIDungeon.md) — Structured D&D 5e GM vs freeform LLM storytelling.
-- [WorldArchitect-vs-RPG-Bots](comparisons/WorldArchitect-vs-RPG-Bots.md) — vs Discord RPG bots.
+- [WorldArchitect-vs-RPG-Bots](comparisons/WorldArchitect-vs-RPG-Bots.md) — Discord dice-and-sheet bots serve a table that already has a human DM; this plays the DM.
 
 ## Queries
 
 - [HowToPlay](queries/how-to-play-worldai.md) — Your first 30 minutes with the game.
-- [PlayerUserStories](queries/PlayerUserStories.md) — 75 user stories organized by system.
-- [ExternalUserStories](queries/ExternalUserStories.md) — 75 external-facing stories (EXT-026–EXT-100): accounts, live UI, settings, MCP/API, agents, persistence, dice audit, export.
+- [PlayerUserStories](queries/PlayerUserStories.md) — What the game does, system by system, in "as a player, I want…" form.
+- [Player features reference](queries/ExternalUserStories.md) — The app around the game: signing in, what happens on screen during a turn, settings and AI providers, what gets saved, the dice audit trail, export.
+- [DeveloperAPI](queries/DeveloperAPI.md) — MCP tools and REST routes, for driving the game from your own code.
 - [DiceFAQ](queries/DiceFAQ.md) — Common dice questions.
 - [GodModeFAQ](queries/GodModeFAQ.md) — Common god mode questions.
 - [FactionFAQ](queries/FactionFAQ.md) — Common faction questions.
+- [House of the Dragon campaign](queries/house-of-the-dragon-campaign.md) — A paste-ready campaign bible and setup walkthrough.
 
 ## Meta
 
 - [SCHEMA](SCHEMA.md) — Wiki conventions, frontmatter rules, tag taxonomy.
 - [log](log.md) — Chronological action log.
 - [README](README.md) — Top-level guide.
+- [index](index.md) — This page: the full catalog.

@@ -77,8 +77,6 @@ This file adds one Claude-Code-specific item:
 - [`SCHEMA.md`](SCHEMA.md) — wiki conventions, tag and type taxonomy.
 - [`index.md`](index.md) — page catalog.
 - [`log.md`](log.md) — chronological change log.
-- [`raw/worldarchitect.ai-docs-user-stories-general.md`](raw/worldarchitect.ai-docs-user-stories-general.md) —
-  mirrored internal spec.
 - `~/.claude/skills/worldarchitect/references/worldai-wiki-authoring.md` —
   the wiki skill reference with the rewrite recipe, the CLAUDE.md/AGENTS.md
   authoring convention, and the 4 review-bot fix patterns.

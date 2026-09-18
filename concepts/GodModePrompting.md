@@ -1,48 +1,63 @@
 ---
 title: GodModePrompting
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-09-18
 type: concept
 tags: [wa-prompt, wa-system, wa-tutorial]
-sources: [concepts/GodMode.md]
+sources: [GodMode.md]
 ---
 
 # How to Prompt God Mode
 
-A practical guide to writing god-mode directives that actually shape narration. By the end you'll be able to write, test, and revise directives that take a campaign from "generic D&D" to "the tone I want."
+Directives are standing rules the GM follows in every scene after you add one. This page is about writing them: what to say, what not to bother saying, and how to change your mind later. For what God Mode itself is and everything else it does, see [GodMode](GodMode.md).
 
-## What god-mode directives are
+Throughout this page, **PC** means your player character — the one you play.
 
-A directive is a single rule stored in `custom_campaign_state.god_mode_directives`. Each entry has two fields:
+## Adding a directive
 
-```json
-{
-  "added": "2026-05-30T23:00:00Z",
-  "rule": "<the directive text>"
-}
-```
+You add directives during play, not at campaign creation. Click the **God** button under the message box, or type `GOD MODE: <your rule>` without switching, and say what you want remembered in plain language:
 
-The system reads these rules when generating narration. They're persistent across scenes. You can add directives mid-campaign.
+> GOD MODE: from now on, narrate in second person
+>
+> GOD MODE: stop forgetting that my Foresight is always up
 
-## How a directive actually works
+The GM turns that into a stored rule and confirms it.
 
-A directive is a one-sentence instruction that pins a stylistic choice. The system uses the directive as a lens for every scene it generates after the directive is added. The directive doesn't control *what happens* — it controls *how the narration sounds when it happens*.
+Directives are not the same as the **God Mode header** — the wizard's setting, character and description fields, which you write once at creation. The header seeds the campaign; directives steer it afterwards. See [GodMode](GodMode.md#two-layers-the-header-and-your-directives).
 
-Three things make a directive land:
+## If you want one to paste right now
 
-1. **It states a concept in concrete terms.** "Stoic, minimalist, humble" beats "interesting."
-2. **It lists taboos.** "Avoid grandstanding" beats "don't be too flashy."
-3. **It anchors the worldview.** "Views power as a heavy burden" beats "cares about peace."
+Fill in this blank and send it:
 
-The system can apply the lens to many different scenes — combat, romance, politics, exposition — as long as the directive is concrete enough to translate into prose choices.
+> GOD MODE: The PC is \<2-3 traits\>. They avoid \<2 things\>. They always \<1 behaviour\>.
 
-## The 9 directive categories
+Two worked versions:
 
-There are 9 categories of directives that actually work. Use them as a checklist.
+> GOD MODE: The PC is cautious, observant, and methodical. They avoid reckless heroics and breaking promises. They always weigh the cost of an action before committing.
 
-### 1. Tone
+> GOD MODE: The PC is bold, witty, and impulsive. They avoid long monologues and excessive planning. They always seize the moment.
 
-How the narration feels emotionally.
+Give it five to ten scenes before judging whether it took. The rest of this page is why that shape works and what else you can steer.
+
+## What makes a directive land
+
+A directive is a lens the system applies to every later scene. It controls *how* things are narrated, not *what* happens. Three things separate a directive that works from one that does nothing:
+
+1. **Concrete terms.** "Stoic, minimalist, humble" beats "interesting".
+2. **Named taboos.** "Avoid grandstanding" beats "don't be too flashy".
+3. **An anchored worldview.** "Views power as a heavy burden" beats "cares about peace".
+
+The formula that carries all three:
+
+> **X is/does Y. Avoid Z. Always W.**
+
+Before you commit one, ask: if a stranger read this single sentence, would they know what tone you're going for? If not, rewrite it.
+
+## What directives can steer
+
+Eight things, below. Treat this as a menu for finding the rule you actually want — it isn't a fixed list the game enforces, and any clear stylistic rule works.
+
+### 1. Tone — how the narration feels
 
 | Directive | Effect |
 |-----------|--------|
@@ -52,30 +67,18 @@ How the narration feels emotionally.
 | "Grimdark tone. Moral compromise. No clean wins." | Dark fantasy |
 | "Hopeful tone. Found family. Earnest connection." | Cozy fantasy |
 
-### 2. Voice
-
-The character or narrator's voice.
+### 2. Voice — who is telling it, and how much they know
 
 | Directive | Effect |
 |-----------|--------|
 | "First-person narration ('I do X'). Internal monologue is encouraged." | Diary-style |
 | "Second-person narration ('You do X'). Closer to the player." | Choose-your-own-adventure |
-| "Third-person limited. The narration follows the PC's perspective." | Novelistic |
-| "Omniscient narrator. The narration knows more than the PC." | Epistolary |
+| "Third-person. The narration follows the PC over the shoulder." | Novelistic |
+| "Stick to the PC's view. The narration never reveals hidden information." | You only know what you'd know |
+| "Allow scene cuts to other characters when narrating world events." | The camera can leave you |
+| "The narration shares the PC's thoughts and feelings as they happen." | Interior, lyrical |
 
-### 3. POV
-
-Point of view. (Often overlaps with Voice but distinct.)
-
-| Directive | Effect |
-|-----------|--------|
-| "Stick to the PC's POV. The narration never reveals hidden information." | Tight POV |
-| "Allow scene cuts to other characters when narrating world events." | Multi-POV |
-| "Use deep POV: the narration shares the PC's thoughts and feelings." | Lyrical |
-
-### 4. Pacing
-
-How fast scenes move.
+### 3. Pacing — how fast scenes move
 
 | Directive | Effect |
 |-----------|--------|
@@ -83,9 +86,7 @@ How fast scenes move.
 | "Slow burn. Linger on sensory detail. Build atmosphere." | Literary |
 | "Scene-by-scene. Each turn is a discrete scene with a clear location change." | Theatrical |
 
-### 5. Themes
-
-Recurring motifs.
+### 4. Themes — what keeps recurring
 
 | Directive | Effect |
 |-----------|--------|
@@ -95,9 +96,7 @@ Recurring motifs.
 | "Recurring theme: discovery and wonder." | Adventure |
 | "Recurring theme: identity and self-knowledge." | Character study |
 
-### 6. Taboos
-
-Things the system should NOT do.
+### 5. Taboos — what the GM should never do
 
 | Directive | Effect |
 |-----------|--------|
@@ -106,9 +105,7 @@ Things the system should NOT do.
 | "Do not narrate romance unless the PC initiates." | Player agency |
 | "Avoid meta-commentary about the AI or the game." | In-fiction |
 
-### 7. Power-level
-
-How much power the PC has.
+### 6. Power level — how far the PC can climb
 
 | Directive | Effect |
 |-----------|--------|
@@ -116,9 +113,7 @@ How much power the PC has.
 | "Escalating power: the PC levels freely, gains abilities, and can transcend." | Shonen |
 | "Sandbox power: the PC starts at any level the player chooses." | OP protagonist |
 
-### 8. Companion rules
-
-How companions behave.
+### 7. Companion rules — how the party behaves
 
 | Directive | Effect |
 |-----------|--------|
@@ -127,196 +122,89 @@ How companions behave.
 | "Romance is opt-in only. Don't force it." | Player agency |
 | "Companion banter: high. They comment on everything." | Sitcom-party |
 
-### 9. World rules
-
-Constraints on the world itself.
+### 8. World rules — constraints on the setting
 
 | Directive | Effect |
 |-----------|--------|
 | "No resurrection magic. Death is permanent." | Stakes |
 | "Low-magic world. Spells are rare and costly." | Gritty |
 | "Total party kill on combat failure. No deus ex machina." | Hardcore |
-| "All NPCs are real: NPCs have motivations and pursue them even off-screen." | Living world |
+| "All NPCs are real: they have motivations and pursue them off-screen." | Living world |
 
-## The formula
+## Worked examples
 
-Directives that work follow this formula:
+Six directives, grouped by archetype, so you can start from the one closest to your campaign. The first two ran in published campaigns and are linked; the rest are templates built on the same structure.
 
-> **X is/does Y. Avoid Z. Always W.**
-
-Or expanded:
-
-> **The PC is \<trait 1\>, \<trait 2\>, and \<trait 3\>. They avoid \<taboo 1\>, \<taboo 2\>. They always \<behavior\>.**
-
-## Worked examples — one per archetype
-
-Each example here is a single-sentence directive that was used in a published campaign. They're grouped by archetype so you can pick the one closest to your campaign's tone.
-
-### Example 1 — Stoic anti-hero (shonen-adjacent)
+**Stoic anti-hero (shonen-adjacent)**
 
 > The PC is stoic, minimalist, and humble. They avoid grandstanding or arrogant terminology. They speak with polite authority and view their power as a necessary, heavy burden for the sake of peace.
 
-**Used in**: a 432-scene Naruto campaign where the PC was an ANBU-era shinobi. The directive held for 370+ scenes without revision. See [ItachiGaiden](../entities/ItachiGaiden.md) for the case study.
+Used in a 432-scene Naruto campaign, unrevised for 370+ scenes — see [ItachiGaiden](../entities/ItachiGaiden.md). It does five things in one sentence: states the concept, names the taboos, gives examples of what not to say, fixes the voice register, and anchors the worldview. That structure is the one to copy.
 
-Notice its structure:
-1. **States the character concept** ("stoic, minimalist, humble").
-2. **Specifies taboos** ("avoids grandstanding or arrogant terminology").
-3. **Gives examples of what NOT to do** ("e.g., 'math', 'laboratory', 'geometry'").
-4. **States the voice register** ("speaks with polite authority").
-5. **Anchors the worldview** ("views power as a necessary, heavy burden for the sake of peace").
-
-That's a 5-element directive in one sentence. Use this structure for your own.
-
-### Example 2 — Obsessive specialist (isekai)
+**Obsessive specialist (isekai)**
 
 > The PC is obsessive, polite, and brilliant. Their internal monologue runs constantly on their area of expertise. They avoid social games and political maneuvering. They always treat their specialty as a system to be optimized, never as a tool to be wielded.
 
-**Used in**: a 50-scene isekai campaign where the PC was reincarnated as a magic-obsessed noble daughter. The directive held for the full campaign. See [AristocratReborn](../entities/AristocratReborn.md).
+Used in a 50-scene isekai campaign — see [AristocratReborn](../entities/AristocratReborn.md). Same five elements; works for any specialist.
 
-Same 5-element structure, different archetype. Works for any specialist — mage, swordsman, alchemist, scholar, engineer.
-
-### Example 3 — Grimdark survivor
+**Grimdark survivor** — for dark fantasy, survival horror, morally grey play.
 
 > The PC is hunted, weary, and pragmatic. They avoid heroic posturing and grand speeches. They always weigh the cost of any action, including the cost to themselves. Looting the dead feels heavy. Winning feels like a compromise.
 
-**Use for**: dark fantasy, survival horror, morally grey campaigns. Sets a "no clean wins" frame.
-
-### Example 4 — Sitcom party
+**Sitcom party** — for comedy and parody, with grimdark reserved for contrast.
 
 > The narration has a comedic tone. NPCs are witty. The PC's failures are funny, not tragic. They avoid grimdark moments unless used for contrast. They always punchline after a beat of silence.
 
-**Use for**: comedic campaigns, parody, lighthearted party play. Beats grimdark for contrast only.
-
-### Example 5 — Heroic idealist
+**Heroic idealist** — for hero's-journey campaigns and hopeful arcs.
 
 > The PC is earnest, courageous, and kind. They avoid cynicism and dark-edgy posturing. They always choose the harder right over the easier wrong, even when it costs them. NPCs respond to their example by being braver than they thought they could be.
 
-**Use for**: classic hero's-journey campaigns, paladin-led parties, hopeful arcs.
-
-### Example 6 — Slow-burn literary
+**Slow-burn literary** — for Frieren-style fantasy and character studies.
 
 > The pacing is slow and atmospheric. The narration lingers on sensory detail — light, sound, smell, weather. The PC's internal life takes as much narrative space as events. They avoid action-movie beats and time-skip montages.
 
-**Use for**: Frieren-style fantasy, literary fiction, character-study campaigns.
+## Directives that don't work
 
-## Anti-patterns
+**Trying to control plot beats.** "Don't have the PC die. Don't let them fail the heist." Directives shape how something happens, not whether — the dice can still kill you. Rewrite it as a tone rule: "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing."
 
-Directives that DON'T work fall into four buckets:
+**Being vague.** "Make it cool." "Be epic." Give the system something to act on instead: "Cinematic combat. Each blow lands with weight. The PC's finishing moves are described in slow motion."
 
-### 1. Trying to control plot beats
+**Contradicting yourself.** "Comedic tone" and "grimdark tone" at once makes the narration oscillate. Pick a primary and a secondary: "Comedic primary tone with occasional grimdark beats when the PC faces a hard choice."
 
-> "Don't have the PC die. Don't let them fail the heist."
+**Adding fifteen at once.** Each new directive dilutes the others. Start with one to three and add more as the campaign changes.
 
-This is plot control. The system can't reliably enforce it because the rules engine can kill you. Directives can shape HOW something happens, not WHETHER it happens.
+**Stats and one-off events, which are silently discarded.** Directives are for durable style, perspective, taboos, NPC behaviour and world rules. Two kinds never get stored: numbers ("my level is 10", "HP is 999", "gold is 50000") — say those as an ordinary God Mode request instead, and they take effect immediately — and one-time outcomes ("you just killed the dragon"), which are history, not a rule.
 
-**Fix**: rewrite as a tone rule.
+Worse, the GM may still cheerfully confirm a rule it didn't keep. Nothing warns you. If a rule never seems to bite, type `GOD MODE: list my active rules`; if it isn't in the list, it was discarded and needs rewriting as a style rule.
 
-> "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing."
+## When to add one
 
-### 2. Vague directives
+Add a directive when you see a pattern in the narration you want more of, or less of; when the campaign hits a tonal shift ("we're entering the multiverse arc — mythic register now"); or when you want to try a style for a while. Don't add one just because you can. Each directive is a permanent rule until you remove it.
 
-> "Make it cool."
-> "Be epic."
+## How to revise and drop directives
 
-These don't give the system enough to work with.
+Directives persist until you change them. Two options:
 
-**Fix**: be specific.
+1. **Supersede.** Add the corrected rule. Newest wins, so it outranks the old one immediately — see [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md#how-directives-are-prioritised). Give it five to ten scenes to settle in.
+2. **Drop.** Ask in plain language: `GOD MODE: forget the rule about companion scaling`, or `GOD MODE: stop narrating in second person`. The GM finds the matching rule and removes it.
 
-> "Cinematic combat. Each blow lands with weight. The PC's finishing moves are described in slow motion."
+One catch worth knowing about removal: it matches the directive's **full text**, not a fragment of it. If the GM guesses the wording wrong, nothing is removed and the rule stays active. There is no special command for this — it is still plain language. If a removal doesn't seem to stick, ask the GM to list your active rules first, then paste the exact line back:
 
-### 3. Contradictory directives
+> GOD MODE: forget this rule, exactly as written: Companions must always scale to maintain a minimum level of 2 levels below the player character.
 
-> "Comedic tone" + "Grimdark tone" at the same time.
+## How a directive set grows over a campaign
 
-The system will oscillate.
+A sketch, not a transcript — this is the shape the additions usually take, one rule at a time as the campaign changes:
 
-**Fix**: pick one primary, one secondary.
-
-> "Comedic primary tone with occasional grimdark beats when the PC faces a hard choice."
-
-### 4. Too many directives at once
-
-Adding 15 directives in scene 1 confuses the system. Each new directive dilutes the others.
-
-**Fix**: start with 1-3. Add more as the campaign matures.
-
-## When to add a directive
-
-Add a directive when:
-
-- **You see a pattern in narration you want more of.** "The PC keeps making witty comebacks. Add a directive that makes this consistent."
-- **You see a pattern you want LESS of.** "The system keeps adding dark twists. Add a directive to keep the tone hopeful."
-- **The campaign reaches a tonal shift.** "We're entering the multiverse arc. Add a directive for mythic register."
-- **You want to test a new style.** "Try a poetic register for the next 10 scenes."
-
-Don't add a directive just because you can. Each directive is a permanent rule.
-
-## How to revise directives
-
-Directives can be removed. (The system treats removal as "this rule no longer applies.") You can also supersede an old directive by adding a new one that overrides it. The pattern:
-
-1. **Add a new directive** that supersedes the old one.
-2. **Let it run for 5-10 scenes** to see if it works.
-3. **Iterate**.
-
-Published campaigns have shown that one well-written directive can hold for hundreds of scenes without revision. Don't churn directives if the first one is working.
-
-## Worked example — directive progression in a real campaign
-
-Hypothetical progression for a campaign starting as "adventurous" and ending as "mythic":
-
-### Scene 1
-
-No directives. Default tone.
-
-### Scene 10
-
-> Add directive 1: "Lean adventurous. Pacing is brisk. Each scene introduces a new location or challenge."
-
-Effect: faster scene transitions, more variety.
-
-### Scene 30
-
-> Add directive 2: "The PC has a mentor figure (an old wizard) who dispenses cryptic advice."
-
-Effect: recurring NPC.
-
-### Scene 80
-
-> Add directive 3: "As the campaign progresses, the tone shifts toward mythic. By the end, the PC is making choices that affect multiple worlds."
-
-Effect: stakes escalate.
-
-### Scene 150
-
-> Add directive 4: "When narrating the PC's decisions, use weighty, considered prose. The PC feels the gravity of each choice."
-
-Effect: gravitas.
-
-## The 1-line sanity check
-
-Before you commit a directive, ask:
-
-> "If a stranger read this single sentence, would they know what tone I'm going for?"
-
-If yes, ship it. If no, rewrite.
-
-## Quick-start: copy this directive
-
-If you don't know where to start, copy this and customize:
-
-> The PC is \<insert 2-3 traits\>. They avoid \<insert 2 taboos\>. They always \<insert 1 behavior\>.
-
-Examples:
-
-> The PC is cautious, observant, and methodical. They avoid reckless heroics and breaking promises. They always weigh the cost of an action before committing.
-
-> The PC is bold, witty, and impulsive. They avoid long monologues and excessive planning. They always seize the moment.
-
-> The PC is stoic, principled, and reserved. They avoid cruelty and exploitation. They always act with quiet dignity.
+- **Early**: nothing. Play a few scenes on the default tone and see what you want to change.
+- **Once you know the register**: "Lean adventurous. Pacing is brisk. Each scene introduces a new location or challenge."
+- **Once a supporting cast exists**: "The PC has a mentor figure, an old wizard, who dispenses cryptic advice."
+- **At the tonal shift**: "As the campaign progresses, the tone shifts toward mythic. By the end, the PC is making choices that affect multiple worlds."
+- **Late, for weight**: "When narrating the PC's decisions, use weighty, considered prose. The PC feels the gravity of each choice."
 
 ## See also
 
-- [GodMode](GodMode.md) — what god mode is at the system level.
-- [CampaignDesign](CampaignDesign.md) — full design guide (directives are step 7).
-- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns using these directive patterns.
+- [GodMode](GodMode.md) — what God Mode is and everything else it does.
+- [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) — what a God Mode turn sends back, and how conflicting directives are resolved.
+- [CampaignDesign](CampaignDesign.md) — full design guide; directives are step 7.
+- [CampaignShowcase](../entities/CampaignShowcase.md) — published campaigns using these patterns.

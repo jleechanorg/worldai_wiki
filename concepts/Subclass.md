@@ -1,7 +1,7 @@
 ---
 title: Subclass
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -9,37 +9,53 @@ sources: []
 
 # Subclass
 
-At certain level milestones (typically 1st, 2nd, or 3rd level depending on class), you choose a subclass that defines your character's specialty.
+Your subclass is your specialty within your class — the difference between a
+Champion Fighter who just hits harder and a Battle Master who controls the fight.
+You choose it at 1st, 2nd or 3rd level depending on your class.
 
-## Subclass levels by class
+## When you choose
 
-| Class | Subclass level |
-|-------|----------------|
-| Artificer | 3rd |
-| Barbarian | 3rd (Path) |
-| Bard | 3rd (College) |
-| Cleric | 1st (Domain) |
-| Druid | 2nd (Circle) |
-| Fighter | 3rd (Martial Archetype) |
-| Monk | 3rd (Way) |
-| Paladin | 3rd (Oath) |
-| Ranger | 3rd (Conclave) |
-| Rogue | 3rd (Archetype) |
-| Sorcerer | 1st (Origin) |
-| Warlock | 1st (Otherworldly Patron) |
-| Wizard | 2nd (Arcane Tradition) |
+| Class | Subclass level | Called |
+|-------|----------------|--------|
+| Cleric | 1st | Domain |
+| Sorcerer | 1st | Origin |
+| Warlock | 1st | Otherworldly Patron |
+| Druid | 2nd | Circle |
+| Wizard | 2nd | Arcane Tradition |
+| Artificer | 3rd | Artificer Specialist |
+| Barbarian | 3rd | Path |
+| Bard | 3rd | College |
+| Fighter | 3rd | Martial Archetype |
+| Monk | 3rd | Way |
+| Paladin | 3rd | Oath |
+| Ranger | 3rd | Conclave |
+| Rogue | 3rd | Archetype |
 
-## What subclasses do
+The AI picks a subclass for you when you reach that level and applies it. To pick
+a different one, open the **Review Level-Up Choices** option — see
+[LevelUp](LevelUp.md).
 
-Subclasses grant:
-- **Subclass features** at levels 1, 6, 10, 14 (and sometimes more)
-- **Subclass-specific spells** (Cleric domains, Warlock patrons, etc.)
-- **Mechanical identity**: a Champion Fighter plays very differently from a Battle Master.
+## What it gives you
 
-## Choosing a subclass
+- **Features at several later levels.** The exact levels depend on your class — a
+  Cleric's domain and a Fighter's archetype are on completely different
+  schedules — so check your own class rather than assuming a shared pattern.
+- **Extra spells**, for the subclasses that grant them (Cleric domains, Warlock
+  patrons, and the Eldritch Knight and Arcane Trickster, who get spellcasting
+  their base class doesn't have).
+- **A way to play.** Most of what makes two characters of the same class feel
+  different comes from here.
 
-- **Flavor first**: which concept excites you?
-- **Then mechanics**: which subclass has features you'll actually use?
-- **Build for the campaign length**: if the campaign is short (1-10), pick a subclass that comes online early.
+## Choosing
 
-See [CharacterCreation](CharacterCreation.md), [LevelUp](LevelUp.md), [ASI](ASI.md).
+- **Start from the concept.** Which version of your class do you actually want to
+  play?
+- **Then check the features.** Read what it grants and ask whether you'll use it
+  in the campaign you're in — a stealth subclass is wasted on a war story.
+- **Check when its features arrive.** Some subclasses hand you their signature
+  trick immediately; others hold it back for several levels. Look up the schedule
+  for the one you are considering, and if you expect a short campaign, favour a
+  subclass whose best feature lands near the level you pick it at.
+
+See [CharacterCreation](CharacterCreation.md), [LevelUp](LevelUp.md), and
+[ASI](ASI.md).

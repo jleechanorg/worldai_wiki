@@ -30,7 +30,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 GITHUB_BLOB_BASE = "https://github.com/jleechanorg/worldai_wiki/blob/main"
 WIKI_DIRS = ["concepts", "entities", "comparisons", "queries"]
-TOP_LEVEL_PAGES = ["README.md", "SCHEMA.md", "index.md"]
 
 # Links matching these patterns are skipped (examples, placeholders, etc.)
 SKIP_PATTERNS = [
@@ -55,10 +54,7 @@ def _all_md_files(root: Path) -> list[Path]:
         dpath = root / d
         if dpath.exists():
             files.extend(sorted(dpath.glob("*.md")))
-    for name in TOP_LEVEL_PAGES:
-        p = root / name
-        if p.exists():
-            files.append(p)
+    files.extend(sorted(root.glob("*.md")))
     return files
 
 

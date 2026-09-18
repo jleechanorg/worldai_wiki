@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -9,72 +9,69 @@ sources: []
 
 # God Mode
 
-God Mode is a player-supplied set of style rules that shape how the AI Game Master narrates your campaign. It's the single most powerful customization lever you have.
+God Mode is the game's pause menu. Switch to it and the world freezes — the story does not advance, NPCs do not act, no dice are rolled — and you talk to the system as an administrator instead of as your character. What you say there is simply true.
 
-## What it is
+## How to enter it
 
-When you create a campaign, you supply a "God Mode" prompt — a header that describes your character, setting, and tone. After the campaign starts, you can also add **directives** that tell the GM how to handle specific situations.
+Two ways, and they do the same thing:
 
-Two layers:
+1. Pick the **God** pill under the message box, then type your request.
+2. Stay in Character mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
-1. **God Mode Header** (set at campaign creation): character + setting + tone. Example:
-   > Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
-2. **god_mode_directives** (added during play): ongoing style rules. Stored in `custom_campaign_state.god_mode_directives` as a list of `{added, rule}` entries.
+Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored.
 
-## Why it matters
+## What God Mode can do
 
-Without god mode directives, the GM defaults to "balanced D&D 5e narrative" — serviceable but generic. With good directives, the same engine produces stoic poetic prose, or grimdark survival horror, or comedic buddy-cop banter.
+**Edit your character.** HP, gold, XP, level, ability scores, equipment, spell slots.
 
-## How to write good directives
+**Edit the world.** Spawn or delete NPCs, items and locations; teleport anywhere instantly; add, complete or remove missions; change difficulty and other campaign settings.
 
-See [GodModePrompting](GodModePrompting.md) for the full guide. Quick formula:
+**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. If the log contradicts what you meant, you can correct the record instead of playing around it.
 
-> X is/does Y. Avoid Z. Always W.
+**Clear stuck state.** Combat that never ended, a level-up that never resolved, a stale banner in the session header — God Mode is where those get reset.
 
-Example (real directive from the Itachi V2 campaign):
-> Uchiha Itachi is stoic, minimalist, and humble. He avoids grandstanding or arrogant terminology (e.g., 'math', 'laboratory', 'geometry'). He speaks with polite authority and views his power as a necessary, heavy burden for the sake of peace.
+**Set directives.** Standing rules the GM follows in every later scene: "narrate in second person", "companions never fall more than one level behind me", "don't bring up the siege until I ask". Directives are the part players use most, and [GodModePrompting](GodModePrompting.md) is the guide to writing them.
 
-## Where directives live
+**Move the clock, if you ask outright.** "Set time to Day 10" works. Time never passes on its own during a God Mode turn, and the clock is never wound backwards to patch a continuity slip — those corrections are stored as directives or memories instead.
 
-Directives are stored on the campaign's `custom_campaign_state` document in Firestore:
+## What God Mode can't do
 
-```json
-{
-  "custom_campaign_state": {
-    "god_mode_directives": [
-      {
-        "added": "2026-05-30T23:00:00Z",
-        "rule": "Uchiha Itachi is stoic, minimalist, and humble..."
-      }
-    ]
-  }
-}
-```
+- **Roll dice.** God Mode commands are absolute. No skill check, no attack roll, no saving throw.
+- **Resolve combat.** It will set your HP to 1 or to 200, but it will not fight the round for you.
+- **Advance the story.** No prose, no NPC dialogue, no new scene. Go back to Character mode for that.
+- **Rewind world time to fix a timeline.** Continuity fixes become directives or memories, not a clock change.
 
-You can view and edit these from the campaign's settings panel during play.
+Everything above is absolute except directives. A directive steers how the GM writes future scenes, and the GM can still miss one.
 
-## The 9 directive categories
+## Two layers: the header and your directives
 
-1. **Tone**: stoic, dramatic, comedic, grimdark, hopeful
-2. **Voice**: minimalist, verbose, poetic, terse
-3. **POV**: 1st person, 2nd person, 3rd person limited, omniscient
-4. **Pacing**: fast action, slow burn, scene-by-scene
-5. **Themes**: redemption, vengeance, discovery, duty, hubris
-6. **Taboos**: things the player explicitly told the GM NOT to do
-7. **Power-level**: bounded (level 1-5 only), escalating (start at L1, level freely), sandbox (any level)
-8. **Companion rules**: relationship dynamics, romance allowed, party banter level
-9. **World rules**: no resurrection, low magic, all-TPK-on-combat-failure, etc.
+1. **The God Mode header**, set once, when you create the campaign. What you typed in the Campaign Wizard — title, setting, character, description — becomes the campaign's seed, and that is what makes scene 1 a Naruto campaign rather than generic fantasy.
+2. **Directives**, added during play. They are saved with the campaign, so they survive reloads and are still in force next session. You cannot add directives from the wizard — they only exist once a campaign is running.
 
-See [GodModePrompting](GodModePrompting.md) for full examples of each.
+Each directive is kept with the date you added it, so you can ask for one to be replaced or dropped without disturbing the rest.
+
+## Seeing your directives
+
+There is no settings screen for directives. To see the ones you have, switch to God mode and ask for them outright:
+
+> GOD MODE: list my active rules
+
+Asked directly like that, the GM reads the campaign's stored list back to you. It won't volunteer the list otherwise, and a vaguely worded question may get a partial answer, so ask for a full recap when you want to check the whole set. To change one, add a replacement or ask the GM to forget the old one — see [GodModePrompting](GodModePrompting.md#how-to-revise-and-drop-directives).
+
+## What a God Mode turn gives back
+
+A confirmation line instead of a scene, the state change applied immediately, and three follow-up buttons that always include **Return to story**, plus the usual **Custom Action** button. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
 
 ## Player tips
 
-- **Directives apply across scenes**: once set, they affect every narration until removed.
-- **Layer directives over time**: add new ones as the campaign matures.
-- **Don't fight the rules engine**: "Never roll dice" doesn't work; the system enforces dice. But "Don't dwell on dice mechanics in narration" works.
-- **Test small first**: add one directive, see how it affects narration, then add more.
+- **One change per turn.** A God Mode turn that does five unrelated things is harder to check than five turns that each do one.
+- **Directives cannot switch the rules off.** "Never roll dice" will not work; dice are rolled server-side. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
+- **Add directives gradually.** One at a time, watch how narration changes, then add more. Fifteen at once dilute each other.
+- **What directives are good for**: tone, voice, POV, pacing, themes, taboos, power level, companion behaviour and world rules. [GodModePrompting](GodModePrompting.md#what-directives-can-steer) has a worked table for each.
 
-## Sources
+## See also
 
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b_game_state.json` — `custom_campaign_state.god_mode_directives`.
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b.txt` — full 432-scene campaign showing directives in action.
+- [GodModePrompting](GodModePrompting.md) — how to write directives that land.
+- [ThinkMode](ThinkMode.md) — the other frozen-world mode, for planning in character.
+- [GodModeFAQ](../queries/GodModeFAQ.md) — short answers.
+- [ItachiGaiden](../entities/ItachiGaiden.md) — a 432-scene campaign held together by one directive.

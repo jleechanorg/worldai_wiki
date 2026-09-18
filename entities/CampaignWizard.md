@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-system]
 sources: []
@@ -9,16 +9,10 @@ sources: []
 
 # Campaign Wizard
 
-The 3-step UI flow for creating a new campaign. See [CampaignWizard](../concepts/CampaignWizard.md) for the player-facing guide.
+The 2-step flow for creating a new campaign: **Choose Your Campaign**, then **Ready to Launch**.
 
-## The 3 steps
+Pick **Play a campaign** to build your own world — Universe, Era, Character, Setting, What-If direction, Title, and an optional long-form Campaign description prompt — the last section on Step 1, collapsed behind an **Expand** button — big enough for a whole world bible. Pick **Dragon Knight Campaign** and it becomes a fixed module: Universe, Era, and What-If disappear, and Character, Setting, and the description are filled in and locked.
 
-1. **Setting**: choose built-in or describe custom.
-2. **Character**: AI-generated, hand-rolled, or preset.
-3. **Companion**: optional starting companion.
+Step 2 takes an optional avatar, shows a summary card you can edit in place, and launches you into Scene 1, where the GM presents your character sheet for review before your first action.
 
-Each step takes 30 seconds to a few minutes depending on choices.
-
-## What happens after
-
-The campaign starts in Scene 1. The GM narrates the opening, and the player takes their first action.
+Full walkthrough: [CampaignWizard](../concepts/CampaignWizard.md). See also [CampaignDesign](../concepts/CampaignDesign.md) and [How to Play](../queries/how-to-play-worldai.md).
