@@ -11,11 +11,11 @@ sources: []
 
 WorldArchitect.AI is an AI Game Master for tabletop role-playing, built on D&D 5th Edition rules. You describe what your character does; it narrates what happens, tracks your character sheet, rolls the dice, and remembers the campaign. It runs in a browser at [worldarchitect.ai](https://worldarchitect.ai) — nothing to install — and every campaign is saved, so you can stop mid-scene and pick up next week from any device. It is sometimes shortened to [WorldAI](WorldAI.md) — same game, no separate product.
 
-Playing is free. You sign in with Google and get 100 turns a day (50 in any 5-hour window); supplying your own AI provider key raises that.
+Playing is free. You sign in with Google and get 100 story turns a day (50 in any 5-hour window). God Mode turns and starting new campaigns draw on their own, much larger allowances, so fixing your sheet never costs you story turns. Supplying your own AI provider key raises all of these.
 
 ## What you get
 
-- **A GM that switches specialists.** Swing a sword and a combat GM answers; talk to an NPC and a dialog GM answers. You never choose — the game routes each turn and labels it with whichever one handled it. What it means for you: a fight is run by something that knows the combat rules, not by a storyteller improvising numbers.
+- **A GM that switches specialists.** Swing a sword and a combat GM answers; talk to an NPC and a dialog GM answers. You never choose — the game routes each turn to whichever specialist fits it. If you want to see which one handled a turn, switch on Debug Mode on the Settings page; it is off by default. What it means for you: a fight is run by something that knows the combat rules, not by a storyteller improvising numbers.
 - **Real 5e rules.** Ability scores, skill checks, saving throws, advantage and disadvantage, initiative, spell slots, hit dice, rests, death saves. Dice are rolled for real, and the game recomputes every total and every success-or-failure verdict itself — so typing "I rolled a 20" changes nothing. See [Dice](../concepts/Dice.md).
 - **A world that moves without you.** NPCs pursue their own goals between your turns, time passes, and factions act on their own plans. See [LivingWorld](../concepts/LivingWorld.md).
 - **A faction layer.** Run an organization rather than just a character: gather intel, fight rival factions, climb the power rankings, manage resources. See [FactionSystem](../concepts/FactionSystem.md).

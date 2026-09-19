@@ -71,7 +71,7 @@ See [Combat](../concepts/Combat.md).
 **I want** the moves I could plausibly make offered as buttons under the turn I just read,
 **So that** I can take an obvious option in one tap without losing the ability to type something nobody suggested.
 
-They appear on every story turn, not only at dramatic moments. In ordinary play you get four of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get three, without the pros and cons. Character creation and level-up offer their own shorter menus instead. A final **Custom Action** button always sits at the end of the list, and the free-text box never stops accepting anything you type.
+They appear on every story turn, not only at dramatic moments. In ordinary play you usually get three to five of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get two to four administrative options — always including one that returns you to the story — without the pros and cons. Character creation and level-up offer their own shorter menus instead. A final **Custom Action** button always sits at the end of the list, and the free-text box never stops accepting anything you type.
 
 ---
 
@@ -98,7 +98,7 @@ The big difference from tabletop: nothing stops to make you fill in a form. When
 **I want** the full new level — hit points, features, spells, proficiencies — applied on that same turn, with a review window afterwards where I can change what the game chose for me,
 **So that** play never stops to make me fill in a form, and my sheet is never left half-levelled.
 
-While a review is open the game keeps you on it: an unrelated action gets folded back into the pending step rather than resolved.
+The review window does not hold up play: after an automatic level-up your next ordinary action is resolved as normal, and the new sheet stays open to amendment until you finish the review. Only once you actually open the review does the game keep you on it until you close it.
 
 See [LevelUp](../concepts/LevelUp.md), [LevelUpProgression](../concepts/LevelUpProgression.md).
 
@@ -244,11 +244,11 @@ See [FactionBattleSim](../entities/FactionBattleSim.md).
 
 ## 7. Shaping the campaign and God Mode
 
-You set the premise when you create the campaign and steer everything else in play. The mode selector above the action box is how you get from playing your character to editing the world.
+You set the premise when you create the campaign and steer everything else in play. The mode selector just below the action box is how you get from playing your character to editing the world.
 
 | ID | What you get |
 |----|--------------|
-| US-065a | Three modes above the action box: Character, Think/Plan, and God. |
+| US-065a | Three modes just below the action box: Character, Think/Plan, and God. |
 | US-065 | Describe your campaign in plain English when you create it. |
 | US-066 | Standing directives that the GM has to keep following. |
 | US-067 | Say in your description whether you want a starting party, and the game builds one or leaves you alone. |
@@ -259,7 +259,7 @@ You set the premise when you create the campaign and steer everything else in pl
 ### US-065a: Choose How You're Speaking — Character, Think/Plan, or God
 
 **As a** player typing into the action box,
-**I want** three modes on the selector above it — Character (what you type is what your character does), Think/Plan (pause the story for a breakdown of your options with pros and cons, with no time passing), and God (edit the world directly — stats, items, location — with the story paused),
+**I want** three modes on the selector just below it — Character (what you type is what your character does), Think/Plan (pause the story for a breakdown of your options with pros and cons, with no time passing), and God (edit the world directly — stats, items, location — with the story paused),
 **So that** I can act, plan, or fix something without any of the three bleeding into the others.
 
 This selector is how you reach God Mode; the stories below describe what God Mode does once you are in it.

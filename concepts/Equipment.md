@@ -46,8 +46,8 @@ Asking in plain language works too — "what am I carrying", "show me my gear", 
 
 ## Gear changes your numbers
 
-Stats written on an item are applied automatically. A cloak reading `+1 AC, +1 saving throws` raises both. A belt reading `+2 STR (Max 20)` raises Strength but stops at 20 — the cap on the item is respected, not ignored.
+Ability scores, AC, spell save DC and spell attack bonuses written on an item are applied automatically. A cloak reading `+1 AC, +1 saving throws` raises your AC; the saving-throw half is left to the GM in the fiction rather than added to the save numbers on your sheet. A belt reading `+2 STR (Max 20)` raises Strength but stops at 20 — the cap on the item is respected, not ignored.
 
-The **Stats** panel spells this out per ability score: a Base column, an Effective column showing `16 → 18` when gear is lifting it, the resulting modifier, and a Bonus column with the amount your equipment contributed. You can always see which item is doing the work.
+The **Stats** panel spells this out per ability score: a Base column, an Effective column showing `16 → 18` when gear is lifting it, the resulting modifier, and a Bonus column with the total your equipment contributed. The number is the sum of every equipped item's contribution — open the Equipment panel to see which items are carrying it.
 
 See [LootAndRewards](LootAndRewards.md) for how you acquire items, and [CharacterCreation](CharacterCreation.md) for the starting-gear rules.

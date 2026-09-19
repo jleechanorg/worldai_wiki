@@ -49,7 +49,7 @@ Rank is nothing more than every faction sorted by FP. You are measured against 2
 
 Below **1,000 FP you are not ranked at all**. The game shows you as unranked and tells you how much FP you still need to get on the board; 1,000 FP puts you at #201. Ask `faction rankings` at any time and the game will also tell you the exact gap to the faction directly above you.
 
-Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5,000 FP and the strongest are in the hundreds of thousands, so a faction that has just switched the layer on normally lands at #199–#201. Climbing out of the low ranks is the early game.
+Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5,000 FP and the strongest open near 1.5 million, so a faction that has just switched the layer on normally lands somewhere between #188 and #201. Climbing out of the low ranks is the early game.
 
 ## What rank does and does not do
 

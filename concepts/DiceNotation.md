@@ -26,7 +26,7 @@ The grammar behind every roll in the dice area. You will mostly be reading it ra
 
 Nearly every keep/drop roll you will see is `2d20kh1` or `2d20kl1`. There is no `adv` or `dis` suffix — `1d20+5 (advantage)` is not valid notation here.
 
-The modifier is added once, to the kept die only: `2d20kh1+5` on faces 8 and 17 totals 22, not 30. Both faces stay on screen so you can see which one was dropped.
+The modifier is added once, to the kept die only: `2d20kh1+5` on faces 8 and 17 totals 22, not 30. The dice area prints the notation and the final total, as in `2d20kh1+5 = 22` — the `kh1` is what tells you two dice were rolled and one was dropped. The individual faces are not printed alongside it.
 
 ## Rerolls
 
@@ -56,7 +56,7 @@ Ability scores are never rolled — character creation uses Point Buy, the Stand
 
 - **The number before the `d` is how many dice, not how many sides.** `1d20` is a single twenty-sided die rolled once — not twenty rolls, and not twenty dice. `20d6` would be twenty six-sided dice, which is a completely different roll.
 - **Modifiers are added once**, not per die. `2d6+3` is two d6 summed, then +3 — not 2 × (d6+3).
-- **On an advantage roll the modifier applies to the kept die only.** `2d20kh1+5` on faces 8 and 17 totals 22. The dropped face is shown but adds nothing.
+- **On an advantage roll the modifier applies to the kept die only.** `2d20kh1+5` on faces 8 and 17 totals 22. The dropped die contributes nothing, and the `kh1` in the notation is your only on-screen cue that it was rolled at all.
 - **Negative modifiers are applied straight.** `1d20-5` ranges from -4 to 15; the total is not floored at 0 or 1. What a negative total means is up to the rule being checked — a check simply fails.
 - **Critical hits** (a natural 20 on an attack roll) double the damage dice, not the flat damage bonus.
 

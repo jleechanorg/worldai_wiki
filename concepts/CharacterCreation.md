@@ -85,7 +85,7 @@ Underneath, the sheet still uses D&D 5e fields (race, class, ability scores, ski
 Three of the numbered sections on the first wizard step shape your character. All three are optional:
 
 - **Favourite Character / Chosen Protagonist** — e.g. `Uchiha Itachi`. Leave it blank and the game picks one at random.
-- **Setting / world for your adventure** — e.g. `Naruto universe`. Blank gives you a random fantasy world.
+- **Setting / world for your adventure** — a few lines on the place itself, e.g. `a hidden shinobi village on a war footing`. Leave it blank and the world is inferred from whatever else you wrote; if you typed a universe, it is copied in for you. Only a form where the universe, character, setting, plot and description boxes are *all* empty falls back to a random fantasy world.
 - **Campaign description prompt** — the last section, and the one people miss: it starts collapsed behind an **Expand** button. Open it and you get a free-text box for the premise, as long as you like: `Itachi when he was young and had just become an ANBU member. Itachi Gaiden arc.`
 
 ## Player tips

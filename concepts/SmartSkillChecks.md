@@ -25,7 +25,7 @@ The mapping follows your wording, so if you meant to lean on someone rather than
 
 `1d20 + ability modifier + proficiency bonus (if proficient)`
 
-That's the whole formula. Circumstances — tools, preparation, high ground, being drunk — never change your roll; they change the DC instead.
+That's the whole formula. Tactical circumstances — tools, preparation, high ground, leverage — don't change your roll; they change the DC instead. Conditions on your character are the exception: exhaustion, poison, fear and similar states impose advantage or disadvantage on the die itself.
 
 **Proficiency** depends only on your level:
 
@@ -77,7 +77,7 @@ A spell or class feature that grants a bonus die (Bardic Inspiration, Bless) is 
 
 - **Lockpicking**: a level 5 Rogue with 20 DEX and Expertise in Thieves' Tools rolls `1d20 +5 (DEX) +6 (double proficiency)` = `1d20+11`. Against a standard iron lock at DC 14, anything but a 1 or a 2 opens it.
 - **Persuasion**: a level 5 Bard with 20 CHA and Persuasion proficiency rolls `1d20 +5 (CHA) +3 (proficiency)` = `1d20+8`.
-- **Stealth in heavy armor**: heavy armor you aren't trained in imposes disadvantage, so you roll twice and keep the *lower*. High DEX doesn't save you.
+- **Stealth in heavy armor**: bulky armor carries a Stealth penalty as a property of the armor itself — you roll twice and keep the *lower*. Being trained in heavy armor does not remove it; only armor specifically built to avoid it (mithral plate and the like) does. High DEX doesn't save you.
 
 ## Player tips
 

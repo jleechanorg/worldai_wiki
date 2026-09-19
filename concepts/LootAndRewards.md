@@ -19,9 +19,9 @@ narration when you find them, but the tracked amounts live on your sheet.
 
 ## XP
 
-XP is paced, not counted up from enemy stats. Every award is a slice of the XP
-you still need for your current level, so progress feels about the same at
-level 3 and at level 13:
+XP is paced, not counted up from enemy stats. Every award is a slice of your
+current level's full XP span — the gap between the threshold you reached and the
+next one — so progress feels about the same at level 3 and at level 13:
 
 - **Routine wins give nothing** — an easy fight, an ordinary skill check, or
   re-checking something you already finished.

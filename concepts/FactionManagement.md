@@ -40,7 +40,7 @@ Weekly upkeep runs 0.5gp per soldier, 1gp per spy, 5gp per elite. Recruit with `
 
 ## Buildings
 
-Build with `build [type] [qty]`; `upgrade` and `demolish` work the same way. Construction finishes at the end of a turn.
+Build with `build [type] [qty]`; `demolish [type] [qty]` works the same way, and `upgrade [type]` takes just the building type. Construction finishes at the end of a turn.
 
 | Building | Cost | Turns | What it does |
 |---|---:|---:|---|

@@ -43,7 +43,7 @@ Your account also has an **Enable Faction Minigame** switch under **Settings →
 
 ## Q: How do rankings work?
 
-**A**: Every faction is sorted by Faction Power. You are ranked against 200 rivals, so ranks run #1 to #201, and below 1,000 FP you are unranked entirely. Expect to start near the bottom — the weakest rival opens around 5,000 power. Climbing is not risky: rivals only attack targets they outgun, so a higher rank means fewer of them can come after you. #1 is the top of the ladder, with no rival left above you.
+**A**: Every faction is sorted by Faction Power. You are ranked against 200 rivals, so ranks run #1 to #201, and below 1,000 FP you are unranked entirely. Expect to start near the bottom — the weakest rival opens around 5,000 power. Climbing does not make you safe: the balanced rivals only attack targets they clearly outgun, but the 60 aggressive ones will pick a fight with anything up to about a quarter stronger than themselves. #1 is the top of the ladder, with no rival left above you.
 
 ## Q: Can I ally with other factions?
 
@@ -51,7 +51,7 @@ Your account also has an **Enable Faction Minigame** switch under **Settings →
 
 ## Q: What if I ignore my faction for a while?
 
-**A**: Your faction sits where you left it. Nothing drains away on a schedule and no penalty fires after a set number of turns. The real cost is that the 200 rivals keep growing 1–2% every turn, so your rank drifts down even though your own power has not changed. Troops also resume costing weekly upkeep as soon as you take another turn.
+**A**: Your faction sits where you left it. Nothing drains away on a schedule and no penalty fires after a set number of turns. Rival factions only grow when you `end turn`, so skipping your strategic turns freezes the whole ladder with you — your rank does not drift while you are away. The cost lands when you come back: every `end turn` grows the 200 rivals by 1–2%, and troops resume costing weekly upkeep the moment you end another turn.
 
 ## Q: How long is a faction turn?
 

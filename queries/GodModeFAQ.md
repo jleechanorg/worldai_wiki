@@ -45,14 +45,14 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 
 ## Q: Can directives change plot beats?
 
-**A**: No. Directives shape how something happens, not whether. You can't tell the GM never to kill your character — but you can change your HP directly from God Mode, which is a different lever.
+**A**: Yes, within limits. A directive can hold a beat back — "delay the rebellion until I ask for it" becomes a stored rule the GM checks every turn, and an open-ended delay only lifts when you explicitly ask for it. What a directive can't do is decide the outcome of a scene you're already playing; for that, change your HP or remove the threat directly from God Mode.
 
 ## Q: Does God Mode affect combat?
 
 **A**: Two answers, depending on which part you mean.
 
 - **God Mode itself**: yes, directly. Set your HP, restore spell slots, hand yourself a weapon, delete an enemy. What it won't do is *resolve* the fight — God Mode never rolls dice and never takes a combat turn.
-- **Directives**: only indirectly. A directive shapes how a fight is written, not who wins it.
+- **Directives**: yes, and not only in tone. A directive can be mechanical — "always apply Foresight advantage to my rolls", "my specialists always cast Haste on me: +2 AC and an extra action" — and the GM applies it on every later turn. What a directive won't do is resolve the fight for you; the dice are still rolled in story mode.
 
 ## Q: Do God Mode turns use up my normal turns?
 

@@ -41,8 +41,8 @@ Ability scores are never rolled here. Character creation offers Point Buy (27 po
 
 1. **You describe an action** — "I attack the goblin", "I try to talk the guard down".
 2. **The GM works out what to roll** and, for anything with a pass or fail, fixes the target number and records why — before any dice exist.
-3. **The dice are produced** from a secret seed the server committed to in advance.
-4. **The server checks and recomputes.** It confirms the seed, confirms every face is possible for that die, applies the keep-highest or keep-lowest rule, adds the modifier, and decides success or failure itself. Its numbers are the ones stored and shown.
+3. **The dice are produced.** On the default models the server hands the roller a secret seed it committed to in advance; on the other models the server rolls them itself.
+4. **The server checks and recomputes.** Where there was a seed it confirms it, confirms every face is possible for that die, applies the keep-highest or keep-lowest rule, adds the modifier, and decides success or failure itself. Its numbers are the ones stored and shown.
 5. **You see the rolls and the narration together**, and your HP, conditions, and resources update.
 
 There is no Roll button, no Attack button, and no dice tray. Which side physically generates the numbers depends on the AI model running your campaign: on the default models, the model runs real random-number code in a sandbox using the server's seed; on others the server rolls directly. Either way the server owns the arithmetic and the verdict — see [DiceAuthenticity](DiceAuthenticity.md).
@@ -69,7 +69,7 @@ Both kinds are resolved the same way and show up in the same dice area.
 
 If you would rather read the story than the arithmetic, turn on **Settings → Display → Hide dice rolls**. The dice area then shows a short phrase describing how the roll went instead of the raw numbers. Tap that phrase to reveal the actual roll for five seconds. Combat summaries and loot stay visible either way.
 
-A campaign creator can set this as the default for their campaign. Your own setting always wins over theirs.
+This is a per-account setting: turn it on once and it applies to every campaign you play.
 
 ## Player tips
 

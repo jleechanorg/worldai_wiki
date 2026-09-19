@@ -29,7 +29,7 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 **Three minutes to launch:**
 
 1. **Sign in** at [worldarchitect.ai](https://worldarchitect.ai) with Google.
-2. **Click "Play a campaign"** on the dashboard — not the **Quick Start** button beside it, which drops you straight into the pre-built Dragon Knight adventure. On the next screen the campaign type **Play a campaign** is already selected; leave it.
+2. **Click "Play a campaign"** on the dashboard — it is the only way into the campaign wizard. On the next screen the campaign type **Play a campaign** is already selected; leave it.
 3. **Fill the seven numbered fields:**
 
 | # | Field | Paste this |
@@ -277,7 +277,7 @@ The Quick Setup above is the minimum. This is the annotated version.
 
 **Sign in.** Go to [worldarchitect.ai](https://worldarchitect.ai) and click **Continue with Google** in the centre of the page. Your dashboard loads.
 
-**Open the wizard.** Click **Play a campaign** on the dashboard. (The **Quick Start • Express Launch** button next to it skips the wizard entirely and launches the pre-built Dragon Knight adventure — not what you want here.) The wizard opens on a two-step indicator: **1 Choose Type → 2 Launch**.
+**Open the wizard.** Click **Play a campaign** on the dashboard. The wizard opens on a two-step indicator: **1 Choose Type → 2 Launch**.
 
 **Leave the campaign type alone.** **Play a campaign** is already selected. The alternative, **Dragon Knight Campaign**, is a built-in starter adventure with its own world.
 

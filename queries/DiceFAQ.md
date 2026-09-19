@@ -17,13 +17,13 @@ Common dice questions answered.
 
 ## Q: My dice rolls disappeared and I just see a phrase. What happened?
 
-**A**: **Hide dice rolls** is on. Either you turned it on in Settings → Display, or the campaign creator set it as that campaign's default. Tap the phrase to see the actual roll for five seconds, or switch the setting off in Settings → Display — your own setting always overrides the campaign default.
+**A**: **Hide dice rolls** is on. You turned it on in Settings → Display — that switch is the only thing that hides the dice area. Tap the phrase to see the actual roll for five seconds, or switch it back off in Settings → Display.
 
 ## Q: Can I see the roll history?
 
-**A**: Only by scrolling. Every turn shows its own rolls in the 🎲 Dice Rolls area above the narration, so scrolling back through the story walks you through every roll in order.
+**A**: In the game, by scrolling. Every turn shows its own rolls in the 🎲 Dice Rolls area above the narration, so scrolling back through the story walks you through every roll in order. You can also download the whole story (.txt, .pdf, or .docx) from the game header — the rolls come with it.
 
-Turning on **Settings → Debug Mode** adds more to each turn: the GM's roll-by-roll working, including rolls normally made behind the screen, such as a guard's Perception check against your Stealth. It is still turn by turn, though — there is no separate roll-log screen and no way to export the rolls.
+Turning on **Settings → Debug Mode** adds more to each turn: the GM's roll-by-roll working, including rolls normally made behind the screen, such as a guard's Perception check against your Stealth. It is still turn by turn, though — there is no separate roll-log screen. If you want the rolls outside the game, use the download button in the game header and save the story as .txt, .pdf, or .docx: each turn's dice rolls are written into the exported file alongside the narration.
 
 ## Q: What does "1d20+5" mean?
 

@@ -27,7 +27,8 @@ level. A 5th-level Wizard, for instance, has four 1st-level slots, three
 
 A bigger slot can cast a smaller spell, and the spell gets stronger for it —
 this is **upcasting**. That same Wizard can spend a 3rd-level slot on Fireball,
-or on Burning Hands for an extra 1d6 of damage.
+or on Burning Hands for an extra 2d6 of damage — an upcast spell gains its
+bonus die for each slot level above its own level.
 
 Slots only come back when you actually rest ([RestAndDeath](RestAndDeath.md)) —
 long rest for most casters, short rest for Warlocks. In ordinary play the GM

@@ -70,7 +70,7 @@ The system picks up on the archetype and generates scenarios that test it (rival
 
 Sylphina's backstory grants her "Level 10 Divine Blessings" from seven gods, and the GM narrates her that way: she out-thinks and out-casts people well above her weight. At the campaign's saved state her character sheet still reads level 6 — close to 7, but not there yet.
 
-A grand origin changes how scenes are written. Levels still come from play. Plan for that if you want mechanical power and not just narrative standing.
+A grand origin changes how scenes are written, but flavor alone does not move your character sheet — "Level 10 Divine Blessings" is narration, not a level. If you want the mechanical power too, say the number outright in the header ("a level 12 warmage"): a stated level is honored, and your proficiency bonus, HP, Hit Dice and spell slots are all built for that level. Leave it unstated and you start at level 1 and climb through play.
 
 ## Key takeaways for your own campaign
 
@@ -78,7 +78,7 @@ A grand origin changes how scenes are written. Levels still come from play. Plan
 2. **Past-life + reincarnation** is a strong archetype the system handles well.
 3. **Internal monologue** works as a primary narration mode if you set it up in the prompt.
 4. **Specialists** (magic-obsessed, sword-obsessed, lore-obsessed) generate good prompts and good scenes.
-5. **A grand origin buys narrative standing, not levels.**
+5. **Grand-origin flavor buys narrative standing; a stated level buys the levels.** Name the number in the header if you want both.
 
 ## Sources
 
