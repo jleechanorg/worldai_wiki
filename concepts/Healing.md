@@ -21,7 +21,7 @@ This page covers everything else.
   takes your action; Healing Word restores 1d4 + your spellcasting modifier and
   takes only a bonus action; Prayer of Healing takes ten minutes of casting and
   restores 2d8 + your spellcasting modifier to as many as six people you can
-  touch, so it is a between-fights spell.
+  see within 30 feet, so it is a between-fights spell.
 - **Class features**: a Paladin's Lay on Hands is a pool of HP equal to five
   times their level, spent an action at a time and refilled on a long rest.
 - **Potions of Healing**: 2d4+2 HP (common), 4d4+4 (greater), 8d4+8 (superior),

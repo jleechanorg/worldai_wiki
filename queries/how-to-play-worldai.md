@@ -87,7 +87,7 @@ The GM narrates the opening. For Dragon Knight that's **The King's Ribbon, Winte
 It establishes:
 - **Where you are** — The King's Ribbon, Winter-Mourn Province, 95 AG, Frost-Fall 12, 09:00.
 - **Who's with you** — **Ser Elian Thorne** (the idealist) and **Ser Vespera Nyx** (the pragmatist), two Imperial knights. You don't choose them; they're written into the scene. The moral contrast between them drives the whole opening, so talk to both.
-- **What's happening** — You ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (a former hero now branded a traitor) shelters refugees against the Empress's pacification order.
+- **What's happening** — You ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (the province's March Lord, branded a traitor) shelters refugees against the Empress's pacification order.
 - **What you can do** — Scout, address your companions, ride straight to the gate, or type a custom action.
 
 **Take your time. Re-read it.** The first choice sets the tone of the entire campaign.
@@ -108,6 +108,17 @@ Click one of the offered choices, or type your own in the message box at the bot
 - "I cast Detect Magic."
 
 The GM narrates the result and rolls any dice the action calls for. Read the narration and the dice results together.
+
+### Check a choice before you commit
+
+Each offered choice has a small chevron next to it. It shows you what the action actually involves — the check it will call for, and its upsides and downsides — before you spend a turn on it.
+
+What the chevron does depends on your screen:
+
+- **On a desktop or wide window**, the row expands in place: the description and the pros/cons sit under the choice. Clicking the choice itself sends it straight away — there's no second confirmation.
+- **On a phone (a narrow window, roughly 640px or less)**, a panel slides up from the bottom of the screen instead. It's headed with the choice's name, then **Action Description & Check**, then a **Tactical Analysis** pair of cards — green for Pros, red for Cons. Nothing has been sent yet. To go through with it, tap **⚡ Confirm & Execute Action** at the bottom. To back out, tap the ✕, the grab bar at the top, the dimmed area behind the panel, or press Escape — your turn is untouched either way. On a phone you don't have to hit the chevron exactly; tapping anywhere on the row that isn't the choice itself opens the same panel.
+
+On a small phone the list of choices also starts **collapsed**, so the narration and the message box stay in view. In its place you get a one-line strip — *"✨ 4 options — expand to see what you can do"* — with the number of choices this turn. Tap it to open the list, tap again to fold it away. Tapping into the message box folds it too, so the keyboard doesn't bury the text you're typing. The strip is a **Character** mode thing: switch to Think/Plan or God and the choices and the strip both disappear, since those modes aren't taking actions. See [ThinkMode](../concepts/ThinkMode.md) and [SmartSkillChecks](../concepts/SmartSkillChecks.md).
 
 ### The three buttons under the message box
 
@@ -140,7 +151,7 @@ In Dragon Knight the dragons (Aurum, Umbrax) are most active **early** — they 
 Switch to the **God** button and write a standing rule, e.g. `GOD MODE: the narration has a stoic, minimalist tone`. The GM follows it from then on. See [GodModePrompting](../concepts/GodModePrompting.md).
 
 ### "The GM got something wrong, and I want it undone"
-There is no undo button, but God Mode is the fix: it can correct a stat, remove an item you never had, or replace the text of a scene that went wrong. `GOD MODE: set my HP to 12` or `GOD MODE: I never picked up the ring`. See [GodMode](../concepts/GodMode.md).
+The campaign header has an **Undo** button (the ↺ icon) that deletes the most recent exchange — it asks you to confirm first, and it cannot be un-done. It only removes the *last* turn. For anything older, God Mode is the fix: it can correct a stat, remove an item you never had, or replace the text of a scene that went wrong. `GOD MODE: set my HP to 12` or `GOD MODE: I never picked up the ring`. See [GodMode](../concepts/GodMode.md).
 
 ### "I died"
 In Dragon Knight, during the first 100 turns: at 25% HP or below a dragon whispers an offer of rescue (you can accept, refuse, or ignore it), and at 0 HP one intervenes anyway and you wake up alive somewhere else. Which dragon shows up depends on how ruthlessly you have been playing. Past turn 100 that net is gone. In other campaigns, what happens after death is up to the GM and your setting.

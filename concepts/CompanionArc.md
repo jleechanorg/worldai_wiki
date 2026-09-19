@@ -51,6 +51,18 @@ Every arc beat plants at least one **callback** — a condition that pays off la
 
 That is why an arc feels like a chain rather than a run of disconnected scenes: a pendant noticed on turn 4 becomes a sailor's remark in a port on turn 8, becomes a slaver trail on turn 12, becomes an ambush on turn 18, becomes a confrontation on turn 25. Going where a callback points is how you push an arc forward.
 
+## Camp conversations
+
+Resting is when arcs get talked out. Ask for a long or short rest, make camp, sit down to a meal, or take a watch, and the game will often open a short conversation scene with one to three of your named companions before play moves on. It stays out of the way when you are mid-fight or pushing hard on the main plot that turn.
+
+Who shows up is not random. It leans toward the companions whose arcs have the most unfinished business and who have been off-screen longest — so the party member you have been ignoring is the one who sits down next to you. Two or three arrive together when recent turns already had them together.
+
+The scene is anchored to where you actually are and what time it is: a campfire, a dining hall, a tavern table, a watch rotation. Each companion speaks in their own voice and picks up their last arc beat or something the party has been through together, and the conversation sticks — it becomes part of that companion's history and gets referred back to later.
+
+These are real arc turns, not filler. A camp conversation can push a companion's arc into its next phase and move their trust in you. What it will not do is move the story physically: no combat, no travel, your location does not change, and the clock only advances by minutes up to about an hour, so the scene hands back with "this evening" still intact. It is a conversation riding alongside the rest, not the rest itself — recovery still resolves the way [RestAndDeath](RestAndDeath.md) describes.
+
+It closes like any other scene: the companion's last line, the usual three suggested replies plus the freeform option, and a short transition that puts you back on the road. You can switch into [GodMode](GodMode.md) partway through, and the scene will not refuse it.
+
 ## Romance
 
 Romance is not a separate system and there is no approval bar to fill. It arrives one of two ways: the companion's arc is a **forbidden love** arc, or the story goes there because you steered it there.
@@ -65,6 +77,7 @@ Companions are not the only ones with a personal storyline. Your own character r
 
 - **Follow the callbacks.** When a companion reacts to a place, an object, or a person, that is a planted hook. Going back to it is what moves their arc.
 - **Answer companion requests.** When a companion's request calls for an answer from you, the game must offer at least one way to respond on that same turn. Ignoring it costs you trust.
+- **Make camp when an arc stalls.** A rest, a meal, or a watch is the cheapest way to get a quiet scene with the companion you have been neglecting — and those scenes can advance the arc on their own.
 - **Give it room.** Arcs need roughly 20-30 turns and cannot be rushed; the game will refuse to resolve one early.
 - **There is no bio screen.** Everything you know about a companion comes from the story text. What they say and how they say it is the only readout you get.
 

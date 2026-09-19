@@ -60,7 +60,7 @@ Social checks run on Charisma, but you can lean on what you're actually good at.
 | Persuasion (an empathetic appeal) | WIS |
 | Deception | INT or WIS |
 
-Only one stat can help per check, and it adds nothing if your Charisma modifier is already the higher of the two — a Bard with CHA 18 gains nothing from WIS 14. But a Wizard with INT 18 (+4) and CHA 8 (-1) rolls `d20+1` on a reasoned argument instead of `d20-1`. Proficiency still applies normally.
+Only one stat can help per check, and it adds nothing unless that stat's modifier actually beats your Charisma modifier — a tie gives nothing, so a Bard with CHA 18 gains nothing from WIS 14, and CHA 14 with INT 14 gains nothing either. But a Wizard with INT 18 (+4) and CHA 8 (-1) rolls `d20+1` on a reasoned argument instead of `d20-1`. Proficiency still applies normally.
 
 ## Related
 

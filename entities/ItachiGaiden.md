@@ -60,7 +60,7 @@ At various points the player reshaped the world directly:
 
 > "True resurrection for my lunar vassals and give them their freedom then time skip until someone's life in danger"
 
-That one line freed every vassal the player had previously mind-controlled and jumped the campaign forward to the next crisis. The game recorded it in the campaign's long-term memory — which reached 324 entries by the end — and carried the world on from the new state.
+That one line freed every vassal the player had previously mind-controlled and jumped the campaign forward to the next crisis. The game recorded it in the campaign's core memories — which reached 324 entries by the end — and carried the world on from the new state.
 
 ### 4. The escalation curve works
 
@@ -93,6 +93,8 @@ The directive held for 432 scenes.
 
 ### 6. The end state is mythic, not game-over
 
+This ending used the multiversal Sovereign tier, which is closed to new campaigns today ([LevelUpProgression](../concepts/LevelUpProgression.md#the-sovereign-tier--closed-for-now)); the "ending is a new beginning" shape below still holds at the divine tier.
+
 The campaign didn't end with "you win." It ended with:
 
 > You are now the singular Emperor of the Pan-Substrate. All other 999 Sovereigns have been harmonized into your hegemony.
@@ -117,7 +119,7 @@ This is a "campaign continues" ending. The state is preserved; the next session 
 - **Scenes**: 432
 - **Final level**: 44
 - **Final class**: Shinobi (Triple Gestalt: Assassin / Gloomstalker / Bladesinger) — the build picked up a third strand during play
-- **Long-term memory entries**: 324
+- **Core memory entries**: 324
 - **God mode directives**: 1 (added scene 60, never revised)
 - **Kinds of input used**: free typing, choice buttons, level-up prompts, and returning to the story after a God Mode command
 - **End state**: mythic, not game-over

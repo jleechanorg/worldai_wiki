@@ -21,8 +21,9 @@ point an SDK at them.
 
 ## Authentication
 
-Every route below requires a bearer token in the `Authorization` header. Two
-kinds work:
+Every campaign, MCP, and `/v1/*` route below requires a bearer token in the
+`Authorization` header. (The utility routes — server time, health, and client
+diagnostics — are open.) Two kinds of token work:
 
 - **A Firebase ID token** from a signed-in browser session.
 - **A personal access token**, which starts with `worldai_`.
@@ -55,10 +56,10 @@ limit, routes return 429.
 |---|---|---|---|
 | `create_campaign` | `user_id`, `title` | `character`, `setting`, `description`, `selected_prompts`, `custom_options`, `god_mode` | A new campaign in your account |
 | `quick_start_campaign` | `user_id` | — | A campaign with nothing to fill in |
-| `get_campaign_state` | `user_id`, `campaign_id` | — | The full game state as JSON, with API keys stripped |
+| `get_campaign_state` | `user_id`, `campaign_id` | — | The full game state as JSON, plus your settings block — which still contains any provider key you saved, so don't log the reply verbatim |
 | `process_action` | `user_id`, `campaign_id`, `user_input` | `mode`, `idempotency_key`, `client_idempotency_key`, `request_id` | One played turn, same result as the in-app submit |
 | `update_campaign` | `user_id`, `campaign_id`, `updates` | — | Patched campaign metadata |
-| `export_campaign` | `user_id`, `campaign_id`, `format` | — | A document file (`pdf`, `docx`, or `txt`) |
+| `export_campaign` | `user_id`, `campaign_id`, `format` | — | A JSON envelope pointing at a generated `pdf`, `docx`, or `txt` — fetch the file itself via the REST export route |
 | `get_campaigns_list` | `user_id` | `limit`, `sort_by` | `{success, campaigns, has_more}` |
 | `get_user_settings` | `user_id` | — | Your settings, API keys masked |
 | `update_user_settings` | `user_id`, `settings` | — | Partial, validated update |
@@ -72,9 +73,12 @@ Notes on the ones with sharp edges:
   `character`. The three id fields let you retry a submission without replaying
   the turn.
 - **`export_campaign`** — `format` is required and must be `pdf`, `docx`, or
-  `txt`. It returns a downloadable document, the same one the in-app Export
-  button produces, **not** a structured JSON bundle. For machine-readable state,
-  use `get_campaign_state` and the story route.
+  `txt`. Over MCP it returns a JSON envelope (`success`, `format`,
+  `campaign_title`, and a server-side file reference), not the file bytes. To
+  actually download the document — the same one the in-app Export button
+  produces — call `GET /api/campaigns/{id}/export?format=…`, which streams the
+  file once and then discards it. For machine-readable state, use
+  `get_campaign_state` and the story route.
 - **`get_campaigns_list`** — `sort_by` is `last_played` (default) or
   `created_at`. `limit` defaults to 50; that is a default, not a ceiling. The
   reply adds `next_cursor` when more pages remain and `total_count` on the
@@ -110,7 +114,9 @@ error — campaign reads and writes are scoped to the authenticated account.
 
 ### Paging the story
 
-`GET /api/campaigns/{id}/story` returns entries newest-first.
+`GET /api/campaigns/{id}/story` returns the newest page of entries, ordered
+oldest-first inside the page. Paging backwards gives you successively older
+pages.
 
 - `limit` — page size, default 100, clamped to 1–500.
 - `before` — an ISO-8601 timestamp; `before_id` — an entry id. Either pages
@@ -174,8 +180,9 @@ character-creation handling.
 Two consequences matter for an integration:
 
 - **An open review flow holds a lock.** While a character-creation or level-up
-  review is open, unrelated actions are rejected until that flow's result is
-  committed. Finishing it is also recognised from meaning, so a natural-language
+  review is open, every action you submit is handled by that flow — it is not
+  rejected, and it will not reach combat, conversation, or faction handling
+  until the review is finished. Finishing it is also recognised from meaning, so a natural-language
   "I'm done" closes it as reliably as the UI button. Crossing an XP threshold
   does not itself open one — the level applies on that turn and the review is
   optional; see [LevelUp](../concepts/LevelUp.md).

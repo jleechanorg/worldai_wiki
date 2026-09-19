@@ -66,7 +66,7 @@ Both let you play a story with an AI narrator. They are built for opposite thing
 
 ## Who narrates
 
-**WorldArchitect.AI** routes each scene to a specialist — combat, dialog, faction moves, level-up, lookups, character creation — so a fight is handled by something that understands fights. Each turn names the specialist that handled it above the narration. The trade-off is that the voice varies slightly between kinds of scene.
+**WorldArchitect.AI** routes each scene to a specialist — combat, dialog, faction moves, level-up, lookups, character creation — so a fight is handled by something that understands fights. Which specialist handled a turn is not shown during normal play — turn on **Settings → Debug Mode** and it appears in the Debug Info panel under the narration. The trade-off is that the voice varies slightly between kinds of scene.
 
 **AI Dungeon** uses one model for everything, which gives a more uniform voice.
 

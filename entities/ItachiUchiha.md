@@ -16,7 +16,7 @@ The character archetype behind the Itachi V2 campaign ([ItachiGaiden](ItachiGaid
 The player asked for an Uchiha in the ANBU era with a Sharingan, then kept refining the build during play. What the sheet ended up holding:
 
 - **Class**: early in the run the player asked for a gestalt Rogue Assassin and Ranger Gloom Stalker, and the game built it. By the end the sheet read *Shinobi (Triple Gestalt: Assassin / Gloomstalker / Bladesinger)* — the build grew a third strand during play.
-- **Sharingan**: started at one tomoe, advanced to three, then to Mangekyo, as story events earned it.
+- **Sharingan**: the player asked for a three-tomoe Sharingan early in the run and the game wrote it into the sheet; Mangekyo came later, during the massacre arc. There is no built-in Sharingan track — the tier is whatever you and the GM establish in the fiction.
 - **Gear**: ANBU kit — kunai, shuriken, tactical equipment.
 
 The point is not the specific build. It is that a character described in the language of one setting gets translated into 5e mechanics you can actually play, and that the translation keeps changing as the campaign does.

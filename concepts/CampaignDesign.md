@@ -84,7 +84,7 @@ Mixing two tones that conflict (e.g., comedic + grimdark) leads to confused narr
 
 ## Step 4 — Write the header: wizard fields and description prompt
 
-These fields *are* the God Mode header. You fill them in the [CampaignWizard](CampaignWizard.md) — five structured boxes plus one expandable **Campaign description prompt** for anything longer.
+These fields *are* the God Mode header. You fill them in the [CampaignWizard](CampaignWizard.md) — six structured boxes plus one expandable **Campaign description prompt** for anything longer.
 
 ### Structured wizard fields
 
@@ -93,6 +93,7 @@ These fields *are* the God Mode header. You fill them in the [CampaignWizard](Ca
 - **Favourite Character / Chosen Protagonist**: your protagonist, or blank for an AI-generated hero.
 - **Setting / world for your adventure**: 1–3 sentences on the physical and political environment.
 - **Plot / What-If Direction**: your campaign's main divergence or hook.
+- **Campaign Title**: what the campaign is called on your dashboard — the one box in this set you have to fill in.
 
 ### The Campaign description prompt (long-form world bible)
 
@@ -242,7 +243,7 @@ Your first campaign will have rough edges. When it ends, note what landed, what 
 
 ## Optional: draft your header in a free chat LLM first
 
-Playing is free, but every turn counts against your allowance — **100 turns a day, 50 in any 5-hour window** (your own API key raises it to 5,000 and 1,000). Re-rolling a vague header against live play burns turns you didn't need to spend, and all five failure modes above show up on prompt #2, not scene #200.
+Playing is free, but ordinary play turns count against your allowance — **100 turns a day, 50 in any 5-hour window** (your own API key raises it to 5,000 and 1,000). God Mode turns and campaign creation are metered separately and far more generously, so the cost of a re-roll lands on the scenes you play, not on the creation itself. Re-rolling a vague header against live play burns turns you didn't need to spend, and all five failure modes above show up on prompt #2, not scene #200.
 
 So paste your draft header into ChatGPT, Gemini or Claude — whichever you already have — and ask it to write scene one. If the preview is vague, your campaign will be vague. Useful things to ask:
 

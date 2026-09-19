@@ -21,7 +21,7 @@ If either side could simply announce a result, the rules would stop meaning anyt
 2. **The difficulty is fixed before the dice.** The GM has to state the target number and explain it before any die is generated, and turns where that order breaks down get flagged. It cannot see the roll, dislike the outcome, and move the goalposts.
 3. **The roll has to use the seed the server committed to.** Before the turn, the server generates a secret seed and records its fingerprint. Afterwards it checks that the roll used that exact seed.
 4. **Every face has to be possible.** A d6 cannot come back as a 9.
-5. **The server recomputes the arithmetic.** It takes the raw faces, applies keep-highest or keep-lowest, applies the modifier, and decides success or failure. Where the GM's numbers disagree, the server's answer is what gets stored and shown.
+5. **The server recomputes the arithmetic.** It takes the raw faces, applies keep-highest or keep-lowest, applies the modifier, and decides success or failure. Where the GM's numbers disagree, the server's recomputed result is what goes into the turn's fairness record, and the mismatch is flagged rather than quietly accepted.
 6. **Natural 1 and natural 20 are absolute.** A raw 1 on the kept d20 always fails and a raw 20 always succeeds, whatever your modifier and whatever the DC.
 7. **Each roll is stored with its turn** — the notation, every raw face, the modifier, the kept face, the total, the target number, and what the roll was for. Rolls are ordered by the turn they belong to rather than stamped with their own clock time.
 
@@ -31,11 +31,11 @@ When something does not line up, the turn gets flagged rather than quietly accep
 
 Every turn shows its own rolls in the dice area above the narration, so scrolling back through the story shows every roll in order.
 
-There is no roll-history screen, no replay view, and no export.
+There is no roll-history screen and no replay view. There is an export: the **Download Story** button at the top of the game screen saves the whole campaign as .txt, .pdf, or .docx, and each scene's dice rolls are written into that file alongside the narration.
 
 Turning on **Settings → Debug Mode** shows you more, not less: alongside the GM's notes and its reasoning about state changes, each turn lists its rolls in full, including ones normally kept behind the screen — a guard's Perception check against your Stealth, for instance.
 
-What nothing in the app shows yet is the fairness record itself. The seed, its fingerprint, and the verification result are stored with every turn, but there is no screen that displays them.
+What nothing in the app shows yet is the fairness record itself. The seed, its fingerprint, and the verification result are stored with turns the default narrator runs, but there is no screen that displays them. Turns handed to another model — Spicy Mode, for instance — are rolled by the server directly instead, so they carry no seed record.
 
 ## Common questions
 

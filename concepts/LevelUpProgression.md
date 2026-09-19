@@ -44,14 +44,16 @@ grow into each new band of power. Example: a Naruto ANBU-era campaign that
 escalates from village rookie to multiverse-spanning stakes. See
 [ItachiGaiden](../entities/ItachiGaiden.md).
 
-### Fast escalation — isekai, reincarnation, mythic
+### Fast narrative escalation — isekai, reincarnation, mythic
 
-Reached level 44 in roughly 50 scenes. The character did not earn all of that:
-the campaign started them well above level 1 with a reincarnation blessing, a
-divine boon or an inherited power, then escalated from there.
+Reached level 6 in roughly 50 scenes, while reading on the page as far more
+powerful than that. A reincarnation blessing, divine boon or inherited power buys
+narrative standing immediately; the level number still only moves when play earns
+it.
 
 Suits mythic arcs, power fantasy and compressed timelines. Example: an isekai
-character study whose protagonist opens as a level-10 magic researcher. See
+character study whose protagonist carries level-10 divine blessings in her
+backstory while her sheet is still in the single digits. See
 [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Steady moderate — default D&D, BG3, Game of Thrones
@@ -76,6 +78,55 @@ had to justify it.
 
 You do not have to climb to the top. The system supports it; not every story
 needs it.
+
+## Staying fair as you climb
+
+The cheapest way to keep a campaign tense as you level is to quietly inflate the
+opposition, and the game is forbidden from doing it. An enemy who would be a
+manageable fight at their own strength does not get extra hit points, extra
+armour or an extra damage die just because your number went up. An opponent
+whose only contribution is "big stats, hits hard" is explicitly off the table at
+high tiers — and so is the opposite failure, a challenge your level lets you
+roll straight past.
+
+Difficulty has to come from the situation instead. Every high-tier challenge is
+built on at least one of five things, and preferably two:
+
+- **Prepared counters.** The opposition has read your public record and come
+  ready for the arsenal you are known for — dispels, silence, mirror images.
+  Your signature move is the one they expected.
+- **The ground itself.** Weather, verticality, crumbling footing, fire, water or
+  an anti-magic zone, chosen specifically to blunt your strongest option.
+- **A real choice.** Three doors is not a trap-spotting exercise; it is a
+  question of which faction you would rather wake up.
+- **Something you cannot afford to lose.** A hostage, a relic, a shelter full of
+  civilians — stakes that stop you simply unloading everything you have. See
+  [Combat](Combat.md).
+- **Your particular specialty.** A ward that yields to the training only your
+  character has, rather than a generic roll. See
+  [SmartSkillChecks](SmartSkillChecks.md).
+
+Every challenge also has to carry a plausible way for you to lose, written down
+before the outcome is narrated: captured or forced to retreat, an NPC who walks
+away or escalates, a door that stays locked, an alarm that goes up. A fight you
+could not lose is scenery, not an encounter.
+
+### The people who don't scale with you
+
+The other half of this is that the world does not promote everyone alongside
+you. The game is told to keep three to five named NPCs from the level band your
+campaign started in, held at that band for the rest of the campaign instead of
+quietly growing to match you. These are the people whose lives you once held in
+your hands, and their grudges, marriages, recoveries and quiet betrayals are
+meant to still matter at level 20 — the farm you burned, the favour called in
+ten years late. See [NPCRelationships](NPCRelationships.md) and
+[LivingWorld](LivingWorld.md).
+
+Where both would work, the game is also told to reach for the personal pressure
+over the mythic one: a disinherited cousin suing for your title on a procedural
+flaw beats a world-spanning alliance against you. And your reputation is not
+allowed to dissolve the social game — a disguise or a false name still buys you
+something a peer NPC's knowledge would otherwise deny you.
 
 ## Past level 20
 
@@ -184,9 +235,10 @@ sub-deities with portfolios; your faction becomes a Hegemony. You arrive ranked
 around 800th out of 1,000, already flagged as a threat, and the first siege lands
 almost immediately.
 
-**You cannot reach this tier today.** No new campaign can ascend into it, though
-a campaign that entered it earlier still loads and plays. It is described here
-because it may reopen.
+**You cannot reach this tier today.** No new campaign can ascend into it, and a
+campaign that entered it earlier still loads and is safe to open, but the
+multiversal rules above are no longer in play — the Sovereign system is switched
+off everywhere. It is described here because it may reopen.
 
 ## See also
 

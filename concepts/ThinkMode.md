@@ -13,7 +13,7 @@ Think mode is your character stopping to think. The world freezes — no time pa
 
 ## How to use it
 
-Pick the **Think/Plan** pill under the message box, or start a message with `THINK:` from any mode:
+Pick the **Think/Plan** pill under the message box, or start a message with `THINK:` from any mode except God — there the God pill wins over the prefix:
 
 > THINK: how do I get into the vault?
 
@@ -41,7 +41,7 @@ So a low-Intelligence barbarian planning a heist really does get a worse plan th
 
 ## What you get back
 
-Three to five tactical options, each with pros, cons, a confidence rating, and what it is likely to lead to — plus your character's internal monologue while they work it out. A good roll widens the list and spots hidden dangers; a bad roll narrows it and sounds just as sure of itself.
+Two or three tactical options for a quick question or a failed check, four to six for a solid roll on a complex problem, and as many as eight for a major decision — each with a description and its pros and cons (expand a row to reveal them), plus your character's internal monologue while they work it out. A good roll widens the list and spots hidden dangers; a bad roll narrows it and sounds just as sure of itself.
 
 ## Think mode vs God mode
 

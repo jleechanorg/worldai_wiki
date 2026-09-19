@@ -45,7 +45,7 @@ Two cards, and **Play a campaign** is selected for you:
 
 ### Campaign description prompt (long-form world bible)
 
-This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. A screenshot of an untouched Step 1 will not show it at all. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
+This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. A screenshot of an untouched Step 1 shows only its heading and the Expand button — the large text box itself stays hidden until you expand it. Expand it and you can paste in a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
 
 - **Capacity**: a 70,118-character bible (~11,000–12,000 words, about 25 pages) has been tested end to end and stored intact. Length is almost never your constraint.
 - **What to paste here**: setting bibles (geography, factions, pantheons, magic systems); character backstory, lineage, equipment, psychology; custom rules, tone constraints, and god-mode style instructions.
@@ -70,6 +70,7 @@ The **Enter the World** button sits at the top of Step 2, right under the headin
 - Drag-and-drop or click to upload an avatar image.
 - JPEG, PNG, GIF, or WebP; max 5MB; 512×512 square looks best.
 - It appears in the campaign header bar at the top of the game screen. It is not repeated next to each turn.
+- Skipping it here is not final — you can add, replace, or remove the portrait from the game screen later. See [Your portrait in the game header](#your-portrait-in-the-game-header).
 
 ### 3. Campaign summary card & inline editing
 
@@ -90,11 +91,44 @@ Character creation happens inside the story rather than on a separate form:
 
 ---
 
+## What carries into the game screen
+
+Two parts of the wizard stay reachable once you are playing: the answers you typed, and the portrait you chose.
+
+### Checking what you entered — the (i) button
+
+An **info (i)** button sits in the campaign header, just left of your campaign title. Click it and a **Campaign Details** panel reads your creation inputs back to you, one per line:
+
+- **Universe**, **Timeline**, **Character**, **Setting**, **Plot**, and **Description** — the Step 1 fields, exactly as they were stored. Fields you left blank are skipped rather than shown empty, so a quick custom campaign shows only the two or three lines you actually filled in. If nothing was recorded, the panel says so instead.
+- For a **Dragon Knight** campaign there is nothing of yours to echo, so the panel shows the Dragon Knight premise — the short opening setup, not the full module text.
+
+Use it when you are three hours into a campaign and want to check whether the world bible you pasted actually landed, or which of your what-if hooks the GM is working from. It is read-only — there is no editing here, and no way to change the premise after launch. **Close** dismisses it. On a narrow phone screen the (i) button is hidden to leave room for the campaign title.
+
+### Your portrait in the game header
+
+**If you skipped the avatar on Step 2**, the header shows a dashed circle with a plus and the label **Add Avatar**. Click it, pick an image, and it uploads straight away — the label switches to *Uploading…* and then your portrait takes the placeholder's spot. There is no cropping step on this quick path.
+
+**If you already have a portrait**, click it. A character card opens over the screen with:
+
+- the portrait at full size,
+- your character's name (or the campaign title if no character name was recorded),
+- their class, and
+- **Level**, **HP** (current/max) and **AC**, when your campaign has recorded them. Early on, before the GM has finalised your sheet in [Scene 1](#after-the-wizard-scene-1-character-review), the stats row can be empty. See [AbilityScores](AbilityScores.md) and [LevelUp](LevelUp.md) for what those numbers mean.
+
+The card has two buttons:
+
+- **📷 Change Photo** — pick a new image and a full-screen crop view opens: *Drag to reposition • 512×512px recommended*. Drag the image inside the square until the framing looks right, then **✅ Use This Crop** to upload it, or **✕ Cancel** to back out. The header portrait and the card both update as soon as the upload finishes.
+- **🗑 Remove** — asks you to confirm, then clears the portrait from the header. The dashed **Add Avatar** placeholder comes back the next time the campaign loads.
+
+Close the card with its **×**, by clicking the dimmed area around it, or by pressing **Escape**.
+
+---
+
 ## Player tips
 
 - **Use the description prompt.** Have a homebrew world or a novel concept? Paste your notes straight into it — that is what it is for.
 - **Pick one tone.** Slapstick comedy plus grimdark survival in the same prompt produces confused narration. Name a primary tone and stick to it.
 - **Fix typos on Step 2.** Use the pencil buttons on the summary card instead of going back.
-- **Want to customise Dragon Knight?** Only the Title. Everything else is locked — start from **Play a campaign** and describe the world you want instead.
+- **Want to customise Dragon Knight?** Only the Title and the Step 2 avatar (Ser Arion's portrait loads by default, and you can replace it). Every other field is locked — start from **Play a campaign** and describe the world you want instead.
 
 See [CharacterCreation](CharacterCreation.md), [CampaignDesign](CampaignDesign.md), [GodModePrompting](GodModePrompting.md), and [How to Play](../queries/how-to-play-worldai.md). For the same flow on one screen, see [CampaignWizard](../entities/CampaignWizard.md).

@@ -41,7 +41,7 @@ Give it five to ten scenes before judging whether it took. The rest of this page
 
 ## What makes a directive land
 
-A directive is a lens the system applies to every later scene. It controls *how* things are narrated, not *what* happens. Three things separate a directive that works from one that does nothing:
+A directive is a lens the system applies to every later scene. It controls *how* things are narrated, and which GM-initiated events the GM may bring on stage — what it cannot do is override a dice roll. Three things separate a directive that works from one that does nothing:
 
 1. **Concrete terms.** "Stoic, minimalist, humble" beats "interesting".
 2. **Named taboos.** "Avoid grandstanding" beats "don't be too flashy".
@@ -165,7 +165,7 @@ Used in a 50-scene isekai campaign — see [AristocratReborn](../entities/Aristo
 
 ## Directives that don't work
 
-**Trying to control plot beats.** "Don't have the PC die. Don't let them fail the heist." Directives shape how something happens, not whether — the dice can still kill you. Rewrite it as a tone rule: "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing."
+**Trying to override a roll.** "Don't let them fail the heist. Don't have the PC die in this fight." Directives shape how a result is narrated, not whether it happens — the dice are rolled server-side and can still kill you. Rewrite it as a tone rule: "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing." GM-driven story events are a different case and *are* steerable: "Don't bring up the siege until I ask" is a directive that works.
 
 **Being vague.** "Make it cool." "Be epic." Give the system something to act on instead: "Cinematic combat. Each blow lands with weight. The PC's finishing moves are described in slow motion."
 
@@ -173,7 +173,7 @@ Used in a 50-scene isekai campaign — see [AristocratReborn](../entities/Aristo
 
 **Adding fifteen at once.** Each new directive dilutes the others. Start with one to three and add more as the campaign changes.
 
-**Stats and one-off events, which are silently discarded.** Directives are for durable style, perspective, taboos, NPC behaviour and world rules. Two kinds never get stored: numbers ("my level is 10", "HP is 999", "gold is 50000") — say those as an ordinary God Mode request instead, and they take effect immediately — and one-time outcomes ("you just killed the dragon"), which are history, not a rule.
+**Stats, display rules and one-off events, which are silently discarded.** Directives are for durable style, perspective, taboos, NPC behaviour and world rules. Three kinds never get stored: numbers ("my level is 10", "HP is 999", "gold is 50000") — say those as an ordinary God Mode request instead, and they take effect immediately; display and formatting rules ("always include XP in header"), which the interface owns, not the GM; and one-time outcomes ("you just killed the dragon"), which are history, not a rule.
 
 Worse, the GM may still cheerfully confirm a rule it didn't keep. Nothing warns you. If a rule never seems to bite, type `GOD MODE: list my active rules`; if it isn't in the list, it was discarded and needs rewriting as a style rule.
 

@@ -33,8 +33,8 @@ The Nocturne BG3 V3 campaign follows this pattern:
 
 1. **Intel**: send scouts to learn about a rival.
 2. **Combat**: attack with intel advantage.
-3. **Power gain**: defeated faction's resources add to your power.
-4. **Ranking climb**: higher ranking attracts more rivals.
+3. **Power gain**: captured territory and stolen fortifications raise your Faction Power. Looted gold and citizens do not — they are not inputs to FP, they only pay for the units and buildings that are.
+4. **Ranking climb**: your rank is just your FP sorted against 200 rival factions. Climbing it actually *shrinks* the list of factions strong enough to attack you, since rivals pick targets by comparing their power to yours.
 
 This is the same loop the [Faction System documentation](../concepts/FactionSystem.md) describes, played out over 600 scenes.
 

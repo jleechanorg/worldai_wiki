@@ -80,8 +80,10 @@ in effect either way.
 
 - **Know your ASI levels**: 4th, 8th, 12th, 16th, 19th. If you want a specific
   feat, decide before you get there and name it in the review.
-- **Read your new features**: the banner names what you gained. Knowing you now
-  have a second attack or a new spell changes what you should try next.
+- **Read your new features**: the banner only announces your new level. Open
+  **Review Level-Up Choices** (or read the scene text) to see the HP, features,
+  ability increase and spells you actually gained. Knowing you now have a second
+  attack or a new spell changes what you should try next.
 - **The review is not a deadline.** It waits. Finish the scene first if you'd
   rather not break the mood.
 

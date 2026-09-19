@@ -60,7 +60,7 @@ Asked directly like that, the GM reads the campaign's stored list back to you. I
 
 ## What a God Mode turn gives back
 
-A confirmation line instead of a scene, the state change applied immediately, and three follow-up buttons that always include **Return to story**, plus the usual **Custom Action** button. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
+A confirmation line instead of a scene, the state change applied immediately, and two to four follow-up buttons that always include **Return to story**. There is no separate Custom Action button on the live turn — the message box itself is the free-form option, so you can always just type your next request instead. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
 
 ## Player tips
 

@@ -14,8 +14,7 @@ each, or take a feat instead.
 
 ## When you get one
 
-Most classes gain an ASI at **4th, 8th, 12th, 16th and 19th** level. Fighters gain
-extra improvements at 6th and 14th; Rogues gain one extra at 10th.
+Every class gains an ASI at **4th, 8th, 12th, 16th and 19th** level.
 
 The AI picks for you when you level and applies it immediately. To change it,
 open the **Review Level-Up Choices** option — see [LevelUp](LevelUp.md).
