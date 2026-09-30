@@ -19,7 +19,7 @@ If either side could simply announce a result, the rules would stop meaning anyt
 
 1. **You describe the action; the game produces the roll.** You type "I attack the orc." There is no Attack button and no Roll button — the roll comes back with the narration.
 2. **The difficulty is fixed before the dice.** The GM has to state the target number and explain it before any die is generated, and turns where that order breaks down get flagged. It cannot see the roll, dislike the outcome, and move the goalposts.
-3. **The roll has to use the seed the server committed to.** Before the turn, the server generates a secret seed and records its fingerprint. Afterwards it checks that the roll used that exact seed.
+3. **On the default models, the roll has to use the seed the server committed to.** Before the turn, the server generates a secret seed and records its fingerprint. Afterwards it checks that the roll used that exact seed. Turns run by other models are rolled by the server directly instead, as described below.
 4. **Every face has to be possible.** A d6 cannot come back as a 9.
 5. **The server recomputes the arithmetic.** It takes the raw faces, applies keep-highest or keep-lowest, applies the modifier, and decides success or failure. Where the GM's numbers disagree, the server's recomputed result is what goes into the turn's fairness record, and the mismatch is flagged rather than quietly accepted.
 6. **Natural 1 and natural 20 are absolute.** A raw 1 on the kept d20 always fails and a raw 20 always succeeds, whatever your modifier and whatever the DC.

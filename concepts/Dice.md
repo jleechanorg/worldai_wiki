@@ -33,7 +33,7 @@ Read it left to right: the notation, the total, the number you had to beat (the 
 | `2d20kh1+5` | Advantage: roll two d20, keep the higher, add 5 |
 | `2d20kl1+5` | Disadvantage: roll two d20, keep the lower, add 5 |
 
-There is no `adv` or `dis` suffix. Advantage is spelled out as two d20 with a keep-highest or keep-lowest marker, so you can always see both faces that were rolled. Full grammar: [DiceNotation](DiceNotation.md).
+There is no `adv` or `dis` suffix. Advantage is spelled out as two d20 with a keep-highest or keep-lowest marker, so the notation itself tells you two dice were rolled and one was kept. Full grammar: [DiceNotation](DiceNotation.md).
 
 Ability scores are never rolled here. Character creation offers Point Buy (27 points), the Standard Array (15, 14, 13, 12, 10, 8), or scores you type yourself — no stat-rolling step at all. See [AbilityScores](AbilityScores.md).
 

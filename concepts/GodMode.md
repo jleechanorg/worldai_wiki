@@ -18,7 +18,7 @@ Two ways, and they do the same thing:
 1. Pick the **God** pill under the message box, then type your request.
 2. Stay in Character mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
-Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored.
+Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored. One exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the **God** pill instead.
 
 ## What God Mode can do
 

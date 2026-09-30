@@ -47,7 +47,7 @@ Fights run on 5e maths — attack rolls, damage, conditions, death saves — wit
 | US-012 | Short rest (1 hour, spend Hit Dice) and long rest (8 hours, full recovery) restore HP, slots and class features. See [RestAndDeath](../concepts/RestAndDeath.md). |
 | US-013 | Winning a fight pays: loot and gold are awarded without you asking. See [LootAndRewards](../concepts/LootAndRewards.md). |
 | US-014 | Jump someone and you get a surprise round before initiative. See [Initiative](../concepts/Initiative.md). |
-| US-014a | Every turn ends with a short list of suggested next moves, each one a button — and a Custom Action button for doing something nobody suggested. |
+| US-014a | Every turn ends with a short list of suggested next moves, each one a button — plus the free-text box for doing something nobody suggested. |
 
 ### US-002: Dice Rolls Are Real, Not Made Up
 
@@ -71,7 +71,7 @@ See [Combat](../concepts/Combat.md).
 **I want** the moves I could plausibly make offered as buttons under the turn I just read,
 **So that** I can take an obvious option in one tap without losing the ability to type something nobody suggested.
 
-They appear on every story turn, not only at dramatic moments. In ordinary play you usually get three to five of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get two to four administrative options — always including one that returns you to the story — without the pros and cons. Character creation and level-up offer their own shorter menus instead. A final **Custom Action** button always sits at the end of the list, and the free-text box never stops accepting anything you type.
+They appear on every story turn, not only at dramatic moments. In ordinary play you usually get three to five of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get two to four administrative options — always including one that returns you to the story — without the pros and cons. Character creation and level-up offer their own shorter menus instead. On the live turn, the free-text box under the list is the open-ended option: there is no separate Custom Action button there, and the box accepts anything you type. Older turns you scroll back to keep a **Custom Action** button at the end of their list.
 
 ---
 

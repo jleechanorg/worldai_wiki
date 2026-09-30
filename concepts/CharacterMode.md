@@ -35,6 +35,6 @@ If the game can't tell what you meant, it falls back to ordinary Character mode.
 ## Player tips
 
 - **You can always ask what's happening elsewhere.** Typing `Show me what the goblin camp is doing` works fine in Character mode — the GM narrates it. There's no separate camera mode to switch into.
-- **You can type your way into the other two modes.** Starting a message with `GOD MODE:` does the same thing as picking God, and starting one with `THINK:` does the same thing as picking Think/Plan. Either prefix works from any mode, and capitalisation and leading spaces don't matter — with one exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the God button instead.
+- **You can type your way into the other two modes.** Starting a message with `GOD MODE:` does the same thing as picking God, and starting one with `THINK:` does the same thing as picking Think/Plan. Capitalisation and leading spaces don't matter. Two exceptions: `THINK:` is ignored while the God pill is active (the pill wins over the prefix), and while character creation is still open a typed `GOD MODE:` is ignored, so pick the God button instead.
 
 See [ThinkMode](ThinkMode.md), [GodMode](GodMode.md), [SpicyMode](SpicyMode.md), [CampaignWizard](CampaignWizard.md).

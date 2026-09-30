@@ -17,7 +17,7 @@ Common dice questions answered.
 
 ## Q: My dice rolls disappeared and I just see a phrase. What happened?
 
-**A**: **Hide dice rolls** is on. You turned it on in Settings → Display — that switch is the only thing that hides the dice area. Tap the phrase to see the actual roll for five seconds, or switch it back off in Settings → Display.
+**A**: **Hide dice rolls** is on. You turned it on in Settings → Display — that switch is the only thing that hides the raw dice numbers. Tap the phrase to see the actual roll for five seconds, or switch it back off in Settings → Display.
 
 ## Q: Can I see the roll history?
 

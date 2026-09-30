@@ -27,7 +27,7 @@ Good positioning usually doesn't grant advantage, and flanking is not an advanta
 - You're blinded, or attacking a target you can't see.
 - The target is hidden from you.
 - You're making a long-range attack.
-- You're wearing heavy armor you aren't trained in (Stealth).
+- You're wearing armor that carries a Stealth penalty: scale mail, chain mail, or plate (Stealth).
 - A condition imposes it — frightened, restrained.
 
 ## They don't stack

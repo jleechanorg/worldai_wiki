@@ -59,7 +59,7 @@ Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5
 
 ## What moves your rank
 
-Your own FP never decays. But the 200 rivals grow their power 1–2% every turn, so a turn in which you build nothing costs you rank even though your own number has not moved.
+Your own FP never decays. But the 200 rivals grow their power 1–2% each time you `end turn`, so an `end turn` in which you build nothing costs you rank even though your own number has not moved.
 
 Winning a battle only moves you insofar as it changes something in the formula — troops lost or gained, territory taken, forts captured. A glorious victory that costs you a thousand soldiers moves you *down*.
 
