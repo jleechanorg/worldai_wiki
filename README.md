@@ -15,7 +15,7 @@ Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Laun
    - **Step 2 — Ready to Launch**: add an optional character portrait, edit anything on the summary card, and click **Enter the World**.
 3. **Play turn by turn**:
    - The GM opens the scene and confirms your character sheet.
-   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — or take the **Custom Action** option and type your own. In ordinary play each suggestion has a **Show pros and cons** toggle, so you can weigh it before committing. For a longer strategy conversation with the GM, switch to **Think/Plan** first.
+   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — or just type your own action in the message box. In ordinary play each suggestion has a **Show pros and cons** toggle, so you can weigh it before committing. For a longer strategy conversation with the GM, switch to **Think/Plan** first.
    - The three buttons under the message box decide how your text is read:
      - **Character** (the default): what you type is what your character does and says. The story advances.
      - **Think/Plan**: the story pauses while you weigh options with the GM. No time passes, no actions are taken.

@@ -17,7 +17,7 @@ A God Mode turn does not produce story text. It produces three things:
 
 1. **A confirmation line** stating plainly what changed — "Set HP to 50. Done." It appears in its own block rather than in the story narration. Because the story text is deliberately empty, the story line under the confirmation reads `[God Mode turn — no narrative]` on an ordinary God Mode turn. That placeholder is normal, not an error. If the turn genuinely comes back empty, you get an error line instead.
 2. **The state change itself**, applied to your character sheet or the world immediately.
-3. **Two to four follow-up buttons**, always including **Return to Story**, which switches you back to Character mode, plus the usual **Custom Action** button at the end. God Mode turns carry no **Show pros and cons** toggles.
+3. **Two to four follow-up buttons**, always including **Return to Story**, which switches you back to Character mode. There is no separate Custom Action button on the live turn; the message box is the free-form option (scrolled-back turns keep one). God Mode turns carry no **Show pros and cons** toggles.
 
 If a God Mode turn hands you story prose, something went wrong — the world is supposed to stay frozen.
 

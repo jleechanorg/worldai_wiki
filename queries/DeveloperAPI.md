@@ -56,7 +56,7 @@ limit, routes return 429.
 |---|---|---|---|
 | `create_campaign` | `user_id`, `title` | `character`, `setting`, `description`, `selected_prompts`, `custom_options`, `god_mode` | A new campaign in your account |
 | `quick_start_campaign` | `user_id` | — | A campaign with nothing to fill in |
-| `get_campaign_state` | `user_id`, `campaign_id` | — | The full game state as JSON, plus your settings block — which still contains any provider key you saved, so don't log the reply verbatim |
+| `get_campaign_state` | `user_id`, `campaign_id` | — | The full game state as JSON, plus your account settings block — treat the whole reply as sensitive and don't log it verbatim |
 | `process_action` | `user_id`, `campaign_id`, `user_input` | `mode`, `idempotency_key`, `client_idempotency_key`, `request_id` | One played turn, same result as the in-app submit |
 | `update_campaign` | `user_id`, `campaign_id`, `updates` | — | Patched campaign metadata |
 | `export_campaign` | `user_id`, `campaign_id`, `format` | — | A JSON envelope pointing at a generated `pdf`, `docx`, or `txt` — fetch the file itself via the REST export route |
