@@ -7,6 +7,9 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-10-08] update | Refresh game-screen guidance for players
+- Update the [first-session guide](queries/how-to-play-worldai.md) for Act, Think, God, inline choice details and the More game actions menu.
+
 ## [2026-09-18] update | Cross-page contradiction and voice pass after the rewrite sweep
 - Faction routing: `CharacterMode` claimed the faction specialist engages at 20+
   soldiers. That threshold is automatic mass combat; the faction minigame is

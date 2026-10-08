@@ -1,7 +1,7 @@
 ---
 title: PlayerUserStories
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -47,7 +47,7 @@ Fights run on 5e maths — attack rolls, damage, conditions, death saves — wit
 | US-012 | Short rest (1 hour, spend Hit Dice) and long rest (8 hours, full recovery) restore HP, slots and class features. See [RestAndDeath](../concepts/RestAndDeath.md). |
 | US-013 | Winning a fight pays: loot and gold are awarded without you asking. See [LootAndRewards](../concepts/LootAndRewards.md). |
 | US-014 | Jump someone and you get a surprise round before initiative. See [Initiative](../concepts/Initiative.md). |
-| US-014a | Every turn ends with a short list of suggested next moves, each one a button — and a Custom Action button for doing something nobody suggested. |
+| US-014a | Every turn ends with a short list of suggested next moves, each one a button — with the message box for doing something nobody suggested. |
 
 ### US-002: Dice Rolls Are Real, Not Made Up
 
@@ -71,7 +71,7 @@ See [Combat](../concepts/Combat.md).
 **I want** the moves I could plausibly make offered as buttons under the turn I just read,
 **So that** I can take an obvious option in one tap without losing the ability to type something nobody suggested.
 
-They appear on every story turn, not only at dramatic moments. In ordinary play you get four of them, each with a **Show pros and cons** toggle that spells out the trade-off before you commit; in God Mode you get three, without the pros and cons. Character creation and level-up offer their own shorter menus instead. A final **Custom Action** button always sits at the end of the list, and the free-text box never stops accepting anything you type.
+Suggested actions appear beneath the latest scene under **Your move** and **What do you do?** In ordinary play you get four; God Mode offers three, while character creation and level-up have their own shorter menus. Tap a numbered action to play it, or use the message box for your own action. A choice's chevron reveals details and any pros and cons inline without submitting it; wide screens also offer **Show details** and **Hide details**. Choosing a story action switches you back to **Act**, so stay in **Think** and type a question if you want to keep planning.
 
 ---
 
@@ -248,7 +248,7 @@ You set the premise when you create the campaign and steer everything else in pl
 
 | ID | What you get |
 |----|--------------|
-| US-065a | Three modes above the action box: Character, Think/Plan, and God. |
+| US-065a | Three modes under the message box: Act, Think, and God. |
 | US-065 | Describe your campaign in plain English when you create it. |
 | US-066 | Standing directives that the GM has to keep following. |
 | US-067 | Say in your description whether you want a starting party, and the game builds one or leaves you alone. |
@@ -256,10 +256,10 @@ You set the premise when you create the campaign and steer everything else in pl
 | US-069 | Hide the raw dice numbers and read a short outcome phrase instead — your own preference, and a campaign can start with it on. See [Dice](../concepts/Dice.md). |
 | US-069a | A mature-content switch in the game header. |
 
-### US-065a: Choose How You're Speaking — Character, Think/Plan, or God
+### US-065a: Choose How You're Speaking — Act, Think, or God
 
 **As a** player typing into the action box,
-**I want** three modes on the selector above it — Character (what you type is what your character does), Think/Plan (pause the story for a breakdown of your options with pros and cons, with no time passing), and God (edit the world directly — stats, items, location — with the story paused),
+**I want** three modes on the selector under it — Act (what you type is what your character does), Think (pause the story for a breakdown of your options with pros and cons, with no time passing), and God (edit the world directly — stats, items, location — with the story paused),
 **So that** I can act, plan, or fix something without any of the three bleeding into the others.
 
 This selector is how you reach God Mode; the stories below describe what God Mode does once you are in it.
@@ -301,7 +301,7 @@ See [CompanionPersonality](../concepts/CompanionPersonality.md).
 ### US-069a: Mature Content Toggle
 
 **As a** player who wants adult scenes written rather than faded to black,
-**I want** a Spicy switch in the game header that moves the campaign onto an uncensored model for as long as it is on,
+**I want** a Spicy control in the **⋯ More game actions** menu that moves the campaign onto an uncensored model for as long as it is on,
 **So that** the tone of intimate and violent scenes is my choice, per campaign, and reversible.
 
 It is slower while it is on, and turning it off restores the model you were using before.
@@ -316,7 +316,7 @@ Your campaign is saved as you play. What it cannot do is hold every sentence of 
 |----|--------------|
 | US-070 | Come back weeks later and the campaign reopens on the same scene, still holding the facts that matter. |
 | US-071 | Each finished turn is written to your campaign as it completes. *A turn that is still being written when you disconnect is the exception — see US-074.* |
-| US-072 | Export the whole story as text, DOCX or PDF. |
+| US-072 | Export the whole story as Markdown, text, DOCX or PDF. |
 | US-073 | One durable fact is recorded per narrated turn, and those facts outlive the scenes they came from. |
 | US-074 | Reload and pick up where you left off, including the action you had half-typed. |
 | US-075 | Your campaign follows you between desktop and mobile. |
@@ -332,7 +332,7 @@ The game does not keep every sentence of a long campaign in front of the AI. Old
 ### US-072: Download & Share Campaign Story
 
 **As a** player who wants to keep my adventure,
-**I want** to export the campaign as text, DOCX or PDF,
+**I want** to export the campaign as Markdown, text, DOCX or PDF,
 **So that** I can read, print or share it outside the app.
 
 See [ItachiGaiden](../entities/ItachiGaiden.md) for an example of an exported campaign.
