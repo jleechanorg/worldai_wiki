@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -45,7 +45,7 @@ Two cards, and **Play a campaign** is selected for you:
 
 ### Campaign description prompt (long-form world bible)
 
-This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. A screenshot of an untouched Step 1 will not show it at all. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
+This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. The heading and **Expand** button remain visible; the text box stays hidden until you open it. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
 
 - **Capacity**: a 70,118-character bible (~11,000–12,000 words, about 25 pages) has been tested end to end and stored intact. Length is almost never your constraint.
 - **What to paste here**: setting bibles (geography, factions, pantheons, magic systems); character backstory, lineage, equipment, psychology; custom rules, tone constraints, and god-mode style instructions.
@@ -89,6 +89,10 @@ Character creation happens inside the story rather than on a separate form:
 3. You review, request modifications, or finalize your build before your first major narrative decision.
 
 ---
+
+## After launch: find your campaign details
+
+Open **⋯ More game actions** and choose **Campaign details** to revisit your campaign information. The same menu is available on desktop and mobile.
 
 ## Player tips
 
