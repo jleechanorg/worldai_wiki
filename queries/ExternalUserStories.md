@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-09-18
+updated: 2026-10-08
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -150,6 +150,13 @@ new title already filled in as "<your campaign> (copy)", which you can change
 before confirming. The copy is a complete one — its own campaign with its own
 history — so you can branch a story and leave the original exactly as it was.
 
+**A copy is not a second playthrough.** It starts with the original's story
+history and the original entries' recorded times. Its creation and last-played
+dates are new, though, so a newly copied campaign may appear recent even before
+you play a new turn. Adding both histories together counts their shared opening
+twice. When comparing activity, distinguish saved player entries from unique
+turns actually played; see [Counting activity](DeveloperAPI.md#counting-activity-without-counting-it-twice).
+
 **In-world time.** The world clock is tracked down to the second and advances
 when you rest, travel, or skip ahead, so schedules and calendar events stay
 coherent. Time cannot be moved backwards.
@@ -252,6 +259,12 @@ to be signed in to your own campaign to export it. See
 [ItachiGaiden](../entities/ItachiGaiden.md) for an example of what an exported
 story reads like.
 
+**An export is a reading copy, not a playtime report.** PDF, DOCX and TXT
+exports do not include the real-world recorded time of every entry. Dates in
+scene headers are in-world dates. Neither those dates nor the number of turns
+tells you how many hours you spent playing, and the gap between your first and
+last action includes time away from the game.
+
 ## Where to read more
 
 - [PlayerUserStories](PlayerUserStories.md) — how the game plays: combat,
@@ -260,3 +273,10 @@ story reads like.
 - [HowToPlay](how-to-play-worldai.md) and
   [CampaignDesign](../concepts/CampaignDesign.md) — getting started and
   designing your own campaign.
+
+## Sources
+
+- The team's private campaign-copy and story-export implementation, reviewed
+  2026-10-08 at revision `f78e8bede566343bcf2a40c8e1034310da7c108f`. This
+  source review covers the copy-history and playtime cautions added above; it
+  does not verify the current live deployment.

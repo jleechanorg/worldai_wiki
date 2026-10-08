@@ -1,7 +1,7 @@
 ---
 title: Developer API
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-08
 type: query
 tags: [wa-system, wa-glossary]
 ---
@@ -120,6 +120,53 @@ error — campaign reads and writes are scoped to the authenticated account.
 
 There is **no** scene or turn-range filter. Page by cursor instead.
 
+### Counting activity without counting it twice
+
+A story-entry total is not a total of player turns: the history also contains
+GM responses. When measuring stored player submissions, count the entries
+whose `actor` is `user`, and label the result **stored player entries**. This
+alone does not prove how many unique turns a person played across their account.
+
+Campaign duplication preserves the existing story entries, including their
+identifiers and recorded timestamps. The copy gets a new campaign identity and
+fresh creation and last-played times. Adding the original's entry count to the
+copy's therefore counts their shared history twice. A recent last-played date
+can also come from making a copy; it is not proof that its inherited turns
+were played recently.
+
+For example, copying a campaign with 100 player entries produces two histories
+with 100 entries each. Playing 5 new turns in the copy gives 205 stored player
+entries across the two campaigns, but only 105 original-or-new player entries
+in this example. Establish the shared history before deduplicating; matching
+text alone is not proof that two actions are the same turn.
+
+For a date-bounded count, inspect each player entry's recorded timestamp,
+not just the campaign's last-played date. State the date boundaries, missing
+or unreadable data, whether copies were reconciled, and which campaigns were
+included. Retrieve all relevant campaigns and story pages; a default first
+page is not a lifetime account history. Deleted or otherwise unavailable
+history prevents an unqualified lifetime total.
+
+Keep three measurements separate:
+
+- **Stored player entries:** a count of records, potentially including copied
+  history; describe any mode filters rather than assuming every entry advances
+  the story.
+- **World turns and in-game time:** simulation progress, not human playtime.
+  [God Mode](../concepts/GodMode.md) and
+  [Think/Plan](../concepts/ThinkMode.md) do not consume the
+  [living-world cadence](../concepts/LivingWorld.md).
+- **Real-world playtime:** active time spent playing. Neither a turn count nor
+  the time between the first and last recorded entry measures this. Any
+  timestamp-gap estimate needs an explicit idle-time rule and must be labelled
+  an estimate.
+
+The PDF, DOCX and TXT story formatter does not include each entry's recorded
+wall-clock timestamp. Dates in scene headers describe the game world; the
+export alone cannot establish when a person played or how long they were
+active. Use the structured story data for timestamp analysis, with the limits
+above, rather than treating a reading copy as an analytics export.
+
 ### Server time
 
 `GET /api/time` returns `{server_time_utc, server_timestamp,
@@ -188,3 +235,11 @@ Two consequences matter for an integration:
 
 - [Player Features Reference](ExternalUserStories.md) — the same behaviour from
   the player's side of the screen.
+
+## Sources
+
+- The team's private campaign-copy, activity-reporting and story-export
+  implementation, reviewed 2026-10-08 at revision
+  `f78e8bede566343bcf2a40c8e1034310da7c108f`. This source review verifies the
+  counting and export cautions above; it is not a live-deployment check or a
+  fresh audit of every route on this page.

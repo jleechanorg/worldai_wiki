@@ -7,6 +7,11 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-10-08] update | Distinguish stored turns, copied history and playtime
+- Clarify [activity counts](queries/DeveloperAPI.md#counting-activity-without-counting-it-twice): player entries, shared copy history, timestamp windows, pagination and coverage limits.
+- Explain [copy and export cautions](queries/ExternalUserStories.md): new campaign dates do not make inherited turns new, and story exports are not real-world playtime reports.
+- Verified against the team's private implementation at revision `f78e8bede566343bcf2a40c8e1034310da7c108f`; no account data, private source excerpts or game changes included.
+
 ## [2026-09-18] update | Cross-page contradiction and voice pass after the rewrite sweep
 - Faction routing: `CharacterMode` claimed the faction specialist engages at 20+
   soldiers. That threshold is automatic mass combat; the faction minigame is
