@@ -1,7 +1,7 @@
 ---
 title: LivingWorld
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
@@ -20,7 +20,7 @@ On a schedule, not when you rest. An advance becomes due on whichever comes firs
 
 The in-game clock is the trigger you can rely on: anything that burns a day — travel, downtime, a long rest — brings the next advance forward. The turn count is a backstop for scenes that take many turns without much time passing, and a run of three quick turns inside one conversation will not always produce a visible development. Resting is not itself the trigger and carries no special risk.
 
-**[God Mode](GodMode.md) and [Think/Plan Mode](ThinkMode.md) turns are skipped entirely.** They do not advance the clock, do not generate world events, and do not use up the cadence. Use them as much as you like without burning world time.
+**[God Mode](GodMode.md) and [Think Mode](ThinkMode.md) turns are skipped entirely.** They do not advance the clock, do not generate world events, and do not use up the cadence. Use them as much as you like without burning world time.
 
 ## What an advance produces
 

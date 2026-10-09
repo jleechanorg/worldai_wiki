@@ -1,7 +1,7 @@
 ---
 title: SpicyMode
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-08
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -13,7 +13,7 @@ An opt-in setting for adult players that lets the GM write intimate scenes expli
 
 ## Where the switch is
 
-In the **game header**, on the right-hand side of the bar that shows your campaign title: a small switch labelled **🌶️ Spicy**, with a `?` next to it. It is not on the Settings page — if you go looking there, you will not find it.
+Open **⋯ More game actions** in the game header and choose **🌶️ Spicy**. The menu shows whether it is on or off. It is not on the Settings page.
 
 The switch remembers its state on your account, so it stays on across every campaign you play until you turn it off.
 
@@ -40,11 +40,11 @@ With Spicy **on**, those scenes are written out. The instructions the GM works f
 While Spicy is off, two things can prompt you — both only when a scene is actually heading somewhere romantic, never during ordinary play:
 
 - **A choice in your options list.** When the GM reads the scene as turning intimate, an **Enable Spicy Mode** option appears alongside your other choices. Picking it flips the switch for you.
-- **An occasional one-line aside.** On a romance-leaning turn, and only on every tenth turn, the GM may tack a short bracketed reminder onto the end of the narration saying Spicy Mode is available. (That reminder tells you to look in Settings. It is wrong — the switch is in the header.)
+- **An occasional one-line aside.** On a romance-leaning turn, and only on every tenth turn, the GM may tack a short bracketed reminder onto the end of the narration saying Spicy Mode is available. (That reminder tells you to look in Settings. It is wrong — the control is in **⋯ More game actions**.)
 
 Neither one forces anything. Ignore them and the story continues with fade-to-black.
 
-The offer runs the other way too, but only while Spicy is **on**: once an intimate scene is winding down, an **Exit Spicy Mode** option appears in your choices so you can drop back to your usual model without hunting for the header.
+The offer runs the other way too, but only while Spicy is **on**: once an intimate scene is winding down, an **Exit Spicy Mode** option appears in your choices so you can drop back to your usual model without opening the menu.
 
 ## Typing it instead
 
@@ -65,7 +65,7 @@ stop spicy mode
 return from spicy mode
 ```
 
-The GM answers with a one-line confirmation — `🌶️ Spicy mode enabled.` — and the setting is saved immediately. It does not burn a story turn: nothing happens in the world, no time passes, and your next message picks up where the scene left off. The header switch itself may keep showing the old position until you reload the campaign; the setting is already in force regardless of what the switch looks like.
+The GM answers with a one-line confirmation — `🌶️ Spicy mode enabled.` — and the setting is saved immediately. It does not burn a story turn: nothing happens in the world, no time passes, and your next message picks up where the scene left off. The menu control itself may keep showing the old position until you reload the campaign; the setting is already in force regardless of what the switch looks like.
 
 ## Player notes
 

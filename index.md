@@ -70,7 +70,7 @@ Real player-run campaigns, written up to show how the system handles a particula
 - [RestAndDeath](concepts/RestAndDeath.md) — Short rest, long rest, death saves.
 - [SmartSkillChecks](concepts/SmartSkillChecks.md) — How the GM decides which check your action calls for.
 - [Spellcasting](concepts/Spellcasting.md) — Spell slots, preparation, concentration.
-- [SpicyMode](concepts/SpicyMode.md) — The 🌶️ switch in the game header, and what turning it on changes.
+- [SpicyMode](concepts/SpicyMode.md) — The 🌶️ Spicy control in the ⋯ menu, and what turning it on changes.
 - [Subclass](concepts/Subclass.md) — Choosing a subclass at level-up.
 - [ThinkMode](concepts/ThinkMode.md) — Pausing the story to weigh your options before you act.
 

@@ -1,7 +1,7 @@
 ---
 title: GodModeFAQ
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: query
 tags: [wa-faq, wa-prompt]
 sources: []
@@ -20,7 +20,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 **A**: Two ways, and they do the same thing:
 
 1. Pick the **God** pill under the message box, then type your request.
-2. Stay in Character mode and start the message with `GOD MODE:` — for example `GOD MODE: keep the tone grimdark`.
+2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: keep the tone grimdark`.
 
 ## Q: Does `GOD MODE:` have to be in capitals?
 

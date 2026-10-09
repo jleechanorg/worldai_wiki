@@ -1,7 +1,7 @@
 ---
 title: "GodModeResponse"
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: entity
 tags: [wa-system, wa-prompt]
 sources: []
@@ -17,7 +17,7 @@ A God Mode turn does not produce story text. It produces three things:
 
 1. **A confirmation line** stating plainly what changed — "Set HP to 50. Done." It appears in its own block rather than in the story narration. If the GM returns nothing at all, you see the placeholder `[God Mode turn — no narrative]`.
 2. **The state change itself**, applied to your character sheet or the world immediately.
-3. **Three follow-up buttons**, always including **Return to story**, which switches you back to Character mode, plus the usual **Custom Action** button at the end. God Mode turns carry no **Show pros and cons** toggles.
+3. **Three follow-up buttons**, always including **Return to story**, which switches you back to Act mode. Type your own request in the message box.
 
 If a God Mode turn hands you story prose, something went wrong — the world is supposed to stay frozen.
 

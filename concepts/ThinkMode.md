@@ -1,19 +1,19 @@
 ---
 title: ThinkMode
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-08
 type: concept
 tags: [wa-mechanic, wa-tutorial]
 sources: []
 ---
 
-# Think / Plan Mode
+# Think Mode
 
 Think mode is your character stopping to think. The world freezes — no time passes, nothing acts — and instead of narrating what happens next, the GM gives you your character's own strategic analysis.
 
 ## How to use it
 
-Pick the **Think/Plan** pill under the message box, or start a message with `THINK:` from any mode:
+Pick the **Think** pill under the message box, or start a message with `THINK:` from any mode:
 
 > THINK: how do I get into the vault?
 

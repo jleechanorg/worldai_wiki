@@ -1,7 +1,7 @@
 ---
 title: WorldArchitect
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: entity
 tags: [wa-game, wa-system]
 sources: []
@@ -19,7 +19,7 @@ Playing is free. You sign in with Google and get 100 turns a day (50 in any 5-ho
 - **Real 5e rules.** Ability scores, skill checks, saving throws, advantage and disadvantage, initiative, spell slots, hit dice, rests, death saves. Dice are rolled for real, and the game recomputes every total and every success-or-failure verdict itself — so typing "I rolled a 20" changes nothing. See [Dice](../concepts/Dice.md).
 - **A world that moves without you.** NPCs pursue their own goals between your turns, time passes, and factions act on their own plans. See [LivingWorld](../concepts/LivingWorld.md).
 - **A faction layer.** Run an organization rather than just a character: gather intel, fight rival factions, climb the power rankings, manage resources. See [FactionSystem](../concepts/FactionSystem.md).
-- **Three ways to type.** Three buttons sit under the message box, and they decide how your words are read. **Character** (the default) — what you type is what your character does, and the story advances. **Think/Plan** — you weigh options with the GM and no time passes. **God** — you edit the campaign directly. Everywhere this wiki says "God Mode", it means that third button.
+- **Three ways to type.** Three buttons sit under the message box, and they decide how your words are read. **Act** (the default) — what you type is what your character does, and the story advances. **Think** — you weigh options with the GM and no time passes. **God** — you edit the campaign directly. Everywhere this wiki says "God Mode", it means that third button.
 - **God Mode.** Your out-of-character channel. Use it to fix and steer the campaign — correct a stat the GM got wrong, add or remove an item, change where you are or how an NPC feels about you — and to leave standing rules that shape how the GM narrates from then on (tone, voice, point of view, themes, things to avoid). Those standing rules are called **directives**. God Mode never advances the story; it changes the campaign around it. See [GodMode](../concepts/GodMode.md).
 - **Your choice of AI.** On the Settings page you pick which AI writes your campaigns — Gemini (the default), OpenRouter, Cerebras, or a local gateway — and a specific model within it. The setting applies to all your campaigns and you can change it whenever you like.
 
