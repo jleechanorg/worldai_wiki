@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-10-09] update | PR #10 campaign index merge repair; preserved current wiki catalog and campaign content.
+
 ## [2026-10-08] update | Refresh game-screen guidance for players
 - Update the [first-session guide](queries/how-to-play-worldai.md) for Act, Think, God, inline choice details and the More game actions menu.
 
@@ -186,3 +188,5 @@
 ## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified against the live wizard in a local browser run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
 
 ## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section
+
+## [2026-08-18] create | Aevum Chronicler custom-campaign template (paste-ready ~3,400-word master engine prompt + 10-section setup walkthrough; derived from Arcanum The Chronicler + Aevum via 4-turn Gemini iteration; deterministic, no dice, no endings, Deference Engine, Quad-Pillar cascade, RomanceCronos, Mortal Anchor mechanic)

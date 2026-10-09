@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Every page in the wiki, listed by type with a one-line summary. Start here when you're looking for something.
-> Last updated: 2026-09-18 | Total pages: 63
+> Last updated: 2026-10-09 | Total pages: 64
 
 ## Start here
 
@@ -13,6 +13,7 @@
 - [Player features reference](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 - [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — a bastard of Daemon Targaryen claims a dragon on the eve of the Dance. Includes a paste-ready campaign bible and a setup walkthrough.
+- [Aevum Chronicler — custom campaign template](queries/aevum-chronicler-campaign.md) — low-fantasy kingdom-builder derived from Arcanum's The Chronicler + Aevum. Deterministic, no dice, no endings. Landless serf → sovereign via Deference Engine, Quad-Pillar cascade, RomanceCronos decoupled axes, Mortal Anchor mechanic. Includes a paste-ready ~3,400-word master engine prompt.
 
 ## Entities
 
