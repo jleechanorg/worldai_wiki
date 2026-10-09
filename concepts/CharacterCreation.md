@@ -1,7 +1,7 @@
 ---
 title: CharacterCreation
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -9,68 +9,89 @@ sources: []
 
 # Character Creation
 
-When you start a campaign, you create a character. WorldArchitect.AI offers two paths: **AI-generated** (the system builds the character based on your prompt) or **hand-rolled** (you pick race, class, background, stats).
+Every campaign starts by building the character you'll play. There are three ways to do it, plus a shortcut if you picked a starter campaign.
 
-## Path 1: AI-generated
+| Method | Pick this when |
+|--------|----------------|
+| **AI Generated** | You know *who* your character is — "I want to play Itachi", "a disgraced knight from the world you just described". |
+| **Standard D&D** | You know *what they do* — a specific class-and-stat build you already have in your head. |
+| **Custom Class** | You want a class D&D 5e doesn't have — a Sith Blade, a chakra-using shinobi, a gunslinger. |
+| **Starter campaign** | You picked Dragon Knight, which hands you a finished character to review. |
 
-The fastest path. You describe what you want and the system builds it.
+Whichever you choose, the review screen lets you change anything before the story starts. If you are not sure which class does what in a fight, [CharacterArchetype](CharacterArchetype.md) sorts them into tank, striker, controller and support — tabletop shorthand to choose by, not a field the game asks you for.
 
-### Prompt format
+## How it actually runs
 
-> Character: <description> | Setting: <world>
+Character creation happens in the game chat, not on the campaign form. The GM talks you through it, and every reply ends with a set of buttons — the last one is always **"Finish Character Creation and Start Game"**.
 
-Example (from the Itachi V2 campaign):
-> Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
+The story will not begin until you click it. Take as long as you like editing stats, spells, and gear, and use **Edit Character** on the review screen to go back.
 
-### What the AI generates
+## AI Generated
 
-Based on your prompt, the CharacterCreation agent builds:
-- **Race** (mapped to D&D 5e or world-equivalent)
-- **Class** (or equivalent archetype in custom settings)
-- **Subclass** (if applicable at level 1)
+Describe the character in a sentence or two and the GM builds the whole sheet:
+
+- **Race**, mapped to D&D 5e or the setting's equivalent
+- **Class** and, where level 1 has one, **subclass**
 - **Background**
-- **Ability scores** (rolled or assigned)
-- **Equipment** (starting gear appropriate to the character concept)
-- **Personality** (ideals, bonds, flaws — optionally)
-- **Relationships** (connections to NPCs in the setting)
+- **Ability scores**
+- **Equipment**, matched to the concept
+- **Personality and backstory** — ideals, bonds, flaws, and a couple of paragraphs on who they are. You can skip this and add it later.
+- **Starting companions**, unless you said in your campaign description that you want to begin alone
 
-### When AI-generated works well
+## Standard D&D
 
-- You have a strong character concept ("I want to play Itachi").
-- You want to play a setting-specific character (a Naruto character, a Game of Thrones character).
-- You want to start playing quickly.
+Step through the sheet yourself:
 
-### When to hand-roll instead
+1. **Choose race** — Human, Elf, Dwarf, Halfling, or the setting's equivalent.
+2. **Choose class** — Fighter, Wizard, Cleric, Rogue, and so on.
+3. **Choose subclass**, at the level your class gets one.
+4. **Choose background** — Acolyte, Criminal, Noble, Sage, Soldier.
+5. **Set ability scores** — pick **Point Buy** (27 points, each score 8-15 before racial bonuses) or the **Standard Array** (15, 14, 13, 12, 10, 8), or just tell the GM the six numbers you want. There is no dice-rolling option for starting stats.
+6. **Choose skills** from your class's list.
+7. **Choose equipment** from your class's starting kit.
+8. **Set personality** — ideals, bonds, flaws. Optional, but the GM uses them.
 
-- You want a specific build (e.g., "DEX paladin with GWM").
-- You want to min-max.
-- You want to play an unusual combination the AI might not think of.
+## Custom Class
 
-## Path 2: Hand-rolled
+Describe a class that doesn't exist in D&D 5e and the GM treats your description as binding, building progression, resources, and abilities to match. Your sheet still uses 5e's underlying fields, so the numbers stay consistent with everything else in the game.
 
-Build your character step-by-step:
+## What the game fills in for you
 
-1. **Choose race**: Human, Elf, Dwarf, Halfling, etc. (or setting-equivalent).
-2. **Choose class**: Fighter, Wizard, Cleric, Rogue, etc.
-3. **Choose subclass**: at the appropriate level for your class.
-4. **Choose background**: Acolyte, Criminal, Noble, Sage, Soldier, etc.
-5. **Roll ability scores**: 4d6kh3, six times, assign.
-6. **Choose skills**: from your class's list.
-7. **Choose equipment**: from your class's starting equipment list.
-8. **Set personality**: ideals, bonds, flaws (optional but adds flavor).
+Before it shows you the final review, the GM patches three things without asking:
+
+- **A full weapon set.** Every character needs a main hand, an off hand (second weapon, shield, or spellcasting focus), and a ranged option (bow, thrown weapon, or an attack cantrip like Fire Bolt). Any slot you left empty gets a class-appropriate default, so you never walk into a fight unable to answer an archer.
+- **Starting gold.** Gold is checked against what a character of your level should have, adjusted up or down, then scaled by your background's wealth tier — Destitute x0.25, Poor x0.5, Commoner x1.0, Privileged x1.5, Royal x2.0. The GM says so in the narrative when it changes.
+- **A background.** Skip it and you get `commoner`, or a standard background that suits your class.
+
+## Spellcasters
+
+If your class casts at level 1, you leave creation with an actual spell list — the GM won't let you start with an empty spellbook.
+
+- **Wizards** get both a spellbook and today's prepared spells.
+- **Clerics and Druids** get a prepared list.
+- **Bards, Sorcerers, and Warlocks** get a known list.
+- Classes that get cantrips at level 1 get at least two.
+
+**Paladins and Rangers don't cast at level 1.** They gain no spells and no slots until level 2, so their sheets read "No Spells Yet (Level 2+)" on purpose — that's correct, not a bug.
 
 ## Custom settings
 
-In custom settings (Naruto, Game of Thrones, BG3, etc.), the character creation adapts:
-- **Naruto**: clan, rank, kekkei genkai, jutsu list
-- **Game of Thrones**: house, allegiances, reputation
-- **BG3**: race, class, origin (origin-specific story hooks)
+There is no per-setting character builder. Name a world in your prompt — Naruto, Westeros, Faerûn — and the GM works from its own knowledge of that setting plus whatever you wrote, inventing setting-true equivalents: a clan and a jutsu list in place of a background and a spell list, a house and its allegiances in place of a guild.
+
+Underneath, the sheet still uses D&D 5e fields (race, class, ability scores, skills, equipment), so mechanics stay consistent no matter how exotic the flavour.
+
+## What you fill in on the campaign form
+
+Three of the numbered sections on the first wizard step shape your character. All three are optional:
+
+- **Favourite Character / Chosen Protagonist** — e.g. `Uchiha Itachi`. Leave it blank and the game picks one at random.
+- **Setting / world for your adventure** — e.g. `Naruto universe`. Blank gives you a random fantasy world.
+- **Campaign description prompt** — the last section, and the one people miss: it starts collapsed behind an **Expand** button. Open it and you get a free-text box for the premise, as long as you like: `Itachi when he was young and had just become an ANBU member. Itachi Gaiden arc.`
 
 ## Player tips
 
-- **Start with AI-generated**: for your first campaign, let the system build the character. Learn the rules by playing.
-- **Hand-roll for replay**: on your second or third character, try hand-rolling.
-- **Don't over-optimize**: a character with strong personality plays better than a min-maxed one.
-- **Write a backstory**: 2-3 sentences about who they are and what they want. The GM uses this.
+- **Start with AI Generated.** Describe the character you want in a sentence and edit the sheet on the review screen.
+- **Write two or three sentences of backstory.** The GM reads it and will reference the people, places, and grudges you name.
+- **Use Standard D&D when you have a specific build in mind** — a Dexterity-based paladin, a grappler, a particular multiclass.
 
-See [Subclass](Subclass.md), [LevelUp](LevelUp.md), [CampaignWizard](CampaignWizard.md).
+See [Equipment](Equipment.md), [Subclass](Subclass.md), [LevelUp](LevelUp.md), [CampaignWizard](CampaignWizard.md).

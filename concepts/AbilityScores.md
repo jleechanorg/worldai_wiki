@@ -1,7 +1,7 @@
 ---
 title: AbilityScores
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic, wa-glossary]
 sources: []
@@ -9,55 +9,61 @@ sources: []
 
 # Ability Scores
 
-D&D 5e's six core attributes:
+D&D 5e's six core attributes, and what each one does for you.
 
-| Score | Abbreviation | What it governs |
-|-------|--------------|-----------------|
-| Strength | STR | Melee attacks, grappling, carrying, jumping |
-| Dexterity | DEX | Ranged attacks, AC (light armor), initiative, Stealth, Acrobatics |
-| Constitution | CON | HP, hit dice, concentration checks, endurance |
-| Intelligence | INT | Wizard spells, Arcana, History, Investigation |
-| Wisdom | WIS | Cleric/Druid spells, Perception, Insight, Medicine |
-| Charisma | CHA | Bard/Paladin/Sorcerer/Warlock spells, Persuasion, Deception, Intimidation |
+| Score | Abbreviation | What it governs | Check example | Save example |
+|-------|--------------|-----------------|---------------|--------------|
+| Strength | STR | Melee attacks, grappling, carrying, jumping | Kick down a door | Avoid being shoved off a ledge |
+| Dexterity | DEX | Ranged attacks, AC in light armor, initiative, Stealth, Acrobatics | Balance on a beam | Dodge a fireball |
+| Constitution | CON | HP, hit dice, concentration, endurance | Hold your breath | Resist poison |
+| Intelligence | INT | Wizard spells, Arcana, History, Investigation | Recall lore | Resist mind control |
+| Wisdom | WIS | Cleric and Druid spells, Perception, Insight, Medicine | Sense a lie | Shake off a fear effect |
+| Charisma | CHA | Bard, Paladin, Sorcerer, and Warlock spells, Persuasion, Deception, Intimidation | Persuade a guard | Resist banishment |
+
+A **check** is you trying something; a **saving throw** is you resisting something. Both roll `1d20 + the ability modifier`, plus your proficiency bonus when it applies. Each class is proficient in two saves.
 
 ## Modifiers
 
-Each score has a modifier: `(score - 10) / 2`, rounded down.
+A score's modifier is `(score - 10) / 2`, rounded down.
 
-| Score | Modifier |
-|-------|----------|
-| 8 | -1 |
-| 10 | +0 |
-| 12 | +1 |
-| 14 | +2 |
-| 16 | +3 |
-| 18 | +4 |
-| 20 | +5 |
+| Score | 8 | 10 | 12 | 14 | 16 | 18 | 20 |
+|-------|---|----|----|----|----|----|----|
+| Modifier | -1 | +0 | +1 | +2 | +3 | +4 | +5 |
 
-## Ability checks
+## Base vs effective scores
 
-`1d20 + ability modifier + proficiency (if proficient)`. Used when the outcome is uncertain and success isn't guaranteed.
+Your sheet keeps two numbers for every ability: the **base** score you built the character with, and the **effective** score after magic items. A belt reading `+2 STR (Max 20)` raises your effective Strength by 2 but never past 20 — and the bonus disappears the moment you unequip it.
 
-Examples:
-- **STR check**: kick down a door
-- **DEX check**: balance on a ledge
-- **CON check**: hold your breath
-- **INT check**: recall lore
-- **WIS check**: sense motive
-- **CHA check**: persuade an NPC
+Opening **Stats** shows both, with the gear bonus broken out:
 
-## Saving throws
+| Stat | Base | Effective | Mod | Bonus |
+|------|------|-----------|-----|-------|
+| STR | 16 | 16 → 18 | +4 | +2 |
+| DEX | 14 | 14 | +2 | — |
 
-Like ability checks but resisted against a DC set by an effect. Each class is proficient in 2 saves (determined by class). Common save triggers:
-- **STR save**: avoid being pushed
-- **DEX save**: avoid a fireball
-- **CON save**: resist poison
-- **INT save**: resist a mind-control spell
-- **WIS save**: resist a fear effect
-- **CHA save**: resist a banishment
+Everything downstream — attack rolls, spell save DC, initiative, AC — uses the effective score.
 
-## Advantage & disadvantage
+## The 15 cap at character creation
 
-Roll twice, take the higher (advantage) or lower (disadvantage). See [AdvantageDisadvantage](AdvantageDisadvantage.md).
+Before racial bonuses, no starting score may exceed 15. That's the ceiling for both Point Buy and the Standard Array, and the game checks it. If your character arrives with something higher — from a template, an AI-generated sheet, or a number you asked for — the character review step flags that stat with a warning and offers you a choice that pulls the scores back to standard starting limits.
 
-See [Combat](Combat.md), [ASI](ASI.md).
+Racial and background bonuses stacked on top of 15 are fine; the cap is checked against your base scores only. Campaigns that explicitly use epic or mythic creation rules skip the warning.
+
+## Social checks aren't pure Charisma
+
+Social checks run on Charisma, but you can lean on what you're actually good at. If a smarter, wiser, or more physically imposing approach fits the moment, **half** that modifier is added to the check:
+
+| Check | Stat that can help |
+|-------|--------------------|
+| Intimidation | STR or DEX, whichever is higher |
+| Persuasion (a logical argument) | INT |
+| Persuasion (an empathetic appeal) | WIS |
+| Deception | INT or WIS |
+
+Only one stat can help per check, and it adds nothing if your Charisma modifier is already the higher of the two — a Bard with CHA 18 gains nothing from WIS 14. But a Wizard with INT 18 (+4) and CHA 8 (-1) rolls `d20+1` on a reasoned argument instead of `d20-1`. Proficiency still applies normally.
+
+## Related
+
+Some rolls are made twice and the better or worse die kept — see [AdvantageDisadvantage](AdvantageDisadvantage.md). How the target number for a check is chosen is covered in [SmartSkillChecks](SmartSkillChecks.md).
+
+See [Combat](Combat.md), [ASI](ASI.md), [CharacterCreation](CharacterCreation.md).

@@ -26,8 +26,6 @@ LINT_SCRIPT = REPO_ROOT / "scripts" / "lint_wikilinks.py"
 
 # All wiki content directories
 WIKI_DIRS = ["concepts", "entities", "comparisons", "queries"]
-# Top-level standalone pages
-TOP_LEVEL_PAGES = ["README.md", "SCHEMA.md", "index.md"]
 
 WIKILINK_RE = re.compile(r"\[\[([^\]\n]+?)\]\]")
 
@@ -40,14 +38,17 @@ def _strip_code_blocks(text: str) -> str:
 
 
 def _all_md_files() -> list[Path]:
+    """Every content page plus every top-level page.
+
+    Top-level pages are globbed rather than listed: log.md, AGENTS.md and
+    CLAUDE.md all carry relative links, and an allowlist that omitted them
+    let broken links in those files pass unnoticed.
+    """
     files: list[Path] = []
     for d in WIKI_DIRS:
         for p in (REPO_ROOT / d).glob("*.md"):
             files.append(p)
-    for name in TOP_LEVEL_PAGES:
-        p = REPO_ROOT / name
-        if p.exists():
-            files.append(p)
+    files.extend(sorted(REPO_ROOT.glob("*.md")))
     return files
 
 
@@ -201,14 +202,20 @@ def test_all_md_links_in_wiki_resolve():
 
 
 def test_player_facing_systems_table_uses_markdown_links():
-    """The exact bug Jeffrey reported: the player-facing systems table
-    on entities/WorldArchitect.md must render as clickable github.com links."""
+    """The exact bug Jeffrey reported: the navigation table on
+    entities/WorldArchitect.md must render as clickable github.com links.
+
+    The heading has been retitled once ("Player-facing systems at a glance"
+    -> "Where to go next"), so match any of its known names rather than
+    pinning wording the contract does not depend on.
+    """
     page = REPO_ROOT / "entities" / "WorldArchitect.md"
     text = page.read_text()
-    # Find the section
-    assert "Player-facing systems at a glance" in text
-    # Extract the table area
-    start = text.index("Player-facing systems at a glance")
+    headings = ("Where to go next", "Player-facing systems at a glance")
+    start = next((text.index(h) for h in headings if h in text), None)
+    assert start is not None, (
+        f"no navigation-table heading found on {page.name}; expected one of {headings}"
+    )
     section = text[start:]
 
     # Each row should now contain a markdown link, not a raw [[wikilink]]

@@ -1,7 +1,7 @@
 ---
 title: ASI
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -9,38 +9,46 @@ sources: []
 
 # Ability Score Improvement (ASI)
 
-At certain levels, you gain the option to increase one ability score by 2, two ability scores by 1 each, or take a feat.
+At certain levels you can raise one ability score by 2, raise two scores by 1
+each, or take a feat instead.
 
-## ASI levels
+## When you get one
 
-Most classes gain ASI at:
-- **4th level**
-- **8th level**
-- **12th level**
-- **16th level**
-- **19th level** (some classes)
+Most classes gain an ASI at **4th, 8th, 12th, 16th and 19th** level. Fighters gain
+extra improvements at 6th and 14th; Rogues gain one extra at 10th.
 
-Fighters gain additional ASI at 6th, 14th; Rogues at 10th, 14th.
+The AI picks for you when you level and applies it immediately. To change it,
+open the **Review Level-Up Choices** option — see [LevelUp](LevelUp.md).
 
-## Feats vs ASI
+## Feats
 
-When you gain ASI, you can take a feat instead of an ability score increase.
+The game has no fixed feat list. Feats are an optional 5e rule, and the AI draws
+on standard 5e feats when you ask for one by name during the level-up review. If
+it doesn't recognise the feat you want, describe what it should do and it will be
+adjudicated in play.
 
-**ASI**: +2 to one stat, or +1 to two stats. Reliable, always useful.
+Feats players commonly ask for:
 
-**Feats**: Many grant +1 to a stat plus a feature. Some examples:
-- **Sharpshooter**: -5 to hit, +10 damage with ranged weapons. Massive damage increase.
-- **Great Weapon Master**: -5 to hit, +10 damage with heavy melee weapons. Extra attack on crit/kill.
-- **Lucky**: 3 luck points, re-roll any d20. One of the strongest feats.
-- **Alert**: +5 to initiative, can't be surprised. Strong for rogues.
-- **Tough**: +2 HP per level. Strong for tanks.
-- **War Caster**: Advantage on concentration saves. Strong for casters.
-- **Resilient (WIS)**: Proficiency in WIS saves. Strong vs Wis-dominance enemies.
+- **Sharpshooter** — take -5 to hit for +10 damage with ranged weapons
+- **Great Weapon Master** — the same trade with heavy melee weapons, plus a bonus
+  attack when you crit or drop an enemy
+- **Lucky** — three re-rolls of any d20, which is as strong as it sounds
+- **Alert** — +5 initiative and you can't be surprised
+- **Tough** — +2 HP per level
+- **War Caster** — advantage on concentration saves
+- **Resilient (Wisdom)** — proficiency in Wisdom saving throws
 
-## Choosing ASI
+Many feats also include +1 to a score, so the trade is rarely a clean loss.
 
-- **Max your main stat first**: +2 to your casting stat or DEX/STR is usually the best first ASI.
-- **Then feats**: feats that interact with your build are stronger than +1 to a dump stat.
-- **Resilient saves**: common wisdom is to grab WIS saves by level 8-12 (avoid mind control).
+## Choosing
 
-See [LevelUp](LevelUp.md), [AbilityScores](AbilityScores.md), [Subclass](Subclass.md).
+- **Raise your main stat first.** +2 to your casting ability, or to Dexterity or
+  Strength if you fight, is usually the strongest first pick.
+- **Then look at feats.** A feat that fits what you already do beats +1 in a score
+  you never roll.
+- **Wisdom saves matter.** They defend against charm and fear effects, which turn
+  up more often from around level 8. Either a Resilient feat or a straight Wisdom
+  bump covers it.
+
+See [LevelUp](LevelUp.md), [AbilityScores](AbilityScores.md), and
+[Subclass](Subclass.md).

@@ -1,7 +1,7 @@
 ---
 title: Initiative
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: concept
 tags: [wa-mechanic, wa-glossary]
 sources: []
@@ -13,23 +13,27 @@ The order in which combatants act in a fight.
 
 ## How it's determined
 
-When combat starts, every combatant rolls `1d20 + DEX modifier`. The order is high-to-low. Ties are broken by DEX score (higher goes first), then by coin flip.
+When combat starts, every combatant rolls `1d20 + DEX modifier` and the order runs high to low. The game defines no tie-break, so when two combatants roll the same total the GM simply picks an order for them.
+
+The GM writes the full order into the story text at the start of each round, with everyone's roll in brackets. Your character sheet shows your initiative *modifier*, not your place in the order.
 
 ## Turn order
 
-The combatant with the highest initiative goes first. After their turn ends, the next-highest takes their turn. Once everyone's had a turn, that's one round; the next round starts at the top of initiative again.
+Highest initiative goes first. When that combatant's turn ends, the next-highest acts. Once everyone has had a turn, that's one round, and the next round starts at the top again.
+
+Your own turn ends only when you say "end turn", "done", or "pass" — see [Combat](Combat.md) for what a turn contains.
 
 ## Why it matters
 
-- **Going first matters**: a wizard who casts Hold Person before the enemy acts can neutralize them for the round.
-- **DEX characters go first**: rogues, monks, and rangers have higher DEX and tend to act first.
-- **Surprise**: if combat starts and the enemy didn't notice you, you get a free round (no initiative roll, you just go first).
-- **Readied actions**: a combatant can use their reaction to "ready" an action for a specific trigger, then act when it happens.
+- **Going first matters.** A wizard who lands Hold Person before the enemy acts takes them out of the round entirely.
+- **DEX characters tend to go first.** Rogues, monks, and rangers have the highest DEX modifiers, so they sit near the top of most orders.
+- **Surprise is not a free round.** Catching an enemy unaware doesn't skip initiative — everyone still rolls. What it buys you is GM judgment: a stronger opening strike, enemies reacting badly, and in an outright assassination setup, a kill that would otherwise take several rounds. Describe the ambush clearly and the GM will weigh it.
+- **Readying costs your Action, not your Reaction.** Say what you're waiting for and what you'll do about it ("I ready an attack for when the goblin steps through the doorway"). When the trigger fires, carrying it out spends your Reaction. If the trigger never happens, the readied action is simply lost.
 
 ## Player tips
 
-- **Initiative is random**: even with high DEX, you might roll low. Plan for it.
-- **Bonus action on turn 1**: feats like Alert add +5 to initiative; the Alert feat is one of the strongest for a reason.
-- **Don't pre-position**: pre-combat movement is wasted if the enemy surprises you.
+- **Initiative is random.** Even with high DEX you'll sometimes roll a 3. Plan an opening that survives going last.
+- **A better initiative modifier helps every fight**, not just this one — it's one of the things a DEX increase buys you. If you'd rather buy it outright, the Alert feat is worth +5 initiative and can be asked for at a level-up; see [ASI](ASI.md).
+- **Don't over-plan your pre-combat positioning.** You won't know the order until the dice land, and an enemy who beats you can move before you do.
 
-See [Combat](Combat.md).
+See [Combat](Combat.md), [CombatVictoryProtocol](CombatVictoryProtocol.md), [AbilityScores](AbilityScores.md).
