@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Every page in the wiki, listed by type with a one-line summary. Start here when you're looking for something.
-> Last updated: 2026-09-18 | Total pages: 63
+> Last updated: 2026-10-09 | Total pages: 64
 
 ## Start here
 
@@ -13,6 +13,7 @@
 - [Player features reference](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 - [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — a bastard of Daemon Targaryen claims a dragon on the eve of the Dance. Includes a paste-ready campaign bible and a setup walkthrough.
+- [House of the Dragon — The Ashen Crown (Rhaenyra)](queries/house-of-the-dragon-ashen-crown-rhaenyra.md) — hardcore political-realism campaign playing Queen Rhaenyra canon in the immediate aftermath of the Season 3 finale. Quad-Pillar mechanics (CS/TL/PTR/DL), 7-archetype dragon class system, 20-level dragon progression, Bard+Dragonrider subclass L11-L25 (optional Divine Ascension), GRRM-faithful magic, no canonical endings. Companion to the Bastard's Claim bible above.
 
 ## Entities
 
