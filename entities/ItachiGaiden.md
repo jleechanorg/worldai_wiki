@@ -1,10 +1,10 @@
 ---
 title: ItachiGaiden
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-09-18
 type: entity
 tags: [wa-campaign, wa-character]
-sources: [raw/Itachi V2_ZMbCnA6b.txt]
+sources: []
 campaign_id: ZMbCnA6b
 scene_count: 432
 level_reached: 44
@@ -21,11 +21,12 @@ The God Mode header was short — two lines:
 > God Mode:
 > Character: Uchiha Itachi | Setting: Naruto universe. Itachi when he was young and became member anbu. Itachi gaiden arc.
 
-The system interpreted this as:
-- **Race/clan**: Uchiha (Sharingan user)
-- **Class**: Multi-class gestalt (Rogue Assassin + Ranger Gloom Stalker) — both stealth-and-damage classes
+From that, the game built:
+- **Race/clan**: Uchiha, Sharingan user
 - **Setting**: Naruto canon timeline, ANBU era, before the Uchiha massacre
-- **Tone defaults**: anime-style action, with character-driven drama
+- **Tone defaults**: anime-style action with character-driven drama
+
+Everything else — the class build, the Sharingan progression — came from what the player asked for once play started.
 
 ## The directive (added 2026-05-30, scene ~60)
 
@@ -59,7 +60,7 @@ At various points the player reshaped the world directly:
 
 > "True resurrection for my lunar vassals and give them their freedom then time skip until someone's life in danger"
 
-This freed every vassal the player had previously mind-controlled and time-skipped to the next crisis. The system applied the change to `custom_campaign_state.core_memories` (324 entries by the end) and continued the world from the new state.
+That one line freed every vassal the player had previously mind-controlled and jumped the campaign forward to the next crisis. The game recorded it in the campaign's long-term memory — which reached 324 entries by the end — and carried the world on from the new state.
 
 ### 4. The escalation curve works
 
@@ -115,14 +116,14 @@ This is a "campaign continues" ending. The state is preserved; the next session 
 
 - **Scenes**: 432
 - **Final level**: 44
-- **Core memories accumulated**: 324
+- **Final class**: Shinobi (Triple Gestalt: Assassin / Gloomstalker / Bladesinger) — the build picked up a third strand during play
+- **Long-term memory entries**: 324
 - **God mode directives**: 1 (added scene 60, never revised)
-- **Player-prompt categories used**: freeform, choice, level-up, god-return-story
+- **Kinds of input used**: free typing, choice buttons, level-up prompts, and returning to the story after a God Mode command
 - **End state**: mythic, not game-over
 
 ## Sources
 
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b.txt` (1.27 MB, 432 scenes).
-- `~/llm_wiki/raw/campaigns/Itachi V2_ZMbCnA6b_game_state.json` (152.8 KB game state).
-- See [GodModePrompting](../concepts/GodModePrompting.md) for directive-writing lessons.
-- See [CampaignDesign](../concepts/CampaignDesign.md) for design lessons.
+- The Itachi V2 campaign transcript and saved game state (432 scenes). Campaign exports are private and are not published.
+- See [GodModePrompting](../concepts/GodModePrompting.md) for directive-writing lessons and [CampaignDesign](../concepts/CampaignDesign.md) for design lessons.
+- Character archetype notes: [ItachiUchiha](ItachiUchiha.md).

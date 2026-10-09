@@ -1,8 +1,7 @@
 # AGENTS.md
 
-> Repo-wide agent contract for `jleechanorg/worldai_wiki`. Read this before
-> you write anything. The companion file [`CLAUDE.md`](CLAUDE.md) has
-> Claude-Code-specific guidance; this file is the cross-tool contract.
+> Repo-wide authoring contract for `jleechanorg/worldai_wiki`. Read this before
+> writing. [`CLAUDE.md`](CLAUDE.md) is a symlink to this same contract.
 
 ## Purpose
 
@@ -10,25 +9,37 @@
 [WorldArchitect.AI](https://worldarchitect.ai). It is a curated Markdown wiki
 hosted on GitHub, not the game itself and not the private code repo.
 
-**Three audiences:**
+**Audience: public players and external users.** This wiki teaches people
+who use WorldArchitect.AI how to navigate the app, create and play campaigns,
+and shape their stories. Write instructions they can follow without access to
+the development team, private repositories, databases, or operator tools.
+Existing developer-reference pages serve external integrators; they are not a
+home for internal reporting or operational notes.
 
-1. **Players** — learning to play, design campaigns, prompt god mode.
-2. **External developers / integrators** — using MCP, REST, or
-   OpenAI-compatible API.
-3. **Operator-curators** — keeping the wiki accurate as the game evolves.
+**UI refreshes start from the current interface.** Verify the visible labels,
+menus, navigation and workflows before rewriting a how-to. Prefer the running
+app when accessible; otherwise check the current UI source and clearly state
+any live-verification limits in the review, not as a new player-facing audit
+section. Check open wiki PRs for overlapping changes before editing.
 
-**Source of truth for game behaviour**: the private
-[`jleechanorg/worldarchitect.ai`](https://github.com/jleechanorg/worldarchitect.ai)
-repo. If the two ever disagree, the private repo wins; this wiki needs an
-update.
+**Public-content boundary.** Do not publish internal analytics definitions,
+account activity reports, audit receipts, private implementation paths or
+revisions, debugging notes, or agent coordination in player pages or the wiki
+log. Read authorized implementation sources to check a claim, then explain
+only the behavior useful to a player. Use synthetic examples rather than
+account details. A UI redesign refresh is about user-facing guidance, not an
+internal engineering audit.
+
+`AGENTS.md` is the single authoring contract. `CLAUDE.md` must be a relative
+symlink to `AGENTS.md`, so both entry points always give the same instructions.
 
 ## Non-negotiables
 
 - **No internal code paths.** Do not expose file:line references into
   private backend code, internal class names, or implementation details that
   would change with the next refactor.
-- **No fabricated facts.** If the existing page, the `raw/` mirror, or the
-  live product does not back a claim, do not write it.
+- **No fabricated facts.** If the existing page, the internal source you
+  ingested, or the live product does not back a claim, do not write it.
 - **No credentials in examples.** Use placeholders (`<your-api-key>`,
   `<your-uid>`, `<your-campaign-id>`). The CI scans for this; do not bypass
   it.
@@ -37,12 +48,11 @@ update.
   correct section. Edited pages must keep their existing outbound links.
 - **No ad-hoc tags or types.** Use the closed taxonomy in `SCHEMA.md`. Add to
   the taxonomy first, then use it.
-- **No raw `[[wikilinks]]` in any github-rendered file** — including
-  `raw/` mirror pages. github.com does not render Obsidian-style
-  `[[wikilinks]]`; they show as literal `[[brackets]]` text and break
-  navigation. The lint script enforces this for the wiki content
-  directories AND the `raw/` mirror (as a render-safety check). Always
-  use `[Display Text](path/Page.md)` markdown links, even in `raw/`.
+- **No raw `[[wikilinks]]` in any github-rendered file.** github.com does not
+  render Obsidian-style `[[wikilinks]]`; they show as literal `[[brackets]]`
+  text and break navigation. The lint script enforces this across the wiki
+  content directories. Always use `[Display Text](path/Page.md)` markdown
+  links.
 
 ## Schema contract
 
@@ -57,7 +67,7 @@ update.
   updated: YYYY-MM-DD
   type: entity | concept | comparison | query | summary | source | schema
   tags: [from-taxonomy]
-  sources: [raw/<path>]
+  sources: [path/ToAnotherPage.md]
   ---
   ```
 - **Markdown links only.** No Obsidian-style `[[wikilinks]]`.
@@ -97,7 +107,8 @@ When you modify any file:
    section.
 4. **`log.md`**: append a one-line entry in the format
    `## [YYYY-MM-DD] action | subject` where `action` is one of
-   `ingest, update, query, lint, create, archive, delete`.
+   `ingest, update, query, lint, create, archive, delete`. Describe only the
+   player-facing change; never record private audit or analytics details.
 5. **Run lints**:
    ```bash
    python -m pytest tests/ -v -m "not slow"
@@ -108,13 +119,15 @@ When you modify any file:
 
 ## Source ingestion protocol
 
-When you ingest a new raw source (e.g. an updated internal spec):
+When you ingest a new source (e.g. an updated internal spec):
 
-1. **Save the raw file** under `raw/` with a clear filename.
-2. **Reference it** from the relevant wiki page's frontmatter `sources:`
-   array.
-3. **Summarize, do not duplicate.** Wiki pages describe what the raw file
-   says in player-facing language; they do not copy-paste code or internal
+1. **Do not mirror the source into this repo.** The wiki is public; internal
+   specs stay where they live. Read the source, then write from it.
+2. **Cite public sources a reader can open** when a citation is useful.
+   Keep private-source verification details in the review process, not in
+   player pages or the wiki log. Do not add private revision or audit receipts.
+3. **Summarize, do not duplicate.** Wiki pages describe what the source says
+   in player-facing language; they do not copy-paste code or internal
    identifiers.
 4. **Flag contradictions** in frontmatter `contradictions: [page-name]` and
    call them out in the lint report.
@@ -136,6 +149,21 @@ Relevant skills for this repo include:
 
 Personal skills win when conflicts exist.
 
+## Additional authoring references and review hygiene
+
+When available, the `worldarchitect` skill includes
+`references/worldai-wiki-authoring.md`, covering the external-audience rewrite
+recipe, schema, and common review issues. Check personal skill directories
+listed above and `~/.hermes_prod/skills/`; use only available, authorized tools.
+
+Review the diff before opening a PR. Check for orphan screenshots, accidental
+auth-bypass disclosures, private paths, story-ID collisions and broken Markdown
+links. Land known fixes before publication rather than assuming review bots
+will catch them later. Keep the human-review requirement below; do not enable
+auto-merge as part of a documentation refresh. If another authorized action
+merges a PR before fixes land, use a focused follow-up branch from `origin/main`
+and reference the original PR.
+
 ## Voice and style
 
 - **Active voice**, present tense for behaviour, past tense for actions.
@@ -153,7 +181,7 @@ The wiki has no build step. CI runs:
 ```bash
 python -m pytest tests/ -v -m "not slow"     # fast: wikilink + markdown regressions
 python scripts/lint_wikilinks.py              # no broken [[wikilinks]] / .md links
-                                              # AND no raw [[wikilinks]] in raw/ (render-safety)
+                                              # AND no raw [[wikilinks]] in github-rendered files
 python scripts/check_http_links.py            # slow: external HTTP link check
 ```
 
@@ -199,7 +227,6 @@ skips PRs.
 ├── entities/                  # entity pages (campaigns, characters, systems)
 ├── queries/                   # question-answering pages (FAQs, how-tos, user stories)
 ├── comparisons/               # side-by-side comparisons
-├── raw/                       # mirrored internal source files
 ├── scripts/                   # lint + link-check scripts
 ├── tests/                     # pytest wikilink + markdown regressions
 └── .github/workflows/         # CI workflows (lint, HTTP check)
@@ -212,4 +239,3 @@ skips PRs.
 - [`README.md`](README.md) — public-facing overview.
 - [`index.md`](index.md) — page catalog.
 - [`log.md`](log.md) — chronological change log.
-- [`raw/`](raw/) — mirrored internal source files.

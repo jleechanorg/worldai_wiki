@@ -39,7 +39,9 @@ WIKI_DIRS = ["concepts", "entities", "comparisons", "queries"]
 # through to a raw/ file from a wiki page. See _check_render_safety().
 RENDER_SAFETY_DIRS = ["raw"]
 # raw/ is intentionally excluded — sources are immutable per the wiki skill.
-TOP_LEVEL_PAGES = ["README.md", "SCHEMA.md", "index.md"]
+# Every top-level .md is linted, not a hand-maintained allowlist: log.md,
+# AGENTS.md and CLAUDE.md all carry relative links and were previously
+# unscanned, so broken links in them passed the lint silently.
 WIKILINK_RE = re.compile(r"\[\[([^\]\n]+?)\]\]")
 MD_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\n]+?)(?:\s+\"[^\"]*\")?\)")
 
@@ -63,10 +65,7 @@ def _all_md_files(root: Path) -> list[Path]:
         dpath = root / d
         if dpath.exists():
             files.extend(sorted(dpath.glob("*.md")))
-    for name in TOP_LEVEL_PAGES:
-        p = root / name
-        if p.exists():
-            files.append(p)
+    files.extend(sorted(root.glob("*.md")))
     return files
 
 
