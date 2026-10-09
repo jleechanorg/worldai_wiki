@@ -5,7 +5,7 @@
 ## Quick start: What to do
 
 ```
-Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Launch  ──>  Turn loop (Character / Think/Plan / God)
+Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Launch  ──>  Turn loop (Act / Think / God)
 ```
 
 1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) to pick up a campaign or start a new one.
@@ -15,16 +15,18 @@ Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Laun
    - **Step 2 — Ready to Launch**: add an optional character portrait, edit anything on the summary card, and click **Enter the World**.
 3. **Play turn by turn**:
    - The GM opens the scene and confirms your character sheet.
-   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — or just type your own action in the message box. In ordinary play each suggestion has a **Show pros and cons** toggle, so you can weigh it before committing. For a longer strategy conversation with the GM, switch to **Think/Plan** first.
+   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — under **Your move**, or type your own action in the message box and press **Send**. Tap a choice's chevron to read its details and any pros and cons inline before committing. For a longer strategy conversation with the GM, switch to **Think** first.
    - The three buttons under the message box decide how your text is read:
-     - **Character** (the default): what you type is what your character does and says. The story advances.
-     - **Think/Plan**: the story pauses while you weigh options with the GM. No time passes, no actions are taken.
+     - **Act** (the default): what you type is what your character does and says. The story advances.
+     - **Think**: the story pauses while you weigh options with the GM. No time passes, no actions are taken.
      - **God**: administrative control — edit stats, spawn items, teleport, fix mistakes, set persistent narration rules. The world is frozen and the story does not advance.
-4. **Know your limits**: playing is free, but every turn counts against a per-account allowance — **100 turns a day, and 50 in any 5-hour window**. Creating campaigns and God-mode turns draw on separate, roomier allowances. If you hit a cap, a "Rate Limit Reached" box tells you when it resets; adding your own model API key raises the ceiling to 5,000 turns a day. The **Add your key — higher limits** button in the campaign header starts that; you can close it with the **×**, and it comes back on your next visit.
+4. **Know your limits**: playing is free, but every turn counts against a per-account allowance — **100 turns a day, and 50 in any 5-hour window**. Creating campaigns and God-mode turns draw on separate, roomier allowances. If you hit a cap, a "Rate Limit Reached" box tells you when it resets; adding your own model API key raises the ceiling to 5,000 turns a day. Open **⋯ More game actions → Settings** to manage your model and key; the menu may also offer **Add API key**.
 
 ---
 
 ### Visual walkthrough
+
+These screenshots show an earlier interface. Follow the written steps for current controls; the game-screen buttons are now **Act / Think / God**, and additional controls live in **⋯ More game actions**.
 
 #### 1. My Campaigns Dashboard
 Your saved worlds. Each card shows when you last played it and a line of character, setting and premise. Click one to drop back in.
@@ -42,9 +44,11 @@ Add a portrait, edit anything you got wrong, then **Enter the World**.
 ![Campaign Wizard Step 2 Launch Screen](assets/fresh_screenshots/03_wizard_step2_launch.png)
 
 #### 4. A turn in play
-The narrative log, your roll results and stats, the suggested actions, and the Character / Think/Plan / God buttons under the message box.
+Read the scene down to **Your move**, then choose an action or type your own. **Act / Think / God** sits under the message box. Open **⋯ More game actions** for available controls such as Settings, Undo last turn, Share story, Download story and Campaign details.
 
-![Live Gameplay Turn and Action Composer](assets/fresh_screenshots/04_gameplay_turn_composer.png)
+The image below shows the earlier game-screen layout.
+
+![Earlier gameplay interface and action composer](assets/fresh_screenshots/04_gameplay_turn_composer.png)
 
 ---
 
@@ -99,7 +103,7 @@ The case studies are illustrative, not normative. Any setting, any tone, any pow
 | [LivingWorld](concepts/LivingWorld.md) | The world keeps moving while you're somewhere else |
 | [GodMode](concepts/GodMode.md) + [GodModePrompting](concepts/GodModePrompting.md) | The pause menu: editing the world directly, and writing rules that stick |
 | [CharacterMode](concepts/CharacterMode.md) + [ThinkMode](concepts/ThinkMode.md) | The two composer buttons you use in play, and the modes the game picks for you |
-| [SpicyMode](concepts/SpicyMode.md) | The 🌶️ switch in the game header, and what it changes |
+| [SpicyMode](concepts/SpicyMode.md) | The 🌶️ Spicy control in the ⋯ menu, and what it changes |
 | [CampaignDesign](concepts/CampaignDesign.md) + [CampaignWizard](concepts/CampaignWizard.md) | Designing a campaign, the 2-step creation flow |
 | [DnD5eRules](concepts/DnD5eRules.md) | The D&D 5th Edition rule spine |
 | [Initiative](concepts/Initiative.md) + [CombatVictoryProtocol](concepts/CombatVictoryProtocol.md) + [SmartSkillChecks](concepts/SmartSkillChecks.md) | Combat resolution |

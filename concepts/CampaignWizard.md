@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -45,7 +45,7 @@ Two cards, and **Play a campaign** is selected for you:
 
 ### Campaign description prompt (long-form world bible)
 
-This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. A screenshot of an untouched Step 1 shows only its heading and the Expand button — the large text box itself stays hidden until you expand it. Expand it and you can paste in a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
+This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. The heading and **Expand** button remain visible; the text box stays hidden until you open it. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
 
 - **Capacity**: a 70,118-character bible (~11,000–12,000 words, about 25 pages) has been tested end to end and stored intact. Length is almost never your constraint.
 - **What to paste here**: setting bibles (geography, factions, pantheons, magic systems); character backstory, lineage, equipment, psychology; custom rules, tone constraints, and god-mode style instructions.
@@ -91,18 +91,9 @@ Character creation happens inside the story rather than on a separate form:
 
 ---
 
-## What carries into the game screen
+## After launch: find your campaign details
 
-Two parts of the wizard stay reachable once you are playing: the answers you typed, and the portrait you chose.
-
-### Checking what you entered — the (i) button
-
-An **info (i)** button sits in the campaign header, just left of your campaign title. Click it and a **Campaign Details** panel reads your creation inputs back to you, one per line:
-
-- **Universe**, **Timeline**, **Character**, **Setting**, **Plot**, and **Description** — the Step 1 fields, exactly as they were stored. Fields you left blank are skipped rather than shown empty, so a quick custom campaign shows only the two or three lines you actually filled in. If nothing was recorded, the panel says so instead.
-- For a **Dragon Knight** campaign there is nothing of yours to echo, so the panel shows the Dragon Knight premise — the short opening setup, not the full module text.
-
-Use it when you are three hours into a campaign and want to check whether the world bible you pasted actually landed, or which of your what-if hooks the GM is working from. It is read-only — there is no editing here, and no way to change the premise after launch. **Close** dismisses it. On a narrow phone screen the (i) button is hidden to leave room for the campaign title.
+Open **⋯ More game actions** and choose **Campaign details** to revisit your campaign information. The same menu is available on desktop and mobile.
 
 ### Your portrait in the game header
 

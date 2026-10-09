@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -16,7 +16,7 @@ God Mode is the game's pause menu. Switch to it and the world freezes — the st
 Two ways, and they do the same thing:
 
 1. Pick the **God** pill under the message box, then type your request.
-2. Stay in Character mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
+2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
 Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored. One exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the **God** pill instead.
 
@@ -38,7 +38,7 @@ Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all wor
 
 - **Roll dice.** God Mode commands are absolute. No skill check, no attack roll, no saving throw.
 - **Resolve combat.** It will set your HP to 1 or to 200, but it will not fight the round for you.
-- **Advance the story.** No prose, no NPC dialogue, no new scene. Go back to Character mode for that.
+- **Advance the story.** No prose, no NPC dialogue, no new scene. Go back to Act mode for that.
 - **Rewind world time to fix a timeline.** Continuity fixes become directives or memories, not a clock change.
 
 Everything above is absolute except directives. A directive steers how the GM writes future scenes, and the GM can still miss one.
@@ -60,7 +60,7 @@ Asked directly like that, the GM reads the campaign's stored list back to you. I
 
 ## What a God Mode turn gives back
 
-A confirmation line instead of a scene, the state change applied immediately, and two to four follow-up buttons that always include **Return to story**. There is no separate Custom Action button on the live turn — the message box itself is the free-form option, so you can always just type your next request instead. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
+A confirmation line instead of a scene, the state change applied immediately, and three follow-up buttons that always include **Return to story**. Type any other request in the message box. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
 
 ## Player tips
 

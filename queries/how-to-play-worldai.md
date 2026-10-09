@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -22,7 +22,7 @@ Your first 30 minutes with the game, step by step.
 
 **The short version:** sign in with Google, click **Play a campaign**, pick the **Dragon Knight Campaign** card, click Next, click **Enter the World**, accept the character the GM offers, and start typing what you do. Everything below is that path in detail.
 
-All screenshots are real captures from a Dragon Knight playthrough. A few come from an earlier build, so a couple of button labels have since changed; the captions say so. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
+All screenshots are real captures from a Dragon Knight playthrough. They show an earlier interface: use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
@@ -78,7 +78,7 @@ On a custom campaign with no character, the GM instead offers three ways to buil
 
 **Recommendation for first-timers**: accept the pre-filled character. The campaign is tuned for it — click **Finish Character Creation and Start Game**.
 
-![Character Creation Review — the GM presents Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. The three choices are Finish Character Creation and Start Game, Edit Character, and Custom Class, followed by the usual Custom Action row and a final "start the adventure" confirmation](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
+![Character Creation Review — the GM presents Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. The three choices are Finish Character Creation and Start Game, Edit Character, and Custom Class, followed by the earlier interface's Custom Action row and a final "start the adventure" confirmation](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
 
 ## Step 5 — Read the opening scene
 
@@ -100,7 +100,9 @@ It establishes:
 
 ## Step 6 — Take your first action
 
-Click one of the offered choices, or type your own in the message box at the bottom. Examples:
+Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action.
+
+On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
 - "I look around the room."
 - "I draw my sword."
@@ -109,28 +111,27 @@ Click one of the offered choices, or type your own in the message box at the bot
 
 The GM narrates the result and rolls any dice the action calls for. Read the narration and the dice results together.
 
-### Check a choice before you commit
-
-Each offered choice has a small chevron next to it. It shows you what the action actually involves — the check it will call for, and its upsides and downsides — before you spend a turn on it.
-
-What the chevron does depends on your screen:
-
-- **On a desktop or wide window**, the row expands in place: the description and the pros/cons sit under the choice. Clicking the choice itself sends it straight away — there's no second confirmation.
-- **On a phone (a narrow window, roughly 640px or less)**, a panel slides up from the bottom of the screen instead. It's headed with the choice's name, then **Action Description & Check**, then a **Tactical Analysis** pair of cards — green for Pros, red for Cons. Nothing has been sent yet. To go through with it, tap **⚡ Confirm & Execute Action** at the bottom. To back out, tap the ✕, the grab bar at the top, the dimmed area behind the panel, or press Escape — your turn is untouched either way. On a phone you don't have to hit the chevron exactly; tapping anywhere on the row that isn't the choice itself opens the same panel.
-
-On a small phone the list of choices also starts **collapsed**, so the narration and the message box stay in view. In its place you get a one-line strip — *"✨ 4 options — expand to see what you can do"* — with the number of choices this turn. Tap it to open the list, tap again to fold it away. Tapping into the message box folds it too, so the keyboard doesn't bury the text you're typing. The strip is a **Character** mode thing: switch to Think/Plan or God and the choices and the strip both disappear, since those modes aren't taking actions. See [ThinkMode](../concepts/ThinkMode.md) and [SmartSkillChecks](../concepts/SmartSkillChecks.md).
-
-### The three buttons under the message box
+### Act, Think and God
 
 They decide how your words are read, and you'll use all three:
 
 | Button | What your text means | Does time pass? |
 |---|---|---|
-| **Character** (default) | What your character does and says | Yes — the story advances |
-| **Think/Plan** | You talking strategy with the GM | No |
+| **Act** (default) | What your character does and says | Yes — the story advances |
+| **Think** | You talking strategy with the GM | No |
 | **God** | You editing the campaign as its administrator | No |
 
-Leave it on **Character** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
+Leave it on **Act** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
+
+Choosing a suggested story action switches back to **Act** and plays it. To keep planning, leave **Think** selected and type your question instead.
+
+Press **Enter** to send, or **Shift+Enter** for a new line. On wide desktop screens, number keys choose the matching suggested action when you are not typing, so press one only when you are ready to act.
+
+### Finding the other controls
+
+Open **⋯ More game actions** for available controls such as **Settings**, **Theme**, **Spicy**, **Undo last turn**, **Share story**, **Download story** and **Campaign details**. **What do Act / Think / God do?** opens a reminder of the three modes.
+
+If the newest part of the scene is below your current view, **Keep reading** jumps down to it. While the narrator is writing, the button may say **New story**.
 
 ![First action typed — "I look around the room." in the input box, GM now processing ("Checking the rulebook..." overlay). The session header shows Lvl 1 Paladin, HP 12/12, Lay on Hands 5/5, Divine Sense 4/4](images/how-to-play-worldai/step7-first-action-desktop.png)
 
@@ -151,7 +152,7 @@ In Dragon Knight the dragons (Aurum, Umbrax) are most active **early** — they 
 Switch to the **God** button and write a standing rule, e.g. `GOD MODE: the narration has a stoic, minimalist tone`. The GM follows it from then on. See [GodModePrompting](../concepts/GodModePrompting.md).
 
 ### "The GM got something wrong, and I want it undone"
-The campaign header has an **Undo** button (the ↺ icon) that deletes the most recent exchange — it asks you to confirm first, and it cannot be un-done. It only removes the *last* turn. For anything older, God Mode is the fix: it can correct a stat, remove an item you never had, or replace the text of a scene that went wrong. `GOD MODE: set my HP to 12` or `GOD MODE: I never picked up the ring`. See [GodMode](../concepts/GodMode.md).
+For the latest turn, look for **Undo last turn** in **⋯ More game actions**. Read its confirmation carefully: it permanently deletes the latest exchange and cannot be undone. For a specific correction, God Mode can change a stat, remove an item you never had, or replace the text of a scene that went wrong. `GOD MODE: set my HP to 12` or `GOD MODE: I never picked up the ring`. See [GodMode](../concepts/GodMode.md).
 
 ### "I died"
 In Dragon Knight, during the first 100 turns: at 25% HP or below a dragon whispers an offer of rescue (you can accept, refuse, or ignore it), and at 0 HP one intervenes anyway and you wake up alive somewhere else. Which dragon shows up depends on how ruthlessly you have been playing. Past turn 100 that net is gone. In other campaigns, what happens after death is up to the GM and your setting.
@@ -167,7 +168,7 @@ Ask the GM directly: "What should I do next?" or "What are my options?" You'll u
 That's the game. High variance is part of D&D. Plan around it: have backup options, build for advantage, bring healing.
 
 ### "It says I've hit my turn limit"
-Playing is free, but each account gets 100 turns a day and 50 in any 5-hour window. Wait for the window to roll over, or use the **Add your key — higher limits** button in the campaign header to supply your own model API key, which raises both caps — 5,000 turns a day and 1,000 in any 5-hour window.
+Playing is free, but each account gets 100 turns a day and 50 in any 5-hour window. Wait for the window to roll over, or open **⋯ More game actions → Settings** to supply your own model API key, which raises both caps — 5,000 turns a day and 1,000 in any 5-hour window.
 
 ## After your first session
 

@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-09-18
+updated: 2026-10-09
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -102,8 +102,8 @@ turned on, smooth scrolling becomes instant jumps and the animated background
 falls back to a static image. Toggling the OS setting mid-session takes effect
 without a reload.
 
-**Two themes.** Fantasy and Light, switched from the header menu. The theme is
-applied before the first paint, so you never see a flash of the wrong one. Your
+**Two themes.** Fantasy and Light, selected under **Theme** in
+**⋯ More game actions**. The theme is applied before the first paint, so you never see a flash of the wrong one. Your
 choice is remembered in the browser and synced through your account settings.
 
 **Getting started and finding things again.** Every new campaign goes through
@@ -148,9 +148,8 @@ your key, fails transiently, or returns something malformed, you get a plain
 message with retry guidance as a toast or modal. Raw stack traces never reach
 the screen.
 
-**Spicy mode.** The 🌶️ toggle sits in the game header next to the campaign
-title, not on the Settings page. Its own helper text describes it: "Enables Grok
-AI for uncensored content including detailed adult scenes. Slower but no content
+**Spicy mode.** Open **⋯ More game actions** and choose **🌶️ Spicy**. Its own
+helper text describes it: "Enables Grok AI for uncensored content including detailed adult scenes. Slower but no content
 restrictions. Your previous model will be restored when disabled." It is off by
 default, and it is an account setting, so it stays where you left it in every
 campaign. You are never nagged about it: while it is off, an "Enable Spicy Mode"
@@ -235,13 +234,18 @@ surfaces as a level-up prompt in the rewards summary attached to your turns. It
 stays pending until you take it. There is no separate "pending rewards" screen
 to open.
 
-**Suggested actions, every turn.** A story turn ends with three to five suggested
-actions; any that carry a trade-off get a **Show pros and cons** chevron that
-expands it. There is no custom-action button on the live turn — the message box
-under the choices is the free-form option. Older turns you scroll back to keep a
-**Custom Action: decide whatever you want to do** button of their own. God Mode
-turns offer two to four suggestions, always including one that returns you to
-the story, and normally without pros and cons. Picking one commits that action.
+**Suggested actions.** Read down to **Your move** and **What do you do?**
+beneath the latest scene. Tap a numbered option to play it immediately, or type
+your own in the message box and press **Send**. A choice's chevron opens its
+details and any pros and cons inline without submitting it. Wide screens also
+have **Show details** and **Hide details**. Choosing a story action returns you
+to **Act**; to keep planning, stay in **Think** and type your question.
+
+**Other game controls.** Open **⋯ More game actions** for available actions
+such as **Undo last turn**, **Share story**, **Download story**, **Campaign
+details** and **Settings**. **What do Act / Think / God do?** shows a mode
+reminder. If the newest text is below your view, **Keep reading** jumps down;
+while the narrator is writing, it may say **New story**.
 
 **Factions act on their own.** Faction turns resolve behind the scenes and their
 outcomes land in your world-events log. See
@@ -269,8 +273,8 @@ full; [DiceNotation](../concepts/DiceNotation.md) covers the grammar.
 
 ## Exporting and sharing your campaign
 
-Export your story as PDF, DOCX, or TXT. The file is built on the server and
-includes the campaign title, the story entries, and the world events. You have
+Choose **Download story** in **⋯ More game actions** to export your story as
+Markdown, TXT, PDF, or DOCX. The file is built on the server and includes the campaign title, the story entries, and the world events. You have
 to be signed in to your own campaign to export it. See
 [ItachiGaiden](../entities/ItachiGaiden.md) for an example of what an exported
 story reads like.

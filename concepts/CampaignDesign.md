@@ -1,7 +1,7 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-08
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
 sources: [../entities/CampaignShowcase.md]
@@ -225,11 +225,11 @@ Player explicitly asks for level jumps and progression.
 
 Player reshapes the world: frees NPCs, time-skips, sets the next hook.
 
-### Planning prompts (the Think/Plan button)
+### Planning prompts (the Think button)
 
 > "THINK:keep thinking about how to get the next milestone ability"
 
-Starting a message with `THINK:` does the same thing as clicking the **Think/Plan** button under the message box: the GM strategises with you instead of acting, and no time passes. Useful for setting up long-term goals. See [ThinkMode](ThinkMode.md).
+Starting a message with `THINK:` does the same thing as clicking the **Think** button under the message box: the GM strategises with you instead of acting, and no time passes. Useful for setting up long-term goals. See [ThinkMode](ThinkMode.md).
 
 ### Getting back to the story
 
