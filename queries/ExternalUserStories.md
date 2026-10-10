@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-10-09
+updated: 2026-10-10
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -71,11 +71,10 @@ composer to smoothly jump to the live tail; on completion, it becomes
 **Cancelling a turn mid-stream.** While an action is in flight ("The DM is
 thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the
 right side of the textarea. Clicking **Cancel** halts generation immediately
-(<25ms) and removes the loading indicator. The input box is re-enabled with your
-previously-typed draft preserved, and suggested options remain intact. Any
-incomplete narrative generated so far stays marked as "Narrator / Not saved" with
-no scene number. If the server happened to commit right before Cancel was clicked,
-an automatic background check reconciles and saves the turn cleanly.
+and removes the loading indicator. The input box is re-enabled with your
+previously-typed draft restored ready to edit, and suggested options remain
+intact. Any incomplete narrative generated prior to cancellation is clearly
+labeled as uncommitted ("Not saved") without consuming a scene number.
 
 **Dice show their work.** A turn's rolls are listed above its narration under a
 `🎲 Dice Rolls:` heading, one line each:

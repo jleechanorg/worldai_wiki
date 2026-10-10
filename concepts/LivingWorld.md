@@ -1,7 +1,7 @@
 ---
 title: LivingWorld
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
@@ -32,7 +32,7 @@ A single advance can move any of these:
 - **Faction shifts** — objectives, resources, and standing change; persisted faction objectives continue to display consistently across turns and reloads rather than reverting to unknown state (see [FactionSystem](FactionSystem.md)).
 - **One scene event** (optional) — something that reaches you directly: a messenger, a road encounter, a companion pulling you aside, a quest offer.
 
-You are never handed an ungrounded meta-report of what changed. In the header, the HUD sub-line continuously tracks `SCENE N · LOCATION · TIME`. Developments are narrated with sensory camera objectivity — the narrator describes observable physical reality without evaluative moral lecturing, leaving ethical dilemmas to authentic NPC dialogue and player choices. Major permanent changes (such as deaths or shattered pacts) are flagged `retain: true` on core memories to survive compaction.
+You are never handed an ungrounded meta-report of what changed. In the header, the HUD sub-line continuously tracks `SCENE N · LOCATION · TIME`. Developments are narrated with sensory camera objectivity — the narrator describes observable physical reality without evaluative moral lecturing, leaving ethical dilemmas to authentic NPC dialogue and player choices. Major permanent changes (such as deaths, permanent injuries, or shattered pacts) are recorded as permanent core memories that the DM retains throughout the campaign.
 
 ## Why it matters
 

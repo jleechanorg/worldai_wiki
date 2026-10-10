@@ -1,7 +1,7 @@
 ---
 title: CharacterMode
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []

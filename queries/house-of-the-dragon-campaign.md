@@ -1,7 +1,7 @@
 ---
 title: HouseOfTheDragonCampaign
 created: 2026-08-04
-updated: 2026-09-18
+updated: 2026-10-10
 type: query
 tags: [wa-campaign, wa-tutorial, wa-character]
 sources: []

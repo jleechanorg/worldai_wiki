@@ -1,7 +1,7 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-10
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
 sources: [../entities/CampaignShowcase.md]

@@ -1,7 +1,7 @@
 ---
 title: NPCRelationships
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 tags: [wa-mechanic, wa-system, wa-persona]
 sources: []
@@ -126,7 +126,7 @@ These connections drive what NPCs do when you are not in the room — see [Livin
 
 Recurring NPCs carry a personality tag and an alignment. The tag is usually an MBTI code like INTJ, but it can equally be a phrase such as "mysterious and brooding". Together they steer how the NPC decides, how they speak, and how they react to you.
 
-These labels are strictly behind the scenes: the game is instructed never to print "INTJ" or "Lawful Neutral" in the story text, and the server structurally strips and redacts `mbti` and `alignment` keys from all client-facing network payloads, SSE streams, and combat states. You are meant to infer personality from behaviour. See [CompanionPersonality](CompanionPersonality.md).
+These labels are strictly behind the scenes: you will never see raw personality codes, alignment abbreviations, or internal metadata tags in the narrative or combat cards. Personality and ethics are meant to be inferred naturally from dialogue, tone, and character choices. See [CompanionPersonality](CompanionPersonality.md).
 
 ## Player tips
 
