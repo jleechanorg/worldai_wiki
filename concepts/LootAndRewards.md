@@ -1,7 +1,7 @@
 ---
 title: LootAndRewards
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -11,17 +11,13 @@ sources: []
 
 What you get for encounters, quests, and milestones — and where it shows up.
 
-The GM never writes XP numbers into the story. You will not see "+150 XP" in
-the prose. XP is tracked for you and shown in the status
-header above each turn as current-over-next — `XP: 34000/48000` — and a level-up
-panel appears when you cross a threshold. Money and items may be mentioned in the
-narration when you find them, but the tracked amounts live on your sheet.
+While narrative prose keeps raw XP numbers out of character dialogue and storytelling, the game renders a dedicated **Inline Reward Display Card** directly beneath the scene in the story flow whenever rewards are earned (`✨ REWARDS (encounter)`, `✨ REWARDS (quest)`). The card displays your exact XP gain (`+{xp_gained} XP`), level progress percentage (`XP: {current_xp}/{next_level_xp} ({progress_percent}%)`), any `LEVEL UP AVAILABLE!` notification, and itemized loot and coin deltas (`+{gold} gold`, `+{quantity} {item_name}`). XP is also tracked in the status header as `XP: current/next`.
 
 ## XP
 
-XP is paced, not counted up from enemy stats. Every award is a slice of the XP
-you still need for your current level, so progress feels about the same at
-level 3 and at level 13:
+XP is paced, not counted up from enemy stats. Every award is a slice of your
+current level's full XP span — the gap between the threshold you reached and the
+next one — so progress feels about the same at level 3 and at level 13:
 
 - **Routine wins give nothing** — an easy fight, an ordinary skill check, or
   re-checking something you already finished.
@@ -56,17 +52,14 @@ difficulty to match what you actually tried.
 
 ## Money
 
-Your money is tracked on a **Gold** line in gold pieces, and it shows up in the
-status header above every turn — `Gold: 120gp`. The GM narrates it in whatever
-the setting calls money — credits, scrip, coin — and a campaign that runs its
-own currency tracks that separately on the Resources line beside your gold.
+Your money is tracked in gold pieces and updates dynamically across your campaign. It is recorded on your character sheet, and turn entries display resource changes under the **📊 Resources:** line (for example, `📊 Resources: Spells: L1 2/2 | Gold: 120gp`). The GM narrates it in whatever the setting calls money — credits, scrip, coin — while the server maintains the underlying numeric balance. When creating a character, starting wealth adheres to Wealth By Level (WBL) bounds scaled to your background's socioeconomic tier (from Destitute up to Royal).
 
 You earn it from treasure, defeated enemies, quest payouts, and selling what
 you do not need. You spend it on gear ([Equipment](Equipment.md)), on services
 like guides, passage, and bribes, and on the lifestyle your character keeps
 between adventures.
 
-## Items
+## Items & Inventory Stacking
 
 The GM describes items in the usual 5e rarity language, and that language is a rough promise about power:
 
@@ -75,6 +68,8 @@ The GM describes items in the usual 5e rarity language, and that language is a r
 - **Rare**: genuinely powerful, such as a Flame Tongue or Winged Boots.
 - **Very Rare**: campaign-defining, such as a Holy Avenger.
 - **Legendary** and **Artifact**: named, world-shaping things.
+
+Identical consumable items (healing potions, rations, ammunition) stack automatically into a single entry with an updated quantity count when looted or purchased, so your inventory stays organized.
 
 Your sheet does not carry a rarity band, an identified mark or a curse mark on
 anything. What an item is lives in its description and in the GM's memory of it,

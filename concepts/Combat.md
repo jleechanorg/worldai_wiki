@@ -1,7 +1,7 @@
 ---
 title: Combat
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -51,7 +51,7 @@ See [RestAndDeath](RestAndDeath.md). A short rest lets you spend hit dice to rec
 
 At 0 HP you fall unconscious and start rolling death saves (`1d20`): 10 or higher is a success, a natural 20 puts you back on your feet at 1 HP, and a natural 1 counts as **two** failures. Three successes stabilize you; three failures kill you.
 
-One shortcut skips all of that: a single hit that deals damage equal to or greater than your maximum HP kills outright, with no death saves. Full detail in [RestAndDeath](RestAndDeath.md).
+A single hit that deals damage equal to or greater than your maximum HP kills outright, with no death saves. For companions and named NPCs, dropping to 0 HP, surrendering, fleeing, or being captured does not permanently eliminate them — permanent removal requires an explicit narrative death declaration in the story text. Full detail in [RestAndDeath](RestAndDeath.md).
 
 ## Player tips
 

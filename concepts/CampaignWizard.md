@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -70,6 +70,7 @@ The **Enter the World** button sits at the top of Step 2, right under the headin
 - Drag-and-drop or click to upload an avatar image.
 - JPEG, PNG, GIF, or WebP; max 5MB; 512×512 square looks best.
 - It appears in the campaign header bar at the top of the game screen. It is not repeated next to each turn.
+- Skipping it here is not final — you can add, replace, or remove the portrait from the game screen later. See [Your portrait in the game header](#your-portrait-in-the-game-header).
 
 ### 3. Campaign summary card & inline editing
 
@@ -94,11 +95,26 @@ Character creation happens inside the story rather than on a separate form:
 
 Open **⋯ More game actions** and choose **Campaign details** to revisit your campaign information. The same menu is available on desktop and mobile.
 
+### Your portrait in the game header
+
+**If you skipped the avatar on Step 2**, the header shows a dashed circular slot with a plus icon. Clicking it opens your device's file picker directly. Once an image is chosen, it uploads and displays centered within the circular frame.
+
+**If you already have a portrait**, click it. A photo-management modal opens over the screen with:
+
+- a preview of your portrait,
+- the campaign title,
+- **📷 Change Photo** — opens your file picker, followed by a drag-to-reposition crop overlay (512×512px recommended) so you can position your portrait before confirming with **✅ Use This Crop** (or cancel), and
+- **🗑 Remove** — prompts for confirmation ("Remove your character avatar?"), then clears the portrait and restores the dashed placeholder.
+
+Close the modal with its **×**, by clicking the dimmed backdrop, or by pressing **Escape**. Character stats (Level, HP, AC) are tracked in the header status bar and character sheet, not inside the photo modal.
+
+---
+
 ## Player tips
 
 - **Use the description prompt.** Have a homebrew world or a novel concept? Paste your notes straight into it — that is what it is for.
 - **Pick one tone.** Slapstick comedy plus grimdark survival in the same prompt produces confused narration. Name a primary tone and stick to it.
 - **Fix typos on Step 2.** Use the pencil buttons on the summary card instead of going back.
-- **Want to customise Dragon Knight?** Only the Title. Everything else is locked — start from **Play a campaign** and describe the world you want instead.
+- **Want to customise Dragon Knight?** Only the Title and the Step 2 avatar (Ser Arion's portrait loads by default, and you can replace it). Every other field is locked — start from **Play a campaign** and describe the world you want instead.
 
 See [CharacterCreation](CharacterCreation.md), [CampaignDesign](CampaignDesign.md), [GodModePrompting](GodModePrompting.md), and [How to Play](../queries/how-to-play-worldai.md). For the same flow on one screen, see [CampaignWizard](../entities/CampaignWizard.md).

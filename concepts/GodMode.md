@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -15,18 +15,20 @@ God Mode is the game's pause menu. Switch to it and the world freezes — the st
 
 Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box, then type your request.
+1. Pick the **God** pill under the message box (the placeholder becomes `Edit the world: stats, items, fixes…`), then type your request. Hovering the button explains: *"God changes the world directly (stats, items, teleports, fixes) and the story doesn't advance."*
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
-Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored.
+Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored. One exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the **God** pill instead.
+
+Suggested story options under **Your move** always play in Act. If you have God mode selected, tapping a suggested choice displays a reminder, automatically switches back to **Act**, announces `Switched to Act.`, and plays that option.
 
 ## What God Mode can do
 
-**Edit your character.** HP, gold, XP, level, ability scores, equipment, spell slots.
+**Edit your character.** HP, gold, XP, level, ability scores, equipment, spell slots. Adjusting your character at your current level preserves any pending level-up choice reviews; lowering your level cleanly drops stale level-up audits.
 
 **Edit the world.** Spawn or delete NPCs, items and locations; teleport anywhere instantly; add, complete or remove missions; change difficulty and other campaign settings.
 
-**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. If the log contradicts what you meant, you can correct the record instead of playing around it.
+**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. Critical permanent facts (such as deaths or broken alliances) are preserved as permanent core memories in campaign storage, prioritized to carry forward as your story develops.
 
 **Clear stuck state.** Combat that never ended, a level-up that never resolved, a stale banner in the session header — God Mode is where those get reset.
 
@@ -65,7 +67,7 @@ A confirmation line instead of a scene, the state change applied immediately, an
 ## Player tips
 
 - **One change per turn.** A God Mode turn that does five unrelated things is harder to check than five turns that each do one.
-- **Directives cannot switch the rules off.** "Never roll dice" will not work; dice are rolled server-side. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
+- **Directives cannot switch the rules off.** "Never roll dice" will not work; the game system always rolls dice for uncertain actions. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
 - **Add directives gradually.** One at a time, watch how narration changes, then add more. Fifteen at once dilute each other.
 - **What directives are good for**: tone, voice, POV, pacing, themes, taboos, power level, companion behaviour and world rules. [GodModePrompting](GodModePrompting.md#what-directives-can-steer) has a worked table for each.
 

@@ -1,7 +1,7 @@
 ---
 title: FactionPower
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -13,7 +13,7 @@ Faction Power (FP) is a single number measuring how big your faction is. It is w
 
 ## The formula
 
-The server works FP out the same way every time, and the GM is forbidden from calculating or guessing it:
+The game calculates FP using a deterministic formula rather than improvising or guessing it:
 
 ```
 FP =  soldiers
@@ -49,7 +49,7 @@ Rank is nothing more than every faction sorted by FP. You are measured against 2
 
 Below **1,000 FP you are not ranked at all**. The game shows you as unranked and tells you how much FP you still need to get on the board; 1,000 FP puts you at #201. Ask `faction rankings` at any time and the game will also tell you the exact gap to the faction directly above you.
 
-Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5,000 FP and the strongest are in the hundreds of thousands, so a faction that has just switched the layer on normally lands at #199–#201. Climbing out of the low ranks is the early game.
+Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5,000 FP and the strongest open near 1.5 million, so a faction that has just switched the layer on normally lands somewhere between #188 and #201. Climbing out of the low ranks is the early game.
 
 ## What rank does and does not do
 
@@ -59,7 +59,7 @@ Expect to start at the bottom. Even the weakest of the 200 rivals opens around 5
 
 ## What moves your rank
 
-Your own FP never decays. But the 200 rivals grow their power 1–2% every turn, so a turn in which you build nothing costs you rank even though your own number has not moved.
+Your own FP never decays. But the 200 rivals grow their power 1–2% each time you `end turn`, so an `end turn` in which you build nothing costs you rank even though your own number has not moved.
 
 Winning a battle only moves you insofar as it changes something in the formula — troops lost or gained, territory taken, forts captured. A glorious victory that costs you a thousand soldiers moves you *down*.
 
