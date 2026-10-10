@@ -130,7 +130,7 @@ These labels are strictly behind the scenes: you will never see raw personality 
 
 ## Player tips
 
-- **NPCs do not forget.** Promises, debts, and grievances are recorded permanently, and the game is forbidden from quietly resetting a relationship. A slight from twenty turns ago can still be waiting for you.
+- **NPCs do not forget.** Promises, debts, and grievances are recorded permanently, and relationships do not quietly reset. A slight from twenty turns ago can still be waiting for you.
 - **Reputation travels ahead of you.** Witnesses know immediately, the local area within days, the region within weeks, distant lands within months. If you want a clean slate somewhere, get there before the news does.
 - **Watch the price tag.** You cannot see your standing, but you can see what a merchant charges. A 25-50% markup means either your public reputation has turned bad or that particular merchant has turned against you — check whether other traders in town charge the same to tell which. A discount can come from either side and the size alone will not tell you which: a merchant who personally trusts you knocks off 10-20%, and a devoted one may charge nothing at all, while a strong public reputation cuts prices 10% to 50% everywhere. As with markups, compare several traders in town — a discount only you get is personal, one the whole town gives you is reputation.
 - **Do not wear an argument down.** Every attempt at the same objective raises the next DC by 2 whether it landed or not, so repeated failure actively buries you. If two tries have gone nowhere, go find leverage — a favour, a witness, a threat with teeth — and come back with a different approach rather than the same one again.

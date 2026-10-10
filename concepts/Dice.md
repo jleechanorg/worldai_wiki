@@ -41,11 +41,11 @@ Ability scores are never rolled here. Character creation offers Point Buy (27 po
 
 1. **You describe an action** — "I attack the goblin", "I try to talk the guard down".
 2. **The GM works out what to roll** and, for anything with a pass or fail, fixes the target number and records why — before any dice exist.
-3. **The dice are produced.** On the default models the server hands the roller a secret seed it committed to in advance; on the other models the server rolls them itself.
-4. **The server checks and recomputes.** Where there was a seed it confirms it, confirms every face is possible for that die, applies the keep-highest or keep-lowest rule, adds the modifier, and decides success or failure itself. Its numbers are the ones stored and shown.
+3. **The dice are produced.** The game engine independently rolls the dice for the declared action so that neither player nor narrator can manipulate outcomes.
+4. **The arithmetic is computed objectively.** The engine confirms every die face is possible, applies advantage or disadvantage (keep-highest or keep-lowest), adds your character's modifiers, and determines the success or failure verdict against the difficulty class. Its numbers are the ones stored and shown.
 5. **You see the rolls and the narration together**, and your HP, conditions, and resources update.
 
-There is no Roll button, no Attack button, and no dice tray. Which side physically generates the numbers depends on the AI model running your campaign: on the default models, the model runs real random-number code in a sandbox using the server's seed; on others the server rolls directly. Either way the server owns the arithmetic and the verdict — see [DiceAuthenticity](DiceAuthenticity.md).
+There is no Roll button, no Attack button, and no dice tray. The game engine resolves all dice automatically, owning the arithmetic and the verdict — see [DiceAuthenticity](DiceAuthenticity.md).
 
 ## When dice come out
 

@@ -23,7 +23,7 @@ If your party drops instead, see [RestAndDeath](RestAndDeath.md) for what happen
 
 ## The rewards block
 
-Immediately following combat, an **Inline Reward Display Card** renders in the story flow (`✨ REWARDS (combat)`). It itemizes your exact XP award (`+{xp_gained} XP`), progress toward your next level (`XP: {current_xp}/{next_level_xp}`), any level-up notification, and acquired coin and loot (`+{gold} gold`, `+{quantity} {item}`).
+Immediately following combat, an **Inline Reward Display Card** renders in the story flow (`✨ REWARDS (combat)` or `✨ REWARDS (encounter)`). It itemizes your exact XP award (`+{xp_gained} XP`), progress toward your next level (`XP: {current_xp}/{next_level_xp}`), any level-up notification, and acquired coin and loot (`+{gold} gold`, `+{quantity} {item}`).
 
 Alongside the reward card, the narrative summarizes:
 

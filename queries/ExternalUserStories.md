@@ -279,10 +279,10 @@ notation and result, so the narration and the record cannot disagree, and an
 attack's roll, critical and damage are all settled in one go rather than in
 steps the storyteller could improvise between.
 
-The game checks its own dice: it commits to a secret seed before the roll and
-confirms afterwards that the roll used it. That record is kept with every turn
-but is not displayed anywhere, so this is the game policing itself rather than
-something you can audit by hand.
+The game verifies its own dice: rolls are generated independently by the game
+engine and evaluated against the difficulty class before narrating the outcome.
+Every roll is recorded with your turn and visible in your story log and story
+exports, so you can review the arithmetic throughout your campaign.
 [DiceAuthenticity](../concepts/DiceAuthenticity.md) covers the guarantees in
 full; [DiceNotation](../concepts/DiceNotation.md) covers the grammar.
 

@@ -13,7 +13,7 @@ Faction Power (FP) is a single number measuring how big your faction is. It is w
 
 ## The formula
 
-The server works FP out the same way every time, and the GM is forbidden from calculating or guessing it:
+The game calculates FP using a deterministic formula rather than improvising or guessing it:
 
 ```
 FP =  soldiers
