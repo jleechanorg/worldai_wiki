@@ -1,7 +1,7 @@
 ---
 title: GodModeFAQ
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: query
 tags: [wa-faq, wa-prompt]
 sources: []
@@ -19,7 +19,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 
 **A**: Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box, then type your request.
+1. Pick the **God** pill under the message box (the placeholder becomes `Edit the world: stats, items, fixes…`), then type your request. Suggested options under **Your move** will remind you that tapping one switches back to Act and plays that choice.
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: keep the tone grimdark`.
 
 ## Q: Does `GOD MODE:` have to be in capitals?
@@ -45,14 +45,14 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 
 ## Q: Can directives change plot beats?
 
-**A**: No. Directives shape how something happens, not whether. You can't tell the GM never to kill your character — but you can change your HP directly from God Mode, which is a different lever.
+**A**: Yes, within limits. A directive can hold a beat back — "delay the rebellion until I ask for it" becomes a stored rule the GM checks every turn, and an open-ended delay only lifts when you explicitly ask for it. What a directive can't do is decide the outcome of a scene you're already playing; for that, change your HP or remove the threat directly from God Mode.
 
 ## Q: Does God Mode affect combat?
 
 **A**: Two answers, depending on which part you mean.
 
 - **God Mode itself**: yes, directly. Set your HP, restore spell slots, hand yourself a weapon, delete an enemy. What it won't do is *resolve* the fight — God Mode never rolls dice and never takes a combat turn.
-- **Directives**: only indirectly. A directive shapes how a fight is written, not who wins it.
+- **Directives**: yes, and not only in tone. A directive can request a supported mechanical modifier — such as asking for advantage or bonus AC — and the GM guides subsequent scenes accordingly. The modifier can influence rolls where applicable, but it cannot guarantee success, force automatic hits, or bypass required saving throws. What a directive won't do is resolve the fight for you; combat rounds and authentic dice rolls still occur in Act mode.
 
 ## Q: Do God Mode turns use up my normal turns?
 

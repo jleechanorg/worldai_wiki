@@ -1,7 +1,7 @@
 ---
 title: CharacterMode
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -13,7 +13,9 @@ sources: []
 
 ## What it does
 
-Whatever you type becomes your character's actions and dialogue, and the story advances from it. Type `I kick the door in and shout for the innkeeper` and your character does exactly that, the GM narrates what happens next, and the world's clock moves forward. That's the whole game, most of the time.
+Whatever you type becomes your character's actions and dialogue, and the story advances from it. The message box displays the placeholder `Speak or act as your character…`. Hovering or focusing the **Act** pill explains: *"Act is what your character says or does, and the story moves forward."* On touch devices, opening **⋯ More game actions → What do Act / Think / God do?** reveals this explanation. Suggested actions under **Your move** always execute in Act mode.
+
+Type `I kick the door in and shout for the innkeeper` and your character does exactly that, the GM narrates what happens next, and the world's clock moves forward. That's the whole game, most of the time.
 
 ## The other two buttons
 
@@ -26,15 +28,15 @@ Behind those three buttons, the game quietly swaps in a specialist GM depending 
 
 - **Combat** — once a fight starts. See [Combat](Combat.md).
 - **Dialog** — during conversation-heavy scenes. See [NPCRelationships](NPCRelationships.md).
-- **Faction** — once you have asked for the faction minigame in play and are giving your faction orders. See [FactionSystem](FactionSystem.md).
+- **Faction** — whenever you give orders to a faction or an army. If the faction minigame isn't running yet, this mode offers to start it for you. See [FactionSystem](FactionSystem.md).
 - **Info** — when you ask about your equipment, stats, or spells. See [Equipment](Equipment.md).
-- **Character creation** and **Level-up** — the two pause-menu flows.
+- **Character creation** and **Level-up** — flows the game opens inside the story: character creation when a campaign starts, level-up when you have one waiting (or when you ask for it). There is no pause menu to open them from.
 
 If the game can't tell what you meant, it falls back to ordinary Act mode.
 
 ## Player tips
 
 - **You can always ask what's happening elsewhere.** Typing `Show me what the goblin camp is doing` works fine in Act mode — the GM narrates it. There's no separate camera mode to switch into.
-- **You can type your way into the other two modes.** Starting a message with `GOD MODE:` does the same thing as picking God, and starting one with `THINK:` does the same thing as picking Think. Either prefix works from any mode, and capitalisation and leading spaces don't matter.
+- **You can type your way into the other two modes.** Starting a message with `GOD MODE:` does the same thing as picking God, and starting one with `THINK:` does the same thing as picking Think. Capitalisation and leading spaces don't matter. Two exceptions: `THINK:` is ignored while the God pill is active (the pill wins over the prefix), and while character creation is still open a typed `GOD MODE:` is ignored, so pick the God button instead.
 
 See [ThinkMode](ThinkMode.md), [GodMode](GodMode.md), [SpicyMode](SpicyMode.md), [CampaignWizard](CampaignWizard.md).

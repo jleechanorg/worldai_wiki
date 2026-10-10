@@ -1,7 +1,7 @@
 ---
 title: ThinkMode
 created: 2026-09-18
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-tutorial]
 sources: []
@@ -13,11 +13,11 @@ Think mode is your character stopping to think. The world freezes — no time pa
 
 ## How to use it
 
-Pick the **Think** pill under the message box, or start a message with `THINK:` from any mode:
+Pick the **Think** pill under the message box (the placeholder becomes `Ask for advice — time is paused…`), or start a message with `THINK:` from any mode except God — there the God pill wins over the prefix:
 
 > THINK: how do I get into the vault?
 
-Capitalisation doesn't matter, and leading spaces are ignored.
+Hovering or focusing the button explains: *"Think pauses time so you can plan, with options and pros and cons, and nothing happens in the story."* Capitalisation doesn't matter, and leading spaces are ignored.
 
 ## Your stats decide how good the plan is
 
@@ -41,7 +41,7 @@ So a low-Intelligence barbarian planning a heist really does get a worse plan th
 
 ## What you get back
 
-Three to five tactical options, each with pros, cons, a confidence rating, and what it is likely to lead to — plus your character's internal monologue while they work it out. A good roll widens the list and spots hidden dangers; a bad roll narrows it and sounds just as sure of itself.
+Two or three tactical options for a quick question or a failed check, four to six for a solid roll on a complex problem, and as many as eight for a major decision — each with a description and its pros and cons (expand a row using its chevron to reveal them inline without submitting), plus your character's internal monologue while they work it out. A good roll widens the list and spots hidden dangers; a bad roll narrows it and sounds just as sure of itself. Tapping a suggested choice automatically switches mode to **Act**, announces `Switched to Act.`, and plays that option.
 
 ## Think mode vs God mode
 

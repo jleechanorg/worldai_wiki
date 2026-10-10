@@ -1,7 +1,7 @@
 ---
 title: SpicyMode
 created: 2026-09-18
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -13,7 +13,7 @@ An opt-in setting for adult players that lets the GM write intimate scenes expli
 
 ## Where the switch is
 
-Open **⋯ More game actions** in the game header and choose **🌶️ Spicy**. The menu shows whether it is on or off. It is not on the Settings page.
+Open **⋯ More game actions** in the game header and choose **🌶️ Spicy**. The menu displays its current state: **Spicy OFF** with a muted pepper icon vs. **Spicy ON** with a distinctive gold glow and full-colour pepper icon. On desktop screens this is a toggle switch; on mobile devices it is an overflow menu row. It is not on the Settings page.
 
 The switch remembers its state on your account, so it stays on across every campaign you play until you turn it off.
 
@@ -34,6 +34,8 @@ Three consequences worth knowing before you flip it:
 With Spicy **off**, romance still happens — the GM writes the tension, the charged conversation, the moment of commitment, and then fades to black before anything explicit.
 
 With Spicy **on**, those scenes are written out. The instructions the GM works from ask for literary erotic writing rather than clinical description: emotional weight, character-consistent behaviour, clear consent, and consequences that carry into the rest of the story. Relationship state still updates the same way it does in any other scene — see [CompanionArc](CompanionArc.md) and [NPCRelationships](NPCRelationships.md).
+
+Across both standard and mature scenes, the narrator adheres to narrative camera objectivity: describing observable physical reactions, expressions, sensory detail, and dialogue without second-person moralizing metaphors or judgmental lecturing.
 
 ## How the game offers it
 

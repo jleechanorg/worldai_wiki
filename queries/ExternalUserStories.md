@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-10-08
+updated: 2026-10-09
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -10,7 +10,8 @@ tags: [wa-system, wa-tutorial]
 
 Everything around the story: signing in, what happens on screen while a turn
 runs, settings and AI providers, what the game saves between sessions, how the
-dice stay honest, and how to get your campaign out as a file.
+dice stay honest, and how to get your campaign out — as a file, or as a link
+someone else can play from.
 
 For the rules of play — combat, spells, levelling, companions — see
 [PlayerUserStories](PlayerUserStories.md). If you want to drive the game from
@@ -18,11 +19,16 @@ your own code, see [DeveloperAPI](DeveloperAPI.md).
 
 ## Your account
 
-**Sign in with Google.** Google is the only sign-in option — there is no Apple,
-email, or password sign-in. Your campaigns, settings, and progress are tied to
-that account, and every request carries your identity, so nothing is saved
-anonymously. Signing out ends the session and drops your cached settings. See
-[HowToPlay](how-to-play-worldai.md), Step 1.
+**Sign in with Google or OpenRouter.** On the welcome screen, players choose
+**Continue with Google** for standard production access, or **Sign in with OpenRouter**
+(available on preview and development deployments). Signing in with OpenRouter
+lets you play using your OpenRouter credits directly, without needing a Google
+account or copy-pasting API keys. In Settings, an existing account can link
+an OpenRouter sign-in (**Connect OpenRouter sign-in to this account**), or generate
+a personal OpenRouter key via a one-click OAuth button (**Create a personal OpenRouter key**).
+Each provider card also offers a **Clear key** control to delete saved keys without
+unlinking your account. Signing out ends the session and drops your cached settings.
+See [HowToPlay](how-to-play-worldai.md), Step 1.
 
 **Settings follow you.** Provider, model, theme, and persona live in your
 account rather than in the browser, so they survive reloads, a different
@@ -54,9 +60,25 @@ copy of the token, so a lost one cannot be recovered; you replace it instead.
 ## While a turn runs
 
 **The story streams in.** Text fills in word by word from the moment the server
-starts generating, so you are never watching a blank screen. The page
-auto-scrolls to follow it, but leaves you alone if you have scrolled back to
-re-read something.
+starts generating, so you are never watching a blank screen. Submitting an action
+snaps your view to the action you submitted, and the first narrative chunk reveals
+the story text area. Continuous auto-scrolling during streaming is intentionally
+disabled so newly-streaming lines don't pull the screen away while you are reading.
+If the newest text extends below your viewport, an unread streaming pill
+(**● New story ↓** or "New story streaming, scroll to view") appears above the
+composer to smoothly jump to the live tail; on completion, it becomes
+**↓ Keep reading**.
+
+**Cancelling a turn mid-stream.** While an action is in flight ("The DM is
+thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the
+right side of the textarea. Clicking **Cancel** halts generation and removes the
+loading indicator. The input box is re-enabled with your previously-typed draft
+restored ready to edit, and suggested options remain intact. If you tapped a
+suggested option while keeping a drafted action in the box, your draft is kept
+for the next turn rather than replaced. Any incomplete narrative generated
+prior to cancellation is clearly labeled as uncommitted ("Not saved") without
+consuming a scene number. If the turn finished and saved just as Cancel was
+clicked, the completed scene is preserved cleanly in your story.
 
 **Dice show their work.** A turn's rolls are listed above its narration under a
 `🎲 Dice Rolls:` heading, one line each:
@@ -81,9 +103,20 @@ dice…", "Updating the world…" and a few more. The list depends on what the a
 is doing (playing a turn, creating a campaign, loading, saving), not on what is
 happening in the story, so a fight and a conversation show the same messages.
 
-**A stalled stream is called out.** If no new text arrives for a while, a
-warning row appears inline so you know the pause is not your connection. It
-disappears the moment text resumes.
+**Problems saving a turn are called out inline.** If the server cannot apply or
+store part of a turn, a warning row appears in the story flow saying so. A
+stream that simply goes quiet for a while is not flagged separately.
+
+**Leaving mid-turn asks first.** Try to switch campaigns or navigate away while
+a turn is still generating — or while you have text sitting unsent in the
+message box — and an **In-flight Action Pending** window appears, naming the
+campaign you are on and the one you were heading to. Either condition on its own
+is enough to raise it. **Continue + Stay** puts you back where you were and lets
+the turn finish; **Cancel + Leave** abandons the turn, throws away whatever it
+would have produced, and clears the message you had typed. Dismissing the window
+without choosing counts as staying. The browser's Back and Forward buttons are
+guarded the same way. Otherwise an unsent message is kept per campaign in that
+browser, so it is still in the box when you come back to that story.
 
 **Reduced motion is respected.** If your operating system has reduce-motion
 turned on, smooth scrolling becomes instant jumps and the animated background
@@ -111,8 +144,9 @@ on screen, and each card carries its own **Edit** and **Duplicate** buttons.
 
 **Choose who runs your campaign.** Settings offers four providers as a radio
 group: Gemini, OpenRouter, Cerebras, and an OpenClaw Gateway you run yourself.
-Each has its own model dropdown and its own API-key field, and a switch takes
-effect on your next turn.
+Gemini, OpenRouter, and Cerebras each have their own model dropdown and their
+own API-key field; the OpenClaw Gateway instead asks for the port or URL of the
+gateway you run, plus an optional token. A switch takes effect on your next turn.
 
 **Your key is checked when you save it.** An empty or malformed key is rejected
 with a clear message, and a successful save confirms the masked key back to you.
@@ -121,6 +155,11 @@ A bad key does not poison later turns — each turn re-validates.
 **Test Connection.** If you point the game at your own gateway, the Test
 Connection button on the settings page probes it and updates a status badge in
 place. A failure is reported inline; it does not block the page.
+
+**Restoring dismissed tips.** Settings includes a **Restore dismissed tips**
+button. If you previously dismissed the first-turn onboarding coach or the lower
+composer helper hint ("Something else? Write it in the box below."), tapping this
+restores them across your campaigns.
 
 **Provider errors stay readable.** When the provider rate-limits you, rejects
 your key, fails transiently, or returns something malformed, you get a plain
@@ -133,7 +172,7 @@ restrictions. Your previous model will be restored when disabled." It is off by
 default, and it is an account setting, so it stays where you left it in every
 campaign. You are never nagged about it: while it is off, an "Enable Spicy Mode"
 option appears among your suggested actions only when the scene itself has
-turned intimate, and a "Disable Spicy Mode" option appears the same way when
+turned intimate, and an "Exit Spicy Mode" option appears the same way when
 such a scene winds down. Typing `enable spicy mode` or `disable spicy mode` in
 the story box works as well as the toggle.
 
@@ -151,7 +190,8 @@ history — so you can branch a story and leave the original exactly as it was.
 
 **In-world time.** The world clock is tracked down to the second and advances
 when you rest, travel, or skip ahead, so schedules and calendar events stay
-coherent. Time cannot be moved backwards.
+coherent. Time cannot be moved backwards in ordinary play; only an explicit God
+Mode command ("set time to…", "rewind to…") can move the clock back.
 
 **The world keeps its own turn counter,** separate from yours and owned by the
 server rather than the storyteller. Faction cycles, world events, and time
@@ -242,20 +282,46 @@ notation and result, so the narration and the record cannot disagree, and an
 attack's roll, critical and damage are all settled in one go rather than in
 steps the storyteller could improvise between.
 
-The game checks its own dice: it commits to a secret seed before the roll and
-confirms afterwards that the roll used it. That record is kept with every turn
-but is not displayed anywhere, so this is the game policing itself rather than
-something you can audit by hand.
+The game verifies its own dice: rolls are generated independently by the game
+engine and evaluated against the difficulty class before narrating the outcome.
+Every roll is recorded with your turn and visible in your story log and story
+exports, so you can review the arithmetic throughout your campaign.
 [DiceAuthenticity](../concepts/DiceAuthenticity.md) covers the guarantees in
 full; [DiceNotation](../concepts/DiceNotation.md) covers the grammar.
 
-## Exporting your campaign
+## Exporting and sharing your campaign
 
 Choose **Download story** in **⋯ More game actions** to export your story as
 Markdown, TXT, PDF, or DOCX. The file is built on the server and includes the campaign title, the story entries, and the world events. You have
 to be signed in to your own campaign to export it. See
 [ItachiGaiden](../entities/ItachiGaiden.md) for an example of what an exported
 story reads like.
+
+**Hand your world to someone else with a link.** Next to the download button in
+the game header is a share button. It opens **Share your world**, which makes a
+link, puts it in a box with a **Copy** button, and shows how many people have
+used it so far. The window states the deal plainly: anyone with the link can
+open your world and start their own campaign in the same setting, choosing their
+own character — your campaign stays yours. Asking again reuses the link you
+already have rather than making a second one. There is no button in the app for
+switching a link off again, so treat one as permanent once you have sent it out.
+
+**An older campaign confirms its setting first.** If a campaign was made before
+the current wizard and is missing details a newcomer would need, the window
+asks you to fill them in before it will make a link: **Character**, **Setting**,
+and **Description**, with Character and Description marked optional and Setting
+not. A **Confirm & Share** button then mints the link. Anything already recorded
+on the campaign is kept as it stands.
+
+**What the person you sent it to sees.** The link opens a plain page that needs
+no sign-in and no account: your world's title, its setting in quotes, a **📜
+Read world overview** panel they can unfold, a credit footer, and a **Play
+in this world →** button. That button drops them into the usual campaign wizard
+with your world's title, character, setting, and description already filled in —
+all of it editable before they launch. What they get is their own campaign, kept
+entirely separate from yours; nothing they do appears in your story. See
+[CampaignWizard](../concepts/CampaignWizard.md) for the wizard they land in, and
+[HowToPlay](how-to-play-worldai.md) for what happens after they enter the world.
 
 ## Where to read more
 

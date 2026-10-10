@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -26,12 +26,12 @@ All screenshots are real captures from a Dragon Knight playthrough. They show an
 
 ## Before you start
 
-You'll need a web browser and a Google account. That's it — playing is free, and you don't need an idea for a setting if you take Dragon Knight.
+You'll need a web browser and a Google account. That's it — playing includes a daily turn allowance. If you pick Dragon Knight, you don't even need an idea for a setting.
 
 ## Step 1 — Sign in
 
 1. Go to [worldarchitect.ai](https://worldarchitect.ai).
-2. Click **Continue with Google** — Google sign-in is the only option.
+2. Click **Continue with Google**. (On preview and development environments, direct OpenRouter sign-in with account credits is also available).
 
 You'll land on your **My Campaigns** dashboard. Every session starts here: launch new campaigns, search your history, pick up where you left off.
 
@@ -82,12 +82,12 @@ On a custom campaign with no character, the GM instead offers three ways to buil
 
 ## Step 5 — Read the opening scene
 
-The GM narrates the opening. For Dragon Knight that's **The King's Ribbon, Winter-Mourn Province** — a road on horseback through a frozen province.
+The GM narrates the opening. For Dragon Knight that's **The King's Ribbon, Winter-Mourn Province** — a road on horseback through a frozen province. Under the story title, the structured HUD sub-line displays `SCENE 1 · THE KING'S RIBBON · 09:00`, anchoring the scene number, the location, and the in-game world time.
 
 It establishes:
 - **Where you are** — The King's Ribbon, Winter-Mourn Province, 95 AG, Frost-Fall 12, 09:00.
 - **Who's with you** — **Ser Elian Thorne** (the idealist) and **Ser Vespera Nyx** (the pragmatist), two Imperial knights. You don't choose them; they're written into the scene. The moral contrast between them drives the whole opening, so talk to both.
-- **What's happening** — You ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (a former hero now branded a traitor) shelters refugees against the Empress's pacification order.
+- **What's happening** — You ride toward Winter-Mourn Keep, where Lady Annalise Ashwood (the province's March Lord, branded a traitor) shelters refugees against the Empress's pacification order.
 - **What you can do** — Scout, address your companions, ride straight to the gate, or type a custom action.
 
 **Take your time. Re-read it.** The first choice sets the tone of the entire campaign.
@@ -100,7 +100,7 @@ It establishes:
 
 ## Step 6 — Take your first action
 
-Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action.
+Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action. Below the choices, a dashed gold hint reminds you: *Something else? Write it in the box below.* (tapping it focuses the message box; typing or dismissing hides it).
 
 On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
@@ -108,6 +108,8 @@ On wide screens, **Show details** opens the choice details together and **Hide d
 - "I draw my sword."
 - "I introduce myself to the person across the table."
 - "I cast Detect Magic."
+
+While the turn is generating ("The DM is thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the right side of the textarea. Clicking **Cancel** halts generation, keeps suggested options intact, and restores your typed text in the message box ready to edit or resubmit. Any incomplete streamed prose in the log is marked as uncommitted ("Not saved"), while any turn that finished saving right as you clicked is kept intact.
 
 The GM narrates the result and rolls any dice the action calls for. Read the narration and the dice results together.
 
@@ -123,7 +125,7 @@ They decide how your words are read, and you'll use all three:
 
 Leave it on **Act** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
 
-Choosing a suggested story action switches back to **Act** and plays it. To keep planning, leave **Think** selected and type your question instead.
+Choosing a suggested story action always plays in **Act**. If you have **Think** or **God** selected, the options carry a helper note: *Tapping an option switches to Act and plays it as your character.* Choosing an option (or pressing its number key on desktop) automatically switches back to **Act**, confirms `Switched to Act.`, and plays the turn. To keep planning, leave **Think** selected and type your question in the message box instead.
 
 Press **Enter** to send, or **Shift+Enter** for a new line. On wide desktop screens, number keys choose the matching suggested action when you are not typing, so press one only when you are ready to act.
 
@@ -131,7 +133,7 @@ Press **Enter** to send, or **Shift+Enter** for a new line. On wide desktop scre
 
 Open **⋯ More game actions** for available controls such as **Settings**, **Theme**, **Spicy**, **Undo last turn**, **Share story**, **Download story** and **Campaign details**. **What do Act / Think / God do?** opens a reminder of the three modes.
 
-If the newest part of the scene is below your current view, **Keep reading** jumps down to it. While the narrator is writing, the button may say **New story**.
+Submitting an action snaps your view to the action you submitted, and the first narrative chunk reveals the story area. Streaming text does not auto-scroll continuously while writing, preventing view jumping while you read. If new text extends below your screen, a floating pill appears reading **● New story ↓** (or "New story streaming, scroll to view") to jump to the live tail; it becomes **↓ Keep reading** once the turn finishes.
 
 ![First action typed — "I look around the room." in the input box, GM now processing ("Checking the rulebook..." overlay). The session header shows Lvl 1 Paladin, HP 12/12, Lay on Hands 5/5, Divine Sense 4/4](images/how-to-play-worldai/step7-first-action-desktop.png)
 
@@ -140,7 +142,7 @@ If the newest part of the scene is below your current view, **Keep reading** jum
 Play continues turn by turn:
 1. GM narrates the current scene.
 2. You declare an action (or pick a choice button).
-3. System rolls dice if needed (server-side, anti-fabrication — see [DiceAuthenticity](../concepts/DiceAuthenticity.md)).
+3. System rolls authentic dice if needed (verified against tampering — see [DiceAuthenticity](../concepts/DiceAuthenticity.md)).
 4. GM narrates the outcome.
 5. Repeat.
 

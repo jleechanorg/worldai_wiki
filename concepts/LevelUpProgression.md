@@ -1,7 +1,7 @@
 ---
 title: LevelUpProgression
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: [concepts/LevelUp.md]
@@ -11,11 +11,7 @@ sources: [concepts/LevelUp.md]
 
 How fast campaigns actually level, and what happens once you pass level 20.
 
-There is no pacing dial to set. Every campaign runs the same XP rules, and the AI
-is told to treat leveling as a rare, earned milestone. If you want a different
-pace, the two levers are both GOD MODE commands: define your own XP thresholds
-(which then govern the rest of the campaign), or grant XP outright, e.g.
-`GOD MODE: give me 5000 XP`.
+There is no pacing dial to set. Every campaign runs the standard XP rules, where leveling represents an earned milestone. If you want a different pace, the two levers are both GOD MODE commands: define your own XP thresholds (which then govern the rest of the campaign), or grant XP outright, e.g. `GOD MODE: give me 5000 XP`.
 
 ## How fast you actually level
 
@@ -44,14 +40,16 @@ grow into each new band of power. Example: a Naruto ANBU-era campaign that
 escalates from village rookie to multiverse-spanning stakes. See
 [ItachiGaiden](../entities/ItachiGaiden.md).
 
-### Fast escalation — isekai, reincarnation, mythic
+### Fast narrative escalation — isekai, reincarnation, mythic
 
-Reached level 44 in roughly 50 scenes. The character did not earn all of that:
-the campaign started them well above level 1 with a reincarnation blessing, a
-divine boon or an inherited power, then escalated from there.
+Reached level 6 in roughly 50 scenes, while reading on the page as far more
+powerful than that. A reincarnation blessing, divine boon or inherited power buys
+narrative standing immediately; the level number still only moves when play earns
+it.
 
 Suits mythic arcs, power fantasy and compressed timelines. Example: an isekai
-character study whose protagonist opens as a level-10 magic researcher. See
+character study whose protagonist carries level-10 divine blessings in her
+backstory while her sheet is still in the single digits. See
 [AristocratReborn](../entities/AristocratReborn.md).
 
 ### Steady moderate — default D&D, BG3, Game of Thrones
@@ -77,11 +75,38 @@ had to justify it.
 You do not have to climb to the top. The system supports it; not every story
 needs it.
 
+## Staying fair as you climb
+
+The game maintains tension through encounter design and stakes rather than artificial stat inflation. Enemies do not arbitrarily gain extra hit points, higher armor class, or boosted damage dice merely because your level increased. Low-level adversaries remain low-level, while high-tier encounters introduce tactical complexity, environmental hazards, and strategic objectives rather than simple number scaling.
+
+Difficulty has to come from the situation instead. Every high-tier challenge is
+built on at least one of five things, and preferably two:
+
+- **Prepared counters.** The opposition has read your public record and come
+  ready for the arsenal you are known for — dispels, silence, mirror images.
+  Your signature move is the one they expected.
+- **The ground itself.** Weather, verticality, crumbling footing, fire, water or
+  an anti-magic zone, chosen specifically to blunt your strongest option.
+- **A real choice.** Three doors is not a trap-spotting exercise; it is a
+  question of which faction you would rather wake up.
+- **Something you cannot afford to lose.** A hostage, a relic, a shelter full of
+  civilians — stakes that stop you simply unloading everything you have. See
+  [Combat](Combat.md).
+- **Your particular specialty.** A ward that yields to the training only your
+  character has, rather than a generic roll. See
+  [SmartSkillChecks](SmartSkillChecks.md).
+
+Encounters carry genuine stakes and plausible failure consequences: being captured or forced to retreat, an NPC escalating or walking away, a locked objective escaping, or alarms sounding. Encounters present real risks where decisions and dice rolls shape what follows.
+
+### The people who don't scale with you
+
+The other half of this is that the world does not promote everyone alongside you. Named NPCs from earlier bands of your campaign remain grounded at their own scale rather than automatically leveling up to match you. These are the people whose lives you once held in your hands, and their grudges, marriages, recoveries and quiet betrayals continue to matter across your journey. See [NPCRelationships](NPCRelationships.md) and [LivingWorld](LivingWorld.md).
+
+Where possible, stories emphasize personal stakes over abstract mythic crises: a disinherited rival challenging your claims on a legal technicality carries more weight than a generic apocalyptic fleet. And disguise or a false identity still allows navigating social situations that your high-level renown would otherwise disrupt.
+
 ## Past level 20
 
-**Level 20 is a real stop.** The ordinary XP ladder ends there, and the AI is
-forbidden from inventing a level 21 for you. Until your campaign has an active
-post-20 curve, XP awards at level 20 are simply zero.
+**Level 20 is a defined milestone.** The standard progression ladder concludes at level 20. Unless your campaign explicitly activates an extended or divine progression curve, character levels cap at 20 and routine XP awards cease.
 
 The game ships one such curve: the divine tier. It switches on when your
 character ascends, and ascension is a story event rather than an XP threshold.
@@ -162,16 +187,7 @@ three at 46.
 
 ### Being noticed
 
-The other gods are watching, and this is the real pressure of divine play. Each
-of them tracks you on its own hidden suspicion meter. A public miracle nudges
-every god who can see it a little further along; killing a god jumps every other
-god's meter by half its length at once, which is usually enough to move a room
-full of indifferent powers into suspicion or open investigation of you.
-
-You are never shown a suspicion number. You get a **vibe cue** instead — the air
-feels *still*, then *heavy*, then *charged*, then *screaming*. When a faction's
-suspicion tops out, its avatar arrives in person. Watch the cue and decide
-whether the next miracle is worth it.
+The other powers of the world are watching, and divine attention creates genuine pressure. Performing overt miracles or slaying major entities draws the scrutiny of rival powers. You are never shown a numerical threat meter; instead, the world provides narrative sensory cues — the air feels *still*, then *heavy*, then *charged*, then *screaming* — before a rival faction's avatar intervenes directly. Watch the cues and weigh the risks before unleashing supreme power.
 
 ### The Sovereign tier — closed for now
 
@@ -184,9 +200,10 @@ sub-deities with portfolios; your faction becomes a Hegemony. You arrive ranked
 around 800th out of 1,000, already flagged as a threat, and the first siege lands
 almost immediately.
 
-**You cannot reach this tier today.** No new campaign can ascend into it, though
-a campaign that entered it earlier still loads and plays. It is described here
-because it may reopen.
+**You cannot reach this tier today.** No new campaign can ascend into it, and a
+campaign that entered it earlier still loads and is safe to open, but the
+multiversal rules above are no longer in play — the Sovereign system is switched
+off everywhere. It is described here because it may reopen.
 
 ## See also
 

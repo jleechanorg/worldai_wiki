@@ -1,7 +1,7 @@
 ---
 title: PlayerUserStories
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -71,7 +71,7 @@ See [Combat](../concepts/Combat.md).
 **I want** the moves I could plausibly make offered as buttons under the turn I just read,
 **So that** I can take an obvious option in one tap without losing the ability to type something nobody suggested.
 
-Suggested actions appear beneath the latest scene under **Your move** and **What do you do?** In ordinary play you get four; God Mode offers three, while character creation and level-up have their own shorter menus. Tap a numbered action to play it, or use the message box for your own action. A choice's chevron reveals details and any pros and cons inline without submitting it; wide screens also offer **Show details** and **Hide details**. Choosing a story action switches you back to **Act**, so stay in **Think** and type a question if you want to keep planning.
+Suggested actions appear beneath the latest scene under **Your move** and **What do you do?** In ordinary play you get four; God Mode offers three, while character creation and level-up have their own shorter menus. Below the choices, a dashed gold hint (*Something else? Write it in the box below.*) guides you to custom input. Tap a numbered action to play it, or use the message box for your own action. A choice's chevron reveals details and any pros and cons inline without submitting it; wide screens also offer **Show details** and **Hide details**. Choosing a story action always plays in **Act** — if you were in **Think** or **God**, selecting an option automatically selects **Act**, shows `Switched to Act.`, and submits the turn. Stay in **Think** and type into the message box if you want to keep planning.
 
 ---
 
@@ -98,7 +98,7 @@ The big difference from tabletop: nothing stops to make you fill in a form. When
 **I want** the full new level — hit points, features, spells, proficiencies — applied on that same turn, with a review window afterwards where I can change what the game chose for me,
 **So that** play never stops to make me fill in a form, and my sheet is never left half-levelled.
 
-While a review is open the game keeps you on it: an unrelated action gets folded back into the pending step rather than resolved.
+The review window does not hold up play: after an automatic level-up your next ordinary action is resolved as normal, and the new sheet stays open to amendment until you finish the review. Only once you actually open the review does the game keep you on it until you close it.
 
 See [LevelUp](../concepts/LevelUp.md), [LevelUpProgression](../concepts/LevelUpProgression.md).
 
@@ -215,6 +215,7 @@ The world advances on its own clock, and once your ambitions outgrow a party you
 | US-062 | Territory can be taken, held and lost, and it feeds your economy. See [FactionManagement](../concepts/FactionManagement.md). |
 | US-063 | You get warned before a deadline or a scheduled event runs out of time. See [LivingWorld](../concepts/LivingWorld.md). |
 | US-064 | Defeated enemies and finished quests stop cluttering the world. See [LivingWorld](../concepts/LivingWorld.md). |
+| US-064a | Faction updates display persisted objectives across reloads. See [FactionManagement](../concepts/FactionManagement.md). |
 
 ### US-055: The World Moves While You're Away
 
@@ -244,7 +245,7 @@ See [FactionBattleSim](../entities/FactionBattleSim.md).
 
 ## 7. Shaping the campaign and God Mode
 
-You set the premise when you create the campaign and steer everything else in play. The mode selector above the action box is how you get from playing your character to editing the world.
+You set the premise when you create the campaign and steer everything else in play. The mode selector just below the action box is how you get from playing your character to editing the world.
 
 | ID | What you get |
 |----|--------------|
@@ -255,6 +256,7 @@ You set the premise when you create the campaign and steer everything else in pl
 | US-068 | Your own history, geography and factions replace the defaults — set them in the description box, then keep steering with directives. See [CampaignWizard](../concepts/CampaignWizard.md). |
 | US-069 | Hide the raw dice numbers and read a short outcome phrase instead — your own preference, and a campaign can start with it on. See [Dice](../concepts/Dice.md). |
 | US-069a | A mature-content switch in the game header. |
+| US-069b | Narrator acts as an objective sensory camera without moralizing metaphors. |
 
 ### US-065a: Choose How You're Speaking — Act, Think, or God
 
@@ -343,7 +345,7 @@ See [ItachiGaiden](../entities/ItachiGaiden.md) for an example of an exported ca
 **I want** the game to record one durable fact per narrated turn, so that when old middle scenes drop out of the AI's working context those facts still steer the story,
 **So that** the campaign stays coherent without carrying every scene forever.
 
-Old scenes are dropped, not summarised. That per-turn record is what survives — which is why the game remembers *that* you swore an oath long after it has forgotten the wording of the scene where you swore it.
+Old scenes are dropped, not summarised. That per-turn record is what survives — which is why the game remembers *that* you swore an oath long after it has forgotten the wording of the scene where you swore it. Critical milestones (deaths, broken alliances, irreversible pacts) are recorded as permanent memories, preserved in campaign storage to anchor future scenes.
 
 ### US-074: Reload and Pick Up Where You Left Off
 
