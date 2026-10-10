@@ -97,21 +97,16 @@ Open **⋯ More game actions** and choose **Campaign details** to revisit your c
 
 ### Your portrait in the game header
 
-**If you skipped the avatar on Step 2**, the header shows a dashed circle with a plus and the label **Add Avatar**. Click it, pick an image, and it uploads straight away — the label switches to *Uploading…* and then your portrait takes the placeholder's spot. There is no cropping step on this quick path.
+**If you skipped the avatar on Step 2**, the header shows a dashed circular slot with a plus icon. Clicking it opens your device's file picker directly. Once an image is chosen, it uploads and displays centered within the circular frame. There is no manual cropping or repositioning step.
 
-**If you already have a portrait**, click it. A character card opens over the screen with:
+**If you already have a portrait**, click it. A photo-management modal opens over the screen with:
 
-- the portrait at full size,
-- your character's name (or the campaign title if no character name was recorded),
-- their class, and
-- **Level**, **HP** (current/max) and **AC**, when your campaign has recorded them. Early on, before the GM has finalised your sheet in [Scene 1](#after-the-wizard-scene-1-character-review), the stats row can be empty. See [AbilityScores](AbilityScores.md) and [LevelUp](LevelUp.md) for what those numbers mean.
+- a preview of your portrait,
+- the campaign title,
+- **📷 Change Photo** — opens the file picker to choose a replacement image that uploads and centers immediately, and
+- **🗑 Remove** — prompts for confirmation ("Remove your character avatar?"), then clears the portrait and restores the dashed placeholder.
 
-The card has two buttons:
-
-- **📷 Change Photo** — pick a new image and a full-screen crop view opens: *Drag to reposition • 512×512px recommended*. Drag the image inside the square until the framing looks right, then **✅ Use This Crop** to upload it, or **✕ Cancel** to back out. The header portrait and the card both update as soon as the upload finishes.
-- **🗑 Remove** — asks you to confirm, then clears the portrait from the header. The dashed **Add Avatar** placeholder comes back the next time the campaign loads.
-
-Close the card with its **×**, by clicking the dimmed area around it, or by pressing **Escape**.
+Close the modal with its **×**, by clicking the dimmed backdrop, or by pressing **Escape**. Character stats (Level, HP, AC) are tracked in the header status bar and character sheet, not inside the photo modal.
 
 ---
 

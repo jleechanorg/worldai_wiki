@@ -1,7 +1,7 @@
 ---
 title: RestAndDeath
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -55,6 +55,8 @@ When you drop to 0 HP:
 - **3 failures**: you die.
 - Taking any further damage while at 0 HP costs you a failure, or two if that
   damage was a critical hit.
+
+For companions and named NPCs, dropping to 0 HP, surrendering, fleeing, or being captured does not permanently kill them. Permanent death requires an explicit narrative death declaration in the story text (e.g. an execution or mortal blow). Subsequent survival reveals or resurrection in the narrative restore their availability.
 
 ## Stabilizing someone
 

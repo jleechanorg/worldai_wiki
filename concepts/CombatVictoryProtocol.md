@@ -1,7 +1,7 @@
 ---
 title: CombatVictoryProtocol
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -23,13 +23,15 @@ If your party drops instead, see [RestAndDeath](RestAndDeath.md) for what happen
 
 ## The rewards block
 
-Once the fight is over the GM posts a rewards summary listing:
+Immediately following combat, an **Inline Reward Display Card** renders in the story flow (`✨ REWARDS (combat)`). It itemizes your exact XP award (`+{xp_gained} XP`), progress toward your next level (`XP: {current_xp}/{next_level_xp}`), any level-up notification, and acquired coin and loot (`+{gold} gold`, `+{quantity} {item}`).
+
+Alongside the reward card, the narrative summarizes:
 
 - **Enemies defeated** — each one named, with its challenge rating, and marked SURRENDERED where that applies.
 - **Loot obtained** — gold, dropped equipment, consumables, quest items.
 - **Resources consumed** — spell slots, class resources, ammunition, HP lost.
 
-You won't see an XP award in that list, and that's deliberate — experience is applied to your character rather than itemized in the rewards summary. Your running total is still in plain sight: the status line at the top of each turn carries it, in the form `XP: 34000/48000` (current total, then the next level's threshold). Challenge ratings in the rewards list tell you how hard the fight was; they are not the XP award. See [LootAndRewards](LootAndRewards.md) and [LevelUp](LevelUp.md).
+Your running total also updates in the session header (`XP: current/next`). Challenge ratings tell you how hard the fight was; they are not the raw arithmetic of the award. See [LootAndRewards](LootAndRewards.md) and [LevelUp](LevelUp.md).
 
 ## Right after the fight
 

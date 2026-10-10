@@ -1,7 +1,7 @@
 ---
 title: GodModeFAQ
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: query
 tags: [wa-faq, wa-prompt]
 sources: []
@@ -19,7 +19,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 
 **A**: Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box, then type your request.
+1. Pick the **God** pill under the message box (the placeholder becomes `Edit the world: stats, items, fixes…`), then type your request. Suggested options under **Your move** will remind you that tapping one switches back to Act and plays that choice.
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: keep the tone grimdark`.
 
 ## Q: Does `GOD MODE:` have to be in capitals?
@@ -52,7 +52,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 **A**: Two answers, depending on which part you mean.
 
 - **God Mode itself**: yes, directly. Set your HP, restore spell slots, hand yourself a weapon, delete an enemy. What it won't do is *resolve* the fight — God Mode never rolls dice and never takes a combat turn.
-- **Directives**: yes, and not only in tone. A directive can be mechanical — "always apply Foresight advantage to my rolls", "my specialists always cast Haste on me: +2 AC and an extra action" — and the GM applies it on every later turn. What a directive won't do is resolve the fight for you; the dice are still rolled in story mode.
+- **Directives**: yes, and not only in tone. A directive can request a supported mechanical modifier — "always apply Foresight advantage to my rolls", "my specialists always cast Haste on me: +2 AC and an extra action" — and the GM applies it on every later turn. The modifier can change the roll, but it cannot choose, replace, bypass, or guarantee the result. What a directive won't do is resolve the fight for you; the dice are still rolled in story mode.
 
 ## Q: Do God Mode turns use up my normal turns?
 

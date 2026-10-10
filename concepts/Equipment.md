@@ -1,7 +1,7 @@
 ---
 title: Equipment
 created: 2026-06-20
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -11,9 +11,9 @@ sources: []
 
 What your character is wearing, wielding, and carrying. Everything here is read straight from your saved sheet — item names and stats are never paraphrased or invented when they're shown to you.
 
-## Slots
+## Slots & Inventory Stacking
 
-Equipped gear lives in named slots: **main hand**, **off hand**, **ranged**, **armor**, **shield**, **head**, **neck**, **cloak**, **hands**, **belt/waist**, **body/chest**, **legs**, **feet**, **shoulders**, **ring 1**, **ring 2**, and **instrument**. Everything else sits in your **backpack**.
+Equipped gear lives in named slots: **main hand**, **off hand**, **ranged**, **armor**, **shield**, **head**, **neck**, **cloak**, **hands**, **belt/waist**, **body/chest**, **legs**, **feet**, **shoulders**, **ring 1**, **ring 2**, and **instrument**. Everything else sits in your **backpack**. Identical consumables (healing potions, ammunition, rations) stack automatically into single inventory rows with updated quantity counters (e.g. `Potion of Healing (x3)`).
 
 Every character must leave creation with all three fighting slots filled — main hand, off hand (a second weapon, a shield, or a spellcasting focus), and a ranged option (a bow, thrown weapons, or an attack cantrip like Fire Bolt). Skip one and the GM fills it with a class-appropriate default rather than letting you walk into a fight unable to answer an archer.
 

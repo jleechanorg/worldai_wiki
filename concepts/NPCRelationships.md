@@ -1,7 +1,7 @@
 ---
 title: NPCRelationships
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system, wa-persona]
 sources: []
@@ -73,7 +73,7 @@ That "Social HP" is their resolve — how much argument they can absorb before t
 | King, ancient ruler | 4-7 |
 | God, primordial | 8-10 |
 
-What you are asking for scales that pool as well. A minor favour — information, an audience — sits at the easy end; a standard request costs more; asking someone to betray an ally, break an oath, or submit to you outright pushes them toward the top of their range. Nobody ever ends up above 10, and the game enforces that ceiling itself, so even "kneel to me" aimed at a god is near-impossible rather than impossible.
+What you are asking for scales that pool as well. A minor favour — information, an audience — sits at the easy end; a standard request costs more; asking someone to betray an ally, break an oath, or submit to you outright pushes them toward the top of their range. However, Social HP depletion is strictly bounded by NPC Hard Limits: an NPC's declared inviolable boundaries always cap concessions (`Hard Limit > Social HP mechanic > archetype tone`). Depleting Social HP earns the maximum permissible concession within their character, but will never force an outcome beyond their hard limit (ideological enemies will not surrender core beliefs, and gods cannot be commanded to kneel via social checks).
 
 Each turn you state your approach and the game rolls one of **Persuasion, Deception, Intimidation, or Insight** against a DC — see [SmartSkillChecks](SmartSkillChecks.md) for how that target number is set, and [Dice](Dice.md) for the roll itself. A success takes 1 point off their resolve, or 2 if you clear the DC by 5 or more. A failure takes nothing off. The box also tracks successes toward the target (usually 5) and failures toward a threshold (usually 3), and hitting that threshold ends the attempt with the NPC closed off or hostile.
 
@@ -126,7 +126,7 @@ These connections drive what NPCs do when you are not in the room — see [Livin
 
 Recurring NPCs carry a personality tag and an alignment. The tag is usually an MBTI code like INTJ, but it can equally be a phrase such as "mysterious and brooding". Together they steer how the NPC decides, how they speak, and how they react to you.
 
-These labels are strictly behind the scenes: the game is instructed never to print "INTJ" or "Lawful Neutral" in the story text. You are meant to infer personality from behaviour. See [CompanionPersonality](CompanionPersonality.md).
+These labels are strictly behind the scenes: the game is instructed never to print "INTJ" or "Lawful Neutral" in the story text, and the server structurally strips and redacts `mbti` and `alignment` keys from all client-facing network payloads, SSE streams, and combat states. You are meant to infer personality from behaviour. See [CompanionPersonality](CompanionPersonality.md).
 
 ## Player tips
 

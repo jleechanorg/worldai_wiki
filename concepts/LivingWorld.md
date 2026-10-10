@@ -29,10 +29,10 @@ A single advance can move any of these:
 - **Background events** — what off-screen NPCs and factions actually did.
 - **Rumors** — one or two pieces of gossip NPCs may repeat. Some are true, some half true, some flatly wrong, and the rumor itself never tells you which.
 - **Deadlines** — countdowns scheduled for a specific future turn come due, get pushed back, or get cancelled.
-- **Faction shifts** — objectives, resources, and standing change. See [FactionSystem](FactionSystem.md).
+- **Faction shifts** — objectives, resources, and standing change; persisted faction objectives continue to display consistently across turns and reloads rather than reverting to unknown state (see [FactionSystem](FactionSystem.md)).
 - **One scene event** (optional) — something that reaches you directly: a messenger, a road encounter, a companion pulling you aside, a quest offer.
 
-You are never handed a report of what changed. Hidden developments stay hidden until the story surfaces them — an NPC mentions it, a price has moved, a rumor reaches you.
+You are never handed an ungrounded meta-report of what changed. In the header, the HUD sub-line continuously tracks `SCENE N · LOCATION · TIME`. Developments are narrated with sensory camera objectivity — the narrator describes observable physical reality without evaluative moral lecturing, leaving ethical dilemmas to authentic NPC dialogue and player choices. Major permanent changes (such as deaths or shattered pacts) are flagged `retain: true` on core memories to survive compaction.
 
 ## Why it matters
 

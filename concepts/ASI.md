@@ -1,7 +1,7 @@
 ---
 title: ASI
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -14,7 +14,7 @@ each, or take a feat instead.
 
 ## When you get one
 
-Every class gains an ASI at **4th, 8th, 12th, 16th and 19th** level.
+Most classes gain an ASI at **4th, 8th, 12th, 16th and 19th** class level. **Fighters** gain additional ASIs at **6th and 14th** level (seven total), and **Rogues** gain an extra ASI at **10th** level (six total). In multiclass characters, ASIs unlock based on individual class levels rather than total character level.
 
 The AI picks for you when you level and applies it immediately. To change it,
 open the **Review Level-Up Choices** option — see [LevelUp](LevelUp.md).

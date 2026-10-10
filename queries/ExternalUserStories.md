@@ -19,11 +19,15 @@ your own code, see [DeveloperAPI](DeveloperAPI.md).
 
 ## Your account
 
-**Sign in with Google.** Google is the only sign-in option — there is no Apple,
-email, or password sign-in. Your campaigns, settings, and progress are tied to
-that account, and every request carries your identity, so nothing is saved
-anonymously. Signing out ends the session and drops your cached settings. See
-[HowToPlay](how-to-play-worldai.md), Step 1.
+**Sign in with Google or OpenRouter.** On the welcome screen, players can choose
+**Continue with Google** or **Sign in with OpenRouter**. Signing in with OpenRouter
+lets you play using your OpenRouter credits directly, without needing a Google
+account or copy-pasting API keys. In Settings, an existing Google account can link
+an OpenRouter sign-in (**Connect OpenRouter sign-in to this account**), or generate
+a personal OpenRouter key via a one-click OAuth button (**Create a personal OpenRouter key**).
+Each provider card also offers a **Clear key** control to delete saved keys without
+unlinking your account. Signing out ends the session and drops your cached settings.
+See [HowToPlay](how-to-play-worldai.md), Step 1.
 
 **Settings follow you.** Provider, model, theme, and persona live in your
 account rather than in the browser, so they survive reloads, a different
@@ -55,9 +59,23 @@ copy of the token, so a lost one cannot be recovered; you replace it instead.
 ## While a turn runs
 
 **The story streams in.** Text fills in word by word from the moment the server
-starts generating, so you are never watching a blank screen. The page
-auto-scrolls to follow it, but leaves you alone if you have scrolled back to
-re-read something.
+starts generating, so you are never watching a blank screen. Submitting an action
+snaps your view to the action you submitted, and the first narrative chunk reveals
+the story text area. Continuous auto-scrolling during streaming is intentionally
+disabled so newly-streaming lines don't pull the screen away while you are reading.
+If the newest text extends below your viewport, an unread streaming pill
+(**● New story ↓** or "New story streaming, scroll to view") appears above the
+composer to smoothly jump to the live tail; on completion, it becomes
+**↓ Keep reading**.
+
+**Cancelling a turn mid-stream.** While an action is in flight ("The DM is
+thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the
+right side of the textarea. Clicking **Cancel** halts generation immediately
+(<25ms) and removes the loading indicator. The input box is re-enabled with your
+previously-typed draft preserved, and suggested options remain intact. Any
+incomplete narrative generated so far stays marked as "Narrator / Not saved" with
+no scene number. If the server happened to commit right before Cancel was clicked,
+an automatic background check reconciles and saves the turn cleanly.
 
 **Dice show their work.** A turn's rolls are listed above its narration under a
 `🎲 Dice Rolls:` heading, one line each:
@@ -135,13 +153,10 @@ A bad key does not poison later turns — each turn re-validates.
 Connection button on the settings page probes it and updates a status badge in
 place. A failure is reported inline; it does not block the page.
 
-**Retrieval Mode.** Further down the Settings page, under **Retrieval Mode**, a
-**RAG mode** dropdown offers two choices: "Original — single call (1 call)" and
-"RAG only — single call (1 call)". It decides how the instructions handed to the
-storyteller are put together each turn — Original sends the full prompt, RAG
-only sends a retrieved slice of it instead. Both are one call per turn, so
-neither adds a round trip. Original is the default, and like everything else on
-the page the choice is saved to your account rather than the browser.
+**Restoring dismissed tips.** Settings includes a **Restore dismissed tips**
+button. If you previously dismissed the first-turn onboarding coach or the lower
+composer helper hint ("Something else? Write it in the box below."), tapping this
+restores them across your campaigns.
 
 **Provider errors stay readable.** When the provider rate-limits you, rejects
 your key, fails transiently, or returns something malformed, you get a plain

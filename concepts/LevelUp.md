@@ -1,7 +1,7 @@
 ---
 title: LevelUp
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -20,7 +20,7 @@ can change any of it afterwards, or ignore it and keep playing.
 
 ## What a level gives you
 
-- **HP increase** — your class hit die plus your Constitution modifier
+- **HP increase** — your class hit die plus your Constitution modifier; existing damage carries over so your current HP rises by the gained amount without wiping away prior wounds
 - **Class features** at the levels your class grants them
 - **Subclass features** — see [Subclass](Subclass.md)
 - **Ability score increase or feat** at 4th, 8th, 12th, 16th and 19th for most
@@ -74,16 +74,17 @@ hands you back to the story. Your level and XP do not change again when you
 finish.
 
 You can also leave the review unopened indefinitely. The AI's package is already
-in effect either way.
+in effect either way. If you use God Mode to edit stats or gold at your current level,
+your pending choices remain active; downleveling via God Mode cleanly drops the
+stale level-up audit.
 
 ## Player tips
 
-- **Know your ASI levels**: 4th, 8th, 12th, 16th, 19th. If you want a specific
-  feat, decide before you get there and name it in the review.
-- **Read your new features**: the banner only announces your new level. Open
-  **Review Level-Up Choices** (or read the scene text) to see the HP, features,
-  ability increase and spells you actually gained. Knowing you now have a second
-  attack or a new spell changes what you should try next.
+- **Know your ASI levels**: 4th, 8th, 12th, 16th, 19th (plus 6th and 14th for Fighters,
+  10th for Rogues). If you want a specific feat, decide before you get there and name it in the review.
+- **Read your new features**: the crossing turn's narration opens with a comprehensive
+  breakdown of all gained mechanics — HP rolls, class features, spell slots, and proficiencies.
+  A dismissible yellow banner also appears in the header (with an × to close it).
 - **The review is not a deadline.** It waits. Finish the scene first if you'd
   rather not break the mood.
 

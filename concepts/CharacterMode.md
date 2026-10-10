@@ -13,7 +13,9 @@ sources: []
 
 ## What it does
 
-Whatever you type becomes your character's actions and dialogue, and the story advances from it. Type `I kick the door in and shout for the innkeeper` and your character does exactly that, the GM narrates what happens next, and the world's clock moves forward. That's the whole game, most of the time.
+Whatever you type becomes your character's actions and dialogue, and the story advances from it. The message box displays the placeholder `Speak or act as your character…`. Hovering or focusing the **Act** pill explains: *"Act is what your character says or does, and the story moves forward."* On touch devices, opening **⋯ More game actions → What do Act / Think / God do?** reveals this explanation. Suggested actions under **Your move** always execute in Act mode.
+
+Type `I kick the door in and shout for the innkeeper` and your character does exactly that, the GM narrates what happens next, and the world's clock moves forward. That's the whole game, most of the time.
 
 ## The other two buttons
 
