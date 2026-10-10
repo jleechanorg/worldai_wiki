@@ -77,13 +77,7 @@ needs it.
 
 ## Staying fair as you climb
 
-The cheapest way to keep a campaign tense as you level is to quietly inflate the
-opposition, and the game is forbidden from doing it. An enemy who would be a
-manageable fight at their own strength does not get extra hit points, extra
-armour or an extra damage die just because your number went up. An opponent
-whose only contribution is "big stats, hits hard" is explicitly off the table at
-high tiers — and so is the opposite failure, a challenge your level lets you
-roll straight past.
+The game maintains tension through encounter design and stakes rather than artificial stat inflation. Enemies do not arbitrarily gain extra hit points, higher armor class, or boosted damage dice merely because your level increased. Low-level adversaries remain low-level, while high-tier encounters introduce tactical complexity, environmental hazards, and strategic objectives rather than simple number scaling.
 
 Difficulty has to come from the situation instead. Every high-tier challenge is
 built on at least one of five things, and preferably two:
@@ -102,10 +96,7 @@ built on at least one of five things, and preferably two:
   character has, rather than a generic roll. See
   [SmartSkillChecks](SmartSkillChecks.md).
 
-Every challenge also has to carry a plausible way for you to lose, written down
-before the outcome is narrated: captured or forced to retreat, an NPC who walks
-away or escalates, a door that stays locked, an alarm that goes up. A fight you
-could not lose is scenery, not an encounter.
+Encounters carry genuine stakes and plausible failure consequences: being captured or forced to retreat, an NPC escalating or walking away, a locked objective escaping, or alarms sounding. Encounters present real risks where decisions and dice rolls shape what follows.
 
 ### The people who don't scale with you
 
@@ -115,9 +106,7 @@ Where possible, stories emphasize personal stakes over abstract mythic crises: a
 
 ## Past level 20
 
-**Level 20 is a real stop.** The ordinary XP ladder ends there, and the AI is
-forbidden from inventing a level 21 for you. Until your campaign has an active
-post-20 curve, XP awards at level 20 are simply zero.
+**Level 20 is a defined milestone.** The standard progression ladder concludes at level 20. Unless your campaign explicitly activates an extended or divine progression curve, character levels cap at 20 and routine XP awards cease.
 
 The game ships one such curve: the divine tier. It switches on when your
 character ascends, and ascension is a story event rather than an XP threshold.
