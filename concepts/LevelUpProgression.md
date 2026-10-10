@@ -11,11 +11,7 @@ sources: [concepts/LevelUp.md]
 
 How fast campaigns actually level, and what happens once you pass level 20.
 
-There is no pacing dial to set. Every campaign runs the same XP rules, and the AI
-is told to treat leveling as a rare, earned milestone. If you want a different
-pace, the two levers are both GOD MODE commands: define your own XP thresholds
-(which then govern the rest of the campaign), or grant XP outright, e.g.
-`GOD MODE: give me 5000 XP`.
+There is no pacing dial to set. Every campaign runs the standard XP rules, where leveling represents an earned milestone. If you want a different pace, the two levers are both GOD MODE commands: define your own XP thresholds (which then govern the rest of the campaign), or grant XP outright, e.g. `GOD MODE: give me 5000 XP`.
 
 ## How fast you actually level
 
@@ -113,20 +109,9 @@ could not lose is scenery, not an encounter.
 
 ### The people who don't scale with you
 
-The other half of this is that the world does not promote everyone alongside
-you. The game is told to keep three to five named NPCs from the level band your
-campaign started in, held at that band for the rest of the campaign instead of
-quietly growing to match you. These are the people whose lives you once held in
-your hands, and their grudges, marriages, recoveries and quiet betrayals are
-meant to still matter at level 20 — the farm you burned, the favour called in
-ten years late. See [NPCRelationships](NPCRelationships.md) and
-[LivingWorld](LivingWorld.md).
+The other half of this is that the world does not promote everyone alongside you. Named NPCs from earlier bands of your campaign remain grounded at their own scale rather than automatically leveling up to match you. These are the people whose lives you once held in your hands, and their grudges, marriages, recoveries and quiet betrayals continue to matter across your journey. See [NPCRelationships](NPCRelationships.md) and [LivingWorld](LivingWorld.md).
 
-Where both would work, the game is also told to reach for the personal pressure
-over the mythic one: a disinherited cousin suing for your title on a procedural
-flaw beats a world-spanning alliance against you. And your reputation is not
-allowed to dissolve the social game — a disguise or a false name still buys you
-something a peer NPC's knowledge would otherwise deny you.
+Where possible, stories emphasize personal stakes over abstract mythic crises: a disinherited rival challenging your claims on a legal technicality carries more weight than a generic apocalyptic fleet. And disguise or a false identity still allows navigating social situations that your high-level renown would otherwise disrupt.
 
 ## Past level 20
 
@@ -213,16 +198,7 @@ three at 46.
 
 ### Being noticed
 
-The other gods are watching, and this is the real pressure of divine play. Each
-of them tracks you on its own hidden suspicion meter. A public miracle nudges
-every god who can see it a little further along; killing a god jumps every other
-god's meter by half its length at once, which is usually enough to move a room
-full of indifferent powers into suspicion or open investigation of you.
-
-You are never shown a suspicion number. You get a **vibe cue** instead — the air
-feels *still*, then *heavy*, then *charged*, then *screaming*. When a faction's
-suspicion tops out, its avatar arrives in person. Watch the cue and decide
-whether the next miracle is worth it.
+The other powers of the world are watching, and divine attention creates genuine pressure. Performing overt miracles or slaying major entities draws the scrutiny of rival powers. You are never shown a numerical threat meter; instead, the world provides narrative sensory cues — the air feels *still*, then *heavy*, then *charged*, then *screaming* — before a rival faction's avatar intervenes directly. Watch the cues and weigh the risks before unleashing supreme power.
 
 ### The Sovereign tier — closed for now
 

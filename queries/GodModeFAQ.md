@@ -52,7 +52,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 **A**: Two answers, depending on which part you mean.
 
 - **God Mode itself**: yes, directly. Set your HP, restore spell slots, hand yourself a weapon, delete an enemy. What it won't do is *resolve* the fight — God Mode never rolls dice and never takes a combat turn.
-- **Directives**: yes, and not only in tone. A directive can request a supported mechanical modifier — "always apply Foresight advantage to my rolls", "my specialists always cast Haste on me: +2 AC and an extra action" — and the GM applies it on every later turn. The modifier can change the roll, but it cannot choose, replace, bypass, or guarantee the result. What a directive won't do is resolve the fight for you; the dice are still rolled in story mode.
+- **Directives**: yes, and not only in tone. A directive can request a supported mechanical modifier — such as asking for advantage or bonus AC — and the GM guides subsequent scenes accordingly. The modifier can influence rolls where applicable, but it cannot guarantee success, force automatic hits, or bypass required saving throws. What a directive won't do is resolve the fight for you; combat rounds and authentic dice rolls still occur in Act mode.
 
 ## Q: Do God Mode turns use up my normal turns?
 

@@ -109,7 +109,7 @@ On wide screens, **Show details** opens the choice details together and **Hide d
 - "I introduce myself to the person across the table."
 - "I cast Detect Magic."
 
-While the turn is generating ("The DM is thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the right side of the textarea. Clicking **Cancel** halts generation immediately, keeps suggested options intact, and restores your typed text in the message box ready to edit or resubmit. Any incomplete streamed prose in the log is marked as uncommitted ("Not saved").
+While the turn is generating ("The DM is thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the right side of the textarea. Clicking **Cancel** halts generation, keeps suggested options intact, and restores your typed text in the message box ready to edit or resubmit. Any incomplete streamed prose in the log is marked as uncommitted ("Not saved"), while any turn that finished saving right as you clicked is kept intact.
 
 The GM narrates the result and rolls any dice the action calls for. Read the narration and the dice results together.
 

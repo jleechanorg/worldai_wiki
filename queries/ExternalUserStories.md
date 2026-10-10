@@ -70,11 +70,12 @@ composer to smoothly jump to the live tail; on completion, it becomes
 
 **Cancelling a turn mid-stream.** While an action is in flight ("The DM is
 thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the
-right side of the textarea. Clicking **Cancel** halts generation immediately
-and removes the loading indicator. The input box is re-enabled with your
-previously-typed draft restored ready to edit, and suggested options remain
-intact. Any incomplete narrative generated prior to cancellation is clearly
-labeled as uncommitted ("Not saved") without consuming a scene number.
+right side of the textarea. Clicking **Cancel** halts generation and removes the
+loading indicator. The input box is re-enabled with your previously-typed draft
+restored ready to edit, and suggested options remain intact. Any incomplete
+narrative generated prior to cancellation is clearly labeled as uncommitted
+("Not saved") without consuming a scene number. If the turn finished and saved
+just as Cancel was clicked, the completed scene is preserved cleanly in your story.
 
 **Dice show their work.** A turn's rolls are listed above its narration under a
 `🎲 Dice Rolls:` heading, one line each:
