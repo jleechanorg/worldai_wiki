@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-10-10
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -67,7 +67,7 @@ A confirmation line instead of a scene, the state change applied immediately, an
 ## Player tips
 
 - **One change per turn.** A God Mode turn that does five unrelated things is harder to check than five turns that each do one.
-- **Directives cannot switch the rules off.** "Never roll dice" will not work; dice are rolled server-side. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
+- **Directives cannot switch the rules off.** "Never roll dice" will not work; the game system always rolls dice for uncertain actions. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
 - **Add directives gradually.** One at a time, watch how narration changes, then add more. Fifteen at once dilute each other.
 - **What directives are good for**: tone, voice, POV, pacing, themes, taboos, power level, companion behaviour and world rules. [GodModePrompting](GodModePrompting.md#what-directives-can-steer) has a worked table for each.
 

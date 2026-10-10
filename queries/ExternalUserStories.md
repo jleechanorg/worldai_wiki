@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-10-10
+updated: 2026-10-09
 type: query
 tags: [wa-system, wa-tutorial]
 ---

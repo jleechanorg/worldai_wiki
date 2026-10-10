@@ -1,7 +1,7 @@
 ---
 title: GodModePrompting
 created: 2026-06-19
-updated: 2026-10-10
+updated: 2026-10-09
 type: concept
 tags: [wa-prompt, wa-system, wa-tutorial]
 sources: [GodMode.md]
@@ -165,7 +165,7 @@ Used in a 50-scene isekai campaign — see [AristocratReborn](../entities/Aristo
 
 ## Directives that don't work
 
-**Trying to override a roll.** "Don't let them fail the heist. Don't have the PC die in this fight." Directives shape how a result is narrated, not whether it happens — the dice are rolled server-side and can still kill you. Rewrite it as a tone rule: "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing." GM-driven story events are a different case and *are* steerable: "Don't bring up the siege until I ask" is a directive that works.
+**Trying to override a roll.** "Don't let them fail the heist. Don't have the PC die in this fight." Directives shape how a result is narrated, not whether it happens — the game rolls actual dice that decide success or failure, and an unlucky roll can still defeat you. Rewrite it as a tone rule: "When the PC fails, narrate it as a chance to learn. Avoid fatalistic framing." GM-driven story events are a different case and *are* steerable: "Don't bring up the siege until I ask" is a directive that works.
 
 **Being vague.** "Make it cool." "Be epic." Give the system something to act on instead: "Cinematic combat. Each blow lands with weight. The PC's finishing moves are described in slow motion."
 

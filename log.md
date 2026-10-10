@@ -11,7 +11,7 @@
 - Authentication: Document OpenRouter sign-in alongside Google, personal key OAuth flow, account linking, and clear key controls.
 - Controls & Turn Lifecycle: Document mid-stream turn Cancel button with draft restoration, deliberate submit scroll, unread streaming pill, and structured scene HUD sub-line.
 - Progression & Mechanics: Document inline Reward Display Card, dynamic gold tracking on Resources line, inventory item stacking, Fighter/Rogue extra ASIs, and comprehensive level-up announcements.
-- God Mode & Living World: Clarify directives modifiers vs chosen outcomes, God Mode same-level review preservation vs level-down audit drop, durable memory retention (`retain: true`), persisted faction objectives display, and narrator camera objectivity.
+- God Mode & Living World: Clarify directives modifiers vs chosen outcomes, God Mode same-level review preservation vs level-down audit drop, durable permanent memory retention, persisted faction objectives display, and narrator camera objectivity.
 - Avatar Management: Align header avatar management with actual circular centering and photo modal (no crop view, no stats card).
 
 ## [2026-10-08] update | Refresh game-screen guidance for players

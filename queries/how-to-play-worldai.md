@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-10-10
+updated: 2026-10-09
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -142,7 +142,7 @@ Submitting an action snaps your view to the action you submitted, and the first 
 Play continues turn by turn:
 1. GM narrates the current scene.
 2. You declare an action (or pick a choice button).
-3. System rolls dice if needed (server-side, anti-fabrication — see [DiceAuthenticity](../concepts/DiceAuthenticity.md)).
+3. System rolls authentic dice if needed (verified against tampering — see [DiceAuthenticity](../concepts/DiceAuthenticity.md)).
 4. GM narrates the outcome.
 5. Repeat.
 

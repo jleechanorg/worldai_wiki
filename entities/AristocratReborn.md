@@ -1,7 +1,7 @@
 ---
 title: AristocratReborn
 created: 2026-06-19
-updated: 2026-10-10
+updated: 2026-10-09
 type: entity
 tags: [wa-campaign, wa-character]
 sources: []

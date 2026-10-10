@@ -1,7 +1,7 @@
 ---
 title: Developer API
 created: 2026-09-18
-updated: 2026-10-10
+updated: 2026-10-09
 type: query
 tags: [wa-system, wa-glossary]
 ---

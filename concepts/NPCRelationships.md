@@ -1,7 +1,7 @@
 ---
 title: NPCRelationships
 created: 2026-06-19
-updated: 2026-10-10
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system, wa-persona]
 sources: []
