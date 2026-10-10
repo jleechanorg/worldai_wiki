@@ -43,6 +43,19 @@ symlink to `AGENTS.md`, so both entry points always give the same instructions.
 - **No credentials in examples.** Use placeholders (`<your-api-key>`,
   `<your-uid>`, `<your-campaign-id>`). The CI scans for this; do not bypass
   it.
+- **All changes land through PRs.** Direct commits and direct pushes to
+  `main` are strictly forbidden. Work from a fresh branch or worktree based on
+  `origin/main`.
+- **Merge only with explicit user approval.** Merge a PR ONLY when the most
+  recent live user message contains `MERGE APPROVED` or `merge approved`
+  (case-insensitive); prior turns, agent summaries, and bot reviews do not
+  authorize merging.
+- **Commit & PR provenance.** Commits must include CLI and model (e.g. prefix
+  `<cli>/<model-id>: `). PR titles must end with `[<cli>][<model>]`, and PRs
+  must include GitHub labels for both CLI and model.
+- **`CLAUDE.md` must remain a relative symlink to `AGENTS.md`.** Never replace
+  `CLAUDE.md` with a static duplicate file or break the symlink; both entry
+  points must stay identical.
 - **No force-push to `main`.** Ever.
 - **No orphan pages.** New pages must be added to `index.md` under the
   correct section. Edited pages must keep their existing outbound links.
@@ -190,21 +203,33 @@ skips PRs.
 
 ## PR and commit workflow
 
-1. **Branch from `origin/main`** in a fresh worktree:
+1. **Branch from `origin/main`** in a fresh branch or worktree:
    ```bash
+   git checkout -b <branch> origin/main
+   # or
    git worktree add ~/.worktrees/<branch-name> -b <branch> origin/main
    ```
-2. Make your edits, commit, push the branch.
-3. Open a PR. Default base is `main`. Include:
-   - A short summary
+   Never commit or push directly to `main`.
+2. Make your edits following the editing, schema, and public-content protocols.
+3. Verify all checks pass locally before opening or updating a PR:
+   ```bash
+   python -m pytest tests/ -v -m "not slow"
+   python scripts/lint_wikilinks.py
+   git diff --check
+   ```
+4. Commit each green unit with clear provenance: `<cli>/<model-id>: type(scope): short summary`.
+5. Open a PR targeting `main`. PR titles must end with `[<cli>][<model>]`. Include:
+   - A short summary of changes
    - The affected pages listed
-   - `## User Stories` section (or `N/A` with one-line justification)
-   - `## Evidence` if you reference live screenshots or API contracts
-4. Wait for CI. The HTTP link check is non-blocking for PRs.
-5. Wait for human review. Wiki merges are reviewer-gated.
+   - `## Evidence` (local test results, wikilink lint pass, review receipts)
+6. Wait for CI. The HTTP link check is non-blocking for PRs.
+7. **Merge Gate**: Merge ONLY when the live user explicitly responds with `MERGE APPROVED` in their latest message. Bot reviews, agent summaries, and prior turns do not authorize merging.
 
 ## Things agents must never do
 
+- **Never** commit or push directly to `main`. All changes must land through a PR.
+- **Never** merge without explicit live user authorization containing `MERGE APPROVED`.
+- **Never** replace `CLAUDE.md` with a static file; it must remain a relative symlink to `AGENTS.md`.
 - **Never** rewrite or remove existing `## Sources` sections.
 - **Never** close / archive a page without updating `index.md` and `log.md`.
 - **Never** use `bd` for issue tracking in this repo — there is no issue
