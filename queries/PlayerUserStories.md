@@ -345,7 +345,7 @@ See [ItachiGaiden](../entities/ItachiGaiden.md) for an example of an exported ca
 **I want** the game to record one durable fact per narrated turn, so that when old middle scenes drop out of the AI's working context those facts still steer the story,
 **So that** the campaign stays coherent without carrying every scene forever.
 
-Old scenes are dropped, not summarised. That per-turn record is what survives — which is why the game remembers *that* you swore an oath long after it has forgotten the wording of the scene where you swore it. Critical milestones (deaths, broken alliances, irreversible pacts) are recorded as permanent memories that remain remembered indefinitely across the entire campaign.
+Old scenes are dropped, not summarised. That per-turn record is what survives — which is why the game remembers *that* you swore an oath long after it has forgotten the wording of the scene where you swore it. Critical milestones (deaths, broken alliances, irreversible pacts) are recorded as permanent memories, preserved in campaign storage to anchor future scenes.
 
 ### US-074: Reload and Pick Up Where You Left Off
 

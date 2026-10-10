@@ -28,7 +28,7 @@ Suggested story options under **Your move** always play in Act. If you have God 
 
 **Edit the world.** Spawn or delete NPCs, items and locations; teleport anywhere instantly; add, complete or remove missions; change difficulty and other campaign settings.
 
-**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. Critical permanent facts (such as deaths or broken alliances) are preserved as permanent core memories that remain remembered indefinitely.
+**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. Critical permanent facts (such as deaths or broken alliances) are preserved as permanent core memories in campaign storage, prioritized to carry forward as your story develops.
 
 **Clear stuck state.** Combat that never ended, a level-up that never resolved, a stale banner in the session header — God Mode is where those get reset.
 

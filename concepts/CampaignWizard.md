@@ -97,13 +97,13 @@ Open **⋯ More game actions** and choose **Campaign details** to revisit your c
 
 ### Your portrait in the game header
 
-**If you skipped the avatar on Step 2**, the header shows a dashed circular slot with a plus icon. Clicking it opens your device's file picker directly. Once an image is chosen, it uploads and displays centered within the circular frame. There is no manual cropping or repositioning step.
+**If you skipped the avatar on Step 2**, the header shows a dashed circular slot with a plus icon. Clicking it opens your device's file picker directly. Once an image is chosen, it uploads and displays centered within the circular frame.
 
 **If you already have a portrait**, click it. A photo-management modal opens over the screen with:
 
 - a preview of your portrait,
 - the campaign title,
-- **📷 Change Photo** — opens the file picker to choose a replacement image that uploads and centers immediately, and
+- **📷 Change Photo** — opens your file picker, followed by a drag-to-reposition crop overlay (512×512px recommended) so you can position your portrait before confirming with **✅ Use This Crop** (or cancel), and
 - **🗑 Remove** — prompts for confirmation ("Remove your character avatar?"), then clears the portrait and restores the dashed placeholder.
 
 Close the modal with its **×**, by clicking the dimmed backdrop, or by pressing **Escape**. Character stats (Level, HP, AC) are tracked in the header status bar and character sheet, not inside the photo modal.

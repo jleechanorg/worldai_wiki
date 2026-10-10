@@ -19,10 +19,11 @@ your own code, see [DeveloperAPI](DeveloperAPI.md).
 
 ## Your account
 
-**Sign in with Google or OpenRouter.** On the welcome screen, players can choose
-**Continue with Google** or **Sign in with OpenRouter**. Signing in with OpenRouter
+**Sign in with Google or OpenRouter.** On the welcome screen, players choose
+**Continue with Google** for standard production access, or **Sign in with OpenRouter**
+(available on preview and development deployments). Signing in with OpenRouter
 lets you play using your OpenRouter credits directly, without needing a Google
-account or copy-pasting API keys. In Settings, an existing Google account can link
+account or copy-pasting API keys. In Settings, an existing account can link
 an OpenRouter sign-in (**Connect OpenRouter sign-in to this account**), or generate
 a personal OpenRouter key via a one-click OAuth button (**Create a personal OpenRouter key**).
 Each provider card also offers a **Clear key** control to delete saved keys without

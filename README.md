@@ -8,7 +8,7 @@
 Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Launch  ──>  Turn loop (Act / Think / God)
 ```
 
-1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) (Continue with Google or Sign in with OpenRouter) to pick up a campaign or start a new one.
+1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) (Continue with Google) to pick up a campaign or start a new one.
 2. **Fill in the 2-step wizard**:
    - **Step 1 — Choose Your Campaign**: take **Dragon Knight**, the one ready-made module, or **Play a campaign** and build your own. On the custom path, pick a universe — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, setting, and a plot "what-if".
    - **Campaign description prompt**: the last section of step 1 (section 7 on the custom path) starts collapsed — click **Expand** to open it, then paste a full campaign bible, world lore, faction rules, or premise. A 70,000-character document has been tested and stored intact.
@@ -20,7 +20,7 @@ Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Laun
      - **Act** (the default): what you type is what your character does and says. The story advances.
      - **Think**: the story pauses while you weigh options with the GM. No time passes, no actions are taken.
      - **God**: administrative control — edit stats, spawn items, teleport, fix mistakes, set persistent narration rules. The world is frozen and the story does not advance.
-4. **Know your limits**: playing is free, but every turn counts against a per-account allowance — **100 turns a day, and 50 in any 5-hour window** (or direct play via OpenRouter credits). Creating campaigns and God-mode turns draw on separate, roomier allowances. If you hit a cap, a "Rate Limit Reached" box tells you when it resets; adding your own model API key raises the ceiling to 5,000 turns a day. Open **⋯ More game actions → Settings** to manage your model and key (or create a personal OpenRouter key via one-click OAuth).
+4. **Know your limits**: playing is free, but every turn counts against a per-account allowance — **100 turns a day, and 50 in any 5-hour window**. Creating campaigns and God-mode turns draw on separate, roomier allowances. If you hit a cap, a "Rate Limit Reached" box tells you when it resets; adding your own model API key raises the ceiling to 5,000 turns a day. Open **⋯ More game actions → Settings** to manage your model and key (including Gemini, OpenRouter, Cerebras, or a local gateway; OpenRouter OAuth key creation is supported on preview and dev environments).
 
 ---
 

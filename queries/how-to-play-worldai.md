@@ -20,18 +20,18 @@ screenshots:
 
 Your first 30 minutes with the game, step by step.
 
-**The short version:** sign in with Google or OpenRouter, click **Play a campaign**, pick the **Dragon Knight Campaign** card, click Next, click **Enter the World**, accept the character the GM offers, and start typing what you do. Everything below is that path in detail.
+**The short version:** sign in with Google, click **Play a campaign**, pick the **Dragon Knight Campaign** card, click Next, click **Enter the World**, accept the character the GM offers, and start typing what you do. Everything below is that path in detail.
 
 All screenshots are real captures from a Dragon Knight playthrough. They show an earlier interface: use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
-You'll need a web browser and a Google or OpenRouter account. That's it — playing includes a daily turn allowance, or you can use your OpenRouter account credits directly without needing a Google account. If you pick Dragon Knight, you don't even need an idea for a setting.
+You'll need a web browser and a Google account. That's it — playing includes a daily turn allowance. If you pick Dragon Knight, you don't even need an idea for a setting.
 
 ## Step 1 — Sign in
 
 1. Go to [worldarchitect.ai](https://worldarchitect.ai).
-2. Click **Continue with Google** or **Sign in with OpenRouter**. If you choose OpenRouter, you authorize directly in the browser and play using your OpenRouter credits without manual API keys.
+2. Click **Continue with Google**. (On preview and development environments, direct OpenRouter sign-in with account credits is also available).
 
 You'll land on your **My Campaigns** dashboard. Every session starts here: launch new campaigns, search your history, pick up where you left off.
 
