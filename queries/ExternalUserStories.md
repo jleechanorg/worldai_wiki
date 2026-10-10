@@ -73,10 +73,12 @@ composer to smoothly jump to the live tail; on completion, it becomes
 thinking…", "Rolling dice…"), a prominent **Cancel** button appears over the
 right side of the textarea. Clicking **Cancel** halts generation and removes the
 loading indicator. The input box is re-enabled with your previously-typed draft
-restored ready to edit, and suggested options remain intact. Any incomplete
-narrative generated prior to cancellation is clearly labeled as uncommitted
-("Not saved") without consuming a scene number. If the turn finished and saved
-just as Cancel was clicked, the completed scene is preserved cleanly in your story.
+restored ready to edit, and suggested options remain intact. If you tapped a
+suggested option while keeping a drafted action in the box, your draft is kept
+for the next turn rather than replaced. Any incomplete narrative generated
+prior to cancellation is clearly labeled as uncommitted ("Not saved") without
+consuming a scene number. If the turn finished and saved just as Cancel was
+clicked, the completed scene is preserved cleanly in your story.
 
 **Dice show their work.** A turn's rolls are listed above its narration under a
 `🎲 Dice Rolls:` heading, one line each:

@@ -52,7 +52,7 @@ difficulty to match what you actually tried.
 
 ## Money
 
-Your money is tracked in gold pieces and updates dynamically across your campaign. In the status header, it appears on the **Resources** line (for example, `Resources: Spells: L1 2/2 | Gold: 120gp`). The GM narrates it in whatever the setting calls money — credits, scrip, coin — while the server maintains the underlying numeric balance. When creating a character, starting wealth adheres to Wealth By Level (WBL) bounds scaled to your background's socioeconomic tier (from Destitute up to Royal).
+Your money is tracked in gold pieces and updates dynamically across your campaign. It is recorded on your character sheet, and turn entries display resource changes under the **📊 Resources:** line (for example, `📊 Resources: Spells: L1 2/2 | Gold: 120gp`). The GM narrates it in whatever the setting calls money — credits, scrip, coin — while the server maintains the underlying numeric balance. When creating a character, starting wealth adheres to Wealth By Level (WBL) bounds scaled to your background's socioeconomic tier (from Destitute up to Royal).
 
 You earn it from treasure, defeated enemies, quest payouts, and selling what
 you do not need. You spend it on gear ([Equipment](Equipment.md)), on services
