@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-10-18] update | Explain Outcome calculation components, worked D&D 5e examples, and WorldAI house rules in the existing rules guide
+
 ## [2026-10-09] update | Align player wiki with shipped game logic and controls
 - Authentication: Document OpenRouter sign-in alongside Google, personal key OAuth flow, account linking, and clear key controls.
 - Controls & Turn Lifecycle: Document mid-stream turn Cancel button with draft restoration, deliberate submit scroll, unread streaming pill, and structured scene HUD sub-line.

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Every page in the wiki, listed by type with a one-line summary. Start here when you're looking for something.
-> Last updated: 2026-09-18 | Total pages: 63
+> Last updated: 2026-10-18 | Total pages: 63
 
 ## Start here
 
@@ -53,7 +53,7 @@ Real player-run campaigns, written up to show how the system handles a particula
 - [DiceAuthenticity](concepts/DiceAuthenticity.md) — How the game stops the GM inventing roll results.
 - [DiceNotation](concepts/DiceNotation.md) — Reading `1d20+5`, `2d6+3`, `2d20kh1` and the rest.
 - [DiceRollMechanics](concepts/DiceRollMechanics.md) — What happens between your action and the number on screen.
-- [DnD5eRules](concepts/DnD5eRules.md) — The D&D 5th Edition rule spine.
+- [DnD5eRules](concepts/DnD5eRules.md) — Outcome calculation components, worked examples, and D&D 5e rules versus WorldAI house rules.
 - [Equipment](concepts/Equipment.md) — Slots, starting gear, and how item stats change your numbers.
 - [FactionManagement](concepts/FactionManagement.md) — Running a faction: resources, units, orders.
 - [FactionPower](concepts/FactionPower.md) — How faction power is measured and how it escalates.
