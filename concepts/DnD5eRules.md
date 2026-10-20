@@ -1,7 +1,7 @@
 ---
 title: D&D 5e Rules and Roll Calculations
 created: 2026-06-19
-updated: 2026-10-18
+updated: 2026-10-20
 type: concept
 tags: [wa-mechanic, wa-system, wa-tutorial]
 sources: [Dice.md, AbilityScores.md, SmartSkillChecks.md, Combat.md, Spellcasting.md, RestAndDeath.md]
@@ -138,7 +138,7 @@ A natural 1 counts as two failures; a natural 20 restores one HP. Death saves do
 
 **Do not treat every d20 as an attack.** In both 2014 and 2024 tabletop rules, ordinary checks and saving throws do not automatically succeed on 20 or fail on 1. Compare their totals unless a specific exception applies. Death saves have the separate rules above. Neither an initiative 20 nor a skill-check 20 generally grants extra damage. [2014 checks](https://www.dndbeyond.com/sources/dnd/basic-rules-2014/using-ability-scores), [2024 attack exceptions](https://www.dndbeyond.com/sources/dnd/br-2024/playing-the-game).
 
-**WorldAI's documented house rule** extends automatic success/failure to checks and saves. A displayed verdict can therefore differ from a plain total-versus-DC comparison. This is a house rule, not a statement of standard 5e. It also does not make an impossible action possible merely because a player requests a roll. WorldAI also allows a fitting social approach to add half a positive non-Charisma modifier, rounded down, and uses tier-based DCs with approach adjustments totaling at most ±4 and a ceiling of 30. These are additional house rules; see [AbilityScores](AbilityScores.md) and [SmartSkillChecks](SmartSkillChecks.md).
+**WorldAI's documented house rule** extends automatic success/failure to checks and saves. A displayed verdict can therefore differ from a plain total-versus-DC comparison. This is a house rule, not a statement of standard 5e. It also does not make an impossible action possible merely because a player requests a roll. WorldAI also allows a fitting social approach to add half a positive non-Charisma modifier, rounded down, only when that modifier exceeds the Charisma modifier; a tie grants no bonus. It uses tier-based DCs with approach adjustments totaling at most ±4 and a ceiling of 30. These are additional house rules; see [AbilityScores](AbilityScores.md) and [SmartSkillChecks](SmartSkillChecks.md).
 
 **2024 is a rules revision, not just new wording.** Besides concentration and rests, it changes features, spells, surprise, conditions and action details. For example, 2024 surprise gives disadvantage on initiative; 2014 surprise limits the surprised creature's first turn. Use one declared baseline and explicit exceptions. The [official SRD page](https://www.dndbeyond.com/srd) identifies SRD 5.1 and SRD 5.2.1 separately.
 
