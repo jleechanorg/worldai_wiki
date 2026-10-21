@@ -18,12 +18,12 @@ The full rules are in the free [System Reference Document](https://dnd.wizards.c
 Open **Show calculation** beneath an Outcome to see the numbers recorded for that action. Older turns may have fewer details.
 
 - **Dice rolled**: the numbers that came up. A `d20` is a 20-sided die.
-- **Recorded result**: the dice result used before bonuses and penalties.
+- **Recorded result**: the stored result for the roll. Depending on how that turn was recorded, it may already include modifiers. Use **Total** when available, and do not add the modifier a second time.
 - **Modifier**: a bonus added to the roll, or a penalty subtracted from it. Training, abilities, equipment, or circumstances can affect a check, but the total alone does not say which ones applied.
 - **Total**: the final score after the modifier.
 - **Difficulty class (DC)** or **difficulty target**: the target number for the check. The recorded success or failure tells you the outcome; special rules can affect it.
 
-For example, a recorded dice result of 15 with a +5 modifier gives a total of 20. If the target is 13, the score exceeds it. Check the recorded outcome rather than assuming every kind of roll follows the same rule.
+For example, a die result of 15 with a +5 modifier gives a total of 20. If the target is 13, the score exceeds it. Check the recorded outcome rather than assuming every kind of roll follows the same rule.
 
 A notation such as `2d20kh1+5` means roll two 20-sided dice, keep the higher number, then add 5. With dice of 15 and 2, the number used is 15. See [Advantage and disadvantage](AdvantageDisadvantage.md) for when extra dice apply.
 
