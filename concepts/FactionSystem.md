@@ -1,13 +1,15 @@
 ---
 title: FactionSystem
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-21
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
 ---
 
 # Faction System
+
+**Work in progress:** Faction management is still under development. The behavior described below may be incomplete or change as the feature evolves.
 
 Faction mode is an optional strategic layer that runs alongside your character's story. You hold territory, tax citizens, recruit soldiers and spies, build fortifications, send spies against rivals, fight faction-scale battles, and climb a ranking of 201 factions.
 
