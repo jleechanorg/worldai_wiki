@@ -1,13 +1,15 @@
 ---
 title: FactionManagement
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-10-21
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
 ---
 
 # Faction Management
+
+**Work in progress:** Faction management is still under development. The behavior described below may be incomplete or change as the feature evolves.
 
 What your faction owns, what it spends, and who runs it. For how to switch faction mode on and what a turn looks like, see [FactionSystem](FactionSystem.md).
 
