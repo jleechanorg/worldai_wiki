@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-10-27
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -29,8 +29,8 @@ Step 1 collects your world concept, protagonist, and campaign premise.
 
 Two cards, and **Play a campaign** is selected for you:
 
-- **Play a campaign** — build a completely custom world, universe, and story from scratch.
-- **Dragon Knight Campaign** — the one ready-made module: written lore, two companions, and a calibrated opening scene.
+- **Play a campaign** — the recommended path for your own story. Build a custom world, universe, and protagonist; a short idea is enough to start.
+- **Dragon Knight Campaign** — the optional quick start: written lore, a prebuilt hero, two companions, and a calibrated opening scene.
 
 > **What Dragon Knight locks.** Picking **Dragon Knight Campaign** makes it a fixed module: the Universe, Timeline and Plot fields disappear, and Character ("Ser Arion"), Setting and the Campaign description prompt are filled in for you and greyed out. The Title is pre-filled to "Dragon Knight" but you can still change it. Switch back to **Play a campaign** to edit the rest — anything you had already typed comes back.
 
@@ -67,10 +67,26 @@ The **Enter the World** button sits at the top of Step 2, right under the headin
 
 ### 2. Character portrait avatar
 
-- Drag-and-drop or click to upload an avatar image.
-- JPEG, PNG, GIF, or WebP; max 5MB; 512×512 square looks best.
-- It appears in the campaign header bar at the top of the game screen. It is not repeated next to each turn.
-- Skipping it here is not final — you can add, replace, or remove the portrait from the game screen later. See [Your portrait in the game header](#your-portrait-in-the-game-header).
+Choose **AI generate portrait** or **Upload your own**. The portrait is optional: you can enter the world without one and add it later.
+
+**Generate a portrait**
+
+1. Select **AI generate portrait**.
+2. Read the suggested **Character description** and edit the appearance: face, hair, clothing, equipment, and distinguishing features.
+3. Follow the portrait status. If generation has not started, choose **Generate portrait**; wait for the result before requesting another.
+4. Check whether the portrait is already attached. If a preview is waiting for your decision, choose **Use this portrait** to apply it, **Regenerate** for another version, or **Cancel** to keep your current portrait.
+
+Some app versions start the first wizard portrait after AI consent and keep it automatically when it replaces nothing you chose. An existing or uploaded portrait may require confirmation before replacement. You can still launch without a portrait; a generation or save error is not a reason to create another campaign.
+
+**Upload your own image**
+
+1. Select **Upload your own**.
+2. Drop an image onto the upload circle or click it to choose a file.
+3. Drag the image inside the circle to position it. Use the camera control to choose another image or the remove control to clear it.
+
+Uploads accept JPEG, PNG, GIF, or WebP, up to 5 MB. A square image at least 512×512 pixels works well. The portrait appears in the campaign header, not beside every story turn; it is separate from your Google account picture.
+
+You can add, replace, or remove it after launch. See [Your portrait in the game header](#your-portrait-in-the-game-header).
 
 ### 3. Campaign summary card & inline editing
 
@@ -97,14 +113,13 @@ Open **⋯ More game actions** and choose **Campaign details** to revisit your c
 
 ### Your portrait in the game header
 
-**If you skipped the avatar on Step 2**, the header shows a dashed circular slot with a plus icon. Clicking it opens your device's file picker directly. Once an image is chosen, it uploads and displays centered within the circular frame.
+**If you skipped the avatar on Step 2**, tap the empty portrait slot in the game header. Choose **AI generate portrait** or **Upload photo**. The AI option lets you edit the character description and choose **Generate portrait**. When your campaign has no portrait, a successful result may save automatically; otherwise review it and choose **Use this portrait** when shown. Confirm that the avatar appears before closing the chooser. Upload opens your device's file picker.
 
-**If you already have a portrait**, click it. A photo-management modal opens over the screen with:
+**If you already have a portrait**, tap it to open its photo-management card:
 
-- a preview of your portrait,
-- the campaign title,
-- **📷 Change Photo** — opens your file picker, followed by a drag-to-reposition crop overlay (512×512px recommended) so you can position your portrait before confirming with **✅ Use This Crop** (or cancel), and
-- **🗑 Remove** — prompts for confirmation ("Remove your character avatar?"), then clears the portrait and restores the dashed placeholder.
+- **AI Portrait** opens the AI description and preview controls so you can make a replacement.
+- **Change Photo** lets you choose a replacement image. Position it in the crop overlay, then choose **Use This Crop**, or cancel to keep the current portrait.
+- **Remove** asks for confirmation before clearing the portrait and restoring the empty slot.
 
 Close the modal with its **×**, by clicking the dimmed backdrop, or by pressing **Escape**. Character stats (Level, HP, AC) are tracked in the header status bar and character sheet, not inside the photo modal.
 
