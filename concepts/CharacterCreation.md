@@ -18,7 +18,14 @@ Every campaign starts by building the character you'll play. There are three way
 | **Custom Class** | You want a class D&D 5e doesn't have — a Sith Blade, a chakra-using shinobi, a gunslinger. |
 | **Starter campaign** | You picked Dragon Knight, which hands you a finished character to review. |
 
-Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker, controller or support role; class choice is what matters.
+Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker, controller or support role; class choice is what matters. If you want a rough guide to what each class does in a fight (tabletop shorthand, not a game field):
+
+- **Tank:** Fighter, Barbarian, Paladin
+- **Striker:** Rogue, Ranger, Monk, Warlock
+- **Controller:** Wizard, Sorcerer, Druid, Warlock, Ranger
+- **Support:** Cleric, Bard, Paladin
+
+Paladins tank and support; Rangers and Warlocks both strike and control.
 
 ## How it actually runs
 
