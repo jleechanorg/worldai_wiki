@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-11-03] update | Correct Think, God, dice, combat, death, spell, leveling and faction rules against the current game, and link the mode pages together.
+
 ## [2026-11-03] update | Remove retired AI providers and the /v1 proxy routes from setup and developer pages, and correct Spicy and starting-party wording.
 
 ## [2026-11-02] update | Use the wizard's current field names across the concept, entity, query and README pages, fix the wizard screen titles in HowToPlay, note that God mode lets you make any scenario true and move world time when asked outright, and record the owner's standing merge authorization and proportional gates for wiki PRs in AGENTS.md.

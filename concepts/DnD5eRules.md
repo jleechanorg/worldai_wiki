@@ -1,7 +1,7 @@
 ---
 title: DnD5eRules
 created: 2026-06-19
-updated: 2026-10-21
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -15,7 +15,9 @@ The full rules are in the free [System Reference Document](https://dnd.wizards.c
 
 ## Reading a calculation
 
-Open **Show calculation** beneath an Outcome to see the numbers recorded for that action. Older turns may have fewer details.
+Open **Show calculation** beneath an Outcome to see the numbers recorded for that action. Older turns may have fewer details. When **Hide dice rolls** is on, **Show calculation** appears under the Outcome card; otherwise the numbers show directly in the Dice Rolls list.
+
+Read a calculation in this order: who acted, what was rolled, the total, the target, the outcome, then the consequences.
 
 - **Dice rolled**: the numbers that came up. A `d20` is a 20-sided die.
 - **Recorded result**: the stored result for the roll. Depending on how that turn was recorded, it may already include modifiers. Use **Total** when available, and do not add the modifier a second time.

@@ -1,7 +1,7 @@
 ---
 title: DiceFAQ
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: query
 tags: [wa-faq, wa-mechanic]
 sources: []
@@ -17,7 +17,7 @@ Common dice questions answered.
 
 ## Q: My dice rolls disappeared and I just see a phrase. What happened?
 
-**A**: **Hide dice rolls** is on. You turned it on in Settings → Display — that switch is the only thing that hides the raw dice numbers. Tap the phrase to see the actual roll for five seconds, or switch it back off in Settings → Display.
+**A**: **Hide dice rolls** is on. You turned it on in Settings → Display — that switch is the only thing that hides the raw dice numbers. Open **Show calculation** under the Outcome to see the numbers, or switch it back off in Settings → Display.
 
 ## Q: Can I see the roll history?
 
@@ -63,7 +63,7 @@ Turning on **Settings → Debug Mode** adds more to each turn: the GM's roll-by-
 
 ## Q: What is a death save?
 
-**A**: When you drop to 0 HP you roll a death save each turn: 10 or higher is a success, 9 or below is a failure. Three successes stabilize you; three failures kill you. See [RestAndDeath](../concepts/RestAndDeath.md).
+**A**: When you drop to 0 HP you roll a death save each turn: 10 or higher is a success, 9 or below is a failure. Three successes stabilize you; three failures kill you. A natural 20 brings you back at 1 HP, and taking damage at 0 HP adds a failure (two on a critical hit). See [RestAndDeath](../concepts/RestAndDeath.md).
 
 ## Not a dice question?
 

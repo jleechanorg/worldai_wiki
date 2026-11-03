@@ -1,7 +1,7 @@
 ---
 title: Combat
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -15,11 +15,11 @@ The GM keeps the turn order. If you try to take a regular action when it isn't y
 
 ## Turn flow
 
-1. **Initiative.** Every combatant rolls `1d20 + DEX modifier`, and the order runs high to low. The game defines no tie-break, so if two combatants roll the same total the GM picks an order for them. See [Initiative](Initiative.md).
+1. **Initiative.** Every combatant rolls `1d20 + DEX modifier`, and the order runs high to low. Ties are not spelled out in the rules, so if two combatants roll the same total the GM decides their order. See [Initiative](Initiative.md).
 2. **Turns run in that order**, one turn each per round.
 3. **Each turn you get**: 1 Action; 1 Bonus Action, if a class feature, spell, or item grants you one; Movement up to your speed, which you can split before and after your action; 1 free object interaction (draw or sheathe a weapon, open a door, pick up an item); and as much brief free action as is reasonable (a sentence of speech, dropping an item, dropping prone). You also have 1 Reaction, which you can spend between your turns.
 4. **Your turn does not end on its own.** Attacking, casting a spell, or moving spends only that one resource — the rest stays yours. After each thing you do, the GM re-lists what you have left and asks whether there's anything else. The turn ends only when you say so: "end turn", "done", "pass", or "that's my turn". Only then does the GM run everyone else in initiative order.
-5. **End of round.** Once everyone has acted, the round counter ticks over and initiative starts again from the top.
+5. **End of round.** Once everyone has acted, the round counter ticks over and initiative starts again from the top. Each round is 6 seconds of game time, and defeated enemies drop out of the order.
 
 See [Dice](Dice.md) for how attack rolls and damage rolls are actually rolled.
 
@@ -32,6 +32,12 @@ There's no separate combat panel or turn tracker. At the start of every round th
 - and, on your turn, what you have left: Action, Bonus Action, Movement remaining, Reaction, free object interaction, and any once-per-turn feature such as Sneak Attack.
 
 Your character sheet shows your initiative *modifier*. It does not show the turn order.
+
+Status tags follow HP: **OK** above 75%, **Wounded** above 50% up to 75%, **Bloodied** above 25% up to 50%, **Critical** at 25% or below, and **Defeated** at 0. Whoever is acting is marked as the active turn.
+
+## Combat commands
+
+Type `combat log enable` for detailed dice rolls and modifiers on every combat action, or `combat log disable` for shorter summaries. The GM announces whether the log is on or off when combat starts. `auto combat` resolves the fight narratively, but only runs when you ask for it.
 
 ## Conditions
 
@@ -51,7 +57,7 @@ See [RestAndDeath](RestAndDeath.md). A short rest lets you spend hit dice to rec
 
 At 0 HP you fall unconscious and start rolling death saves (`1d20`): 10 or higher is a success, a natural 20 puts you back on your feet at 1 HP, and a natural 1 counts as **two** failures. Three successes stabilize you; three failures kill you.
 
-A single hit that deals damage equal to or greater than your maximum HP kills outright, with no death saves. For companions and named NPCs, dropping to 0 HP, surrendering, fleeing, or being captured does not permanently eliminate them — permanent removal requires an explicit narrative death declaration in the story text. Full detail in [RestAndDeath](RestAndDeath.md).
+You die outright, with no death saves, only when the damage left over after you reach 0 HP is at least your maximum HP (at 5/10 HP, 15 damage kills and 10 does not). For companions and named NPCs, dropping to 0 HP, surrendering, fleeing, or being captured does not permanently eliminate them — permanent removal requires an explicit narrative death declaration in the story text. Full detail in [RestAndDeath](RestAndDeath.md).
 
 ## Player tips
 

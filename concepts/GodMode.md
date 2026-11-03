@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-11-02
+updated: 2026-11-03
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -9,13 +9,15 @@ sources: []
 
 # God Mode
 
+Three buttons: **Act** ([CharacterMode](CharacterMode.md)) · **Think** ([ThinkMode](ThinkMode.md)) · **God** ([GodMode](GodMode.md))
+
 God Mode is the game's pause menu. Switch to it and the world freezes — the story does not advance, NPCs do not act, no dice are rolled — and you talk to the system as an administrator instead of as your character. What you say there is simply true.
 
 ## How to enter it
 
 Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box (the placeholder becomes `Edit the world: stats, items, fixes…`), then type your request. Hovering the button explains: *"God changes the world directly (stats, items, teleports, fixes) and the story doesn't advance."*
+1. Pick the **God** pill under the message box (the placeholder becomes `God mode: edit stats, items, the world…`), then type your request. Hovering the button explains: *"God changes the world directly: stats, items, teleports, fixes. The story doesn't advance."*
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
 Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored. One exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the **God** pill instead.
@@ -62,7 +64,7 @@ Asked directly like that, the GM reads the campaign's stored list back to you. I
 
 ## What a God Mode turn gives back
 
-A confirmation line instead of a scene, the state change applied immediately, and three follow-up buttons that always include **Return to story**. Type any other request in the message box. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
+A confirmation line instead of a scene, the state change applied immediately, and two to four follow-up buttons that always include **Return to story**. If you raise XP or level past a threshold, a **Level-Up Review** button is offered too. Type any other request in the message box. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
 
 ## Player tips
 

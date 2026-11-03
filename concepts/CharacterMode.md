@@ -1,7 +1,7 @@
 ---
 title: CharacterMode
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -9,11 +9,13 @@ sources: []
 
 # Act (Character Mode)
 
+Three buttons: **Act** ([CharacterMode](CharacterMode.md)) · **Think** ([ThinkMode](ThinkMode.md)) · **God** ([GodMode](GodMode.md))
+
 **Act** is the default of the three buttons under the message box, and the one you'll use for almost the whole game.
 
 ## What it does
 
-Whatever you type becomes your character's actions and dialogue, and the story advances from it. The message box displays the placeholder `Speak or act as your character…`. Hovering or focusing the **Act** pill explains: *"Act is what your character says or does, and the story moves forward."* On touch devices, opening **⋯ More game actions → What do Act / Think / God do?** reveals this explanation. Suggested actions under **Your move** always execute in Act mode.
+Whatever you type becomes your character's actions and dialogue, and the story advances from it. The message box displays the placeholder `Speak or act as your character…`. Hovering or focusing the **Act** pill explains that Act plays your character, turning your words into their actions and dialogue while the story moves forward. On touch devices, opening **⋯ More game actions → What do Act / Think / God do?** reveals this explanation. Suggested actions under **Your move** always execute in Act mode.
 
 Type `I kick the door in and shout for the innkeeper` and your character does exactly that, the GM narrates what happens next, and the world's clock moves forward. That's the whole game, most of the time.
 

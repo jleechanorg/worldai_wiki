@@ -1,7 +1,7 @@
 ---
 title: Dice
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -67,7 +67,7 @@ Both kinds are resolved the same way and show up in the same dice area.
 
 ## Hiding the numbers
 
-If you would rather read the story than the arithmetic, turn on **Settings → Display → Hide dice rolls**. The dice area then shows a short phrase describing how the roll went instead of the raw numbers. Tap that phrase to reveal the actual roll for five seconds. Combat summaries and loot stay visible either way.
+If you would rather read the story than the arithmetic, turn on **Settings → Display → Hide dice rolls**. The dice area then shows a short phrase describing how the roll went instead of the raw numbers. Open **Show calculation** under the Outcome to see the numbers. Combat summaries and loot stay visible either way.
 
 This is a per-account setting: turn it on once and it applies to every campaign you play.
 
