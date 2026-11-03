@@ -223,12 +223,17 @@ skips PRs.
    - The affected pages listed
    - `## Evidence` (local test results, wikilink lint pass, review receipts)
 6. Wait for CI. The HTTP link check is non-blocking for PRs.
-7. **Merge Gate**: Merge ONLY when the live user explicitly responds with `MERGE APPROVED` in their latest message. Bot reviews, agent summaries, and prior turns do not authorize merging.
+7. **Merge Gate**: a wiki PR may be merged by the agent that drove it when it passes the proportional wiki gates below and the owner's standing authorization applies (owner instruction, 2026-11-03: merge any wiki PR that passes /prw; these pages are Markdown and images, not production code). Verify at the exact head immediately before merging: required CI (Lint) green, mergeable and clean, not draft, the gates below complete, and merge with `--match-head-commit`. Without all of that, or for a change to this contract's own merge rules, fall back to a live `MERGE APPROVED` in the user's latest message. Bot reviews, agent summaries, and prior turns alone do not authorize merging.
+
+   **Proportional wiki gates** (these are the repository's declared low-risk classes for `/prw`):
+   - Markdown-only PR: CI Lint green, `git diff --check`, local lint and fast tests, and the PR body's `## Evidence`. `/es`, `/er` and stage labels are not required; record `/er: NOT REQUIRED — documentation-only (<paths>)`. One independent `/advice` review is required at 50 or more changed lines and optional below that.
+   - PR that adds or changes images: also a capture record (method, date, viewport, original-file SHA-256) and one independent visual review.
+   - Anything that edits this contract, CI workflows, or `scripts/` keeps full review and a live `MERGE APPROVED`.
 
 ## Things agents must never do
 
 - **Never** commit or push directly to `main`. All changes must land through a PR.
-- **Never** merge without explicit live user authorization containing `MERGE APPROVED`.
+- **Never** merge outside the Merge Gate in § PR and commit workflow (standing authorization for wiki PRs that pass the proportional gates, otherwise a live `MERGE APPROVED`).
 - **Never** replace `CLAUDE.md` with a static file; it must remain a relative symlink to `AGENTS.md`.
 - **Never** rewrite or remove existing `## Sources` sections.
 - **Never** close / archive a page without updating `index.md` and `log.md`.
