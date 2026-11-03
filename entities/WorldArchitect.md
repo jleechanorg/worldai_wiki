@@ -1,7 +1,7 @@
 ---
 title: WorldArchitect
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-02
 type: entity
 tags: [wa-game, wa-system]
 sources: []
@@ -25,7 +25,7 @@ Playing is free. You sign in with Google and get 100 story turns a day (50 in an
 
 ## What it isn't
 
-- **Not freeform fiction.** The rules constrain what can happen. Narrate intent all you like; the outcome still goes through the dice and your sheet.
+- **Not freeform fiction by default.** In ordinary play the rules constrain what can happen: narrate intent all you like, the outcome still goes through the dice and your sheet. **God** mode is the exception. It edits the campaign directly and lets you make any scenario true, so you can bend the story to free-form fiction whenever you choose; see [GodMode](../concepts/GodMode.md).
 - **Not 5e only.** Players have run Naruto, Baldur's Gate 3 and isekai campaigns alongside ordinary fantasy — you write the premise. The rule spine underneath stays 5e-derived; see [DnD5eRules](../concepts/DnD5eRules.md) for what that covers.
 - **Not multiplayer.** Campaigns are single-player. The companions travelling with you are played by the GM, not by your friends.
 - **Not offline.** It is a hosted service. Your campaigns live on the server, not on your machine, so you need a connection to play.

@@ -47,7 +47,7 @@ You'll land on your **My Campaigns** dashboard. Every session starts here: launc
 
 ## Step 2 — Open the Campaign Wizard
 
-From the dashboard, click the 📜 **Play a campaign** button in the top-right. That opens the [CampaignWizard](../concepts/CampaignWizard.md): two screens, **Choose Type** then **Launch**.
+From the dashboard, click the 📜 **Play a campaign** button in the top-right. That opens the [CampaignWizard](../concepts/CampaignWizard.md): two screens, **Choose Your Campaign** then **Ready to Launch!**.
 
 ## Step 3 — Pick a campaign
 
