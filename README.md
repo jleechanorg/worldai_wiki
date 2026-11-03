@@ -55,7 +55,7 @@ The image below shows the earlier game-screen layout.
 ### Quick guides
 
 #### How to design a campaign
-The wizard asks for a setting / world, era, protagonist, setting and a plot "what-if" — everything else you decide in prose. Say up front how powerful your character is meant to get and what the story should feel like, and paste deep world lore into the **Campaign description prompt** field. Plan an opening scene where something is already happening, and set one to three god-mode rules early. See [CampaignDesign](concepts/CampaignDesign.md).
+The wizard asks for a setting / world, era, protagonist, adventure setting and a plot "what-if" — everything else you decide in prose. Say up front how powerful your character is meant to get and what the story should feel like, and paste deep world lore into the **Campaign description prompt** field. Plan an opening scene where something is already happening, and set one to three god-mode rules early. See [CampaignDesign](concepts/CampaignDesign.md).
 
 #### How to prompt god mode
 God-mode rules are house rules you write that stay in force for the rest of the campaign, changing how the GM narrates. The ones that work name concrete traits, list specific taboos, and anchor a worldview — `X is/does Y. Avoid Z. Always W.` Type `GOD MODE: <rule>` in the composer, or click the God button first. To get rid of a rule, just ask in plain language: `GOD MODE: forget the rule about companion scaling`. See [GodModePrompting](concepts/GodModePrompting.md).
