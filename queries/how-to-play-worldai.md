@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-10-27
+updated: 2026-11-02
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -14,6 +14,11 @@ screenshots:
   - queries/images/how-to-play-worldai/step6-opening-scene-desktop.png
   - queries/images/how-to-play-worldai/step6-opening-scene-mobile.png
   - queries/images/how-to-play-worldai/step7-first-action-desktop.png
+  - queries/images/how-to-play-worldai/step3-custom-wizard-setting-mobile.png
+  - queries/images/how-to-play-worldai/step3-custom-wizard-plot-mobile.png
+  - queries/images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg
+  - queries/images/how-to-play-worldai/step6-choices-act-think-god-mobile.png
+  - queries/images/how-to-play-worldai/step6-scene-illustration-mobile.png
 ---
 
 # How to Play WorldArchitect.AI
@@ -22,7 +27,7 @@ Your first 30 minutes with the game, step by step.
 
 **The short version:** sign in, click **Play a campaign**, choose the custom path, describe the world and character you want, add an optional portrait, and **Enter the World**. You do not need to know the rules before playing. **Dragon Knight Campaign** is the ready-made quick start if you want to skip designing a world.
 
-The Dragon Knight screenshots are real captures from a playthrough; the custom-world screenshot shows an example setup. They show an earlier interface: use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
+The Dragon Knight screenshots are real captures from a playthrough; the custom-world screenshot shows an example setup. The mobile screenshots marked *current* show the present interface. The others show an earlier one: use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
@@ -64,6 +69,14 @@ For example: *A young courier in a floating city discovers that the royal mail c
 
 ![Custom campaign fields and expanded description prompt, shown in an earlier interface](../assets/fresh_screenshots/02_wizard_step1_description_prompt.png)
 
+**Current mobile view:** keep **Play a campaign** selected, then fill in the world, era, and character.
+
+![Current mobile wizard: Play a campaign selected, with Setting / World and Timeline / Era filled in](images/how-to-play-worldai/step3-custom-wizard-setting-mobile.png)
+
+Further down, add the plot or what-if direction and a campaign title, then press **Next**.
+
+![Current mobile wizard: protagonist, plot / what-if, and campaign title filled in, with Next at the bottom](images/how-to-play-worldai/step3-custom-wizard-plot-mobile.png)
+
 **Want a quick start instead?** Choose **Dragon Knight Campaign**. It fills in the world and Ser Arion's character for you. The screenshots below show that optional path.
 
 ![Campaign Wizard — Step 1, Choose Your Campaign, captured after clicking the Dragon Knight Campaign card (yellow border), with title "Dragon Knight" and character "Ser Arion" filled in. In this earlier build Dragon Knight was the first card and the custom card read "Custom Campaign"](images/how-to-play-worldai/step2-wizard-setting-desktop.png)
@@ -80,6 +93,8 @@ Before launching, you can add an optional character portrait:
 - **Upload your own:** select an image from your device and drag it inside the portrait circle to position it.
 
 You can skip this and add a portrait later by tapping the avatar slot in the game header. An existing portrait also offers **AI Portrait**, **Change Photo**, and **Remove**. See [the full portrait guide](../concepts/CampaignWizard.md#2-character-portrait-avatar).
+
+![Ready to Launch on mobile: AI generate portrait selected, a generated portrait, and the editable Character description](images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg)
 
 ![Campaign Wizard — Step 2, Ready to Launch, scrolled down to the optional Character Avatar uploader and the Campaign Summary card. Padlocks mark the rows Dragon Knight fills in for you](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
 
@@ -122,6 +137,12 @@ It establishes:
 ## Step 6 — Take your first action
 
 Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action. Below the choices, a dashed gold hint reminds you: *Something else? Write it in the box below.* (tapping it focuses the message box; typing or dismissing hides it).
+
+![Current mobile play screen: numbered suggestions under What do you do?, the Something else hint, and the Act / Think / God switch above the message box](images/how-to-play-worldai/step6-choices-act-think-god-mobile.png)
+
+A scene can also include an AI illustration, with the next suggestions right below it.
+
+![Current mobile story view: a scene illustration followed by Your move and the first suggestions](images/how-to-play-worldai/step6-scene-illustration-mobile.png)
 
 On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
@@ -214,3 +235,5 @@ The Dragon Knight playthrough screenshots in `images/how-to-play-worldai/` were 
 The session is real. Every line of narration in the pictures was written by the AI Game Master during play — nothing is mocked up, and the "Checking the rulebook..." overlay in the last screenshot is the genuine waiting state while the GM thinks.
 
 The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior. No new screenshot or native-app proof is claimed.
+
+The five mobile screenshots marked *current* were captured **2026-11-02** at 430×932 (shown at 2× resolution) from a custom Game of Thrones campaign; the wizard fields were filled in but not submitted. The portrait capture is from an iPhone TestFlight session of the same campaign.

@@ -200,3 +200,5 @@
 ## [2026-10-21] update | Mark faction management as work in progress on its overview and management pages.
 
 ## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.
+
+## [2026-11-02] update | Add current mobile screenshots of the custom campaign wizard, portrait step, and play screen to HowToPlay.
