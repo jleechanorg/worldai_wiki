@@ -1,7 +1,7 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-02
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
 sources: [../entities/CampaignShowcase.md]
@@ -13,7 +13,7 @@ This page is for building your **own** world in the wizard's custom path. If you
 
 The two things you write here:
 
-- **The God Mode header** — what you type into the Campaign Wizard's title, universe, character, setting and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
+- **The God Mode header** — what you type into the Campaign Wizard's Setting / World, era, character, setting, plot, title and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
 - **Directives** — standing rules you add later, *during* play, that change how the GM narrates. Step 7, and the full guide is [GodModePrompting](GodModePrompting.md).
 
 ## Why campaigns fall flat
@@ -36,9 +36,9 @@ The setting is the world your story lives in. You have one ready-made module and
 
 - **Dragon Knight** — Ser Arion, the Celestial Imperium, and the two dragons. Fully written, which also means character, setting, and premise are locked; see [CampaignWizard](CampaignWizard.md) for exactly which fields it greys out.
 
-### Universe quick-picks (custom path)
+### Setting / World quick-picks (custom path)
 
-On the **Play a campaign** path, the Universe field offers eight one-click suggestions — Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune — and accepts anything else you type: Naruto, Baldur's Gate 3, plain D&D 5e fantasy, isekai, your own world. None of these are pre-written; they are hints to the GM about the world you want.
+On the **Play a campaign** path, the first field, **Setting / World**, offers eight one-click suggestions — Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune — and accepts anything else you type: Naruto, Baldur's Gate 3, plain D&D 5e fantasy, isekai, your own world. None of these are pre-written; they are hints to the GM about the world you want.
 
 ### Custom setting
 
@@ -88,7 +88,7 @@ These fields *are* the God Mode header. You fill them in the [CampaignWizard](Ca
 
 ### Structured wizard fields
 
-- **Favorite Universe / TV Show / IP**: pick one of the eight suggestions or type your own.
+- **Setting / World**: the franchise or world you want to play in; pick one of the eight suggestions or type your own.
 - **Timeline / Era**: the historical anchor (e.g., *Robert's Rebellion*, *The Clone Wars*).
 - **Favourite Character / Chosen Protagonist**: your protagonist, or blank for an AI-generated hero.
 - **Setting / world for your adventure**: 1–3 sentences on the physical and political environment.
