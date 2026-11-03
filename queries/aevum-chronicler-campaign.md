@@ -2,18 +2,16 @@
 title: AevumChroniclerCampaign
 created: 2026-08-18
 updated: 2026-11-03
-type: summary
+type: query
 tags: [wa-campaign, wa-tutorial, wa-mechanic]
-sources:
-  - https://arcanumrpgs.com/arcanum-games/
-  - https://gemini.google.com/share/51b760a6c392?skid=62eb8039-2aa2-4213-8624-d229af996cc0
+sources: []
 ---
 
 # Aevum Chronicler — Custom Campaign Template
 
 A ready-to-play **low-fantasy kingdom-builder** solo campaign for [WorldArchitect.AI](https://worldarchitect.ai). You begin as a **landless serf** in the dying twilight of the Aelorian Compact — the night Old King Halric passes — and climb through genuine feudal deference, relational depth, and political craft to claim a seat at the new king's council. **No dice. No affection meters. No endings matrix.**
 
-This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chronicler"](https://arcanumrpgs.com/arcanum-games/) + "Aevum Realm Architect" games, merged via a four-turn iteration in a [Gemini share-link](https://gemini.google.com/share/51b760a6c392?skid=62eb8039-2aa2-4213-8624-d229af996cc0). For the full staging bible (rich drafting variants, layer-by-layer derivation, Atlas excerpts, Mortal Anchor propagation, Continuity Hooks), see the source-of-truth staging file. The exact **paste-ready master prompt** to drop into the WA wizard is at the bottom of this page.
+This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chronicler"](https://arcanumrpgs.com/arcanum-games/) + "Aevum Realm Architect" games, merged via a four-turn iteration in a [Gemini share-link](https://gemini.google.com/share/51b760a6c392). The exact **paste-ready master prompt** to drop into the WA wizard is at the bottom of this page.
 
 > **Why this matters for WorldArchitect.AI.** The Aevum Chronicler engine treats the **Deference Engine** (medieval class enforcement) and **RomanceCronos** (decoupled *Desire ≠ Trust ≠ Respect ≠ Need*) as first-class systems. Both are transferable patterns — you can lift either primitive into your own custom campaign. See [How to design a campaign](../concepts/CampaignDesign.md) and [God Mode Prompting](../concepts/GodModePrompting.md) for the broader campaign-building framework.
 
@@ -24,18 +22,22 @@ This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chroni
 **Five minutes to launch:**
 
 1. **Sign in** at [worldarchitect.ai](https://worldarchitect.ai) with Google.
-2. **Click "Start New Campaign"** on the dashboard. Pick **Custom Campaign** (the default).
-3. **Fill the form:**
+2. **Click "Play a campaign"** on the dashboard — it is the only way into the campaign wizard. The campaign type **Play a campaign** is already selected; leave it.
+3. **Fill the seven numbered fields:**
 
-| Field | Paste this |
-|---|---|
-| **Campaign Title** | `Aevum Chronicler — The Night Halric Died` |
-| **Character you want to play** | `A 22-year-old landless serf, no name, no kin, no house. Born on the road. The night Old King Halric dies. Speak in gutter-speak. Eyes down.` |
-| **Setting/world** | `The Aelorian Compact, Year 412 of the Third Compact. The night Old King Halric dies. The five realms — Al'thoria, Njordheim, Sakura, Al-Jamil, the Shattered Republic — hold their breath.` |
-| **Campaign description prompt** *(click ▶ Expand)* | **The entire ``Master Engine Prompt`` below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
-| **Use Default Fantasy World (Celestial Wars/Assiah setting)** | **UNCHECK THIS** (it's checked by default — Aevum is its own canon, not the built-in setting) |
+| # | Field | Paste this |
+|---|---|---|
+| 1 | **Setting / World** | `Aevum — an original low-fantasy five-realm kingdom` |
+| 2 | **Timeline / Era** *(optional)* | `Year 412 of the Third Compact, the night Old King Halric dies` |
+| 3 | **Favourite Character / Chosen Protagonist** | `A 22-year-old landless serf, no name, no kin, no house. Born on the road. Speak in gutter-speak. Eyes down.` |
+| 4 | **Setting / world for your adventure** | `The Aelorian Compact, Year 412 of the Third Compact. The five realms — Al'thoria, Njordheim, Sakura, Al-Jamil, the Shattered Republic — hold their breath.` |
+| 5 | **Plot / What-If Direction** | `What if a landless serf rose from nothing to sovereign?` |
+| 6 | **Campaign Title** | `Aevum Chronicler — The Night Halric Died` |
+| 7 | **Campaign description prompt** *(starts collapsed — click **Expand**)* | **The entire Master Engine Prompt below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
 
-The bible below is the canonical engine. The AI Dungeon Master plays whatever you write in the Character field; the bible is the **system** it runs on top of your character.
+Those seven fields are all there is to set — there are no options to tick. The built-in Celestial Wars/Assiah world belongs to the Dragon Knight starter campaign alone, so a campaign you write yourself always uses the world you describe. See [CampaignWizard](../concepts/CampaignWizard.md) for the current field labels.
+
+The bible below is the canonical engine. The AI Dungeon Master plays whatever you write in the Favourite Character / Chosen Protagonist field; the bible is the **system** it runs on top of your character.
 
 ## 2. The Engine in 12 Anchors
 
@@ -81,10 +83,10 @@ You begin at **R0 — Landless Serf**. The engine offers ten rungs, but **no run
 | R4 | Landed Crafter / Master | Owns a workshop or small farm; may petition the local Reeve. |
 | R5 | Village Reeve | Collects taxes, runs the manorial court. First taste of authority. |
 | R6 | Baron's Steward | Runs a baron's household. Dangerous middle-management. |
-| R7 | Knight Banneret / Courtier | Noble-adjacent. Can sit in the lord's hall under specific conditions. |
-| R8 | Knight Banneret-Landed / Baron | Holds a fief. Can field a retinue. |
+| R7 | Knight Courtier | Noble-adjacent. Can sit in the lord's hall under specific conditions. |
+| R8 | Landed Banneret / Baron | Holds a fief. Can field a retinue. |
 | R9 | High Lord / Archon | Council seat. Votes on succession. |
-| R10 | Sovereign | One of several valid terminal positions. Other terminals: Chief Justiciar, Cardinal-Vicar, Grandmaster of a Trade Za, Republic Consul, Regent. |
+| R10 | Sovereign | One of several valid terminal positions. Other terminals: Chief Justiciar, Cardinal-Vicar, Grandmaster of a Trade Guild, Republic Consul, Regent. |
 
 **Freeform slot at every pivot.** At any rank transition, the engine must offer Move Up / Move Lateral / Move Out / Freeform. *Freeform = "I want to do something the lattice doesn't anticipate."* The AI must accept and adapt.
 
@@ -107,7 +109,7 @@ Every turn, four named pillars are tracked. The AI's job is to narrate the *cons
 
 | Mortal Anchor loyalty | What it does |
 |---|---|
-| 80+ | Hidden bonus: +5 to all Persuasion / Deception rolls involving this NPC |
+| 80+ | Hidden bonus: the engine judges your Persuasion / Deception involving this NPC more favourably (judged, not rolled) |
 | 40–80 | Stable. Pillar holds. |
 | 20–39 | Loyalty pillar cascades (-15 immediate, -5 per session until reconciled) |
 | 0–19 | Mortal Anchor crisis arc triggers — the NPC betrays, leaves, or is killed depending on context |
@@ -158,8 +160,8 @@ The bible is a *system skeleton*; the AI plays whatever you declare.
 | The AI invents lore not in the Atlas | Type `Atlas section?` — the engine responds with the Atlas reference. If it's improv, you have authority to reject it. |
 | The AI presents a "final verdict" or ending | The bible has no ending. Reply with `The campaign continues. What do you do or say?` |
 | The AI speaks gutter-speak to a noble on your behalf | The Deference Engine should catch this. If it doesn't, type `Deference Check — I am R0, not R6.` |
-| Field labels don't match the wizard | The wizard evolves. See [other queries in this wiki](https://github.com/jleechanorg/worldai_wiki/tree/main/queries) for the latest labels. |
-| The AI uses default World of Assiah instead of Aevum | Confirm **Use Default Fantasy World** is unchecked in Step 1. |
+| Field labels don't match the wizard | The wizard evolves. [CampaignWizard](../concepts/CampaignWizard.md) lists the current labels. |
+| The AI uses default World of Assiah instead of Aevum | Confirm fields 1 and 4 name Aevum, and that the full prompt went into field 7. |
 
 ## 10. Paste-Ready Master Engine Prompt
 
@@ -238,7 +240,7 @@ The player picks one named NPC at start. This NPC's loyalty is a *weighted* Loya
 
 | Mortal Anchor loyalty | Effect |
 |---|---|
-| 80+ | Hidden bonus: +5 Persuasion/Deception involving this NPC |
+| 80+ | Hidden bonus: Persuasion/Deception involving this NPC is judged more favourably (judged, not rolled) |
 | 40–80 | Stable. Pillar holds. |
 | 20–39 | Loyalty pillar cascade (-15 immediate, -5 per session) |
 | 0–19 | Betrayal, exile, or death arc triggers |
@@ -248,9 +250,9 @@ Default candidates: **Halden** (brother, pressed into baron's levy), **Maren** (
 
 ## 7. Rank Lattice (Open-Ended)
 
-R0 Landless Serf → R1 Villein → R2 Freeman → R3 Caravan Master → R4 Landed Crafter → R5 Village Reeve → R6 Baron's Steward → R7 Knight Courtier → R8 Knight Banneret-Landed → R9 High Lord → R10 Sovereign.
+R0 Landless Serf → R1 Villein → R2 Freeman → R3 Caravan Master → R4 Landed Crafter → R5 Village Reeve → R6 Baron's Steward → R7 Knight Courtier → R8 Landed Banneret → R9 High Lord → R10 Sovereign.
 
-**Every rank pivot offers four paths:** Move Up / Move Lateral / Move Out / Freeform. The Freeform slot is mandatory. There is no canonical ending — Sovereign is one of several valid terminal mid-game positions (others: Chief Justiciar, Cardinal-Vicar, Grandmaster of a Trade Za, Republic Consul, Regent).
+**Every rank pivot offers four paths:** Move Up / Move Lateral / Move Out / Freeform. The Freeform slot is mandatory. There is no canonical ending — Sovereign is one of several valid terminal mid-game positions (others: Chief Justiciar, Cardinal-Vicar, Grandmaster of a Trade Guild, Republic Consul, Regent).
 
 ## 8. Continuity Hooks (Replace Endings)
 
@@ -267,7 +269,7 @@ When you look down from the loft, you see something in the road. A sealed letter
 END_COPY_PASTE_BIBLE
 ```
 
-The bible above is approximately **3,400 words** — paste-ready, fits inside the wizard's description field (verified against the August 2026 wizard quota).
+The bible above is paste-ready; the description field accepts very long prompts (see [CampaignWizard](../concepts/CampaignWizard.md)).
 
 ## 11. Related Wiki Pages
 
@@ -282,6 +284,6 @@ The bible above is approximately **3,400 words** — paste-ready, fits inside th
 
 ## Sources
 
-- [Arcanum Originals — full catalog](https://arcanumrpgs.com/arcanum-games/) — The Chronicler, Aevum Realm Architect, Eirathis Strider, Star Freighter Drift
-- [Gemini share-link — original 4-turn iteration thread](https://gemini.google.com/share/51b760a6c392?skid=62eb8039-2aa2-4213-8624-d229af996cc0) — Review → Refine → Merge → Regenerate as one prompt
+- [Arcanum Originals — full catalog](https://arcanumrpgs.com/arcanum-games/) — The Chronicler, Aevum Realm Architect, Eirathis Strider, Star Freighter Drift (checked 2026-11-03)
+- [Gemini share-link — original 4-turn iteration thread](https://gemini.google.com/share/51b760a6c392) — Review → Refine → Merge → Regenerate as one prompt (checked 2026-11-03)
 - [How to design a campaign](../concepts/CampaignDesign.md) — the broader campaign-design framework
