@@ -29,7 +29,7 @@ This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chroni
 |---|---|---|
 | 1 | **Setting / World** | `Aevum — an original low-fantasy five-realm kingdom` |
 | 2 | **Timeline / Era** *(optional)* | `Year 412 of the Third Compact, the night Old King Halric dies` |
-| 3 | **Favourite Character / Chosen Protagonist** | `A 22-year-old landless serf, no name, no kin, no house. Born on the road. Speak in gutter-speak. Eyes down.` |
+| 3 | **Favourite Character / Chosen Protagonist** | `A 22-year-old landless serf, no name, no house. Born on the road. Speak in gutter-speak. Eyes down.` |
 | 4 | **Setting / world for your adventure** | `The Aelorian Compact, Year 412 of the Third Compact. The five realms — Al'thoria, Njordheim, Sakura, Al-Jamil, the Shattered Republic — hold their breath.` |
 | 5 | **Plot / What-If Direction** | `What if a landless serf rose from nothing to sovereign?` |
 | 6 | **Campaign Title** | `Aevum Chronicler — The Night Halric Died` |
@@ -158,7 +158,7 @@ The bible is a *system skeleton*; the AI plays whatever you declare.
 
 | Problem | Fix |
 |---|---|
-| The AI narrates your internal thoughts or emotions | Type `Agency Check` — the engine rewinds the last decision point and follows your explicit phrasing |
+| The AI narrates your internal thoughts or emotions | Type `Agency Check` — the prompt asks the AI to rewind the last decision point and follow your explicit phrasing |
 | The AI forgets your rank | Open with `I am a landless serf named [X]. I do not speak to nobles unprompted. What do I see?` |
 | The AI breaks character with rules clarifications | Rules explanations live in a `(GM: …)` block at the end of the message. Anything in the prose is narrative. |
 | The AI invents lore that contradicts the setup | Quote the contradicting fact and ask it to correct itself. You have authority to reject improvisation. |
@@ -168,7 +168,7 @@ The bible is a *system skeleton*; the AI plays whatever you declare.
 
 ## 10. Paste-Ready Master Engine Prompt
 
-The block below is the **canonical bible** to paste into the **Campaign description prompt** field on Step 1 of the New Campaign wizard. Drop the entire content between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`.
+The block below is the **canonical bible** to paste into the **Campaign description prompt** field on the **Choose Your Campaign** step of the wizard. Drop the entire content between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`.
 
 ```
 BEGIN_COPY_PASTE_BIBLE
@@ -182,6 +182,7 @@ The campaign begins on the night Old King Halric of the Aelorian Compact dies, Y
 - **Absolute Immersion.** Never break character. Never output meta-apologies, internal reasoning, or rules headings. State calculations, deference checks, tag summing, and notepad updates are silent and hidden.
 - **HUD on State Change** — not every turn. Open a 5–8 line HUD block (Treasury / Power / Loyalty / Reputation + Active Tags + Last Decision) only when state changes. Suppress during god-mode cutscenes.
 - **In-Character Purity.** Mechanics, tags, numbers never appear in story prose. If the player asks for OOC rules clarification, place it in an isolated `(GM: ...)` block at the very end of the message.
+- **Start alone.** The player begins alone, with no companions, unless the protagonist field says otherwise.
 - **Living world.** Between player actions, companions and named NPCs take one small step toward their own goals. Track resources as tags on named assets (Domain, Retinue, Project, Privilege), not an inventory list. Keep a silent running notepad of state and compress it at chapter breaks. Open story hooks stay open until the player pulls them.
 - **Canon Authority.** The realms, ranks and pillars defined in this prompt are the source of truth. Never invent numbers or lore that contradict them or facts already established in play.
 

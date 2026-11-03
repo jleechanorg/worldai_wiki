@@ -14,7 +14,7 @@
 - [Player features reference](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 - [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — a bastard of Daemon Targaryen claims a dragon on the eve of the Dance. Includes a paste-ready campaign bible and a setup walkthrough.
-- [Aevum Chronicler — custom campaign template](queries/aevum-chronicler-campaign.md) — a low-fantasy kingdom-builder with no dice and no fixed ending. Includes a paste-ready campaign prompt and a setup walkthrough.
+- [Aevum Chronicler — custom campaign template](queries/aevum-chronicler-campaign.md) — a low-fantasy kingdom-builder with outcomes judged, not rolled, and no fixed ending. Includes a paste-ready campaign prompt and a setup walkthrough.
 
 ## Entities
 
