@@ -10,7 +10,7 @@ Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Laun
 
 1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) or the [iPhone/iPad beta on TestFlight](https://testflight.apple.com/join/WRc9S63q) (Continue with Google) to pick up a campaign or start a new one.
 2. **Fill in the 2-step wizard**:
-   - **Step 1 — Choose Your Campaign**: choose **Play a campaign** to build your own world and character. **Dragon Knight** is the optional ready-made quick start. On the custom path, fill in **Setting / World** — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, setting, and a plot "what-if".
+   - **Step 1 — Choose Your Campaign**: choose **Play a campaign** to build your own world and character. **Dragon Knight** is the optional ready-made quick start. On the custom path, fill in **Setting / World** — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, adventure setting, and a plot "what-if".
    - **Campaign description prompt**: the last section of step 1 (section 7 on the custom path) starts collapsed — click **Expand** to open it, then paste a full campaign bible, world lore, faction rules, or premise. A 70,000-character document has been tested and stored intact.
    - **Step 2 — Ready to Launch**: choose **AI generate portrait** or **Upload your own** for an optional avatar, edit anything on the summary card, and click **Enter the World**.
 3. **Play turn by turn**:
