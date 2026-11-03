@@ -31,7 +31,7 @@ Your account also has an **Enable Faction Minigame** switch under **Settings →
 
 ## Q: Can I disable it later?
 
-**A**: Yes, but do it in the campaign. Once faction mode is on it stays on until you say in that campaign that you want it off. Flipping the account-wide switch in Settings is not the way to do it: it stops the layer being offered, but a campaign where you already enabled faction mode keeps it.
+**A**: Yes, but do it in the campaign. Once faction mode is on it stays on until you say in that campaign that you want it off. Flipping the account-wide switch in Settings is not the way to do it: while it is off, faction play is unavailable in every campaign, even ones that enabled it, and switching it back on brings the layer back.
 
 ## Q: How do I gain power?
 

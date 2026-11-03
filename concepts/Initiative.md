@@ -33,7 +33,7 @@ Your own turn ends only when you say "end turn", "done", or "pass" — see [Comb
 ## Player tips
 
 - **Initiative is random.** Even with high DEX you'll sometimes roll a 3. Plan an opening that survives going last.
-- **A better initiative modifier helps every fight**, not just this one — it's one of the things a DEX increase buys you.
+- **A better initiative modifier helps every fight**, not just this one — it's one of the things a DEX increase buys you. If you'd rather buy it outright, the Alert feat is worth +5 initiative and can be asked for at a level-up; see [ASI](ASI.md).
 - **Don't over-plan your pre-combat positioning.** You won't know the order until the dice land, and an enemy who beats you can move before you do.
 
 See [Combat](Combat.md), [CombatVictoryProtocol](CombatVictoryProtocol.md), [AbilityScores](AbilityScores.md).
