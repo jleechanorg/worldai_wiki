@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Every page in the wiki, listed by type with a one-line summary. Start here when you're looking for something.
-> Last updated: 2026-10-09 | Total pages: 64
+> Last updated: 2026-11-03 | Total pages: 60
 
 ## Start here
 
@@ -9,23 +9,22 @@
 - [How to play](queries/how-to-play-worldai.md)
 - [How to design a campaign](concepts/CampaignDesign.md)
 - [How to prompt god mode](concepts/GodModePrompting.md)
+- [Act, Think and God modes](concepts/GodMode.md) — the three ways to take a turn; God mode is the pause menu.
 - [Player user stories](queries/PlayerUserStories.md)
 - [Player features reference](queries/ExternalUserStories.md)
 - [Campaign showcase](entities/CampaignShowcase.md)
 - [House of the Dragon — custom campaign template](queries/house-of-the-dragon-campaign.md) — a bastard of Daemon Targaryen claims a dragon on the eve of the Dance. Includes a paste-ready campaign bible and a setup walkthrough.
-- [Aevum Chronicler — custom campaign template](queries/aevum-chronicler-campaign.md) — low-fantasy kingdom-builder derived from Arcanum's The Chronicler + Aevum. Deterministic, no dice, no endings. Landless serf → sovereign via Deference Engine, Quad-Pillar cascade, RomanceCronos decoupled axes, Mortal Anchor mechanic. Includes a paste-ready ~3,400-word master engine prompt.
+- [Aevum Chronicler — custom campaign template](queries/aevum-chronicler-campaign.md) — a low-fantasy kingdom-builder with no dice and no fixed ending. Includes a paste-ready campaign prompt and a setup walkthrough.
 
 ## Entities
 
 - [AegonTargaryen](entities/AegonTargaryen.md) — Example Game of Thrones character.
 - [CampaignShowcase](entities/CampaignShowcase.md) — Gallery of published campaigns, each showing a different archetype.
-- [CampaignWizard](entities/CampaignWizard.md) — One-screen summary of the creation flow; the full walkthrough is [concepts/CampaignWizard](concepts/CampaignWizard.md).
 - [Daemon](entities/Daemon.md) — A character sketch: the charming, dangerous antagonist.
 - [FactionBattleSim](entities/FactionBattleSim.md) — How faction-vs-faction battles are resolved.
 - [FactionIntel](entities/FactionIntel.md) — Spying, informants, and what you learn about rivals.
 - [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) — What a God-mode turn sends back.
 - [WorldArchitect](entities/WorldArchitect.md) — The game itself.
-- [WorldAI](entities/WorldAI.md) — Short alias for WorldArchitect.AI.
 
 ### Published-campaign case studies
 
@@ -43,7 +42,6 @@ Real player-run campaigns, written up to show how the system handles a particula
 - [ASI](concepts/ASI.md) — Ability Score Improvement vs a feat at level-up.
 - [CampaignDesign](concepts/CampaignDesign.md) — The long guide to planning a campaign before you launch it.
 - [CampaignWizard](concepts/CampaignWizard.md) — The 2-step campaign creation flow.
-- [CharacterArchetype](concepts/CharacterArchetype.md) — Tank / striker / controller / support: tabletop shorthand for what a class does in a fight. The game never asks you to pick one.
 - [CharacterCreation](concepts/CharacterCreation.md) — Letting the GM build your character, or building it yourself.
 - [CharacterMode](concepts/CharacterMode.md) — The default composer button, and the modes the game switches to on its own.
 - [Combat](concepts/Combat.md) — How a fight runs, start to finish.
@@ -53,7 +51,6 @@ Real player-run campaigns, written up to show how the system handles a particula
 - [Dice](concepts/Dice.md) — Who rolls, when, and why you can trust the numbers.
 - [DiceAuthenticity](concepts/DiceAuthenticity.md) — How the game stops the GM inventing roll results.
 - [DiceNotation](concepts/DiceNotation.md) — Reading `1d20+5`, `2d6+3`, `2d20kh1` and the rest.
-- [DiceRollMechanics](concepts/DiceRollMechanics.md) — What happens between your action and the number on screen.
 - [DnD5eRules](concepts/DnD5eRules.md) — The D&D 5th Edition rule spine.
 - [Equipment](concepts/Equipment.md) — Slots, starting gear, and how item stats change your numbers.
 - [FactionManagement](concepts/FactionManagement.md) — Running a faction: resources, units, orders.
@@ -90,6 +87,7 @@ Real player-run campaigns, written up to show how the system handles a particula
 - [GodModeFAQ](queries/GodModeFAQ.md) — Common god mode questions.
 - [FactionFAQ](queries/FactionFAQ.md) — Common faction questions.
 - [House of the Dragon campaign](queries/house-of-the-dragon-campaign.md) — A paste-ready campaign bible and setup walkthrough.
+- [Aevum Chronicler campaign](queries/aevum-chronicler-campaign.md) — A paste-ready low-fantasy campaign prompt and setup walkthrough.
 
 ## Meta
 

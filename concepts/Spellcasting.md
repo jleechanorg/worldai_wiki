@@ -1,7 +1,7 @@
 ---
 title: Spellcasting
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -25,9 +25,12 @@ You have a limited number of slots at each spell level, set by your class and
 level. A 5th-level Wizard, for instance, has four 1st-level slots, three
 2nd-level, and two 3rd-level.
 
+If you have no slots at the spell's level but do have a higher one, the GM asks before spending the higher slot, and the spell waits for your answer. With no slots left at all, the GM turns the cast down and explains why.
+
 A bigger slot can cast a smaller spell, and the spell gets stronger for it —
 this is **upcasting**. That same Wizard can spend a 3rd-level slot on Fireball,
-or on Burning Hands for an extra 1d6 of damage.
+or on Burning Hands for an extra 2d6 of damage — an upcast spell gains its
+bonus die for each slot level above its own level.
 
 Slots only come back when you actually rest ([RestAndDeath](RestAndDeath.md)) —
 long rest for most casters, short rest for Warlocks. In ordinary play the GM

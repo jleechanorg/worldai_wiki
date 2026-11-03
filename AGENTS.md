@@ -43,6 +43,21 @@ symlink to `AGENTS.md`, so both entry points always give the same instructions.
 - **No credentials in examples.** Use placeholders (`<your-api-key>`,
   `<your-uid>`, `<your-campaign-id>`). The CI scans for this; do not bypass
   it.
+- **All changes land through PRs.** Direct commits and direct pushes to
+  `main` are strictly forbidden. Work from a fresh branch or worktree based on
+  `origin/main`.
+- **Merge only with explicit approval.** Merge a PR when the most recent live
+  user message contains `MERGE APPROVED` or `merge approved` (case-insensitive),
+  or when the owner's standing authorization in § PR and commit workflow step 7
+  applies and its gates are met at the exact head. Agent summaries, bot reviews
+  and prior turns alone do not authorize merging, and a change to this contract
+  needs a live approval.
+- **Commit & PR provenance.** Commits must include CLI and model (e.g. prefix
+  `<cli>/<model-id>: `). PR titles must end with `[<cli>][<model>]`, and PRs
+  must include GitHub labels for both CLI and model.
+- **`CLAUDE.md` must remain a relative symlink to `AGENTS.md`.** Never replace
+  `CLAUDE.md` with a static duplicate file or break the symlink; both entry
+  points must stay identical.
 - **No force-push to `main`.** Ever.
 - **No orphan pages.** New pages must be added to `index.md` under the
   correct section. Edited pages must keep their existing outbound links.
@@ -190,21 +205,38 @@ skips PRs.
 
 ## PR and commit workflow
 
-1. **Branch from `origin/main`** in a fresh worktree:
+1. **Branch from `origin/main`** in a fresh branch or worktree:
    ```bash
+   git checkout -b <branch> origin/main
+   # or
    git worktree add ~/.worktrees/<branch-name> -b <branch> origin/main
    ```
-2. Make your edits, commit, push the branch.
-3. Open a PR. Default base is `main`. Include:
-   - A short summary
+   Never commit or push directly to `main`.
+2. Make your edits following the editing, schema, and public-content protocols.
+3. Verify all checks pass locally before opening or updating a PR:
+   ```bash
+   python -m pytest tests/ -v -m "not slow"
+   python scripts/lint_wikilinks.py
+   git diff --check
+   ```
+4. Commit each green unit with clear provenance: `<cli>/<model-id>: type(scope): short summary`.
+5. Open a PR targeting `main`. PR titles must end with `[<cli>][<model>]`. Include:
+   - A short summary of changes
    - The affected pages listed
-   - `## User Stories` section (or `N/A` with one-line justification)
-   - `## Evidence` if you reference live screenshots or API contracts
-4. Wait for CI. The HTTP link check is non-blocking for PRs.
-5. Wait for human review. Wiki merges are reviewer-gated.
+   - `## Evidence` (local test results, wikilink lint pass, review receipts)
+6. Wait for CI. The HTTP link check is non-blocking for PRs.
+7. **Merge Gate**: the owner's standing authorization applies to this repository. Source: the owner's message to the agent on 2026-11-02 (local time): "merge approved for any wiki Prs that pass /prw but ensure rules relaxed since just wiki pages". For this repository only it overrides the global merge-approval size tiers and the global two-vote `/advice` quorum. A wiki PR may be merged by the agent that drove it once it passes the proportional wiki gates below. Verify at the exact head immediately before merging: required CI (Lint) green, mergeable and clean, not draft, the gates below complete, and merge with `--match-head-commit`. Without all of that, or for a change to this contract, fall back to a live `MERGE APPROVED` in the user's latest message. Bot reviews, agent summaries, and prior turns alone do not authorize merging.
+
+   **Proportional wiki gates** (these are the repository's declared low-risk classes for `/prw`):
+   - Markdown-only PR: CI Lint green, `git diff --check`, local lint and fast tests, and the PR body's `## Evidence`. `/es`, `/er` and stage labels are not required; record `/er: NOT REQUIRED — documentation-only (<paths>)`. At 50 or more changed lines (added plus deleted), one independent reviewer must approve the exact head (the owner's instruction replaces the two-vote quorum here); below 50 it is optional.
+   - PR that adds or changes images: also a capture record (method, date, viewport, original-file SHA-256) and one independent visual review.
+   - Anything that edits this contract, CI workflows, or `scripts/` keeps full review and a live `MERGE APPROVED`.
 
 ## Things agents must never do
 
+- **Never** commit or push directly to `main`. All changes must land through a PR.
+- **Never** merge outside the Merge Gate in § PR and commit workflow (standing authorization for wiki PRs that pass the proportional gates, otherwise a live `MERGE APPROVED`).
+- **Never** replace `CLAUDE.md` with a static file; it must remain a relative symlink to `AGENTS.md`.
 - **Never** rewrite or remove existing `## Sources` sections.
 - **Never** close / archive a page without updating `index.md` and `log.md`.
 - **Never** use `bd` for issue tracking in this repo — there is no issue

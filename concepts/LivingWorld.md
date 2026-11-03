@@ -1,7 +1,7 @@
 ---
 title: LivingWorld
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
@@ -20,7 +20,7 @@ On a schedule, not when you rest. An advance becomes due on whichever comes firs
 
 The in-game clock is the trigger you can rely on: anything that burns a day — travel, downtime, a long rest — brings the next advance forward. The turn count is a backstop for scenes that take many turns without much time passing, and a run of three quick turns inside one conversation will not always produce a visible development. Resting is not itself the trigger and carries no special risk.
 
-**[God Mode](GodMode.md) and [Think Mode](ThinkMode.md) turns are skipped entirely.** They do not advance the clock, do not generate world events, and do not use up the cadence. Use them as much as you like without burning world time.
+**[God Mode](GodMode.md) and [Think Mode](ThinkMode.md) turns are skipped by the advance schedule.** They do not advance the in-game clock and do not count toward the cadence, so a scheduled advance never fires on them. Use them as much as you like without burning world time. (A god-mode directive can still change the world directly — but that is you writing the change, not the world moving on its own.)
 
 ## What an advance produces
 
@@ -29,10 +29,10 @@ A single advance can move any of these:
 - **Background events** — what off-screen NPCs and factions actually did.
 - **Rumors** — one or two pieces of gossip NPCs may repeat. Some are true, some half true, some flatly wrong, and the rumor itself never tells you which.
 - **Deadlines** — countdowns scheduled for a specific future turn come due, get pushed back, or get cancelled.
-- **Faction shifts** — objectives, resources, and standing change. See [FactionSystem](FactionSystem.md).
+- **Faction shifts** — objectives, resources, and standing change; persisted faction objectives continue to display consistently across turns and reloads rather than reverting to unknown state (see [FactionSystem](FactionSystem.md)).
 - **One scene event** (optional) — something that reaches you directly: a messenger, a road encounter, a companion pulling you aside, a quest offer.
 
-You are never handed a report of what changed. Hidden developments stay hidden until the story surfaces them — an NPC mentions it, a price has moved, a rumor reaches you.
+You are never handed an ungrounded meta-report of what changed. In the header, the HUD sub-line continuously tracks `SCENE N · LOCATION · TIME`. Developments are narrated with sensory camera objectivity — the narrator describes observable physical reality without evaluative moral lecturing, leaving ethical dilemmas to authentic NPC dialogue and player choices. Major permanent changes (such as deaths, permanent injuries, or shattered pacts) are recorded as permanent core memories that the DM retains throughout the campaign.
 
 ## Why it matters
 

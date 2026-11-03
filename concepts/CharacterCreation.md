@@ -1,7 +1,7 @@
 ---
 title: CharacterCreation
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -18,7 +18,7 @@ Every campaign starts by building the character you'll play. There are three way
 | **Custom Class** | You want a class D&D 5e doesn't have — a Sith Blade, a chakra-using shinobi, a gunslinger. |
 | **Starter campaign** | You picked Dragon Knight, which hands you a finished character to review. |
 
-Whichever you choose, the review screen lets you change anything before the story starts. If you are not sure which class does what in a fight, [CharacterArchetype](CharacterArchetype.md) sorts them into tank, striker, controller and support — tabletop shorthand to choose by, not a field the game asks you for.
+Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker, controller or support role; class choice is what matters.
 
 ## How it actually runs
 
@@ -85,7 +85,7 @@ Underneath, the sheet still uses D&D 5e fields (race, class, ability scores, ski
 Three of the numbered sections on the first wizard step shape your character. All three are optional:
 
 - **Favourite Character / Chosen Protagonist** — e.g. `Uchiha Itachi`. Leave it blank and the game picks one at random.
-- **Setting / world for your adventure** — e.g. `Naruto universe`. Blank gives you a random fantasy world.
+- **Setting / world for your adventure** — a few lines on the place itself, e.g. `a hidden shinobi village on a war footing`. Leave it blank and the world is inferred from whatever else you wrote; if you filled in the first box, **Setting / World**, it is copied in for you. Only a form where the Setting / World, character, setting, plot and description boxes are *all* empty falls back to a random fantasy world.
 - **Campaign description prompt** — the last section, and the one people miss: it starts collapsed behind an **Expand** button. Open it and you get a free-text box for the premise, as long as you like: `Itachi when he was young and had just become an ANBU member. Itachi Gaiden arc.`
 
 ## Player tips

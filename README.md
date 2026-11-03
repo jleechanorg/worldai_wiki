@@ -1,6 +1,6 @@
 # WorldArchitect.AI Wiki
 
-> The player-facing guide to [WorldArchitect.AI](https://worldarchitect.ai) — a D&D 5e game that runs in your browser. The game rolls the dice, the world remembers what you did, and the house rules are yours to write.
+> The player-facing guide to [WorldArchitect.AI](https://worldarchitect.ai) ([iPhone/iPad beta on TestFlight](https://testflight.apple.com/join/WRc9S63q)) — a D&D 5e game that runs in your browser. The game rolls the dice, the world remembers what you did, and the house rules are yours to write.
 
 ## Quick start: What to do
 
@@ -8,19 +8,19 @@
 Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Launch  ──>  Turn loop (Act / Think / God)
 ```
 
-1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) to pick up a campaign or start a new one.
+1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) or the [iPhone/iPad beta on TestFlight](https://testflight.apple.com/join/WRc9S63q) (Continue with Google) to pick up a campaign or start a new one.
 2. **Fill in the 2-step wizard**:
-   - **Step 1 — Choose Your Campaign**: take **Dragon Knight**, the one ready-made module, or **Play a campaign** and build your own. On the custom path, pick a universe — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, setting, and a plot "what-if".
+   - **Step 1 — Choose Your Campaign**: choose **Play a campaign** to build your own world and character. **Dragon Knight** is the optional ready-made quick start. On the custom path, fill in **Setting / World** — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, adventure setting, and a plot "what-if".
    - **Campaign description prompt**: the last section of step 1 (section 7 on the custom path) starts collapsed — click **Expand** to open it, then paste a full campaign bible, world lore, faction rules, or premise. A 70,000-character document has been tested and stored intact.
-   - **Step 2 — Ready to Launch**: add an optional character portrait, edit anything on the summary card, and click **Enter the World**.
+   - **Step 2 — Ready to Launch**: choose **AI generate portrait** or **Upload your own** for an optional avatar, edit anything on the summary card, and click **Enter the World**.
 3. **Play turn by turn**:
    - The GM opens the scene and confirms your character sheet.
-   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — under **Your move**, or type your own action in the message box and press **Send**. Tap a choice's chevron to read its details and any pros and cons inline before committing. For a longer strategy conversation with the GM, switch to **Think** first.
+   - Pick one of the suggested actions — four in ordinary play, three after a God-mode turn — under **Your move**, or type your own action in the message box and press **Send**. Tap a choice's chevron to read its details and any pros and cons inline before committing. Tapping a suggested choice while in Think or God switches back to Act and submits that option. While a turn is in flight, a **Cancel** button appears over the textarea to halt generation and restore your typed draft.
    - The three buttons under the message box decide how your text is read:
      - **Act** (the default): what you type is what your character does and says. The story advances.
      - **Think**: the story pauses while you weigh options with the GM. No time passes, no actions are taken.
      - **God**: administrative control — edit stats, spawn items, teleport, fix mistakes, set persistent narration rules. The world is frozen and the story does not advance.
-4. **Know your limits**: playing is free, but every turn counts against a per-account allowance — **100 turns a day, and 50 in any 5-hour window**. Creating campaigns and God-mode turns draw on separate, roomier allowances. If you hit a cap, a "Rate Limit Reached" box tells you when it resets; adding your own model API key raises the ceiling to 5,000 turns a day. Open **⋯ More game actions → Settings** to manage your model and key; the menu may also offer **Add API key**.
+4. **Know your limits**: the default story-turn allowance is **100 turns in a rolling 24-hour window and 50 in a rolling 5-hour window**. Your account or environment may have different limits; use the allowance and reset information shown in the app. Campaign creation and God-mode actions have separate limits. Adding your own model API key can change the applicable allowance, but does not guarantee a particular ceiling. Open **⋯ More game actions → Settings** for the model and key options available to you. See [usage limits and settings](queries/how-to-play-worldai.md).
 
 ---
 
@@ -34,12 +34,12 @@ Your saved worlds. Each card shows when you last played it and a line of charact
 ![My Campaigns Dashboard](assets/fresh_screenshots/01_dashboard_home.png)
 
 #### 2. Campaign Wizard — Step 1, with the description prompt open
-Set the universe, era and protagonist. The last section, **Campaign description prompt**, is where a long world bible goes — it is collapsed until you click **Expand**.
+Set the setting / world, era and protagonist. The last section, **Campaign description prompt**, is where a long world bible goes — it is collapsed until you click **Expand**.
 
 ![Campaign Wizard Step 1 with Expanded Campaign Description Prompt](assets/fresh_screenshots/02_wizard_step1_description_prompt.png)
 
 #### 3. Campaign Wizard — Step 2, Ready to Launch
-Add a portrait, edit anything you got wrong, then **Enter the World**.
+Generate a portrait from an editable character description, or upload your own image and position it in the circle. Review the summary, then **Enter the World**. See [portrait setup and changes after launch](concepts/CampaignWizard.md#2-character-portrait-avatar).
 
 ![Campaign Wizard Step 2 Launch Screen](assets/fresh_screenshots/03_wizard_step2_launch.png)
 
@@ -55,7 +55,7 @@ The image below shows the earlier game-screen layout.
 ### Quick guides
 
 #### How to design a campaign
-The wizard asks for a universe, era, protagonist, setting and a plot "what-if" — everything else you decide in prose. Say up front how powerful your character is meant to get and what the story should feel like, and paste deep world lore into the **Campaign description prompt** field. Plan an opening scene where something is already happening, and set one to three god-mode rules early. See [CampaignDesign](concepts/CampaignDesign.md).
+The wizard asks for a setting / world, era, protagonist, adventure setting and a plot "what-if" — everything else you decide in prose. Say up front how powerful your character is meant to get and what the story should feel like, and paste deep world lore into the **Campaign description prompt** field. Plan an opening scene where something is already happening, and set one to three god-mode rules early. See [CampaignDesign](concepts/CampaignDesign.md).
 
 #### How to prompt god mode
 God-mode rules are house rules you write that stay in force for the rest of the campaign, changing how the GM narrates. The ones that work name concrete traits, list specific taboos, and anchor a worldview — `X is/does Y. Avoid Z. Always W.` Type `GOD MODE: <rule>` in the composer, or click the God button first. To get rid of a rule, just ask in plain language: `GOD MODE: forget the rule about companion scaling`. See [GodModePrompting](concepts/GodModePrompting.md).
@@ -66,7 +66,7 @@ God-mode rules are house rules you write that stay in force for the rest of the 
 
 WorldArchitect.AI is a tabletop-style RPG that runs in your browser. The system runs the rules — initiative, dice, HP, spells, faction combat — and an AI narrates the world around your choices. You steer it two ways: **in-character actions**, and **God mode**, a pause menu where you edit the world directly (stats, gold, items, NPCs, the clock) and set standing rules for how the GM should narrate. Campaigns run from a few scenes to several hundred, from a village squabble to multiverse-spanning stakes, solo or with a party or at the head of a faction.
 
-This wiki is the player manual. It assumes you've signed up at [worldarchitect.ai](https://worldarchitect.ai) and want to know what to do next. The table of contents below groups the pages by topic; [index.md](index.md) lists every page with a one-line summary.
+This wiki is the player manual. It assumes you've signed up at [worldarchitect.ai](https://worldarchitect.ai) ([iPhone/iPad beta on TestFlight](https://testflight.apple.com/join/WRc9S63q)) and want to know what to do next. The table of contents below groups the pages by topic; [index.md](index.md) lists every page with a one-line summary.
 
 The case studies are illustrative, not normative. Any setting, any tone, any power level works; the wiki's recommendations are patterns, so take the ones that fit your campaign.
 
@@ -92,17 +92,17 @@ The case studies are illustrative, not normative. Any setting, any tone, any pow
 | System | What it covers |
 |---|---|
 | [Combat](concepts/Combat.md) | Initiative, turn order, action economy, AoE, conditions |
-| [Dice](concepts/Dice.md) + [DiceAuthenticity](concepts/DiceAuthenticity.md) + [DiceNotation](concepts/DiceNotation.md) + [DiceRollMechanics](concepts/DiceRollMechanics.md) | Who rolls and when, reading `1d20+5`, and why the GM can't fake a result |
+| [Dice](concepts/Dice.md) + [DiceAuthenticity](concepts/DiceAuthenticity.md) + [DiceNotation](concepts/DiceNotation.md) | Who rolls and when, reading `1d20+5`, and why the GM can't fake a result |
 | [Spellcasting](concepts/Spellcasting.md) | Spell slots, preparation, concentration |
 | [Healing](concepts/Healing.md) + [RestAndDeath](concepts/RestAndDeath.md) | HP recovery, short/long rest, death saves |
 | [LootAndRewards](concepts/LootAndRewards.md) + [Equipment](concepts/Equipment.md) | Treasure and XP, gear slots, what an item actually changes |
 | [LevelUp](concepts/LevelUp.md) + [LevelUpProgression](concepts/LevelUpProgression.md) + [ASI](concepts/ASI.md) + [Subclass](concepts/Subclass.md) | How leveling happens mid-scene and how to change what the AI picked, growth over a long campaign, the divine endgame past level 20, ability-score and subclass choices |
-| [CharacterCreation](concepts/CharacterCreation.md) + [CharacterArchetype](concepts/CharacterArchetype.md) + [AbilityScores](concepts/AbilityScores.md) + [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) | Building a character: letting the GM build it or doing it yourself, the tabletop shorthand for what a class does in a fight (the game never asks you to pick a party role), ability scores, advantage and disadvantage |
+| [CharacterCreation](concepts/CharacterCreation.md) + [AbilityScores](concepts/AbilityScores.md) + [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) | Building a character: letting the GM build it or doing it yourself, ability scores, advantage and disadvantage |
 | [CompanionArc](concepts/CompanionArc.md) + [CompanionPersonality](concepts/CompanionPersonality.md) + [NPCRelationships](concepts/NPCRelationships.md) | Companions and NPC reputation |
 | [FactionSystem](concepts/FactionSystem.md) + [FactionManagement](concepts/FactionManagement.md) + [FactionPower](concepts/FactionPower.md) | The faction minigame end-to-end |
 | [LivingWorld](concepts/LivingWorld.md) | The world keeps moving while you're somewhere else |
 | [GodMode](concepts/GodMode.md) + [GodModePrompting](concepts/GodModePrompting.md) | The pause menu: editing the world directly, and writing rules that stick |
-| [CharacterMode](concepts/CharacterMode.md) + [ThinkMode](concepts/ThinkMode.md) | The two composer buttons you use in play, and the modes the game picks for you |
+| [CharacterMode](concepts/CharacterMode.md) + [ThinkMode](concepts/ThinkMode.md) | The composer buttons you use in play (Act, Think, God), and the modes the game picks for you |
 | [SpicyMode](concepts/SpicyMode.md) | The 🌶️ Spicy control in the ⋯ menu, and what it changes |
 | [CampaignDesign](concepts/CampaignDesign.md) + [CampaignWizard](concepts/CampaignWizard.md) | Designing a campaign, the 2-step creation flow |
 | [DnD5eRules](concepts/DnD5eRules.md) | The D&D 5th Edition rule spine |
@@ -118,8 +118,6 @@ The case studies are illustrative, not normative. Any setting, any tone, any pow
 | [Daemon](entities/Daemon.md), [AegonTargaryen](entities/AegonTargaryen.md) | Character sketches from the House of the Dragon campaign template |
 | [FactionBattleSim](entities/FactionBattleSim.md) + [FactionIntel](entities/FactionIntel.md) | Faction minigame subsystems |
 | [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) | What a God-mode turn sends back |
-| [CampaignWizard](entities/CampaignWizard.md) | One-screen summary of the campaign creation flow |
-| [WorldAI](entities/WorldAI.md) | Alias for the game's name |
 
 ### Comparisons
 

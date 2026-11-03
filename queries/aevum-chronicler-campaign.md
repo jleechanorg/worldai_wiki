@@ -1,7 +1,7 @@
 ---
 title: AevumChroniclerCampaign
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-11-03
 type: summary
 tags: [wa-campaign, wa-tutorial, wa-mechanic]
 sources:
@@ -285,4 +285,3 @@ The bible above is approximately **3,400 words** — paste-ready, fits inside th
 - [Arcanum Originals — full catalog](https://arcanumrpgs.com/arcanum-games/) — The Chronicler, Aevum Realm Architect, Eirathis Strider, Star Freighter Drift
 - [Gemini share-link — original 4-turn iteration thread](https://gemini.google.com/share/51b760a6c392?skid=62eb8039-2aa2-4213-8624-d229af996cc0) — Review → Refine → Merge → Regenerate as one prompt
 - [How to design a campaign](../concepts/CampaignDesign.md) — the broader campaign-design framework
-- Staging file (LLM-wiki source, internal): `~/llm_wiki/wiki/sources/aevum-chronicler.md` — layer-by-layer derivation, Atlas excerpts, Mortal Anchor propagation tables, Continuity Hooks library, Appendix A/B

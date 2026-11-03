@@ -1,7 +1,7 @@
 ---
 title: "WorldArchitect vs AIDungeon"
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: comparison
 tags: [wa-comparison]
 sources: []
@@ -24,7 +24,7 @@ Both let you play a story with an AI narrator. They are built for opposite thing
 | Memory of your world | Full campaign state: HP, spells, conditions, factions, NPC relationships, world flags | Story text plus a Memory Bank you curate; entry count scales with your tier |
 | Standing style rules | God mode directives that persist for the rest of the campaign | World Info entries and a per-action Author's Note |
 | Faction warfare | Yes — a full minigame with intel, battles and rankings | No |
-| Model choice | Gemini by default; bring a key for OpenRouter, Cerebras, or a local gateway | Their own model list, varying by membership tier |
+| Model choice | Gemini by default; OpenRouter with your own key | Their own model list, varying by membership tier |
 | Cost | Free, no paid tier. Turn limits instead | Free tier plus paid memberships |
 | Best for | Rules, structure, long stateful campaigns | Creative improvisation, any genre, quick scenarios |
 
@@ -60,13 +60,13 @@ Both let you play a story with an AI narrator. They are built for opposite thing
 
 ## Model choice
 
-**WorldArchitect.AI**: you pick the AI model in Settings. Google Gemini is the default and needs no setup. You can also point the game at OpenRouter, Cerebras, or a local gateway by adding your own API key for that service. The choice applies to your whole account, not to one campaign.
+**WorldArchitect.AI**: you pick the AI model in Settings. Google Gemini is the default and needs no setup. You can also switch to OpenRouter by adding your own API key for that service. The choice applies to your whole account, not to one campaign.
 
 **AI Dungeon**: you pick from their own model list, and which models you can reach depends on your membership tier. We do not track that list.
 
 ## Who narrates
 
-**WorldArchitect.AI** routes each scene to a specialist — combat, dialog, faction moves, level-up, lookups, character creation — so a fight is handled by something that understands fights. Each turn names the specialist that handled it above the narration. The trade-off is that the voice varies slightly between kinds of scene.
+**WorldArchitect.AI** routes each scene to a specialist — combat, dialog, faction moves, level-up, lookups, character creation — so a fight is handled by something that understands fights. Which specialist handled a turn is not shown during normal play — turn on **Settings → Debug Mode** and it appears in the Debug Info panel under the narration. The trade-off is that the voice varies slightly between kinds of scene.
 
 **AI Dungeon** uses one model for everything, which gives a more uniform voice.
 

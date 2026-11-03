@@ -1,7 +1,7 @@
 ---
 title: Equipment
 created: 2026-06-20
-updated: 2026-09-18
+updated: 2026-10-09
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -11,9 +11,9 @@ sources: []
 
 What your character is wearing, wielding, and carrying. Everything here is read straight from your saved sheet — item names and stats are never paraphrased or invented when they're shown to you.
 
-## Slots
+## Slots & Inventory Stacking
 
-Equipped gear lives in named slots: **main hand**, **off hand**, **ranged**, **armor**, **shield**, **head**, **neck**, **cloak**, **hands**, **belt/waist**, **body/chest**, **legs**, **feet**, **shoulders**, **ring 1**, **ring 2**, and **instrument**. Everything else sits in your **backpack**.
+Equipped gear lives in named slots: **main hand**, **off hand**, **ranged**, **armor**, **shield**, **head**, **neck**, **cloak**, **hands**, **belt/waist**, **body/chest**, **legs**, **feet**, **shoulders**, **ring 1**, **ring 2**, and **instrument**. Everything else sits in your **backpack**. Identical consumables (healing potions, ammunition, rations) stack automatically into single inventory rows with updated quantity counters (e.g. `Potion of Healing (x3)`).
 
 Every character must leave creation with all three fighting slots filled — main hand, off hand (a second weapon, a shield, or a spellcasting focus), and a ranged option (a bow, thrown weapons, or an attack cantrip like Fire Bolt). Skip one and the GM fills it with a class-appropriate default rather than letting you walk into a fight unable to answer an archer.
 
@@ -46,8 +46,8 @@ Asking in plain language works too — "what am I carrying", "show me my gear", 
 
 ## Gear changes your numbers
 
-Stats written on an item are applied automatically. A cloak reading `+1 AC, +1 saving throws` raises both. A belt reading `+2 STR (Max 20)` raises Strength but stops at 20 — the cap on the item is respected, not ignored.
+Ability scores, AC, spell save DC and spell attack bonuses written on an item are applied automatically. A cloak reading `+1 AC, +1 saving throws` raises your AC; the saving-throw half is left to the GM in the fiction rather than added to the save numbers on your sheet. A belt reading `+2 STR (Max 20)` raises Strength but stops at 20 — the cap on the item is respected, not ignored.
 
-The **Stats** panel spells this out per ability score: a Base column, an Effective column showing `16 → 18` when gear is lifting it, the resulting modifier, and a Bonus column with the amount your equipment contributed. You can always see which item is doing the work.
+The **Stats** panel spells this out per ability score: a Base column, an Effective column showing `16 → 18` when gear is lifting it, the resulting modifier, and a Bonus column with the total your equipment contributed. The number is the sum of every equipped item's contribution — open the Equipment panel to see which items are carrying it.
 
 See [LootAndRewards](LootAndRewards.md) for how you acquire items, and [CharacterCreation](CharacterCreation.md) for the starting-gear rules.

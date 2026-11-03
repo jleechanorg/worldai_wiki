@@ -1,7 +1,7 @@
 ---
 title: RestAndDeath
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -42,8 +42,8 @@ Pushing a forced march past eight hours does the same.
 
 When you drop to 0 HP:
 
-- If a single hit dealt damage equal to or more than your maximum HP, you die
-  outright — no unconsciousness, no death saves.
+- If the damage left over after you reach 0 HP is at least your maximum HP, you die
+  outright — no unconsciousness, no death saves. At 5/10 HP, 15 damage kills and 10 does not.
 - Otherwise you fall **unconscious** and start making death saves.
 - You always start at 0 successes and 0 failures, no matter what dropped you.
 - At the start of each of your turns, roll `1d20`:
@@ -55,6 +55,8 @@ When you drop to 0 HP:
 - **3 failures**: you die.
 - Taking any further damage while at 0 HP costs you a failure, or two if that
   damage was a critical hit.
+
+For companions and named NPCs, dropping to 0 HP, surrendering, fleeing, or being captured does not permanently kill them. Permanent death requires an explicit narrative death declaration in the story text (e.g. an execution or mortal blow). Subsequent survival reveals or resurrection in the narrative restore their availability.
 
 ## Stabilizing someone
 

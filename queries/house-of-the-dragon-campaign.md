@@ -1,7 +1,7 @@
 ---
 title: HouseOfTheDragonCampaign
 created: 2026-08-04
-updated: 2026-09-18
+updated: 2026-11-02
 type: query
 tags: [wa-campaign, wa-tutorial, wa-character]
 sources: []
@@ -29,12 +29,12 @@ If you want the paste-ready bible and step-by-step launch, jump to **Quick Setup
 **Three minutes to launch:**
 
 1. **Sign in** at [worldarchitect.ai](https://worldarchitect.ai) with Google.
-2. **Click "Play a campaign"** on the dashboard — not the **Quick Start** button beside it, which drops you straight into the pre-built Dragon Knight adventure. On the next screen the campaign type **Play a campaign** is already selected; leave it.
+2. **Click "Play a campaign"** on the dashboard — it is the only way into the campaign wizard. On the next screen the campaign type **Play a campaign** is already selected; leave it.
 3. **Fill the seven numbered fields:**
 
 | # | Field | Paste this |
 |---|---|---|
-| 1 | **Favorite Universe / TV Show / IP** | `Game of Thrones / Westeros` — or just click the 👑 **Game of Thrones** pill below the box |
+| 1 | **Setting / World** | `Game of Thrones / Westeros` — or just click the **Game of Thrones** suggestion chip below the box |
 | 2 | **Timeline / Era** *(optional)* | `The Dance of the Dragons, 129-131 AC` |
 | 3 | **Favourite Character / Chosen Protagonist** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` *(this is the field you change to make the character yours — see below)* |
 | 4 | **Setting / world for your adventure** | `Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` |
@@ -277,7 +277,7 @@ The Quick Setup above is the minimum. This is the annotated version.
 
 **Sign in.** Go to [worldarchitect.ai](https://worldarchitect.ai) and click **Continue with Google** in the centre of the page. Your dashboard loads.
 
-**Open the wizard.** Click **Play a campaign** on the dashboard. (The **Quick Start • Express Launch** button next to it skips the wizard entirely and launches the pre-built Dragon Knight adventure — not what you want here.) The wizard opens on a two-step indicator: **1 Choose Type → 2 Launch**.
+**Open the wizard.** Click **Play a campaign** on the dashboard. The wizard opens on a two-step indicator: **1 Choose Type → 2 Launch**.
 
 **Leave the campaign type alone.** **Play a campaign** is already selected. The alternative, **Dragon Knight Campaign**, is a built-in starter adventure with its own world.
 
@@ -285,7 +285,7 @@ The Quick Setup above is the minimum. This is the annotated version.
 
 | # | Field | What to type | Notes |
 |---|---|---|---|
-| 1 | **Favorite Universe / TV Show / IP** | `Game of Thrones / Westeros` | A row of one-click pills sits under the box; 👑 **Game of Thrones** fills this field for you. |
+| 1 | **Setting / World** | `Game of Thrones / Westeros` | A row of eight one-click suggestion chips sits under the box (Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune); **Game of Thrones** fills this field for you. |
 | 2 | **Timeline / Era** *(optional)* | `The Dance of the Dragons, 129-131 AC` | Pins the era inside the lore. Skipping it costs you nothing here — the bible states the era anyway. |
 | 3 | **Favourite Character / Chosen Protagonist** | `A 16-year-old dragonrider, gender-ambiguous bastard of Prince Daemon Targaryen, just claimed a young adult she-dragon` | **The field you customise to make the character yours.** See [Customize the character](#customize-the-character). Blank means a randomly generated character. |
 | 4 | **Setting / world for your adventure** | `Westeros on the eve of the Targaryen civil war. Dragonstone, King's Landing, the Riverlands.` | Anchors where scenes happen. |
@@ -293,7 +293,7 @@ The Quick Setup above is the minimum. This is the annotated version.
 | 6 | **Campaign Title** | `House of the Dragon — The Bastard's Claim` | Anything works; it is just your dashboard label. |
 | 7 | **Campaign description prompt** *(starts collapsed — click **Expand**)* | Paste the entire bible above. | Takes the full ~13,500-character bible without truncation, and far more besides — see [CampaignWizard](../concepts/CampaignWizard.md). |
 
-**Review and launch.** Click **Next** to reach the **🚀 Ready to Launch!** screen. The Campaign Summary shows four rows — **Title**, **Character**, **Setting**, and **Campaign description prompt** (your bible, shortened in the summary but kept in full). Click the pencil on any row to edit it in place. You can also upload a character avatar here (JPEG/PNG/GIF/WebP, max 5MB, 512×512px or larger square recommended), or skip it and add one later.
+**Review and launch.** Click **Next** to reach the **🚀 Ready to Launch!** screen. The Campaign Summary shows four rows — **Title**, **Character**, **Setting**, and **Campaign description prompt** (your bible, shortened in the summary but kept in full). Click the pencil on any row to edit it in place. The optional **Character Avatar** section offers **AI generate portrait** or **Upload your own**; skip it if you like.
 
 If everything looks right, click **Enter the World**. The campaign begins with the bible's **Starting Scene** (Section 9 of the bible).
 

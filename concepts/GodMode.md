@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-11-03
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -9,37 +9,41 @@ sources: []
 
 # God Mode
 
+Three buttons: **Act** ([CharacterMode](CharacterMode.md)) · **Think** ([ThinkMode](ThinkMode.md)) · **God** ([GodMode](GodMode.md))
+
 God Mode is the game's pause menu. Switch to it and the world freezes — the story does not advance, NPCs do not act, no dice are rolled — and you talk to the system as an administrator instead of as your character. What you say there is simply true.
 
 ## How to enter it
 
 Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box, then type your request.
+1. Pick the **God** pill under the message box (the placeholder becomes `God mode: edit stats, items, the world…`), then type your request. Hovering the button explains: *"God changes the world directly: stats, items, teleports, fixes. The story doesn't advance."*
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: set my HP to 50`.
 
-Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored.
+Capitalisation does not matter. `god mode:`, `God Mode:` and `GOD MODE:` all work, and leading spaces are ignored. One exception: while character creation is still open, a typed `GOD MODE:` is ignored, so pick the **God** pill instead.
+
+Suggested story options under **Your move** always play in Act. If you have God mode selected, tapping a suggested choice displays a reminder, automatically switches back to **Act**, announces `Switched to Act.`, and plays that option.
 
 ## What God Mode can do
 
-**Edit your character.** HP, gold, XP, level, ability scores, equipment, spell slots.
+**Edit your character.** HP, gold, XP, level, ability scores, equipment, spell slots. Adjusting your character at your current level preserves any pending level-up choice reviews; lowering your level cleanly drops stale level-up audits.
 
 **Edit the world.** Spawn or delete NPCs, items and locations; teleport anywhere instantly; add, complete or remove missions; change difficulty and other campaign settings.
 
-**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. If the log contradicts what you meant, you can correct the record instead of playing around it.
+**Rewrite history.** Replace the text of an earlier scene that went wrong, and add, change or remove the campaign memories the GM carries forward. Critical permanent facts (such as deaths or broken alliances) are preserved as permanent core memories in campaign storage, prioritized to carry forward as your story develops.
 
 **Clear stuck state.** Combat that never ended, a level-up that never resolved, a stale banner in the session header — God Mode is where those get reset.
 
 **Set directives.** Standing rules the GM follows in every later scene: "narrate in second person", "companions never fall more than one level behind me", "don't bring up the siege until I ask". Directives are the part players use most, and [GodModePrompting](GodModePrompting.md) is the guide to writing them.
 
-**Move the clock, if you ask outright.** "Set time to Day 10" works. Time never passes on its own during a God Mode turn, and the clock is never wound backwards to patch a continuity slip — those corrections are stored as directives or memories instead.
+**Move the clock, forwards or back, if you ask outright.** "Set time to Day 10" and "rewind to Day 3" both work. Time never passes on its own during a God Mode turn, and the clock is never wound backwards just to patch a continuity slip: those corrections are stored as directives or memories instead.
 
 ## What God Mode can't do
 
 - **Roll dice.** God Mode commands are absolute. No skill check, no attack roll, no saving throw.
 - **Resolve combat.** It will set your HP to 1 or to 200, but it will not fight the round for you.
 - **Advance the story.** No prose, no NPC dialogue, no new scene. Go back to Act mode for that.
-- **Rewind world time to fix a timeline.** Continuity fixes become directives or memories, not a clock change.
+- **Change the clock to fix a timeline on its own.** An explicit "rewind to…" works, but a continuity fix becomes a directive or memory, not a clock change.
 
 Everything above is absolute except directives. A directive steers how the GM writes future scenes, and the GM can still miss one.
 
@@ -60,12 +64,12 @@ Asked directly like that, the GM reads the campaign's stored list back to you. I
 
 ## What a God Mode turn gives back
 
-A confirmation line instead of a scene, the state change applied immediately, and three follow-up buttons that always include **Return to story**. Type any other request in the message box. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
+A confirmation line instead of a scene, the state change applied immediately, and two to four follow-up buttons that always include **Return to story**. If you raise XP or level past a threshold, a **Level-Up Review** button is offered too. Type any other request in the message box. [GOD_MODE_RESPONSE](../entities/GOD_MODE_RESPONSE.md) covers that reply in detail.
 
 ## Player tips
 
 - **One change per turn.** A God Mode turn that does five unrelated things is harder to check than five turns that each do one.
-- **Directives cannot switch the rules off.** "Never roll dice" will not work; dice are rolled server-side. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
+- **Directives cannot switch the rules off.** "Never roll dice" will not work; the game system always rolls dice for uncertain actions. "Don't dwell on dice mechanics in narration" will. If you want a specific *outcome*, make it a state change, not a directive.
 - **Add directives gradually.** One at a time, watch how narration changes, then add more. Fifteen at once dilute each other.
 - **What directives are good for**: tone, voice, POV, pacing, themes, taboos, power level, companion behaviour and world rules. [GodModePrompting](GodModePrompting.md#what-directives-can-steer) has a worked table for each.
 

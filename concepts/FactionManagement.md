@@ -1,13 +1,15 @@
 ---
 title: FactionManagement
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-10-21
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
 ---
 
 # Faction Management
+
+**Work in progress:** Faction management is still under development. The behavior described below may be incomplete or change as the feature evolves.
 
 What your faction owns, what it spends, and who runs it. For how to switch faction mode on and what a turn looks like, see [FactionSystem](FactionSystem.md).
 
@@ -40,7 +42,7 @@ Weekly upkeep runs 0.5gp per soldier, 1gp per spy, 5gp per elite. Recruit with `
 
 ## Buildings
 
-Build with `build [type] [qty]`; `upgrade` and `demolish` work the same way. Construction finishes at the end of a turn.
+Build with `build [type] [qty]`; `demolish [type] [qty]` works the same way, and `upgrade [type]` takes just the building type. Construction finishes at the end of a turn.
 
 | Building | Cost | Turns | What it does |
 |---|---:|---:|---|

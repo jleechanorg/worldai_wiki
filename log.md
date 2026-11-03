@@ -7,7 +7,27 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
-## [2026-10-09] update | PR #10 campaign index merge repair; preserved current wiki catalog and campaign content.
+## [2026-11-03] create | Add the Aevum Chronicler custom-campaign template (paste-ready campaign prompt and setup walkthrough) and list it in the index.
+
+## [2026-11-03] update | Correct Think, God, dice, combat, death, spell, leveling and faction rules against the current game, and link the mode pages together.
+
+## [2026-11-03] update | Remove retired AI providers and the /v1 proxy routes from setup and developer pages, and correct Spicy and starting-party wording.
+
+## [2026-11-03] archive | Archive four stub pages (CampaignWizard entity, WorldAI, DiceRollMechanics, CharacterArchetype) and refresh the index and README.
+
+## [2026-11-02] update | Use the wizard's current field names across the concept, entity, query and README pages, fix the wizard screen titles in HowToPlay, note that God mode lets you make any scenario true and move world time when asked outright, and record the owner's standing merge authorization and proportional gates for wiki PRs in AGENTS.md.
+
+## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay, and use the wizard's current field names in HowToPlay and CampaignWizard.
+
+## [2026-10-27] update | Refresh custom-campaign and portrait onboarding
+- Refresh the campaign wizard, first-session walkthrough, and quick-start summaries with a custom-campaign-first walkthrough, an illustrated setup example, TestFlight access, AI portrait generation, image uploads, portrait changes after launch, and rolling story-turn allowances.
+
+## [2026-10-09] update | Align player wiki with shipped game logic and controls
+- Authentication: Document OpenRouter sign-in alongside Google, personal key OAuth flow, account linking, and clear key controls.
+- Controls & Turn Lifecycle: Document mid-stream turn Cancel button with draft restoration, deliberate submit scroll, unread streaming pill, and structured scene HUD sub-line.
+- Progression & Mechanics: Document inline Reward Display Card, dynamic gold tracking on Resources line, inventory item stacking, Fighter/Rogue extra ASIs, and comprehensive level-up announcements.
+- God Mode & Living World: Clarify directives modifiers vs chosen outcomes, God Mode same-level review preservation vs level-down audit drop, durable permanent memory retention, persisted faction objectives display, and narrator camera objectivity.
+- Avatar Management: Align header avatar management with actual circular centering and photo modal (no crop view, no stats card).
 
 ## [2026-10-08] update | Refresh game-screen guidance for players
 - Update the [first-session guide](queries/how-to-play-worldai.md) for Act, Think, God, inline choice details and the More game actions menu.
@@ -151,7 +171,7 @@
 - Repo: `jleechanorg/worldai_wiki` (public)
 - Structure created with SCHEMA.md, index.md, log.md, README.md, LICENSE
 - Skeleton pages for core concepts
-- Initial content batch: ~50 entity/concept pages copied & rewritten from `~/llm_wiki`
+- Initial content batch: ~50 entity/concept pages copied & rewritten from the earlier internal reference wiki
 - Campaign synthesis: CampaignDesign, GodModePrompting, CampaignShowcase, ItachiGaiden
 - Player user stories: 75 stories ingested from the game's internal user-story document and expanded
 
@@ -160,9 +180,9 @@
 - See `queries/PlayerUserStories.md`
 - Source: the game's internal user-story document (private repo — no public link exists; this wiki carries the public-read summary)
 
-## [2026-06-19] ingest | Game-relevant content from ~/llm_wiki
+## [2026-06-19] ingest | Game-relevant content from the earlier internal reference wiki
 - 40+ entity/concept pages copied and rewritten for player audience
-- Source paths: `~/llm_wiki/wiki/entities/{WorldAI,WorldArchitect,DnD5eSRD,...}.md`, `~/llm_wiki/wiki/concepts/{Combat,GodMode,Faction*,Dice*,...}.md`
+- Source: earlier internal entity and concept reference pages.
 - Player-facing rewrite: removed internal code paths, kept behavioral descriptions
 
 ## [2026-06-19] synthesize | Campaign + god-mode guide
@@ -179,14 +199,16 @@
 
 ## [2026-08-04] create | House of the Dragon custom-campaign template (paste-ready 9-section bible + setup walkthrough verified live against worldarchitect.ai Custom Campaign wizard)
 
-## [2026-08-05] update | HotD wiki — Character-field customization note per Slack ts=1785909171.805539
+## [2026-08-05] update | HotD wiki — Character-field customization note
 
-## [2026-08-05] update | HotD wiki — restructure into Quick Setup + More Details per Slack ts=1785909171.805539
+## [2026-08-05] update | HotD wiki — restructure into Quick Setup + More Details
 
 ## [2026-08-05] update | HotD wiki — address 7 CodeRabbit review comments (index date, fenced code MD040, dragon-size consistency, Blood-of-the-Dragon reachability, Baela/Jacaerys relationships, bible-size unit, log-line format)
 
 ## [2026-08-05] update | HotD wiki — correct wizard checkbox defaults (verified against the live wizard in a local browser run): Narrative/Mechanics/Companions/Default-World are ALL checked by default; only Default-World needs unchecking for ASOIAF/HotD
 
-## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship per Slack ts=1785909171.805539 OOB); /advice review (deleg_765bfb72) flagged 354-line page length + missing "after Enter the World" section
+## [2026-08-05] update | HotD wiki — promote character-customization examples into Quick Setup (gender, age, class, dragon name, parent swap, look, starting relationship); review flagged 354-line page length + missing "after Enter the World" section
 
-## [2026-08-18] create | Aevum Chronicler custom-campaign template (paste-ready ~3,400-word master engine prompt + 10-section setup walkthrough; derived from Arcanum The Chronicler + Aevum via 4-turn Gemini iteration; deterministic, no dice, no endings, Deference Engine, Quad-Pillar cascade, RomanceCronos, Mortal Anchor mechanic)
+## [2026-10-21] update | Mark faction management as work in progress on its overview and management pages.
+
+## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.

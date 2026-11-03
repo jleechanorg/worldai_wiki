@@ -1,7 +1,7 @@
 ---
 title: CampaignDesign
 created: 2026-06-19
-updated: 2026-10-08
+updated: 2026-11-03
 type: concept
 tags: [wa-campaign, wa-prompt, wa-tutorial]
 sources: [../entities/CampaignShowcase.md]
@@ -13,7 +13,7 @@ This page is for building your **own** world in the wizard's custom path. If you
 
 The two things you write here:
 
-- **The God Mode header** — what you type into the Campaign Wizard's title, universe, character, setting and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
+- **The God Mode header** — what you type into the Campaign Wizard's Setting / World, era, character, adventure setting, plot, title and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
 - **Directives** — standing rules you add later, *during* play, that change how the GM narrates. Step 7, and the full guide is [GodModePrompting](GodModePrompting.md).
 
 ## Why campaigns fall flat
@@ -36,9 +36,9 @@ The setting is the world your story lives in. You have one ready-made module and
 
 - **Dragon Knight** — Ser Arion, the Celestial Imperium, and the two dragons. Fully written, which also means character, setting, and premise are locked; see [CampaignWizard](CampaignWizard.md) for exactly which fields it greys out.
 
-### Universe quick-picks (custom path)
+### Setting / World quick-picks (custom path)
 
-On the **Play a campaign** path, the Universe field offers eight one-click suggestions — Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune — and accepts anything else you type: Naruto, Baldur's Gate 3, plain D&D 5e fantasy, isekai, your own world. None of these are pre-written; they are hints to the GM about the world you want.
+On the **Play a campaign** path, the first field, **Setting / World**, offers eight one-click suggestions — Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune — and accepts anything else you type: Naruto, Baldur's Gate 3, plain D&D 5e fantasy, isekai, your own world. None of these are pre-written; they are hints to the GM about the world you want.
 
 ### Custom setting
 
@@ -84,15 +84,16 @@ Mixing two tones that conflict (e.g., comedic + grimdark) leads to confused narr
 
 ## Step 4 — Write the header: wizard fields and description prompt
 
-These fields *are* the God Mode header. You fill them in the [CampaignWizard](CampaignWizard.md) — five structured boxes plus one expandable **Campaign description prompt** for anything longer.
+These fields *are* the God Mode header. You fill them in the [CampaignWizard](CampaignWizard.md) — six structured boxes plus one expandable **Campaign description prompt** for anything longer.
 
 ### Structured wizard fields
 
-- **Favorite Universe / TV Show / IP**: pick one of the eight suggestions or type your own.
+- **Setting / World**: the franchise or world you want to play in; pick one of the eight suggestions or type your own.
 - **Timeline / Era**: the historical anchor (e.g., *Robert's Rebellion*, *The Clone Wars*).
 - **Favourite Character / Chosen Protagonist**: your protagonist, or blank for an AI-generated hero.
 - **Setting / world for your adventure**: 1–3 sentences on the physical and political environment.
 - **Plot / What-If Direction**: your campaign's main divergence or hook.
+- **Campaign Title**: what the campaign is called on your dashboard — the one box in this set you have to fill in.
 
 ### The Campaign description prompt (long-form world bible)
 
@@ -242,7 +243,7 @@ Your first campaign will have rough edges. When it ends, note what landed, what 
 
 ## Optional: draft your header in a free chat LLM first
 
-Playing is free, but every turn counts against your allowance — **100 turns a day, 50 in any 5-hour window** (your own API key raises it to 5,000 and 1,000). Re-rolling a vague header against live play burns turns you didn't need to spend, and all five failure modes above show up on prompt #2, not scene #200.
+Playing is free, but ordinary play turns count against your allowance — **100 turns a day, 50 in any 5-hour window** (your own API key raises it to 5,000 and 1,000). God Mode turns and campaign creation are metered separately and far more generously, so the cost of a re-roll lands on the scenes you play, not on the creation itself. Re-rolling a vague header against live play burns turns you didn't need to spend, and all five failure modes above show up on prompt #2, not scene #200.
 
 So paste your draft header into ChatGPT, Gemini or Claude — whichever you already have — and ask it to write scene one. If the preview is vague, your campaign will be vague. Useful things to ask:
 
