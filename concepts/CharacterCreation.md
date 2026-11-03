@@ -1,7 +1,7 @@
 ---
 title: CharacterCreation
 created: 2026-06-19
-updated: 2026-11-02
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
@@ -18,7 +18,7 @@ Every campaign starts by building the character you'll play. There are three way
 | **Custom Class** | You want a class D&D 5e doesn't have — a Sith Blade, a chakra-using shinobi, a gunslinger. |
 | **Starter campaign** | You picked Dragon Knight, which hands you a finished character to review. |
 
-Whichever you choose, the review screen lets you change anything before the story starts. If you are not sure which class does what in a fight, [CharacterArchetype](CharacterArchetype.md) sorts them into tank, striker, controller and support — tabletop shorthand to choose by, not a field the game asks you for.
+Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker or support role; class choice is what matters.
 
 ## How it actually runs
 

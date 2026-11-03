@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-11-02
+updated: 2026-11-03
 type: entity
 tags: [wa-system]
 sources: []

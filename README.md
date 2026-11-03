@@ -10,7 +10,7 @@ Dashboard  ──>  Step 1: Choose Your Campaign  ──>  Step 2: Ready to Laun
 
 1. **Open your dashboard**: sign in at [worldarchitect.ai](https://worldarchitect.ai) or the [iPhone/iPad beta on TestFlight](https://testflight.apple.com/join/WRc9S63q) (Continue with Google) to pick up a campaign or start a new one.
 2. **Fill in the 2-step wizard**:
-   - **Step 1 — Choose Your Campaign**: choose **Play a campaign** to build your own world and character. **Dragon Knight** is the optional ready-made quick start. On the custom path, fill in **Setting / World** — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, setting, and a plot "what-if".
+   - **Step 1 — Choose Your Campaign**: choose **Play a campaign** to build your own world and character. **Dragon Knight** is the optional ready-made quick start. On the custom path, fill in **Setting / World** — one-click suggestions for Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel and Dune, or type any setting you like — then era, protagonist, adventure setting, and a plot "what-if".
    - **Campaign description prompt**: the last section of step 1 (section 7 on the custom path) starts collapsed — click **Expand** to open it, then paste a full campaign bible, world lore, faction rules, or premise. A 70,000-character document has been tested and stored intact.
    - **Step 2 — Ready to Launch**: choose **AI generate portrait** or **Upload your own** for an optional avatar, edit anything on the summary card, and click **Enter the World**.
 3. **Play turn by turn**:
@@ -92,12 +92,12 @@ The case studies are illustrative, not normative. Any setting, any tone, any pow
 | System | What it covers |
 |---|---|
 | [Combat](concepts/Combat.md) | Initiative, turn order, action economy, AoE, conditions |
-| [Dice](concepts/Dice.md) + [DiceAuthenticity](concepts/DiceAuthenticity.md) + [DiceNotation](concepts/DiceNotation.md) + [DiceRollMechanics](concepts/DiceRollMechanics.md) | Who rolls and when, reading `1d20+5`, and why the GM can't fake a result |
+| [Dice](concepts/Dice.md) + [DiceAuthenticity](concepts/DiceAuthenticity.md) + [DiceNotation](concepts/DiceNotation.md) | Who rolls and when, reading `1d20+5`, and why the GM can't fake a result |
 | [Spellcasting](concepts/Spellcasting.md) | Spell slots, preparation, concentration |
 | [Healing](concepts/Healing.md) + [RestAndDeath](concepts/RestAndDeath.md) | HP recovery, short/long rest, death saves |
 | [LootAndRewards](concepts/LootAndRewards.md) + [Equipment](concepts/Equipment.md) | Treasure and XP, gear slots, what an item actually changes |
 | [LevelUp](concepts/LevelUp.md) + [LevelUpProgression](concepts/LevelUpProgression.md) + [ASI](concepts/ASI.md) + [Subclass](concepts/Subclass.md) | How leveling happens mid-scene and how to change what the AI picked, growth over a long campaign, the divine endgame past level 20, ability-score and subclass choices |
-| [CharacterCreation](concepts/CharacterCreation.md) + [CharacterArchetype](concepts/CharacterArchetype.md) + [AbilityScores](concepts/AbilityScores.md) + [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) | Building a character: letting the GM build it or doing it yourself, the tabletop shorthand for what a class does in a fight (the game never asks you to pick a party role), ability scores, advantage and disadvantage |
+| [CharacterCreation](concepts/CharacterCreation.md) + [AbilityScores](concepts/AbilityScores.md) + [AdvantageDisadvantage](concepts/AdvantageDisadvantage.md) | Building a character: letting the GM build it or doing it yourself, ability scores, advantage and disadvantage |
 | [CompanionArc](concepts/CompanionArc.md) + [CompanionPersonality](concepts/CompanionPersonality.md) + [NPCRelationships](concepts/NPCRelationships.md) | Companions and NPC reputation |
 | [FactionSystem](concepts/FactionSystem.md) + [FactionManagement](concepts/FactionManagement.md) + [FactionPower](concepts/FactionPower.md) | The faction minigame end-to-end |
 | [LivingWorld](concepts/LivingWorld.md) | The world keeps moving while you're somewhere else |
@@ -118,8 +118,6 @@ The case studies are illustrative, not normative. Any setting, any tone, any pow
 | [Daemon](entities/Daemon.md), [AegonTargaryen](entities/AegonTargaryen.md) | Character sketches from the House of the Dragon campaign template |
 | [FactionBattleSim](entities/FactionBattleSim.md) + [FactionIntel](entities/FactionIntel.md) | Faction minigame subsystems |
 | [GOD_MODE_RESPONSE](entities/GOD_MODE_RESPONSE.md) | What a God-mode turn sends back |
-| [CampaignWizard](entities/CampaignWizard.md) | One-screen summary of the campaign creation flow |
-| [WorldAI](entities/WorldAI.md) | Alias for the game's name |
 
 ### Comparisons
 

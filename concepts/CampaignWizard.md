@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-11-02
+updated: 2026-11-03
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -10,6 +10,8 @@ sources: []
 # Campaign Wizard
 
 Everything between "I want to play" and your first scene happens in two screens.
+
+In short: **Choose Your Campaign** is where you pick **Play a campaign** (build your own world) or **Dragon Knight Campaign** (a fixed starter module). **Ready to Launch** is where you add a portrait, edit the summary card, and start Scene 1. The rest of this page covers each field.
 
 ```
 Step 1: Choose Your Campaign  ──>  Step 2: Ready to Launch!  ──>  Scene 1: Character Review & Opening
@@ -132,4 +134,4 @@ Close the modal with its **×**, by clicking the dimmed backdrop, or by pressing
 - **Fix typos on Step 2.** Use the pencil buttons on the summary card instead of going back.
 - **Want to customise Dragon Knight?** Only the Title and the Step 2 avatar (Ser Arion's portrait loads by default, and you can replace it). Every other field is locked — start from **Play a campaign** and describe the world you want instead.
 
-See [CharacterCreation](CharacterCreation.md), [CampaignDesign](CampaignDesign.md), [GodModePrompting](GodModePrompting.md), and [How to Play](../queries/how-to-play-worldai.md). For the same flow on one screen, see [CampaignWizard](../entities/CampaignWizard.md).
+See [CharacterCreation](CharacterCreation.md), [CampaignDesign](CampaignDesign.md), [GodModePrompting](GodModePrompting.md), and [How to Play](../queries/how-to-play-worldai.md).
