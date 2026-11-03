@@ -1,7 +1,7 @@
 ---
 title: CharacterArchetype
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-glossary]
 sources: []
@@ -54,4 +54,4 @@ Healing, buffs, debuffs, and utility.
 
 Three classes appear twice in the lists above. Paladins tank and support. Rangers deal damage and control the battlefield. Warlocks do the same, leaning on a reliable damage cantrip alongside their control spells. If you want to cover two roles at once, start with one of those three.
 
-See [CharacterCreation](CharacterCreation.md) for how to build one, and [Subclass](Subclass.md) for what a subclass changes.
+See [CharacterCreation](../concepts/CharacterCreation.md) for how to build one, and [Subclass](../concepts/Subclass.md) for what a subclass changes.

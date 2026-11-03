@@ -11,6 +11,8 @@
 
 ## [2026-11-03] update | Remove retired AI providers and the /v1 proxy routes from setup and developer pages, and correct Spicy and starting-party wording.
 
+## [2026-11-03] archive | Archive four stub pages (CampaignWizard entity, WorldAI, DiceRollMechanics, CharacterArchetype) and refresh the index and README.
+
 ## [2026-11-02] update | Use the wizard's current field names across the concept, entity, query and README pages, fix the wizard screen titles in HowToPlay, note that God mode lets you make any scenario true and move world time when asked outright, and record the owner's standing merge authorization and proportional gates for wiki PRs in AGENTS.md.
 
 ## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay, and use the wizard's current field names in HowToPlay and CampaignWizard.

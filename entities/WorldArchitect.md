@@ -9,7 +9,7 @@ sources: []
 
 # WorldArchitect.AI
 
-WorldArchitect.AI is an AI Game Master for tabletop role-playing, built on D&D 5th Edition rules. You describe what your character does; it narrates what happens, tracks your character sheet, rolls the dice, and remembers the campaign. It runs in a browser at [worldarchitect.ai](https://worldarchitect.ai) — nothing to install — and every campaign is saved, so you can stop mid-scene and pick up next week from any device. Often shortened to [WorldAI](WorldAI.md).
+WorldArchitect.AI is an AI Game Master for tabletop role-playing, built on D&D 5th Edition rules. You describe what your character does; it narrates what happens, tracks your character sheet, rolls the dice, and remembers the campaign. It runs in a browser at [worldarchitect.ai](https://worldarchitect.ai) — nothing to install — and every campaign is saved, so you can stop mid-scene and pick up next week from any device. Often shortened to WorldAI.
 
 Playing is free. You sign in with Google and get 100 story turns a day (50 in any 5-hour window). God Mode turns and starting new campaigns draw on their own, much larger allowances, so fixing your sheet never costs you story turns. Supplying your own AI provider key raises all of these.
 
