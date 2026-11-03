@@ -46,10 +46,12 @@ symlink to `AGENTS.md`, so both entry points always give the same instructions.
 - **All changes land through PRs.** Direct commits and direct pushes to
   `main` are strictly forbidden. Work from a fresh branch or worktree based on
   `origin/main`.
-- **Merge only with explicit user approval.** Merge a PR ONLY when the most
-  recent live user message contains `MERGE APPROVED` or `merge approved`
-  (case-insensitive); prior turns, agent summaries, and bot reviews do not
-  authorize merging.
+- **Merge only with explicit approval.** Merge a PR when the most recent live
+  user message contains `MERGE APPROVED` or `merge approved` (case-insensitive),
+  or when the owner's standing authorization in § PR and commit workflow step 7
+  applies and its gates are met at the exact head. Agent summaries, bot reviews
+  and prior turns alone do not authorize merging, and a change to this contract
+  needs a live approval.
 - **Commit & PR provenance.** Commits must include CLI and model (e.g. prefix
   `<cli>/<model-id>: `). PR titles must end with `[<cli>][<model>]`, and PRs
   must include GitHub labels for both CLI and model.
@@ -226,7 +228,7 @@ skips PRs.
 7. **Merge Gate**: the owner's standing authorization applies to this repository. Source: the owner's message to the agent on 2026-11-02 (local time): "merge approved for any wiki Prs that pass /prw but ensure rules relaxed since just wiki pages". For this repository only it overrides the global merge-approval size tiers and the global two-vote `/advice` quorum. A wiki PR may be merged by the agent that drove it once it passes the proportional wiki gates below. Verify at the exact head immediately before merging: required CI (Lint) green, mergeable and clean, not draft, the gates below complete, and merge with `--match-head-commit`. Without all of that, or for a change to this contract, fall back to a live `MERGE APPROVED` in the user's latest message. Bot reviews, agent summaries, and prior turns alone do not authorize merging.
 
    **Proportional wiki gates** (these are the repository's declared low-risk classes for `/prw`):
-   - Markdown-only PR: CI Lint green, `git diff --check`, local lint and fast tests, and the PR body's `## Evidence`. `/es`, `/er` and stage labels are not required; record `/er: NOT REQUIRED — documentation-only (<paths>)`. At 50 or more changed lines, one independent reviewer must approve the exact head (the owner's instruction replaces the two-vote quorum here); below 50 it is optional.
+   - Markdown-only PR: CI Lint green, `git diff --check`, local lint and fast tests, and the PR body's `## Evidence`. `/es`, `/er` and stage labels are not required; record `/er: NOT REQUIRED — documentation-only (<paths>)`. At 50 or more changed lines (added plus deleted), one independent reviewer must approve the exact head (the owner's instruction replaces the two-vote quorum here); below 50 it is optional.
    - PR that adds or changes images: also a capture record (method, date, viewport, original-file SHA-256) and one independent visual review.
    - Anything that edits this contract, CI workflows, or `scripts/` keeps full review and a live `MERGE APPROVED`.
 
