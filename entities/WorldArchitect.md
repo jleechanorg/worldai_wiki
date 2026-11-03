@@ -1,7 +1,7 @@
 ---
 title: WorldArchitect
 created: 2026-06-19
-updated: 2026-11-02
+updated: 2026-11-03
 type: entity
 tags: [wa-game, wa-system]
 sources: []
@@ -9,7 +9,7 @@ sources: []
 
 # WorldArchitect.AI
 
-WorldArchitect.AI is an AI Game Master for tabletop role-playing, built on D&D 5th Edition rules. You describe what your character does; it narrates what happens, tracks your character sheet, rolls the dice, and remembers the campaign. It runs in a browser at [worldarchitect.ai](https://worldarchitect.ai) — nothing to install — and every campaign is saved, so you can stop mid-scene and pick up next week from any device. It is sometimes shortened to [WorldAI](WorldAI.md) — same game, no separate product.
+WorldArchitect.AI is an AI Game Master for tabletop role-playing, built on D&D 5th Edition rules. You describe what your character does; it narrates what happens, tracks your character sheet, rolls the dice, and remembers the campaign. It runs in a browser at [worldarchitect.ai](https://worldarchitect.ai) — nothing to install — and every campaign is saved, so you can stop mid-scene and pick up next week from any device. Often shortened to [WorldAI](WorldAI.md).
 
 Playing is free. You sign in with Google and get 100 story turns a day (50 in any 5-hour window). God Mode turns and starting new campaigns draw on their own, much larger allowances, so fixing your sheet never costs you story turns. Supplying your own AI provider key raises all of these.
 
@@ -21,7 +21,7 @@ Playing is free. You sign in with Google and get 100 story turns a day (50 in an
 - **A faction layer.** Run an organization rather than just a character: gather intel, fight rival factions, climb the power rankings, manage resources. See [FactionSystem](../concepts/FactionSystem.md).
 - **Three ways to type.** Three buttons sit under the message box, and they decide how your words are read. **Act** (the default) — what you type is what your character does, and the story advances. **Think** — you weigh options with the GM and no time passes. **God** — you edit the campaign directly. Everywhere this wiki says "God Mode", it means that third button.
 - **God Mode.** Your out-of-character channel. Use it to fix and steer the campaign — correct a stat the GM got wrong, add or remove an item, change where you are or how an NPC feels about you — and to leave standing rules that shape how the GM narrates from then on (tone, voice, point of view, themes, things to avoid). Those standing rules are called **directives**. God Mode never advances the story; it changes the campaign around it. See [GodMode](../concepts/GodMode.md).
-- **Your choice of AI.** On the Settings page you pick which AI writes your campaigns — Gemini (the default), OpenRouter, Cerebras, or a local gateway — and a specific model within it. The setting applies to all your campaigns and you can change it whenever you like.
+- **Your choice of AI.** On the Settings page you pick which AI writes your campaigns — Gemini (the default) or OpenRouter — and a specific model within it. The setting applies to all your campaigns and you can change it whenever you like.
 
 ## What it isn't
 
