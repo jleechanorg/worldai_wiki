@@ -1,13 +1,15 @@
 ---
 title: LevelUp
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: []
 ---
 
 # Level Up
+
+**Which page?** This page covers what a level gives you and how to review your choices. For how fast you level and play past level 20, see [LevelUpProgression](LevelUpProgression.md).
 
 When your XP total crosses a threshold, your character levels up on that same
 turn. Nothing interrupts the scene — the header shows the new level, a level-up

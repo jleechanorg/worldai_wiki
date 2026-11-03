@@ -1,7 +1,7 @@
 ---
 title: Initiative
 created: 2026-06-19
-updated: 2026-09-18
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-glossary]
 sources: []
@@ -13,7 +13,7 @@ The order in which combatants act in a fight.
 
 ## How it's determined
 
-When combat starts, every combatant rolls `1d20 + DEX modifier` and the order runs high to low. The game defines no tie-break, so when two combatants roll the same total the GM simply picks an order for them.
+When combat starts, every combatant rolls `1d20 + DEX modifier` and the order runs high to low. Ties are not spelled out in the rules, so when two combatants roll the same total the GM decides their order.
 
 The GM writes the full order into the story text at the start of each round, with everyone's roll in brackets. Your character sheet shows your initiative *modifier*, not your place in the order.
 
@@ -33,7 +33,7 @@ Your own turn ends only when you say "end turn", "done", or "pass" — see [Comb
 ## Player tips
 
 - **Initiative is random.** Even with high DEX you'll sometimes roll a 3. Plan an opening that survives going last.
-- **A better initiative modifier helps every fight**, not just this one — it's one of the things a DEX increase buys you. If you'd rather buy it outright, the Alert feat is worth +5 initiative and can be asked for at a level-up; see [ASI](ASI.md).
+- **A better initiative modifier helps every fight**, not just this one — it's one of the things a DEX increase buys you.
 - **Don't over-plan your pre-combat positioning.** You won't know the order until the dice land, and an enemy who beats you can move before you do.
 
 See [Combat](Combat.md), [CombatVictoryProtocol](CombatVictoryProtocol.md), [AbilityScores](AbilityScores.md).

@@ -1,7 +1,7 @@
 ---
 title: GodModeFAQ
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: query
 tags: [wa-faq, wa-prompt]
 sources: []
@@ -19,7 +19,7 @@ Short answers about God Mode and directives. The long versions live in [GodMode]
 
 **A**: Two ways, and they do the same thing:
 
-1. Pick the **God** pill under the message box (the placeholder becomes `Edit the world: stats, items, fixes…`), then type your request. Suggested options under **Your move** will remind you that tapping one switches back to Act and plays that choice.
+1. Pick the **God** pill under the message box (the placeholder becomes `God mode: edit stats, items, the world…`), then type your request. Suggested options under **Your move** will remind you that tapping one switches back to Act and plays that choice.
 2. Stay in Act mode and start the message with `GOD MODE:` — for example `GOD MODE: keep the tone grimdark`.
 
 ## Q: Does `GOD MODE:` have to be in capitals?

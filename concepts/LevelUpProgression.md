@@ -1,7 +1,7 @@
 ---
 title: LevelUpProgression
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic, wa-system]
 sources: [concepts/LevelUp.md]
@@ -9,9 +9,9 @@ sources: [concepts/LevelUp.md]
 
 # Level Up Progression
 
-How fast campaigns actually level, and what happens once you pass level 20.
+How fast campaigns actually level, and what happens once you pass level 20. **Which page?** What a level gives you is on [LevelUp](LevelUp.md).
 
-There is no pacing dial to set. Every campaign runs the standard XP rules, where leveling represents an earned milestone. If you want a different pace, the two levers are both GOD MODE commands: define your own XP thresholds (which then govern the rest of the campaign), or grant XP outright, e.g. `GOD MODE: give me 5000 XP`.
+There is no pacing dial to set. Every campaign runs the standard XP rules, where leveling represents an earned milestone. If you want a different pace, the three levers are: define your own XP thresholds with a GOD MODE command (which then govern the rest of the campaign), grant XP outright, e.g. `GOD MODE: give me 5000 XP`, or tell the GM to award a set percentage of the level's XP for each successful or failed check, capped at 35% of the band per turn.
 
 ## How fast you actually level
 

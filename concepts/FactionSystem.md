@@ -1,7 +1,7 @@
 ---
 title: FactionSystem
 created: 2026-06-19
-updated: 2026-10-21
+updated: 2026-11-03
 type: concept
 tags: [wa-system, wa-mechanic]
 sources: []
@@ -23,7 +23,21 @@ The GM starts offering it once your character actually commands troops: a sugges
 
 You do not pick starting stats. On enablement the game sorts the troops you already have into soldiers, spies and elites, then sizes your territory and treasury to the position your character has reached in the story — anywhere from **Fledgling** (a village band: 500–2,000 soldiers, 50–200 acres, a few forts) to **Dominant** (an empire: 100,000+ soldiers, 10,000+ acres, 500+ forts). Once on, it stays on unless you explicitly turn it off.
 
-Your account settings also have an **Enable Faction Minigame** switch under **Settings → Faction Management**. It governs whether the faction layer is available to your campaigns at all; it never switches faction mode on by itself, because every campaign starts with it off and you ask for it in play. Turning the account switch off later does not roll back a campaign you have already enabled — that campaign keeps its faction layer until you say, in that campaign, that you want it off.
+Your account settings also have an **Enable Faction Minigame** switch under **Settings → Faction Management**. If you switch it off, faction play is unavailable to your campaigns; it never switches faction mode on by itself, because every campaign starts with it off and you ask for it in play. Turning the account switch off later does not roll back a campaign you have already enabled — that campaign keeps its faction layer until you say, in that campaign, that you want it off.
+
+## Tutorial and rewards
+
+Once faction play is on and you command 1,000 troops, a short tutorial starts: build a structure, recruit, and take a combat action. Say `skip tutorial` to end it early. Significant military or diplomatic victories also earn your character XP.
+
+## Which faction page?
+
+| You want to... | Read |
+|---|---|
+| Run your faction: resources, units, orders | [FactionManagement](FactionManagement.md) |
+| Understand rank and the power score | [FactionPower](FactionPower.md) |
+| Preview how a battle might go | [FactionBattleSim](../entities/FactionBattleSim.md) |
+| Spy on a rival | [FactionIntel](../entities/FactionIntel.md) |
+| Quick answers | [FactionFAQ](../queries/FactionFAQ.md) |
 
 ## Two different things called "faction combat"
 

@@ -1,7 +1,7 @@
 ---
 title: Spellcasting
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: concept
 tags: [wa-mechanic]
 sources: []
@@ -24,6 +24,8 @@ expected, not a bug.
 You have a limited number of slots at each spell level, set by your class and
 level. A 5th-level Wizard, for instance, has four 1st-level slots, three
 2nd-level, and two 3rd-level.
+
+If you have no slots at the spell's level but do have a higher one, the GM asks before spending the higher slot, and the spell waits for your answer. With no slots left at all, the GM turns the cast down and explains why.
 
 A bigger slot can cast a smaller spell, and the spell gets stronger for it —
 this is **upcasting**. That same Wizard can spend a 3rd-level slot on Fireball,
