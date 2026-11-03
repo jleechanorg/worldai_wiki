@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-11-02] update | Use the wizard's current field names across the concept, entity, query and README pages, fix the wizard screen titles in HowToPlay, note that God mode lets you make any scenario true and move world time when asked outright, and record the owner's standing merge authorization and proportional gates for wiki PRs in AGENTS.md.
+
 ## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay, and use the wizard's current field names in HowToPlay and CampaignWizard.
 
 ## [2026-10-27] update | Refresh custom-campaign and portrait onboarding

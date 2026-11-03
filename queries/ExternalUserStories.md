@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-10-09
+updated: 2026-11-02
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -130,7 +130,7 @@ choice is remembered in the browser and synced through your account settings.
 **Getting started and finding things again.** Every new campaign goes through
 the same two-screen wizard — **Choose Your Campaign**, then **Ready to
 Launch!** — reached from the dashboard's **Play a campaign** button. The first
-screen collects your universe, era, character, setting, plot, and title; the
+screen collects your setting / world, era, character, adventure setting, plot, and title; the
 second shows you what you picked and hands you an **Enter the World** button.
 Your character is reviewed in the opening scene, after launch, not inside the
 wizard (see [CampaignWizard](../concepts/CampaignWizard.md)). Once you have a

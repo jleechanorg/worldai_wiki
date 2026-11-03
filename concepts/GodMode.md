@@ -1,7 +1,7 @@
 ---
 title: GodMode
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-02
 type: concept
 tags: [wa-system, wa-prompt]
 sources: []
@@ -34,14 +34,14 @@ Suggested story options under **Your move** always play in Act. If you have God 
 
 **Set directives.** Standing rules the GM follows in every later scene: "narrate in second person", "companions never fall more than one level behind me", "don't bring up the siege until I ask". Directives are the part players use most, and [GodModePrompting](GodModePrompting.md) is the guide to writing them.
 
-**Move the clock, if you ask outright.** "Set time to Day 10" works. Time never passes on its own during a God Mode turn, and the clock is never wound backwards to patch a continuity slip — those corrections are stored as directives or memories instead.
+**Move the clock, forwards or back, if you ask outright.** "Set time to Day 10" and "rewind to Day 3" both work. Time never passes on its own during a God Mode turn, and the clock is never wound backwards just to patch a continuity slip: those corrections are stored as directives or memories instead.
 
 ## What God Mode can't do
 
 - **Roll dice.** God Mode commands are absolute. No skill check, no attack roll, no saving throw.
 - **Resolve combat.** It will set your HP to 1 or to 200, but it will not fight the round for you.
 - **Advance the story.** No prose, no NPC dialogue, no new scene. Go back to Act mode for that.
-- **Rewind world time to fix a timeline.** Continuity fixes become directives or memories, not a clock change.
+- **Change the clock to fix a timeline on its own.** An explicit "rewind to…" works, but a continuity fix becomes a directive or memory, not a clock change.
 
 Everything above is absolute except directives. A directive steers how the GM writes future scenes, and the GM can still miss one.
 
