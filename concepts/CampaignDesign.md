@@ -13,7 +13,7 @@ This page is for building your **own** world in the wizard's custom path. If you
 
 The two things you write here:
 
-- **The God Mode header** — what you type into the Campaign Wizard's Setting / World, era, character, setting, plot, title and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
+- **The God Mode header** — what you type into the Campaign Wizard's Setting / World, era, character, adventure setting, plot, title and description fields. Stored together, it's the seed of the whole campaign: it makes scene 1 a Naruto campaign rather than generic fantasy. You set it once, at creation. Steps 1-6 below are about writing it.
 - **Directives** — standing rules you add later, *during* play, that change how the GM narrates. Step 7, and the full guide is [GodModePrompting](GodModePrompting.md).
 
 ## Why campaigns fall flat
