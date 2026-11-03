@@ -30,7 +30,7 @@ Your first 30 minutes with the game, step by step.
 
 **The short version:** sign in, click **Play a campaign**, choose the custom path, describe the world and character you want, add an optional portrait, and **Enter the World**. You do not need to know the rules before playing. **Dragon Knight Campaign** is the ready-made quick start if you want to skip designing a world.
 
-The Dragon Knight screenshots are real captures from a playthrough and show an earlier interface; the custom-world screenshot shows an example setup. Screenshots marked *current* show the present interface. Use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
+The Dragon Knight screenshots are real captures from a playthrough and show an earlier interface; the custom-world screenshot shows an example setup. The Game of Thrones screenshots show the present interface. Use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
@@ -93,7 +93,7 @@ Before launching, you can add an optional character portrait:
 
 You can skip this and add a portrait later by tapping the avatar slot in the game header. An existing portrait also offers **AI Portrait**, **Change Photo**, and **Remove**. See [the full portrait guide](../concepts/CampaignWizard.md#2-character-portrait-avatar).
 
-![Ready to Launch on mobile: AI generate portrait selected, a generated portrait, and the editable Character description](images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg)
+![Current mobile Ready to Launch: AI generate portrait selected, a generated portrait, and the editable Character description](images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg)
 
 ![Campaign Wizard — Step 2, Ready to Launch, scrolled down to the optional Character Avatar uploader and the Campaign Summary card. Padlocks mark the rows Dragon Knight fills in for you](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
 
@@ -113,7 +113,7 @@ On a custom campaign with no character, the GM instead offers three ways to buil
 
 For the Dragon Knight quick start, accept the pre-filled character with **Finish Character Creation and Start Game**, or edit it first.
 
-In a custom campaign the GM opens with a **Character Creation Review** for the character built from your description. Choose **Finish Character Creation and Start Game** to accept it, or **Edit Character** to change it first.
+In a custom campaign where your description already names a character, the GM opens with a **Character Creation Review** for the character built from your description. Choose **Finish Character Creation and Start Game** to accept it, or **Edit Character** to change it first.
 
 ![Current mobile Character Creation Review for a custom campaign: the review title, the choice already made, and the session summary that follows](images/how-to-play-worldai/step4-character-creation-review-mobile.png)
 
@@ -151,7 +151,7 @@ Some scenes also include an AI illustration. Below the story, **Your move** asks
 
 Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action. Below the choices, a dashed gold hint reminds you: *Something else? Write it in the box below.* (tapping it focuses the message box; typing or dismissing hides it).
 
-![Current mobile play screen: numbered suggestions under What do you do?, the Something else hint, and the Act / Think / God switch above the message box](images/how-to-play-worldai/step6-choices-act-think-god-mobile.png)
+![Current mobile play screen: numbered suggestions under What do you do?, the Something else hint, and the Act / Think / God switch below the message box](images/how-to-play-worldai/step6-choices-act-think-god-mobile.png)
 
 On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
@@ -247,4 +247,4 @@ The session is real. Every line of narration in the pictures was written by the 
 
 The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior.
 
-The seven mobile screenshots marked *current* were captured **2026-11-02** in a 430×932 browser viewport (shown at 2× resolution) from a custom Game of Thrones campaign. The two wizard screenshots show fields that were filled in but not submitted. The Character Creation Review, story, and choices screenshots show a played campaign at Scene 3. In the scene-illustration screenshot an unrelated row of developer buttons is cropped out, and the Act / Think / God screenshot stacks three crops of the message box, one per mode. The portrait screenshot is from an iPhone TestFlight session of the same campaign, captured 2026-10-31.
+The seven Game of Thrones screenshots were captured **2026-11-02** in a 430×932 browser viewport (shown at 2× resolution) from a custom campaign. The two wizard screenshots show fields that were filled in but not submitted. The Character Creation Review, story, and choices screenshots show a played campaign at Scene 3. The scene-illustration screenshot is cropped to the illustration and the choices, and the Act / Think / God screenshot stacks three crops of the message box, one per mode. The portrait screenshot is an iPhone capture of the same campaign from 2026-10-27.
