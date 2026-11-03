@@ -1,7 +1,7 @@
 ---
 title: Player Features Reference
 created: 2026-06-20
-updated: 2026-11-02
+updated: 2026-11-03
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -142,19 +142,14 @@ on screen, and each card carries its own **Edit** and **Duplicate** buttons.
 
 ## Settings and AI providers
 
-**Choose who runs your campaign.** Settings offers four providers as a radio
-group: Gemini, OpenRouter, Cerebras, and an OpenClaw Gateway you run yourself.
-Gemini, OpenRouter, and Cerebras each have their own model dropdown and their
-own API-key field; the OpenClaw Gateway instead asks for the port or URL of the
-gateway you run, plus an optional token. A switch takes effect on your next turn.
+**Choose who runs your campaign.** **Settings > AI Provider & Model** offers two
+providers as a radio group: Gemini (the default) and OpenRouter. Each has its own
+model dropdown and an optional field for your own API key. A switch takes effect
+on your next turn.
 
 **Your key is checked when you save it.** An empty or malformed key is rejected
 with a clear message, and a successful save confirms the masked key back to you.
 A bad key does not poison later turns — each turn re-validates.
-
-**Test Connection.** If you point the game at your own gateway, the Test
-Connection button on the settings page probes it and updates a status badge in
-place. A failure is reported inline; it does not block the page.
 
 **Restoring dismissed tips.** Settings includes a **Restore dismissed tips**
 button. If you previously dismissed the first-turn onboarding coach or the lower
@@ -169,11 +164,11 @@ the screen.
 **Spicy mode.** Open **⋯ More game actions** and choose **🌶️ Spicy**. Its own
 helper text describes it: "Enables Grok AI for uncensored content including detailed adult scenes. Slower but no content
 restrictions. Your previous model will be restored when disabled." It is off by
-default, and it is an account setting, so it stays where you left it in every
-campaign. You are never nagged about it: while it is off, an "Enable Spicy Mode"
-option appears among your suggested actions only when the scene itself has
-turned intimate, and an "Exit Spicy Mode" option appears the same way when
-such a scene winds down. Typing `enable spicy mode` or `disable spicy mode` in
+default, and it is an account setting, so it stays where you left it and applies
+to all your campaigns. While it is off, the GM may now and then add a short
+bracketed suggestion to turn it on, and an "Enable Spicy Mode" option can appear
+among your suggested actions when the scene itself has turned intimate; an "Exit
+Spicy Mode" option appears the same way when such a scene winds down. Typing `enable spicy mode` or `disable spicy mode` in
 the story box works as well as the toggle.
 
 ## What the game remembers

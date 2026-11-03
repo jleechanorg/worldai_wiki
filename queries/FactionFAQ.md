@@ -1,7 +1,7 @@
 ---
 title: FactionFAQ
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: query
 tags: [wa-faq, wa-system]
 sources: []
@@ -31,7 +31,7 @@ Your account also has an **Enable Faction Minigame** switch under **Settings →
 
 ## Q: Can I disable it later?
 
-**A**: Yes, but do it in the campaign. Once faction mode is on it stays on until you say in that campaign that you want it off. Flipping the account-wide switch in Settings is not the way to do it: it stops the layer being offered, but a campaign where you already enabled faction mode keeps it.
+**A**: Yes, but do it in the campaign. Once faction mode is on it stays on until you say in that campaign that you want it off. Flipping the account-wide switch in Settings is not the way to do it: while it is off, faction play is unavailable in every campaign, even ones that enabled it, and switching it back on brings the layer back.
 
 ## Q: How do I gain power?
 
@@ -39,7 +39,7 @@ Your account also has an **Enable Faction Minigame** switch under **Settings →
 
 ## Q: How does intel work?
 
-**A**: `deploy spies [target] [count]`. The operation lands on one of four tiers and gives you between nothing and +20% combat against that target for up to 8 turns. Afterwards that target is closed to your spies for a cooldown of 4 to 8 turns — longest after your best results, because the target is now alert. The target also rolls separately to catch you; if it does, your result drops a tier and three more turns go on the cooldown. See [FactionIntel](../entities/FactionIntel.md).
+**A**: `deploy spies [target] [count]`. The operation lands on one of four tiers and gives you between nothing and +20% combat against that target for up to 8 turns. Afterwards that target is closed to your spies for 12 strategic turns, whatever the result, and only `end turn` advances that clock. The target also rolls separately to catch you; if it does, your result drops a tier. See [FactionIntel](../entities/FactionIntel.md).
 
 ## Q: How do rankings work?
 

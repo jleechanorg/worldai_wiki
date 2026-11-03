@@ -1,7 +1,7 @@
 ---
 title: Developer API
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-11-03
 type: query
 tags: [wa-system, wa-glossary]
 ---
@@ -13,9 +13,7 @@ REST. Players don't need it — see
 [Player Features Reference](ExternalUserStories.md) instead.
 
 Two surfaces drive a campaign from code: the MCP endpoint and the campaign REST
-routes. The `/v1/*` routes look like the OpenAI API but do something else
-entirely; read [that section](#the-v1-routes-proxy-your-own-gateway) before you
-point an SDK at them.
+routes.
 
 ---
 
@@ -140,27 +138,6 @@ and concurrency details that production omits.
 
 `POST /api/client_diag` accepts buffered client-side page-load events. It is
 rate-limited and intended for debugging slow renders.
-
----
-
-## The `/v1/*` routes proxy your own gateway
-
-`POST /v1/chat/completions` and `GET /v1/models` are OpenAI-shaped, but they do
-not play a campaign. Both forward to the OpenClaw gateway URL saved in your
-settings and return that gateway's answer.
-
-- Save a gateway URL in Settings first. Without one, both routes return **400**
-  (`No gateway URL configured`); if the gateway is unreachable they return
-  **502**.
-- `POST /v1/chat/completions` returns the gateway's reply unchanged — JSON, or
-  server-sent events when you pass `stream: true`.
-- `GET /v1/models` returns your gateway's model ids, not a WorldArchitect
-  catalogue. They change whenever your gateway does, so do not treat them as
-  stable.
-- Both routes require authentication.
-
-To drive a campaign from code, use the MCP endpoint or the campaign REST routes
-above.
 
 ---
 
