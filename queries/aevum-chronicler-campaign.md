@@ -62,7 +62,7 @@ The bible below is the canonical engine. The AI Dungeon Master plays whatever yo
 
 ## 3. The Five Realms at a Glance
 
-The Aevum Compact is a five-realm federation loosely policing itself through the late king's royal line. On the night Halric dies, it fractures.
+The Aelorian Compact is a five-realm federation loosely policing itself through the late king's royal line. On the night Halric dies, it fractures.
 
 | Realm | Seat | Core Values | Taboo |
 |---|---|---|---|
@@ -72,7 +72,7 @@ The Aevum Compact is a five-realm federation loosely policing itself through the
 | **Al-Jamil** (South) | Zahar oasis | Contract integrity, right-hand use, poetry, refined bargaining | Public intimacy, breaking seals, left hand |
 | **Shattered Republic** (West) | Marble city-states | Rhetoric, debate, fine wine, public display of citizenship | Appearing uncultured, plebeian political speech |
 
-When you declare your origin or arrive in a new realm, the realm-specific tag-set activates. You are *not* free to choose one region's taboos in another's court.
+When you declare your origin or arrive in a new realm, that realm's etiquette and taboos apply. You are *not* free to choose one region's taboos in another's court.
 
 ## 4. The Rank Lattice (Open-Ended)
 
@@ -140,7 +140,7 @@ Your campaign's first session generates four hooks. The first session of *every 
 - **The Brother's Oath** — Halden swore an oath to a captain he shouldn't have. The captain is coming to collect.
 - **The Wren's Song** — a traveling bard knows your name. You don't know hers.
 
-A hook is *open* until the player pulls it. Pulling a hook closes it and opens two threads behind it. The campaign never ends.
+A hook is *open* until the player pulls it. The campaign never ends.
 
 ## 8. Customization — Make the Character Yours
 
@@ -163,9 +163,8 @@ The bible is a *system skeleton*; the AI plays whatever you declare.
 | The AI breaks character with rules clarifications | Rules explanations live in a `(GM: …)` block at the end of the message. Anything in the prose is narrative. |
 | The AI invents lore that contradicts the setup | Quote the contradicting fact and ask it to correct itself. You have authority to reject improvisation. |
 | The AI presents a "final verdict" or ending | The bible has no ending. Reply with `The campaign continues. What do you do or say?` |
-| The AI speaks gutter-speak to a noble on your behalf | The Deference Engine should catch this. If it doesn't, type `Deference Check — I am R0, not R6.` |
+| The AI lets you speak above your station without consequence | Remind it: `I am R0. Apply the Deference Engine to how I speak.` |
 | Field labels don't match the wizard | The wizard evolves. [CampaignWizard](../concepts/CampaignWizard.md) lists the current labels. |
-| The AI uses default World of Assiah instead of Aevum | Confirm fields 1 and 4 name Aevum, and that the full prompt went into field 7. |
 
 ## 10. Paste-Ready Master Engine Prompt
 
@@ -183,6 +182,7 @@ The campaign begins on the night Old King Halric of the Aelorian Compact dies, Y
 - **Absolute Immersion.** Never break character. Never output meta-apologies, internal reasoning, or rules headings. State calculations, deference checks, tag summing, and notepad updates are silent and hidden.
 - **HUD on State Change** — not every turn. Open a 5–8 line HUD block (Treasury / Power / Loyalty / Reputation + Active Tags + Last Decision) only when state changes. Suppress during god-mode cutscenes.
 - **In-Character Purity.** Mechanics, tags, numbers never appear in story prose. If the player asks for OOC rules clarification, place it in an isolated `(GM: ...)` block at the very end of the message.
+- **Living world.** Between player actions, companions and named NPCs take one small step toward their own goals. Track resources as tags on named assets (Domain, Retinue, Project, Privilege), not an inventory list. Keep a silent running notepad of state and compress it at chapter breaks. Open story hooks stay open until the player pulls them.
 - **Canon Authority.** The realms, ranks and pillars defined in this prompt are the source of truth. Never invent numbers or lore that contradict them or facts already established in play.
 
 ## 1. Authority & Override Matrix
