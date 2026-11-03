@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-10-27
+updated: 2026-11-02
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -32,11 +32,11 @@ Two cards, and **Play a campaign** is selected for you:
 - **Play a campaign** — the recommended path for your own story. Build a custom world, universe, and protagonist; a short idea is enough to start.
 - **Dragon Knight Campaign** — the optional quick start: written lore, a prebuilt hero, two companions, and a calibrated opening scene.
 
-> **What Dragon Knight locks.** Picking **Dragon Knight Campaign** makes it a fixed module: the Universe, Timeline and Plot fields disappear, and Character ("Ser Arion"), Setting and the Campaign description prompt are filled in for you and greyed out. The Title is pre-filled to "Dragon Knight" but you can still change it. Switch back to **Play a campaign** to edit the rest — anything you had already typed comes back.
+> **What Dragon Knight locks.** Picking **Dragon Knight Campaign** makes it a fixed module: the Setting / World, Timeline and Plot fields disappear, and Character ("Ser Arion"), Setting and the Campaign description prompt are filled in for you and greyed out. The Title is pre-filled to "Dragon Knight" but you can still change it. Switch back to **Play a campaign** to edit the rest — anything you had already typed comes back.
 
-### Universe and setting inputs (sections 1–6)
+### Setting and world inputs (sections 1–6)
 
-- **Favorite Universe / TV Show / IP**: Eight one-click suggestions (Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune), or type any other franchise or realm you like. These are text suggestions, not pre-built modules.
+- **Setting / World**: Eight one-click suggestions (Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune), or type any other franchise or realm you like. These are text suggestions, not pre-built modules.
 - **Timeline / Era (Optional)**: Anchor your story in a specific period (e.g. *Robert's Rebellion*, *The Clone Wars*, *Post-Cataclysm*).
 - **Favourite Character / Chosen Protagonist**: Your character's name and archetype, or leave blank for a randomly generated protagonist.
 - **Setting / world for your adventure**: A few lines on the physical, political, and magical environment.
@@ -45,7 +45,7 @@ Two cards, and **Play a campaign** is selected for you:
 
 ### Campaign description prompt (long-form world bible)
 
-This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. The heading and **Expand** button remain visible; the text box stays hidden until you open it. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Universe, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
+This is the **last** numbered section on Step 1 — section 7 on the **Play a campaign** path — and it starts collapsed, behind an **Expand** button. The heading and **Expand** button remain visible; the text box stays hidden until you open it. Open it and you get a large text box for pasting a whole campaign bible, premise, or set of house rules. (Pick Dragon Knight instead and the Setting / World, Timeline and Plot fields disappear, so the remaining sections renumber and this one arrives read-only.)
 
 - **Capacity**: a 70,118-character bible (~11,000–12,000 words, about 25 pages) has been tested end to end and stored intact. Length is almost never your constraint.
 - **What to paste here**: setting bibles (geography, factions, pantheons, magic systems); character backstory, lineage, equipment, psychology; custom rules, tone constraints, and god-mode style instructions.
@@ -91,7 +91,7 @@ You can add, replace, or remove it after launch. See [Your portrait in the game 
 ### 3. Campaign summary card & inline editing
 
 Check your configuration before launching:
-- Shows your Title, Character, Setting, and the first 50 characters of your Campaign description prompt. (Universe isn't repeated here.)
+- Shows your Title, Character, Setting, and the first 50 characters of your Campaign description prompt. (Setting / World isn't repeated here.)
 - Each row has a pencil button (**Edit title**, **Edit character**, **Edit setting**, **Edit description**) so you can fix a typo without going back to Step 1.
 - Editing is inline: click the field, click outside it to save, or press **Escape** to cancel.
 

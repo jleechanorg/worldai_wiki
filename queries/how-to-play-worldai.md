@@ -1,7 +1,7 @@
 ---
 title: HowToPlay
 created: 2026-06-19
-updated: 2026-10-27
+updated: 2026-11-02
 type: query
 tags: [wa-tutorial, wa-faq]
 sources: []
@@ -14,6 +14,14 @@ screenshots:
   - queries/images/how-to-play-worldai/step6-opening-scene-desktop.png
   - queries/images/how-to-play-worldai/step6-opening-scene-mobile.png
   - queries/images/how-to-play-worldai/step7-first-action-desktop.png
+  - queries/images/how-to-play-worldai/step3-custom-wizard-setting-mobile.png
+  - queries/images/how-to-play-worldai/step3-custom-wizard-plot-mobile.png
+  - queries/images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg
+  - queries/images/how-to-play-worldai/step6-choices-act-think-god-mobile.png
+  - queries/images/how-to-play-worldai/step6-scene-illustration-mobile.png
+  - queries/images/how-to-play-worldai/step4-character-creation-review-mobile.png
+  - queries/images/how-to-play-worldai/step5-narrative-hud-mobile.png
+  - queries/images/how-to-play-worldai/step6-modes-act-think-god-mobile.png
 ---
 
 # How to Play WorldArchitect.AI
@@ -22,7 +30,7 @@ Your first 30 minutes with the game, step by step.
 
 **The short version:** sign in, click **Play a campaign**, choose the custom path, describe the world and character you want, add an optional portrait, and **Enter the World**. You do not need to know the rules before playing. **Dragon Knight Campaign** is the ready-made quick start if you want to skip designing a world.
 
-The Dragon Knight screenshots are real captures from a playthrough; the custom-world screenshot shows an example setup. They show an earlier interface: use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
+The Dragon Knight screenshots are real captures from a playthrough and show an earlier interface; the custom-world screenshot shows an example setup. The Game of Thrones wizard and play screenshots show the present interface. Use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
@@ -45,17 +53,17 @@ From the dashboard, click the 📜 **Play a campaign** button in the top-right. 
 
 Screen one offers two cards:
 
-- **Play a campaign** — the custom path. You describe your own world: the Universe field takes anything you type (Naruto, Baldur's Gate 3, your own setting) and offers eight one-click suggestions, none of which come with pre-written lore.
+- **Play a campaign** — the custom path. You describe your own world: the **Setting / World** field takes anything you type (Naruto, Baldur's Gate 3, your own setting) and offers eight one-click suggestions, none of which come with pre-written lore.
 - **Dragon Knight Campaign** — the one ready-made module. Full lore, a pre-built hero (Ser Arion, level 1 Paladin), two companions, and a tuned opening scene.
 
 > **A naming trap:** the dashboard button you just clicked and the first card here are both called **Play a campaign**. They are not the same thing — the button opens the wizard, the card chooses the custom path.
 
 **Start with your own story:** keep **Play a campaign** selected. Choose a familiar universe or invent one, then fill in:
 
-1. **Universe** — an existing fictional world or your own idea.
+1. **Setting / World** — an existing fictional world or your own idea.
 2. **Timeline / Era** — when the story happens; optional.
-3. **Character / Protagonist** — who you want to play, or leave it blank for a generated protagonist.
-4. **Setting** — where you begin and what the world feels like.
+3. **Favourite Character / Chosen Protagonist** — who you want to play, or leave it blank for a generated protagonist.
+4. **Setting / world for your adventure** — where you begin and what the world feels like.
 5. **Plot / What-If Direction** — what you want to explore or change.
 6. **Campaign Title** — a name you will recognize on the dashboard.
 7. **Campaign description prompt** — open **Expand** for optional backstory, world lore, tone, or house rules. A few sentences work; a full world bible is optional.
@@ -63,6 +71,10 @@ Screen one offers two cards:
 For example: *A young courier in a floating city discovers that the royal mail contains memories stolen from its citizens. I want mystery, unlikely friendships, and choices that change the city.*
 
 ![Custom campaign fields and expanded description prompt, shown in an earlier interface](../assets/fresh_screenshots/02_wizard_step1_description_prompt.png)
+
+![Current mobile wizard: keep Play a campaign selected, then fill in Setting / World, Timeline / Era, and the character](images/how-to-play-worldai/step3-custom-wizard-setting-mobile.png)
+
+![Current mobile wizard, further down: protagonist, plot / what-if, and campaign title filled in, with Next at the bottom](images/how-to-play-worldai/step3-custom-wizard-plot-mobile.png)
 
 **Want a quick start instead?** Choose **Dragon Knight Campaign**. It fills in the world and Ser Arion's character for you. The screenshots below show that optional path.
 
@@ -81,6 +93,8 @@ Before launching, you can add an optional character portrait:
 
 You can skip this and add a portrait later by tapping the avatar slot in the game header. An existing portrait also offers **AI Portrait**, **Change Photo**, and **Remove**. See [the full portrait guide](../concepts/CampaignWizard.md#2-character-portrait-avatar).
 
+![Current mobile Ready to Launch: AI generate portrait selected, a generated portrait, and the editable Character description](images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg)
+
 ![Campaign Wizard — Step 2, Ready to Launch, scrolled down to the optional Character Avatar uploader and the Campaign Summary card. Padlocks mark the rows Dragon Knight fills in for you](images/how-to-play-worldai/step3-wizard-launch-desktop.png)
 
 Going custom instead? Write 1-3 sentences in the **Setting / world for your adventure** field, or open the **Campaign description prompt** (the last field, behind an **Expand** button) and paste a whole world bible — length is almost never your constraint. See [CampaignDesign](../concepts/CampaignDesign.md).
@@ -97,7 +111,11 @@ As on every turn, you can also ignore all three and type your own action instead
 
 On a custom campaign with no character, the GM instead offers three ways to build one: **AI Generated**, **Standard D&D** (step-by-step), or **Custom Class**.
 
-For the Dragon Knight quick start, accept the pre-filled character with **Finish Character Creation and Start Game**, or edit it first. In a custom campaign, review the character the GM creates for your premise and ask for changes before continuing.
+For the Dragon Knight quick start, accept the pre-filled character with **Finish Character Creation and Start Game**, or edit it first.
+
+In a custom campaign where your description already names a character, the GM opens with a **Character Creation Review** for the character built from your description. Choose **Finish Character Creation and Start Game** to accept it, or **Edit Character** to change it first.
+
+![Current mobile Character Creation Review for a custom campaign: the review title, the choice already made, and the session summary that follows](images/how-to-play-worldai/step4-character-creation-review-mobile.png)
 
 ![Character Creation Review — the GM presents Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. The three choices are Finish Character Creation and Start Game, Edit Character, and Custom Class, followed by the earlier interface's Custom Action row and a final "start the adventure" confirmation](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
 
@@ -119,9 +137,21 @@ It establishes:
 
 ![Opening Scene mobile — choice buttons stack vertically, narration scrolled](images/how-to-play-worldai/step6-opening-scene-mobile.png)
 
+### Read the story, then decide
+
+Every story turn is a scene to read first. The narrator describes what is happening, and then you decide what your character does next. A summary above it tracks your location, level, HP, XP, and gold, with **Equipment**, **Stats**, and **Spells** buttons beneath it.
+
+![Current mobile story view: session summary, resources, a reward, and the narrator's scene](images/how-to-play-worldai/step5-narrative-hud-mobile.png)
+
+Some scenes also include an AI illustration. Below the story, **Your move** asks what you do next.
+
+![Current mobile story view: a scene illustration followed by Your move and the first suggestions](images/how-to-play-worldai/step6-scene-illustration-mobile.png)
+
 ## Step 6 — Take your first action
 
 Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action. Below the choices, a dashed gold hint reminds you: *Something else? Write it in the box below.* (tapping it focuses the message box; typing or dismissing hides it).
+
+![Current mobile play screen: numbered suggestions under What do you do?, the Something else hint, and the Act / Think / God switch below the message box](images/how-to-play-worldai/step6-choices-act-think-god-mobile.png)
 
 On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
@@ -143,6 +173,8 @@ They decide how your words are read, and you'll use all three:
 | **Act** (default) | What your character does and says | Yes — the story advances |
 | **Think** | You talking strategy with the GM | No |
 | **God** | You editing the campaign as its administrator | No |
+
+![Current mobile message box in each mode: Act (speak or act as your character), Think (ask for advice, time paused), and God (edit stats, items, the world)](images/how-to-play-worldai/step6-modes-act-think-god-mobile.png)
 
 Leave it on **Act** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
 
@@ -213,4 +245,6 @@ The Dragon Knight playthrough screenshots in `images/how-to-play-worldai/` were 
 
 The session is real. Every line of narration in the pictures was written by the AI Game Master during play — nothing is mocked up, and the "Checking the rulebook..." overlay in the last screenshot is the genuine waiting state while the GM thinks.
 
-The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior. No new screenshot or native-app proof is claimed.
+The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior.
+
+The seven Game of Thrones screenshots were captured **2026-11-02** in a 430×932 browser viewport (shown at 2× resolution) from a custom campaign. The two wizard screenshots show fields that were filled in but not submitted. The Character Creation Review, story, and choices screenshots show a played campaign at Scene 3. The scene-illustration screenshot is a cropped capture, and the Act / Think / God screenshot stacks three crops of the message box, one per mode. The portrait screenshot is an iPhone capture of the same campaign from 2026-10-27.
