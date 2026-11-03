@@ -1,7 +1,7 @@
 ---
 title: PlayerUserStories
 created: 2026-06-19
-updated: 2026-10-09
+updated: 2026-11-03
 type: query
 tags: [wa-system, wa-tutorial]
 ---
@@ -252,10 +252,10 @@ You set the premise when you create the campaign and steer everything else in pl
 | US-065a | Three modes under the message box: Act, Think, and God. |
 | US-065 | Describe your campaign in plain English when you create it. |
 | US-066 | Standing directives that the GM has to keep following. |
-| US-067 | Say in your description whether you want a starting party, and the game builds one or leaves you alone. |
+| US-067 | The game builds a starting party by default; shape or remove it in your description or later. |
 | US-068 | Your own history, geography and factions replace the defaults — set them in the description box, then keep steering with directives. See [CampaignWizard](../concepts/CampaignWizard.md). |
 | US-069 | Hide the raw dice numbers and read a short outcome phrase instead — your own preference, and a campaign can start with it on. See [Dice](../concepts/Dice.md). |
-| US-069a | A mature-content switch in the game header. |
+| US-069a | A mature-content switch in the ⋯ More game actions menu. |
 | US-069b | Narrator acts as an objective sensory camera without moralizing metaphors. |
 
 ### US-065a: Choose How You're Speaking — Act, Think, or God
@@ -293,18 +293,18 @@ See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePro
 ### US-067: Starting Companions On or Off
 
 **As a** campaign creator,
-**I want** one switch that decides whether the game builds a complementary starting party for me,
+**I want** to decide whether I begin with a complementary starting party,
 **So that** I can begin alone or with a crew.
 
-The game picks who they are from your campaign description. To constrain them — classes, levels, temperament — say so in the description box or steer it later with a directive (US-066).
+The game builds a starting party by default, picking who they are from your campaign description. To shape them — classes, levels, temperament — or remove them, say so in the description box or steer it later with a directive (US-066).
 
 See [CompanionPersonality](../concepts/CompanionPersonality.md).
 
 ### US-069a: Mature Content Toggle
 
 **As a** player who wants adult scenes written rather than faded to black,
-**I want** a Spicy control in the **⋯ More game actions** menu that moves the campaign onto an uncensored model for as long as it is on,
-**So that** the tone of intimate and violent scenes is my choice, per campaign, and reversible.
+**I want** a Spicy control in the **⋯ More game actions** menu that moves your campaigns onto an uncensored model for as long as it is on,
+**So that** the tone of adult scenes is my choice, across all my campaigns, and reversible.
 
 It is slower while it is on, and turning it off restores the model you were using before.
 
