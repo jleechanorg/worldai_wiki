@@ -255,7 +255,7 @@ You set the premise when you create the campaign and steer everything else in pl
 | US-067 | The game builds a starting party by default; shape or remove it in your description or later. |
 | US-068 | Your own history, geography and factions replace the defaults — set them in the description box, then keep steering with directives. See [CampaignWizard](../concepts/CampaignWizard.md). |
 | US-069 | Hide the raw dice numbers and read a short outcome phrase instead — your own preference, and a campaign can start with it on. See [Dice](../concepts/Dice.md). |
-| US-069a | A mature-content switch in the game header. |
+| US-069a | A mature-content switch in the ⋯ More game actions menu. |
 | US-069b | Narrator acts as an objective sensory camera without moralizing metaphors. |
 
 ### US-065a: Choose How You're Speaking — Act, Think, or God
@@ -296,14 +296,14 @@ See [GodMode](../concepts/GodMode.md), [GodModePrompting](../concepts/GodModePro
 **I want** to decide whether I begin with a complementary starting party,
 **So that** I can begin alone or with a crew.
 
-The game builds a starting party by default; shape or remove it in your campaign description or later. It picks who they are from that description. To constrain them — classes, levels, temperament — say so in the description box or steer it later with a directive (US-066).
+The game builds a starting party by default, picking who they are from your campaign description. To shape them — classes, levels, temperament — or remove them, say so in the description box or steer it later with a directive (US-066).
 
 See [CompanionPersonality](../concepts/CompanionPersonality.md).
 
 ### US-069a: Mature Content Toggle
 
 **As a** player who wants adult scenes written rather than faded to black,
-**I want** a Spicy control in the **⋯ More game actions** menu that moves the campaign onto an uncensored model for as long as it is on,
+**I want** a Spicy control in the **⋯ More game actions** menu that moves your campaigns onto an uncensored model for as long as it is on,
 **So that** the tone of adult scenes is my choice, across all my campaigns, and reversible.
 
 It is slower while it is on, and turning it off restores the model you were using before.
