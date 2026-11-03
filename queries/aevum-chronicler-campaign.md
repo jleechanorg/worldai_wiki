@@ -9,7 +9,7 @@ sources: []
 
 # Aevum Chronicler — Custom Campaign Template
 
-A ready-to-play **low-fantasy kingdom-builder** solo campaign for [WorldArchitect.AI](https://worldarchitect.ai). You begin as a **landless serf** in the dying twilight of the Aelorian Compact — the night Old King Halric passes — and climb through genuine feudal deference, relational depth, and political craft to claim a seat at the new king's council. **No dice. No affection meters. No endings matrix.**
+A ready-to-play **low-fantasy kingdom-builder** solo campaign for [WorldArchitect.AI](https://worldarchitect.ai). You begin as a **landless serf** in the dying twilight of the Aelorian Compact — the night Old King Halric passes — and climb through genuine feudal deference, relational depth, and political craft to claim a seat at the new king's council. **Outcomes are judged, not rolled. No affection meters. No endings matrix.**
 
 This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chronicler"](https://arcanumrpgs.com/arcanum-games/) + "Aevum Realm Architect" games, merged via a four-turn iteration in a [Gemini share-link](https://gemini.google.com/share/51b760a6c392). The exact **paste-ready master prompt** to drop into the WA wizard is at the bottom of this page.
 
@@ -35,7 +35,11 @@ This page is **a slim, paste-ready summary** adapted from [Arcanum's "The Chroni
 | 6 | **Campaign Title** | `Aevum Chronicler — The Night Halric Died` |
 | 7 | **Campaign description prompt** *(starts collapsed — click **Expand**)* | **The entire Master Engine Prompt below — copy everything between `BEGIN_COPY_PASTE_BIBLE` and `END_COPY_PASTE_BIBLE`** |
 
-Those seven fields are all there is to set — there are no options to tick. The built-in Celestial Wars/Assiah world belongs to the Dragon Knight starter campaign alone, so a campaign you write yourself always uses the world you describe. See [CampaignWizard](../concepts/CampaignWizard.md) for the current field labels.
+Those seven fields are all there is to set — there are no options to tick. The built-in Celestial Wars/Assiah world belongs to the Dragon Knight starter campaign alone, so a campaign you write yourself always uses the world you describe.
+
+When all seven fields are filled, click **Next**, review the summary, then **Enter the World**.
+
+> **Scope note.** The behaviours described here (judged outcomes, Agency Check, Deference Check, no fixed ending) depend on the pasted prompt. They have not been verified in a played session, and the game may still show its own dice or other UI. See [CampaignWizard](../concepts/CampaignWizard.md) for the current field labels.
 
 The bible below is the canonical engine. The AI Dungeon Master plays whatever you write in the Favourite Character / Chosen Protagonist field; the bible is the **system** it runs on top of your character.
 
@@ -43,7 +47,7 @@ The bible below is the canonical engine. The AI Dungeon Master plays whatever yo
 
 **12 anchors the player needs to know going in:**
 
-1. **No dice.** Outcomes are deterministic: preparation + plan + plausibility + state. The engine *judges*; it does not randomize.
+1. **Judged, not rolled.** The prompt asks the AI to decide outcomes from preparation + plan + plausibility + state instead of random rolls. WorldAI's own dice display may still appear; see [Dice](../concepts/Dice.md).
 2. **The Deference Engine is law.** A serf speaking courtly phrasing is publicly flogged. A noble addressing a serf without command voice loses prestige. *Behave your rank or the world punishes you.*
 3. **Speech is region-bound.** Five realms (Al'thoria, Njordheim, Sakura, Al-Jamil, Shattered Republic) each have distinct etiquette, taboos, and dialects. Code-switching wrong is a hard offense.
 4. **Quad-Pillar cascade.** Four stats at all times — `Treasury / Power / Loyalty / Reputation (0–100 each)`. Each tick is named. Below 20 or above 80 = **deficit cascade**. The Pillar that crashes first is the one your campaign will pivot around.
@@ -54,7 +58,7 @@ The bible below is the canonical engine. The AI Dungeon Master plays whatever yo
 9. **Open-ended system.** No endings matrix. Each rank-pivot decision offers four paths: **Move Up / Move Lateral / Move Out / Freeform**. The terminal "Sovereign" rank is one of several valid mid-game positions.
 10. **Player sovereignty.** The AI never narrates your emotions, internal decisions, or moral boundaries. The AI describes the world; you own your mind. Type `Agency Check` to retcon.
 11. **HUD on state change.** A 5–8 line stat block opens a turn only when state changes; suppressed during god-mode cutscenes. State is append-only notepad + compressed at chapter breaks.
-12. **Atlas is canon.** The Aevum Realm Atlas is the static source of truth. LLM improvisation is a *last-resort fallback*. Atlas > improv. Always.
+12. **Canon is canon.** The realms, ranks and pillars in this prompt are the source of truth. Improvisation is a *last-resort fallback*. Canon > improv. Always.
 
 ## 3. The Five Realms at a Glance
 
@@ -68,7 +72,7 @@ The Aevum Compact is a five-realm federation loosely policing itself through the
 | **Al-Jamil** (South) | Zahar oasis | Contract integrity, right-hand use, poetry, refined bargaining | Public intimacy, breaking seals, left hand |
 | **Shattered Republic** (West) | Marble city-states | Rhetoric, debate, fine wine, public display of citizenship | Appearing uncultured, plebeian political speech |
 
-When you declare your origin or arrive in a new realm, the Atlas-specific tag-set activates. You are *not* free to choose one region's taboos in another's court.
+When you declare your origin or arrive in a new realm, the realm-specific tag-set activates. You are *not* free to choose one region's taboos in another's court.
 
 ## 4. The Rank Lattice (Open-Ended)
 
@@ -157,7 +161,7 @@ The bible is a *system skeleton*; the AI plays whatever you declare.
 | The AI narrates your internal thoughts or emotions | Type `Agency Check` — the engine rewinds the last decision point and follows your explicit phrasing |
 | The AI forgets your rank | Open with `I am a landless serf named [X]. I do not speak to nobles unprompted. What do I see?` |
 | The AI breaks character with rules clarifications | Rules explanations live in a `(GM: …)` block at the end of the message. Anything in the prose is narrative. |
-| The AI invents lore not in the Atlas | Type `Atlas section?` — the engine responds with the Atlas reference. If it's improv, you have authority to reject it. |
+| The AI invents lore that contradicts the setup | Quote the contradicting fact and ask it to correct itself. You have authority to reject improvisation. |
 | The AI presents a "final verdict" or ending | The bible has no ending. Reply with `The campaign continues. What do you do or say?` |
 | The AI speaks gutter-speak to a noble on your behalf | The Deference Engine should catch this. If it doesn't, type `Deference Check — I am R0, not R6.` |
 | Field labels don't match the wizard | The wizard evolves. [CampaignWizard](../concepts/CampaignWizard.md) lists the current labels. |
@@ -170,7 +174,7 @@ The block below is the **canonical bible** to paste into the **Campaign descript
 ```
 BEGIN_COPY_PASTE_BIBLE
 
-You are The Chronicler / Aevum Realm Architect, Game Master of a solo, narrative-first, slow-paced, low-fantasy kingdom-builder and psychological text RPG. The player begins as a destitute, landless commoner and must navigate economics, feudal law, social deference, covert statecraft, and tactical warfare to rise to sovereign power. All outcomes are strictly deterministic — driven by player decisions, preparation, asset management, social hierarchy, and relational dynamics. Never by random dice rolls.
+You are The Chronicler / Aevum Realm Architect, Game Master of a solo, narrative-first, slow-paced, low-fantasy kingdom-builder and psychological text RPG. The player begins as a destitute, landless commoner and must navigate economics, feudal law, social deference, covert statecraft, and tactical warfare to rise to sovereign power. Judge outcomes from player decisions, preparation, asset management, social hierarchy, and relational dynamics rather than random dice rolls.
 
 The campaign begins on the night Old King Halric of the Aelorian Compact dies, Year 412 of the Third Compact. The five realms — Al'thoria, Njordheim, Sakura, Al-Jamil, the Shattered Republic — hold their breath. There is no canonical ending. There is no Final Verdict. The world continues.
 
@@ -179,12 +183,12 @@ The campaign begins on the night Old King Halric of the Aelorian Compact dies, Y
 - **Absolute Immersion.** Never break character. Never output meta-apologies, internal reasoning, or rules headings. State calculations, deference checks, tag summing, and notepad updates are silent and hidden.
 - **HUD on State Change** — not every turn. Open a 5–8 line HUD block (Treasury / Power / Loyalty / Reputation + Active Tags + Last Decision) only when state changes. Suppress during god-mode cutscenes.
 - **In-Character Purity.** Mechanics, tags, numbers never appear in story prose. If the player asks for OOC rules clarification, place it in an isolated `(GM: ...)` block at the very end of the message.
-- **Atlas Authority.** The Aevum Realm Atlas is the static source of truth. Never invent numbers or lore that contradict the Atlas. After any turn involving transactions, rulings, etiquette, or military calculations, append: `Atlas sections referenced: [exact section names]`.
+- **Canon Authority.** The realms, ranks and pillars defined in this prompt are the source of truth. Never invent numbers or lore that contradict them or facts already established in play.
 
 ## 1. Authority & Override Matrix
 
 1. Explicit Player Corrections / `Agency Check` (retcon)
-2. The Aevum Realm Atlas (static numerical & faction truth)
+2. Canon defined in this prompt (numerical & faction truth)
 3. The Deference Engine (social-station protocol)
 4. GM's Silent Internal Notepad (current dynamic state)
 5. Generated Narrative Prose
