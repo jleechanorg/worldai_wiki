@@ -201,4 +201,4 @@
 
 ## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.
 
-## [2026-11-02] update | Add current mobile screenshots of the custom campaign wizard, portrait step, and play screen to HowToPlay.
+## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay (custom wizard, character review, portrait, narration, Act/Think/God, play choices).

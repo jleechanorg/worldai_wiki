@@ -19,6 +19,9 @@ screenshots:
   - queries/images/how-to-play-worldai/step3-avatar-portrait-mobile.jpg
   - queries/images/how-to-play-worldai/step6-choices-act-think-god-mobile.png
   - queries/images/how-to-play-worldai/step6-scene-illustration-mobile.png
+  - queries/images/how-to-play-worldai/step4-character-creation-review-mobile.png
+  - queries/images/how-to-play-worldai/step5-narrative-hud-mobile.png
+  - queries/images/how-to-play-worldai/step6-modes-act-think-god-mobile.png
 ---
 
 # How to Play WorldArchitect.AI
@@ -114,9 +117,15 @@ On a custom campaign with no character, the GM instead offers three ways to buil
 
 For the Dragon Knight quick start, accept the pre-filled character with **Finish Character Creation and Start Game**, or edit it first. In a custom campaign, review the character the GM creates for your premise and ask for changes before continuing.
 
+In a custom campaign the GM opens with a **Character Creation Review** for the character built from your description. Choose **Finish Character Creation and Start Game** to accept it, or **Edit Character** to change it first.
+
+![Current mobile Character Creation Review for a custom campaign: the review, the choice that was made, and the session summary that follows](images/how-to-play-worldai/step4-character-creation-review-mobile.png)
+
 ![Character Creation Review — the GM presents Ser Arion's build (STR 16, CON 14, CHA 16, Lvl 1 Paladin) before the narrative begins. The three choices are Finish Character Creation and Start Game, Edit Character, and Custom Class, followed by the earlier interface's Custom Action row and a final "start the adventure" confirmation](images/how-to-play-worldai/step4-character-creation-review-desktop.png)
 
 ## Step 5 — Read the opening scene
+
+Every turn is a scene to read first. Take in the narration, then decide what your character does next.
 
 The GM narrates the opening. For Dragon Knight that's **The King's Ribbon, Winter-Mourn Province** — a road on horseback through a frozen province. Under the story title, the structured HUD sub-line displays `SCENE 1 · THE KING'S RIBBON · 09:00`, anchoring the scene number, the location, and the in-game world time.
 
@@ -134,15 +143,21 @@ It establishes:
 
 ![Opening Scene mobile — choice buttons stack vertically, narration scrolled](images/how-to-play-worldai/step6-opening-scene-mobile.png)
 
+### Read the story, then decide
+
+In any campaign, the narrator describes what is happening. A summary above it tracks your location, level, HP, XP, and gold, with **Equipment**, **Stats**, and **Spells** buttons beneath it.
+
+![Current mobile story view: session summary, resources, a reward, and the narrator's scene](images/how-to-play-worldai/step5-narrative-hud-mobile.png)
+
+Some scenes also include an AI illustration. Below the story, **Your move** asks what you do next.
+
+![Current mobile story view: a scene illustration followed by Your move and the first suggestions](images/how-to-play-worldai/step6-scene-illustration-mobile.png)
+
 ## Step 6 — Take your first action
 
 Read down to **Your move** and **What do you do?** beneath the latest scene. Tap a numbered choice to play it immediately, or type your own in the message box and press **Send**. Tap the chevron beside a choice to reveal its details and any pros and cons inline; opening those details does not play the action. Below the choices, a dashed gold hint reminds you: *Something else? Write it in the box below.* (tapping it focuses the message box; typing or dismissing hides it).
 
 ![Current mobile play screen: numbered suggestions under What do you do?, the Something else hint, and the Act / Think / God switch above the message box](images/how-to-play-worldai/step6-choices-act-think-god-mobile.png)
-
-A scene can also include an AI illustration, with the next suggestions right below it.
-
-![Current mobile story view: a scene illustration followed by Your move and the first suggestions](images/how-to-play-worldai/step6-scene-illustration-mobile.png)
 
 On wide screens, **Show details** opens the choice details together and **Hide details** closes them. You can always use the message box instead of a suggested action. Examples:
 
@@ -164,6 +179,8 @@ They decide how your words are read, and you'll use all three:
 | **Act** (default) | What your character does and says | Yes — the story advances |
 | **Think** | You talking strategy with the GM | No |
 | **God** | You editing the campaign as its administrator | No |
+
+![Current mobile message box in each mode: Act (speak or act as your character), Think (ask for advice, time paused), and God (edit stats, items, the world)](images/how-to-play-worldai/step6-modes-act-think-god-mobile.png)
 
 Leave it on **Act** for now. **God** is where you fix a wrong stat or change how the GM writes — see [GodModePrompting](../concepts/GodModePrompting.md).
 
@@ -236,4 +253,4 @@ The session is real. Every line of narration in the pictures was written by the 
 
 The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior. No new screenshot or native-app proof is claimed.
 
-The five mobile screenshots marked *current* were captured **2026-11-02** at 430×932 (shown at 2× resolution) from a custom Game of Thrones campaign; the wizard fields were filled in but not submitted. The portrait capture is from an iPhone TestFlight session of the same campaign.
+The seven mobile screenshots marked *current* were captured **2026-11-02** at 430×932 (shown at 2× resolution) from a custom Game of Thrones campaign; the wizard fields were filled in but not submitted. The portrait capture is from an iPhone TestFlight session of the same campaign.
