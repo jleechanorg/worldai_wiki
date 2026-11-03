@@ -77,7 +77,7 @@ This is a per-account setting: turn it on once and it applies to every campaign 
 - **Your modifier is the reliable part.** As it grows, the die decides less and less of the outcome.
 - **Advantage beats a small flat bonus.** Keeping the higher of two d20 lifts your average result from 10.5 to about 13.8, and against a middling target number it swings your chance of success as far as a +5 would. It does not stack — one source of advantage is the same as three — and any disadvantage cancels it out completely. See [AdvantageDisadvantage](AdvantageDisadvantage.md).
 
-See [DiceRollMechanics](DiceRollMechanics.md), [DiceAuthenticity](DiceAuthenticity.md), [DiceNotation](DiceNotation.md), [DiceFAQ](../queries/DiceFAQ.md), [AbilityScores](AbilityScores.md).
+See [DiceRollMechanics (archived)](../_archive/DiceRollMechanics.md), [DiceAuthenticity](DiceAuthenticity.md), [DiceNotation](DiceNotation.md), [DiceFAQ](../queries/DiceFAQ.md), [AbilityScores](AbilityScores.md).
 
 ## Sources
 
