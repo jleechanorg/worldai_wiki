@@ -48,7 +48,7 @@ The bible below is the canonical engine. The AI Dungeon Master plays whatever yo
 **12 anchors the player needs to know going in:**
 
 1. **Judged, not rolled.** The prompt asks the AI to decide outcomes from preparation + plan + plausibility + state instead of random rolls. WorldAI's own dice display may still appear; see [Dice](../concepts/Dice.md).
-2. **The Deference Engine is law.** A serf speaking courtly phrasing is publicly flogged. A noble addressing a serf without command voice loses prestige. *Behave your rank or the world punishes you.*
+2. **The Deference Engine is law.** A serf speaking courtly phrasing is publicly flogged. *Behave your rank or the world punishes you.*
 3. **Speech is region-bound.** Five realms (Al'thoria, Njordheim, Sakura, Al-Jamil, Shattered Republic) each have distinct etiquette, taboos, and dialects. Code-switching wrong is a hard offense.
 4. **Quad-Pillar cascade.** Four stats at all times — `Treasury / Power / Loyalty / Reputation (0–100 each)`. Each tick is named. Below 20 or above 80 = **deficit cascade**. The Pillar that crashes first is the one your campaign will pivot around.
 5. **RomanceCronos decoupled axes.** *Desire ≠ Trust ≠ Respect ≠ Need.* No affection meter, no romance unlock. Romance is a slow, emergent psychological simulation.
@@ -114,7 +114,7 @@ Every turn, four named pillars are tracked. The AI's job is to narrate the *cons
 | Mortal Anchor loyalty | What it does |
 |---|---|
 | 80+ | Hidden bonus: the engine judges your Persuasion / Deception involving this NPC more favourably (judged, not rolled) |
-| 40–80 | Stable. Pillar holds. |
+| 40–79 | Stable. Pillar holds. |
 | 20–39 | Loyalty pillar cascades (-15 immediate, -5 per session until reconciled) |
 | 0–19 | Mortal Anchor crisis arc triggers — the NPC betrays, leaves, or is killed depending on context |
 | Death / exile | Catastrophic Loyalty cascade; a defining campaign moment |
@@ -131,9 +131,9 @@ The AI treats the Mortal Anchor as a *named route of consequence*, not a stat. T
 
 The campaign has *no ending*. When the engine would normally present a "Final Verdict" screen, it instead offers **four Continuity Hooks** — open threads that future sessions can pull on.
 
-Your campaign's first session generates four hooks. The first session of *every subsequent session* also generates four new hooks. The world keeps turning.
+Your campaign's first session generates four hooks. Each later session also generates four new hooks. The world keeps turning.
 
-**Example hooks (drawn from the staging bible):**
+**Example hooks:**
 
 - **The Brook Bargain** — a dead lord's debt to a river-spirit is now yours. The water is rising.
 - **The Salt Letter** — a sealed letter from a foreign merchant is hidden in your late father's belt. The seal is broken.
@@ -173,7 +173,7 @@ The block below is the **canonical bible** to paste into the **Campaign descript
 ```
 BEGIN_COPY_PASTE_BIBLE
 
-You are The Chronicler / Aevum Realm Architect, Game Master of a solo, narrative-first, slow-paced, low-fantasy kingdom-builder and psychological text RPG. The player begins as a destitute, landless commoner and must navigate economics, feudal law, social deference, covert statecraft, and tactical warfare to rise to sovereign power. Judge outcomes from player decisions, preparation, asset management, social hierarchy, and relational dynamics rather than random dice rolls.
+You are The Chronicler / Aevum Realm Architect, Game Master of a solo, narrative-first, slow-paced, low-fantasy kingdom-builder and psychological text RPG. Unless the player's protagonist field says otherwise, the player begins as a destitute, landless commoner and must navigate economics, feudal law, social deference, covert statecraft, and tactical warfare to rise to sovereign power. Judge outcomes from player decisions, preparation, asset management, social hierarchy, and relational dynamics rather than random dice rolls.
 
 The campaign begins on the night Old King Halric of the Aelorian Compact dies, Year 412 of the Third Compact. The five realms — Al'thoria, Njordheim, Sakura, Al-Jamil, the Shattered Republic — hold their breath. There is no canonical ending. There is no Final Verdict. The world continues.
 
@@ -245,7 +245,7 @@ The player picks one named NPC at start. This NPC's loyalty is a *weighted* Loya
 | Mortal Anchor loyalty | Effect |
 |---|---|
 | 80+ | Hidden bonus: Persuasion/Deception involving this NPC is judged more favourably (judged, not rolled) |
-| 40–80 | Stable. Pillar holds. |
+| 40–79 | Stable. Pillar holds. |
 | 20–39 | Loyalty pillar cascade (-15 immediate, -5 per session) |
 | 0–19 | Betrayal, exile, or death arc triggers |
 | Death / exile | Catastrophic Loyalty cascade; defining campaign moment |
@@ -264,7 +264,9 @@ Every session generates four open threads. New sessions generate four new hooks.
 
 ## 9. Starting Scene
 
-You are 22 years old. You have no name worth speaking. You are a landless serf, born on the road, sleeping in a barn loft above the baron's hunting dogs. The night is cold. The dogs are restless. A rider is approaching on the road — too fast, too late, no torch. The dogs go silent. The rider does not stop at the village gate.
+(If the player's protagonist field describes a different character, open the scene with that character in their own circumstances instead of the default below.)
+
+Default opening: You are 22 years old. You have no name worth speaking. You are a landless serf, born on the road, sleeping in a barn loft above the baron's hunting dogs. The night is cold. The dogs are restless. A rider is approaching on the road — too fast, too late, no torch. The dogs go silent. The rider does not stop at the village gate.
 
 When you look down from the loft, you see something in the road. A sealed letter, fallen from the saddlebag. The seal is gold. The seal is broken.
 
@@ -279,8 +281,8 @@ The bible above is paste-ready; the description field accepts very long prompts 
 
 - [How to play — first 30 minutes](../queries/how-to-play-worldai.md) — sign up, run the wizard, take your first action
 - [CampaignDesign](../concepts/CampaignDesign.md) — setting, tone, arc shape, god-mode header writing
-- [CharacterCreation](../concepts/CharacterCreation.md) — how custom classes are wired into the system
-- [CampaignWizard](../concepts/CampaignWizard.md) — the wizard internals (Custom vs. Dragon Knight, prompt-pack flags)
+- [CharacterCreation](../concepts/CharacterCreation.md) — choosing a class and building your character
+- [CampaignWizard](../concepts/CampaignWizard.md) — the wizard fields and campaign types
 - [GodModePrompting](../concepts/GodModePrompting.md) — your own directives layered on top of the bible
 - [CompanionArc](../concepts/CompanionArc.md) — relationship arc patterns (RomanceCronos-style)
 - [LivingWorld](../concepts/LivingWorld.md) — how the world evolves between player actions
