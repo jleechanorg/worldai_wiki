@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay (custom wizard, character review, portrait, narration, Act/Think/God, play choices).
+
 ## [2026-10-27] update | Refresh custom-campaign and portrait onboarding
 - Refresh the campaign wizard, first-session walkthrough, and quick-start summaries with a custom-campaign-first walkthrough, an illustrated setup example, TestFlight access, AI portrait generation, image uploads, portrait changes after launch, and rolling story-turn allowances.
 
@@ -200,5 +202,3 @@
 ## [2026-10-21] update | Mark faction management as work in progress on its overview and management pages.
 
 ## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.
-
-## [2026-11-02] update | Add current mobile screenshots and a read-the-story-then-decide section to HowToPlay (custom wizard, character review, portrait, narration, Act/Think/God, play choices).

@@ -53,17 +53,17 @@ From the dashboard, click the 📜 **Play a campaign** button in the top-right. 
 
 Screen one offers two cards:
 
-- **Play a campaign** — the custom path. You describe your own world: the Universe field takes anything you type (Naruto, Baldur's Gate 3, your own setting) and offers eight one-click suggestions, none of which come with pre-written lore.
+- **Play a campaign** — the custom path. You describe your own world: the **Setting / World** field takes anything you type (Naruto, Baldur's Gate 3, your own setting) and offers eight one-click suggestions, none of which come with pre-written lore.
 - **Dragon Knight Campaign** — the one ready-made module. Full lore, a pre-built hero (Ser Arion, level 1 Paladin), two companions, and a tuned opening scene.
 
 > **A naming trap:** the dashboard button you just clicked and the first card here are both called **Play a campaign**. They are not the same thing — the button opens the wizard, the card chooses the custom path.
 
 **Start with your own story:** keep **Play a campaign** selected. Choose a familiar universe or invent one, then fill in:
 
-1. **Universe** — an existing fictional world or your own idea.
+1. **Setting / World** — an existing fictional world or your own idea.
 2. **Timeline / Era** — when the story happens; optional.
-3. **Character / Protagonist** — who you want to play, or leave it blank for a generated protagonist.
-4. **Setting** — where you begin and what the world feels like.
+3. **Favourite Character / Chosen Protagonist** — who you want to play, or leave it blank for a generated protagonist.
+4. **Setting / world for your adventure** — where you begin and what the world feels like.
 5. **Plot / What-If Direction** — what you want to explore or change.
 6. **Campaign Title** — a name you will recognize on the dashboard.
 7. **Campaign description prompt** — open **Expand** for optional backstory, world lore, tone, or house rules. A few sentences work; a full world bible is optional.
