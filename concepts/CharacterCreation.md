@@ -18,7 +18,7 @@ Every campaign starts by building the character you'll play. There are three way
 | **Custom Class** | You want a class D&D 5e doesn't have — a Sith Blade, a chakra-using shinobi, a gunslinger. |
 | **Starter campaign** | You picked Dragon Knight, which hands you a finished character to review. |
 
-Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker or support role; class choice is what matters.
+Whichever you choose, the review screen lets you change anything before the story starts. The game never asks you to pick a tank, striker, controller or support role; class choice is what matters.
 
 ## How it actually runs
 
