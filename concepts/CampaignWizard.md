@@ -1,7 +1,7 @@
 ---
 title: CampaignWizard
 created: 2026-06-19
-updated: 2026-10-27
+updated: 2026-11-02
 type: concept
 tags: [wa-system, wa-campaign, wa-tutorial]
 sources: []
@@ -34,7 +34,7 @@ Two cards, and **Play a campaign** is selected for you:
 
 > **What Dragon Knight locks.** Picking **Dragon Knight Campaign** makes it a fixed module: the Setting / World, Timeline and Plot fields disappear, and Character ("Ser Arion"), Setting and the Campaign description prompt are filled in for you and greyed out. The Title is pre-filled to "Dragon Knight" but you can still change it. Switch back to **Play a campaign** to edit the rest — anything you had already typed comes back.
 
-### Universe and setting inputs (sections 1–6)
+### Setting and world inputs (sections 1–6)
 
 - **Setting / World**: Eight one-click suggestions (Game of Thrones, Star Wars, Cyberpunk, The Witcher, Middle-earth, Stranger Things, Marvel, Dune), or type any other franchise or realm you like. These are text suggestions, not pre-built modules.
 - **Timeline / Era (Optional)**: Anchor your story in a specific period (e.g. *Robert's Rebellion*, *The Clone Wars*, *Post-Cataclysm*).
@@ -91,7 +91,7 @@ You can add, replace, or remove it after launch. See [Your portrait in the game 
 ### 3. Campaign summary card & inline editing
 
 Check your configuration before launching:
-- Shows your Title, Character, Setting, and the first 50 characters of your Campaign description prompt. (Universe isn't repeated here.)
+- Shows your Title, Character, Setting, and the first 50 characters of your Campaign description prompt. (Setting / World isn't repeated here.)
 - Each row has a pencil button (**Edit title**, **Edit character**, **Edit setting**, **Edit description**) so you can fix a typo without going back to Step 1.
 - Editing is inline: click the field, click outside it to save, or press **Escape** to cancel.
 

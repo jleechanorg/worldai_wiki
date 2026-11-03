@@ -30,7 +30,7 @@ Your first 30 minutes with the game, step by step.
 
 **The short version:** sign in, click **Play a campaign**, choose the custom path, describe the world and character you want, add an optional portrait, and **Enter the World**. You do not need to know the rules before playing. **Dragon Knight Campaign** is the ready-made quick start if you want to skip designing a world.
 
-The Dragon Knight screenshots are real captures from a playthrough and show an earlier interface; the custom-world screenshot shows an example setup. The Game of Thrones screenshots show the present interface. Use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
+The Dragon Knight screenshots are real captures from a playthrough and show an earlier interface; the custom-world screenshot shows an example setup. The Game of Thrones wizard and play screenshots show the present interface. Use the written steps for the current labels and controls. See [Screenshot provenance](#screenshot-provenance) for dates and viewports.
 
 ## Before you start
 
@@ -247,4 +247,4 @@ The session is real. Every line of narration in the pictures was written by the 
 
 The custom-world setup image reused from the wiki's existing screenshot assets shows an earlier interface. Its capture date is not established here; it illustrates the fields, not current portrait behavior.
 
-The seven Game of Thrones screenshots were captured **2026-11-02** in a 430×932 browser viewport (shown at 2× resolution) from a custom campaign. The two wizard screenshots show fields that were filled in but not submitted. The Character Creation Review, story, and choices screenshots show a played campaign at Scene 3. The scene-illustration screenshot is cropped to the illustration and the choices, and the Act / Think / God screenshot stacks three crops of the message box, one per mode. The portrait screenshot is an iPhone capture of the same campaign from 2026-10-27.
+The seven Game of Thrones screenshots were captured **2026-11-02** in a 430×932 browser viewport (shown at 2× resolution) from a custom campaign. The two wizard screenshots show fields that were filled in but not submitted. The Character Creation Review, story, and choices screenshots show a played campaign at Scene 3. The scene-illustration screenshot is a cropped capture, and the Act / Think / God screenshot stacks three crops of the message box, one per mode. The portrait screenshot is an iPhone capture of the same campaign from 2026-10-27.
