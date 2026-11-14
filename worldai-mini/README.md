@@ -41,6 +41,8 @@ The page at `/frontend_v1/mini-recovery.html` can link and recover Mini campaign
 
 These are client-side Firebase web settings, not a service-account private key. Authentication tokens and service credentials must remain private. If any setting is missing, the page's configuration endpoint returns 503. Review Firebase security rules, permissions, allowed domains, and recovery behavior before exposing your deployment.
 
+After recovering a campaign, save the new private capability and select **I saved my new private capability**. Until you confirm it, normal removal of recovery links is blocked. If a response is lost, keep recovery enabled and recover the campaign again. You can still explicitly remove recovery without confirming, but the page warns that doing so may permanently lose access.
+
 ## Tests and verification limits
 
 ```sh

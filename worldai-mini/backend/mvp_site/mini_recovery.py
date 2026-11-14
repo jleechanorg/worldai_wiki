@@ -88,6 +88,9 @@ def recover_session(store, clock, uid, session_id):
         # Expiring old envelope revokes it without deleting campaigns or receipts.
         revoked = {"expires_at": now.isoformat(), "recovered": True}
         entry["digest"] = new_digest
+        # Keep account recovery available until the player confirms possession
+        # of the new key, even if the response is lost or the page is closed.
+        entry["confirmation_pending"] = True
         tx.set(state.SESSIONS_COLLECTION, old_digest, revoked)
         tx.set(state.SESSIONS_COLLECTION, new_digest, doc)
         tx.set(OWNERS, owner_key, owner)
@@ -101,12 +104,19 @@ def recover_session(store, clock, uid, session_id):
     return store.transaction(commit)
 
 
-def remove_recovery(store, _clock, uid):
+def remove_recovery(store, _clock, uid, *, discard_unconfirmed=False):
     """Forget consented email/index; do not delete campaigns or revoke play keys."""
+    if not isinstance(discard_unconfirmed, bool):
+        raise ValueError("Invalid discard confirmation")
     owner_key = _owner_key(uid)
 
     def commit(tx):
         owner = tx.get(OWNERS, owner_key) or {"sessions": {}}
+        if not discard_unconfirmed and any(
+            entry.get("confirmation_pending") is True
+            for entry in owner["sessions"].values()
+        ):
+            raise state.MiniError("RECOVERY_CONFIRMATION_REQUIRED")
         # Read every envelope before queueing writes for Firestore transactions.
         documents = [
             (entry["digest"], tx.get(state.SESSIONS_COLLECTION, entry["digest"]))
@@ -204,13 +214,26 @@ def register_routes(app, store_factory, clock=None, claims_verifier=verified_cla
             "link": {"session_key", "consent"},
             "recover": {"session_id"},
         }
-        if action not in allowed or set(body) != allowed[action]:
+        if action not in allowed:
+            return jsonify({"error": "INVALID_ARGUMENT"}), 400
+        if action == "remove":
+            if set(body) not in (set(), {"discard_unconfirmed"}) or (
+                "discard_unconfirmed" in body
+                and body["discard_unconfirmed"] is not True
+            ):
+                return jsonify({"error": "INVALID_ARGUMENT"}), 400
+        elif set(body) != allowed[action]:
             return jsonify({"error": "INVALID_ARGUMENT"}), 400
         try:
             if action == "list":
                 result = {"sessions": list_sessions(store, clock, claims["uid"])}
             elif action == "remove":
-                result = remove_recovery(store, clock, claims["uid"])
+                result = remove_recovery(
+                    store,
+                    clock,
+                    claims["uid"],
+                    discard_unconfirmed=body.get("discard_unconfirmed", False),
+                )
             elif action == "link":
                 if body["consent"] is not True:
                     raise ValueError("Consent required")
@@ -232,7 +255,11 @@ def register_routes(app, store_factory, clock=None, claims_verifier=verified_cla
             return response
         except state.SessionUnavailable:
             return jsonify({"error": "SESSION_UNAVAILABLE"}), 404
-        except (state.MiniError, ValueError, TypeError):
+        except state.MiniError as exc:
+            if exc.code == "RECOVERY_CONFIRMATION_REQUIRED":
+                return jsonify({"error": exc.code}), 409
+            return jsonify({"error": "REQUEST_REJECTED"}), 400
+        except (ValueError, TypeError):
             return jsonify({"error": "REQUEST_REJECTED"}), 400
         except Exception:
             return jsonify({"error": "SERVICE_UNAVAILABLE"}), 503
