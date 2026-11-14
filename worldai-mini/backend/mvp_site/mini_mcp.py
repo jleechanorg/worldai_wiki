@@ -22,14 +22,21 @@ from mvp_site.schemas.validation import load_schema
 
 VERSIONS = ("2025-03-26", "2025-06-18", "2025-11-25")
 ORIGINS = frozenset(
-    ("https://chatgpt.com", "https://chat.openai.com", "https://worldarchitect.ai", "https://worldrpg.ai")
+    (
+        "https://chatgpt.com",
+        "https://chat.openai.com",
+        "https://worldarchitect.ai",
+        "https://worldrpg.ai",
+    )
 )
 LOG = logging.getLogger(__name__)
+
 
 def mini_icons():
     """Use an optional deployment-owned icon rather than a hosted dependency."""
     url = os.getenv("MINI_ICON_URL", "")
     return [{"src": url, "mimeType": "image/png", "sizes": ["192x192"]}] if url else []
+
 
 MINI_DISCOVERY_INSTRUCTIONS = (
     "Before new play or resume, call mini_get_playbook for the matching topic. "
@@ -195,9 +202,12 @@ def safe_error(exc):
 
 
 def emit(event):
-    # Standalone deployments use their logging platform rather than WorldAI's
-    # BigQuery-specific sink. Event fields remain bounded metadata, never prose.
-    LOG.info("mini_request_outcome", extra={"json_fields": {"mini": event}})
+    # Event fields remain bounded operational metadata, never player prose.
+    LOG.info(
+        "mini_request_outcome %s",
+        json.dumps(event, sort_keys=True, separators=(",", ":")),
+        extra={"json_fields": {"mini": event}},
+    )
 
 
 def readiness(store):
@@ -432,7 +442,8 @@ def register_routes(app, store_factory, clock=None, telemetry=emit):  # noqa: PL
                             "protocolVersion": version,
                             "capabilities": {"tools": {}},
                             "serverInfo": {
-                                "name": "worldai-mini", "version": "1",
+                                "name": "worldai-mini",
+                                "version": "1",
                                 "title": "WorldAI mini",
                                 "icons": mini_icons(),
                             },

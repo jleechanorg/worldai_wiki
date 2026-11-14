@@ -23,7 +23,7 @@ export GOOGLE_CLOUD_PROJECT="<your-firebase-project-id>"
 gunicorn --bind 127.0.0.1:8080 server:app
 ```
 
-The standalone backend writes bounded operational metadata to its standard logger; it does not include the full application’s BigQuery logging integration. Configure your own log collection.
+The standalone backend writes bounded operational metadata to standard error. Configure your own log collection.
 
 The service fails closed until Firestore document `mini_runtime_control/default` has `enabled: true`. Create that document deliberately in your own Firebase project before serving traffic. The server maintains rate-limit and session documents; configure Firestore retention and TTL policies for its `ttl_at` fields, appropriate access controls, backups, and cost limits. This setup uses a real external database; it is not an offline database.
 

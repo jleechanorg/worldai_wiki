@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 from datetime import UTC, datetime
 
@@ -139,6 +140,13 @@ def verified_claims():
     return claims
 
 
+def _parse_json_body(raw_body):
+    try:
+        return json.loads(raw_body)
+    except (ValueError, RecursionError):
+        return None
+
+
 def register_routes(app, store_factory, clock=None, claims_verifier=verified_claims):
     clock = clock or (lambda: datetime.now(UTC))
 
@@ -184,9 +192,10 @@ def register_routes(app, store_factory, clock=None, claims_verifier=verified_cla
             return jsonify({"error": "INVALID_ARGUMENT"}), 413
         if request.mimetype != "application/json":
             return jsonify({"error": "INVALID_ARGUMENT"}), 415
-        if len(request.get_data(cache=True)) > 4096:
+        raw_body = request.stream.read(4097)
+        if len(raw_body) > 4096:
             return jsonify({"error": "INVALID_ARGUMENT"}), 413
-        body = request.get_json(silent=True)
+        body = _parse_json_body(raw_body)
         if not isinstance(body, dict):
             return jsonify({"error": "INVALID_ARGUMENT"}), 400
         allowed = {

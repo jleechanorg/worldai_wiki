@@ -47,12 +47,33 @@ test('a recovery button remains usable after a completed recovery',async()=>{
  await button.onclick();const after=s.fetches;await button.onclick();
  assert.equal(s.fetches,after+1,'a fresh confirmed action must not be blocked by an old request generation');
 });
-test('an interrupted recovery does not leave the button disabled for the same account',async()=>{
+test('refresh cannot supersede an in-flight recovery',async()=>{
  const s=setup();await s.els.get('refresh').onclick();
  const button=s.els.get('campaigns').children[0].children[1];s.defer();
- const recovery=button.onclick();await s.waiting();
- const refresh=s.els.get('refresh').onclick();await s.waiting(2);
+ const recovery=button.onclick();await s.waiting();const afterStart=s.fetches;
+ await s.els.get('refresh').onclick();assert.equal(s.fetches,afterStart);
  s.resolve({session_key:'PRIVATE_BEARER',revision:7},0);await recovery;
- assert.equal(button.disabled,false,'same-account button must not remain disabled');
- s.resolve({sessions:[]},1);await refresh;
+ assert.equal(button.disabled,false,'button is re-enabled after recovery');
+ assert.equal(s.els.get('result').hidden,false);
+});
+test('recovery cannot be superseded by removing recovery links',async()=>{
+ const s=setup();await s.els.get('refresh').onclick();
+ const button=s.els.get('campaigns').children[0].children[1];s.defer();
+ const recovery=button.onclick();await s.waiting();const afterStart=s.fetches;
+ const removal=s.els.get('remove').onclick();await tick();
+ const removalStarted=s.fetches>afterStart;
+ s.resolve({session_key:'NEW_SYNTHETIC_KEY',revision:7},0);
+ if(removalStarted){await s.waiting(2);s.resolve({},1);}await removal;await recovery;
+ assert.equal(removalStarted,false,'removal must not start during recovery');
+ assert.equal(s.els.get('result').hidden,false);
+ assert.match(s.els.get('result').textContent,/NEW_SYNTHETIC_KEY/);
+});
+test('recovery cannot start while link removal is in flight',async()=>{
+ const s=setup();await s.els.get('refresh').onclick();
+ const button=s.els.get('campaigns').children[0].children[1];s.defer();
+ const removal=s.els.get('remove').onclick();await s.waiting();const afterStart=s.fetches;
+ const recovery=button.onclick();await tick();const recoveryStarted=s.fetches>afterStart;
+ s.resolve({},0);if(recoveryStarted){await s.waiting(2);s.resolve({session_key:'NEW_SYNTHETIC_KEY',revision:7},1);}
+ await removal;await recovery;
+ assert.equal(recoveryStarted,false,'recovery must not start during removal');
 });

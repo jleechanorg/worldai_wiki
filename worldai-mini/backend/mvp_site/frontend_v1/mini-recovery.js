@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const result = document.getElementById('result');
   let authGeneration = 0;
   let requestGeneration = 0;
+  let recoveryPending = false;
+  let removalPending = false;
+  const blockedByMutation = () => {
+    if (!recoveryPending && !removalPending) return false;
+    status.textContent = 'Wait for recovery or link removal to finish before starting another action.';
+    return true;
+  };
   const current = context => context.authGeneration === authGeneration &&
     context.requestGeneration === requestGeneration &&
     firebase.auth().currentUser === context.user;
@@ -36,8 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = document.createElement('span'); title.textContent = session.title || session.session_id;
       const button = document.createElement('button'); button.textContent = 'Recover new private capability';
       button.onclick = async () => {
-        if (context.authGeneration !== authGeneration || firebase.auth().currentUser !== context.user) return;
+        if (context.authGeneration !== authGeneration || firebase.auth().currentUser !== context.user || blockedByMutation()) return;
         if (!window.confirm('Invalidate the old capability and issue a new one? Other chats using the old capability will stop working.')) return;
+        recoveryPending = true;
         const recovery = begin();
         button.disabled = true;
         try {
@@ -46,13 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
           result.hidden = false; result.textContent = 'Keep private. New resume capability:\n' + recovered.session_key + '\nSaved revision: ' + recovered.revision;
           status.textContent = 'Recovered. Old capability invalidated; story unchanged.';
         } catch (_) { showError(recovery); }
-        finally { if (context.authGeneration === authGeneration && firebase.auth().currentUser === context.user) button.disabled = false; }
+        finally { recoveryPending = false; if (context.authGeneration === authGeneration && firebase.auth().currentUser === context.user) button.disabled = false; }
       };
       li.append(title, button); root.append(li);
     }
     status.textContent = data.sessions.length ? 'Linked campaigns loaded.' : 'No linked campaigns for this verified account.';
   }
   document.getElementById('signin').onclick = async () => {
+    if (blockedByMutation()) return;
     const context = begin();
     try { await firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()); } catch (_) { showError(context); }
   };
@@ -62,23 +71,27 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('account').textContent = user && user.emailVerified ? 'Signed in with verified account: ' + user.email : 'Sign in with a verified email account to link or recover.';
   });
   document.getElementById('signout').onclick = () => {
+    if (blockedByMutation()) return;
     authGeneration++;
     const context = begin();
     result.hidden = true; result.textContent = ''; document.getElementById('campaigns').replaceChildren();
     return firebase.auth().signOut().catch(() => showError(context));
   };
   document.getElementById('remove').onclick = async () => {
+    if (blockedByMutation()) return;
     if (!window.confirm('Remove your recovery email and all linked campaigns? Keep your private capability first. Campaigns and current capabilities are not deleted or changed.')) return;
+    removalPending = true;
     const context = begin();
     try {
       await call(context, 'remove', {}); check(context);
       result.hidden = true; result.textContent = ''; document.getElementById('campaigns').replaceChildren(); document.getElementById('consent').checked = false;
       status.textContent = 'Recovery email and links removed. Keep your private capability to continue anonymous play.';
     } catch (_) { showError(context); }
+    finally { removalPending = false; }
   };
-  document.getElementById('refresh').onclick = () => { const context = begin(); return list(context).catch(() => showError(context)); };
+  document.getElementById('refresh').onclick = () => { if (blockedByMutation()) return; const context = begin(); return list(context).catch(() => showError(context)); };
   document.getElementById('link').onsubmit = async event => {
-    event.preventDefault(); const field = document.getElementById('capability'); const context = begin();
+    event.preventDefault(); if (blockedByMutation()) return; const field = document.getElementById('capability'); const context = begin();
     try { await call(context, 'link', { session_key: field.value, consent: document.getElementById('consent').checked }); check(context); field.value = ''; await list(context); }
     catch (_) { showError(context); }
   };

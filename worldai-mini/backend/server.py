@@ -1,12 +1,21 @@
 """Standalone Flask entry point for the Mini MCP and recovery routes."""
 
 import json
+import logging
 import os
 from pathlib import Path
 
 from flask import Flask, Response, abort, jsonify, send_from_directory
 
 from mvp_site.mini_mcp import register_routes
+
+# Make bounded Mini events visible on standard error even when the host's root
+# logger defaults to WARNING.
+mini_logger = logging.getLogger("mvp_site.mini_mcp")
+if not mini_logger.handlers:
+    mini_logger.addHandler(logging.StreamHandler())
+mini_logger.setLevel(logging.INFO)
+mini_logger.propagate = False
 
 
 def firestore_store():
