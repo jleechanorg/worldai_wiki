@@ -1,0 +1,1 @@
+Return the caller's subject, appearance, setting, composition, style and avoid fields unchanged as description_parts. Join only those supplied parts into an inspectable brief. This tool generates no image and calls no provider. Fetch an existing stable character profile before preparing a new brief; do not infer from GM notes.

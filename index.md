@@ -5,6 +5,8 @@
 
 ## Start here
 
+- [WorldAI Mini source](worldai-mini/README.md) — Client and standalone MCP backend for Mini adventures.
+
 - [What is WorldArchitect.AI?](entities/WorldArchitect.md)
 - [How to play](queries/how-to-play-worldai.md)
 - [How to design a campaign](concepts/CampaignDesign.md)

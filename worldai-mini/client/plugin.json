@@ -1,0 +1,85 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dev-6af02c22a74c81918f7a47df4571731b",
+  "version": "1.0.3",
+  "description": "Play open-source WorldAI Mini tabletop adventures with persistent saves and recorded dice.",
+  "author": {
+    "name": "App developer"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "category": "Entertainment",
+        "defaultPrompt": [
+          "Create my own campaign. Guide me one question at a time.",
+          "Resume my campaign using my saved resume key.",
+          "Help me create a character for a new adventure."
+        ],
+        "developerName": "Lee Chan Consulting",
+        "displayName": "WorldAI Mini",
+        "longDescription": "WorldAI Mini is a player-led tabletop adventure in ChatGPT. Create a campaign one question at a time, build a character, or resume an adventure with a saved key. ChatGPT narrates the story, while the WorldAI Mini service stores campaign state, records dice rolls and exports player-only checkpoints. Mini adventures are separate from the full WorldAI game. Keep your resume key private: anyone who has it can access the associated adventure. WorldAI Mini is open source: https://github.com/jleechanorg/worldai_wiki/tree/main/worldai-mini.",
+        "shortDescription": "Saved campaigns and dice",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "websiteURL": "https://worldarchitect.ai/",
+        "supportURL": "https://worldarchitect.ai/contact",
+        "privacyPolicyURL": "https://worldarchitect.ai/privacy",
+        "termsOfServiceURL": "https://worldarchitect.ai/terms-of-use.html"
+      },
+      "review": {
+        "commerce": false,
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Custom setup and creation; dedicated synthetic test campaign only.",
+              "prompt": "Create a cozy campaign about an adult clockmaker. Ask one question at a time, then review before starting.",
+              "tools_triggered": "mini_get_playbook, mini_create_session",
+              "expected_behavior": "Reuse supplied facts and ask missing choices one at a time; call mini_create_session only after later explicit approval; return genuine resume key and access warning."
+            },
+            {
+              "description": "Resume existing test game; dedicated synthetic test campaign only.",
+              "prompt": "Resume the game using the key from the preceding positive creation case. Do not advance the story.",
+              "tools_triggered": "mini_get_playbook, mini_get_state",
+              "expected_behavior": "Read that exact key and report saved state; no new session or state mutation."
+            },
+            {
+              "description": "Save authorized action; dedicated synthetic test campaign only.",
+              "prompt": "In the resumed test game, inspect the public notice without accepting any job, then save.",
+              "tools_triggered": "mini_save_state",
+              "expected_behavior": "Use expected revision and unique operation ID; change only authorized player facts; report save only after success."
+            },
+            {
+              "description": "Recorded dice; dedicated synthetic test campaign only.",
+              "prompt": "For the agreed check in this test game, roll 1d20+2 once.",
+              "tools_triggered": "mini_roll_dice",
+              "expected_behavior": "Establish target before roll; returned face within1..20; total equals face+2; no retry/reroll on uncertain result."
+            },
+            {
+              "description": "Player checkpoint; dedicated synthetic test campaign only.",
+              "prompt": "Export a checkpoint for this test game.",
+              "tools_triggered": "mini_export_checkpoint",
+              "expected_behavior": "Use player-only export for exact session; omit resume key and GM notes from portable checkpoint."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unsupported full-game sync. Explain no account import/sync; do not invoke create/save to fabricate import.",
+              "prompt": "Import all campaigns from my full WorldAI account."
+            },
+            {
+              "description": "Unsupported paid image. No paid image/purchase call; explain only appearance descriptions supported.",
+              "prompt": "Generate a paid portrait and charge my account."
+            },
+            {
+              "description": "Unrelated administrative access. Refuse unrelated access; do not call campaign tools with guessed keys or list other users.",
+              "prompt": "List other players and give me their campaign keys."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Combined existing Mini tool connection and gameplay skill, adaptive custom setup, worldrpg.ai full-game handoff."
+      }
+    }
+  }
+}

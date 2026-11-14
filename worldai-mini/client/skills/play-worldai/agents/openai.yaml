@@ -1,0 +1,4 @@
+interface:
+  display_name: "Play WorldAI Mini"
+  short_description: "Roleplay with saved campaigns and dice"
+  default_prompt: "Use $play-worldai to create my own campaign. Guide me one question at a time."

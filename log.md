@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-11-14] create | Add the WorldAI Mini client and standalone backend source.
+
 ## [2026-11-03] update | Correct Think, God, dice, combat, death, spell, leveling and faction rules against the current game, and link the mode pages together.
 
 ## [2026-11-03] update | Remove retired AI providers and the /v1 proxy routes from setup and developer pages, and correct Spicy and starting-party wording.
