@@ -32,7 +32,19 @@ def link_session(store, clock, uid, email, session_key):
             raise state.MiniError("INVALID_ARGUMENT")
         sessions = owner["sessions"]
         if doc["session_id"] not in sessions and len(sessions) >= MAX_LINKS:
-            raise state.MiniError("CAPACITY_EXCEEDED")
+            # Only reclaim expired/missing index entries. Read all records before
+            # writing so Firestore transactions retain their read-before-write rule.
+            expired = []
+            for session_id, entry in sessions.items():
+                linked = tx.get(state.SESSIONS_COLLECTION, entry["digest"])
+                try:
+                    state.require_live(linked, now)
+                except state.SessionUnavailable:
+                    expired.append(session_id)
+            for session_id in expired:
+                del sessions[session_id]
+            if len(sessions) >= MAX_LINKS:
+                raise state.MiniError("CAPACITY_EXCEEDED")
         sessions[doc["session_id"]] = {
             "digest": digest,
             "title": doc.get("title"),

@@ -41,3 +41,18 @@ test('newer request supersedes older body parse without auth change',async()=>{
  assert.match(s.els.get('status').textContent,/removed/);
  void older;
 });
+test('a recovery button remains usable after a completed recovery',async()=>{
+ const s=setup();await s.els.get('refresh').onclick();
+ const button=s.els.get('campaigns').children[0].children[1];
+ await button.onclick();const after=s.fetches;await button.onclick();
+ assert.equal(s.fetches,after+1,'a fresh confirmed action must not be blocked by an old request generation');
+});
+test('an interrupted recovery does not leave the button disabled for the same account',async()=>{
+ const s=setup();await s.els.get('refresh').onclick();
+ const button=s.els.get('campaigns').children[0].children[1];s.defer();
+ const recovery=button.onclick();await s.waiting();
+ const refresh=s.els.get('refresh').onclick();await s.waiting(2);
+ s.resolve({session_key:'PRIVATE_BEARER',revision:7},0);await recovery;
+ assert.equal(button.disabled,false,'same-account button must not remain disabled');
+ s.resolve({sessions:[]},1);await refresh;
+});

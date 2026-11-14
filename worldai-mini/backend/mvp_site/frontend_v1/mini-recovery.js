@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = document.createElement('span'); title.textContent = session.title || session.session_id;
       const button = document.createElement('button'); button.textContent = 'Recover new private capability';
       button.onclick = async () => {
-        if (!current(context)) return;
+        if (context.authGeneration !== authGeneration || firebase.auth().currentUser !== context.user) return;
         if (!window.confirm('Invalidate the old capability and issue a new one? Other chats using the old capability will stop working.')) return;
         const recovery = begin();
         button.disabled = true;
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           result.hidden = false; result.textContent = 'Keep private. New resume capability:\n' + recovered.session_key + '\nSaved revision: ' + recovered.revision;
           status.textContent = 'Recovered. Old capability invalidated; story unchanged.';
         } catch (_) { showError(recovery); }
-        finally { if (current(recovery)) button.disabled = false; }
+        finally { if (context.authGeneration === authGeneration && firebase.auth().currentUser === context.user) button.disabled = false; }
       };
       li.append(title, button); root.append(li);
     }
