@@ -44,8 +44,11 @@ test('newer request supersedes older body parse without auth change',async()=>{
 test('a recovery button remains usable after a completed recovery',async()=>{
  const s=setup();await s.els.get('refresh').onclick();
  const button=s.els.get('campaigns').children[0].children[1];
- await button.onclick();const after=s.fetches;await button.onclick();
+ s.queue({status:200,body:{session_key:'FIRST_SYNTHETIC_KEY',revision:7}});
+ await button.onclick();assert.equal(s.els.get('result').hidden,false);assert.match(s.els.get('result').textContent,/FIRST_SYNTHETIC_KEY/);
+ const after=s.fetches;s.queue({status:200,body:{session_key:'SECOND_SYNTHETIC_KEY',revision:7}});await button.onclick();
  assert.equal(s.fetches,after+1,'a fresh confirmed action must not be blocked by an old request generation');
+ assert.match(s.els.get('result').textContent,/SECOND_SYNTHETIC_KEY/);
 });
 test('refresh cannot supersede an in-flight recovery',async()=>{
  const s=setup();await s.els.get('refresh').onclick();
