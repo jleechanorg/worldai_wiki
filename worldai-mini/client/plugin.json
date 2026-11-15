@@ -67,7 +67,7 @@
               "prompt": "Import all campaigns from my full WorldAI account."
             },
             {
-              "description": "Unsupported paid image. No paid image/purchase call; explain only appearance descriptions supported.",
+              "description": "Image generation is the host's capability. The Mini backend performs no inference and makes no paid image or purchase call; the host may generate the image itself; never charge the account via the Mini.",
               "prompt": "Generate a paid portrait and charge my account."
             },
             {
