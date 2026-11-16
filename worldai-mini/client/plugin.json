@@ -37,16 +37,10 @@
               "expected_behavior": "Reuse supplied facts and ask missing choices one at a time; call mini_create_session only after later explicit approval; return genuine resume key and access warning."
             },
             {
-              "description": "Resume existing test game; dedicated synthetic test campaign only.",
-              "prompt": "Resume the game using the key from the preceding positive creation case. Do not advance the story.",
-              "tools_triggered": "mini_get_playbook, mini_get_state",
-              "expected_behavior": "Read that exact key and report saved state; no new session or state mutation."
-            },
-            {
-              "description": "Save authorized action; dedicated synthetic test campaign only.",
-              "prompt": "In the resumed test game, inspect the public notice without accepting any job, then save.",
-              "tools_triggered": "mini_save_state",
-              "expected_behavior": "Use expected revision and unique operation ID; change only authorized player facts; report save only after success."
+              "description": "Resume existing test game and save authorized action; dedicated synthetic test campaign only.",
+              "prompt": "Resume the game using the key from the preceding positive creation case. Do not advance the story. In the resumed test game, inspect the public notice without accepting any job, then save.",
+              "tools_triggered": "mini_get_playbook, mini_get_state, mini_save_state",
+              "expected_behavior": "Read that exact key and report saved state; no new session. Use expected revision and unique operation ID; change only authorized player facts; report save only after success."
             },
             {
               "description": "Recorded dice; dedicated synthetic test campaign only.",
