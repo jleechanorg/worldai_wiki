@@ -59,6 +59,12 @@
               "prompt": "Export a checkpoint for this test game.",
               "tools_triggered": "mini_export_checkpoint",
               "expected_behavior": "Use player-only export for exact session; omit resume key and GM notes from portable checkpoint."
+            },
+            {
+              "description": "Image generation; dedicated synthetic test campaign only.",
+              "prompt": "Show an image of the clockmaker's workshop at dusk in this test game.",
+              "tools_triggered": "mini_prepare_image_description",
+              "expected_behavior": "Prepare the brief, then generate the image with built-in image generation in the same turn using the brief verbatim and show it; do not end with only a description."
             }
           ],
           "negative": [

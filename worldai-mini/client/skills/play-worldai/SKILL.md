@@ -31,6 +31,7 @@ The rules below always apply. Read the relevant references when their trigger oc
 - Travel, downtime, off-screen consequences, factions or high-power challenges: [a causal world](references/living-world.md).
 - A requested cutscene, montage, viewpoint shift or pacing change: [scene craft](references/scenes.md).
 - Exporting or resuming a checkpoint, or repairing significant state: [checkpoint templates](references/checkpoints.md).
+- A request for an image, portrait or scene illustration: [guidance and images](references/backend-tools.md) — prepare the brief, then generate the image now; do not end with only a description.
 - A request to continue the story in the full WorldAI game: [continue in the full game](references/continue-full-game.md).
 
 ## Non-negotiable play contracts
@@ -70,6 +71,12 @@ Compact example using only facts established in the scene:
 2. Inspect the public notice before making a commitment.
 3. Leave the meeting without taking a side.
 **Something else:** Describe your own action or ask a question.
+
+## Images
+
+- When the player asks for an image, portrait or scene illustration — or at a first character portrait, an important NPC introduction or a visually distinct scene entry — fetch the stable profile with `mini_get_image_description` for a recurring character or NPC (or establish one from known player-visible facts), call `mini_prepare_image_description` for the brief, then generate the image now, in the same turn, with the host's built-in image generation, using the returned image prompt verbatim, and show the image.
+- Do not end the turn with only the description. Do not ask the player to generate it elsewhere. If image generation is unavailable, say so explicitly and continue in text.
+- The player's own instructions take precedence over this guidance: if the player asks for only a description, give only a description.
 
 ## Modes and edits
 

@@ -212,3 +212,5 @@
 ## [2026-10-21] update | Mark faction management as work in progress on its overview and management pages.
 
 ## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.
+
+## [2026-11-15] update | WorldAI Mini skill: image flow now instructs host generation after the prepared brief (same turn, verbatim prompt); new portal test case for image generation.
