@@ -7,6 +7,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-11-14] create | Add the WorldAI Mini client and standalone backend source.
+
 ## [2026-11-03] update | Correct Think, God, dice, combat, death, spell, leveling and faction rules against the current game, and link the mode pages together.
 
 ## [2026-11-03] update | Remove retired AI providers and the /v1 proxy routes from setup and developer pages, and correct Spicy and starting-party wording.
@@ -210,3 +212,13 @@
 ## [2026-10-21] update | Mark faction management as work in progress on its overview and management pages.
 
 ## [2026-10-21] update | Explain calculation details and missing modifier breakdowns for players new to D&D.
+
+## [2026-11-15] update | WorldAI Mini skill: image flow now instructs host generation after the prepared brief (same turn, verbatim prompt); new portal test case for image generation.
+
+## [2026-11-16] update | WorldAI Mini portal test cases: merged resume and save into one case so the package has exactly 5 positive test cases; image generation case unchanged.
+
+## [2026-11-18] update | WorldAI Mini website URL now points to worldrpg.ai in the submission package.
+
+## [2026-11-18] update | WorldAI Mini listing description rewritten: generic choose-your-own-adventure copy — any campaign, any world, any choice.
+
+## [2026-11-18] update | WorldAI Mini domain verification: token must match the platform value exactly; verification is required before submission.

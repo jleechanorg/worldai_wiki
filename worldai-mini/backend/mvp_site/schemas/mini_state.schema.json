@@ -1,0 +1,53 @@
+{
+  "schema_version": "1",
+  "notes": [
+    "Session/state envelope for WorldAI Mini MCP. Normative source: design doc section 4 (session and state schema) with sections 11-13 amendments.",
+    "Model-owned containers (player, gm_notes, recap) preserve unknown keys; control envelope rejects them.",
+    "Server-owned values (revision, ids, timestamps, operation history, roll receipts, quotas, gm_note_guard ledger) live outside state and are never patchable."
+  ],
+  "session_key_pattern": "^mini_[A-Za-z0-9_-]{32}$",
+  "document_key": "SHA256(session_key)",
+  "limits": {
+    "player_bytes": 131072,
+    "gm_notes_bytes": 32768,
+    "recap_bytes": 16384,
+    "guard_ledger_bytes": 65536,
+    "session_document_bytes": 524288,
+    "request_body_bytes": 262144,
+    "response_body_bytes": 1048576,
+    "max_json_depth": 24,
+    "max_roll_receipts": 200,
+    "title_max_chars": 120,
+    "purpose_max_chars": 240
+  },
+  "type": "object",
+  "required": ["state"],
+  "additionalProperties": false,
+  "properties": {
+    "state": {
+      "type": "object",
+      "required": ["player", "gm_notes", "recap"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {"type": "object"},
+        "gm_notes": {"type": "object"},
+        "recap": {"type": "string"}
+      }
+    },
+    "gm_note_guard": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Server-owned ledger: normalized note text, stable path and digest tombstones. Not patchable, not player-readable, not exportable. Retained across model deletion for session lifetime.",
+      "properties": {
+        "entries": {"type": "array", "items": {"type": "object", "properties": {
+          "path": {"type": "string"},
+          "digest": {"type": "string"},
+          "normalized_text": {"type": "string"},
+          "tombstoned": {"type": "boolean"},
+          "revealed": {"type": "boolean"},
+          "revealed_at_turn": {"type": "string"},
+          "revealed_in_scene": {"type": "string"}}}}
+      }
+    }
+  }
+}

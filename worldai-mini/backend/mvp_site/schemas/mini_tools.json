@@ -1,0 +1,318 @@
+{
+  "schema_version": "1",
+  "notes": [
+    "WorldAI Mini MCP tool contract. Normative source: design doc section 4 as corrected by sections 11-13 (2026-11-08 amendments take precedence).",
+    "Design section 12 adds mini_get_image_description; the inventory is eight tools.",
+    "Control envelopes reject unknown fields; model-owned state containers preserve unknown keys (see mini_state.schema.json).",
+    "gm_notes may appear only in structuredContent, never in text content (spoiler boundary, design section 4)."
+  ],
+  "error_codes": [
+    "INVALID_ARGUMENT",
+    "SESSION_UNAVAILABLE",
+    "REVISION_CONFLICT",
+    "IDEMPOTENCY_CONFLICT",
+    "CAPACITY_EXCEEDED",
+    "RATE_LIMITED",
+    "SERVICE_UNAVAILABLE",
+    "EXPORT_CONTAMINATION"
+  ],
+  "session_key_pattern": "^mini_[A-Za-z0-9_-]{32}$",
+  "result_schema": {
+    "type": "object",
+    "required": ["schema_version", "ok"],
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {"type": "string", "const": "1"},
+      "ok": {"type": "boolean"},
+      "data": {"type": "object"},
+      "error": {
+        "type": "object",
+        "required": ["code", "message"],
+        "additionalProperties": false,
+        "properties": {
+          "code": {"type": "string", "enum": [
+            "INVALID_ARGUMENT", "SESSION_UNAVAILABLE", "REVISION_CONFLICT",
+            "IDEMPOTENCY_CONFLICT", "CAPACITY_EXCEEDED", "RATE_LIMITED",
+            "SERVICE_UNAVAILABLE", "EXPORT_CONTAMINATION"]},
+          "message": {"type": "string", "maxLength": 500},
+          "current_revision": {"type": "integer", "minimum": 0},
+          "retry_after_seconds": {"type": "integer", "minimum": 0},
+          "outcome_unknown": {"type": "boolean"}
+        }
+      }
+    },
+    "oneOf": [
+      {"properties": {"ok": {"const": true}}, "required": ["data"], "not": {"required": ["error"]}},
+      {"properties": {"ok": {"const": false}}, "required": ["error"], "not": {"required": ["data"]}}
+    ]
+  },
+  "tools": [
+    {
+      "name": "mini_create_session",
+      "description": "Create one Mini campaign after the guided custom-campaign review is confirmed, or an explicit quick start. First read mini_get_playbook(topic=start), reuse supplied answers and ask only missing choices one at a time. Do not create during the questionnaire or replace a resumed campaign.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["initial_state"],
+        "additionalProperties": false,
+        "properties": {
+          "initial_state": {"type": "object"},
+          "title": {"type": "string", "maxLength": 120}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"},
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "const": 0},
+          "state": {"type": "object"},
+          "expires_at": {"type": "string", "format": "date-time"}}}}
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_get_state",
+      "description": "Read a saved Mini campaign using its private resume key, including its current revision and optionally GM notes. Use to resume an existing campaign; do not create a replacement. Keep the key and unrevealed GM notes private.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["session_key"],
+        "additionalProperties": false,
+        "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"},
+          "include_gm_notes": {"type": "boolean", "default": true}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 0},
+          "state": {"type": "object", "properties": {
+            "player": {"type": "object"},
+            "gm_notes": {"type": "object"},
+            "recap": {"type": "string"}}},
+          "last_operation": {"type": ["object", "null"]},
+          "recent_rolls": {"type": "array", "maxItems": 200},
+          "expires_at": {"type": "string", "format": "date-time"}}}}
+      },
+      "text_projection": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 0},
+          "state": {"type": "object", "properties": {
+            "player": {"type": "object"},
+            "recap": {"type": "string"}}, "additionalProperties": false},
+          "last_operation": {"type": ["object", "null"]},
+          "recent_rolls": {"type": "array", "maxItems": 200},
+          "expires_at": {"type": "string", "format": "date-time"}
+        }
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_save_state",
+      "description": "Save an authorized patch to an existing Mini campaign using its resume key, expected revision and unique operation ID. Include reveal records when applicable. Respect revision conflicts and do not report a save until it succeeds.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["session_key", "expected_revision", "operation_id", "patch"],
+        "additionalProperties": false,
+        "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"},
+          "expected_revision": {"type": "integer", "minimum": 0},
+          "operation_id": {"type": "string", "format": "uuid",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"},
+          "patch": {"type": "object"},
+          "reveals": {"type": "array", "maxItems": 32, "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["path", "content_sha256", "turn", "scene"],
+            "properties": {
+              "path": {"type": "string", "maxLength": 1024,
+                "description": "RFC6901 pointer relative to state.gm_notes; handler also enforces 1024 UTF-8 bytes."},
+              "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "turn": {"type": "string", "minLength": 1, "maxLength": 120},
+              "scene": {"type": "string", "minLength": 1, "maxLength": 120}
+            }}}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 1},
+          "operation_id": {"type": "string", "format": "uuid"},
+          "saved_at": {"type": "string", "format": "date-time"},
+          "state_digest": {"type": "string"},
+          "expires_at": {"type": "string", "format": "date-time"}}}}
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_roll_dice",
+      "description": "Roll and record dice for an existing Mini campaign using dice notation, the expected revision and a unique operation ID. Establish the purpose and target before rolling, then use the returned result without inventing a reroll.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["session_key", "expected_revision", "operation_id", "notation"],
+        "additionalProperties": false,
+        "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"},
+          "expected_revision": {"type": "integer", "minimum": 0},
+          "operation_id": {"type": "string", "format": "uuid",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"},
+          "notation": {"type": "string", "maxLength": 200},
+          "mode": {"type": "string", "enum": ["normal", "advantage", "disadvantage"], "default": "normal"},
+          "purpose": {"type": "string", "maxLength": 240}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "receipt_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 1},
+          "faces": {"type": "array", "items": {"type": "integer"}},
+          "pools": {"type": "array"},
+          "selected_faces": {"type": "array", "items": {"type": "integer"}},
+          "modifier": {"type": "integer"},
+          "total": {"type": "integer"},
+          "notation": {"type": "string"},
+          "mode": {"type": "string", "enum": ["normal", "advantage", "disadvantage"]},
+          "rolled_at": {"type": "string", "format": "date-time"}}}}
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_export_checkpoint",
+      "description": "Export a player-visible checkpoint for an existing Mini campaign using its resume key. The portable checkpoint excludes the resume key and unrevealed GM notes.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["session_key"],
+        "additionalProperties": false,
+        "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 0},
+          "checkpoint": {"type": "object"},
+          "content_sha256": {"type": "string"},
+          "expires_at": {"type": "string", "format": "date-time"}}}}
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_get_playbook",
+      "description": "Read before starting or resuming Mini play and when changing modes. Returns the player-led gameplay and Planning choices presentation contract plus topic-specific persistence rules. Use native host suggestion chips only when supported, with numbered text fallback.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["topic", "campaign_context"],
+        "additionalProperties": false,
+        "properties": {
+          "topic": {"type": "string",
+            "enum": ["start", "continue", "character", "rules", "checkpoint", "image"]},
+          "campaign_context": {"type": "object"}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "additionalProperties": false, "properties": {
+          "topic": {"type": "string"},
+          "template_version": {"type": "string"},
+          "instructions": {"type": "string"}}}}
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_prepare_image_description",
+      "description": "Prepare a structured image description from the subject, appearance, setting and composition, with optional style and exclusions. This prepares a description only; it does not generate an image.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["subject", "appearance", "setting", "composition"],
+        "additionalProperties": false,
+        "properties": {
+          "subject": {"type": "string", "maxLength": 1000},
+          "appearance": {"type": "string", "maxLength": 2000},
+          "setting": {"type": "string", "maxLength": 2000},
+          "composition": {"type": "string", "maxLength": 2000},
+          "style": {"type": "string", "maxLength": 500},
+          "avoid": {"type": "array", "items": {"type": "string", "maxLength": 200}, "maxItems": 20}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "description_parts": {"type": "object"},
+          "description": {"type": "string"},
+          "template_version": {"type": "string"},
+          "image_generated": {"type": "boolean", "const": false}}}}
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "mini_get_image_description",
+      "description": "Read the saved image-description profile for a character in an existing Mini campaign using the resume key and character ID. The result indicates whether a profile was found.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["session_key", "character_id"],
+        "additionalProperties": false,
+        "properties": {
+          "session_key": {"type": "string", "pattern": "^mini_[A-Za-z0-9_-]{32}$"},
+          "character_id": {"type": "string", "minLength": 1, "maxLength": 120}
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {"data": {"type": "object", "properties": {
+          "session_id": {"type": "string"},
+          "revision": {"type": "integer", "minimum": 0},
+          "character_id": {"type": "string"},
+          "found": {"type": "boolean"},
+          "profile": {"type": ["object", "null"]}}}}
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

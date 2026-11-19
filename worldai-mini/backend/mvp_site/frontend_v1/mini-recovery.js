@@ -1,0 +1,125 @@
+/* global firebase */
+'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+  const status = document.getElementById('status');
+  const result = document.getElementById('result');
+  let authGeneration = 0;
+  let requestGeneration = 0;
+  let recoveryPending = false;
+  let removalPending = false;
+  const blockedByMutation = () => {
+    if (!recoveryPending && !removalPending) return false;
+    status.textContent = 'Wait for recovery or link removal to finish before starting another action.';
+    return true;
+  };
+  const current = context => context.authGeneration === authGeneration &&
+    context.requestGeneration === requestGeneration &&
+    firebase.auth().currentUser === context.user;
+  const begin = () => ({ user: firebase.auth().currentUser, authGeneration, requestGeneration: ++requestGeneration });
+  const check = context => { if (!current(context)) throw new Error('Account or request changed'); };
+  const showError = context => { if (current(context)) status.textContent = 'Request failed. Check your verified sign-in and try deliberately. No campaign change is assumed.'; };
+  async function call(context, action, body) {
+    check(context);
+    const user = context.user;
+    if (!user || !user.emailVerified) throw new Error('Verified sign-in required');
+    const token = await user.getIdToken();
+    check(context);
+    const response = await fetch('/api/mini-recovery/' + action, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+      body: JSON.stringify(body), cache: 'no-store', credentials: 'same-origin',
+    });
+    check(context);
+    if (!response.ok) {
+      const error = new Error('Request rejected');
+      if (action === 'remove' && response.status === 409) {
+        try { error.code = (await response.json()).error; } catch (_) { /* Keep the generic error. */ }
+        check(context);
+      }
+      throw error;
+    }
+    const data = await response.json();
+    check(context);
+    return data;
+  }
+  async function list(context) {
+    const data = await call(context, 'list', {});
+    check(context);
+    const root = document.getElementById('campaigns'); root.replaceChildren();
+    for (const session of data.sessions) {
+      const li = document.createElement('li');
+      const title = document.createElement('span'); title.textContent = session.title || session.session_id;
+      const button = document.createElement('button'); button.textContent = 'Recover new private capability';
+      button.onclick = async () => {
+        if (context.authGeneration !== authGeneration || firebase.auth().currentUser !== context.user || blockedByMutation()) return;
+        if (!window.confirm('Invalidate the old capability and issue a new one? Other chats using the old capability will stop working.')) return;
+        recoveryPending = true;
+        const recovery = begin();
+        button.disabled = true;
+        try {
+          const recovered = await call(recovery, 'recover', { session_id: session.session_id });
+          check(recovery);
+          if (typeof recovered.session_key !== 'string' || !recovered.session_key) throw new Error('Incomplete recovery response');
+          result.hidden = false; result.textContent = 'Keep private. New resume capability:\n' + recovered.session_key + '\nSaved revision: ' + recovered.revision;
+          const saved = document.createElement('button'); saved.type = 'button'; saved.textContent = 'I saved my new private capability';
+          saved.onclick = async () => {
+            if (recovery.authGeneration !== authGeneration || firebase.auth().currentUser !== recovery.user || blockedByMutation()) return;
+            const confirmation = begin();
+            try {
+              await call(confirmation, 'link', { session_key: recovered.session_key, consent: true }); check(confirmation);
+              saved.disabled = true; status.textContent = 'Saved capability confirmed. Keep it private.';
+            } catch (_) { showError(confirmation); }
+          };
+          result.append(saved);
+          status.textContent = 'Recovered. Save the new capability, then confirm below.';
+        } catch (_) { if (current(recovery)) status.textContent = 'Recovery outcome is unknown. Keep recovery enabled and try recovery again before removing links.'; }
+        finally { recoveryPending = false; if (context.authGeneration === authGeneration && firebase.auth().currentUser === context.user) button.disabled = false; }
+      };
+      li.append(title, button); root.append(li);
+    }
+    status.textContent = data.sessions.length ? 'Linked campaigns loaded.' : 'No linked campaigns for this verified account.';
+  }
+  document.getElementById('signin').onclick = async () => {
+    if (blockedByMutation()) return;
+    const context = begin();
+    try { await firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()); } catch (_) { showError(context); }
+  };
+  firebase.auth().onAuthStateChanged(user => {
+    authGeneration++; requestGeneration++;
+    result.hidden = true; result.textContent = ''; document.getElementById('campaigns').replaceChildren(); document.getElementById('capability').value = ''; status.textContent = '';
+    document.getElementById('account').textContent = user && user.emailVerified ? 'Signed in with verified account: ' + user.email : 'Sign in with a verified email account to link or recover.';
+  });
+  document.getElementById('signout').onclick = () => {
+    authGeneration++;
+    const context = begin();
+    result.hidden = true; result.textContent = ''; document.getElementById('campaigns').replaceChildren(); document.getElementById('capability').value = '';
+    return firebase.auth().signOut().catch(() => showError(context));
+  };
+  async function removeRecovery(discardUnconfirmed) {
+    if (blockedByMutation()) return;
+    const warning = discardUnconfirmed
+      ? 'Some recovered capabilities may not have been saved. Removing recovery now can permanently lose campaign access. Remove anyway?'
+      : 'Remove your recovery email and all linked campaigns? Keep your private capability first. Campaigns and current capabilities are not deleted or changed.';
+    if (!window.confirm(warning)) return;
+    removalPending = true;
+    const context = begin();
+    try {
+      await call(context, 'remove', discardUnconfirmed ? { discard_unconfirmed: true } : {}); check(context);
+      result.hidden = true; result.textContent = ''; document.getElementById('campaigns').replaceChildren(); document.getElementById('consent').checked = false;
+      status.textContent = 'Recovery email and links removed. Keep your private capability to continue anonymous play.';
+    } catch (error) {
+      if (current(context) && error && error.code === 'RECOVERY_CONFIRMATION_REQUIRED') {
+        status.textContent = 'A recovered capability has not been confirmed saved. Recover and confirm it, or explicitly remove recovery and accept possible access loss.';
+        const force = document.createElement('button'); force.type = 'button'; force.textContent = 'Remove anyway and accept possible access loss';
+        force.onclick = () => { if (current(context)) return removeRecovery(true); };
+        status.append(force);
+      } else showError(context);
+    } finally { removalPending = false; }
+  }
+  document.getElementById('remove').onclick = () => removeRecovery(false);
+  document.getElementById('refresh').onclick = () => { if (blockedByMutation()) return; const context = begin(); return list(context).catch(() => showError(context)); };
+  document.getElementById('link').onsubmit = async event => {
+    event.preventDefault(); if (blockedByMutation()) return; const field = document.getElementById('capability'); const context = begin();
+    try { await call(context, 'link', { session_key: field.value, consent: document.getElementById('consent').checked }); check(context); field.value = ''; await list(context); }
+    catch (_) { showError(context); }
+  };
+});
