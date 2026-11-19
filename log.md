@@ -216,3 +216,5 @@
 ## [2026-11-15] update | WorldAI Mini skill: image flow now instructs host generation after the prepared brief (same turn, verbatim prompt); new portal test case for image generation.
 
 ## [2026-11-16] update | WorldAI Mini portal test cases: merged resume and save into one case so the package has exactly 5 positive test cases; image generation case unchanged.
+
+## [2026-11-18] update | WorldAI Mini website URL now points to worldrpg.ai in the submission package.
