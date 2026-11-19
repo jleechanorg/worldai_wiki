@@ -218,3 +218,7 @@
 ## [2026-11-16] update | WorldAI Mini portal test cases: merged resume and save into one case so the package has exactly 5 positive test cases; image generation case unchanged.
 
 ## [2026-11-18] update | WorldAI Mini website URL now points to worldrpg.ai in the submission package.
+
+## [2026-11-18] update | WorldAI Mini listing description rewritten: generic choose-your-own-adventure copy — any campaign, any world, any choice.
+
+## [2026-11-18] update | WorldAI Mini domain verification: token must match the platform value exactly; verification is required before submission.
